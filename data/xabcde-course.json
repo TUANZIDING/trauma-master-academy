@@ -1,0 +1,98 @@
+{
+  "course": {
+    "id": "TRAUMA-ACADEMY-002",
+    "title_zh": "看懂 xABCDE 创伤初评",
+    "title_en": "Understanding the xABCDE Primary Survey",
+    "release_state": "GO_WITH_CLINICAL_REVIEW",
+    "learning_path": [
+      "图片建立直觉",
+      "理论解释",
+      "临床病例",
+      "临床判断",
+      "操作选择",
+      "患者变化",
+      "再评估",
+      "知识复盘"
+    ],
+    "modes": [
+      {
+        "id": "quick-review",
+        "title_zh": "快速复习模式",
+        "title_en": "Quick review mode",
+        "purpose": "For clinicians who need a concise xABCDE route and key observation points."
+      },
+      {
+        "id": "system-learning",
+        "title_zh": "系统学习模式",
+        "title_en": "System learning mode",
+        "purpose": "For residents, junior clinicians, and students who need staged explanation."
+      },
+      {
+        "id": "case-reasoning",
+        "title_zh": "病例推演模式",
+        "title_en": "Case reasoning mode",
+        "purpose": "For staged information release, clinical judgement, and reassessment practice."
+      }
+    ]
+  },
+  "objectives": [
+    "Distinguish observation, reporting, team action, and reassessment.",
+    "Use xABCDE as a shared trauma reasoning language rather than a bedside algorithm.",
+    "Recognize when new information should send the team back to an earlier stage.",
+    "Explain why missing visible bleeding or airway deterioration can distort priorities."
+  ],
+  "audience": [
+    "interns",
+    "residents",
+    "standardized trainees",
+    "visiting clinicians",
+    "medical students in supervised trauma education"
+  ],
+  "stages": [
+    {
+      "id": "x",
+      "title": "Catastrophic external bleeding",
+      "question": "Which visible bleeding concern must be reported before deeper survey work continues?",
+      "summary": "Learners scan for visible bleeding cues, report location and change, and preserve team workspace.",
+      "clinical_significance": "Visible bleeding can alter initial priority and team resource allocation.",
+      "key_action": "Report observed facts to the team; senior clinicians and local policy determine treatment.",
+      "common_mistake": "Treating x as a checkbox rather than an active first look and repeat look.",
+      "visual_asset": "x-stage-core",
+      "source_note": "/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/03-急诊创伤总流程路径.md",
+      "guideline_source": "ACS ATLS 11 public source index; NICE NG39 public page",
+      "review_status": "source_required"
+    },
+    {
+      "id": "airway",
+      "title": "Airway and c-spine protection",
+      "question": "Can the patient maintain airway protection while the team preserves cervical spine precautions?",
+      "summary": "Learners observe speech, airway sounds, face or neck cues, and c-spine protection status.",
+      "clinical_significance": "Airway risk and neurologic change may interact with breathing and circulation priorities.",
+      "key_action": "Report airway risk cues and confirm senior-team awareness; no independent airway instruction is provided.",
+      "common_mistake": "Jumping to a device or procedure before reporting what is actually observed.",
+      "visual_asset": "a-stage-core",
+      "source_note": "/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/03-急诊创伤总流程路径.md",
+      "guideline_source": "ACS ATLS 11 public source index; local airway policy pending",
+      "review_status": "source_required"
+    }
+  ],
+  "visual_assets": [
+    "xabcde-overview-route",
+    "x-stage-core",
+    "a-stage-core",
+    "b-stage-core",
+    "case-high-energy-shock-chest"
+  ],
+  "references": [
+    "ACS ATLS 11 public page",
+    "NICE NG39 public page",
+    "ACEP FAST Sonoguide public page",
+    "Local Obsidian trauma pathway notes as structure inputs only"
+  ],
+  "review_status": {
+    "medical": "pending_clinician_review",
+    "sources": "source_index_pending_review",
+    "cases": "synthetic_or_pending_deidentification",
+    "local_policy": "pending_local_confirmation"
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="pelvic-risk">
+    <defs>
+      <linearGradient id="nodeBg" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0" stop-color="#f8f4ec"/>
+        <stop offset="1" stop-color="#e5f2ee"/>
+      </linearGradient>
+      <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#1f2937" flood-opacity="0.12"/>
+      </filter>
+    </defs>
+    <rect width="480" height="360" rx="30" fill="url(#nodeBg)"/>
+    <circle cx="76" cy="72" r="58" fill="#fffdf8" opacity="0.72"/>
+    <circle cx="412" cy="292" r="82" fill="#fff4e9" opacity="0.78"/>
+    <g filter="url(#shadow)"><path d="M151 142c42-28 86 7 89 60 3-53 47-88 89-60 42 27 20 110-34 144-33 20-48-28-55-70-7 42-22 90-55 70-54-34-76-117-34-144z" fill="#fffdf8" stroke="#b45d4f" stroke-width="9"/><circle cx="240" cy="196" r="25" fill="#d9eeeb" stroke="#335c7a" stroke-width="7"/></g>
+  </svg>

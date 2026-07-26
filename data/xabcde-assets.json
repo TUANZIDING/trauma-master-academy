@@ -1,0 +1,101 @@
+{
+  "course_id": "TRAUMA-ACADEMY-002",
+  "asset_directory": "assets/images/xabcde/",
+  "review_policy": "Every image must answer one learning question and must not contain unreviewed clinical instructions.",
+  "assets": [
+    {
+      "id": "xabcde-overview-route",
+      "stage": "overview",
+      "title": "xABCDE route overview",
+      "learning_question": "How does the learner move from first impression to reassessment?",
+      "purpose": "Show the whole xABCDE route as a mental model.",
+      "type": "process_diagram",
+      "file": "../assets/images/xabcde/overview/xabcde-overview-full.png",
+      "source": "User-provided teaching map screenshot imported as project courseware asset",
+      "license": "User-provided for local courseware; external reuse pending confirmation",
+      "review_status": "pending_clinician_review",
+      "learner_status": "教学示意",
+      "alt": "xABCDE route overview teaching illustration",
+      "caption": "One route links x, A, B, C, D, E, and continuous reassessment.",
+      "related_stage": "overview",
+      "medical_notes": "Contains detailed educational terms and must remain pending clinician/source review before public clinical teaching use."
+    },
+    {
+      "id": "x-stage-core",
+      "stage": "x",
+      "title": "Catastrophic external bleeding recognition",
+      "learning_question": "Which visible bleeding concern should be reported before moving deeper into the survey?",
+      "purpose": "Teach learners to report visible bleeding cues and protect the team workspace.",
+      "type": "clinical_observation_diagram",
+      "file": "../assets/images/xabcde/stages/x-hemorrhage.png",
+      "source": "User-provided teaching figure imported as project courseware asset",
+      "license": "User-provided for local courseware; external reuse pending confirmation",
+      "review_status": "pending_clinician_review",
+      "learner_status": "教学示意",
+      "alt": "Teaching illustration for x stage visible external bleeding cues",
+      "caption": "The image focuses on one question: what visible bleeding cue should be reported first?",
+      "related_stage": "x",
+      "medical_notes": "Tourniquet, packing, and pressure images remain backlog items requiring clinician review."
+    },
+    {
+      "id": "a-stage-core",
+      "stage": "airway",
+      "title": "Airway and c-spine observation",
+      "learning_question": "Can the patient maintain airway protection while the team preserves cervical spine precautions?",
+      "purpose": "Connect speech, airway noise, facial injury cues, and c-spine language.",
+      "type": "clinical_observation_diagram",
+      "file": "../assets/images/xabcde/stages/a-airway-cspine.png",
+      "source": "User-provided teaching figure imported as project courseware asset",
+      "license": "User-provided for local courseware; external reuse pending confirmation",
+      "review_status": "pending_clinician_review",
+      "learner_status": "教学示意",
+      "alt": "Teaching illustration for airway and c-spine observation",
+      "caption": "The image asks learners to separate observation and reporting from senior-led airway decisions.",
+      "related_stage": "airway",
+      "medical_notes": "Does not show airway maneuver steps, device size, drugs, or intubation instructions."
+    },
+    {
+      "id": "b-stage-core",
+      "stage": "breathing",
+      "title": "Breathing and chest movement observation",
+      "learning_question": "What visible breathing or chest movement change should be escalated?",
+      "purpose": "Teach visible respiratory observation and team escalation language.",
+      "type": "clinical_observation_diagram",
+      "file": "../assets/images/xabcde/stages/b-breathing.png",
+      "source": "User-provided teaching figure imported as project courseware asset",
+      "license": "User-provided for local courseware; external reuse pending confirmation",
+      "review_status": "pending_clinician_review",
+      "learner_status": "教学示意",
+      "alt": "Teaching illustration for breathing and chest movement observation",
+      "caption": "The image focuses on breathing appearance, not chest procedure technique.",
+      "related_stage": "breathing",
+      "medical_notes": "Radiology images must be real, licensed, anonymized, or clearly schematic."
+    },
+    {
+      "id": "case-high-energy-shock-chest",
+      "stage": "case",
+      "title": "High-energy transport injury with shock and chest concern",
+      "learning_question": "How do choices change the patient's state and force reassessment?",
+      "purpose": "Support staged case release with dynamic monitor feedback.",
+      "type": "case_progression_visual",
+      "file": "../assets/generated/nodes/polytrauma-priority.svg",
+      "source": "Synthetic teaching case visual",
+      "license": "Project-generated; pending review before external reuse",
+      "review_status": "pending_clinician_review",
+      "learner_status": "待审核",
+      "alt": "Synthetic polytrauma case priority teaching visual",
+      "caption": "Synthetic case visual for staged reasoning; not a real patient record.",
+      "related_stage": "case",
+      "medical_notes": "Case content is synthetic and must not be interpreted as patient-specific guidance."
+    }
+  ],
+  "missing_asset_policy": {
+    "display": "Use a structured placeholder card",
+    "fields": [
+      "needed_image",
+      "learning_question",
+      "recommended_source_type",
+      "expert_review_required"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "asset_directory": "assets/",
+  "review_policy": "Images support classroom teaching only and remain pending review before formal clinical use.",
+  "assets": [
+    {
+      "id": "trauma-disaster-overview",
+      "title": "Trauma and disaster course overview",
+      "file": "../assets/generated/overview/trauma-disaster-medicine.svg",
+      "mode": "all",
+      "duration_min": 180,
+      "review_status": "visual_asset_pending_review",
+      "source_type": "teaching_illustration",
+      "source_refs": ["TRAUMA-ACADEMY-005"],
+      "alt": "Teaching schematic for trauma resuscitation and disaster medicine course overview"
+    },
+    {
+      "id": "xabcde-overview-reused",
+      "title": "xABCDE overview",
+      "file": "../assets/images/xabcde/overview/xabcde-overview-full.png",
+      "mode": "learner",
+      "duration_min": 45,
+      "review_status": "pending_clinician_review",
+      "source_type": "teaching_illustration",
+      "source_refs": ["TRAUMA-ACADEMY-002"],
+      "alt": "xABCDE overview teaching map"
+    },
+    {
+      "id": "observe-cues-reused",
+      "title": "Observe Cues",
+      "file": "../assets/images/xabcde/nodes/observe-cues.png",
+      "mode": "learner",
+      "duration_min": 45,
+      "review_status": "pending_clinician_review",
+      "source_type": "teaching_illustration",
+      "source_refs": ["TRAUMA-ACADEMY-002"],
+      "alt": "Observation cues teaching figure"
+    },
+    {
+      "id": "reasoning-loop-reused",
+      "title": "Reasoning Loop",
+      "file": "../assets/images/xabcde/overview/reasoning-loop.png",
+      "mode": "learner",
+      "duration_min": 45,
+      "review_status": "pending_clinician_review",
+      "source_type": "teaching_illustration",
+      "source_refs": ["TRAUMA-ACADEMY-002"],
+      "alt": "Reasoning loop teaching figure"
+    },
+    {
+      "id": "team-positioning-reused",
+      "title": "Trauma Team Positioning",
+      "file": "../assets/images/xabcde/nodes/team-positioning.png",
+      "mode": "instructor",
+      "duration_min": 45,
+      "review_status": "pending_clinician_review",
+      "source_type": "teaching_illustration",
+      "source_refs": ["TRAUMA-ACADEMY-002"],
+      "alt": "Trauma team positioning teaching figure"
+    },
+    {
+      "id": "reassessment-questions-reused",
+      "title": "Reassessment Questions",
+      "file": "../assets/images/xabcde/nodes/reassessment-questions.png",
+      "mode": "challenge",
+      "duration_min": 45,
+      "review_status": "pending_clinician_review",
+      "source_type": "teaching_illustration",
+      "source_refs": ["TRAUMA-ACADEMY-002"],
+      "alt": "Reassessment questions teaching figure"
+    },
+    {
+      "id": "disaster-resource-panel",
+      "title": "Disaster resource panel",
+      "file": "../assets/generated/nodes/disaster-resource-panel.svg",
+      "mode": "instructor",
+      "duration_min": 45,
+      "review_status": "visual_asset_pending_review",
+      "source_type": "teaching_illustration",
+      "source_refs": ["TRAUMA-ACADEMY-005"],
+      "alt": "Teaching schematic for disaster medicine resource panel"
+    },
+    {
+      "id": "mass-casualty-triage-board",
+      "title": "Mass-casualty triage board",
+      "file": "../assets/generated/nodes/mass-casualty-triage-board.svg",
+      "mode": "challenge",
+      "duration_min": 45,
+      "review_status": "visual_asset_pending_review",
+      "source_type": "teaching_illustration",
+      "source_refs": ["TRAUMA-ACADEMY-005"],
+      "alt": "Teaching schematic for mass casualty triage board without a fixed algorithm"
+    }
+  ]
+}

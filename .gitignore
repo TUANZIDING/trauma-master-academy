@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+dist/
+build/
+.superpowers/
+.codex-tmp/
+.env
+.env.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">DUAL REASSESSMENT: PATIENT PRIORITY AND SYSTEM CAPACITY</title>
+  <desc id="desc">Two-loop teaching diagram connecting patient reassessment and system capacity reassessment during disaster response.</desc>
+  <rect width="1200" height="760" fill="#fbf7ef"/>
+  <text x="70" y="90" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#102033">DUAL REASSESSMENT</text>
+  <text x="70" y="128" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1f7a7e">PATIENT PRIORITY AND SYSTEM CAPACITY</text>
+  <circle cx="350" cy="380" r="190" fill="#fff" stroke="#1f7a7e" stroke-width="6"/>
+  <circle cx="850" cy="380" r="190" fill="#fff" stroke="#102033" stroke-width="6"/>
+  <text x="252" y="300" font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#1f7a7e">PATIENT LOOP</text>
+  <text x="735" y="300" font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#102033">SYSTEM LOOP</text>
+  <g font-family="Arial, sans-serif" font-size="18" fill="#334155">
+    <text x="252" y="345">Physiology</text>
+    <text x="252" y="382">Mental status</text>
+    <text x="252" y="419">Exam findings</text>
+    <text x="252" y="456">Response / symptoms</text>
+    <text x="735" y="345">Casualty numbers</text>
+    <text x="735" y="382">Staffing / space</text>
+    <text x="735" y="419">Supplies / OR / ICU</text>
+    <text x="735" y="456">Transport / hazards</text>
+  </g>
+  <path d="M500 380 H700" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M688 360 L724 380 L688 400" fill="none" stroke="#64748b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M700 505 H500" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M512 485 L476 505 L512 525" fill="none" stroke="#64748b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="415" y="610" width="370" height="64" rx="14" fill="#20313b"/>
+  <text x="455" y="650" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#fff">NEW INFORMATION CAN CHANGE BOTH LOOPS</text>
+</svg>

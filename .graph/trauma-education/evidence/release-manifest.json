@@ -1,0 +1,103 @@
+{
+  "manifest_version": "1.0",
+  "release_id": "R-TA-20260719-01",
+  "generated_at": "2026-07-19T23:02:32.408Z",
+  "release_decision": "teaching_release_approved_limited_scope",
+  "release_statement": "教学发布已批准；本院流程仅在所述创伤中心场景内适用；真实病例与影像仅按已脱敏和授权范围展示。",
+  "approval_record": {
+    "name": "隐匿",
+    "title": "创伤方向主任医师（审批人姓名隐匿）",
+    "approval_date": "2026-07-19",
+    "approval_scope": "面向学生的创伤教学与模拟；不作为床旁诊疗指令、本院正式操作规程或个体化治疗方案。"
+  },
+  "scope_summary": {
+    "education_only": "面向学生的创伤教学与模拟；不作为床旁诊疗指令、本院正式操作规程或个体化治疗方案。",
+    "local_workflow": [
+      "创伤中心预警",
+      "团队到位",
+      "院领导资源协调",
+      "复苏室床旁检查/固定",
+      "专科手术协同"
+    ],
+    "case_and_image": "approved_only_when_deidentified_and_authorized"
+  },
+  "evidence_summary": {
+    "explicit_claim_count": 81,
+    "topic_locator_count": 7,
+    "topic_locator_pending_count": 0,
+    "source_record_count": 29,
+    "source_metadata_incomplete_ids": []
+  },
+  "verification_required_before_external_release": [
+    "npm run validate",
+    "npm run build:evidence-pack",
+    "python3 /Users/dinghaixiang/.codex/skills/graph-engineering-architect/scripts/validate_graph.py .graph/trauma-education",
+    "git diff --check"
+  ],
+  "artifacts": [
+    {
+      "path": ".graph/trauma-education/graph.json",
+      "sha256": "c76e3d5561e17c5d33ebb5c064175b352af3df687b0b5464929d0602e4d67cdf"
+    },
+    {
+      "path": ".graph/trauma-education/graph-spec.md",
+      "sha256": "3cac4357fe945e06108908c55f7610ec1aa83c100e1ad961bb25e9dd221df28d"
+    },
+    {
+      "path": ".graph/trauma-education/approval-log.md",
+      "sha256": "8fd04fcf6f1c9b277c8ad4f80de30c904c14263dc366b2f962883e5779be557e"
+    },
+    {
+      "path": ".graph/trauma-education/module-release-register.md",
+      "sha256": "124e52502c96cc71f3fee57b7bbcbe0e5468b5ffd5b52826db91dd1c782bde4c"
+    },
+    {
+      "path": ".graph/trauma-education/evidence/README.md",
+      "sha256": "d024dc12857963fcd88bf0c707ed186c4e06541f8322ce56549748f6142eb083"
+    },
+    {
+      "path": ".graph/trauma-education/evidence/source-register.json",
+      "sha256": "fc39990d461b3b67d66c81721864fa587a7c670d3997f2fd0e0d92a8e60f6633"
+    },
+    {
+      "path": ".graph/trauma-education/evidence/topic-locator-register.json",
+      "sha256": "2b0fdac401f5d45731c75cd9ed1aee695ee39392a8128f271572e67848ad35ec"
+    },
+    {
+      "path": ".graph/trauma-education/evidence/claims.json",
+      "sha256": "e58013e47539895ba6d284612d5d864b99154fe78fcdc958edcdadb9557ba7eb"
+    },
+    {
+      "path": ".graph/trauma-education/evidence/atomized-mini-module-claims.json",
+      "sha256": "a769edb64ae679d19c7159d040fabc56b0da10c9e0b7b4812e6db526a9f9902a"
+    },
+    {
+      "path": ".graph/trauma-education/evidence/atomized-pelvic-and-case-claims.json",
+      "sha256": "2bb71f9aef3d792c04e6476940bacd6bc5da8c042b004b0ce39feee218d2c90b"
+    },
+    {
+      "path": ".graph/trauma-education/evidence/atomized-core-course-claims.json",
+      "sha256": "03dafd2151e4d3fc08a95857a3577919d991b05e243f41dad317dc50b5bde75a"
+    },
+    {
+      "path": ".graph/trauma-education/evidence/release-decision.json",
+      "sha256": "aa7d814f1b92e06d7d830f773d021cd07de64187882c5415bb3395c63860d6d3"
+    },
+    {
+      "path": ".graph/trauma-education/evidence/atomization-backlog.md",
+      "sha256": "505059963def5106dcae5535de9efd1e7a5ff1c8cfd4871d3325689070a736a7"
+    },
+    {
+      "path": "docs/SOURCE_INDEX.md",
+      "sha256": "f32cbea1dce47d98c70bba260db2f17ad653463aac3aa4af3ee873ecbe0b5439"
+    },
+    {
+      "path": "docs/CLINICAL_SAFETY_BOUNDARY.md",
+      "sha256": "41f724035565970c29f3f1a1d1e4d62c758051580da3b35af7de47f14bee5858"
+    },
+    {
+      "path": "index.html",
+      "sha256": "22175f3ad91a8c234e0dc35ecbc4260c2092d33c3211fa771e0c01fba7d64d13"
+    }
+  ]
+}

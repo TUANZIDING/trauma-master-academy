@@ -1,0 +1,41 @@
+{
+  "id": "CASE-TRAUMA-PELVIC-SYN-001",
+  "course_id": "TRAUMA-ACADEMY-003",
+  "title_zh": "高能量钝性伤中的骨盆与隐匿出血风险",
+  "title_en": "Pelvic and Occult Bleeding Risk after High-Energy Blunt Trauma",
+  "mode": "progressive_reasoning_case",
+  "duration_min": 45,
+  "case_status": "synthetic_no_real_patient",
+  "review_status": "pending_clinician_review",
+  "source_type": "instructor_authored",
+  "source_refs": [
+    "NICE-NG39",
+    "WSES-PELVIC-TRAUMA-2017",
+    "EUROPEAN-MAJOR-BLEEDING-GUIDELINE-6E"
+  ],
+  "reasoning_chain": [
+    "prehospital_notification",
+    "known_suspected_feared",
+    "problem_representation",
+    "xabcde_priority",
+    "team_task_map",
+    "progressive_information_release",
+    "investigation_limits",
+    "resource_map",
+    "patient_and_system_reassessment",
+    "structured_handover"
+  ],
+  "safety_boundary": {
+    "allowed": ["observe", "report", "coordinate_resources", "reassess", "handover"],
+    "excluded": ["dose", "device_specification", "treatment_threshold", "procedure_step", "individualized_plan"]
+  },
+  "local_confirmation_required": [
+    "trauma_team_activation",
+    "pelvic_protection_workflow",
+    "imaging_pathway",
+    "blood_resource_activation",
+    "surgery_or_intervention_pathway",
+    "transfer_pathway"
+  ],
+  "last_source_check": "2026-07-16"
+}

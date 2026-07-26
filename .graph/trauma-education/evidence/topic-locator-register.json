@@ -1,0 +1,75 @@
+{
+  "register_version": 1,
+  "status": "topic_locators_recorded_for_limited_teaching_release",
+  "reviewed_on": "2026-07-19",
+  "purpose": "为既有专题主张保留可复核的指南、教材或官方页面定位。仅用于学生教学和模拟，不构成床旁诊疗指令或本院正式规程。",
+  "locators": [
+    {
+      "claim_id": "CLAIM-MINI-ABDOMEN-EFAST-INFO",
+      "topic": "腹部创伤中的连续查体、FAST/EFAST 信息边界与影像讨论",
+      "locators": [
+        {"source_id":"S-WSES-BOWEL-2022","location":"Blunt abdominal trauma: observation and nonoperative management, paragraphs beginning at the clinical assessment and recommendations 1–5.","locator_url":"https://doi.org/10.1186/s13017-022-00418-y","scope":"机制、连续查体、FAST 的信息边界和 CT 讨论；不用于发布处置算法。"},
+        {"source_id":"S-WSES-LIVER-2020","location":"Diagnosis section; E-FAST and CT discussion, including serial clinical evaluations.","locator_url":"https://doi.org/10.1186/s13017-020-00302-7","scope":"E-FAST 的作用与局限、影像与连续临床评估的教学性讨论。"},
+        {"source_id":"S-ACEP-FAST","location":"FAST Sonoguide landing page; exact subsection/page to be retained with any future content expansion.","locator_url":"https://www.acep.org/sonoguide/basic/fast","scope":"床旁超声教学角色的补充入口；不教授扫查步骤。"}
+      ],
+      "review_status":"locator_recorded; local resource pathway remains limited to approved trauma-center scenario"
+    },
+    {
+      "claim_id": "CLAIM-MINI-CHEST-MECHANICS",
+      "topic": "连枷胸机制、反常运动与呼吸功能风险",
+      "locators": [
+        {"source_id":"S-ACS-CHEST-2025","location":"Overview of Chest Wall Injuries, pp. 5–7; Rib Fractures and Flail Chest.","locator_url":"https://www.facs.org/media/qdgliayt/2025_tr_bestpracticesguidelines_chest-wall.pdf","scope":"解剖/生理连枷胸、反常胸廓运动、疼痛与呼吸功能风险的教学解释。"},
+        {"source_id":"S-SURGERY-TEXTBOOK-CN","location":"获授权《外科学》（第10版）中胸部损伤相关章节；页码待从教材目录/纸质版补录。","locator_url":"https://medu.pmph.com/readdetail/todetail.action?id=32523","scope":"国内教材对照；不取代专题指南。"}
+      ],
+      "review_status":"locator_recorded"
+    },
+    {
+      "claim_id": "CLAIM-MINI-CHEST-MANAGEMENT",
+      "topic": "胸壁损伤的连续肺功能复评、支持升级与稳定术评估框架",
+      "locators": [
+        {"source_id":"S-ACS-CHEST-2025","location":"Monitoring Pulmonary Function, p. 56; Initial Patient Management, p. 25; Indications for Surgical Stabilization of Rib Fractures, pp. 34–35.","locator_url":"https://www.facs.org/media/qdgliayt/2025_tr_bestpracticesguidelines_chest-wall.pdf","scope":"连续肺功能趋势、资源/团队评估和稳定术讨论的教学框架；不发布本地升级阈值或操作细节。"},
+        {"source_id":"S-WSES-AAST-THORACIC-2025","location":"Thoracic trauma WSES-AAST guidelines; official DOI record retained, section-level locator to be verified before any topic expansion.","locator_url":"https://doi.org/10.1186/s13017-025-00651-1","scope":"胸部创伤专题的补充国际指南依据。"},
+        {"source_id":"S-WSES-CWIS-SSRF-2024","location":"WSES/CWIS position paper; official DOI record retained, section-level locator to be verified before any topic expansion.","locator_url":"https://doi.org/10.1186/s13017-024-00559-2","scope":"肋骨骨折稳定术专题的补充依据。"}
+      ],
+      "review_status":"locator_recorded; local implementation remains excluded"
+    },
+    {
+      "claim_id": "CLAIM-PELVIC-FAST-LIMIT",
+      "topic": "骨盆/腹膜后出血担心中的 FAST 信息限制",
+      "locators": [
+        {"source_id":"S-NICE-NG39","location":"Recommendations 1.5.29–1.5.33, Haemorrhage imaging in hospital settings.","locator_url":"https://www.nice.org.uk/guidance/ng39/chapter/recommendations","scope":"FAST 的信息限制、阴性结果不能排除腹腔或腹膜后出血的教学性表述；不转化为处置路径。"},
+        {"source_id":"S-WSES-PELVIC-2017","location":"Pelvic trauma WSES classification and guidelines; exact subsection to be retained if pelvic module wording is materially expanded.","locator_url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC5241998/","scope":"骨盆机制、相关伤与资源地图的补充依据。"}
+      ],
+      "review_status":"locator_recorded; local activation criteria remain excluded"
+    },
+    {
+      "claim_id": "CLAIM-CASE-TRAUMA-004-FAST",
+      "topic": "多发伤与休克复评病例中的阴性 FAST/EFAST 限制语",
+      "locators": [
+        {"source_id":"S-AIUM-EFAST-2023","location":"AIUM EFAST practice-parameter record, published 2023-01-25; article DOI 10.1002/jum.16027 (year listed as 2022).","locator_url":"https://www.aium.org/resources/practice-parameters/efast","scope":"EFAST 检查与记录标准的官方入口；不用于教授扫描操作。"},
+        {"source_id":"S-NICE-NG39","location":"Recommendations 1.5.29–1.5.33, especially 1.5.30 on the limitation of a negative FAST.","locator_url":"https://www.nice.org.uk/guidance/ng39/chapter/recommendations","scope":"病例页面中“阴性 FAST 不排除所有出血担心”的教学限制语。"},
+        {"source_id":"S-EUROPEAN-BLEEDING-2023","location":"Sixth edition retained as the trauma-major-bleeding source; section-level locator must be added if the wording is materially changed.","locator_url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC9977110/","scope":"创伤出血与复评语境的补充依据。"}
+      ],
+      "review_status":"locator_recorded; no final etiologic adjudication for the real case"
+    },
+    {
+      "claim_id": "CLAIM-CASE-TRAUMA-004-ANAPHYLAXIS",
+      "topic": "病例中严重过敏反应作为教学鉴别与限制语",
+      "locators": [
+        {"source_id":"S-RCUK-2025","location":"2025 Special circumstances Guidelines, Management and prevention of cardiac arrest due to anaphylaxis subsection; published 2025-10-27.","locator_url":"https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/special-circumstances-guidelines","scope":"识别严重过敏反应及其紧急性的一般教学语境；课程不复制剂量或操作指令。"},
+        {"source_id":"S-ANAPHYLAXIS-PP-2023","location":"Golden et al., Anaphylaxis: A 2023 practice parameter update, Ann Allergy Asthma Immunol. 2024;132(2):124–176; DOI 10.1016/j.anai.2023.09.015; introduction and main text, pp. 4–5 onward.","locator_url":"https://pubmed.ncbi.nlm.nih.gov/38108678/","scope":"严重过敏反应专题的实践参数定位；不替代急诊、过敏、创伤及重症联合的病例审查。"},
+        {"source_id":"S-ANAPHYLAXIS-CHINA","location":"《药物不良反应杂志》2019, 21(2):85–91；DOI: 10.3760/cma.j.issn.1008-5734.2019.02.002。","locator_url":"https://www.cadrj.com/CN/abstract/abstract4178.shtml","scope":"严重过敏反应的国内教学性依据；不以该定位发布剂量、操作步骤或个体化方案。"}
+      ],
+      "review_status":"locator_recorded_with_chinese_primary_citation; teaching inference is not a final diagnosis"
+    },
+    {
+      "claim_id": "CLAIM-MINI-TBI-ACS-TBI-SOURCE",
+      "topic": "颅脑损伤中的连续神经评估、继发性损伤与影像边界",
+      "locators": [
+        {"source_id":"S-ACS-TBI-2024","location":"Best Practices Guidelines for the Management of Traumatic Brain Injury, Initial Assessment and Management, p. 7; repeated clinical neuromonitoring discussion; implementation section pp. 82–83 for trauma-center gap analysis context.","locator_url":"https://ww2.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf","scope":"连续神经评估、意识/瞳孔观察与团队复评的教学框架；不提供具体监护或治疗流程。"},
+        {"source_id":"S-SURGERY-TEXTBOOK-CN","location":"获授权《外科学》（第10版）中颅脑损伤相关章节；页码待从教材目录/纸质版补录。","locator_url":"https://medu.pmph.com/readdetail/todetail.action?id=32523","scope":"国内教材对照；不取代专题指南。"}
+      ],
+      "review_status":"locator_recorded"
+    }
+  ]
+}

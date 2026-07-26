@@ -1,0 +1,48 @@
+{
+  "references": [
+    {
+      "id": "ACS-ATLS-11-PUBLIC",
+      "name": "Advanced Trauma Life Support 11th Edition public page",
+      "organization": "American College of Surgeons",
+      "year": "current public page accessed for source index",
+      "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/",
+      "used_for": "Public source entry point for ATLS-related course framework review.",
+      "review_status": "source_index_pending_review",
+      "reviewer": "pending",
+      "review_date": "pending"
+    },
+    {
+      "id": "NICE-NG39",
+      "name": "Major trauma: assessment and initial management",
+      "organization": "NICE",
+      "year": "NG39",
+      "url": "https://www.nice.org.uk/guidance/NG39",
+      "used_for": "Public source entry point for major trauma assessment language review.",
+      "review_status": "source_index_pending_review",
+      "reviewer": "pending",
+      "review_date": "pending"
+    },
+    {
+      "id": "OBSIDIAN-TRAUMA-PATHWAY-03",
+      "name": "急诊创伤总流程路径",
+      "organization": "Local Obsidian knowledge base",
+      "year": "local note",
+      "url": "/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/03-急诊创伤总流程路径.md",
+      "used_for": "Structure input for xABCDE, pre-alert, handoff, reassessment, and resource map.",
+      "review_status": "pending_clinician_review",
+      "reviewer": "pending",
+      "review_date": "pending"
+    },
+    {
+      "id": "OBSIDIAN-CASE-001",
+      "name": "严重多发伤合并创伤性膈疝",
+      "organization": "Local Obsidian knowledge base",
+      "year": "local note",
+      "url": "/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/cases/CASE-TRAUMA-001-严重多发伤合并创伤性膈疝.md",
+      "used_for": "Teacher-only source candidate for future polytrauma reasoning; not copied into student page.",
+      "review_status": "pending_deidentification_review",
+      "reviewer": "pending",
+      "review_date": "pending"
+    }
+  ]
+}

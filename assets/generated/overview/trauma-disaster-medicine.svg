@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Trauma disaster medicine overview schematic</title>
+  <desc id="desc">Abstract teaching schematic showing trauma resuscitation and disaster medicine as connected system nodes without readable medical orders.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef8f5"/>
+      <stop offset="0.56" stop-color="#fffaf0"/>
+      <stop offset="1" stop-color="#f4f0e8"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" x2="1">
+      <stop offset="0" stop-color="#1f7a82"/>
+      <stop offset="1" stop-color="#2e9a9c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#1d2b36" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="620" rx="28" fill="url(#bg)"/>
+  <path d="M96 212 C214 96 347 96 464 214 S716 330 847 226 S1056 103 1122 202" fill="none" stroke="#d9e9e5" stroke-width="60" stroke-linecap="round" opacity="0.78"/>
+  <path d="M120 318 C240 218 360 214 486 318 S724 430 866 326 S1054 246 1110 336" fill="none" stroke="#e7d9bf" stroke-width="44" stroke-linecap="round" opacity="0.62"/>
+  <g filter="url(#shadow)">
+    <rect x="90" y="96" width="220" height="150" rx="22" fill="#ffffff"/>
+    <rect x="350" y="84" width="220" height="170" rx="22" fill="#ffffff"/>
+    <rect x="630" y="96" width="220" height="150" rx="22" fill="#ffffff"/>
+    <rect x="890" y="84" width="220" height="170" rx="22" fill="#ffffff"/>
+    <rect x="150" y="366" width="245" height="150" rx="22" fill="#ffffff"/>
+    <rect x="480" y="374" width="245" height="142" rx="22" fill="#ffffff"/>
+    <rect x="810" y="366" width="245" height="150" rx="22" fill="#ffffff"/>
+  </g>
+  <g fill="none" stroke="#1f7a82" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M310 170 H350"/>
+    <path d="M570 170 H630"/>
+    <path d="M850 170 H890"/>
+    <path d="M1000 254 C1005 326 960 366 910 366"/>
+    <path d="M810 442 H725"/>
+    <path d="M480 442 H395"/>
+    <path d="M200 366 C170 326 172 278 200 246"/>
+  </g>
+  <g fill="url(#teal)">
+    <circle cx="200" cy="168" r="42"/>
+    <circle cx="460" cy="168" r="42"/>
+    <circle cx="740" cy="168" r="42"/>
+    <circle cx="1000" cy="168" r="42"/>
+    <circle cx="272" cy="440" r="42"/>
+    <circle cx="602" cy="440" r="42"/>
+    <circle cx="932" cy="440" r="42"/>
+  </g>
+  <g fill="#ffffff" opacity="0.96">
+    <path d="M178 160 h44 v14 h-44z"/>
+    <path d="M196 138 h8 v52 h-8z"/>
+    <path d="M440 148 h40 v40 h-40z"/>
+    <path d="M452 136 h16 v16 h-16z"/>
+    <path d="M716 154 h48 v30 h-48z"/>
+    <path d="M728 138 h24 v16 h-24z"/>
+    <path d="M974 150 h52 v36 h-52z"/>
+    <path d="M986 138 h28 v12 h-28z"/>
+    <path d="M246 440 c16-22 36-22 52 0 c-16 22-36 22-52 0z"/>
+    <circle cx="272" cy="440" r="8"/>
+    <path d="M584 420 h36 v44 h-36z"/>
+    <path d="M592 412 h20 v10 h-20z"/>
+    <path d="M910 420 h44 v14 h-44z"/>
+    <path d="M910 446 h44 v14 h-44z"/>
+  </g>
+  <g opacity="0.55">
+    <rect x="134" y="214" width="132" height="12" rx="6" fill="#dfe7e2"/>
+    <rect x="394" y="214" width="132" height="12" rx="6" fill="#dfe7e2"/>
+    <rect x="674" y="214" width="132" height="12" rx="6" fill="#dfe7e2"/>
+    <rect x="934" y="214" width="132" height="12" rx="6" fill="#dfe7e2"/>
+    <rect x="206" y="486" width="132" height="12" rx="6" fill="#dfe7e2"/>
+    <rect x="536" y="486" width="132" height="12" rx="6" fill="#dfe7e2"/>
+    <rect x="866" y="486" width="132" height="12" rx="6" fill="#dfe7e2"/>
+  </g>
+  <rect x="70" y="556" width="1060" height="22" rx="11" fill="#1f7a82" opacity="0.78"/>
+</svg>

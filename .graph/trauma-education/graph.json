@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "graph_id": "trauma-education",
+  "classification": {
+    "mode": "graph",
+    "rationale": "平台的医学准确性、隐私、双语语义、教学体验与发布速度相互制约；内容作者不能自行证明医学主张、病例脱敏或发布资格，因而需要独立核验、反指标审计、仲裁、人工闸门与回滚责任。"
+  },
+  "root_goal": {
+    "statement": "在不提供床旁决策支持、不泄露病例信息、不弱化指南边界的前提下，使医学生能在标准化模拟中形成可报告的创伤问题表征、识别不确定性，并完成复评与交接。",
+    "owner": "课程负责人及指定创伤临床审核人（姓名隐匿，职务均为创伤方向主任医师）共同负责",
+    "success_definition": "仅在每个拟公开模块具有版本化来源、通过独立医学与隐私审核、通过双语语义复核和技术验证、并由指定人员书面批准后，才可作为学生可见版本发布；学习成效另由课程负责人以预先定义的教学评估审查。",
+    "out_of_scope": [
+      "床旁临床决策支持、诊断、处方、操作指导、急救指令或医疗器械功能",
+      "以来源索引、模型输出、自动化检查或多方一致替代临床批准",
+      "未经授权或未完成脱敏审核的真实病例、原始影像或可识别信息的公开发布"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "content-authoring",
+      "kind": "execution_loop",
+      "responsibility": "编写或修订教学结构、模拟信息释放、视觉和双语内容；为每项医学主张建立可追溯候选证据包。",
+      "owner": "课程内容编辑或受其监督的内容生成工具",
+      "cadence": "每次候选模块或修订",
+      "inputs": ["已冻结的安全边界", "已批准或待审的来源元数据", "获准使用的合成或脱敏教学材料"],
+      "outputs": ["候选模块版本", "主张-来源映射", "变更说明", "双语对照稿"]
+    },
+    {
+      "id": "clinical-source-verification",
+      "kind": "verification_loop",
+      "responsibility": "由未参与该候选内容撰写的临床审核人，核对主张与指定指南或教材的版本、适用范围、原文定位及保守表述；确认未把来源索引误作批准。",
+      "owner": "指定创伤临床审核人（姓名隐匿，创伤方向主任医师）",
+      "cadence": "每次医学主张新增、实质医学修订或来源版本变更",
+      "inputs": ["候选模块版本", "主张-来源映射", "来源版本与定位证据"],
+      "outputs": ["主张级核验记录", "通过、退回或升级意见"]
+    },
+    {
+      "id": "privacy-image-review",
+      "kind": "verification_loop",
+      "responsibility": "审查真实病例、Word 文档、影像、截图及元数据的授权范围、脱敏状态、可识别风险和公开适用性。",
+      "owner": "隐私/病例授权审核人（姓名隐匿，创伤方向主任医师）；影像内容由指定相关专科审核人复核",
+      "cadence": "每次真实病例、原始影像或派生教学资产进入候选版本",
+      "inputs": ["受限原始材料登记", "脱敏派生物", "授权与审查记录"],
+      "outputs": ["隐私与影像审查记录", "可用范围决定", "撤回或升级意见"]
+    },
+    {
+      "id": "bilingual-semantic-review",
+      "kind": "verification_loop",
+      "responsibility": "核对中英文是否保留相同的临床不确定性、证据强度、限制语和非床旁决策边界。",
+      "owner": "双语医学编辑或指定临床审核人（姓名隐匿，创伤方向主任医师）",
+      "cadence": "每次双语医学内容实质修订",
+      "inputs": ["中英文对照稿", "主张级核验记录", "安全边界"],
+      "outputs": ["双语语义复核记录", "差异清单", "通过或退回意见"]
+    },
+    {
+      "id": "technical-validation",
+      "kind": "verification_loop",
+      "responsibility": "执行静态结构、链接、资源、语言配对和构建检查；仅验证实现完整性，不判断医学正确性或发布资格。",
+      "owner": "技术维护人或确定性验证脚本",
+      "cadence": "每次候选发布",
+      "inputs": ["候选代码版本", "验证脚本", "构建产物"],
+      "outputs": ["可复现验证报告", "失败清单", "代码版本标识"]
+    },
+    {
+      "id": "release-risk-verification",
+      "kind": "verification_loop",
+      "responsibility": "独立复核反指标审计提出的发布风险：确认页面数量、视觉效果、答题完成率或自动测试通过率未被用来掩盖教学、安全、隐私或证据退化。",
+      "owner": "未参与该候选模块撰写的课程质量审核人（姓名待指定）",
+      "cadence": "每次公开发布前；发生学习、安全或隐私事件时",
+      "inputs": ["反指标审计记录", "候选模块", "学习者反馈和事件记录"],
+      "outputs": ["发布风险复核记录", "通过、退回或升级意见"]
+    },
+    {
+      "id": "counter-metric-audit",
+      "kind": "counter_metric_loop",
+      "responsibility": "识别以页面数量、视觉丰富度、答题完成率或自动校验通过率替代真实学习、安全或隐私质量的风险。",
+      "owner": "课程负责人（姓名待指定）",
+      "cadence": "每次公开发布前及发布后定期复盘",
+      "inputs": ["候选或已发布版本", "学习者反馈", "审查记录", "不良内容或隐私事件记录"],
+      "outputs": ["反指标审计记录", "风险趋势", "暂停或改版建议"]
+    },
+    {
+      "id": "source-currency-audit",
+      "kind": "audit_loop",
+      "responsibility": "检查来源链接、版本、范围、更新时间及本院流程确认状态是否衰减；重新触发受影响模块的医学审核。",
+      "owner": "课程负责人指定的证据维护人（姓名待指定）",
+      "cadence": "每次来源更新通知、定期复核或发布前",
+      "inputs": ["来源登记", "来源检查日期", "版本更新线索", "本地流程确认记录"],
+      "outputs": ["来源时效审计记录", "受影响模块清单", "重新审核或暂停建议"]
+    },
+    {
+      "id": "clinical-safety-anchor",
+      "kind": "anchor",
+      "responsibility": "提供不可被内容生成或发布循环自行改写的教学安全边界。",
+      "owner": "课程负责人和指定创伤临床审核人共同维护；变更须书面批准",
+      "cadence": "仅在获批修订时",
+      "inputs": ["已批准的安全边界文件"],
+      "outputs": ["冻结的禁止项与允许教学语言"]
+    },
+    {
+      "id": "guideline-source-anchor",
+      "kind": "anchor",
+      "responsibility": "保存每项主张所依赖的指南或教材的组织、版本、范围、稳定定位、检查日期和本地适用性状态。",
+      "owner": "指定创伤临床审核人（姓名待指定）",
+      "cadence": "每次主张审核或来源时效复核",
+      "inputs": ["来源原件或官方入口", "版本与范围证据"],
+      "outputs": ["冻结的来源元数据与主张定位"]
+    },
+    {
+      "id": "case-provenance-anchor",
+      "kind": "anchor",
+      "responsibility": "保存真实病例、影像与派生教学资产的受限来源、授权、脱敏审核和展示范围；无批准记录不得进入公开版本。",
+      "owner": "隐私/病例授权审核人（姓名待指定）",
+      "cadence": "每次真实材料摄入、变更或公开范围变化",
+      "inputs": ["原始材料登记", "授权记录", "脱敏审核记录"],
+      "outputs": ["受限病例使用记录与批准范围"]
+    },
+    {
+      "id": "release-evidence-anchor",
+      "kind": "anchor",
+      "responsibility": "保存候选发布的代码版本、可复现验证报告、人工审查记录和批准决定。",
+      "owner": "技术维护人和课程负责人",
+      "cadence": "每次发布、撤回或回滚",
+      "inputs": ["版本标识", "验证报告", "审批记录"],
+      "outputs": ["可审计发布证据包"]
+    },
+    {
+      "id": "release-arbitration",
+      "kind": "arbitration",
+      "responsibility": "在教学完整性、医学证据、隐私、双语一致性、技术状态和发布时效冲突时作出书面决定。",
+      "owner": "课程负责人（姓名隐匿，创伤方向主任医师）；医学与隐私事项具有否决权的审核人共同参与",
+      "cadence": "验证结论冲突、风险升级或发布前",
+      "inputs": ["各核验与审计记录", "候选版本", "冻结锚点"],
+      "outputs": ["批准、退回、暂停、撤回或升级决定及理由"]
+    },
+    {
+      "id": "clinical-release-gate",
+      "kind": "human_gate",
+      "responsibility": "批准或拒绝每个学生可见医学模块的公开发布；不得由 AI、来源索引或自动化测试代替。",
+      "owner": "指定创伤临床审核人及课程负责人（姓名隐匿，职务均为创伤方向主任医师）",
+      "cadence": "每次公开发布或实质医学修订",
+      "inputs": ["主张级核验记录", "双语复核记录", "安全边界符合性", "仲裁决定"],
+      "outputs": ["带日期、版本和范围的书面批准或拒绝"]
+    },
+    {
+      "id": "privacy-release-gate",
+      "kind": "human_gate",
+      "responsibility": "批准或拒绝真实病例、影像及其派生资产在指定展示范围内使用。",
+      "owner": "隐私/病例授权审核人（姓名隐匿，创伤方向主任医师）；影像内容须相关专科审核人确认",
+      "cadence": "每次涉及真实病例或影像的发布",
+      "inputs": ["病例来源与授权记录", "脱敏审查记录", "候选展示资产"],
+      "outputs": ["带展示范围的书面批准或拒绝"]
+    },
+    {
+      "id": "local-policy-gate",
+      "kind": "human_gate",
+      "responsibility": "确认任何声称或暗示本院流程、资源调用或本地规则的内容是否可在教学中使用。",
+      "owner": "本院流程授权负责人（姓名隐匿，创伤方向主任医师）",
+      "cadence": "每次本地流程主张新增或变更",
+      "inputs": ["候选本地流程文字", "现行本院流程版本"],
+      "outputs": ["本地适用性确认、限制或拒绝"]
+    },
+    {
+      "id": "publication-stop-handoff",
+      "kind": "stop_handoff",
+      "responsibility": "在停止条件触发时冻结发布、下线受影响版本、保留证据、通知责任人并明确恢复条件。",
+      "owner": "课程负责人和技术维护人；医学、隐私或授权问题分别移交相应审核人",
+      "cadence": "事件驱动",
+      "inputs": ["失败信号", "已发布版本与证据包", "风险分级"],
+      "outputs": ["暂停/回滚记录", "升级通知", "恢复前待办与责任人"]
+    }
+  ],
+  "edges": [
+    {"from": "clinical-safety-anchor", "to": "content-authoring", "relation": "constrains", "artifact": "冻结的安全边界与禁止项"},
+    {"from": "guideline-source-anchor", "to": "content-authoring", "relation": "constrains", "artifact": "版本化来源元数据、适用范围与主张定位"},
+    {"from": "case-provenance-anchor", "to": "content-authoring", "relation": "constrains", "artifact": "病例和影像的批准展示范围"},
+    {"from": "content-authoring", "to": "clinical-source-verification", "relation": "feeds", "artifact": "候选模块、主张-来源映射与变更说明"},
+    {"from": "content-authoring", "to": "privacy-image-review", "relation": "feeds", "artifact": "候选真实病例/影像资产及其来源记录"},
+    {"from": "content-authoring", "to": "bilingual-semantic-review", "relation": "feeds", "artifact": "中英文对照稿和不确定性/限制语"},
+    {"from": "content-authoring", "to": "technical-validation", "relation": "feeds", "artifact": "候选代码版本和构建产物"},
+    {"from": "clinical-source-verification", "to": "release-arbitration", "relation": "verifies", "artifact": "主张级医学与来源核验记录"},
+    {"from": "privacy-image-review", "to": "release-arbitration", "relation": "verifies", "artifact": "隐私、授权与影像审查记录"},
+    {"from": "bilingual-semantic-review", "to": "release-arbitration", "relation": "verifies", "artifact": "双语语义复核记录"},
+    {"from": "technical-validation", "to": "release-arbitration", "relation": "verifies", "artifact": "可复现技术验证报告"},
+    {"from": "counter-metric-audit", "to": "release-arbitration", "relation": "observes", "artifact": "教学、安全、隐私与质量反指标审计"},
+    {"from": "counter-metric-audit", "to": "release-risk-verification", "relation": "feeds", "artifact": "待复核的反指标、反馈和事件线索"},
+    {"from": "release-risk-verification", "to": "release-arbitration", "relation": "verifies", "artifact": "独立发布风险复核记录"},
+    {"from": "source-currency-audit", "to": "release-arbitration", "relation": "observes", "artifact": "来源时效审计与受影响模块清单"},
+    {"from": "release-arbitration", "to": "clinical-release-gate", "relation": "arbitrates", "artifact": "发布建议、冲突与书面理由"},
+    {"from": "release-arbitration", "to": "privacy-release-gate", "relation": "arbitrates", "artifact": "真实材料的展示范围建议"},
+    {"from": "local-policy-gate", "to": "clinical-release-gate", "relation": "constrains", "artifact": "本地流程适用性确认或限制"},
+    {"from": "clinical-release-gate", "to": "release-evidence-anchor", "relation": "anchors", "artifact": "带日期、版本和范围的医学发布决定"},
+    {"from": "privacy-release-gate", "to": "release-evidence-anchor", "relation": "anchors", "artifact": "带展示范围的病例/影像使用决定"},
+    {"from": "technical-validation", "to": "release-evidence-anchor", "relation": "anchors", "artifact": "可复现验证报告与代码版本"},
+    {"from": "source-currency-audit", "to": "clinical-source-verification", "relation": "escalates", "artifact": "来源衰减或版本变更警报"},
+    {"from": "clinical-source-verification", "to": "publication-stop-handoff", "relation": "escalates", "artifact": "无法核验、范围不符或高风险医学主张"},
+    {"from": "privacy-image-review", "to": "publication-stop-handoff", "relation": "escalates", "artifact": "脱敏、授权或影像审查失败"},
+    {"from": "bilingual-semantic-review", "to": "publication-stop-handoff", "relation": "escalates", "artifact": "实质语义不一致或安全边界偏移"},
+    {"from": "technical-validation", "to": "publication-stop-handoff", "relation": "escalates", "artifact": "发布前验证失败"},
+    {"from": "counter-metric-audit", "to": "publication-stop-handoff", "relation": "escalates", "artifact": "发布后教学、安全、隐私或误导风险信号"},
+    {"from": "publication-stop-handoff", "to": "release-arbitration", "relation": "hands_off", "artifact": "回滚状态、证据包、恢复条件和责任人"}
+  ],
+  "anchors": [
+    {"node_id": "clinical-safety-anchor", "evidence": "docs/CLINICAL_SAFETY_BOUNDARY.md 的已批准版本及变更记录", "source": "项目安全边界；不得由内容生成、验证脚本或发布循环自行改写", "owner": "课程负责人和指定创伤临床审核人", "freshness_rule": "每次安全边界拟修改前；每次发布前确认版本未变", "frozen": true},
+    {"node_id": "guideline-source-anchor", "evidence": "每项主张的官方来源/授权教材定位、组织、版本、范围、检查日期和本地适用性记录", "source": "官方指南页面、已获授权教材或经批准的原始资料；来源索引本身不构成批准", "owner": "指定创伤临床审核人", "freshness_rule": "每次主张新增、来源更新或发布前；按来源时效审计触发复核", "frozen": true},
+    {"node_id": "case-provenance-anchor", "evidence": "原始病例受限登记、授权、脱敏审核、影像专科审查和允许展示范围", "source": "用户提供材料与相应人工审查记录；原始材料不由内容作者自行认定为脱敏", "owner": "隐私/病例授权审核人", "freshness_rule": "每次使用、派生、展示范围变更或发现识别风险时", "frozen": true},
+    {"node_id": "release-evidence-anchor", "evidence": "代码版本、验证报告、主张核验、双语复核、隐私审批和正式发布决定", "source": "可复现技术输出与签署的人工审查记录，二者均须可追溯至候选版本", "owner": "技术维护人和课程负责人", "freshness_rule": "每次候选发布、回滚、撤回和恢复前", "frozen": true}
+  ],
+  "governance": {
+    "arbitration": {
+      "owner": "课程负责人（姓名隐匿，创伤方向主任医师）；医学、隐私/授权和本地流程审核人对各自范围内风险具有否决权",
+      "priority_policy": "患者安全、隐私、授权和证据边界优先于发布速度、视觉丰富度、页面数量和答题完成率；无法消除的实质中英文差异按医学内容风险处理；任何否决未获书面解除前不得发布。"
+    },
+    "goal_change": "human_approval",
+    "frozen_items": ["根目标及其范围", "临床安全边界", "来源版本和主张定位", "真实病例/影像授权与脱敏范围", "发布门槛", "审批与否决权限", "验证脚本对应的发布证据"],
+    "approval_required": ["根目标、锚点、安全边界、发布门槛或权限的任何修改", "每个学生可见医学模块的首次公开和实质医学修订", "任何真实病例、原始影像或派生影像的展示", "任何本院流程、资源调用或本地规则表述", "影响医学不确定性或限制语的实质双语改动", "公开发布、恢复发布或回滚后重新上线"],
+    "stop_conditions": {
+      "success": "仅表示合同层面可结束：所有节点、锚点、边和审批责任已记录，结构验证通过，且合同状态仍为 designed；这不等同于医学或公开发布批准。",
+      "failed": "候选版本包含无法移除的禁止性床旁决策语言、已确认的隐私/授权违规、无法修复的结构性验证失败，或有人为审核拒绝后仍试图发布。",
+      "blocked": "缺少主张级来源/版本/范围、临床批准、脱敏/授权审查、本院流程确认、影像专科意见或实质双语复核，且无法以删除或改写该内容解除。",
+      "budget_exhausted": "在本轮既定审查资源或时间结束时仍未取得所需人工批准；候选版本保持未发布或回滚状态，并移交下一责任人。"
+    }
+  },
+  "verification": {
+    "independence_statement": "内容作者或生成工具不能担任其自身医学主张、真实病例脱敏、双语安全语义或公开发布的最终审核者。临床核验须使用官方/授权来源及独立临床判断；隐私核验须使用受限原始材料、授权和脱敏记录；技术验证仅提供可复现实现证据，不能替代前两者。",
+    "checks": [
+      {"criterion": "每项学生可见医学主张有适用的组织、版本、范围和原文定位，且表述不超出证据边界", "verifier_node": "clinical-source-verification", "evidence": "主张级核验记录", "failure_signal": "来源缺失、版本/范围不符、仅有索引链接、或审核人要求退回"},
+      {"criterion": "真实病例、Word 文档、CT/影像及派生资产在预定展示范围内已获授权并完成脱敏与专科审查", "verifier_node": "privacy-image-review", "evidence": "授权、脱敏和影像审查记录", "failure_signal": "可识别风险、授权范围不明、待脱敏或待专科审核"},
+      {"criterion": "中英文保留相同的风险、限制、不确定性和非床旁决策边界", "verifier_node": "bilingual-semantic-review", "evidence": "带版本的双语差异与处置记录", "failure_signal": "实质语义偏移、错误强度或安全边界不一致"},
+      {"criterion": "候选网站的结构、资源、语言配对和规定技术检查通过", "verifier_node": "technical-validation", "evidence": "可复现的 npm run validate 输出和代码版本", "failure_signal": "验证脚本非零退出、必需资源/链接/语言结构异常"},
+      {"criterion": "没有用页面数量、视觉效果、通过率或自动测试通过掩盖教学、安全、隐私或证据退化", "verifier_node": "release-risk-verification", "evidence": "独立发布风险复核及其反指标审计、学习者/审核反馈", "failure_signal": "错误理解、误导性表述、隐私事件、引用过期或以代理指标替代根目标"}
+    ]
+  }
+}

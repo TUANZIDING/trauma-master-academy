@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">MASS-CASUALTY DYNAMICS: DEMAND VS AVAILABLE RESOURCES</title>
+  <desc id="desc">Teaching schematic showing casualty demand rising above available health-system resources without treatment thresholds or triage conclusions.</desc>
+  <rect width="1200" height="760" fill="#fbf7ef"/>
+  <rect x="46" y="42" width="1108" height="676" rx="18" fill="#fff" stroke="#dfe7e2" stroke-width="3"/>
+  <text x="82" y="105" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#102033">MASS-CASUALTY DYNAMICS</text>
+  <text x="82" y="145" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1f7a7e">DEMAND VS AVAILABLE RESOURCES</text>
+  <line x1="150" y1="590" x2="1035" y2="590" stroke="#102033" stroke-width="4"/>
+  <line x1="150" y1="590" x2="150" y2="205" stroke="#102033" stroke-width="4"/>
+  <path d="M170 552 C300 515 390 420 500 362 C650 284 805 230 1020 178" fill="none" stroke="#9b1c1f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M170 520 C330 500 460 490 590 482 C760 472 895 468 1020 462" fill="none" stroke="#1f7a7e" stroke-width="12" stroke-linecap="round"/>
+  <rect x="740" y="258" width="300" height="110" rx="14" fill="#fff8e8" stroke="#e4c47a" stroke-width="3"/>
+  <text x="766" y="302" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#784d11">IMBALANCE ZONE</text>
+  <text x="766" y="338" font-family="Arial, sans-serif" font-size="18" fill="#334155">Needs exceed usual resources</text>
+  <circle cx="330" cy="510" r="16" fill="#1f7a7e"/>
+  <circle cx="600" cy="474" r="16" fill="#1f7a7e"/>
+  <circle cx="860" cy="468" r="16" fill="#1f7a7e"/>
+  <circle cx="330" cy="472" r="16" fill="#9b1c1f"/>
+  <circle cx="600" cy="304" r="16" fill="#9b1c1f"/>
+  <circle cx="860" cy="214" r="16" fill="#9b1c1f"/>
+  <text x="185" y="645" font-family="Arial, sans-serif" font-size="18" fill="#475569">Time / event evolution</text>
+  <text x="72" y="245" font-family="Arial, sans-serif" font-size="18" fill="#475569" transform="rotate(-90 72 245)">Load on system</text>
+  <text x="200" y="690" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1f7a7e">Available resources</text>
+  <text x="505" y="690" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#9b1c1f">Casualty demand</text>
+  <text x="780" y="690" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#102033">Reassess both curves</text>
+</svg>

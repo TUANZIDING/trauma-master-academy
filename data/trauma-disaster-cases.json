@@ -1,0 +1,165 @@
+{
+  "cases": [
+    {
+      "id": "CASE-TRAUMA-DISASTER-SYN-001",
+      "title_zh": "高速交通伤：院前预警到早期复评",
+      "title_en": "High-speed transport injury: pre-alert to early reassessment",
+      "case_type": "synthetic teaching case",
+      "mode": "challenge",
+      "duration_min": 45,
+      "review_status": "pending_clinician_review",
+      "source_type": "teaching_illustration",
+      "source_refs": ["lesson-1", "lesson-2"],
+      "deidentification_status": "synthetic_no_real_patient",
+      "trigger_zh": "32岁男性，高速交通伤。院前报告提示烦躁、呼吸急促、右下肢活动性出血。预计2分钟后到达。",
+      "trigger_en": "A 32-year-old man after high-speed traffic injury. Prehospital report notes agitation, rapid breathing, and active right lower-limb bleeding. Arrival is expected in 2 minutes.",
+      "monitor": {
+        "HR": "trend elevated",
+        "BP": "trend concerning",
+        "SpO2": "trend vulnerable",
+        "RR": "trend increased",
+        "GCS": "watch change",
+        "Temperature": "warming risk",
+        "Elapsed Time": "0 min"
+      },
+      "stages": [
+        {
+          "id": "pre-alert",
+          "title_zh": "院前预警",
+          "title_en": "Pre-alert",
+          "information_zh": "机制和途中表现提示需要完整团队准备，但仍有许多未知信息。",
+          "information_en": "The mechanism and en-route appearance suggest whole-team readiness, with many unknowns remaining.",
+          "preferred_choice_zh": "建立创伤团队角色、共享 xABCDE 板和资源准备语言。",
+          "preferred_choice_en": "Set trauma-team roles, a shared xABCDE board, and resource-readiness language.",
+          "unsafe_choice_zh": "只围绕单一损伤区域准备。",
+          "unsafe_choice_en": "Prepare around only one suspected injury region.",
+          "feedback_zh": "单线准备会削弱团队对外出血、气道、呼吸和循环的并行关注。",
+          "feedback_en": "Single-lane preparation weakens parallel attention to external bleeding, airway, breathing, and circulation.",
+          "state_delta": {
+            "elapsedTime": "time used for team readiness",
+            "patient": "risk remains incompletely characterized"
+          }
+        },
+        {
+          "id": "arrival",
+          "title_zh": "到院交接",
+          "title_en": "Arrival handoff",
+          "information_zh": "可见出血、呼吸表现和躁动信息同时进入团队画面。",
+          "information_en": "Visible bleeding, breathing appearance, and agitation enter the team picture together.",
+          "preferred_choice_zh": "用观察事实报告 x/B/C 相关担心，并请团队复述已知和未知。",
+          "preferred_choice_en": "Report observed x/B/C concerns and ask the team to restate knowns and unknowns.",
+          "unsafe_choice_zh": "在团队共享信息前直接选择全身 CT。",
+          "unsafe_choice_en": "Choose whole-body CT before the team has shared the information picture.",
+          "feedback_zh": "过早跳到单一资源会造成时间消耗，并使立即威胁和复评问题被后移。",
+          "feedback_en": "Jumping early to one resource consumes time and pushes immediate threats and reassessment questions backward.",
+          "state_delta": {
+            "elapsedTime": "delay signal",
+            "patient": "trend more concerning"
+          }
+        },
+        {
+          "id": "reassessment",
+          "title_zh": "早期复评",
+          "title_en": "Early reassessment",
+          "information_zh": "团队行动和新信息出现后，学习者需要说明哪些风险改变，哪些仍未解决。",
+          "information_en": "After team action and new information, the learner explains what changed and what remains unresolved.",
+          "preferred_choice_zh": "回到 xABCDE，报告改善、恶化或仍不确定的趋势。",
+          "preferred_choice_en": "Return to xABCDE and report improved, worsened, or still-uncertain trends.",
+          "unsafe_choice_zh": "把一次行动后的短暂变化当作结束点。",
+          "unsafe_choice_en": "Treat a short change after one action as the end point.",
+          "feedback_zh": "创伤初评是循环语言，新的信息会让团队重新排序。",
+          "feedback_en": "Trauma primary survey is loop language; new information can reorder the team picture.",
+          "state_delta": {
+            "elapsedTime": "reassessment cycle",
+            "patient": "requires continued trend watching"
+          }
+        }
+      ],
+      "boundary": "Educational simulation only; not patient-specific guidance, treatment protocol, or local pathway."
+    },
+    {
+      "id": "CASE-TRAUMA-DISASTER-SYN-002",
+      "title_zh": "公共场所爆炸伴局部坍塌",
+      "title_en": "Public-space explosion with partial structural collapse",
+      "case_type": "synthetic disaster simulation",
+      "mode": "instructor",
+      "duration_min": 45,
+      "review_status": "pending_clinician_review",
+      "source_type": "teaching_illustration",
+      "source_refs": ["lesson-3", "lesson-4"],
+      "deidentification_status": "synthetic_no_real_patient",
+      "system_state": {
+        "casualties": "first wave 8; later number unknown",
+        "resuscitation_bays": "limited",
+        "operating_rooms": "limited",
+        "blood_products": "limited",
+        "available_teams": "limited",
+        "ambulances": "strained",
+        "icu_beds": "limited",
+        "transfer_capacity": "requires coordination"
+      },
+      "patients": [
+        {
+          "id": "P1",
+          "summary_zh": "活动性大出血和休克风险",
+          "summary_en": "Active major bleeding and shock risk",
+          "status": "high concern",
+          "triage_algorithm_status": "pending_course_lead_confirmation",
+          "review_status": "pending_clinician_review"
+        },
+        {
+          "id": "P2",
+          "summary_zh": "呼吸困难和单侧呼吸音消失线索",
+          "summary_en": "Breathing difficulty and unilateral breath-sound concern",
+          "status": "high concern",
+          "triage_algorithm_status": "pending_course_lead_confirmation",
+          "review_status": "pending_clinician_review"
+        },
+        {
+          "id": "P3",
+          "summary_zh": "稳定闭合骨折",
+          "summary_en": "Stable closed fracture",
+          "status": "resource planning",
+          "triage_algorithm_status": "pending_course_lead_confirmation",
+          "review_status": "pending_clinician_review"
+        },
+        {
+          "id": "P4",
+          "summary_zh": "轻伤且能够行走",
+          "summary_en": "Minor injury and able to walk",
+          "status": "low immediate concern",
+          "triage_algorithm_status": "pending_course_lead_confirmation",
+          "review_status": "pending_clinician_review"
+        },
+        {
+          "id": "P5",
+          "summary_zh": "严重颅脑损伤和高资源需求",
+          "summary_en": "Severe traumatic brain injury concern and high resource need",
+          "status": "high resource need",
+          "triage_algorithm_status": "pending_course_lead_confirmation",
+          "review_status": "pending_clinician_review"
+        },
+        {
+          "id": "P6",
+          "summary_zh": "腹部损伤，早期稳定后恶化",
+          "summary_en": "Abdominal injury concern with later deterioration",
+          "status": "reassessment priority",
+          "triage_algorithm_status": "pending_course_lead_confirmation",
+          "review_status": "pending_clinician_review"
+        }
+      ],
+      "learner_tasks": [
+        "Activate response",
+        "Assign roles",
+        "Triage casualties",
+        "Allocate resources",
+        "Perform xABCDE",
+        "Request support",
+        "Arrange transport",
+        "Reassess priorities",
+        "Conduct handover"
+      ],
+      "boundary": "This scenario teaches system reasoning and resource discussion. It does not define a triage algorithm or hospital command policy."
+    }
+  ]
+}

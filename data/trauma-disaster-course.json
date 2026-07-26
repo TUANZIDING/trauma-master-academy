@@ -1,0 +1,188 @@
+{
+  "course": {
+    "id": "TRAUMA-ACADEMY-005",
+    "title_zh": "创伤急救与灾难医学总论",
+    "title_en": "Introduction to Trauma Resuscitation and Disaster Medicine",
+    "duration_min": 180,
+    "lesson_count": 4,
+    "release_state": "GO_WITH_CLINICAL_REVIEW",
+    "review_status": "pending_clinician_review",
+    "modes": [
+      {
+        "id": "learner",
+        "title_zh": "学员自主学习",
+        "title_en": "Learner Mode",
+        "mode": "learner",
+        "duration_min": 180,
+        "review_status": "pending_clinician_review",
+        "source_type": "instructor_authored",
+        "source_refs": ["COURSE-DESIGN-TRAUMA-DISASTER"]
+      },
+      {
+        "id": "challenge",
+        "title_zh": "病例挑战",
+        "title_en": "Case Challenge Mode",
+        "mode": "challenge",
+        "duration_min": 180,
+        "review_status": "pending_clinician_review",
+        "source_type": "teaching_illustration",
+        "source_refs": ["CASE-TRAUMA-DISASTER-SYN-001", "CASE-TRAUMA-DISASTER-SYN-002"]
+      },
+      {
+        "id": "instructor",
+        "title_zh": "教师授课",
+        "title_en": "Instructor Mode",
+        "mode": "instructor",
+        "duration_min": 180,
+        "review_status": "pending_local_confirmation",
+        "source_type": "local_protocol",
+        "source_refs": ["LOCAL-PROTOCOL-PENDING"]
+      }
+    ]
+  },
+  "audience": [
+    "interns",
+    "residents",
+    "standardized trainees",
+    "visiting clinicians",
+    "simulation instructors"
+  ],
+  "learning_objectives": [
+    {
+      "id": "TD-OBJ-001",
+      "title_zh": "用优先级语言描述创伤急救",
+      "title_en": "Describe trauma resuscitation through priority language",
+      "review_status": "source_index_pending_review",
+      "source_type": "guideline_verified",
+      "source_refs": ["ACS-ATLS-PUBLIC", "NICE-NG39"]
+    },
+    {
+      "id": "TD-OBJ-002",
+      "title_zh": "区分观察、报告、资源协调和复评",
+      "title_en": "Separate observation, reporting, resource coordination, and reassessment",
+      "review_status": "pending_clinician_review",
+      "source_type": "instructor_authored",
+      "source_refs": ["XABCDE-DESIGN-SYSTEM"]
+    },
+    {
+      "id": "TD-OBJ-003",
+      "title_zh": "解释灾难场景中的需求-资源失衡",
+      "title_en": "Explain demand-resource imbalance during disaster scenarios",
+      "review_status": "source_required",
+      "source_type": "pending_review",
+      "source_refs": ["WHO-MASS-CASUALTY", "ACS-DISASTER-STATEMENT"]
+    },
+    {
+      "id": "TD-OBJ-004",
+      "title_zh": "在综合推演中复评患者与系统优先级",
+      "title_en": "Reassess patient and system priorities in integrated simulation",
+      "review_status": "pending_clinician_review",
+      "source_type": "teaching_illustration",
+      "source_refs": ["CASE-TRAUMA-DISASTER-SYN-002"]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson-1",
+      "title_zh": "创伤急救总论与 xABCDE 思维",
+      "title_en": "Trauma Care Principles and the xABCDE Approach",
+      "duration_min": 45,
+      "mode": "all",
+      "review_status": "source_index_pending_review",
+      "source_type": "guideline_verified",
+      "source_refs": ["ACS-ATLS-PUBLIC", "NICE-NG39", "XABCDE-ASSETS"],
+      "sections": [
+        "learning_objectives",
+        "pre_class_questions",
+        "clinical_trigger",
+        "visual_explanation",
+        "guided_reasoning",
+        "decision_point",
+        "system_response",
+        "reassessment",
+        "take_home_messages",
+        "formative_assessment",
+        "references",
+        "review_status"
+      ]
+    },
+    {
+      "id": "lesson-2",
+      "title_zh": "立即致命创伤与早期复苏",
+      "title_en": "Immediate Life Threats and Early Trauma Resuscitation",
+      "duration_min": 45,
+      "mode": "all",
+      "review_status": "pending_clinician_review",
+      "source_type": "instructor_authored",
+      "source_refs": ["CASE-TRAUMA-DISASTER-SYN-001", "ACS-ATLS-PUBLIC", "NICE-NG39"],
+      "sections": [
+        "x",
+        "airway",
+        "breathing",
+        "circulation",
+        "disability",
+        "exposure",
+        "continuous_reassessment"
+      ]
+    },
+    {
+      "id": "lesson-3",
+      "title_zh": "灾难医学总论与批量伤员响应",
+      "title_en": "Principles of Disaster Medicine and Mass-Casualty Response",
+      "duration_min": 45,
+      "mode": "all",
+      "review_status": "pending_local_confirmation",
+      "source_type": "pending_review",
+      "source_refs": ["WHO-MASS-CASUALTY", "ACS-DISASTER-STATEMENT", "LOCAL-PROTOCOL-PENDING"],
+      "sections": [
+        "disaster_versus_major_incident",
+        "demand_resource_imbalance",
+        "scene_safety",
+        "incident_command",
+        "mass_casualty_triage",
+        "hospital_surge",
+        "communication",
+        "transport_distribution",
+        "resource_allocation",
+        "continuous_reassessment"
+      ]
+    },
+    {
+      "id": "lesson-4",
+      "title_zh": "创伤与灾难医学综合推演",
+      "title_en": "Integrated Trauma and Disaster Simulation",
+      "duration_min": 45,
+      "mode": "all",
+      "review_status": "pending_clinician_review",
+      "source_type": "teaching_illustration",
+      "source_refs": ["CASE-TRAUMA-DISASTER-SYN-002"],
+      "sections": [
+        "activate_response",
+        "assign_roles",
+        "triage_casualties",
+        "allocate_resources",
+        "perform_xabcde",
+        "request_support",
+        "arrange_transport",
+        "reassess_priorities",
+        "conduct_handover"
+      ]
+    }
+  ],
+  "medical_boundary": {
+    "allowed": [
+      "observe cues",
+      "report shared language",
+      "coordinate resources",
+      "ask reassessment questions"
+    ],
+    "forbidden": [
+      "drug doses",
+      "device sizes",
+      "oxygen or ventilator settings",
+      "numeric action thresholds",
+      "bedside treatment algorithms",
+      "local activation criteria presented as fact"
+    ]
+  }
+}

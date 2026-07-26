@@ -1,0 +1,70 @@
+{
+  "references": [
+    {
+      "id": "ACS-ATLS-PUBLIC",
+      "name": "Advanced Trauma Life Support public program page",
+      "organization": "American College of Surgeons",
+      "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/",
+      "used_for": "Public source entry for systematic early trauma care language.",
+      "review_status": "source_index_pending_review",
+      "source_type": "guideline_verified",
+      "reviewer": "pending",
+      "review_date": "pending"
+    },
+    {
+      "id": "NICE-NG39",
+      "name": "Major trauma: assessment and initial management",
+      "organization": "NICE",
+      "url": "https://www.nice.org.uk/guidance/ng39",
+      "used_for": "Public source entry for major trauma assessment and initial management review.",
+      "review_status": "source_index_pending_review",
+      "source_type": "guideline_verified",
+      "reviewer": "pending",
+      "review_date": "pending"
+    },
+    {
+      "id": "WHO-MASS-CASUALTY",
+      "name": "Mass Casualty Management",
+      "organization": "World Health Organization",
+      "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/mass-casualty-management",
+      "used_for": "Public source entry for mass-casualty management and facility prioritization concepts.",
+      "review_status": "source_index_pending_review",
+      "source_type": "pending_review",
+      "reviewer": "pending",
+      "review_date": "pending"
+    },
+    {
+      "id": "ACS-DISASTER-STATEMENT",
+      "name": "Statement on Disaster and Mass Casualty Management",
+      "organization": "American College of Surgeons",
+      "url": "https://www.facs.org/about-acs/statements/disaster-and-mass-casualty-management/",
+      "used_for": "Public source entry for multidisciplinary disaster planning, triage, and surgical-community roles.",
+      "review_status": "source_index_pending_review",
+      "source_type": "pending_review",
+      "reviewer": "pending",
+      "review_date": "pending"
+    },
+    {
+      "id": "OBSIDIAN-TRAUMA-PATHWAY",
+      "name": "Local trauma pathway notes",
+      "organization": "Local Obsidian knowledge base",
+      "url": "/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/",
+      "used_for": "Structure input only; does not approve public medical claims.",
+      "review_status": "pending_clinician_review",
+      "source_type": "obsidian_note",
+      "reviewer": "pending",
+      "review_date": "pending"
+    },
+    {
+      "id": "LOCAL-PROTOCOL-PENDING",
+      "name": "Institutional disaster and trauma activation workflow",
+      "organization": "Local institution",
+      "url": "pending_local_confirmation",
+      "used_for": "Instructor mode, resource escalation, triage algorithm selection, and hospital surge response.",
+      "review_status": "pending_local_confirmation",
+      "source_type": "local_protocol",
+      "reviewer": "pending",
+      "review_date": "pending"
+    }
+  ]
+}

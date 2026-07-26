@@ -1,0 +1,123 @@
+{
+  "cases": [
+    {
+      "id": "CASE-XABCDE-SYN-001",
+      "title_zh": "高能量交通伤合并休克和胸部损伤",
+      "title_en": "High-energy transport injury with shock and chest concern",
+      "case_type": "synthetic teaching case",
+      "review_status": "pending_clinician_review",
+      "deidentification_status": "synthetic_no_real_patient",
+      "patientState": {
+        "airway": 1,
+        "oxygenation": 2,
+        "ventilation": 2,
+        "circulation": 3,
+        "bleeding": 3,
+        "neurology": 1,
+        "temperature": 1,
+        "elapsedTime": 0
+      },
+      "monitor": {
+        "HR": "trend elevated",
+        "BP": "trend concerning",
+        "SpO2": "trend vulnerable",
+        "RR": "trend increased",
+        "GCS": "trend watch",
+        "Temperature": "warming risk",
+        "Elapsed Time": "0 min"
+      },
+      "stages": [
+        {
+          "id": "prehospital",
+          "label": "院前通知",
+          "information": "High-energy mechanism, suspected chest injury, visible bleeding concern, limited details.",
+          "learner_question": "What information is still unknown but must be prepared for?",
+          "preferred_choice": "Prepare team roles and a shared xABCDE board.",
+          "unsafe_path_feedback": "Focusing on a single suspected injury delays whole-system readiness.",
+          "state_delta": {
+            "elapsedTime": 2
+          }
+        },
+        {
+          "id": "arrival",
+          "label": "患者到达",
+          "information": "The learner sees chest movement concern and possible bleeding cues while the team receives handoff.",
+          "learner_question": "Which observed cue should be reported first?",
+          "preferred_choice": "Report visible bleeding and breathing concern to the team in neutral language.",
+          "unsafe_path_feedback": "Jumping to imaging before team handoff may miss immediately visible risk cues.",
+          "state_delta": {
+            "elapsedTime": 3,
+            "bleeding": 1,
+            "ventilation": 1
+          }
+        },
+        {
+          "id": "reassessment",
+          "label": "再评估",
+          "information": "After team action and resource coordination, the learner compares trends rather than one isolated value.",
+          "learner_question": "What changed after team intervention and what remains unresolved?",
+          "preferred_choice": "Revisit x/A/B/C and report whether trends improved, worsened, or remained unclear.",
+          "unsafe_path_feedback": "Assuming improvement without reassessment hides deterioration and delays escalation.",
+          "state_delta": {
+            "elapsedTime": 5,
+            "oxygenation": -1,
+            "circulation": -1,
+            "temperature": 1
+          }
+        }
+      ],
+      "boundary": "This is an educational simulation. It is not patient-specific guidance and does not provide thresholds, doses, or procedure steps."
+    },
+    {
+      "id": "CASE-TRAUMA-003-TEACHING",
+      "title_zh": "高能量交通伤合并颈椎风险与左髋关节脱位",
+      "title_en": "High-energy transport injury with c-spine risk and left hip dislocation",
+      "case_type": "deidentified teacher-preview teaching case",
+      "review_status": "pending_clinician_review",
+      "deidentification_status": "pending_deidentification_review",
+      "source_type": "user_provided_secondhand_experience",
+      "student_page": "../courses/cspine-hip-dislocation-case.html",
+      "image_assets": [
+        "../assets/cases/case-trauma-003/c3-sagittal-anonymized.jpg",
+        "../assets/cases/case-trauma-003/left-hip-axial-anonymized.jpg"
+      ],
+      "teaching_axes": [
+        "high-energy mechanism",
+        "c-spine protection status",
+        "bilateral upper-limb neurologic symptoms",
+        "hip deformity and movement risk",
+        "handoff reassessment"
+      ],
+      "monitor": {
+        "overall": "initially described as stable",
+        "pain": "severe",
+        "neurology": "bilateral upper-limb symptoms prominent",
+        "mobility": "left lower-limb limitation and shortening reported",
+        "Elapsed Time": "relative timeline only"
+      },
+      "stages": [
+        {
+          "id": "mechanism",
+          "label": "高能量机制",
+          "information": "Motorcycle collision with ejection; prehospital protection status is a key unknown.",
+          "learner_question": "How should the team report mechanism and protection status without jumping to a diagnosis?",
+          "preferred_choice": "Report mechanism, known symptoms, protection status gap, and next reassessment.",
+          "state_delta": {
+            "elapsedTime": 1
+          }
+        },
+        {
+          "id": "post-handoff",
+          "label": "交接后复评",
+          "information": "The patient is alert but reports severe bilateral upper-limb tingling and has left hip deformity.",
+          "learner_question": "Which xABCDE axes need to be brought back to the shared board?",
+          "preferred_choice": "A/D for c-spine and neurologic trend, E/orthopedic axis for hip deformity, and C for hidden risk trend.",
+          "state_delta": {
+            "elapsedTime": 2
+          }
+        }
+      ],
+      "boundary": "This is a de-identified teacher-preview case for education, not clinical decision support. It contains no individualized bedside treatment guidance, thresholds, doses, or procedure steps."
+    }
+  ]
+}

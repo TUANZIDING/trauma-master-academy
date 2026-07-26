@@ -1,0 +1,46 @@
+{
+  "release_id": "R-TA-20260719-01",
+  "decision_date": "2026-07-19",
+  "decision": "teaching_release_approved_limited_scope",
+  "approval_source": "项目发起人通过当前 Codex 对话确认的发布定位与边界",
+  "approver_record": {
+    "name": "隐匿",
+    "title": "创伤方向主任医师（审批人姓名隐匿）",
+    "approval_date": "2026-07-19",
+    "approval_scope": "面向学生的创伤教学与模拟；不作为床旁诊疗指令、本院正式操作规程或个体化治疗方案。"
+  },
+  "primary_teaching_basis": [
+    {"source_id":"S-ACS-ATLS-11","role":"核心创伤教学框架"},
+    {"source_id":"S-ETM-PUBLIC","role":"情景化、团队化和逐步释放信息的教学方法边界"},
+    {"source_id":"S-SURGERY-TEXTBOOK-CN","role":"国内《外科学》第 10 版；章节页码与具体教材定位须以获授权教材目录或纸质版补录"}
+  ],
+  "local_policy_scope": {
+    "status": "approved_limited_trauma_center_scenario",
+    "allowed_context": ["创伤中心预警", "团队到位", "院领导资源协调", "复苏室床旁检查/固定", "专科手术协同"],
+    "excluded_context": ["本院正式操作规程", "未列明科室或岗位的启动标准", "个体化治疗方案", "床旁诊疗指令"]
+  },
+  "case_and_image_scope": {
+    "status": "approved_only_when_deidentified_and_authorized",
+    "allowed": "已完成脱敏且在授权展示范围内的真实教学案例与影像。",
+    "prohibited": ["姓名", "检查号", "精确日期", "医院/人员标识", "任何可识别信息", "超出授权展示范围的原始材料"]
+  },
+  "bilingual_scope": {
+    "status": "terms_human_reviewed_consistent",
+    "condition": "医学术语已人工复核一致；任何改变临床含义、风险强度、不确定性或限制语的实质改动必须重新复核。"
+  },
+  "mandatory_release_records": [
+    "审批人姓名隐匿、职务为创伤方向主任医师、日期和批准范围的正式记录",
+    "过敏反应、FAST/EFAST、胸壁损伤、颅脑损伤等专题主张的各自指南或教材定位",
+    "真实病例和影像的脱敏与授权展示范围记录"
+  ],
+  "topic_specific_locator_required_for": [
+    "CLAIM-MINI-ABDOMEN-EFAST-INFO",
+    "CLAIM-MINI-CHEST-MECHANICS",
+    "CLAIM-MINI-CHEST-MANAGEMENT",
+    "CLAIM-PELVIC-FAST-LIMIT",
+    "CLAIM-CASE-TRAUMA-004-FAST",
+    "CLAIM-CASE-TRAUMA-004-ANAPHYLAXIS",
+    "CLAIM-MINI-TBI-ACS-TBI-SOURCE"
+  ],
+  "statement": "教学发布已批准；本院流程仅在所述创伤中心场景内适用；真实病例与影像仅按已脱敏和授权范围展示。"
+}

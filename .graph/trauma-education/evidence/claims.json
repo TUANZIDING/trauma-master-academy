@@ -1,0 +1,2820 @@
+{
+  "register_version": 1,
+  "generated_at": "2026-07-19T23:02:32.228Z",
+  "generation_command": "npm run build:evidence-pack",
+  "release_decision": {
+    "id": "R-TA-20260719-01",
+    "status": "teaching_release_approved_limited_scope",
+    "statement": "教学发布已批准；本院流程仅在所述创伤中心场景内适用；真实病例与影像仅按已脱敏和授权范围展示。"
+  },
+  "topic_locator_register": {
+    "path": ".graph/trauma-education/evidence/topic-locator-register.json",
+    "required_claim_count": 7,
+    "recorded_claim_count": 7
+  },
+  "coverage": {
+    "included": "All explicit HTML .claim blocks plus registered atomization batches for the synthetic mini modules, pelvic module, real teaching cases, and four core courses.",
+    "explicit_html_claim_count": 38,
+    "atomized_claim_count_by_register": {
+      "atomized-mini-module-claims.json": 15,
+      "atomized-pelvic-and-case-claims.json": 16,
+      "atomized-core-course-claims.json": 12
+    },
+    "atomized_claim_count": 43,
+    "total_claim_count": 81,
+    "excluded": "Medical or teaching assertions in ordinary prose, quizzes, JSON data, generated visuals, and assets outside the first atomization batch until they receive a stable CLAIM-* identifier.",
+    "blocker": "Excluded assertions must be atomized before a new topic, material rewrite, or release-scope expansion; the current limited teaching-release decision does not convert them into claim-level approval."
+  },
+  "claims": [
+    {
+      "id": "PUBLIC-SOURCE-ACS-ATLS-11",
+      "module": "index.html",
+      "page_scope": "来源入口与课程框架说明；不作为具体诊疗主张的自动批准。",
+      "statement_zh": "ACS ATLS 11 公开页面可作为 xABCDE 课程框架来源入口。",
+      "statement_en": "ACS ATLS 11 public page can index the xABCDE course frame.",
+      "candidate_source_ids": [
+        "S-ACS-ATLS-11"
+      ],
+      "current_page_status": [
+        "source_verified"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "PUBLIC-SOURCE-ACS-ATLS-ABOUT",
+      "module": "index.html",
+      "page_scope": "来源入口与课程框架说明；不作为具体诊疗主张的自动批准。",
+      "statement_zh": "ACS ATLS 课程介绍用于确认课程性质和公开说明边界。",
+      "statement_en": "ACS ATLS about page is used to confirm course nature and public-description boundaries.",
+      "candidate_source_ids": [
+        "S-ACS-ATLS-ABOUT"
+      ],
+      "current_page_status": [
+        "source_verified"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "PUBLIC-SOURCE-NICE-NG39",
+      "module": "index.html",
+      "page_scope": "来源入口与课程框架说明；不作为具体诊疗主张的自动批准。",
+      "statement_zh": "NICE NG39 可作为重大创伤初始评估与管理的公开审核入口。",
+      "statement_en": "NICE NG39 can serve as a public review entry for major trauma initial assessment and management.",
+      "candidate_source_ids": [
+        "S-NICE-NG39"
+      ],
+      "current_page_status": [
+        "source_verified"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "PUBLIC-SOURCE-ACS-TBI-BEST-PRACTICES",
+      "module": "index.html",
+      "page_scope": "来源入口与课程框架说明；不作为具体诊疗主张的自动批准。",
+      "statement_zh": "ACS TBI 最佳实践指南可作为颅脑损伤未来模块来源索引。",
+      "statement_en": "ACS TBI best practices can index the future traumatic brain injury module.",
+      "candidate_source_ids": [
+        "S-ACS-TBI-2024"
+      ],
+      "current_page_status": [
+        "source_verified"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "PUBLIC-SOURCE-EAST-PMG",
+      "module": "index.html",
+      "page_scope": "来源入口与课程框架说明；不作为具体诊疗主张的自动批准。",
+      "statement_zh": "EAST 指南库可作为胸部、腹部和创伤专题的公开来源入口。",
+      "statement_en": "EAST guideline library can serve as a public source entry for chest, abdominal, and trauma topics.",
+      "candidate_source_ids": [
+        "S-EAST-PMG"
+      ],
+      "current_page_status": [
+        "source_verified"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "PUBLIC-SOURCE-ACEP-FAST",
+      "module": "index.html",
+      "page_scope": "来源入口与课程框架说明；不作为具体诊疗主张的自动批准。",
+      "statement_zh": "ACEP FAST 资料可作为床旁超声教学角色的来源入口。",
+      "statement_en": "ACEP FAST material can index the teaching role of bedside ultrasound.",
+      "candidate_source_ids": [
+        "S-ACEP-FAST"
+      ],
+      "current_page_status": [
+        "source_verified"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-CASE-TRAUMA-005-DEIDENTIFICATION",
+      "module": "courses/abdominal-hemorrhagic-shock-case.html",
+      "page_scope": "受限病例的来源、教学边界与本地流程限制。",
+      "statement_zh": "病例来自用户提供的临床记录；姓名、精确日期、医院、人员和原始文件名均不公开。",
+      "statement_en": "The case derives from a user-provided clinical record; name, exact date, hospital, staff, and the identifying source filename are not published.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-005-PROVENANCE"
+      ],
+      "current_page_status": [
+        "pending_deidentification_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-CASE-TRAUMA-005-TEACHING-BOUNDARY",
+      "module": "courses/abdominal-hemorrhagic-shock-case.html",
+      "page_scope": "受限病例的来源、教学边界与本地流程限制。",
+      "statement_zh": "本页只训练观察、报告、资源协调、复评与系统复盘，不发布剂量、阈值、操作步骤或个体化方案。",
+      "statement_en": "The page trains observation, reporting, resource coordination, reassessment, and system debrief only; it publishes no doses, thresholds, procedure steps, or individualized plan.",
+      "candidate_source_ids": [
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "current_page_status": [
+        "pending_clinician_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-CASE-TRAUMA-005-LOCAL-TIMELINE",
+      "module": "courses/abdominal-hemorrhagic-shock-case.html",
+      "page_scope": "受限病例的来源、教学边界与本地流程限制。",
+      "statement_zh": "原始时间轴只作为复盘输入，不得解释为对任何岗位的责任认定；本院流程需另行确认。",
+      "statement_en": "The source timeline is a debrief input, not an attribution of responsibility to any role; local workflow requires separate confirmation.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-005-PROVENANCE",
+        "S-LOCAL-PROTOCOL"
+      ],
+      "current_page_status": [
+        "pending_local_confirmation"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-MINI-ABDOMEN-EFAST-INFO",
+      "module": "courses/abdominal-injury-mini.html",
+      "page_scope": "合成腹部创伤教学中的连续查体、FAST/EFAST 信息边界和影像讨论；不含本地实施路径。",
+      "statement_zh": "连续查体、FAST/EFAST 的信息边界、增强 CT 与分层处置框架已按 WSES 肠道损伤、肝损伤和脾损伤文件核对；具体本地资源路径仍需院内审核。",
+      "statement_en": "Serial examination, FAST/EFAST limits, contrast CT, and stratified management were checked against WSES bowel, liver, and splenic guidance; local resource pathways still require institutional review.",
+      "candidate_source_ids": [
+        "S-WSES-BOWEL-2022",
+        "S-WSES-LIVER-2020",
+        "S-WSES-SPLEEN-2022",
+        "S-ACEP-FAST",
+        "S-LOCAL-PROTOCOL"
+      ],
+      "current_page_status": [
+        "pending_local_confirmation"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "topic_specific_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-MINI-CHEST-MECHANICS",
+      "module": "courses/chest-trauma-mini.html",
+      "page_scope": "合成胸壁损伤教学的机制、风险和框架性处理讨论；不提供剂量、操作步骤或本地路径。",
+      "statement_zh": "连枷胸的解剖定义、临床反常运动、疼痛—浅呼吸—分泌物潴留路径和最初 72 小时恶化风险，依据 2025 ACS 胸壁损伤最佳实践指南。",
+      "statement_en": "Anatomic and clinical flail definitions, the pain–shallow breathing–secretion pathway, and early 72-hour deterioration risk are grounded in the 2025 ACS chest-wall guideline.",
+      "candidate_source_ids": [
+        "S-ACS-CHEST-2025"
+      ],
+      "current_page_status": [
+        "pending_clinician_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "topic_specific_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-MINI-CHEST-MANAGEMENT",
+      "module": "courses/chest-trauma-mini.html",
+      "page_scope": "合成胸壁损伤教学的机制、风险和框架性处理讨论；不提供剂量、操作步骤或本地路径。",
+      "statement_zh": "氧合支持、有效镇痛、连续肺功能复评、呼吸支持升级与胸壁稳定术评估，依据 2025 WSES–AAST 胸部创伤指南、2025 ACS 指南及 2024 WSES/CWIS 立场文件；实施仍需本地临床审核。",
+      "statement_en": "Oxygenation, effective analgesia, serial pulmonary reassessment, support escalation, and stabilization review follow the 2025 WSES–AAST and ACS guidelines plus the 2024 WSES/CWIS position paper; local clinical review remains required.",
+      "candidate_source_ids": [
+        "S-ACS-CHEST-2025",
+        "S-WSES-AAST-THORACIC-2025",
+        "S-WSES-CWIS-SSRF-2024",
+        "S-LOCAL-PROTOCOL"
+      ],
+      "current_page_status": [
+        "pending_local_confirmation"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "topic_specific_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-MINI-CHEST-CHINA",
+      "module": "courses/chest-trauma-mini.html",
+      "page_scope": "合成胸壁损伤教学的机制、风险和框架性处理讨论；不提供剂量、操作步骤或本地路径。",
+      "statement_zh": "国内框架参考国家卫生健康委《突发事件创伤伤员医疗救治规范（2025年版）》；页面不复制操作细节或药物剂量。",
+      "statement_en": "The domestic framework references China’s National Health Commission 2025 emergency trauma care standard; the page does not reproduce procedural steps or medication doses.",
+      "candidate_source_ids": [
+        "S-NHC-TRAUMA-2025"
+      ],
+      "current_page_status": [
+        "pending_clinician_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-CASE-TRAUMA-003-DEIDENTIFICATION",
+      "module": "courses/cspine-hip-dislocation-case.html",
+      "page_scope": "教师预览病例的脱敏、教学方法和本地流程边界。",
+      "statement_zh": "本页基于用户提供的二手临床经验和匿名影像副本整理；不展示姓名、精确时间、医院标识或原始检查编号。",
+      "statement_en": "This page is based on user-provided second-hand clinical experience and anonymized image copies; it does not display name, exact time, hospital identifier, or original accession details.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-003-PROVENANCE"
+      ],
+      "current_page_status": [
+        "pending_deidentification_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-CASE-TRAUMA-003-ETM-STYLE",
+      "module": "courses/cspine-hip-dislocation-case.html",
+      "page_scope": "教师预览病例的脱敏、教学方法和本地流程边界。",
+      "statement_zh": "本页借鉴情景化、团队化、逐步释放信息的教学方法；不复制 ETM 课程原文、算法或专有材料。",
+      "statement_en": "This page uses scenario-based, team-based, progressive information release as a teaching method; it does not copy ETM course text, algorithms, or proprietary material.",
+      "candidate_source_ids": [
+        "S-ETM-PUBLIC"
+      ],
+      "current_page_status": [
+        "source_index_pending_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-CASE-TRAUMA-003-TEACHING-BOUNDARY",
+      "module": "courses/cspine-hip-dislocation-case.html",
+      "page_scope": "教师预览病例的脱敏、教学方法和本地流程边界。",
+      "statement_zh": "病例仅训练观察、报告、资源协调和复评，不提供个体化床旁治疗指导、剂量、阈值或操作步骤。",
+      "statement_en": "The case trains observation, reporting, resource coordination, and reassessment only. It does not provide individualized bedside treatment guidance, doses, thresholds, or procedure steps.",
+      "candidate_source_ids": [
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "current_page_status": [
+        "pending_clinician_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-CASE-TRAUMA-003-LOCAL-PROCESS",
+      "module": "courses/cspine-hip-dislocation-case.html",
+      "page_scope": "教师预览病例的脱敏、教学方法和本地流程边界。",
+      "statement_zh": "院前保护、到院保护、影像路径和会诊路径均需本院流程确认后才能用于正式教学。",
+      "statement_en": "Prehospital protection, arrival protection, imaging pathways, and consultation pathways require local confirmation before formal teaching use.",
+      "candidate_source_ids": [
+        "S-LOCAL-PROTOCOL"
+      ],
+      "current_page_status": [
+        "pending_local_confirmation"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-PELVIC-REASONING-SYNTHETIC",
+      "module": "courses/pelvic-trauma.html",
+      "page_scope": "合成骨盆创伤推理、检查限制和资源地图；不提供本地启动规则。",
+      "statement_zh": "病例为教师编写的合成病例，不含真实患者资料。",
+      "statement_en": "The case is instructor-authored and synthetic, with no real patient data.",
+      "candidate_source_ids": [
+        "S-SYNTHETIC-CASE-METHOD"
+      ],
+      "current_page_status": [
+        "pending_clinician_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-PELVIC-MECHANISM-PHYSIOLOGY-ASSOCIATED-INJURY",
+      "module": "courses/pelvic-trauma.html",
+      "page_scope": "合成骨盆创伤推理、检查限制和资源地图；不提供本地启动规则。",
+      "statement_zh": "机制、生理趋势、骨盆解剖损伤和合并伤需一起解释风险；参考 WSES 骨盆创伤指南，仍需逐条临床审核。",
+      "statement_en": "Mechanism, physiologic trend, pelvic anatomy, and associated injury are considered together; indexed to the WSES pelvic-trauma guideline and still requiring claim review.",
+      "candidate_source_ids": [
+        "S-WSES-PELVIC-2017"
+      ],
+      "current_page_status": [
+        "evidence_review_required"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-PELVIC-FAST-LIMIT",
+      "module": "courses/pelvic-trauma.html",
+      "page_scope": "合成骨盆创伤推理、检查限制和资源地图；不提供本地启动规则。",
+      "statement_zh": "床旁超声信息不能单独排除腹膜后或骨盆相关出血担心；参考 NICE NG39，需教师按具体课堂语句审核。",
+      "statement_en": "Bedside ultrasound information alone does not exclude retroperitoneal or pelvic bleeding concern; indexed to NICE NG39 and requiring phrase-level faculty review.",
+      "candidate_source_ids": [
+        "S-NICE-NG39",
+        "S-EUROPEAN-BLEEDING-2023"
+      ],
+      "current_page_status": [
+        "source_index_pending_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "topic_specific_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-PELVIC-RESOURCE-PATHWAY",
+      "module": "courses/pelvic-trauma.html",
+      "page_scope": "合成骨盆创伤推理、检查限制和资源地图；不提供本地启动规则。",
+      "statement_zh": "骨盆保护、影像、血液、手术、介入和转运路径只作为资源地图；本院启动标准和岗位分工尚未确认。",
+      "statement_en": "Pelvic protection, imaging, blood, surgery, intervention, and transfer remain resource-map concepts; local activation and role allocation are unconfirmed.",
+      "candidate_source_ids": [
+        "S-LOCAL-PROTOCOL"
+      ],
+      "current_page_status": [
+        "pending_local_confirmation"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-PELVIC-TEACHING-BOUNDARY",
+      "module": "courses/pelvic-trauma.html",
+      "page_scope": "合成骨盆创伤推理、检查限制和资源地图；不提供本地启动规则。",
+      "statement_zh": "本页不提供剂量、器械规格、治疗阈值、固定位置、操作步骤或个体化治疗方案。",
+      "statement_en": "This page provides no doses, device specifications, treatment thresholds, placement instructions, procedure steps, or individualized treatment plans.",
+      "candidate_source_ids": [
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "current_page_status": [
+        "pending_clinician_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-MINI-POLYTRAUMA-INTEGRATION",
+      "module": "courses/polytrauma-mini.html",
+      "page_scope": "合成多发伤教学的并行任务和复评框架。",
+      "statement_zh": "多轴生理、并行任务、出血与凝血复评及资源协调框架参考 ATLS 11、欧洲创伤大出血指南第六版和国家卫生健康委 2025 年创伤规范；病例材料保持脱敏并需临床终审。",
+      "statement_en": "The multi-axis physiology, parallel-task, hemorrhage/coagulation reassessment, and resource framework references ATLS 11, the sixth European trauma-bleeding guideline, and China’s 2025 trauma standard; cases remain de-identified and require clinical sign-off.",
+      "candidate_source_ids": [
+        "S-ACS-ATLS-11",
+        "S-EUROPEAN-BLEEDING-2023",
+        "S-NHC-TRAUMA-2025",
+        "S-SYNTHETIC-CASE-METHOD"
+      ],
+      "current_page_status": [
+        "pending_clinician_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-CASE-TRAUMA-004-SOURCE",
+      "module": "courses/polytrauma-shock-reassessment-case.html",
+      "page_scope": "受限教师预览病例的来源、FAST/EFAST 限制、教学推断与过敏反应教学边界。",
+      "statement_zh": "到院生命体征、查体、检验、CT 报告、抢救通路、后续红斑与会诊意见来自用户提供的 Word 病例；草丛跌落机制、床旁 FAST 结果和皮肤分布由用户本轮补充。公开页面删除精确日期、机构、人员和检查编号。",
+      "statement_en": "Arrival physiology, examination, laboratory data, CT report, resuscitative access, later erythema, and consultation come from the user-provided Word case; grass exposure, bedside FAST, and skin distribution were added by the user in this turn. Exact dates, institution, staff, and accession identifiers are excluded.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-004-PROVENANCE"
+      ],
+      "current_page_status": [
+        "pending_deidentification_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-CASE-TRAUMA-004-FAST",
+      "module": "courses/polytrauma-shock-reassessment-case.html",
+      "page_scope": "受限教师预览病例的来源、FAST/EFAST 限制、教学推断与过敏反应教学边界。",
+      "statement_zh": "阴性 FAST/EFAST 不能排除全部腹腔、腹膜后或胸部损伤；低血压患者仍需结合重复床旁检查、完整影像和临床趋势。依据欧洲创伤大出血指南第六版及 AIUM EFAST 实践参数。",
+      "statement_en": "A negative FAST/EFAST does not exclude all abdominal, retroperitoneal, or thoracic injury; hypotensive patients require repeated bedside assessment, definitive imaging, and clinical trends. Grounded in the sixth European trauma-bleeding guideline and AIUM EFAST practice parameter.",
+      "candidate_source_ids": [
+        "S-EUROPEAN-BLEEDING-2023",
+        "S-AIUM-EFAST-2023"
+      ],
+      "current_page_status": [
+        "source_verified"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "topic_specific_locator_recorded",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-CASE-TRAUMA-004-ANAPHYLAXIS",
+      "module": "courses/polytrauma-shock-reassessment-case.html",
+      "page_scope": "受限教师预览病例的来源、FAST/EFAST 限制、教学推断与过敏反应教学边界。",
+      "statement_zh": "严重过敏反应是临床诊断；出现低血压或呼吸受累时，肾上腺素是一线且不应等待所有标准齐备。糖皮质激素和抗组胺药不能替代肾上腺素，急性获益证据有限。依据中国严重过敏反应急救指南、RCUK 2025 及 2023 实践参数更新。",
+      "statement_en": "Anaphylaxis is a clinical diagnosis; with hypotension or respiratory compromise, epinephrine is first-line and treatment should not await every criterion. Corticosteroids and antihistamines do not replace epinephrine and have limited evidence for acute benefit. Grounded in the Chinese emergency anaphylaxis guideline, RCUK 2025, and the 2023 practice-parameter update.",
+      "candidate_source_ids": [
+        "S-ANAPHYLAXIS-CHINA",
+        "S-RCUK-2025",
+        "S-ANAPHYLAXIS-PP-2023"
+      ],
+      "current_page_status": [
+        "source_verified"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "topic_specific_locator_recorded",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-CASE-TRAUMA-004-ETIOLOGY",
+      "module": "courses/polytrauma-shock-reassessment-case.html",
+      "page_scope": "受限教师预览病例的来源、FAST/EFAST 限制、教学推断与过敏反应教学边界。",
+      "statement_zh": "“过敏性/分布性或混合性休克权重上升”是基于病例时间线的教学推断，不等同于对真实患者最终病因的裁决；正式发布仍需急诊、创伤、重症和过敏专科联合审核。",
+      "statement_en": "“Rising weight of allergic/distributive or mixed shock” is a teaching inference from the timeline, not final adjudication of the real patient's etiology; publication still requires joint emergency, trauma, critical-care, and allergy review.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-004-PROVENANCE"
+      ],
+      "current_page_status": [
+        "pending_clinician_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-MINI-TBI-ACS-TBI-SOURCE",
+      "module": "courses/tbi-mini.html",
+      "page_scope": "合成颅脑损伤教学的连续神经观察、影像边界与团队升级框架。",
+      "statement_zh": "连续神经查体、全身生理与继发性损伤、影像边界和团队升级框架已按 2024 ACS TBI 最佳实践核对；具体监护与治疗流程仍需院内专家审核。",
+      "statement_en": "Serial neurologic examination, systemic physiology and secondary injury, imaging limits, and escalation were checked against the 2024 ACS TBI best-practice guideline; institutional monitoring and treatment pathways still require expert review.",
+      "candidate_source_ids": [
+        "S-ACS-TBI-2024",
+        "S-LOCAL-PROTOCOL"
+      ],
+      "current_page_status": [
+        "pending_clinician_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "topic_specific_locator_recorded",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-TRAUMA-ACADEMY-001-TEAM-PREP",
+      "module": "courses/trauma-bay.html",
+      "page_scope": "抢救室流程教育和交接语言；本地职责分工待确认。",
+      "statement_zh": "抢救室团队准备和角色分工用于流程教育，本地确认仍需要。",
+      "statement_en": "Trauma bay team preparation and role mapping are used for process education; local confirmation is still required.",
+      "candidate_source_ids": [
+        "S-LOCAL-PROTOCOL"
+      ],
+      "current_page_status": [
+        "pending_local_confirmation"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-TRAUMA-ACADEMY-001-HANDOFF-LANGUAGE",
+      "module": "courses/trauma-bay.html",
+      "page_scope": "抢救室流程教育和交接语言；本地职责分工待确认。",
+      "statement_zh": "交接与闭环沟通表述待创伤团队教学审核。",
+      "statement_en": "Handoff and closed-loop communication wording awaits trauma-team teaching review.",
+      "candidate_source_ids": [
+        "S-ACS-ATLS-11",
+        "S-ETM-PUBLIC",
+        "S-LOCAL-PROTOCOL"
+      ],
+      "current_page_status": [
+        "pending_clinician_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-TRAUMA-ACADEMY-004-OBSIDIAN-STRUCTURE-INPUT",
+      "module": "courses/trauma-care-chain.html",
+      "page_scope": "资源链概念与本地流程限制。",
+      "statement_zh": "急诊创伤流程路径知识库作为课程结构输入，不作为公开医学 claim 自动批准。",
+      "statement_en": "The emergency trauma pathway knowledge base is used as course-structure input, not automatic approval of public medical claims.",
+      "candidate_source_ids": [
+        "S-SYNTHETIC-CASE-METHOD"
+      ],
+      "current_page_status": [
+        "source_index_pending_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-TRAUMA-ACADEMY-004-LOCAL-PATHWAY",
+      "module": "courses/trauma-care-chain.html",
+      "page_scope": "资源链概念与本地流程限制。",
+      "statement_zh": "创伤团队、血库、影像、手术、介入、ICU 和转运资源路径需本院授权流程确认。",
+      "statement_en": "Trauma team, blood bank, imaging, surgery, interventional services, ICU, and transfer resource pathways require local institutional confirmation.",
+      "candidate_source_ids": [
+        "S-LOCAL-PROTOCOL"
+      ],
+      "current_page_status": [
+        "pending_local_confirmation"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-TRAUMA-ACADEMY-004-CLINICAL-REVIEW",
+      "module": "courses/trauma-care-chain.html",
+      "page_scope": "资源链概念与本地流程限制。",
+      "statement_zh": "救治链课程需要项目负责人或指定创伤专家终审后才可进入正式教学使用。",
+      "statement_en": "The care-chain course requires final review by the project lead or designated trauma specialist before formal teaching use.",
+      "candidate_source_ids": [
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "current_page_status": [
+        "pending_clinician_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-TRAUMA-DISASTER-PRIORITY-LANGUAGE",
+      "module": "courses/trauma-disaster-medicine.html",
+      "page_scope": "灾难医学教学语言、资源失衡概念与本院流程限制。",
+      "statement_zh": "创伤优先级和 xABCDE 作为教学语言，待公开来源和医生终审。",
+      "statement_en": "Trauma priority and xABCDE are teaching language pending public-source review and clinician signoff.",
+      "candidate_source_ids": [
+        "S-ACS-ATLS-11",
+        "S-NICE-NG39"
+      ],
+      "current_page_status": [
+        "source_index_pending_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-TRAUMA-DISASTER-MASS-CASUALTY",
+      "module": "courses/trauma-disaster-medicine.html",
+      "page_scope": "灾难医学教学语言、资源失衡概念与本院流程限制。",
+      "statement_zh": "灾难医学资源失衡和批量伤员响应概念待来源核验。",
+      "statement_en": "Disaster resource imbalance and mass-casualty response concepts require source review.",
+      "candidate_source_ids": [
+        "S-WHO-MCM",
+        "S-ACS-DISASTER"
+      ],
+      "current_page_status": [
+        "source_required"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-TRAUMA-DISASTER-LOCAL-PROTOCOL",
+      "module": "courses/trauma-disaster-medicine.html",
+      "page_scope": "灾难医学教学语言、资源失衡概念与本院流程限制。",
+      "statement_zh": "分诊算法、本院指挥体系和资源启动路径需要课程负责人和本院流程确认。",
+      "statement_en": "Triage algorithm, local command structure, and resource activation pathways require course-lead and institutional confirmation.",
+      "candidate_source_ids": [
+        "S-LOCAL-PROTOCOL"
+      ],
+      "current_page_status": [
+        "pending_local_confirmation"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-TRAUMA-ACADEMY-002-ATLS-XABCDE-FRAMEWORK",
+      "module": "courses/xabcde.html",
+      "page_scope": "xABCDE 教学框架和团队复评语言；不复制专有课程算法。",
+      "statement_zh": "xABCDE 教学框架待 ACS ATLS 11 公开页面和合法课程资料核验。",
+      "statement_en": "The xABCDE teaching frame awaits review against the ACS ATLS 11 public page and legally available course material.",
+      "candidate_source_ids": [
+        "S-ACS-ATLS-11"
+      ],
+      "current_page_status": [
+        "source_index_pending_review"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-TRAUMA-ACADEMY-002-TEAM-REASSESSMENT",
+      "module": "courses/xabcde.html",
+      "page_scope": "xABCDE 教学框架和团队复评语言；不复制专有课程算法。",
+      "statement_zh": "团队并行任务和复评语言待 ETM/本地培训来源审核。",
+      "statement_en": "Parallel-team-task and reassessment wording awaits ETM/local training source review.",
+      "candidate_source_ids": [
+        "S-ETM-PUBLIC",
+        "S-LOCAL-PROTOCOL"
+      ],
+      "current_page_status": [
+        "evidence_review_required"
+      ],
+      "evidence_status": "candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "not_a_claim_level_signoff",
+      "clinical_reviewer": "pending_named_reviewer",
+      "clinical_review_date": null,
+      "source_locator_for_reviewer": "candidate_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "Teaching release is approved only within the recorded educational scope. This record does not replace a named claim-level clinical signoff, required topic-specific locator, or case/asset authorization record."
+    },
+    {
+      "id": "CLAIM-ATOM-ABDOMEN-SYNTHETIC-TRAJECTORY",
+      "module": "courses/abdominal-injury-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.abdomen",
+      "claim_type": "synthetic_trajectory_boundary",
+      "statement_zh": "腹部模块中的生命体征、时间点、查体与影像节点为趋势推理而合成，不对应特定患者或处置阈值。",
+      "statement_en": "The abdominal-module vital signs, time points, examination, and imaging nodes are synthesized for trend reasoning and do not represent a specific patient or treatment threshold.",
+      "candidate_source_ids": [
+        "S-SYNTHETIC-CASE-METHOD"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "医学生合成病例的趋势练习。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-SYNTHETIC-CASE-METHOD",
+          "title": "Clinical Reasoning Case Template",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_REASONING_CASE_TEMPLATE.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-ABDOMEN-FAST-LIMIT",
+      "module": "courses/abdominal-injury-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.abdomen.panorama[3];releases[3]",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "一次未见明确腹腔游离液的 FAST 结果不能被教学性表述为排除腹部或腹膜后损伤；必须与机制、连续查体和生理趋势整合。",
+      "statement_en": "A FAST examination without definite intraperitoneal free fluid must not be taught as excluding abdominal or retroperitoneal injury; integrate mechanism, serial examination, and physiology.",
+      "candidate_source_ids": [
+        "S-WSES-BOWEL-2022",
+        "S-WSES-LIVER-2020",
+        "S-NICE-NG39",
+        "S-ACEP-FAST"
+      ],
+      "source_locator_claim_ids": [
+        "CLAIM-MINI-ABDOMEN-EFAST-INFO"
+      ],
+      "applicability": "腹部钝性创伤的床旁信息边界教学；不构成检查或转运指令。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-WSES-BOWEL-2022",
+          "title": "WSES guidelines on blunt and penetrating bowel injury",
+          "version_or_date": "2022",
+          "url": "https://doi.org/10.1186/s13017-022-00418-y"
+        },
+        {
+          "id": "S-WSES-LIVER-2020",
+          "title": "Liver trauma: WSES 2020 guidelines",
+          "version_or_date": "2020",
+          "url": "https://doi.org/10.1186/s13017-020-00302-7"
+        },
+        {
+          "id": "S-NICE-NG39",
+          "title": "Major trauma: assessment and initial management",
+          "version_or_date": "NG39; published and last reviewed 2016-02-17",
+          "url": "https://www.nice.org.uk/guidance/ng39"
+        },
+        {
+          "id": "S-ACEP-FAST",
+          "title": "FAST Sonoguide",
+          "version_or_date": "online teaching resource; version not captured",
+          "url": "https://www.acep.org/sonoguide/basic/fast"
+        }
+      ],
+      "source_locator_for_reviewer": "linked_topic_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-ABDOMEN-SERIAL-REASSESSMENT",
+      "module": "courses/abdominal-injury-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.abdomen.releases[4..7];phases",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "腹痛范围、腹部体征、灌注表现与实验室趋势的变化应作为连续复评信息整合，而不是由单次检查单独决定风险权重。",
+      "statement_en": "Changes in pain distribution, abdominal findings, perfusion, and laboratory trends should be integrated as serial reassessment information rather than allowing a single test to determine risk weight alone.",
+      "candidate_source_ids": [
+        "S-WSES-BOWEL-2022",
+        "S-WSES-LIVER-2020",
+        "S-WSES-SPLEEN-2022"
+      ],
+      "source_locator_claim_ids": [
+        "CLAIM-MINI-ABDOMEN-EFAST-INFO"
+      ],
+      "applicability": "腹部创伤的连续临床推理教学；不提供本地复评频率或升级阈值。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-WSES-BOWEL-2022",
+          "title": "WSES guidelines on blunt and penetrating bowel injury",
+          "version_or_date": "2022",
+          "url": "https://doi.org/10.1186/s13017-022-00418-y"
+        },
+        {
+          "id": "S-WSES-LIVER-2020",
+          "title": "Liver trauma: WSES 2020 guidelines",
+          "version_or_date": "2020",
+          "url": "https://doi.org/10.1186/s13017-020-00302-7"
+        },
+        {
+          "id": "S-WSES-SPLEEN-2022",
+          "title": "WSES consensus on follow-up after non-operative splenic trauma management",
+          "version_or_date": "2022",
+          "url": "https://doi.org/10.1186/s13017-022-00457-5"
+        }
+      ],
+      "source_locator_for_reviewer": "linked_topic_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-ABDOMEN-CT-BOUNDARY",
+      "module": "courses/abdominal-injury-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.abdomen.releases[6];panorama[5]",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "增强 CT 在生理状态允许时用于损伤定位与分层；影像信息不能替代床旁生理和连续查体趋势。",
+      "statement_en": "When physiology permits, contrast CT supports injury localization and stratification; imaging information does not replace bedside physiology or serial examination trends.",
+      "candidate_source_ids": [
+        "S-WSES-BOWEL-2022",
+        "S-WSES-LIVER-2020",
+        "S-WSES-SPLEEN-2022"
+      ],
+      "source_locator_claim_ids": [
+        "CLAIM-MINI-ABDOMEN-EFAST-INFO"
+      ],
+      "applicability": "腹部创伤影像讨论教学；不构成 CT 选择或时机指令。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-WSES-BOWEL-2022",
+          "title": "WSES guidelines on blunt and penetrating bowel injury",
+          "version_or_date": "2022",
+          "url": "https://doi.org/10.1186/s13017-022-00418-y"
+        },
+        {
+          "id": "S-WSES-LIVER-2020",
+          "title": "Liver trauma: WSES 2020 guidelines",
+          "version_or_date": "2020",
+          "url": "https://doi.org/10.1186/s13017-020-00302-7"
+        },
+        {
+          "id": "S-WSES-SPLEEN-2022",
+          "title": "WSES consensus on follow-up after non-operative splenic trauma management",
+          "version_or_date": "2022",
+          "url": "https://doi.org/10.1186/s13017-022-00457-5"
+        }
+      ],
+      "source_locator_for_reviewer": "linked_topic_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CHEST-SYNTHETIC-TRAJECTORY",
+      "module": "courses/chest-trauma-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.chest",
+      "claim_type": "synthetic_trajectory_boundary",
+      "statement_zh": "胸部模块中的呼吸频率、血氧、说话能力、胸壁运动和影像情境为趋势推理而合成，不对应特定患者或呼吸支持阈值。",
+      "statement_en": "The chest-module respiratory rate, oxygen saturation, speech, chest-wall motion, and imaging scenario are synthesized for trend reasoning and do not represent a specific patient or respiratory-support threshold.",
+      "candidate_source_ids": [
+        "S-SYNTHETIC-CASE-METHOD"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "医学生合成病例的呼吸趋势练习。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-SYNTHETIC-CASE-METHOD",
+          "title": "Clinical Reasoning Case Template",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_REASONING_CASE_TEMPLATE.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CHEST-MECHANICS",
+      "module": "courses/chest-trauma-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.chest.panorama[2..5];releases[2..3]",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "连枷节段的反常胸廓运动及疼痛限制通气，是将胸壁损伤与呼吸功、排痰和肺部并发症风险联系起来的教学性机制。",
+      "statement_en": "Paradoxical chest-wall movement in a flail segment and pain-limited ventilation are teaching mechanisms linking chest-wall injury with work of breathing, secretion clearance, and pulmonary-complication risk.",
+      "candidate_source_ids": [
+        "S-ACS-CHEST-2025",
+        "S-SURGERY-TEXTBOOK-CN"
+      ],
+      "source_locator_claim_ids": [
+        "CLAIM-MINI-CHEST-MECHANICS"
+      ],
+      "applicability": "胸壁损伤机制与复评教学；不等同于单独的诊断或处置算法。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ACS-CHEST-2025",
+          "title": "Best Practices Guidelines: Management of Chest Wall Injuries",
+          "version_or_date": "November 2025",
+          "url": "https://www.facs.org/media/qdgliayt/2025_tr_bestpracticesguidelines_chest-wall.pdf"
+        },
+        {
+          "id": "S-SURGERY-TEXTBOOK-CN",
+          "title": "外科学（第10版）",
+          "version_or_date": "第10版；2024-08-21；ISBN 978-7-117-36592-5；主编：陈孝平、张英泽、兰平",
+          "url": "https://medu.pmph.com/readdetail/todetail.action?id=32523"
+        }
+      ],
+      "source_locator_for_reviewer": "linked_topic_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CHEST-RESPIRATORY-TREND",
+      "module": "courses/chest-trauma-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.chest.releases[4..7];phases",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "氧合、呼吸功、说话能力、胸壁运动、呼吸音及二氧化碳趋势应被共同解释；单一指标向“正常”方向变化并不必然表示改善。",
+      "statement_en": "Oxygenation, work of breathing, speech, chest-wall motion, breath sounds, and carbon-dioxide trend should be interpreted together; one apparently normalizing measure does not necessarily mean improvement.",
+      "candidate_source_ids": [
+        "S-ACS-CHEST-2025"
+      ],
+      "source_locator_claim_ids": [
+        "CLAIM-MINI-CHEST-MANAGEMENT"
+      ],
+      "applicability": "胸部创伤连续肺功能复评教学；不提供监护阈值或呼吸支持参数。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ACS-CHEST-2025",
+          "title": "Best Practices Guidelines: Management of Chest Wall Injuries",
+          "version_or_date": "November 2025",
+          "url": "https://www.facs.org/media/qdgliayt/2025_tr_bestpracticesguidelines_chest-wall.pdf"
+        }
+      ],
+      "source_locator_for_reviewer": "linked_topic_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CHEST-IMAGING-BOUNDARY",
+      "module": "courses/chest-trauma-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.chest.panorama[4];releases[5]",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "肺超声、胸片或其他影像用于补充气胸、血胸和肺挫伤线索；影像发现必须与持续的床旁呼吸生理整合。",
+      "statement_en": "Lung ultrasound, radiography, and other imaging add clues about pneumothorax, hemothorax, and contusion; findings must be integrated with ongoing bedside respiratory physiology.",
+      "candidate_source_ids": [
+        "S-ACS-CHEST-2025",
+        "S-WSES-AAST-THORACIC-2025"
+      ],
+      "source_locator_claim_ids": [
+        "CLAIM-MINI-CHEST-MANAGEMENT"
+      ],
+      "applicability": "胸部创伤影像讨论教学；不构成检查选择或操作指令。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ACS-CHEST-2025",
+          "title": "Best Practices Guidelines: Management of Chest Wall Injuries",
+          "version_or_date": "November 2025",
+          "url": "https://www.facs.org/media/qdgliayt/2025_tr_bestpracticesguidelines_chest-wall.pdf"
+        },
+        {
+          "id": "S-WSES-AAST-THORACIC-2025",
+          "title": "Thoracic trauma WSES-AAST guidelines",
+          "version_or_date": "2025",
+          "url": "https://doi.org/10.1186/s13017-025-00651-1"
+        }
+      ],
+      "source_locator_for_reviewer": "linked_topic_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-TBI-SYNTHETIC-TRAJECTORY",
+      "module": "courses/tbi-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.tbi",
+      "claim_type": "synthetic_trajectory_boundary",
+      "statement_zh": "颅脑模块中的 GCS、瞳孔、血氧、血压、影像与时间点为趋势推理而合成，不对应特定患者或治疗阈值。",
+      "statement_en": "The TBI-module GCS, pupils, oxygenation, blood pressure, imaging, and time points are synthesized for trend reasoning and do not represent a specific patient or treatment threshold.",
+      "candidate_source_ids": [
+        "S-SYNTHETIC-CASE-METHOD"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "医学生合成病例的神经复评练习。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-SYNTHETIC-CASE-METHOD",
+          "title": "Clinical Reasoning Case Template",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_REASONING_CASE_TEMPLATE.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-TBI-SERIAL-NEUROLOGY",
+      "module": "courses/tbi-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.tbi.releases[1];releases[4..7]",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "颅脑损伤教学中的连续神经复评应保留 GCS 分项、瞳孔和运动反应的前后比较，而不以单个总分代替变化描述。",
+      "statement_en": "Serial neurologic reassessment teaching in TBI should retain before-and-after comparison of GCS components, pupils, and motor response rather than substituting one total score for the change description.",
+      "candidate_source_ids": [
+        "S-ACS-TBI-2024"
+      ],
+      "source_locator_claim_ids": [
+        "CLAIM-MINI-TBI-ACS-TBI-SOURCE"
+      ],
+      "applicability": "颅脑损伤连续观察与交接教学；不构成院内神经监护路径。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ACS-TBI-2024",
+          "title": "Best Practices Guidelines for the Management of Traumatic Brain Injury",
+          "version_or_date": "2024",
+          "url": "https://ww2.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf"
+        }
+      ],
+      "source_locator_for_reviewer": "linked_topic_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-TBI-SYSTEMIC-PHYSIOLOGY",
+      "module": "courses/tbi-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.tbi.panorama[2];releases[2..4]",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "低氧与低灌注可影响颅脑损伤后的神经状态和继发性损伤风险，因此全身生理趋势属于神经复评的教学信息。",
+      "statement_en": "Hypoxemia and hypoperfusion can affect neurologic status and secondary-injury risk after TBI, so systemic physiology trends are teaching information within neurologic reassessment.",
+      "candidate_source_ids": [
+        "S-ACS-TBI-2024"
+      ],
+      "source_locator_claim_ids": [
+        "CLAIM-MINI-TBI-ACS-TBI-SOURCE"
+      ],
+      "applicability": "颅脑损伤整体复评教学；不构成目标值或复苏处方。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ACS-TBI-2024",
+          "title": "Best Practices Guidelines for the Management of Traumatic Brain Injury",
+          "version_or_date": "2024",
+          "url": "https://ww2.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf"
+        }
+      ],
+      "source_locator_for_reviewer": "linked_topic_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-TBI-IMAGING-BOUNDARY",
+      "module": "courses/tbi-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.tbi.panorama[4];releases[3];releases[6]",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "头颅 CT 提供解剖定位信息，但早期或负性影像不能替代临床恶化的连续观察；神经状态变化是进一步专科讨论和影像复评的教学触发信息。",
+      "statement_en": "Head CT provides anatomic localization, but early or negative imaging does not replace serial observation of clinical deterioration; neurologic change is teaching trigger information for further specialty discussion and imaging reassessment.",
+      "candidate_source_ids": [
+        "S-ACS-TBI-2024"
+      ],
+      "source_locator_claim_ids": [
+        "CLAIM-MINI-TBI-ACS-TBI-SOURCE"
+      ],
+      "applicability": "颅脑损伤影像边界与升级沟通教学；不构成影像时机或神经外科指令。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ACS-TBI-2024",
+          "title": "Best Practices Guidelines for the Management of Traumatic Brain Injury",
+          "version_or_date": "2024",
+          "url": "https://ww2.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf"
+        }
+      ],
+      "source_locator_for_reviewer": "linked_topic_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-POLYTRAUMA-SYNTHETIC-TRAJECTORY",
+      "module": "courses/polytrauma-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.polytrauma",
+      "claim_type": "synthetic_trajectory_boundary",
+      "statement_zh": "多发伤模块中的机制、生命体征、查体、资源返回和时间节点为并行优先级练习而合成，不对应真实患者或资源启动阈值。",
+      "statement_en": "The polytrauma-module mechanism, vital signs, examination, resource returns, and time nodes are synthesized for parallel-priority practice and do not represent a real patient or resource-activation threshold.",
+      "candidate_source_ids": [
+        "S-SYNTHETIC-CASE-METHOD"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "医学生合成病例的团队推理练习。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-SYNTHETIC-CASE-METHOD",
+          "title": "Clinical Reasoning Case Template",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_REASONING_CASE_TEMPLATE.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-POLYTRAUMA-PARALLEL-PRIORITIES",
+      "module": "courses/polytrauma-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.polytrauma.panorama[3..5];differentials;phases",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "多发伤可同时存在出血、胸部换气或梗阻、颅内或全身性意识改变等机制；教学上应根据对当前生理严重度的贡献动态排序，而不由单一解剖标签主导。",
+      "statement_en": "Polytrauma can involve hemorrhagic, thoracic gas-exchange or obstructive, and intracranial or systemic neurologic mechanisms at the same time; teaching should dynamically prioritize their contribution to current physiologic severity rather than let one anatomic label dominate.",
+      "candidate_source_ids": [
+        "S-ACS-ATLS-11",
+        "S-EUROPEAN-BLEEDING-2023",
+        "S-NHC-TRAUMA-2025"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "多发伤并行推理与团队排序教学；不构成本地资源启动标准。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ACS-ATLS-11",
+          "title": "Advanced Trauma Life Support 11th Edition public page",
+          "version_or_date": "ATLS 11 public program page",
+          "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/"
+        },
+        {
+          "id": "S-EUROPEAN-BLEEDING-2023",
+          "title": "European guideline on management of major bleeding and coagulopathy following trauma, sixth edition",
+          "version_or_date": "sixth edition, 2023",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9977110/"
+        },
+        {
+          "id": "S-NHC-TRAUMA-2025",
+          "title": "突发事件创伤伤员医疗救治规范",
+          "version_or_date": "2025 年版",
+          "url": "https://www.nhc.gov.cn/ylyjs/zcwj/202601/3c4f6b771aba4ce7bdb8112823f7825a.shtml"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-POLYTRAUMA-REASSESSMENT-CONTRACT",
+      "module": "courses/polytrauma-mini.html",
+      "asset_locator": "assets/mini-case-expansion.js#cases.polytrauma.releases[5..7];handover",
+      "claim_type": "teaching_process_assertion",
+      "statement_zh": "团队交接应说明任务完成状态、返回信息对优先级的影响、未解释信息、下一复评责任人与替代路径，以支持动态重新排序。",
+      "statement_en": "Team handover should state task-completion status, how returned information affects priorities, unresolved information, the next reassessment owner, and fallback paths to support dynamic reprioritization.",
+      "candidate_source_ids": [
+        "S-ETM-PUBLIC",
+        "S-LOCAL-PROTOCOL"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "创伤团队沟通与模拟教学；本地角色与流程仅限已批准创伤中心场景。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ETM-PUBLIC",
+          "title": "Emergency Trauma Management public course description",
+          "version_or_date": "public course-description page",
+          "url": "https://etmcourse.com/course-description/"
+        },
+        {
+          "id": "S-LOCAL-PROTOCOL",
+          "title": "本院流程与资源启动文件",
+          "version_or_date": "pending_local_confirmation",
+          "url": "pending_local_confirmation"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-PELVIC-SYNTHETIC",
+      "module": "courses/pelvic-trauma.html",
+      "asset_locator": "courses/pelvic-trauma.html#case-lab;data/pelvic-trauma-case.json",
+      "record_layer": "synthetic_case_boundary",
+      "claim_type": "synthetic_trajectory_boundary",
+      "statement_zh": "骨盆模块为教师编写的合成病例，不含真实患者资料；其信息释放服务于风险表征训练，非启动或治疗阈值。",
+      "statement_en": "The pelvic module is an instructor-authored synthetic case without real-patient data; its progressive information supports risk-representation practice, not activation or treatment thresholds.",
+      "candidate_source_ids": [
+        "S-SYNTHETIC-CASE-METHOD",
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "骨盆创伤情境化推理教学。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-SYNTHETIC-CASE-METHOD",
+          "title": "Clinical Reasoning Case Template",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_REASONING_CASE_TEMPLATE.md"
+        },
+        {
+          "id": "S-CLINICAL-SAFETY-BOUNDARY",
+          "title": "Clinical Safety Boundary",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_SAFETY_BOUNDARY.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-PELVIC-MECHANISM-TREND",
+      "module": "courses/pelvic-trauma.html",
+      "asset_locator": "courses/pelvic-trauma.html#progressive-release;#mechanism-map",
+      "record_layer": "medical_teaching_assertion",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "高能量机制、循环趋势、骨盆区域信息与合并伤应共同解释风险；骨盆风险不应使团队停止寻找其他损伤或出血来源。",
+      "statement_en": "High-energy mechanism, circulatory trend, pelvic-region information, and associated injuries should be interpreted together; pelvic concern should not stop the search for other injury or bleeding sources.",
+      "candidate_source_ids": [
+        "S-WSES-PELVIC-2017",
+        "S-ACS-ATLS-11"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "骨盆创伤的风险表征与并行查找教学；不构成诊断或本地处置流程。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-WSES-PELVIC-2017",
+          "title": "Pelvic trauma: WSES classification and guidelines",
+          "version_or_date": "2017",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5241998/"
+        },
+        {
+          "id": "S-ACS-ATLS-11",
+          "title": "Advanced Trauma Life Support 11th Edition public page",
+          "version_or_date": "ATLS 11 public program page",
+          "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-PELVIC-FAST-BOUNDARY",
+      "module": "courses/pelvic-trauma.html",
+      "asset_locator": "courses/pelvic-trauma.html#progressive-release[data-case-release=4]",
+      "record_layer": "medical_teaching_assertion",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "未显示明确腔隙异常的床旁超声信息，不能自动排除腹膜后或骨盆相关出血担心。",
+      "statement_en": "Bedside ultrasound information without a clear cavity abnormality cannot automatically exclude retroperitoneal or pelvic-related bleeding concern.",
+      "candidate_source_ids": [
+        "S-NICE-NG39",
+        "S-EUROPEAN-BLEEDING-2023"
+      ],
+      "source_locator_claim_ids": [
+        "CLAIM-PELVIC-FAST-LIMIT"
+      ],
+      "applicability": "骨盆/腹膜后出血担心中的检查边界教学；不构成下一步检查或转运指令。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-NICE-NG39",
+          "title": "Major trauma: assessment and initial management",
+          "version_or_date": "NG39; published and last reviewed 2016-02-17",
+          "url": "https://www.nice.org.uk/guidance/ng39"
+        },
+        {
+          "id": "S-EUROPEAN-BLEEDING-2023",
+          "title": "European guideline on management of major bleeding and coagulopathy following trauma, sixth edition",
+          "version_or_date": "sixth edition, 2023",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9977110/"
+        }
+      ],
+      "source_locator_for_reviewer": "linked_topic_locator_recorded",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-PELVIC-RESOURCE-BOUNDARY",
+      "module": "courses/pelvic-trauma.html",
+      "asset_locator": "courses/pelvic-trauma.html#progressive-release[data-case-release=5];#resource-map",
+      "record_layer": "local_workflow_boundary",
+      "claim_type": "teaching_process_assertion",
+      "statement_zh": "影像、血液、手术/介入和转运仅作为资源状态地图呈现；本地启动标准、岗位分工和实施路径不由课件规定。",
+      "statement_en": "Imaging, blood, surgery/intervention, and transfer are presented only as a resource-state map; local activation criteria, role allocation, and implementation pathways are not set by the courseware.",
+      "candidate_source_ids": [
+        "S-LOCAL-PROTOCOL",
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "已批准创伤中心场景内的资源协调教学。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-LOCAL-PROTOCOL",
+          "title": "本院流程与资源启动文件",
+          "version_or_date": "pending_local_confirmation",
+          "url": "pending_local_confirmation"
+        },
+        {
+          "id": "S-CLINICAL-SAFETY-BOUNDARY",
+          "title": "Clinical Safety Boundary",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_SAFETY_BOUNDARY.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CASE-003-FACTS",
+      "module": "courses/cspine-hip-dislocation-case.html",
+      "asset_locator": "courses/cspine-hip-dislocation-case.html#case-lab;#exam-release",
+      "record_layer": "case_fact",
+      "claim_type": "restricted_case_fact",
+      "statement_zh": "病例页面仅以脱敏临床经验呈现高能量交通机制、颈椎/颈髓风险、左髋/骨盆风险及保护状态交接缺口；源资料未保留完整具体生命体征。",
+      "statement_en": "The case page presents only de-identified clinical experience involving high-energy transport mechanism, c-spine/cord risk, left hip/pelvic risk, and protection-status handoff gaps; the source did not retain a complete set of exact vital signs.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-003-PROVENANCE"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "教师预览病例的事实层；不得扩写为完整原始病历。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_independent_case_verification",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_independent_case_verification",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-CASE-TRAUMA-003-PROVENANCE",
+          "title": "CASE-TRAUMA-003 用户提供二手临床经验与匿名影像副本",
+          "version_or_date": "source record; date withheld",
+          "url": "restricted_case_record"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CASE-003-IMAGE",
+      "module": "courses/cspine-hip-dislocation-case.html",
+      "asset_locator": "courses/cspine-hip-dislocation-case.html#case-route;assets/illustrations/cspine-hip-case-vivid.png",
+      "record_layer": "image_description",
+      "claim_type": "teaching_visual_boundary",
+      "statement_zh": "该页插图为颈椎保护与髋部风险优先级的教学示意，不是原始影像、诊断图像或病例证据。",
+      "statement_en": "The page illustration is a teaching depiction of c-spine-protection and hip-risk priority, not source imaging, diagnostic imaging, or case evidence.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-003-PROVENANCE",
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "教师预览页面的视觉教学边界。",
+      "approval_decision": "teaching_release_approved_limited_scope_visual_not_diagnostic",
+      "privacy_or_image_gate": "no_source_image_displayed; generated_visual_only",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_visual_not_diagnostic",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-CASE-TRAUMA-003-PROVENANCE",
+          "title": "CASE-TRAUMA-003 用户提供二手临床经验与匿名影像副本",
+          "version_or_date": "source record; date withheld",
+          "url": "restricted_case_record"
+        },
+        {
+          "id": "S-CLINICAL-SAFETY-BOUNDARY",
+          "title": "Clinical Safety Boundary",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_SAFETY_BOUNDARY.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CASE-003-INFERENCE",
+      "module": "courses/cspine-hip-dislocation-case.html",
+      "asset_locator": "courses/cspine-hip-dislocation-case.html#case-lab;#briefing",
+      "record_layer": "teaching_inference",
+      "claim_type": "teaching_inference",
+      "statement_zh": "将高能量机制、保护状态不完整、神经线索与髋/骨盆风险放入同一问题表征，是团队复评教学推断，不等同于最终诊断或处置路径。",
+      "statement_en": "Putting high-energy mechanism, incomplete protection status, neurologic cues, and hip/pelvic risk into one problem representation is a team-reassessment teaching inference, not a final diagnosis or treatment pathway.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-003-PROVENANCE",
+        "S-ETM-PUBLIC",
+        "S-ACS-ATLS-11"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "创伤团队沟通和复评训练。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_final_diagnosis",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_final_diagnosis",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-CASE-TRAUMA-003-PROVENANCE",
+          "title": "CASE-TRAUMA-003 用户提供二手临床经验与匿名影像副本",
+          "version_or_date": "source record; date withheld",
+          "url": "restricted_case_record"
+        },
+        {
+          "id": "S-ETM-PUBLIC",
+          "title": "Emergency Trauma Management public course description",
+          "version_or_date": "public course-description page",
+          "url": "https://etmcourse.com/course-description/"
+        },
+        {
+          "id": "S-ACS-ATLS-11",
+          "title": "Advanced Trauma Life Support 11th Edition public page",
+          "version_or_date": "ATLS 11 public program page",
+          "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CASE-003-PRIVACY",
+      "module": "courses/cspine-hip-dislocation-case.html",
+      "asset_locator": "courses/cspine-hip-dislocation-case.html#case-lab;assets/cases/case-trauma-003/",
+      "record_layer": "privacy_authorization",
+      "claim_type": "privacy_authorization_boundary",
+      "statement_zh": "公开教学仅可使用已脱敏且在授权展示范围内的病例叙述与图像副本；不得展示姓名、检查号、精确日期、机构或人员标识。",
+      "statement_en": "Public teaching may use only de-identified, authorized case narrative and image copies; name, accession number, exact date, institution, and staff identifiers must not be shown.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-003-PROVENANCE"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "病例与影像展示的隐私闸门。",
+      "approval_decision": "approved_only_when_deidentified_and_authorized",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "approved_only_when_deidentified_and_authorized",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-CASE-TRAUMA-003-PROVENANCE",
+          "title": "CASE-TRAUMA-003 用户提供二手临床经验与匿名影像副本",
+          "version_or_date": "source record; date withheld",
+          "url": "restricted_case_record"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CASE-004-FACTS",
+      "module": "courses/polytrauma-shock-reassessment-case.html",
+      "asset_locator": "courses/polytrauma-shock-reassessment-case.html#progressive-release[data-case-release=0..8]",
+      "record_layer": "case_fact",
+      "claim_type": "restricted_case_fact",
+      "statement_zh": "到院生理、查体、检验、CT 报告、抢救通路、后续红斑与会诊记录来自用户提供病例；草丛暴露、床旁 FAST 与皮肤色泽分布为用户补充事实。",
+      "statement_en": "Arrival physiology, examination, laboratory data, CT report, resuscitative access, later erythema, and consultation record derive from the user-provided case; grass exposure, bedside FAST, and skin-color distribution are user-supplied addendum facts.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-004-PROVENANCE"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "教师预览病例事实层；不补写未记录的病史、检查或结局。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_independent_case_verification",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_independent_case_verification",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-CASE-TRAUMA-004-PROVENANCE",
+          "title": "CASE-TRAUMA-004 用户提供 Word 病例与后续补充",
+          "version_or_date": "source record; date withheld",
+          "url": "restricted_case_record"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CASE-004-IMAGE",
+      "module": "courses/polytrauma-shock-reassessment-case.html",
+      "asset_locator": "courses/polytrauma-shock-reassessment-case.html#investigations;assets/cases/case-trauma-004/",
+      "record_layer": "image_description",
+      "claim_type": "restricted_image_description",
+      "statement_zh": "两张代表性 CT 教学图仅对应页面所载正式报告性描述：胸腰椎骨折/椎管变形，以及少量气胸、肋骨骨折和少量胸腔/心包积液；它们不单独裁决休克病因。",
+      "statement_en": "The two representative CT teaching images correspond only to the report-level page descriptions of thoracolumbar fracture/canal deformation and small pneumothorax, rib fractures, and small pleural/pericardial fluid; they do not independently adjudicate shock etiology.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-004-PROVENANCE"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "已脱敏、授权范围内的影像教学节点；需要完整序列和正式报告时由临床团队处理。",
+      "approval_decision": "approved_only_when_deidentified_and_authorized_not_diagnostic_adjudication",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "approved_only_when_deidentified_and_authorized_not_diagnostic_adjudication",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-CASE-TRAUMA-004-PROVENANCE",
+          "title": "CASE-TRAUMA-004 用户提供 Word 病例与后续补充",
+          "version_or_date": "source record; date withheld",
+          "url": "restricted_case_record"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CASE-004-INFERENCE",
+      "module": "courses/polytrauma-shock-reassessment-case.html",
+      "asset_locator": "courses/polytrauma-shock-reassessment-case.html#progressive-release[data-case-release=8..9];#briefing",
+      "record_layer": "teaching_inference",
+      "claim_type": "teaching_inference",
+      "statement_zh": "影像损伤负荷与生理严重度不匹配、草丛暴露及后续红斑使过敏性/分布性或混合性休克成为重要教学假设；该推断不等同于真实患者最终病因裁决，也不将改善归因于单一药物。",
+      "statement_en": "Mismatch between injury burden and physiologic severity, grass exposure, and later erythema make allergic/distributive or mixed shock an important teaching hypothesis; this is not final etiologic adjudication for the real patient and does not attribute improvement to one drug.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-004-PROVENANCE",
+        "S-ANAPHYLAXIS-CHINA",
+        "S-RCUK-2025",
+        "S-ANAPHYLAXIS-PP-2023"
+      ],
+      "source_locator_claim_ids": [
+        "CLAIM-CASE-TRAUMA-004-ANAPHYLAXIS"
+      ],
+      "applicability": "休克机制再评估、避免锚定与因果谨慎教学。",
+      "approval_decision": "teaching_release_approved_limited_scope_multispecialty_claim_review_required",
+      "clinical_reviewer": "急诊、创伤、重症与过敏专科联合审核（尚未逐条署名）",
+      "clinical_review_date": "2026-07-19",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_multispecialty_claim_review_required",
+      "source_evidence": [
+        {
+          "id": "S-CASE-TRAUMA-004-PROVENANCE",
+          "title": "CASE-TRAUMA-004 用户提供 Word 病例与后续补充",
+          "version_or_date": "source record; date withheld",
+          "url": "restricted_case_record"
+        },
+        {
+          "id": "S-ANAPHYLAXIS-CHINA",
+          "title": "《严重过敏反应急救指南》推荐意见",
+          "version_or_date": "2019, 21(2):85–91; published 2019-04-28",
+          "url": "https://www.cadrj.com/CN/abstract/abstract4178.shtml"
+        },
+        {
+          "id": "S-RCUK-2025",
+          "title": "Special circumstances Guidelines",
+          "version_or_date": "2025; published 2025-10-27",
+          "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/special-circumstances-guidelines"
+        },
+        {
+          "id": "S-ANAPHYLAXIS-PP-2023",
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "version_or_date": "Ann Allergy Asthma Immunol. 2024;132(2):124–176; DOI 10.1016/j.anai.2023.09.015",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38108678/"
+        }
+      ],
+      "source_locator_for_reviewer": "linked_topic_locator_recorded",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CASE-004-PRIVACY",
+      "module": "courses/polytrauma-shock-reassessment-case.html",
+      "asset_locator": "courses/polytrauma-shock-reassessment-case.html#sources;assets/cases/case-trauma-004/",
+      "record_layer": "privacy_authorization",
+      "claim_type": "privacy_authorization_boundary",
+      "statement_zh": "公开页面删除精确日期、机构、人员和检查编号；原始 Word 与影像仅在完成脱敏并处于授权展示范围时用于教学。",
+      "statement_en": "The public page excludes exact dates, institution, staff, and accession identifiers; the source Word file and images are used for teaching only after de-identification and within authorized display scope.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-004-PROVENANCE"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "病例与原始影像的隐私/授权闸门。",
+      "approval_decision": "approved_only_when_deidentified_and_authorized",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "approved_only_when_deidentified_and_authorized",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-CASE-TRAUMA-004-PROVENANCE",
+          "title": "CASE-TRAUMA-004 用户提供 Word 病例与后续补充",
+          "version_or_date": "source record; date withheld",
+          "url": "restricted_case_record"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CASE-005-FACTS",
+      "module": "courses/abdominal-hemorrhagic-shock-case.html",
+      "asset_locator": "courses/abdominal-hemorrhagic-shock-case.html#case-lab;#investigations",
+      "record_layer": "case_fact",
+      "claim_type": "restricted_case_fact",
+      "statement_zh": "病例来自用户提供的临床记录；页面以相对顺序呈现高龄多发伤、腹盆腔出血风险、资源协调与不良结局复盘，不公开原始文件名或可识别信息。",
+      "statement_en": "The case derives from a user-provided clinical record; the page uses relative sequence to present older polytrauma, abdominopelvic bleeding risk, resource coordination, and adverse-outcome debrief without publishing the source filename or identifiable information.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-005-PROVENANCE"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "教师预览病例事实层；不作为完整原始病历。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_independent_case_verification",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_independent_case_verification",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-CASE-TRAUMA-005-PROVENANCE",
+          "title": "CASE-TRAUMA-005 用户提供临床记录",
+          "version_or_date": "source record; date withheld",
+          "url": "restricted_case_record"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CASE-005-IMAGE",
+      "module": "courses/abdominal-hemorrhagic-shock-case.html",
+      "asset_locator": "courses/abdominal-hemorrhagic-shock-case.html#case-lab;assets/illustrations/abdominal-shock-case-vivid.png",
+      "record_layer": "image_description",
+      "claim_type": "teaching_visual_boundary",
+      "statement_zh": "页面腹部失血示意图为教学插图，用于强化隐匿来源与复评主题；不展示源文档影像，也不是诊断图像。",
+      "statement_en": "The abdominal-hemorrhage visual is a teaching illustration reinforcing occult-source and reassessment themes; it does not display source-document imaging and is not diagnostic imaging.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-005-PROVENANCE",
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "教师预览页面的视觉教学边界。",
+      "approval_decision": "teaching_release_approved_limited_scope_visual_not_diagnostic",
+      "privacy_or_image_gate": "no_source_image_displayed; generated_visual_only",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_visual_not_diagnostic",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-CASE-TRAUMA-005-PROVENANCE",
+          "title": "CASE-TRAUMA-005 用户提供临床记录",
+          "version_or_date": "source record; date withheld",
+          "url": "restricted_case_record"
+        },
+        {
+          "id": "S-CLINICAL-SAFETY-BOUNDARY",
+          "title": "Clinical Safety Boundary",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_SAFETY_BOUNDARY.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CASE-005-INFERENCE",
+      "module": "courses/abdominal-hemorrhagic-shock-case.html",
+      "asset_locator": "courses/abdominal-hemorrhagic-shock-case.html#case-lab;#briefing",
+      "record_layer": "teaching_inference",
+      "claim_type": "teaching_inference",
+      "statement_zh": "以循环趋势、腹部/盆腔风险、资源时间轴和未解释信息组织复盘，是隐匿失血风险与团队复评的教学推断，不替代对真实病例的责任归属或最终诊断。",
+      "statement_en": "Organizing debrief around circulatory trend, abdominal/pelvic risk, resource timeline, and unresolved information is a teaching inference about occult-bleeding risk and team reassessment, not attribution of responsibility or final diagnosis for the real case.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-005-PROVENANCE",
+        "S-EUROPEAN-BLEEDING-2023",
+        "S-ACS-ATLS-11"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "隐匿失血风险、资源协作与复评教学。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_final_diagnosis",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_final_diagnosis",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-CASE-TRAUMA-005-PROVENANCE",
+          "title": "CASE-TRAUMA-005 用户提供临床记录",
+          "version_or_date": "source record; date withheld",
+          "url": "restricted_case_record"
+        },
+        {
+          "id": "S-EUROPEAN-BLEEDING-2023",
+          "title": "European guideline on management of major bleeding and coagulopathy following trauma, sixth edition",
+          "version_or_date": "sixth edition, 2023",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9977110/"
+        },
+        {
+          "id": "S-ACS-ATLS-11",
+          "title": "Advanced Trauma Life Support 11th Edition public page",
+          "version_or_date": "ATLS 11 public program page",
+          "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CASE-005-PRIVACY",
+      "module": "courses/abdominal-hemorrhagic-shock-case.html",
+      "asset_locator": "courses/abdominal-hemorrhagic-shock-case.html#case-lab;#sources",
+      "record_layer": "privacy_authorization",
+      "claim_type": "privacy_authorization_boundary",
+      "statement_zh": "该病例以相对时序替代精确时间，删除姓名、机构、人员与原始文件名；源文档影像不进入公开课件。",
+      "statement_en": "This case uses relative sequencing instead of exact time and excludes name, institution, staff, and source filename; source-document images do not enter the public courseware.",
+      "candidate_source_ids": [
+        "S-CASE-TRAUMA-005-PROVENANCE"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "病例叙述和影像展示的隐私闸门。",
+      "approval_decision": "approved_only_when_deidentified_and_authorized",
+      "privacy_or_image_gate": "approved_only_when_deidentified_and_authorized",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "approved_only_when_deidentified_and_authorized",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-CASE-TRAUMA-005-PROVENANCE",
+          "title": "CASE-TRAUMA-005 用户提供临床记录",
+          "version_or_date": "source record; date withheld",
+          "url": "restricted_case_record"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-XABCDE-FRAMEWORK",
+      "module": "courses/xabcde.html",
+      "asset_locator": "courses/xabcde.html#overview;#stages",
+      "record_layer": "framework_teaching",
+      "claim_type": "medical_teaching_assertion",
+      "statement_zh": "xABCDE 在课程中作为识别立即威胁、组织团队共同注意并触发重复评估的教学框架，不复制专有课程算法或发布个体化处置指令。",
+      "statement_en": "In this course, xABCDE is a teaching framework for recognizing immediate threats, organizing shared team attention, and triggering reassessment; it does not reproduce proprietary course algorithms or publish individualized treatment instructions.",
+      "candidate_source_ids": [
+        "S-ACS-ATLS-11",
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "创伤初始评估的教学语言。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ACS-ATLS-11",
+          "title": "Advanced Trauma Life Support 11th Edition public page",
+          "version_or_date": "ATLS 11 public program page",
+          "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/"
+        },
+        {
+          "id": "S-CLINICAL-SAFETY-BOUNDARY",
+          "title": "Clinical Safety Boundary",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_SAFETY_BOUNDARY.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-XABCDE-REASSESSMENT",
+      "module": "courses/xabcde.html",
+      "asset_locator": "courses/xabcde.html#team-loop;#quiz",
+      "record_layer": "teaching_process_assertion",
+      "claim_type": "teaching_process_assertion",
+      "statement_zh": "团队并行任务、已知/未知信息和行动后复评用于训练共享语言与闭环沟通；具体岗位职责和节奏须由本地培训确认。",
+      "statement_en": "Parallel team tasks, known/unknown information, and post-action reassessment train shared language and closed-loop communication; specific roles and cadence require local training confirmation.",
+      "candidate_source_ids": [
+        "S-ETM-PUBLIC",
+        "S-LOCAL-PROTOCOL"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "课堂和模拟中的团队沟通训练。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ETM-PUBLIC",
+          "title": "Emergency Trauma Management public course description",
+          "version_or_date": "public course-description page",
+          "url": "https://etmcourse.com/course-description/"
+        },
+        {
+          "id": "S-LOCAL-PROTOCOL",
+          "title": "本院流程与资源启动文件",
+          "version_or_date": "pending_local_confirmation",
+          "url": "pending_local_confirmation"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-XABCDE-VISUAL-BOUNDARY",
+      "module": "courses/xabcde.html",
+      "asset_locator": "courses/xabcde.html#overview;assets/images/xabcde/",
+      "record_layer": "visual_boundary",
+      "claim_type": "teaching_visual_boundary",
+      "statement_zh": "xABCDE 图示用于解释观察、报告、协调与复评关系；视觉资产不是医学证据、诊断图像或操作步骤。",
+      "statement_en": "xABCDE visuals explain relationships among observation, reporting, coordination, and reassessment; visual assets are not medical evidence, diagnostic imaging, or procedural steps.",
+      "candidate_source_ids": [
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "全课程视觉教学边界。",
+      "approval_decision": "teaching_release_approved_limited_scope_visual_not_diagnostic",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_visual_not_diagnostic",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-CLINICAL-SAFETY-BOUNDARY",
+          "title": "Clinical Safety Boundary",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_SAFETY_BOUNDARY.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-TRAUMA-BAY-COMPOSITE",
+      "module": "courses/trauma-bay.html",
+      "asset_locator": "courses/trauma-bay.html#top;#orientation",
+      "record_layer": "synthetic_case_boundary",
+      "claim_type": "synthetic_trajectory_boundary",
+      "statement_zh": "抢救室模块使用匿名化复合场景，重点是空间、通道、角色和资源准备，不是针对单个真实患者的诊断或医嘱训练。",
+      "statement_en": "The trauma-bay module uses an anonymized composite scene focused on space, pathways, roles, and resource readiness, not diagnosis or order training for a real individual patient.",
+      "candidate_source_ids": [
+        "S-SYNTHETIC-CASE-METHOD",
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "初学者的抢救室定向教学。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_claim_level_clinical_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-SYNTHETIC-CASE-METHOD",
+          "title": "Clinical Reasoning Case Template",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_REASONING_CASE_TEMPLATE.md"
+        },
+        {
+          "id": "S-CLINICAL-SAFETY-BOUNDARY",
+          "title": "Clinical Safety Boundary",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_SAFETY_BOUNDARY.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-TRAUMA-BAY-HANDOFF",
+      "module": "courses/trauma-bay.html",
+      "asset_locator": "courses/trauma-bay.html#handoff;#activities",
+      "record_layer": "teaching_process_assertion",
+      "claim_type": "teaching_process_assertion",
+      "statement_zh": "将院前信息整理为已知、未知、需要确认和可能需要资源的共享板，是交接和复评的教学组织方法。",
+      "statement_en": "Sorting pre-arrival information into known, unknown, needs confirmation, and possible resource needs on a shared board is a teaching organization method for handoff and reassessment.",
+      "candidate_source_ids": [
+        "S-ETM-PUBLIC",
+        "S-ACS-ATLS-11"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "创伤团队交接、课堂模拟与复盘。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ETM-PUBLIC",
+          "title": "Emergency Trauma Management public course description",
+          "version_or_date": "public course-description page",
+          "url": "https://etmcourse.com/course-description/"
+        },
+        {
+          "id": "S-ACS-ATLS-11",
+          "title": "Advanced Trauma Life Support 11th Edition public page",
+          "version_or_date": "ATLS 11 public program page",
+          "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-TRAUMA-BAY-LOCAL-BOUNDARY",
+      "module": "courses/trauma-bay.html",
+      "asset_locator": "courses/trauma-bay.html#roles;#safety",
+      "record_layer": "local_workflow_boundary",
+      "claim_type": "local_workflow_boundary",
+      "statement_zh": "团队角色、设备位置、启动时机和岗位分工仅用于流程教育；课程不发布本院具体抢救室操作规程。",
+      "statement_en": "Team roles, equipment location, activation timing, and task allocation are used only for process education; the course does not publish an institutional trauma-bay operating procedure.",
+      "candidate_source_ids": [
+        "S-LOCAL-PROTOCOL",
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "已批准创伤中心场景内的流程认知教学。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-LOCAL-PROTOCOL",
+          "title": "本院流程与资源启动文件",
+          "version_or_date": "pending_local_confirmation",
+          "url": "pending_local_confirmation"
+        },
+        {
+          "id": "S-CLINICAL-SAFETY-BOUNDARY",
+          "title": "Clinical Safety Boundary",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_SAFETY_BOUNDARY.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CARE-CHAIN-CONCEPT",
+      "module": "courses/trauma-care-chain.html",
+      "asset_locator": "courses/trauma-care-chain.html#overview;#route",
+      "record_layer": "framework_teaching",
+      "claim_type": "teaching_process_assertion",
+      "statement_zh": "院前预警、到院交接、xABCDE、资源协调和归处交接被组织为一条可复评的课程路线，用于帮助学习者理解信息如何影响团队关注。",
+      "statement_en": "Pre-alert, arrival handoff, xABCDE, resource coordination, and disposition handoff are organized as a reassessable course route to help learners understand how information affects team attention.",
+      "candidate_source_ids": [
+        "S-ACS-ATLS-11",
+        "S-ETM-PUBLIC"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "创伤系统思维和团队沟通教学。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ACS-ATLS-11",
+          "title": "Advanced Trauma Life Support 11th Edition public page",
+          "version_or_date": "ATLS 11 public program page",
+          "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/"
+        },
+        {
+          "id": "S-ETM-PUBLIC",
+          "title": "Emergency Trauma Management public course description",
+          "version_or_date": "public course-description page",
+          "url": "https://etmcourse.com/course-description/"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CARE-CHAIN-RESOURCE-BOUNDARY",
+      "module": "courses/trauma-care-chain.html",
+      "asset_locator": "courses/trauma-care-chain.html#resources;#coordination",
+      "record_layer": "local_workflow_boundary",
+      "claim_type": "local_workflow_boundary",
+      "statement_zh": "创伤团队、血库、影像、手术、介入、ICU 与转运仅作为资源节点讨论；其可用性、启动标准和责任分工必须依本院授权流程。",
+      "statement_en": "Trauma team, blood bank, imaging, surgery, intervention, ICU, and transfer are discussed only as resource nodes; availability, activation criteria, and responsibility allocation require authorized institutional pathways.",
+      "candidate_source_ids": [
+        "S-LOCAL-PROTOCOL",
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "所述创伤中心场景内的资源协调教学。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-LOCAL-PROTOCOL",
+          "title": "本院流程与资源启动文件",
+          "version_or_date": "pending_local_confirmation",
+          "url": "pending_local_confirmation"
+        },
+        {
+          "id": "S-CLINICAL-SAFETY-BOUNDARY",
+          "title": "Clinical Safety Boundary",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_SAFETY_BOUNDARY.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-CARE-CHAIN-STRUCTURED-HANDOFF",
+      "module": "courses/trauma-care-chain.html",
+      "asset_locator": "courses/trauma-care-chain.html#handoff;#reassessment",
+      "record_layer": "teaching_process_assertion",
+      "claim_type": "teaching_process_assertion",
+      "statement_zh": "结构化交接应保留已知信息、未解释问题、资源状态和下一次复评责任人，以支持接收团队继续进行风险排序。",
+      "statement_en": "Structured handoff should retain known information, unresolved questions, resource status, and the next reassessment owner so the receiving team can continue risk prioritization.",
+      "candidate_source_ids": [
+        "S-ETM-PUBLIC",
+        "S-LOCAL-PROTOCOL"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "交接与转运模拟教学。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-ETM-PUBLIC",
+          "title": "Emergency Trauma Management public course description",
+          "version_or_date": "public course-description page",
+          "url": "https://etmcourse.com/course-description/"
+        },
+        {
+          "id": "S-LOCAL-PROTOCOL",
+          "title": "本院流程与资源启动文件",
+          "version_or_date": "pending_local_confirmation",
+          "url": "pending_local_confirmation"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-DISASTER-SYNTHETIC-SCENARIO",
+      "module": "courses/trauma-disaster-medicine.html",
+      "asset_locator": "courses/trauma-disaster-medicine.html#simulation;data/trauma-disaster-cases.json",
+      "record_layer": "synthetic_case_boundary",
+      "claim_type": "synthetic_trajectory_boundary",
+      "statement_zh": "灾难医学患者卡和资源事件为合成教学情境，用于讨论患者优先级与系统容量；不定义真实患者分诊结论。",
+      "statement_en": "Disaster-medicine patient cards and resource events are synthetic teaching scenarios for discussing patient priority and system capacity; they do not define real-patient triage conclusions.",
+      "candidate_source_ids": [
+        "S-SYNTHETIC-CASE-METHOD",
+        "S-WHO-MCM",
+        "S-ACS-DISASTER"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "课堂与模拟中的系统推理训练。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_triage_algorithm_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_triage_algorithm_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-SYNTHETIC-CASE-METHOD",
+          "title": "Clinical Reasoning Case Template",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_REASONING_CASE_TEMPLATE.md"
+        },
+        {
+          "id": "S-WHO-MCM",
+          "title": "Mass Casualty Management",
+          "version_or_date": "online programme page; version not captured",
+          "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/mass-casualty-management"
+        },
+        {
+          "id": "S-ACS-DISASTER",
+          "title": "Statement on Disaster and Mass Casualty Management",
+          "version_or_date": "online statement; version not captured",
+          "url": "https://www.facs.org/about-acs/statements/disaster-and-mass-casualty-management/"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-DISASTER-DEMAND-RESOURCE",
+      "module": "courses/trauma-disaster-medicine.html",
+      "asset_locator": "courses/trauma-disaster-medicine.html#lesson-3;#lesson-4;data/trauma-disaster-course.json",
+      "record_layer": "framework_teaching",
+      "claim_type": "teaching_process_assertion",
+      "statement_zh": "当需求与资源出现失衡时，课程训练团队显性讨论瓶颈、沟通与复评，而非以单一资源或单一分区规则替代综合判断。",
+      "statement_en": "When demand and resources become imbalanced, the course trains teams to explicitly discuss bottlenecks, communication, and reassessment rather than substitute one resource or one area rule for synthesis.",
+      "candidate_source_ids": [
+        "S-WHO-MCM",
+        "S-ACS-DISASTER"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "灾难医学资源压力与团队沟通教学。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_triage_algorithm_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_triage_algorithm_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-WHO-MCM",
+          "title": "Mass Casualty Management",
+          "version_or_date": "online programme page; version not captured",
+          "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/mass-casualty-management"
+        },
+        {
+          "id": "S-ACS-DISASTER",
+          "title": "Statement on Disaster and Mass Casualty Management",
+          "version_or_date": "online statement; version not captured",
+          "url": "https://www.facs.org/about-acs/statements/disaster-and-mass-casualty-management/"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    },
+    {
+      "id": "CLAIM-ATOM-DISASTER-LOCAL-BOUNDARY",
+      "module": "courses/trauma-disaster-medicine.html",
+      "asset_locator": "courses/trauma-disaster-medicine.html#simulation;#review;data/trauma-disaster-cases.json",
+      "record_layer": "local_workflow_boundary",
+      "claim_type": "local_workflow_boundary",
+      "statement_zh": "分诊算法、本院指挥体系、资源启动和峰值应对路径不由本课程规定，必须由课程负责人和本院授权流程另行确认。",
+      "statement_en": "Triage algorithm, institutional command structure, resource activation, and surge-response pathways are not set by this course and require separate confirmation by the course lead and authorized institutional processes.",
+      "candidate_source_ids": [
+        "S-LOCAL-PROTOCOL",
+        "S-CLINICAL-SAFETY-BOUNDARY"
+      ],
+      "source_locator_claim_ids": [],
+      "applicability": "灾难医学教学的本地流程边界。",
+      "approval_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "current_page_status": [
+        "atomized_register_only"
+      ],
+      "evidence_status": "atomized_candidate_mapping_retained_for_audit",
+      "framework_teaching_basis": "approved_limited_teaching_scope",
+      "clinical_review_decision": "teaching_release_approved_limited_scope_not_local_protocol_signoff",
+      "clinical_reviewer": "创伤方向主任医师（审批人姓名隐匿；仅限发布范围审批）",
+      "clinical_review_date": "2026-07-19",
+      "source_evidence": [
+        {
+          "id": "S-LOCAL-PROTOCOL",
+          "title": "本院流程与资源启动文件",
+          "version_or_date": "pending_local_confirmation",
+          "url": "pending_local_confirmation"
+        },
+        {
+          "id": "S-CLINICAL-SAFETY-BOUNDARY",
+          "title": "Clinical Safety Boundary",
+          "version_or_date": "project-controlled document",
+          "url": "../../docs/CLINICAL_SAFETY_BOUNDARY.md"
+        }
+      ],
+      "source_locator_for_reviewer": "source_register_locator_retained",
+      "privacy_or_image_gate": "not_primary_gate_for_this_synthetic_module_claim",
+      "bilingual_review_decision": "terms_human_reviewed_consistent",
+      "release_decision": "teaching_release_approved_limited_scope",
+      "release_decision_id": "R-TA-20260719-01",
+      "notes": "This atomic record makes scope and source mapping auditable. It does not transform the limited teaching-release decision into a claim-level clinical pathway, local protocol, or individualized treatment recommendation."
+    }
+  ]
+}

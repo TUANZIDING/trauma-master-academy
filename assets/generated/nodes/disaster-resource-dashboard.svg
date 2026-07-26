@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">DISASTER RESOURCE STATUS BOARD</title>
+  <desc id="desc">Resource dashboard showing availability states for mass-casualty teaching without numeric thresholds.</desc>
+  <rect width="1200" height="760" fill="#fbf7ef"/>
+  <rect x="48" y="48" width="1104" height="664" rx="18" fill="#fff" stroke="#dfe7e2" stroke-width="3"/>
+  <text x="84" y="108" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#102033">DISASTER RESOURCE STATUS BOARD</text>
+  <text x="84" y="144" font-family="Arial, sans-serif" font-size="20" fill="#64748b">Teaching states: Available · Limited · Strained · Unavailable</text>
+  <g font-family="Arial, sans-serif" font-size="18">
+    <g transform="translate(84 205)">
+      <rect width="230" height="92" rx="12" fill="#eef8f5" stroke="#1f7a7e" stroke-width="3"/><text x="22" y="36" font-weight="800" fill="#102033">Casualties</text><text x="22" y="66" fill="#1f7a7e">Strained</text>
+    </g>
+    <g transform="translate(350 205)">
+      <rect width="230" height="92" rx="12" fill="#fff9ec" stroke="#e4c47a" stroke-width="3"/><text x="22" y="36" font-weight="800" fill="#102033">Resuscitation Bays</text><text x="22" y="66" fill="#784d11">Limited</text>
+    </g>
+    <g transform="translate(616 205)">
+      <rect width="230" height="92" rx="12" fill="#fff9ec" stroke="#e4c47a" stroke-width="3"/><text x="22" y="36" font-weight="800" fill="#102033">Operating Rooms</text><text x="22" y="66" fill="#784d11">Limited</text>
+    </g>
+    <g transform="translate(882 205)">
+      <rect width="230" height="92" rx="12" fill="#fff6f4" stroke="#efcaca" stroke-width="3"/><text x="22" y="36" font-weight="800" fill="#102033">Blood Products</text><text x="22" y="66" fill="#9b1c1f">Strained</text>
+    </g>
+    <g transform="translate(84 345)">
+      <rect width="230" height="92" rx="12" fill="#eef8f5" stroke="#1f7a7e" stroke-width="3"/><text x="22" y="36" font-weight="800" fill="#102033">Trauma Teams</text><text x="22" y="66" fill="#1f7a7e">Available</text>
+    </g>
+    <g transform="translate(350 345)">
+      <rect width="230" height="92" rx="12" fill="#fff9ec" stroke="#e4c47a" stroke-width="3"/><text x="22" y="36" font-weight="800" fill="#102033">ICU Beds</text><text x="22" y="66" fill="#784d11">Limited</text>
+    </g>
+    <g transform="translate(616 345)">
+      <rect width="230" height="92" rx="12" fill="#fff9ec" stroke="#e4c47a" stroke-width="3"/><text x="22" y="36" font-weight="800" fill="#102033">Ambulances</text><text x="22" y="66" fill="#784d11">Limited</text>
+    </g>
+    <g transform="translate(882 345)">
+      <rect width="230" height="92" rx="12" fill="#eef8f5" stroke="#1f7a7e" stroke-width="3"/><text x="22" y="36" font-weight="800" fill="#102033">Transfer Capacity</text><text x="22" y="66" fill="#1f7a7e">Available</text>
+    </g>
+  </g>
+  <rect x="84" y="535" width="1028" height="86" rx="14" fill="#20313b"/>
+  <text x="116" y="574" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#fff">DISCUSSION PROMPT</text>
+  <text x="116" y="607" font-family="Arial, sans-serif" font-size="18" fill="#dbeafe">Which resource state changes the next patient priority or system action?</text>
+</svg>
