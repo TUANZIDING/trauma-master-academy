@@ -1,8 +1,8 @@
 {
-  "name": "trauma-academy-courseware",
+  "name": "trauma-master-academy",
   "version": "0.1.0",
   "private": true,
-  "description": "Standalone bilingual visual trauma teaching courseware.",
+  "description": "Bilingual full-pathway trauma education, clinical reasoning, simulation, and skills courseware.",
   "scripts": {
     "build:evidence-pack": "node scripts/build-evidence-pack.mjs",
     "build:release-archive": "node scripts/build-release-archive.mjs",
