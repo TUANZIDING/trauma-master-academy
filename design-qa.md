@@ -1,4 +1,6 @@
-# Trauma Skills Academy operation-visual QA
+# Product Design QA
+
+## Trauma Skills Academy operation-visual QA
 
 - Review date: 2026-07-26
 - Scope: nine skills in `courses/trauma-skill.html`, five capability-route nodes per skill
@@ -46,5 +48,64 @@
 2. Fix: mapped five task-specific raster scenes to each skill and reused the same mapping in the storyboard.
 3. Safety fix: added persistent simulation/interpretation badges and replaced EFAST node 03 with an authentic open-license image.
 4. Post-fix visual review: intubation, EFAST, and tourniquet screenshots show distinct actions, stable cropping, and consistent hierarchy.
+
+section result: passed
+
+---
+
+## Homepage cinematic trauma-care-chain hero
+
+- Review date: 2026-07-28
+- Source visual truth: `docs/screenshots/homepage-hero/option-2-source.png`
+- Source pixels: 1672 x 941
+- Implementation screenshot: `docs/screenshots/homepage-hero/implementation-desktop.png`
+- Implementation pixels / CSS viewport: 1280 x 720 at device scale factor 1
+- Mobile evidence: `docs/screenshots/homepage-hero/implementation-mobile.png`
+- Mobile CSS viewport: 390 x 844
+- State: Chinese homepage hero; English language-toggle state also tested
+- Normalized comparison: `docs/screenshots/homepage-hero/source-implementation-comparison.png`
+- Comparison normalization: source aspect-fitted to 1280 x 720 with neutral padding; implementation retained at 1280 x 720; both placed in one 2560 x 720 comparison input
+
+### Full-view comparison evidence
+
+- [x] The selected second concept is the visual source: a continuous ambulance-to-resuscitation-to-reassessment scene with a luminous care-chain line.
+- [x] The implementation preserves the existing site header, bilingual navigation, course title, explanatory copy, and three primary actions rather than rasterizing interactive UI.
+- [x] The hero image is a project-local raster asset, fills the intended desktop frame without distortion, and retains the ambulance, team, xABCDE board, bedside ultrasound, resource board, and reassessment node.
+- [x] The final desktop composition keeps the content readable while preserving the photographic flow and selected warm-ivory / deep-teal / muted-red art direction.
+- [x] The mobile layout changes from overlay to stacked copy-and-image, avoiding text collision and preserving an action-focused image crop.
+
+### Focused-region comparison evidence
+
+- Hero-copy region: title hierarchy, eyebrow width, paragraph measure, button alignment, and contrast were inspected at desktop and mobile breakpoints.
+- Flow region: xABCDE, bedside, team, and reassessment nodes remain visible; the clinical-scene crop does not remove the high-risk red waveform or terminal reassessment loop.
+- A separate close crop was not required because these regions remain legible in the normalized full-view comparison and the 1280 x 720 implementation capture.
+
+### Required fidelity surfaces
+
+- **Fonts and typography:** Existing bilingual font stack and optical weights were retained. Chinese title remains a two-line display heading; paragraph line length stays readable; no truncation was observed.
+- **Spacing and layout rhythm:** The selected full-width hero is implemented as one 620-pixel desktop stage with a responsive stacked mobile state. Border radius, outer width, padding, and CTA gaps align with the existing design system.
+- **Colors and visual tokens:** Existing ivory, teal, ink, line, shadow, and button tokens remain in use. A controlled ivory readability fade reproduces the selected concept’s left-side negative space without recoloring the clinical scene.
+- **Image quality and asset fidelity:** The selected raster source is stored at `assets/generated/homepage/trauma-care-chain-cinematic-v2.png` (1672 x 820), displayed with `object-fit: cover`, and remains sharp at the tested desktop viewport.
+- **Copy and content:** Existing Chinese/English course positioning and navigation are unchanged. The image’s short English flow labels are supplemented by bilingual HTML copy, alt text, and an accessible caption.
+
+### Comparison history
+
+1. Initial P2: implementation text extended across clinicians and the waveform, reducing paragraph contrast; the eyebrow also stretched to the full flex width.
+2. Fix: added a controlled left-to-right ivory readability layer, constrained the content width, and aligned the flex children to the start.
+3. Initial P2: the print/PDF action wrapped to a second line at 1280 pixels.
+4. Fix: widened the copy track and adjusted the readability layer so all three primary actions remain on one row without obscuring the care-chain focal region.
+5. Post-fix evidence: `implementation-desktop.png` shows a readable two-line title, three aligned actions, and intact xABCDE-to-reassessment imagery; `implementation-mobile.png` shows collision-free stacking.
+
+### Functional checks
+
+- [x] Chinese-to-English language toggle changed the H1 to `Visual Trauma Reasoning Courseware`.
+- [x] Primary CTA resolves to `courses/xabcde.html`.
+- [x] Core-course CTA resolves to `#modules`.
+- [x] Browser console reported zero errors in the tested state.
+- [x] Desktop and mobile hero states rendered successfully from the local preview.
+
+### Remaining P3 polish
+
+- The selected generated scene contains English-only embedded micro-labels. These are intentionally retained as part of the chosen artwork; the surrounding interactive UI and accessible description remain bilingual.
 
 final result: passed
