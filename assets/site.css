@@ -229,6 +229,77 @@ p {
   padding: 18px;
 }
 
+.hero-cinematic {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  min-height: 620px;
+  padding: 0;
+  overflow: hidden;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.hero-cinematic::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(252, 249, 244, .99) 0%, rgba(252, 249, 244, .97) 32%, rgba(252, 249, 244, .86) 46%, rgba(252, 249, 244, .24) 63%, rgba(252, 249, 244, 0) 74%);
+}
+
+.hero-cinematic .hero-copy {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  width: min(53%, 625px);
+  min-height: 620px;
+  padding: 52px 48px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.hero-cinematic .hero-copy h1 {
+  max-width: 10ch;
+}
+
+.hero-cinematic .hero-copy .lead {
+  max-width: 31em;
+}
+
+.hero-cinematic-media {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  margin: 0;
+}
+
+.hero-cinematic-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-cinematic-media figcaption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .course-figure-img {
   display: block;
   width: 100%;
@@ -3148,6 +3219,37 @@ body[data-disaster-mode="challenge"] .answer-block {
     grid-template-columns: 1fr;
   }
 
+  .hero-cinematic {
+    display: flex;
+    min-height: 0;
+    flex-direction: column;
+  }
+
+  .hero-cinematic::after {
+    display: none;
+  }
+
+  .hero-cinematic .hero-copy {
+    width: 100%;
+    min-height: 0;
+    padding: 38px;
+  }
+
+  .hero-cinematic .hero-copy h1,
+  .hero-cinematic .hero-copy .lead {
+    max-width: none;
+  }
+
+  .hero-cinematic-media {
+    position: relative;
+    min-height: 390px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .hero-cinematic-media img {
+    object-position: 63% center;
+  }
+
   .course-grid,
   .stage-grid,
   .mode-grid,
@@ -3354,6 +3456,23 @@ body[data-disaster-mode="challenge"] .answer-block {
   .reader-hero,
   .lesson {
     padding: 18px;
+  }
+
+  .hero-cinematic {
+    border-radius: 18px;
+  }
+
+  .hero-cinematic .hero-copy {
+    padding: 24px 20px 20px;
+  }
+
+  .hero-cinematic-media {
+    min-height: 290px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .hero-cinematic-media img {
+    object-position: 66% center;
   }
 
   .diagram-grid,
