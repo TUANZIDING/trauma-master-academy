@@ -48,6 +48,7 @@ Reassessment and debrief / 再评估与复盘
 - Cervical-spine and hip-dislocation teaching case / 颈椎与髋关节损伤教学病例
 - Abdominal haemorrhagic-shock case / 腹部失血性休克病例
 - Polytrauma and unexplained-shock reassessment case / 多发伤与未解释休克再评估病例
+- Synthetic circulatory-change and thoracic-aortic-injury instructor prototype / 循环骤变与胸主动脉损伤合成教师原型
 - Disaster and multi-casualty synthetic cases / 灾难与多伤员合成病例
 
 Cases separate four layers: case facts, imaging descriptions, teaching inferences, and privacy/authorisation scope.
@@ -80,8 +81,31 @@ Each skill uses task-specific images, observation prompts, team organisation, ph
 - `docs/CLINICAL_SAFETY_BOUNDARY.md`: educational safety boundary / 教学安全边界
 - `.graph/trauma-education/`: claim registers, approval scope, stop conditions, and rollback records / 医学主张、审批范围、停止条件与回滚记录
 - `npm run validate`: bilingual, structural, media, status, and skill-route checks / 双语、结构、媒体、状态与技能路线检查
+- `.workflow/trauma-clinical-experience/`: blindspot, interview, route comparison, and implementation approval templates / 盲点扫描、病例采访、方案比较与实施批准模板
+- `data/claim-evidence-ledger.json`: normalized claim-level evidence worklist / 规范化医学主张证据工作清单
+- `data/case-intake-register.json`: real-case privacy and implementation gates without patient payload / 不含患者正文的真实病例隐私与实施门禁
+- `courses/evidence-governance.html`: instructor/reviewer evidence workspace / 教师与审核者证据工作台
 
-## 7. Public-release statement / 公开发布声明
+## 7. Clinical experience conversion / 临床经验转化
+
+```text
+Clinician narration / 医生口述
+  -> source layers / 来源分层
+  -> timeline and conflicts / 时间轴与冲突
+  -> Known / Unknown / Feared
+  -> xABCDE priorities / xABCDE 优先级
+  -> progressive release / 渐进式信息释放
+  -> claim evidence / 主张证据
+  -> privacy and rights / 隐私与权利
+  -> route approval / 方案批准
+  -> implementation and verification / 实施与验证
+```
+
+Licensed ATLS/ETM materials may inform lawful internal human review. They are not copied into public courseware, prompts, or automated evidence datasets.
+
+合法持有的 ATLS/ETM 资料可用于内部人工审校，但不复制到公开课件、提示词或自动化证据数据中。
+
+## 8. Public-release statement / 公开发布声明
 
 The repository is an educational and simulation resource. It does not replace certified trauma courses, local protocols, clinical supervision, patient-specific judgement, or formal procedural credentialing.
 

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evidence Governance | TraumaMaster Academy</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/site.css?v=20260908-evidence1" />
+</head>
+<body data-lang="zh" data-evidence-dashboard>
+  <header class="topbar">
+    <a class="brand" href="../index.html#top"><span class="brand-mark">TM</span><span>TraumaMaster Academy</span></a>
+    <nav class="nav" aria-label="Evidence navigation">
+      <a href="../index.html#workflow"><span class="zh">返回门户</span><span class="en">Back to portal</span></a>
+      <a href="#overview"><span class="zh">治理总览</span><span class="en">Overview</span></a>
+      <a href="#claims"><span class="zh">主张台账</span><span class="en">Claims</span></a>
+      <a href="#cases"><span class="zh">病例门禁</span><span class="en">Case gates</span></a>
+    </nav>
+    <div class="language-toggle" aria-label="Language toggle"><button type="button" class="active" data-set-lang="zh">中文</button><button type="button" data-set-lang="en">EN</button></div>
+  </header>
+
+  <main class="wrap evidence-page" id="overview">
+    <section class="reader-hero evidence-hero">
+      <div>
+        <span class="eyebrow"><span class="zh">教师与审核者工作台</span><span class="en">Instructor and reviewer workspace</span></span>
+        <h1><span class="zh">医学主张与发布门禁</span><span class="en">Claim and Release Governance</span></h1>
+        <p class="lead"><span class="zh">把来源可定位、证据支持、双语一致、临床审核、本地确认、隐私授权和公开发布作为彼此独立的决定。</span><span class="en">Treat source location, evidence support, bilingual equivalence, clinical review, local confirmation, privacy authorization, and publication as independent decisions.</span></p>
+      </div>
+      <div class="gate-stack" aria-label="Independent review gates">
+        <span>01 · source locator</span><span>02 · evidence location</span><span>03 · bilingual meaning</span><span>04 · privacy / rights</span><span>05 · release scope</span>
+      </div>
+    </section>
+
+    <div class="notice danger-notice"><strong><span class="zh">重要：</span><span class="en">Important: </span></strong><span class="zh">本页显示的是治理状态，不是临床正确性评分。自动验证通过不能替代逐条指南核对或教学授权。</span><span class="en">This page shows governance state, not a clinical-correctness score. Automated validation cannot replace claim-level guideline review or teaching authorization.</span></div>
+
+    <section class="section" aria-labelledby="metrics-title">
+      <h2 id="metrics-title"><span class="zh">当前证据工作量</span><span class="en">Current evidence workload</span></h2>
+      <div class="evidence-metrics" data-evidence-metrics><p class="muted"><span class="zh">正在载入台账……</span><span class="en">Loading ledger...</span></p></div>
+    </section>
+
+    <section class="section" id="claims" aria-labelledby="claims-title">
+      <div class="section-header"><div><h2 id="claims-title"><span class="zh">规范化主张台账</span><span class="en">Normalized claim ledger</span></h2><p class="muted"><span class="zh">默认只显示标识符、模块、状态和证据位置，不在工作台重复展示病例正文。</span><span class="en">The dashboard shows identifiers, modules, states, and evidence locations without repeating case narratives.</span></p></div></div>
+      <div class="evidence-filters">
+        <label><span class="zh">审核状态</span><span class="en">Review status</span><select data-evidence-status><option value="all">all</option></select></label>
+        <label><span class="zh">搜索标识符或来源</span><span class="en">Search ID or source</span><input type="search" data-evidence-search placeholder="CLAIM / WHO / NICE" /></label>
+      </div>
+      <div class="evidence-table-head"><span>Claim / module</span><span>Status</span><span>Source</span><span>Evidence location</span></div>
+      <div class="evidence-list" data-evidence-list></div>
+      <p class="notice" data-evidence-error hidden></p>
+    </section>
+
+    <section class="section" id="cases" aria-labelledby="cases-title">
+      <h2 id="cases-title"><span class="zh">真实病例进入页面前的门禁</span><span class="en">Real-case gate before page implementation</span></h2>
+      <p class="muted"><span class="zh">教师模式不是访问控制。待授权病例只能保留不含患者正文的结构记录。</span><span class="en">Instructor mode is not access control. A pending case may retain only a structure record without patient payload.</span></p>
+      <div class="case-gate-list" data-case-gate></div>
+    </section>
+
+    <section class="section">
+      <h2><span class="zh">口述经验转化路径</span><span class="en">Clinical narration workflow</span></h2>
+      <ol class="governance-route">
+        <li><strong><span class="zh">口述与来源分层</span><span class="en">Narration and source layers</span></strong><small>record · recollection · report · inference</small></li>
+        <li><strong><span class="zh">盲点与冲突</span><span class="en">Blindspots and conflicts</span></strong><small>Known · Unknown · Feared</small></li>
+        <li><strong><span class="zh">主张与证据</span><span class="en">Claims and evidence</span></strong><small>location · scope · currency · rights</small></li>
+        <li><strong><span class="zh">独立门禁</span><span class="en">Independent gates</span></strong><small>medical · bilingual · privacy · local</small></li>
+        <li><strong><span class="zh">批准后实施</span><span class="en">Approved implementation</span></strong><small>page · validation · browser review</small></li>
+      </ol>
+    </section>
+  </main>
+  <footer class="footer wrap"><span class="zh">审核工作台不提供床旁诊疗建议。</span><span class="en">The governance workspace does not provide bedside clinical guidance.</span></footer>
+  <script src="../assets/site.js"></script>
+  <script src="../assets/evidence-dashboard.js"></script>
+</body>
+</html>

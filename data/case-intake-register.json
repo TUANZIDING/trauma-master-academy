@@ -1,0 +1,83 @@
+{
+  "register_version": 1,
+  "policy": "Real-case payload is excluded from the public repository until both de-identification review and documented teaching authorization are complete. Instructor mode is not access control.",
+  "cases": [
+    {
+      "case_id": "CASE-TRAUMA-003",
+      "case_type": "real_case_restricted",
+      "working_title_zh": "颈椎风险与髋关节脱位教学病例",
+      "working_title_en": "C-spine risk and hip dislocation teaching case",
+      "distribution_scope": "instructor_preview",
+      "privacy_status": "pending_deidentification_review",
+      "authorization_status": "pending_conflict_resolution",
+      "source_layers": ["clinician_recollection", "imaging_report", "teaching_inference"],
+      "conflicts": [{"conflict_id": "PRIVACY-003-01", "description": "Legacy portal and release records describe an authorized display range while claim metadata still requires de-identification review.", "status": "open"}],
+      "public_payload_included": true,
+      "implementation_gate": "legacy_public_derivative_review_required",
+      "next_safe_step": "Reconcile the de-identification and authorization record before any student release or further case expansion.",
+      "review_status": "pending_deidentification_review"
+    },
+    {
+      "case_id": "CASE-TRAUMA-004",
+      "case_type": "real_case_restricted",
+      "working_title_zh": "多发伤与休克再评估教学病例",
+      "working_title_en": "Polytrauma and shock reassessment teaching case",
+      "distribution_scope": "instructor_preview",
+      "privacy_status": "pending_deidentification_review",
+      "authorization_status": "pending_conflict_resolution",
+      "source_layers": ["medical_record_fact", "clinician_recollection", "imaging_report", "teaching_inference"],
+      "conflicts": [{"conflict_id": "PRIVACY-004-01", "description": "Legacy release language and pending privacy claim metadata do not establish one consistent authorization state.", "status": "open"}],
+      "public_payload_included": true,
+      "implementation_gate": "legacy_public_derivative_review_required",
+      "next_safe_step": "Confirm the approved derivative-image and narrative display scope before student release.",
+      "review_status": "pending_deidentification_review"
+    },
+    {
+      "case_id": "CASE-TRAUMA-005",
+      "case_type": "real_case_restricted",
+      "working_title_zh": "腹部损伤与持续失血教学病例",
+      "working_title_en": "Abdominal injury and ongoing hemorrhage teaching case",
+      "distribution_scope": "instructor_preview",
+      "privacy_status": "pending_deidentification_review",
+      "authorization_status": "pending_conflict_resolution",
+      "source_layers": ["medical_record_fact", "clinician_recollection", "imaging_report", "laboratory_report", "teaching_inference"],
+      "conflicts": [{"conflict_id": "PRIVACY-005-01", "description": "Legacy portal language indicates an approved display scope while the evidence pack retains pending de-identification review.", "status": "open"}],
+      "public_payload_included": true,
+      "implementation_gate": "legacy_public_derivative_review_required",
+      "next_safe_step": "Reconcile authorization evidence and retain instructor-preview scope until resolved.",
+      "review_status": "pending_deidentification_review"
+    },
+    {
+      "case_id": "CASE-TRAUMA-006",
+      "case_type": "real_case_restricted",
+      "working_title_zh": "高能量交通伤伴突发循环变化与胸主动脉损伤线索",
+      "working_title_en": "High-energy transport trauma with abrupt circulatory change and thoracic aortic injury clues",
+      "distribution_scope": "structure_only",
+      "privacy_status": "pending_deidentification_review",
+      "authorization_status": "pending_documented_authorization",
+      "source_layers": ["medical_record_fact", "clinician_recollection", "imaging_report", "teaching_inference"],
+      "conflicts": [],
+      "public_payload_included": false,
+      "implementation_gate": "blocked_patient_payload",
+      "next_safe_step": "Complete the source-layered interview, conflict review, de-identification review, and documented teaching authorization outside the public repository before importing an approved derivative.",
+      "review_status": "pending_deidentification_review"
+    },
+    {
+      "case_id": "CASE-TRAUMA-006-SYNTHETIC",
+      "case_type": "synthetic_no_real_patient",
+      "working_title_zh": "循环骤变、多发骨折与胸主动脉损伤教师原型",
+      "working_title_en": "Abrupt circulatory change, multiple fractures, and thoracic aortic injury instructor prototype",
+      "distribution_scope": "instructor_preview",
+      "privacy_status": "not_applicable_synthetic",
+      "authorization_status": "not_applicable_synthetic",
+      "source_layers": ["clinician_recollection", "imaging_report", "teaching_inference", "guideline_supported_claim"],
+      "conflicts": [],
+      "public_payload_included": true,
+      "implementation_gate": "ready_for_instructor_preview",
+      "source_case_payload_imported": false,
+      "source_case_gate": "CASE-TRAUMA-006 remains blocked_patient_payload",
+      "next_safe_step": "Complete claim-level clinical review and local adaptation review before any student-facing release.",
+      "review_status": "pending_clinician_review"
+    }
+  ]
+}

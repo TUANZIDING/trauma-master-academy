@@ -18,6 +18,7 @@ const requiredFiles = [
   'courses/cspine-hip-dislocation-case.html',
   'courses/abdominal-hemorrhagic-shock-case.html',
   'courses/polytrauma-shock-reassessment-case.html',
+  'courses/aortic-polytrauma-reasoning-case.html',
   'assets/site.css',
   'assets/site.js',
   'assets/xabcde-case-hub.png',
@@ -128,6 +129,7 @@ const requiredStrings = [
   'courses/cspine-hip-dislocation-case.html',
   'courses/abdominal-hemorrhagic-shock-case.html',
   'courses/polytrauma-shock-reassessment-case.html',
+  'courses/aortic-polytrauma-reasoning-case.html',
   'source_required',
   'pending_clinician_review',
   'evidence_review_required',
@@ -182,6 +184,7 @@ const requiredStrings = [
   'CASE-TRAUMA-003-TEACHING',
   'CASE-TRAUMA-004',
   'CASE-TRAUMA-005',
+  'CASE-TRAUMA-006-SYNTHETIC',
   'CASE-TRAUMA-PELVIC-SYN-001',
   'Clinical Reasoning Case Template',
   'High-Energy Transport Injury: C-Spine Risk and Left Hip Dislocation',
@@ -288,7 +291,8 @@ const teachingCaseStructureIssues = [];
 for (const rel of [
   'courses/cspine-hip-dislocation-case.html',
   'courses/polytrauma-shock-reassessment-case.html',
-  'courses/abdominal-hemorrhagic-shock-case.html'
+  'courses/abdominal-hemorrhagic-shock-case.html',
+  'courses/aortic-polytrauma-reasoning-case.html'
 ]) {
   const caseHtml = fs.readFileSync(path.join(root, rel), 'utf8');
   const releaseCount = (caseHtml.match(/data-case-release="\d+"/g) || []).length;

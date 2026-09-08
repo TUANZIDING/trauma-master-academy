@@ -9,6 +9,10 @@ This file is a source index only. It does not approve any medical claim.
 
 - NICE NG39: Major trauma assessment and initial management  
   https://www.nice.org.uk/guidance/NG39
+- WHO Emergency Care System Framework
+  https://www.who.int/publications/i/item/who-emergency-care-system-framework
+- WHO Mass Casualty Management
+  https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/mass-casualty-management
 - ACS ATLS 11: Advanced Trauma Life Support 11th Edition public page  
   https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/
 - ACS ATLS about page  
@@ -108,3 +112,5 @@ The courseware is `TEACHING_RELEASE_APPROVED_LIMITED_SCOPE`: it is for student t
 - ACS ATLS 11, ACS chest-wall injury 2025, WSES–AAST thoracic trauma 2025, WSES/CWIS SSRF 2024, ACS TBI 2024, WSES abdominal-trauma sources, the European major-bleeding guideline, and the China NHC 2025 trauma standard were checked on `2026-07-17`.
 - A recent check confirms link availability and document identity only. It does not prove that a source is the newest possible publication or that every student-facing phrase accurately represents the source.
 - Before public teaching release, the course lead must confirm the selected guideline set, version, scope, local applicability, and claim-level wording.
+- WHO Emergency Care System Framework, WHO Mass Casualty Management, ACS ATLS 11 public page, and NICE NG39 entry page were rechecked on `2026-09-08`. This confirms locator availability and public metadata only.
+- ACS public pages and best-practice documents carry rights restrictions. Licensed ATLS/ETM course materials remain internal human-review inputs and are not ingested into prompts, datasets, copied algorithms, or public figures.

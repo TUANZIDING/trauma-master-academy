@@ -19,20 +19,23 @@
   setLanguage(stored === "en" ? "en" : "zh");
 
   const studentStatusCopy = {
-    source_required: ["来源与适用范围已登记", "Source and scope recorded"],
-    source_verified: ["专题来源已核对", "Topic source checked"],
-    source_index_pending_review: ["公开来源已登记", "Public source recorded"],
-    evidence_review_required: ["专题依据已定位", "Topic evidence mapped"],
-    pending_clinician_review: ["教学内容由专家审阅支持", "Teaching content under expert stewardship"],
-    pending_specialty_review: ["专题内容由相关专科把关", "Topic content under specialty stewardship"],
-    pending_deidentification_review: ["教学情境不含可识别信息", "Teaching scenario without identifiers"],
+    source_required: ["待补充直接来源", "Direct source required"],
+    source_verified: ["来源入口已核对", "Source locator checked"],
+    source_locator_verified: ["来源定位已核对", "Source location checked"],
+    source_index_pending_review: ["来源已登记，待逐条核对", "Source recorded; claim review pending"],
+    evidence_review_required: ["待逐条证据核对", "Claim-level evidence review required"],
+    evidence_verified: ["主张与证据位置已核对", "Claim and evidence location checked"],
+    pending_clinician_review: ["待临床教学审核", "Clinical teaching review pending"],
+    pending_specialty_review: ["待相关专科审核", "Specialty review pending"],
+    pending_deidentification_review: ["待隐私与脱敏审核", "Privacy and de-identification review pending"],
+    privacy_authorized: ["隐私与教学范围已记录", "Privacy and teaching scope recorded"],
     pending_local_confirmation: ["本地流程以院内授权为准", "Local workflow follows institutional authorization"],
     pending_review: ["教学内容持续更新与复核", "Teaching content is maintained and reviewed"],
     visual_asset_pending_review: ["教学示意，非诊断图像", "Teaching visual, not diagnostic imaging"],
     teaching_illustration: ["教学示意，非诊断图像", "Teaching visual, not diagnostic imaging"],
     instructor_authored: ["教师编写合成情境", "Instructor-authored synthetic scenario"],
     teaching_not_protocol: ["教学模拟，非操作规程", "Teaching simulation, not an operating protocol"],
-    GO_WITH_CLINICAL_REVIEW: ["教学发布 · 受限范围", "Teaching release · limited scope"]
+    GO_WITH_CLINICAL_REVIEW: ["结构可用 · 医学逐条审核中", "Structure ready · claim review in progress"]
   };
 
   function statusMarkup(status) {
@@ -612,6 +615,20 @@
     const submittedScore = caseLabRoot.querySelector('[data-case-lab-score="submitted"]');
     const releasedScore = caseLabRoot.querySelector('[data-case-lab-score="released"]');
     const releaseCards = Array.from(caseLabRoot.querySelectorAll("[data-case-release]"));
+    const monitorStages = Array.from(caseLabRoot.querySelectorAll("[data-case-monitor-stage]"));
+    const monitorCounter = caseLabRoot.querySelector("[data-case-monitor-counter]");
+
+    function renderCaseMonitor(stageIndex) {
+      monitorStages.forEach((stage) => {
+        const isActive = Number(stage.dataset.caseMonitorStage || 0) === stageIndex;
+        stage.hidden = !isActive;
+        stage.classList.toggle("is-active", isActive);
+      });
+      if (monitorCounter) {
+        const total = Math.max(monitorStages.length, 1);
+        monitorCounter.innerHTML = `<span class="zh">阶段 ${stageIndex + 1} / ${total}</span><span class="en">Stage ${stageIndex + 1} / ${total}</span>`;
+      }
+    }
 
     function revealCaseLabQuiz(card) {
       const explanation = card.querySelector(".quiz-explanation");
@@ -641,6 +658,7 @@
       if (releasedScore) {
         releasedScore.textContent = String(releasedIndex);
       }
+      renderCaseMonitor(releasedIndex);
     }
 
     caseLabRoot.querySelectorAll("[data-quiz-card]").forEach((card) => {
@@ -680,6 +698,7 @@
       const cardIndex = Number(card.dataset.caseRelease || 0);
       card.classList.toggle("is-visible", cardIndex === 0);
     });
+    renderCaseMonitor(0);
   }
 
   const caseRoot = document.querySelector("[data-case-sim]");
