@@ -1,0 +1,468 @@
+/* =====================================================================
+   trauma-skills-cases-visual-v2 · design layer
+   纸白 paper / 青绿 teal-green / 金色 gold —— 沿用站点现有 token
+   视觉优先：留白 whitespace、柔和投影 soft shadow、紧凑导航
+   teacher-review draft · 待临床教师复核
+   ===================================================================== */
+
+:root {
+  --v2-paper: #f6f1e8;          /* 纸白 */
+  --v2-panel: #fffdf8;          /* 卡片底 */
+  --v2-ink: #1f2937;
+  --v2-muted: #64717f;
+  --v2-line: #ded4c3;
+  --v2-teal: #1f6f78;           /* 青绿主色 */
+  --v2-teal-deep: #17565d;
+  --v2-teal-soft: #e7f0ee;      /* 浅青绿底 */
+  --v2-gold: #a96d16;           /* 金色点缀 */
+  --v2-gold-soft: #f7ecd4;      /* 浅金底 */
+  --v2-shadow: 0 16px 40px rgba(31, 42, 55, 0.08);
+  --v2-shadow-sm: 0 6px 18px rgba(31, 42, 55, 0.07);
+  --v2-radius: 14px;
+  --v2-gap: 1.75rem;            /* 留白基线 */
+}
+
+/* ---------- 技能：紧凑五节点导航 ---------- */
+.v2-skillnav {
+  background: var(--v2-panel);
+  border: 1px solid var(--v2-line);
+  border-radius: var(--v2-radius);
+  box-shadow: var(--v2-shadow);
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  margin: var(--v2-gap) 0;
+}
+
+.v2-nodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.v2-node-tab {
+  appearance: none;
+  border: 1px solid var(--v2-line);
+  background: var(--v2-paper);
+  color: var(--v2-ink);
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.v2-node-tab .v2-num {
+  display: inline-grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--v2-teal-soft);
+  color: var(--v2-teal-deep);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.v2-node-tab[aria-selected="true"] {
+  background: var(--v2-teal);
+  border-color: var(--v2-teal);
+  color: #fff;
+  box-shadow: var(--v2-shadow-sm);
+}
+
+.v2-node-tab[aria-selected="true"] .v2-num {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+.v2-node-tab:hover { border-color: var(--v2-teal); }
+
+/* 当前节点面板：单视觉 + 三短重点 */
+.v2-stage { margin-top: 0.25rem; }
+
+.v2-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .v2-panel { grid-template-columns: 1fr; }
+}
+
+.v2-visual {
+  margin: 0;
+  background: var(--v2-paper);
+  border: 1px solid var(--v2-line);
+  border-radius: var(--v2-radius);
+  overflow: hidden;
+  box-shadow: var(--v2-shadow-sm);
+}
+
+.v2-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.v2-visual figcaption {
+  padding: 0.9rem 1.1rem 1.1rem;
+  font-size: 0.88rem;
+  color: var(--v2-muted);
+  border-top: 1px solid var(--v2-line);
+}
+
+.v2-visual .v2-credit {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+}
+
+/* 三条短重点：金色左沿卡片 */
+.v2-points {  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.v2-points li {
+  background: var(--v2-paper);
+  border: 1px solid var(--v2-line);
+  border-left: 4px solid var(--v2-gold);
+  border-radius: 0 10px 10px 0;
+  padding: 0.8rem 1rem;
+  box-shadow: var(--v2-shadow-sm);
+}
+
+.v2-points .zh { display: block; font-weight: 600; color: var(--v2-ink); }
+.v2-points .en { display: block; margin-top: 0.25rem; font-size: 0.88rem; color: var(--v2-muted); }
+
+/* 准备 / 解释 / 证据：details 展开 */
+.v2-fold {
+  border: 1px solid var(--v2-line);
+  border-radius: 10px;
+  background: var(--v2-paper);
+  margin-bottom: 0.7rem;
+  overflow: hidden;
+}
+
+.v2-fold summary {
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  color: var(--v2-teal-deep);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.v2-fold summary::-webkit-details-marker { display: none; }
+
+.v2-fold summary::before {
+  content: "+";
+  display: inline-grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--v2-teal-soft);
+  color: var(--v2-teal-deep);
+  font-weight: 700;
+  flex: none;
+}
+
+.v2-fold[open] summary::before { content: "–"; }
+
+.v2-fold .v2-fold-body {
+  padding: 0 1.1rem 1.1rem;
+  color: var(--v2-ink);
+}
+
+.v2-fold .v2-fold-body .en {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--v2-muted);
+  font-size: 0.9rem;
+}
+
+.v2-reassess {
+  margin-top: 1rem;
+  background: var(--v2-teal-soft);
+  border: 1px solid var(--v2-teal);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+}
+
+.v2-reassess strong { color: var(--v2-teal-deep); }
+.v2-reassess .en { display: block; margin-top: 0.3rem; color: var(--v2-muted); font-size: 0.9rem; }
+
+/* 无真实操作图：准确 HTML 任务流程（文字流程） */
+.v2-taskflow {
+  margin: 0;
+  padding: 1.1rem 1.1rem 1.1rem 0.6rem;
+  list-style: none;
+  counter-reset: v2step;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.v2-taskflow li {
+  counter-increment: v2step;
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0.7rem;
+  align-items: start;
+  background: var(--v2-paper);
+  border: 1px dashed var(--v2-teal);
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+}
+
+.v2-taskflow li::before {
+  content: counter(v2step);
+  display: inline-grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background: var(--v2-teal);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.v2-taskflow .zh { font-weight: 600; }
+.v2-taskflow .en { display: block; margin-top: 0.2rem; font-size: 0.86rem; color: var(--v2-muted); }
+
+.v2-taskflow-note {
+  margin: 0.9rem 1.1rem 1.1rem;
+  font-size: 0.85rem;
+  color: var(--v2-muted);
+  border-top: 1px solid var(--v2-line);
+  padding-top: 0.8rem;
+}
+
+/* 官方视频卡 */
+.v2-videocard {
+  padding: 1.4rem 1.2rem;
+  text-align: left;
+}
+
+.v2-videocard .v2-play {
+  display: inline-grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--v2-teal);
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.v2-videocard strong { display: block; margin-bottom: 0.4rem; }
+.v2-videocard p { margin: 0 0 0.9rem; color: var(--v2-ink); }
+.v2-videocard .en { display: block; margin-top: 0.3rem; color: var(--v2-muted); font-size: 0.88rem; }
+
+.v2-button {
+  display: inline-block;
+  background: var(--v2-teal);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.v2-button:hover { background: var(--v2-teal-deep); color: #fff; }
+
+.v2-videocard small { display: block; margin-top: 0.7rem; color: var(--v2-muted); font-size: 0.82rem; }
+
+/* ---------- 病例：后半段逐轮卡片 ---------- */
+.v2-rounds {
+  display: grid;
+  gap: var(--v2-gap);
+  margin: var(--v2-gap) 0;
+}
+
+.v2-round {
+  background: var(--v2-panel);
+  border: 1px solid var(--v2-line);
+  border-radius: var(--v2-radius);
+  box-shadow: var(--v2-shadow);
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+}
+
+.v2-round > header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 2px solid var(--v2-gold-soft);
+}
+
+.v2-round-num {
+  flex: none;
+  background: var(--v2-teal);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.v2-round h3 { margin: 0; font-size: 1.15rem; }
+.v2-round h3 .en { display: block; font-size: 0.9rem; font-weight: 400; color: var(--v2-muted); margin-top: 0.2rem; }
+
+.v2-q {
+  background: var(--v2-gold-soft);
+  border-left: 4px solid var(--v2-gold);
+  border-radius: 0 10px 10px 0;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1.1rem;
+}
+
+.v2-q > strong { color: var(--v2-gold); display: block; margin-bottom: 0.35rem; font-size: 0.9rem; }
+.v2-q p { margin: 0; font-size: 1.05rem; font-weight: 600; }
+.v2-q .en { display: block; margin-top: 0.3rem; font-weight: 400; font-size: 0.9rem; color: var(--v2-muted); }
+
+.v2-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-bottom: 1.1rem;
+}
+
+@media (max-width: 700px) {
+  .v2-compare { grid-template-columns: 1fr; }
+}
+
+.v2-before, .v2-after {
+  border: 1px solid var(--v2-line);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  background: var(--v2-paper);
+}
+
+.v2-after { border-color: var(--v2-teal); background: var(--v2-teal-soft); }
+
+.v2-before > span, .v2-after > span {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.4rem;
+  color: var(--v2-muted);
+}
+
+.v2-after > span { color: var(--v2-teal-deep); }
+
+.v2-before p, .v2-after p { margin: 0; }
+.v2-before .en, .v2-after .en { display: block; margin-top: 0.3rem; font-size: 0.88rem; color: var(--v2-muted); }
+
+.v2-judge {
+  border: 1px dashed var(--v2-teal);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.v2-judge > strong { color: var(--v2-teal-deep); display: block; margin-bottom: 0.35rem; }
+.v2-judge p { margin: 0; }
+.v2-judge .en { display: block; margin-top: 0.3rem; font-size: 0.9rem; color: var(--v2-muted); }
+
+/* 长教师解说折叠 */
+.v2-teacher {
+  border: 1px solid var(--v2-line);
+  border-radius: 10px;
+  background: var(--v2-paper);
+}
+
+.v2-teacher summary {
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: var(--v2-teal-deep);
+  list-style: none;
+}
+
+.v2-teacher summary::-webkit-details-marker { display: none; }
+
+.v2-teacher summary::before {
+  content: "▸ ";
+  color: var(--v2-gold);
+}
+
+.v2-teacher[open] summary::before { content: "▾ "; }
+
+.v2-teacher .v2-teacher-body { padding: 0 1.1rem 1.1rem; }
+.v2-teacher .v2-teacher-body .en { display: block; margin-top: 0.35rem; color: var(--v2-muted); font-size: 0.9rem; }
+
+/* 外部图与原病例严格分开：金色分隔线 */
+.v2-source-separator {
+  border: 0;
+  border-top: 3px double var(--v2-gold);
+  margin: calc(var(--v2-gap) * 1.25) 0;
+  position: relative;
+}
+
+.v2-source-separator-label {
+  display: inline-block;
+  background: var(--v2-gold-soft);
+  border: 1px solid var(--v2-gold);
+  color: var(--v2-gold);
+  border-radius: 999px;
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: -1.4rem 0 1.5rem;
+  position: relative;
+  top: -0.4rem;
+}
+
+/* 教学假设标注 */
+.v2-assumption {
+  font-size: 0.88rem;
+  color: var(--v2-muted);
+  border-top: 1px solid var(--v2-line);
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* 节点面板眉题与场景行 */
+.v2-node-kicker {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--v2-teal);
+}
+
+.v2-panel-copy h3 { margin: 0 0 0.6rem; font-size: 1.25rem; }
+.v2-panel-copy h3 .en { display: block; font-size: 0.92rem; font-weight: 400; color: var(--v2-muted); margin-top: 0.2rem; }
+
+.v2-scene {
+  margin: 0 0 1.1rem;
+  color: var(--v2-ink);
+  line-height: 1.65;
+}
+
+.v2-scene .en { display: block; margin-top: 0.3rem; color: var(--v2-muted); font-size: 0.92rem; }
+
+.v2-reassess p { margin: 0.4rem 0 0; }
+/* Preserve reversible site language toggle; Muse's block rules must not expose both languages. */
+body[data-lang="zh"] .en {display:none!important;}
+body[data-lang="en"] .zh {display:none!important;}
+.v2-visual img {object-fit:contain;max-height:420px;}
+.v2-round {margin-bottom:32px;}
+.v2-panel-copy .v2-points li {font-size:17px;line-height:1.6;}
+.v2-panel-copy .v2-points li:last-child {background:#f7ecd4;}

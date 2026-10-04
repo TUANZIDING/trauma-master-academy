@@ -54,21 +54,7 @@
   }
 
   function routeSection(skill) {
-    return `
-      <div class="route-experience" data-route-experience>
-        <ol class="route-tabs" aria-label="${skill.titleZh}能力路线">
-          ${skill.competencyRoute.map((node, index) => `
-            <li>
-              <button type="button" class="route-tab ${index === 0 ? "active" : ""}" data-route-index="${index}" ${index === 0 ? 'aria-current="step"' : ""}>
-                ${node.image ? `<img src="${escapeHtml(node.image)}" alt="${escapeHtml(node.titleEn)} source photograph" />` : `<span class="route-task-icon" aria-hidden="true">${node.mediaKind === "official-link" ? "▶" : "?"}</span>`}
-                <span class="route-count">${String(index + 1).padStart(2, "0")}</span>
-                ${node.visualKind === "local-simulation" ? `<small class="route-visual-label">${bilingual("合成模拟场景 · 不用于影像判读", "Synthetic simulation · not for image interpretation")}</small>` : node.visualKind === "open-image" ? `<small class="route-visual-label verified-image">${bilingual("真实开放影像 · 仅限所示窗口", "Authentic open image · shown view only")}</small>` : ""}
-                <strong>${bilingual(node.titleZh, node.titleEn)}</strong>
-              </button>
-            </li>`).join("")}
-        </ol>
-        <div class="route-detail" data-route-detail aria-live="polite"></div>
-      </div>`;
+    return '<div data-v2-skill-route></div>';
   }
 
   function decisionLadder(skill) {
@@ -197,11 +183,13 @@
       const node = skill.competencyRoute[index];
       const label = mediaLabel(node.visualKind || node.mediaKind);
       const attribution = node.visualAttribution || node.attribution;
-      routeDetail.innerHTML = `<div class="route-detail-media">${routeMedia(node)}<div class="media-provenance"><span>${bilingual(label[0], label[1])}</span><strong>${bilingual(node.mediaTitleZh || node.titleZh, node.mediaTitleEn || node.titleEn)}</strong>${attribution ? `<small>${attribution}</small>` : ""}</div></div><div class="route-detail-copy"><span>${String(index + 1).padStart(2, "0")} · ${bilingual("临床识别节点", "Clinical recognition node")}</span><h3>${bilingual(node.titleZh, node.titleEn)}</h3><p class="route-scene">${bilingual(node.sceneZh || node.summaryZh, node.sceneEn || node.summaryEn)}</p><div class="learning-grid"><article><b>${bilingual("为什么现在讨论", "Why now")}</b><p>${bilingual(node.whyZh || node.summaryZh, node.whyEn || node.summaryEn)}</p></article><article><b>${bilingual("监督下怎么练", "How to practise")}</b><p>${bilingual(node.practiceZh || node.summaryZh, node.practiceEn || node.summaryEn)}</p></article><article class="success"><b>${bilingual("成功表现", "Success looks like")}</b><p>${bilingual(node.successZh || node.summaryZh, node.successEn || node.summaryEn)}</p></article><article class="failure"><b>${bilingual("失败或危险表现", "Failure / danger signs")}</b><p>${bilingual(node.failureZh || node.summaryZh, node.failureEn || node.summaryEn)}</p></article></div><div class="reassess-question"><strong>${bilingual("下一次复评", "Next reassessment")}</strong><p>${bilingual(node.reassessZh, node.reassessEn)}</p></div><div class="media-action">${node.sourceUrl || node.mediaUrl || node.fallbackImage ? `<a class="button" href="${node.sourceUrl || node.mediaUrl || node.fallbackImage}" target="_blank" rel="noreferrer">${bilingual(node.sourceUrl ? "打开权威补充来源" : "打开原始媒体与适用边界", node.sourceUrl ? "Open authoritative supplement" : "Open original media and scope")}</a>` : ""}<small>${bilingual(node.mediaScopeZh || "来源素材用于观察训练，不替代临床判断。", node.mediaScopeEn || "Teaching material supports learning and does not replace clinical judgement.")}</small></div></div>`;
+      routeDetail.innerHTML = `<div class="route-detail-media">${routeMedia(node)}<div class="media-provenance"><span>${bilingual(label[0], label[1])}</span><strong>${bilingual(node.mediaTitleZh || node.titleZh, node.mediaTitleEn || node.titleEn)}</strong>${attribution ? `<small>${attribution}</small>` : ""}</div></div><div class="route-detail-copy"><span>${String(index + 1).padStart(2, "0")} · ${bilingual("临床识别节点", "Clinical recognition node")}</span><h3>${bilingual(node.titleZh, node.titleEn)}</h3><p class="route-scene">${bilingual(node.sceneZh || node.summaryZh, node.sceneEn || node.summaryEn)}</p><details class="vl-explain"><summary>${bilingual("展开训练解说", "Expand training explanation")}</summary><div class="learning-grid"><article><b>${bilingual("为什么现在讨论", "Why now")}</b><p>${bilingual(node.whyZh || node.summaryZh, node.whyEn || node.summaryEn)}</p></article><article><b>${bilingual("监督下怎么练", "How to practise")}</b><p>${bilingual(node.practiceZh || node.summaryZh, node.practiceEn || node.summaryEn)}</p></article><article class="success"><b>${bilingual("成功表现", "Success looks like")}</b><p>${bilingual(node.successZh || node.summaryZh, node.successEn || node.summaryEn)}</p></article><article class="failure"><b>${bilingual("失败或危险表现", "Failure / danger signs")}</b><p>${bilingual(node.failureZh || node.summaryZh, node.failureEn || node.summaryEn)}</p></article></div></details><div class="reassess-question"><strong>${bilingual("下一次复评", "Next reassessment")}</strong><p>${bilingual(node.reassessZh, node.reassessEn)}</p></div><div class="media-action">${node.sourceUrl || node.mediaUrl || node.fallbackImage ? `<a class="button" href="${node.sourceUrl || node.mediaUrl || node.fallbackImage}" target="_blank" rel="noreferrer">${bilingual(node.sourceUrl ? "打开权威补充来源" : "打开原始媒体与适用边界", node.sourceUrl ? "Open authoritative supplement" : "Open original media and scope")}</a>` : ""}<small>${bilingual(node.mediaScopeZh || "来源素材用于观察训练，不替代临床判断。", node.mediaScopeEn || "Teaching material supports learning and does not replace clinical judgement.")}</small></div></div>`;
       routeDetail.querySelectorAll("img[data-fallback]").forEach((img) => img.addEventListener("error", () => { if (img.src !== img.dataset.fallback) img.src = img.dataset.fallback; }, { once: true }));
       document.querySelectorAll("[data-route-index]").forEach((button, i) => { button.classList.toggle("active", i === index); button.toggleAttribute("aria-current", i === index); });
     };
-    renderRoute(0);
+    if (routeDetail) renderRoute(0);
+    const visualMount = document.querySelector("[data-v2-skill-route]");
+    if (visualMount && window.V2SkillNav) window.V2SkillNav.renderInto(visualMount, skill);
     document.querySelectorAll("[data-route-index]").forEach((button) => button.addEventListener("click", () => renderRoute(Number(button.dataset.routeIndex))));
 
     document.querySelectorAll("[data-story-index]").forEach((button) => button.addEventListener("click", () => {

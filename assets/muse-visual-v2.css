@@ -1,0 +1,121 @@
+/* Selected Muse v2 components, independently reviewed. Language display rules excluded. */
+body.tma-v2 {
+  --tma-paper: #f6f1e8;
+  --tma-paper-2: #efe9d8;
+  --tma-ink: #22302e;
+  --tma-ink-soft: #5a6a67;
+  --tma-teal: #1f6f78;
+  --tma-teal-deep: #14565d;
+  --tma-teal-ink: #0e3f44;
+  --tma-teal-soft: #e2efec;
+  --tma-gold: #a96d16;
+  --tma-gold-soft: #f7ecd2;
+  --tma-line: #ddd5bf;
+  background: var(--tma-paper);
+  color: var(--tma-ink);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+body.tma-v2 .stage-letter {
+  width: 56px; height: 56px;
+  font-size: 30px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  background: var(--tma-teal);
+  color: #fff;
+  font-weight: 800;
+  margin-right: 12px;
+  vertical-align: middle;
+  box-shadow: 0 6px 16px rgba(31, 111, 120, .3);
+}
+body.tma-v2 .stage-letter.alert { background: var(--tma-gold); box-shadow: 0 6px 16px rgba(169, 109, 22, .3); }
+
+/* 3 列 brief 网格：等高、序号感 */
+body.tma-v2 .stage-brief-grid { gap: 16px; margin-top: 16px; }
+body.tma-v2 .stage-brief,
+body.tma-v2 .knowledge-card {
+  background: var(--tma-teal-soft);
+  border-radius: 8px;
+  padding: 16px;
+  border: none;
+  border-left: 4px solid var(--tma-teal);
+}
+body.tma-v2 .stage-brief strong,
+body.tma-v2 .knowledge-card strong { color: var(--tma-teal-ink); }
+
+/* 复评问题行：提出为判断问题卡 */
+body.tma-v2 .stage-brief:last-child {
+  background: var(--tma-gold-soft);
+  border-left-color: var(--tma-gold);
+}
+
+body.tma-v2 .course-card {
+  border-top: 6px solid var(--tma-gold);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+body.tma-v2 .course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(31, 42, 55, .12);
+}
+/* 图形课程视觉：替代原绝对定位背景图（.course-visual 为 flex + min-height 250px，
+   原 img 以 absolute inset 0 铺底）。无照片不堆，保持一课一视觉身份。 */
+body.tma-v2 .course-visual .tma-card-graphic {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--tma-teal-ink) 0%, var(--tma-teal) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+}
+body.tma-v2 .tma-card-graphic::after {
+  content: "";
+  position: absolute;
+  right: -30px; bottom: -30px;
+  width: 140px; height: 140px;
+  border: 16px solid rgba(169, 109, 22, .3);
+  border-radius: 50%;
+}
+body.tma-v2 .tma-card-graphic .tma-cg-letters {
+  display: flex; gap: 8px; z-index: 1;
+}
+body.tma-v2 .tma-card-graphic .tma-cg-letters b {
+  width: 46px; height: 46px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .12);
+  border: 2px solid rgba(255, 255, 255, .5);
+  color: #fff; font-size: 22px; font-weight: 800;
+}
+body.tma-v2 .tma-card-graphic .tma-cg-letters b:first-child {
+  background: var(--tma-gold);
+  border-color: var(--tma-gold);
+  color: var(--tma-teal-ink);
+}
+body.tma-v2 .tma-card-graphic .tma-cg-word {
+  z-index: 1;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: .06em;
+}
+body.tma-v2 .tma-card-graphic .tma-cg-sub {
+  position: absolute;
+  top: 12px; left: 16px; z-index: 1;
+  color: rgba(255, 255, 255, .75);
+  font-size: 13px;
+  letter-spacing: .1em;
+}
+/* board-title：仅课程卡图上标题条加强对比（其他处沿用原样式） */
+body.tma-v2 .course-visual .board-title {
+  background: rgba(14, 63, 68, .92);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+

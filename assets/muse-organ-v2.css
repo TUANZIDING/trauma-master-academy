@@ -1,0 +1,192 @@
+/* ============================================================
+   Trauma Master Academy · visual-v2.css
+   四病种迷你模块视觉教学 v2 · 独立样式层
+   - 不修改 site.css；全部类名以 v2- 为前缀，避免冲突
+   - 配色对齐站点变量：纸白 / 青绿 / 金色（带 fallback）
+   - 双语切换依赖 body[data-lang]，本文件不干预
+   - 版本：v2 · 2026-10-04 · teacher-review draft
+   ============================================================ */
+
+.v2-nodes{
+  --v2-paper: var(--paper, #f6f1e8);
+  --v2-panel: var(--panel, #fffdf8);
+  --v2-teal: var(--teal, #1f6f78);
+  --v2-teal-deep: var(--chain-teal-dark, #0d5156);
+  --v2-teal-soft: var(--chain-mint, #e5f2ef);
+  --v2-gold: var(--gold, #a96d16);
+  --v2-gold-soft: #faf3e3;
+  --v2-ink: var(--ink, #1f2937);
+  --v2-muted: var(--muted, #64717f);
+  --v2-line: var(--line, #ded4c3);
+  --v2-alert: var(--alert, #8b1e1e);
+  --v2-shadow: var(--shadow, 0 16px 40px rgba(31,42,55,.08));
+  display: grid;
+  gap: 1.75rem;
+  margin-top: 1.25rem;
+}
+
+/* ---------- 节点卡片 ---------- */
+.v2-node{
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 1.5rem;
+  background: var(--v2-panel);
+  border: 1px solid var(--v2-line);
+  border-radius: 14px;
+  box-shadow: var(--v2-shadow);
+  padding: 1.5rem;
+  overflow: hidden;
+}
+.v2-node + .v2-node{ position: relative; }
+@media (max-width: 860px){
+  .v2-node{ grid-template-columns: 1fr; }
+}
+
+/* ---------- 主视觉区 ---------- */
+.v2-node-visual{ margin: 0; display: flex; flex-direction: column; gap: .75rem; }
+.v2-node-visual figure{ margin: 0; }
+.v2-node-visual img{
+  display: block; width: 100%; height: auto;
+  border-radius: 10px; border: 1px solid var(--v2-line);
+  background: #101418;
+}
+.v2-cap{
+  font-size: .92rem; line-height: 1.65; color: var(--v2-ink);
+  border-left: 3px solid var(--v2-gold);
+  padding: .35rem 0 .35rem .8rem; margin: 0;
+}
+.v2-cap strong{ color: var(--v2-teal-deep); }
+.v2-figmeta{
+  display: flex; flex-wrap: wrap; gap: .4rem; align-items: center;
+  font-size: .8rem; color: var(--v2-muted);
+}
+.v2-figmeta .v2-case-tag{
+  background: var(--v2-teal-soft); color: var(--v2-teal-deep);
+  border: 1px solid var(--v2-teal); border-radius: 999px;
+  padding: .1rem .6rem; font-weight: 600;
+}
+.v2-figmeta .v2-license-tag{
+  background: var(--v2-gold-soft); color: var(--v2-gold);
+  border: 1px solid var(--v2-gold); border-radius: 999px;
+  padding: .1rem .6rem; font-weight: 600;
+}
+
+/* ---------- 节点正文 ---------- */
+.v2-node-body{ min-width: 0; }
+.v2-window-tag{
+  display: inline-block; font-size: .78rem; font-weight: 700;
+  letter-spacing: .04em; color: var(--v2-panel);
+  background: var(--v2-teal); border-radius: 999px;
+  padding: .22rem .8rem; margin-bottom: .6rem;
+}
+.v2-node-body h3{
+  margin: 0 0 .8rem; font-size: 1.18rem; line-height: 1.5;
+  color: var(--v2-teal-deep);
+}
+.v2-keys{ list-style: none; margin: 0 0 1rem; padding: 0; display: grid; gap: .55rem; }
+.v2-keys li{
+  position: relative; padding-left: 2rem;
+  font-size: .95rem; line-height: 1.65; color: var(--v2-ink);
+}
+.v2-keys li::before{
+  content: attr(data-n);
+  position: absolute; left: 0; top: .15em;
+  width: 1.45em; height: 1.45em; line-height: 1.45em; text-align: center;
+  font-size: .8rem; font-weight: 800; color: var(--v2-panel);
+  background: var(--v2-gold); border-radius: 50%;
+}
+.v2-keys li strong{ color: var(--v2-teal-deep); }
+
+/* ---------- 判断问题 ---------- */
+.v2-judge{
+  border: 1px solid var(--v2-teal); border-left-width: 4px;
+  border-radius: 10px; background: var(--v2-teal-soft);
+  padding: .9rem 1rem; margin: 0 0 .8rem;
+}
+.v2-judge .v2-q{ margin: 0 0 .5rem; font-size: .96rem; line-height: 1.6; color: var(--v2-ink); }
+.v2-judge .v2-q strong{ color: var(--v2-teal-deep); }
+.v2-judge details.v2-answer{ margin: 0; }
+.v2-judge details.v2-answer > summary{
+  cursor: pointer; font-weight: 700; color: var(--v2-teal-deep); font-size: .92rem;
+}
+.v2-judge details.v2-answer > div{ font-size: .93rem; line-height: 1.7; color: var(--v2-ink); margin-top: .5rem; }
+.v2-judge details.v2-answer > div strong{ color: var(--v2-teal-deep); }
+
+/* ---------- 解释与证据折叠 ---------- */
+details.v2-evidence, details.v2-figsrc{
+  border: 1px solid var(--v2-line); border-radius: 10px;
+  background: var(--v2-paper); padding: .7rem .95rem; margin-top: .6rem;
+  font-size: .9rem; line-height: 1.7; color: var(--v2-ink);
+}
+details.v2-evidence > summary, details.v2-figsrc > summary{
+  cursor: pointer; font-weight: 700; color: var(--v2-teal-deep);
+}
+details.v2-evidence ul, details.v2-figsrc ul{ margin: .5rem 0; padding-left: 1.2rem; display: grid; gap: .45rem; }
+details.v2-evidence p, details.v2-figsrc p{ margin: .5rem 0; }
+.v2-claimref{ font-family: ui-monospace, monospace; font-size: .82em; background: #fff;
+  border: 1px solid var(--v2-line); border-radius: 4px; padding: 0 .35em; }
+
+/* ---------- CSS 教学示意视觉（非影像节点的"主视觉"） ---------- */
+.v2-schematic{
+  border: 1px solid var(--v2-teal); border-radius: 10px;
+  background: linear-gradient(160deg, var(--v2-panel), var(--v2-teal-soft));
+  padding: 1rem; display: flex; flex-direction: column; gap: .7rem;
+}
+.v2-schematic-head{
+  display: flex; align-items: center; justify-content: space-between; gap: .5rem;
+}
+.v2-schematic-title{ font-weight: 800; color: var(--v2-teal-deep); font-size: .95rem; }
+.v2-synth-tag{
+  font-size: .75rem; font-weight: 700; color: var(--v2-gold);
+  border: 1px dashed var(--v2-gold); border-radius: 999px; padding: .1rem .6rem;
+  background: var(--v2-gold-soft); white-space: nowrap;
+}
+/* 报告卡示意 */
+.v2-report-demo{
+  background: #fff; border: 1px solid var(--v2-line); border-radius: 8px;
+  padding: .8rem .9rem; font-size: .9rem; line-height: 1.7;
+}
+.v2-report-demo .hl-a{ background: #fff3d6; border-bottom: 2px solid var(--v2-gold); padding: 0 .2em; }
+.v2-report-demo .hl-b{ background: #dff0f2; border-bottom: 2px solid var(--v2-teal); padding: 0 .2em; }
+.v2-report-legend{ display: flex; gap: 1rem; font-size: .78rem; color: var(--v2-muted); flex-wrap: wrap; }
+.v2-report-legend i{ display: inline-block; width: .8em; height: .8em; border-radius: 2px; margin-right: .3em; }
+.v2-report-legend .sw-a{ background: var(--v2-gold); }
+.v2-report-legend .sw-b{ background: var(--v2-teal); }
+/* 信息节点图示意 */
+.v2-infonodes{ display: grid; gap: .55rem; }
+.v2-infonode{
+  background: #fff; border: 1px solid var(--v2-line); border-radius: 8px;
+  padding: .6rem .8rem; font-size: .88rem; line-height: 1.6;
+}
+.v2-infonode strong{ color: var(--v2-teal-deep); display: block; margin-bottom: .15rem; }
+.v2-infonode .ans{ color: var(--v2-teal-deep); }
+.v2-infonode .unk{ color: var(--v2-alert); }
+/* 趋势/复评板示意 */
+.v2-trendboard{ display: grid; gap: .5rem; }
+.v2-trendrow{
+  display: grid; grid-template-columns: auto 1fr auto; gap: .6rem; align-items: center;
+  background: #fff; border: 1px solid var(--v2-line); border-radius: 8px;
+  padding: .5rem .75rem; font-size: .88rem;
+}
+.v2-trendrow .t-label{ font-weight: 700; color: var(--v2-teal-deep); }
+.v2-trendrow .t-arrow-up{ color: var(--v2-alert); font-weight: 800; }
+.v2-trendrow .t-arrow-dn{ color: var(--v2-teal); font-weight: 800; }
+.v2-trendrow .t-note{ font-size: .78rem; color: var(--v2-muted); }
+
+/* ---------- 节点头部与页脚 ---------- */
+.v2-section-intro{ max-width: 68ch; }
+.v2-independence{
+  border: 1px dashed var(--v2-gold); background: var(--v2-gold-soft);
+  border-radius: 10px; padding: .7rem .95rem; font-size: .9rem; line-height: 1.65;
+  margin: .9rem 0 0;
+}
+.v2-footer{
+  margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--v2-line);
+  font-size: .85rem; color: var(--v2-muted); line-height: 1.7;
+}
+
+/* ---------- 打印 ---------- */
+@media print{
+  .v2-node{ break-inside: avoid; box-shadow: none; }
+  details.v2-evidence, details.v2-figsrc, details.v2-answer{ open: true; }
+}
