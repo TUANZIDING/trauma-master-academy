@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>创伤课程｜下肢五单元</title>
+<style>
+:root{
+  --bg:#f5f3eb; --green:#143c32; --gold:#bd8740; --ink:#2b2b29;
+  --muted:#6e6a5e; --card:#fffdf8; --red:#a83e38; --line:#e2dccb;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Noto Sans CJK SC","Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  line-height:1.75;font-size:17px}
+html[lang="zh"] .en{display:none!important}
+html[lang="en"] .zh{display:none!important}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.site{border-bottom:5px solid var(--gold);padding:34px 0 22px;background:var(--bg)}
+.kicker{color:var(--gold);font-weight:700;letter-spacing:.14em;font-size:13px}
+h1{color:var(--green);font-size:34px;margin:8px 0 6px;line-height:1.3}
+.subtitle{color:var(--muted);margin:0 0 18px}
+#langToggle{position:fixed;top:14px;right:14px;z-index:50;background:var(--green);color:#fff;
+  border:2px solid var(--gold);border-radius:999px;padding:9px 20px;font-size:15px;font-weight:700;cursor:pointer}
+#langToggle:hover{background:#0f2f27}
+nav.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:22px 0}
+nav.toc h2{font-size:19px;color:var(--green);margin:0 0 10px}
+nav.toc ol{margin:0;padding-left:22px}
+nav.toc li{margin:7px 0}
+nav.toc a{color:var(--green);text-decoration:none;border-bottom:2px solid var(--gold)}
+nav.toc a:hover{color:var(--gold)}
+.notice{background:var(--card);border-left:6px solid var(--gold);border-radius:10px;
+  padding:16px 20px;margin:0 0 26px}
+.notice h2{color:var(--green);font-size:19px;margin:0 0 8px}
+.notice ul{margin:8px 0;padding-left:22px}
+.notice li{margin:5px 0}
+section.unit{background:var(--card);border:1px solid var(--line);border-top:7px solid var(--green);
+  border-radius:14px;padding:26px 28px;margin:0 0 34px}
+.unitnum{display:inline-block;background:var(--green);color:#fff;font-weight:700;border-radius:8px;
+  padding:3px 12px;margin-right:10px;font-size:15px}
+h2.utitle{color:var(--green);font-size:27px;margin:0 0 4px;line-height:1.35}
+.usub{color:var(--muted);margin:0 0 16px}
+h3.sec{color:var(--green);font-size:20px;margin:26px 0 10px;padding-left:12px;border-left:5px solid var(--gold)}
+.secbody p{margin:8px 0}
+.secbody ul{margin:8px 0;padding-left:24px}
+.secbody li{margin:6px 0}
+details.fold{background:#faf7ef;border:1px solid var(--line);border-radius:10px;padding:10px 16px;margin:12px 0}
+details.fold summary{cursor:pointer;font-weight:700;color:var(--green);font-size:16px}
+details.fold summary:hover{color:var(--gold)}
+.caution{background:#fbf3df;border:2px solid var(--gold);border-radius:10px;padding:12px 18px;margin:14px 0}
+.caution strong{color:var(--green)}
+.redflag{background:#fbeeee;border:2px solid var(--red);border-radius:10px;padding:12px 18px;margin:14px 0}
+.redflag strong{color:var(--red)}
+figure{margin:18px 0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
+figure img{width:100%;height:auto;display:block;border-radius:8px}
+figcaption{color:var(--muted);font-size:14.5px;margin-top:10px;line-height:1.6}
+figcaption .t{font-weight:700;color:var(--green)}
+.officialbox{margin:18px 0;background:#eef3ec;border:2px solid var(--green);border-radius:12px;padding:14px 18px}
+.officialbox .t{font-weight:700;color:var(--green)}
+.officialbox p{margin:8px 0;font-size:15.5px}
+.officialbox a{color:var(--green);word-break:break-all}
+.srccredit{font-size:13px}
+.srccredit a{color:var(--green)}
+.sources{background:#f2eee1;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:20px 0 6px}
+.sources h4{color:var(--green);margin:0 0 8px;font-size:17px}
+.sources ol{margin:6px 0;padding-left:22px;font-size:15px}
+.sources li{margin:8px 0}
+.sources a{color:var(--green);word-break:break-all}
+.sources .meta{color:var(--muted);font-size:13.5px}
+.quiz{background:#f6f1e3;border:2px dashed var(--gold);border-radius:12px;padding:18px 20px;margin:22px 0}
+.quiz h4{color:var(--green);font-size:19px;margin:0 0 12px}
+.q{border-left:5px solid var(--line);padding:6px 0 6px 16px;margin:16px 0}
+.q.correct{border-color:var(--green)}
+.q.wrong{border-color:var(--red)}
+.q.unanswered{border-color:var(--gold)}
+.qstem{font-weight:700;margin:0 0 8px}
+.q label{display:block;margin:7px 0;cursor:pointer;background:#fff;border:1px solid var(--line);
+  border-radius:8px;padding:8px 12px}
+.q label:hover{border-color:var(--gold)}
+.q input{margin-right:8px;accent-color:var(--green)}
+.verdict{font-weight:700;margin:8px 0 0}
+.verdict.ok{color:var(--green)}
+.verdict.no{color:var(--red)}
+.fb{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin-top:10px;font-size:15.5px}
+.fb .ans{font-weight:700;color:var(--green)}
+button.check{background:var(--green);color:#fff;border:none;border-radius:999px;
+  padding:10px 26px;font-size:16px;font-weight:700;cursor:pointer;margin-top:6px}
+button.check:hover{background:#0f2f27}
+footer.site{border-top:5px solid var(--gold);margin-top:10px;padding:26px 0 60px;color:var(--muted);font-size:15px}
+footer.site h2{color:var(--green);font-size:19px}
+footer.site a{color:var(--green)}
+.seg{display:inline-block;background:#eef0e9;border:1px solid var(--line);border-radius:8px;
+  padding:2px 10px;font-size:14px;color:var(--green);font-weight:700;margin:2px 4px 2px 0}
+@media(max-width:640px){h1{font-size:26px}section.unit{padding:18px 16px}.wrap{padding:0 12px}}
+</style>
+<link rel="stylesheet" href="media-reading.css">
+</head>
+<body>
+<button id="langToggle" aria-label="Switch language / 切换语言"><span class="zh">EN</span><span class="en">中文</span></button>
+<header class="site">
+<div class="wrap">
+<div class="kicker">TRAUMA MASTER ACADEMY · ORTHOPAEDICS</div>
+<h1><span class="zh">创伤课程｜下肢五单元</span><span class="en">Trauma Course | Lower Limb — Five Units</span></h1>
+<p class="subtitle"><span class="zh">成人创伤教学 · 解剖观察与损伤分类对比 · 中英一键切换</span><span class="en">Adult trauma education · Anatomy observation &amp; injury comparison · One-click CN/EN switch</span></p>
+<nav class="toc" aria-label="Table of contents">
+<h2><span class="zh">目录</span><span class="en">Contents</span></h2>
+<ol>
+<li><a href="#u-hip"><span class="zh">第一单元 · 髋关节脱位（原生髋 / 假体）</span><span class="en">Unit 1 · Hip dislocation (native / prosthetic)</span></a></li>
+<li><a href="#u-femur"><span class="zh">第二单元 · 股骨骨折（近端 / 骨干 / 远端）</span><span class="en">Unit 2 · Femur fractures (proximal / shaft / distal)</span></a></li>
+<li><a href="#u-patella"><span class="zh">第三单元 · 髌骨骨折（伸膝装置为核心）</span><span class="en">Unit 3 · Patella fracture (extensor mechanism)</span></a></li>
+<li><a href="#u-plateau"><span class="zh">第四单元 · 胫骨平台骨折（软组织与分期）</span><span class="en">Unit 4 · Tibial plateau fracture (soft tissue &amp; staging)</span></a></li>
+<li><a href="#u-ankle"><span class="zh">第五单元 · 踝关节骨折（软组织、分期与神经血管）</span><span class="en">Unit 5 · Ankle fracture (soft tissue, staging, neurovascular)</span></a></li>
+</ol>
+</nav>
+<div class="notice">
+<h2><span class="zh">学习前请先读</span><span class="en">Read first</span></h2>
+<ul>
+<li><span class="zh"><strong>成人教学</strong>，不涉及儿童骨折。</span><span class="en"><strong>Adult trauma only</strong>; pediatric fractures are not covered.</span></li>
+<li><span class="zh">本课程影像为<strong>真实公开来源</strong>：随包附带的 X 线/CT 来自 CC BY / CC BY-SA / 公有领域（每张图标注作者、原页、许可与观察点）；权威解剖图来自 1918 年 Gray's Anatomy（公有领域）。<strong>AO 官方图例仅链原页查看，未复制、未热链</strong>（AO 内容 © AO Foundation，无公开再发布许可）。各图来自<strong>不同病例与来源，不构成同一病例的时序</strong>；图注写明每张图能证明与不能证明什么。</span><span class="en">All images in this course are from <strong>real public sources</strong>: bundled X-rays/CTs are CC BY / CC BY-SA / public domain (each figure credits author, source page, license and observation points); anatomy plates are from Gray's Anatomy (1918, public domain). <strong>AO official figures are linked to their original pages only — not copied or hotlinked</strong> (AO content © AO Foundation, no open redistribution license). Figures come from <strong>different cases and sources and do not form a single case timeline</strong>; each caption states what the figure shows and does not show.</span></li>
+<li><span class="zh"><strong>分类描述损伤形态，不直接等于手术指征。</strong>治疗决策需结合患者全身情况、软组织条件与功能需求，并查阅原始来源。</span><span class="en"><strong>Classification describes morphology; it does not equal surgical indication.</strong> Decisions must integrate patient factors, soft-tissue status and functional needs, with primary sources consulted.</span></li>
+<li><span class="zh">课程只讲急诊处理<strong>原则</strong>，<strong>不演示任何临床复位手法</strong>；不涉及药物剂量。</span><span class="en">Only <strong>principles</strong> of emergency care are taught; <strong>no reduction maneuvers are demonstrated</strong>; no drug dosages are given.</span></li>
+</ul>
+</div>
+</div>
+</header>
+<main class="wrap">
+<!-- ================= UNIT 1: HIP ================= -->
+<section class="unit" id="u-hip">
+<h2 class="utitle"><span class="unitnum">1</span><span class="zh">髋关节脱位</span><span class="en">Hip dislocation</span></h2>
+<p class="usub"><span class="zh">原生髋与假体脱位分开讨论 · 尽快复位，不存在可等待的安全时间窗</span><span class="en">Native and prosthetic dislocations discussed separately · Reduce ASAP — no safe waiting window</span></p>
+
+<div class="officialbox">
+<p><span class="t"><span class="zh">官方影像资源（AO Surgery Reference，站内查看）</span><span class="en">Official imaging (AO Surgery Reference, view on-site)</span></span></p>
+<p><span class="zh">股骨头骨折 / 髋臼骨折官方页面含 AO 官方 X 线与 CT 图例：</span><span class="en">The femoral-head / acetabulum pages carry official AO X-ray and CT figures:</span><br><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-femur/femoral-head-fracture-split/definition" target="_blank" rel="noopener">AO Surgery Reference — Split fractures of the femoral head</a></p>
+<p><span class="zh">AO 图例版权归 AO Foundation 所有，本课程仅链接原页，<strong>未复制、未热链</strong>（AO 未提供公开再发布许可）。</span><span class="en">AO figures are © AO Foundation; this course links to the original pages only — <strong>not copied or hotlinked</strong> (AO offers no open redistribution license).</span></p>
+</div>
+
+<h3 class="sec"><span class="zh">解剖与机制</span><span class="en">Anatomy &amp; mechanism</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh">髋关节是深球窝关节，骨性结构稳定，创伤性原生髋脱位通常由高能量暴力所致。</span><span class="en">The hip is a deep ball-and-socket joint, highly stable; dislocation requires high-energy trauma.</span></li>
+<li><span class="zh"><strong>后脱位最常见（约90%）</strong>，前脱位少见（约10%）。</span><span class="en"><strong>Posterior dislocation is most common (~90%)</strong>; anterior is uncommon (~10%).</span></li>
+<li><span class="zh">典型机制是<strong>仪表盘伤</strong>：屈髋、内收位下，沿股骨传来的轴向暴力把股骨头顶出髋臼。</span><span class="en">Classic mechanism is <strong>dashboard injury</strong>: axial load through the femur with the hip flexed and adducted drives the head out.</span></li>
+<li><span class="zh">前脱位多由外展、外旋暴力造成。</span><span class="en">Anterior dislocation usually follows abduction/external-rotation force.</span></li>
+</ul>
+<details class="fold"><summary><span class="zh">原生髋 vs 假体脱位：机制有何不同？</span><span class="en">Native vs prosthetic: how do mechanisms differ?</span></summary>
+<ul>
+<li><span class="zh"><strong>原生髋脱位</strong>：高能量创伤，关节囊与周围软组织撕裂，复位后多较稳定。</span><span class="en"><strong>Native dislocation</strong>: high-energy trauma with capsular/soft-tissue tearing; usually stable after reduction.</span></li>
+<li><span class="zh"><strong>假体脱位</strong>：可发生于低能量（如不当体位）；与<strong>体位、假体位置、软组织张力</strong>关系更大，复发风险更高。</span><span class="en"><strong>Prosthetic dislocation</strong>: can follow low energy (e.g., risky positions); relates more to <strong>position, component placement and soft-tissue tension</strong>, with higher recurrence risk.</span></li>
+<li><span class="zh">两者复位后要评估的问题不同：原生髋重点查合并骨折；假体要找脱位的<strong>原因</strong>。</span><span class="en">Post-reduction assessment differs: native hips need fracture screening; prosthetic hips need the <strong>cause</strong> of instability identified.</span></li>
+</ul>
+</details>
+</div>
+
+<h3 class="sec"><span class="zh">初评和红旗</span><span class="en">Initial assessment &amp; red flags</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh">先完成创伤初评（ABCDE），再处理脱位；不要被畸形吸引而漏掉全身评估。</span><span class="en">Complete the primary survey (ABCDE) first; don't let the deformity distract from whole-patient assessment.</span></li>
+<li><span class="zh">初评及每次复位操作前后，都要记录神经血管状态，这是医疗文书的关键。</span><span class="en">Document neurovascular status at initial assessment and <strong>before and after</strong> each reduction — essential documentation.</span></li>
+</ul>
+<div class="redflag"><strong><span class="zh">红旗</span><span class="en">Red flags</span></strong>
+<ul>
+<li><span class="zh"><strong>坐骨神经损伤</strong>：后脱位可伤及坐骨神经，尤其<strong>腓总神经支</strong> → 足下垂、足背感觉减退。</span><span class="en"><strong>Sciatic nerve injury</strong>: posterior dislocation can injure the sciatic nerve, especially the <strong>peroneal division</strong> → foot drop, dorsal foot sensory loss.</span></li>
+<li><span class="zh"><strong>前脱位</strong>注意股神经、股动静脉。</span><span class="en"><strong>Anterior dislocation</strong>: watch the femoral nerve and vessels.</span></li>
+<li><span class="zh"><strong>合并骨折</strong>：髋臼后壁/后柱、股骨头、股骨颈——后脱位合并股骨颈骨折时，<strong>禁止盲目闭合复位</strong>。</span><span class="en"><strong>Associated fractures</strong>: posterior wall/column, femoral head, femoral neck — with a femoral neck fracture, <strong>do not attempt blind closed reduction</strong>.</span></li>
+<li><span class="zh">开放性脱位罕见，一旦发生按开放性关节损伤处理。</span><span class="en">Open dislocation is rare; manage as an open joint injury when it occurs.</span></li>
+</ul>
+</div>
+</div>
+
+<h3 class="sec"><span class="zh">影像 / 分类</span><span class="en">Imaging / classification</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh">骨盆正位 + 患髋正侧位；<strong>复位后常规 CT</strong>：确认同心复位、关节内游离骨片、隐匿的髋臼/股骨头骨折。</span><span class="en">AP pelvis + hip views; <strong>routine post-reduction CT</strong>: confirm concentric reduction, intra-articular fragments, occult acetabular/femoral-head fractures.</span></li>
+<li><span class="zh">Thompson-Epstein 描述后脱位类型，Pipkin 描述股骨头骨折——都是<strong>描述工具</strong>。</span><span class="en">Thompson-Epstein describes posterior patterns, Pipkin describes femoral-head fractures — both are <strong>descriptive tools</strong>.</span></li>
+</ul>
+<div class="caution"><strong><span class="zh">分类 ≠ 手术指征</span><span class="en">Classification ≠ indication</span></strong><span class="zh">：分类告诉你损伤长什么样；做不做手术、做什么手术，还要看复位稳定性、骨折块大小位置、患者情况。</span><span class="en">: classification tells you what the injury looks like; whether and what surgery is needed also depends on post-reduction stability, fragment size/location and patient factors.</span></div>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u1-hip-anatomy2.png" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u1-hip-anatomy2.png" data-alt-zh="髋关节解剖（Gray's Anatomy 1918，公有领域）：右髋关节前方观，关节囊已大部切除，股骨头、髋臼、圆韧带清晰可见；股骨头深坐于髋臼内。" data-alt-en="Hip anatomy (Gray's Anatomy 1918, public domain): anterior view of the right hip joint with the capsule largely removed; femoral head, acetabulum and ligamentum teres visible; the head sits deep in the socket." alt="髋关节解剖（Gray's Anatomy 1918，公有领域）：右髋关节前方观，关节囊已大部切除，股骨头、髋臼、圆韧带清晰可见；股骨头深坐于髋臼内。"></a>
+<figcaption><span class="t"><span class="zh">图 1-1 · 髋关节解剖（公有领域）</span><span class="en">Fig 1-1 · Hip anatomy (public domain)</span></span><br><span class="zh"><strong>观察点：</strong>右髋关节前方观（关节囊已大部切除）：股骨头、髋臼、圆韧带清晰可见。正常时股骨头深坐于髋臼内，骨性匹配非常稳定——这正是脱位需要高能量暴力的解剖基础。</span><span class="en"><strong>Observation:</strong> anterior view of the right hip with the capsule largely removed: femoral head, acetabulum and ligamentum teres are visible. Normally the head sits deep in the socket with a highly stable bony match — the anatomic reason traumatic native dislocation usually follows high-energy trauma.</span><br><span class="zh"><strong>能证明：</strong>正常髋关节的骨性结构关系。<strong>不能证明：</strong>脱位方向、复位方法；1918 年解剖图谱，非影像。</span><span class="en"><strong>Shows:</strong> normal bony relationships of the hip. <strong>Does not show:</strong> dislocation direction or reduction technique; a 1918 anatomy plate, not imaging.</span><br><span class="srccredit"><span class="zh">来源：Henry Gray《Anatomy of the Human Body》(1918) Plate 342，绘图 Henry Vandyke Carter，公有领域 · <a href="https://commons.wikimedia.org/wiki/File:Gray342.png" target="_blank" rel="noopener">Wikimedia Commons 原页</a> · 独立图例，与本单元其他图非同一病例</span><span class="en">Source: Henry Gray, <i>Anatomy of the Human Body</i> (1918), Plate 342, illustrated by Henry Vandyke Carter, public domain · <a href="https://commons.wikimedia.org/wiki/File:Gray342.png" target="_blank" rel="noopener">Wikimedia Commons file page</a> · standalone figure, not the same case as other figures in this unit</span></span></figcaption>
+</figure>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u1-hip-posterior-dislocation.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u1-hip-posterior-dislocation.jpg" data-alt-zh="原生髋急性后脱位（CC BY）：44岁男性车祸后右髋后脱位；(a)脱位正位X线，(b)复位后Shenton线中断、内侧间隙增宽（复位不匹配），(c)CT示关节内侧骨软骨游离体，(d)取出后复位同心圆。" data-alt-en="Acute native posterior hip dislocation (CC BY): 44-year-old man after a crash; (a) dislocated AP X-ray, (b) post-reduction broken Shenton's line with widened medial joint space (incongruent reduction), (c) CT shows medial osteochondral loose body, (d) congruent after removal." alt="原生髋急性后脱位（CC BY）：44岁男性车祸后右髋后脱位；(a)脱位正位X线，(b)复位后Shenton线中断、内侧间隙增宽（复位不匹配），(c)CT示关节内侧骨软骨游离体，(d)取出后复位同心圆。"></a>
+<figcaption><span class="t"><span class="zh">图 1-2 · 原生髋急性后脱位：复位不匹配与关节内游离体（CC BY）</span><span class="en">Fig 1-2 · Acute native posterior dislocation: incongruent reduction and loose body (CC BY)</span></span><br><span class="zh"><strong>观察点：</strong>44 岁男性车祸后右髋后脱位。(a) 脱位正位 X 线：股骨头向后上脱出髋臼；(b) 复位后正位：Shenton 线中断、内侧关节间隙增宽——复位不匹配，提示关节内嵌顿骨软骨游离体；(c) CT 证实关节内侧骨软骨碎片（后经开放取出）；(d) 取出后复位恢复同心圆。本例说明复位后仍需检查关节匹配与残留骨片；不能用单例推导普遍检查策略。</span><span class="en"><strong>Observation:</strong> posterior dislocation of the right hip in a 44-year-old man after a crash. (a) Dislocated AP X-ray: femoral head displaced posterosuperiorly out of the acetabulum; (b) post-reduction AP: broken Shenton's line with widened medial joint space — incongruent reduction, suggesting an entrapped osteochondral loose body; (c) CT confirms a medial osteochondral fragment (later removed openly); (d) concentric reduction restored after removal. This case illustrates why congruence and residual fragments matter after reduction; a single case does not establish a universal imaging policy.</span><br><span class="zh"><strong>能证明：</strong>后脱位的 X 线表现；复位不匹配的征象（Shenton 线中断）；CT 发现游离体的价值。<strong>不能证明：</strong>股骨头血供状态；坐骨神经状态（需查体）。</span><span class="en"><strong>Shows:</strong> the X-ray appearance of posterior dislocation; signs of incongruent reduction (broken Shenton's line); the value of CT for loose bodies. <strong>Does not show:</strong> femoral head blood supply; sciatic nerve status (needs examination).</span><br><span class="srccredit"><span class="zh">来源：Karthik K 等，"Incongruent reduction following post-traumatic hip dislocations as an indicator of intra-articular loose bodies"，《Indian Journal of Orthopaedics》2011，Fig. 1，CC BY 2.0（attribution license，<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">许可说明</a>）· <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3004076/" target="_blank" rel="noopener">PMC 原文</a> · 独立病例</span><span class="en">Source: Karthik K et al., "Incongruent reduction following post-traumatic hip dislocations as an indicator of intra-articular loose bodies", <i>Indian Journal of Orthopaedics</i> 2011, Fig. 1, CC BY 2.0 attribution license (<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">license</a>) · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3004076/" target="_blank" rel="noopener">PMC article</a> · standalone case</span></span></figcaption>
+</figure>
+<details class="fold"><summary><span class="zh">拓展（折叠）：假体脱位与少见脱位方向</span><span class="en">Extension (collapsed): prosthetic dislocation and uncommon directions</span></summary>
+<p><span class="zh">以下两图为鉴别拓展：假体脱位机制不同（体位/假体位置/软组织张力，可低能量发生），上方脱位少见。主课以原生髋急性后脱位（图 1-2）为准。</span><span class="en">The two figures below are extension material: prosthetic dislocation has a different mechanism (position/component placement/soft-tissue tension; can follow low energy), and superior dislocation is uncommon. The core teaching uses acute native posterior dislocation (Fig 1-2).</span></p>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u1-hip-prosthesis-dislocation.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u1-hip-prosthesis-dislocation.jpg" data-alt-zh="全髋假体脱位 X 线（CC BY 2.0）：股骨柄假体头脱出髋臼杯、向上移位。" data-alt-en="Dislocated total hip prosthesis X-ray (CC BY 2.0): the femoral stem head lies outside and above the acetabular cup." alt="全髋假体脱位 X 线（CC BY 2.0）：股骨柄假体头脱出髋臼杯、向上移位。"></a>
+<figcaption><span class="t"><span class="zh">拓展图 1-A · 全髋假体脱位 X 线（CC BY 2.0）</span><span class="en">Extension Fig 1-A · Dislocated hip prosthesis X-ray (CC BY 2.0)</span></span><br><span class="zh"><strong>观察点：</strong>股骨柄假体头脱出髋臼杯、向上移位。假体脱位可见金属部件，机制常与体位、假体位置、软组织张力相关，可发生于低能量，复发风险更高——这正是课程把原生髋与假体脱位分开讨论的原因。</span><span class="en"><strong>Observation:</strong> the femoral stem head lies outside and above the acetabular cup. Metal components are visible; the mechanism often relates to position, component placement and soft-tissue tension, can follow low energy, and carries higher recurrence risk — why this course discusses native and prosthetic dislocations separately.</span><br><span class="zh"><strong>能证明：</strong>假体脱位的影像表现（假体头与臼杯分离）。<strong>不能证明：</strong>脱位原因（需结合体位史与假体位置评估）。</span><span class="en"><strong>Shows:</strong> the imaging appearance of prosthetic dislocation (head-cup separation). <strong>Does not show:</strong> the cause of dislocation (needs position history and component assessment).</span><br><span class="srccredit"><span class="zh">来源：Bill Rhodes（Asheville），Wikimedia Commons，CC BY 2.0（<a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener">许可</a>）· <a href="https://commons.wikimedia.org/wiki/File:Dislocated_hip_replacement.jpg" target="_blank" rel="noopener">原页</a> · 独立病例</span><span class="en">Source: Bill Rhodes (Asheville), via Wikimedia Commons, CC BY 2.0 (<a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener">license</a>) · <a href="https://commons.wikimedia.org/wiki/File:Dislocated_hip_replacement.jpg" target="_blank" rel="noopener">file page</a> · standalone case</span></span></figcaption>
+</figure>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u1-hip-dislocation.png" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u1-hip-dislocation.png" data-alt-zh="创伤后髋关节上方脱位 X 线（CC BY-SA 3.0）：骨盆正位，左侧股骨头向上移位、髋臼空虚（上传者原标注圈出）。" data-alt-en="Post-traumatic superior hip dislocation X-ray (CC BY-SA 3.0): AP pelvis, left femoral head displaced superiorly with an empty acetabulum (circled by the uploader)." alt="创伤后髋关节上方脱位 X 线（CC BY-SA 3.0）：骨盆正位，左侧股骨头向上移位、髋臼空虚（上传者原标注圈出）。"></a>
+<figcaption><span class="t"><span class="zh">拓展图 1-B · 上方脱位 X 线（CC BY-SA 3.0，少见方向）</span><span class="en">Extension Fig 1-B · Superior dislocation X-ray (CC BY-SA 3.0, uncommon direction)</span></span><br><span class="zh"><strong>观察点：</strong>骨盆正位：左侧（图片右侧）股骨头向上移位、髋臼空虚，为创伤后上方脱位（上传者原标注圈出）。上方脱位少见，临床最常见的是后脱位（约90%，见图 1-2）；读片要点相同——看股骨头是否位于髋臼内。</span><span class="en"><strong>Observation:</strong> AP pelvis: the left femoral head (image right) is displaced superiorly with an empty acetabulum — post-traumatic superior dislocation (circled by the uploader). Superior dislocation is uncommon; posterior dislocation (~90%, see Fig 1-2) is most common clinically; the reading point is the same — is the head inside the acetabulum?</span><br><span class="zh"><strong>能证明：</strong>脱位时"髋臼空虚、股骨头异位"的 X 线征象。<strong>不能证明：</strong>脱位方向的分布（单例不能代表 90% 后脱位）；不能显示关节囊撕裂与坐骨神经状态。</span><span class="en"><strong>Shows:</strong> the "empty acetabulum, displaced head" sign of dislocation. <strong>Does not show:</strong> the distribution of dislocation directions (one case cannot represent ~90% posterior); cannot show capsular tearing or sciatic nerve status.</span><br><span class="srccredit"><span class="zh">来源：James Heilman, MD，Wikimedia Commons，CC BY-SA 3.0（<a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">许可</a>）· <a href="https://commons.wikimedia.org/wiki/File:HipdisX.png" target="_blank" rel="noopener">原页</a> · 独立病例</span><span class="en">Source: James Heilman, MD, via Wikimedia Commons, CC BY-SA 3.0 (<a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">license</a>) · <a href="https://commons.wikimedia.org/wiki/File:HipdisX.png" target="_blank" rel="noopener">file page</a> · standalone case</span></span></figcaption>
+</figure>
+</details>
+</div>
+
+<h3 class="sec"><span class="zh">AO 原则如何适用</span><span class="en">How AO principles apply</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>解剖复位</strong>：脱位本身要求<strong>尽快闭合复位</strong>，恢复关节的同心圆关系。</span><span class="en"><strong>Anatomic reduction</strong>: the dislocation itself demands <strong>urgent closed reduction</strong> to restore a concentric joint.</span></li>
+<li><span class="zh"><strong>稳定固定</strong>：合并的髋臼、股骨头骨折，按骨折的 AO 原则固定。</span><span class="en"><strong>Stable fixation</strong>: associated acetabular/femoral-head fractures are fixed per AO fracture principles.</span></li>
+<li><span class="zh"><strong>早期活动</strong>：在关节稳定、骨折允许的前提下尽早活动。</span><span class="en"><strong>Early mobilization</strong>: as soon as joint stability and fractures allow.</span></li>
+</ul>
+<details class="fold"><summary><span class="zh">复位操作的基本要求（原则层面）</span><span class="en">Basic requirements for reduction (principles)</span></summary>
+<ul>
+<li><span class="zh">在<strong>充分镇静/麻醉和肌松</strong>下进行，避免暴力。</span><span class="en">Perform under <strong>adequate sedation/anesthesia with muscle relaxation</strong>; avoid force.</span></li>
+<li><span class="zh">复位后<strong>立即</strong>复查神经血管状态和影像。</span><span class="en"><strong>Immediately</strong> recheck neurovascular status and imaging after reduction.</span></li>
+<li><span class="zh">本课程不演示具体复位手法。</span><span class="en">Specific reduction maneuvers are not demonstrated in this course.</span></li>
+</ul>
+</details>
+</div>
+
+<h3 class="sec"><span class="zh">治疗选择与限制</span><span class="en">Treatment options &amp; limitations</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>尽快复位，不存在可等待的"安全时间窗"。</strong>未复位的脱位持续威胁股骨头血供，延迟增加缺血坏死风险——"越快越好"不是"6小时内安全"。</span><span class="en"><strong>Reduce ASAP — there is no safe waiting window.</strong> An unreduced dislocation keeps threatening head blood supply; delay raises AVN risk. "As soon as possible" does not mean "safe within 6 hours".</span></li>
+<li><span class="zh"><strong>原生髋</strong>：无阻碍闭合复位的合并损伤时，通常先尝试闭合复位；复位失败、复位后不稳定或合并需固定的骨折 → 切开复位。</span><span class="en"><strong>Native hip</strong>: usually attempt closed reduction when associated injuries do not preclude it; failed reduction, post-reduction instability, or fractures needing fixation → open reduction.</span></li>
+<li><span class="zh"><strong>假体脱位</strong>：多数可闭合复位；复位后必须评估<strong>脱位原因</strong>（体位习惯、假体位置、软组织张力），并做防脱位宣教。</span><span class="en"><strong>Prosthetic dislocation</strong>: usually reducible closed; afterwards the <strong>cause</strong> (habitual positions, component placement, soft-tissue tension) must be assessed, with dislocation-precaution education.</span></li>
+<li><span class="zh"><strong>限制</strong>：合并股骨颈骨折时，闭合复位可能加重骨折移位，需按脱位合并骨折的联合损伤原则处理（见来源）。</span><span class="en"><strong>Limitation</strong>: with a femoral neck fracture, closed reduction may worsen displacement — manage as a combined dislocation-fracture injury (see sources).</span></li>
+</ul>
+</div>
+
+<h3 class="sec"><span class="zh">并发症 / 随访</span><span class="en">Complications / follow-up</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>股骨头缺血坏死（AVN）</strong>：随访中用影像监测，坏死可在伤后一段时间内才显现。</span><span class="en"><strong>Avascular necrosis (AVN)</strong> of the femoral head: monitor with imaging; it may declare itself after an interval.</span></li>
+<li><span class="zh"><strong>坐骨神经损伤</strong>：多数可逐渐恢复，需定期随访神经功能。</span><span class="en"><strong>Sciatic nerve injury</strong>: often recovers gradually; follow neurologic function.</span></li>
+<li><span class="zh"><strong>创伤性关节炎</strong>：关节面损伤越重，远期风险越高。</span><span class="en"><strong>Post-traumatic arthritis</strong>: greater articular injury → higher long-term risk.</span></li>
+<li><span class="zh"><strong>假体再脱位</strong>：按手术入路、假体与稳定性进行个体化体位防护宣教。</span><span class="en"><strong>Prosthetic re-dislocation</strong>: teach position precautions per surgeon advice.</span></li>
+</ul>
+</div>
+
+<h3 class="sec"><span class="zh">病例自测</span><span class="en">Case quiz</span></h3>
+<div class="quiz" id="qz-hip">
+<div class="q" data-answer="b">
+<p class="qstem"><span class="zh">Q1 · 28岁男性，车祸后右下肢呈屈曲、内收、内旋、缩短畸形，足背感觉减退、足下垂。最可能的诊断和最需要警惕的神经是？（合成教学病例）</span><span class="en">Q1 · A 28-year-old man after a car crash: right leg flexed, adducted, internally rotated and shortened, with dorsal foot sensory loss and foot drop. Most likely diagnosis and nerve at risk? (synthetic teaching case)</span></p>
+<label><input type="radio" name="u1q1" value="a"><span class="zh">A. 前脱位；股神经</span><span class="en">A. Anterior dislocation; femoral nerve</span></label>
+<label><input type="radio" name="u1q1" value="b"><span class="zh">B. 后脱位；坐骨神经（腓总神经支）</span><span class="en">B. Posterior dislocation; sciatic nerve (peroneal division)</span></label>
+<label><input type="radio" name="u1q1" value="c"><span class="zh">C. 股骨颈骨折；闭孔神经</span><span class="en">C. Femoral neck fracture; obturator nerve</span></label>
+<p class="verdict ok" hidden><span class="zh">回答正确 ✓</span><span class="en">Correct ✓</span></p>
+<p class="verdict no" hidden><span class="zh">再想想 ✗</span><span class="en">Try again ✗</span></p>
+<div class="fb" hidden><p><span class="ans"><span class="zh">答案：B。</span><span class="en">Answer: B.</span></span><span class="zh">屈曲内收内旋缩短是后脱位典型体位；后脱位最易伤及坐骨神经，其中腓总神经支最脆弱，表现为足下垂。</span><span class="en">Flexed, adducted, internally rotated and shortened is classic for posterior dislocation; the sciatic nerve — especially its peroneal division — is most vulnerable, causing foot drop.</span></p></div>
+</div>
+<div class="q" data-answer="b">
+<p class="qstem"><span class="zh">Q2 · 关于髋关节脱位复位时机的说法，正确的是？</span><span class="en">Q2 · Which statement about timing of hip reduction is correct?</span></p>
+<label><input type="radio" name="u1q2" value="a"><span class="zh">A. 6小时内都是安全等待窗，可以从容安排</span><span class="en">A. There is a safe 6-hour waiting window; no rush</span></label>
+<label><input type="radio" name="u1q2" value="b"><span class="zh">B. 尽快复位，不存在可等待的安全时间窗</span><span class="en">B. Reduce as soon as possible; no safe waiting window exists</span></label>
+<label><input type="radio" name="u1q2" value="c"><span class="zh">C. 必须等CT做完才能复位</span><span class="en">C. Reduction must wait until CT is done</span></label>
+<p class="verdict ok" hidden><span class="zh">回答正确 ✓</span><span class="en">Correct ✓</span></p>
+<p class="verdict no" hidden><span class="zh">再想想 ✗</span><span class="en">Try again ✗</span></p>
+<div class="fb" hidden><p><span class="ans"><span class="zh">答案：B。</span><span class="en">Answer: B.</span></span><span class="zh">未复位的脱位持续威胁股骨头血供。"6小时"不是可以放心等待的窗口，而是越快越好。CT是复位后的常规检查，不是复位的前提。</span><span class="en">An unreduced dislocation keeps threatening head blood supply. "6 hours" is not a window to wait inside — sooner is better. CT is routine after reduction, not a prerequisite.</span></p></div>
+</div>
+<button class="check"><span class="zh">检查答案</span><span class="en">Check answers</span></button>
+</div>
+
+<div class="sources">
+<h4><span class="zh">来源与媒体许可</span><span class="en">Sources &amp; media licensing</span></h4>
+<ol>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-femur/femoral-head-fracture-split/definition" target="_blank" rel="noopener">AO Surgery Reference — Split fractures of the femoral head (definition)</a><br><span class="meta"><span class="zh">定位：未复位脱位是急症（威胁股骨头血供、可压迫重要神经）；后脱位约90%、前脱位约10%。访问日期 2026-10-04。</span><span class="en">Relevance: unreduced dislocation is an emergency (threatens head blood supply, may compress major nerves); ~90% posterior, ~10% anterior. Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-femur/femoral-neck-and-head-fracture-with-hip-dislocation/definition" target="_blank" rel="noopener">AO Surgery Reference — Femoral neck and head fractures with hip dislocation (definition)</a><br><span class="meta"><span class="zh">定位：脱位合并股骨颈/股骨头骨折的治疗原则。访问日期 2026-10-04。</span><span class="en">Relevance: treatment principles for dislocation with femoral neck/head fracture. Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-femur/femoral-neck-and-head-fracture-with-hip-dislocation/total-hip-arthroplasty" target="_blank" rel="noopener">AO Surgery Reference — Total hip arthroplasty for femoral neck and head fractures with hip dislocation</a><br><span class="meta"><span class="zh">定位：假体脱位预防、复位后稳定性与软组织张力检查。访问日期 2026-10-04。</span><span class="en">Relevance: prosthetic dislocation precautions; post-reduction stability and soft-tissue tension checks. Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/acetabulum/further-reading/characteristics-of-associated-fracture-types" target="_blank" rel="noopener">AO Surgery Reference — Characteristics of associated fracture types (acetabulum)</a><br><span class="meta"><span class="zh">定位：后脱位伴后柱/后壁骨折、坐骨神经损伤与股骨头缺血坏死风险。访问日期 2026-10-04。</span><span class="en">Relevance: posterior dislocation with posterior column/wall fractures; sciatic nerve injury and AVN risk. Accessed 2026-10-04.</span></span></li>
+</ol>
+<p class="meta"><span class="zh">媒体来源：图 1-1 为公有领域解剖图（Gray's Anatomy 1918）；图 1-2 CC BY（Karthik K 等，《Indian Journal of Orthopaedics》2011，PMC3004076）；拓展图 1-A CC BY 2.0（Bill Rhodes）、拓展图 1-B CC BY-SA 3.0（James Heilman, MD），均随包附带、原页与许可见各图注；AO Surgery Reference 为外部来源链接，仅引用未复制其图文与视频，内容版权归 AO Foundation 所有（AO 未提供公开再发布许可）。</span><span class="en">Media sources: Fig 1-1 is a public-domain anatomy plate (Gray's Anatomy, 1918); Fig 1-2 CC BY (Karthik K et al., <i>Indian Journal of Orthopaedics</i> 2011, PMC3004076); Extension Figs 1-A CC BY 2.0 (Bill Rhodes) and 1-B CC BY-SA 3.0 (James Heilman, MD), all bundled with source pages and licenses in their captions; AO Surgery Reference is an external source linked for reference only — no content copied; copyright remains with the AO Foundation (AO offers no open redistribution license).</span></p>
+</div>
+</section>
+<!-- ================= UNIT 2: FEMUR ================= -->
+<section class="unit" id="u-femur">
+<h2 class="utitle"><span class="unitnum">2</span><span class="zh">股骨骨折</span><span class="en">Femur fractures</span></h2>
+<p class="usub"><span class="zh">近端 31 / 骨干 32 / 远端 33 —— 三段的治疗逻辑完全不同</span><span class="en">Proximal 31 / shaft 32 / distal 33 — each segment follows different logic</span></p>
+
+<div class="officialbox">
+<p><span class="t"><span class="zh">官方影像资源（AO Surgery Reference，站内查看）</span><span class="en">Official imaging (AO Surgery Reference, view on-site)</span></span></p>
+<p><span class="zh">股骨干骨折官方术式页面含 AO 官方 X 线图例（顺行/逆行髓内钉入路）：</span><span class="en">The femoral-shaft procedure pages carry official AO X-ray figures (antegrade/retrograde nailing approaches):</span><br><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/femoral-shaft/approach/all-approaches" target="_blank" rel="noopener">AO Surgery Reference — All approaches to the femoral shaft</a></p>
+<p><span class="zh">AO 图例版权归 AO Foundation 所有，本课程仅链接原页，<strong>未复制、未热链</strong>（AO 未提供公开再发布许可）。</span><span class="en">AO figures are © AO Foundation; this course links to the original pages only — <strong>not copied or hotlinked</strong> (AO offers no open redistribution license).</span></p>
+</div>
+
+<h3 class="sec"><span class="zh">解剖与机制</span><span class="en">Anatomy &amp; mechanism</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh">股骨按 AO/OTA 分为三段：<strong>近端 31、骨干 32、远端 33</strong>。</span><span class="en">The femur is divided into three AO/OTA segments: <strong>proximal 31, shaft 32, distal 33</strong>.</span></li>
+<li><span class="zh"><span class="seg">近端 31</span>股骨颈囊内骨折直接威胁股骨头血供；转子间骨折在囊外。</span><span class="en"><span class="seg">Proximal 31</span>Intracapsular neck fractures directly threaten femoral-head blood supply; intertrochanteric fractures are extracapsular.</span></li>
+<li><span class="zh"><span class="seg">骨干 32</span>多为高能量暴力（车祸、高处坠落），肌肉牵拉使骨折端明显移位。</span><span class="en"><span class="seg">Shaft 32</span>Usually high-energy trauma (traffic, falls from height); muscle pull displaces fragments markedly.</span></li>
+<li><span class="zh"><span class="seg">远端 33</span>常累及膝关节面；双峰分布——年轻人高能量、老年人低能量骨质疏松。</span><span class="en"><span class="seg">Distal 33</span>Often involves the knee joint; bimodal — high energy in the young, low-energy osteoporotic in the elderly.</span></li>
+</ul>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u2-femur-anatomy.png" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u2-femur-anatomy.png" data-alt-zh="股骨解剖（Gray's Anatomy 1918，公有领域）：右股骨后面观，股骨头、股骨颈、大小转子、骨干、内外侧髁；对应 AO/OTA 近端31、骨干32、远端33三段。" data-alt-en="Femur anatomy (Gray's Anatomy 1918, public domain): posterior view of the right femur — head, neck, trochanters, shaft, condyles; maps to AO/OTA proximal 31, shaft 32, distal 33." alt="股骨解剖（Gray's Anatomy 1918，公有领域）：右股骨后面观，股骨头、股骨颈、大小转子、骨干、内外侧髁；对应 AO/OTA 近端31、骨干32、远端33三段。"></a>
+<figcaption><span class="t"><span class="zh">图 2-1 · 股骨解剖与三段划分（公有领域）</span><span class="en">Fig 2-1 · Femur anatomy and three segments (public domain)</span></span><br><span class="zh"><strong>观察点：</strong>右股骨后面观：股骨头、股骨颈、大小转子、骨干、内外侧髁。对照 AO/OTA：近端 31（头颈转子区）、骨干 32、远端 33（髁区）——三段的血供风险、固定方式与康复逻辑都不同。</span><span class="en"><strong>Observation:</strong> posterior view of the right femur: head, neck, greater/lesser trochanters, shaft, condyles. Maps to AO/OTA: proximal 31, shaft 32, distal 33 — blood-supply risk, fixation and rehab logic differ by segment.</span><br><span class="zh"><strong>能证明：</strong>三段的解剖分界。<strong>不能证明：</strong>骨折本身；1918 年解剖图谱，非影像。</span><span class="en"><strong>Shows:</strong> the anatomic boundaries of the three segments. <strong>Does not show:</strong> any fracture; a 1918 anatomy plate, not imaging.</span><br><span class="srccredit"><span class="zh">来源：Henry Gray《Anatomy of the Human Body》(1918) Plate 245，绘图 Henry Vandyke Carter，公有领域 · <a href="https://commons.wikimedia.org/wiki/File:Gray245.png" target="_blank" rel="noopener">Wikimedia Commons 原页</a> · 独立图例</span><span class="en">Source: Henry Gray, <i>Anatomy of the Human Body</i> (1918), Plate 245, illustrated by Henry Vandyke Carter, public domain · <a href="https://commons.wikimedia.org/wiki/File:Gray245.png" target="_blank" rel="noopener">Wikimedia Commons file page</a> · standalone figure</span></span></figcaption>
+</figure>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u2-femur-shaft-traumatic.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u2-femur-shaft-traumatic.jpg" data-alt-zh="创伤性股骨干骨折术前 X 线（CC BY）：35岁男性100km/h车祸后右股骨中段闭合骨折；(A)(B)股骨正位示骨干中段骨折、断端明显移位，(C)骨盆正位（术前评估一部分）。" data-alt-en="Traumatic femoral shaft fracture, preoperative X-ray (CC BY): closed right midshaft fracture in a 35-year-old man after a 100 km/h crash; (A)(B) AP femur shows displaced midshaft fracture, (C) AP pelvis as part of preoperative assessment." alt="创伤性股骨干骨折术前 X 线（CC BY）：35岁男性100km/h车祸后右股骨中段闭合骨折；(A)(B)股骨正位示骨干中段骨折、断端明显移位，(C)骨盆正位（术前评估一部分）。"></a>
+<figcaption><span class="t"><span class="zh">图 2-2 · 创伤性股骨干骨折（CC BY）</span><span class="en">Fig 2-2 · Traumatic femoral shaft fracture (CC BY)</span></span><br><span class="zh"><strong>观察点：</strong>35 岁男性、100 km/h 正面撞击车祸后右股骨中段闭合骨折。(A)(B) 股骨正位 X 线：骨干中段骨折、断端明显移位；(C) 骨盆正位（术前评估的一部分）。这是典型的高能量创伤性股骨干骨折——对应课程"骨干 32 多为高能量暴力，肌肉牵拉使骨折端明显移位"。</span><span class="en"><strong>Observation:</strong> closed right midshaft femoral fracture in a 35-year-old man after a frontal crash at ~100 km/h. (A)(B) AP femur X-rays: midshaft fracture with marked displacement; (C) AP pelvis (part of preoperative assessment). This is a typical high-energy traumatic femoral shaft fracture — matching the course point "32 shaft fractures are mostly high-energy, with muscle pull displacing the fragments".</span><br><span class="zh"><strong>能证明：</strong>高能量股骨干骨折的 X 线表现（断端明显移位）。<strong>不能证明：</strong>同侧股骨颈隐匿骨折（需加拍髋部影像）；固定方式（本图为术前片）。</span><span class="en"><strong>Shows:</strong> the X-ray appearance of a high-energy shaft fracture (marked displacement). <strong>Does not show:</strong> an occult ipsilateral femoral neck fracture (needs dedicated hip imaging); the fixation method (preoperative film).</span><br><span class="srccredit"><span class="zh">来源：Alzahrani JA 等，Cureus 2023，Fig. 1，CC BY（原文未标版本；<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10440397/#article-aip" target="_blank" rel="noopener">许可</a>）· <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10440397/" target="_blank" rel="noopener">PMC 原文</a> · 独立病例</span><span class="en">Source: Alzahrani JA et al., Cureus 2023, Fig. 1, CC BY (version unstated in source; <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10440397/#article-aip" target="_blank" rel="noopener">license</a>) · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10440397/" target="_blank" rel="noopener">PMC article</a> · standalone case</span></span></figcaption>
+</figure>
+<details class="fold"><summary><span class="zh">拓展（折叠）：非典型股骨骨折（双膦酸盐相关）</span><span class="en">Extension (collapsed): atypical femoral fracture (bisphosphonate-associated)</span></summary>
+<p><span class="zh">下图为鉴别拓展：长期双膦酸盐治疗相关非典型股骨干骨折可发生于低能量、骨折线形态不同（横形、骨皮质增厚）。不能以此代表高能量创伤——主课以创伤性股骨干骨折（图 2-2）为准。</span><span class="en">The figure below is extension material: bisphosphonate-associated atypical femoral shaft fractures can follow low energy and look different (transverse line, cortical thickening). It cannot represent high-energy trauma — the core teaching uses traumatic femoral shaft fracture (Fig 2-2).</span></p>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u2-femur-shaft-fracture.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u2-femur-shaft-fracture.jpg" data-alt-zh="非典型股骨干骨折组合图（CC BY-SA 4.0）：CT定位像+三维重建+术后X线；右侧股骨近端骨干横形骨折，外侧皮质原有增厚；术后X线示髓内钉贯穿骨折端。" data-alt-en="Atypical femoral shaft fracture composite (CC BY-SA 4.0): CT scout + 3D reconstruction + post-op X-ray; transverse fracture of the proximal shaft with pre-existing lateral cortical thickening; post-op film shows an intramedullary nail spanning the fracture." alt="非典型股骨干骨折组合图（CC BY-SA 4.0）：CT定位像+三维重建+术后X线；右侧股骨近端骨干横形骨折，外侧皮质原有增厚；术后X线示髓内钉贯穿骨折端。"></a>
+<figcaption><span class="t"><span class="zh">拓展图 2-A · 非典型股骨干骨折（CC BY-SA 4.0，双膦酸盐相关）</span><span class="en">Extension Fig 2-A · Atypical femoral shaft fracture (CC BY-SA 4.0, bisphosphonate-associated)</span></span><br><span class="zh"><strong>观察点：</strong>组合图（CT 定位像 + 三维重建 + 术后 X 线）：右侧股骨近端骨干横形骨折，骨折线基本横贯，外侧皮质原有增厚（既往应力性改变）；术后 X 线示髓内钉贯穿骨折端。本例为双膦酸盐相关的非典型骨折（低能量），用于观察横形形态与髓内钉固定；创伤性股骨干骨折多为高能量暴力（见图 2-2）。</span><span class="en"><strong>Observation:</strong> composite (CT scout + 3D reconstruction + post-op X-ray): transverse fracture of the proximal femoral shaft with pre-existing lateral cortical thickening (prior stress change); the post-op film shows an intramedullary nail spanning the fracture. This is a bisphosphonate-related atypical fracture (low energy), shown here for the transverse morphology and nailing; traumatic shaft fractures are usually high energy (see Fig 2-2).</span><br><span class="zh"><strong>能证明：</strong>横形骨折形态、髓内钉的固定方式。<strong>不能证明：</strong>高能量创伤的典型表现；不能代表所有股骨干骨折的病因。</span><span class="en"><strong>Shows:</strong> transverse fracture morphology and intramedullary nailing. <strong>Does not show:</strong> typical high-energy trauma; does not represent all causes of femoral shaft fracture.</span><br><span class="srccredit"><span class="zh">来源：Hellerhoff，Wikimedia Commons，CC BY-SA 4.0（<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">许可</a>）· <a href="https://commons.wikimedia.org/wiki/File:Femurfraktur_unter_Bisphosphonattherapie_57W_-_CT_Topo_Volumen_Rendering_postoperatives_Roentgen_-_001.jpg" target="_blank" rel="noopener">原页</a> · 独立病例</span><span class="en">Source: Hellerhoff, via Wikimedia Commons, CC BY-SA 4.0 (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">license</a>) · <a href="https://commons.wikimedia.org/wiki/File:Femurfraktur_unter_Bisphosphonattherapie_57W_-_CT_Topo_Volumen_Rendering_postoperatives_Roentgen_-_001.jpg" target="_blank" rel="noopener">file page</a> · standalone case</span></span></figcaption>
+</figure>
+</details>
+</div>
+
+<h3 class="sec"><span class="zh">初评和红旗</span><span class="en">Initial assessment &amp; red flags</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh">股骨干骨折出血量大，按多发伤流程评估循环；老年人近端骨折重点评估全身合并症。</span><span class="en">Shaft fractures bleed significantly — assess circulation as in polytrauma; in elderly proximal fractures, assess comorbidities.</span></li>
+</ul>
+<div class="redflag"><strong><span class="zh">红旗</span><span class="en">Red flags</span></strong>
+<ul>
+<li><span class="zh"><strong>同侧股骨颈隐匿骨折</strong>：股骨干骨折必须加拍髋部，以免漏诊。</span><span class="en"><strong>Occult ipsilateral femoral-neck fracture</strong>: shaft fractures need hip imaging to avoid missing it.</span></li>
+<li><span class="zh"><strong>开放骨折</strong>：尽早清创覆盖，抗生素与 tetanus 按规范。</span><span class="en"><strong>Open fracture</strong>: early debridement and coverage; antibiotics and tetanus per protocol.</span></li>
+<li><span class="zh"><strong>远端骨折</strong>：查足背/胫后动脉搏动与末梢灌注（皮色、皮温、毛细血管再充盈），警惕血管损伤；注意<strong>脉搏存在不能完全排除血管伤</strong>；查腓总神经。</span><span class="en"><strong>Distal fractures</strong>: check dorsalis pedis/posterior tibial pulses and distal perfusion (color, warmth, capillary refill); note a <strong>present pulse does not fully exclude vascular injury</strong>; check the peroneal nerve.</span></li>
+<li><span class="zh"><strong>多发伤</strong>：股骨干骨折常合并胸、骨盆损伤。</span><span class="en"><strong>Polytrauma</strong>: shaft fractures often accompany chest/pelvic injuries.</span></li>
+</ul>
+</div>
+</div>
+
+<h3 class="sec"><span class="zh">影像 / 分类（三段）</span><span class="en">Imaging / classification (by segment)</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>近端</strong>：骨盆正位 + 患髋正侧位；Garden 描述股骨颈移位程度（描述性）。</span><span class="en"><strong>Proximal</strong>: AP pelvis + hip views; Garden describes neck displacement (descriptive).</span></li>
+<li><span class="zh"><strong>骨干</strong>：<strong>全长股骨正侧位（含髋、膝关节）</strong>；AO/OTA 32 简单 / 楔形 / 复杂（描述性）。</span><span class="en"><strong>Shaft</strong>: <strong>full-length femur AP/lateral including hip and knee</strong>; AO/OTA 32 simple / wedge / complex (descriptive).</span></li>
+<li><span class="zh"><strong>远端</strong>：膝正侧位 + <strong>CT</strong>（排查关节内劈裂如 Hoffa）；33 关节外 / 部分关节内 / 完全关节内（描述性）。</span><span class="en"><strong>Distal</strong>: knee AP/lateral + <strong>CT</strong> (detect articular splits such as Hoffa); 33 extra-articular / partial-articular / complete-articular (descriptive).</span></li>
+</ul>
+<div class="caution"><strong><span class="zh">分类 ≠ 手术指征</span><span class="en">Classification ≠ indication</span></strong><span class="zh">：分类描述骨折形态；是否手术、用什么固定，还取决于年龄、骨质量、软组织与全身情况。</span><span class="en">: classification describes morphology; whether and how to fix also depends on age, bone quality, soft tissue and overall condition.</span></div>
+</div>
+
+<h3 class="sec"><span class="zh">AO 原则如何适用（三段）</span><span class="en">How AO principles apply (by segment)</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>近端</strong>：解剖复位 + 稳定固定，核心是<strong>保护股骨头血供</strong>；移位股骨颈骨折在老年患者中，关节置换是讨论选项之一。</span><span class="en"><strong>Proximal</strong>: anatomic reduction + stable fixation, centered on <strong>protecting head blood supply</strong>; arthroplasty is one discussed option for displaced neck fractures in the elderly.</span></li>
+<li><span class="zh"><strong>骨干</strong>：<strong>髓内钉是成人常规选择</strong>——闭合穿钉、微创、保护骨折端血肿，允许早期活动。</span><span class="en"><strong>Shaft</strong>: <strong>intramedullary nailing is routine in adults</strong> — closed, minimally invasive, preserves fracture hematoma, allows early mobilization.</span></li>
+<li><span class="zh"><strong>远端</strong>：<strong>关节面解剖复位</strong> + 稳定固定 + 早期活动；干骺端粉碎与骨质疏松是难点。</span><span class="en"><strong>Distal</strong>: <strong>anatomic articular reduction</strong> + stable fixation + early motion; metaphyseal comminution and osteoporosis are the challenges.</span></li>
+</ul>
+<details class="fold"><summary><span class="zh">骨干：顺行 vs 逆行髓内钉（原则层面）</span><span class="en">Shaft: antegrade vs retrograde nailing (principles)</span></summary>
+<ul>
+<li><span class="zh">顺行钉是常用入路；逆行钉对<strong>远端 1/3 骨折</strong>有优势，两者总体疗效相近（见来源）。</span><span class="en">Antegrade nailing is commonly used; retrograde nails suit <strong>distal-third fractures</strong>, with similar overall outcomes (see sources).</span></li>
+<li><span class="zh">微创钢板（MIPO）可减少肌肉剥离与血运破坏，按骨折部位选择入路。</span><span class="en">Minimally invasive plating reduces muscle stripping and vascular compromise; approach varies by fracture location.</span></li>
+</ul>
+</details>
+</div>
+
+<h3 class="sec"><span class="zh">治疗选择与限制（三段）</span><span class="en">Treatment options &amp; limitations (by segment)</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>近端</strong>：选项包括空心钉、滑动髋螺钉（DHS）、髓内钉（转子间）、关节置换。<strong>限制</strong>：囊内骨折的缺血坏死风险、骨质疏松、患者生理储备——方案必须个体化。</span><span class="en"><strong>Proximal</strong>: options include cannulated screws, sliding hip screw (DHS), cephalomedullary nailing (intertrochanteric), arthroplasty. <strong>Limits</strong>: AVN risk in intracapsular fractures, osteoporosis, physiologic reserve — decisions must be individualized.</span></li>
+<li><span class="zh"><strong>骨干</strong>：髓内钉为常规。<strong>限制</strong>：开放骨折、多发伤（可先损伤控制外固定）、严重粉碎。<strong>非手术用于无手术条件、不能耐受手术等个体情况</strong>（AO Surgery Reference 明确）。</span><span class="en"><strong>Shaft</strong>: nailing is routine. <strong>Limits</strong>: open fractures, polytrauma (damage-control ex-fix first), severe comminution. <strong>Nonoperative for lack of surgical capacity, inability to tolerate surgery, or other individual factors</strong> (stated in AO Surgery Reference).</span></li>
+<li><span class="zh"><strong>远端</strong>：锁定钢板、逆行髓内钉。<strong>限制</strong>：严重关节粉碎、开放伤、血管损伤需先处理血管。</span><span class="en"><strong>Distal</strong>: locking plates, retrograde nailing. <strong>Limits</strong>: severe articular comminution, open injury, vascular injury requiring vascular care first.</span></li>
+</ul>
+</div>
+
+<h3 class="sec"><span class="zh">并发症 / 随访</span><span class="en">Complications / follow-up</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh">不愈合 / 延迟愈合、畸形愈合、感染、内固定失败。</span><span class="en">Nonunion / delayed union, malunion, infection, fixation failure.</span></li>
+<li><span class="zh"><strong>近端</strong>：股骨头缺血坏死；<strong>骨干</strong>：多发伤者警惕脂肪栓塞；<strong>远端</strong>：膝僵硬、创伤性关节炎。</span><span class="en"><strong>Proximal</strong>: AVN; <strong>shaft</strong>: fat embolism in polytrauma; <strong>distal</strong>: knee stiffness, post-traumatic arthritis.</span></li>
+<li><span class="zh">随访：按计划复查影像、渐进负重、功能康复；内固定激惹可在骨折愈合后、经专科评估考虑取出（无统一时间标准）。</span><span class="en">Follow up with scheduled imaging, progressive weight bearing and rehab; symptomatic implants may be removed after healing, following specialist assessment (no universal timing).</span></li>
+</ul>
+</div>
+
+<h3 class="sec"><span class="zh">病例自测</span><span class="en">Case quiz</span></h3>
+<div class="quiz" id="qz-femur">
+<div class="q" data-answer="c">
+<p class="qstem"><span class="zh">Q1 · 24岁男性，车祸致右股骨干横形骨折，闭合。按 AO Surgery Reference，常规治疗选择是？（合成教学病例）</span><span class="en">Q1 · A 24-year-old man with a closed transverse femoral shaft fracture after a crash. Per AO Surgery Reference, the routine choice is? (synthetic teaching case)</span></p>
+<label><input type="radio" name="u2q1" value="a"><span class="zh">A. 长期骨牵引保守治疗</span><span class="en">A. Prolonged skeletal traction</span></label>
+<label><input type="radio" name="u2q1" value="b"><span class="zh">B. 石膏固定</span><span class="en">B. Cast immobilization</span></label>
+<label><input type="radio" name="u2q1" value="c"><span class="zh">C. 髓内钉固定</span><span class="en">C. Intramedullary nailing</span></label>
+<p class="verdict ok" hidden><span class="zh">回答正确 ✓</span><span class="en">Correct ✓</span></p>
+<p class="verdict no" hidden><span class="zh">再想想 ✗</span><span class="en">Try again ✗</span></p>
+<div class="fb" hidden><p><span class="ans"><span class="zh">答案：C。</span><span class="en">Answer: C.</span></span><span class="zh">成人股骨干骨折通常手术，髓内钉为常规；非手术用于无手术条件、不能耐受手术等个体情况。</span><span class="en">Adult shaft fractures are normally treated operatively with nailing; nonoperative care is for lack of surgical capacity, inability to tolerate surgery, or other individual factors.</span></p></div>
+</div>
+<div class="q" data-answer="a">
+<p class="qstem"><span class="zh">Q2 · 股骨干骨折的影像检查中，最容易漏诊的合并伤是？</span><span class="en">Q2 · In femoral shaft fractures, the most easily missed associated injury on imaging is?</span></p>
+<label><input type="radio" name="u2q1b" value="a"><span class="zh">A. 同侧股骨颈隐匿骨折</span><span class="en">A. Occult ipsilateral femoral-neck fracture</span></label>
+<label><input type="radio" name="u2q1b" value="b"><span class="zh">B. 对侧胫骨骨折</span><span class="en">B. Contralateral tibial fracture</span></label>
+<label><input type="radio" name="u2q1b" value="c"><span class="zh">C. 腰椎骨折</span><span class="en">C. Lumbar fracture</span></label>
+<p class="verdict ok" hidden><span class="zh">回答正确 ✓</span><span class="en">Correct ✓</span></p>
+<p class="verdict no" hidden><span class="zh">再想想 ✗</span><span class="en">Try again ✗</span></p>
+<div class="fb" hidden><p><span class="ans"><span class="zh">答案：A。</span><span class="en">Answer: A.</span></span><span class="zh">这就是要求拍全长股骨（含髋、膝）的原因：同侧股骨颈隐匿骨折一旦漏诊后果严重。</span><span class="en">This is why full-length femur films including hip and knee are required: a missed neck fracture has serious consequences.</span></p></div>
+</div>
+<div class="q" data-answer="b">
+<p class="qstem"><span class="zh">Q3 · 远端股骨骨折，CT最重要的价值是？</span><span class="en">Q3 · In distal femur fractures, the most important value of CT is?</span></p>
+<label><input type="radio" name="u2q2" value="a"><span class="zh">A. 替代体格检查</span><span class="en">A. Replacing physical examination</span></label>
+<label><input type="radio" name="u2q2" value="b"><span class="zh">B. 发现平片隐匿的关节内劈裂，指导固定方案</span><span class="en">B. Detecting occult articular splits missed on plain films, guiding fixation</span></label>
+<label><input type="radio" name="u2q2" value="c"><span class="zh">C. 决定是否用抗生素</span><span class="en">C. Deciding on antibiotics</span></label>
+<p class="verdict ok" hidden><span class="zh">回答正确 ✓</span><span class="en">Correct ✓</span></p>
+<p class="verdict no" hidden><span class="zh">再想想 ✗</span><span class="en">Try again ✗</span></p>
+<div class="fb" hidden><p><span class="ans"><span class="zh">答案：B。</span><span class="en">Answer: B.</span></span><span class="zh">相当一部分远端股骨骨折有平片看不见的关节内延伸，CT 决定你是否需要处理关节面。</span><span class="en">A substantial share of distal femur fractures have occult intra-articular extension; CT determines whether the joint surface needs addressing.</span></p></div>
+</div>
+<button class="check"><span class="zh">检查答案</span><span class="en">Check answers</span></button>
+</div>
+
+<div class="sources">
+<h4><span class="zh">来源与媒体许可</span><span class="en">Sources &amp; media licensing</span></h4>
+<ol>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-femur/femoral-neck-fracture-basicervical/sliding-hip-screw-with-antirotation-screw" target="_blank" rel="noopener">AO Surgery Reference — Sliding hip screw with antirotation screw (basicervical)</a><br><span class="meta"><span class="zh">定位：近端股骨颈骨折治疗选项之一（术式页面）。访问日期 2026-10-04。</span><span class="en">Relevance: one treatment option for proximal femoral-neck fractures (procedure page). Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/femoral-shaft/approach/all-approaches" target="_blank" rel="noopener">AO Surgery Reference — All approaches to the femoral shaft</a><br><span class="meta"><span class="zh">定位：股骨干髓内钉入路原则（顺行/逆行）。访问日期 2026-10-04。</span><span class="en">Relevance: nailing approach principles for the femoral shaft (antegrade/retrograde). Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/femoral-shaft/simple-transverse-middle-1-3-fractures/nonoperative-treatment-with-limited-resources" target="_blank" rel="noopener">AO Surgery Reference — Nonoperative treatment with limited resources (simple transverse middle 1/3)</a><br><span class="meta"><span class="zh">定位：股骨干骨折通常手术、髓内钉为常规；非手术用于无手术条件、不能耐受手术等个体情况。访问日期 2026-10-04。</span><span class="en">Relevance: shaft fractures normally treated operatively with nailing; nonoperative for lack of surgical capacity, inability to tolerate surgery, or other individual factors. Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-femur/further-reading/patient-examination" target="_blank" rel="noopener">AO Surgery Reference — Patient examination (distal femur)</a><br><span class="meta"><span class="zh">定位：远端初评（神经血管、CT查关节内延伸）。访问日期 2026-10-04。</span><span class="en">Relevance: distal initial assessment (neurovascular, CT for articular extension). Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-femur/complete-articular-fracture-simple-articular-simple-methaphyseal/definition" target="_blank" rel="noopener">AO Surgery Reference — 33C1 Complete articular fracture, simple articular, simple metaphyseal (definition)</a><br><span class="meta"><span class="zh">定位：远端完全关节内骨折的描述与影像要点。访问日期 2026-10-04。</span><span class="en">Relevance: description and imaging points of complete articular distal fractures. Accessed 2026-10-04.</span></span></li>
+</ol>
+<p class="meta"><span class="zh">媒体来源：图 2-1 为公有领域解剖图（Gray's Anatomy 1918）；图 2-2 CC BY（Alzahrani JA 等，Cureus 2023，PMC10440397）；拓展图 2-A CC BY-SA 4.0（Hellerhoff），均随包附带、原页与许可见各图注；AO Surgery Reference 为外部来源链接，仅引用未复制其图文与视频，内容版权归 AO Foundation 所有（AO 未提供公开再发布许可）。</span><span class="en">Media sources: Fig 2-1 is a public-domain anatomy plate (Gray's Anatomy, 1918); Fig 2-2 CC BY (Alzahrani JA et al., Cureus 2023, PMC10440397); Extension Fig 2-A CC BY-SA 4.0 (Hellerhoff), all bundled with source pages and licenses in their captions; AO Surgery Reference is an external source linked for reference only — no content copied; copyright remains with the AO Foundation (AO offers no open redistribution license).</span></p>
+</div>
+</section>
+<!-- ================= UNIT 3: PATELLA ================= -->
+<section class="unit" id="u-patella">
+<h2 class="utitle"><span class="unitnum">3</span><span class="zh">髌骨骨折</span><span class="en">Patella fracture</span></h2>
+<p class="usub"><span class="zh">伸膝装置是核心——先判断装置断没断，再谈固定方式</span><span class="en">The extensor mechanism is central — assess it first, then discuss fixation</span></p>
+
+<div class="officialbox">
+<p><span class="t"><span class="zh">官方影像资源（AO Surgery Reference，站内查看）</span><span class="en">Official imaging (AO Surgery Reference, view on-site)</span></span></p>
+<p><span class="zh">髌骨骨折官方页面含 AO 官方影像与分型图例（横形骨折与伸膝装置断裂的关系）：</span><span class="en">The patella pages carry official AO imaging and classification figures (transverse fractures and extensor mechanism disruption):</span><br><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/patella/complete-articular-frontal-coronal-simple-fracture-of-the-middle-and-proximal-third/definition" target="_blank" rel="noopener">AO Surgery Reference — 34C1.1/.2 Complete articular, frontal/coronal simple fracture</a></p>
+<p><span class="zh">AO 图例版权归 AO Foundation 所有，本课程仅链接原页，<strong>未复制、未热链</strong>（AO 未提供公开再发布许可）。</span><span class="en">AO figures are © AO Foundation; this course links to the original pages only — <strong>not copied or hotlinked</strong> (AO offers no open redistribution license).</span></p>
+</div>
+
+<h3 class="sec"><span class="zh">解剖与机制</span><span class="en">Anatomy &amp; mechanism</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh">伸膝装置是一条链：<strong>股四头肌 → 股四头肌腱 → 髌骨 → 髌腱 → 胫骨结节</strong>。任何一环断裂，伸膝都受影响。</span><span class="en">The extensor mechanism is a chain: <strong>quadriceps → quadriceps tendon → patella → patellar tendon → tibial tuberosity</strong>. A break anywhere impairs knee extension.</span></li>
+<li><span class="zh"><strong>直接暴力</strong>（跌倒膝着地、仪表盘撞击）：多为粉碎骨折。</span><span class="en"><strong>Direct trauma</strong> (fall onto the knee, dashboard impact): often comminuted.</span></li>
+<li><span class="zh"><strong>间接暴力</strong>（屈膝位股四头肌猛烈收缩）：多为横形骨折，常伴分离。</span><span class="en"><strong>Indirect force</strong> (violent quadriceps contraction with knee flexed): often transverse, frequently displaced.</span></li>
+<li><span class="zh">髌骨骨折常合并<strong>髌股关节面损伤</strong>。</span><span class="en">Patellar fractures often injure the <strong>patellofemoral articular surface</strong>.</span></li>
+</ul>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u3-knee-anatomy.png" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u3-knee-anatomy.png" data-alt-zh="膝关节解剖（Gray's Anatomy 1918，公有领域）：右膝关节矢状切面，股骨、髌骨、髌韧带、胫骨、半月板；伸膝装置链条为股四头肌腱→髌骨→髌韧带→胫骨结节。" data-alt-en="Knee anatomy (Gray's Anatomy 1918, public domain): sagittal section of the right knee — femur, patella, patellar ligament, tibia, meniscus; the extensor chain runs quadriceps tendon → patella → patellar ligament → tibial tuberosity." alt="膝关节解剖（Gray's Anatomy 1918，公有领域）：右膝关节矢状切面，股骨、髌骨、髌韧带、胫骨、半月板；伸膝装置链条为股四头肌腱→髌骨→髌韧带→胫骨结节。"></a>
+<figcaption><span class="t"><span class="zh">图 3-1 · 膝关节矢状切面与伸膝装置（公有领域）</span><span class="en">Fig 3-1 · Knee sagittal section and extensor mechanism (public domain)</span></span><br><span class="zh"><strong>观察点：</strong>右膝关节矢状切面：股骨、髌骨（patella）、髌韧带（ligamentum patellae）、胫骨、半月板。伸膝装置是一条链：股四头肌腱（上）→ 髌骨 → 髌韧带 → 胫骨结节——任何一环断裂，伸膝都受影响，这正是"先判断装置断没断，再谈固定方式"的解剖依据。</span><span class="en"><strong>Observation:</strong> sagittal section of the right knee: femur, patella, patellar ligament, tibia, meniscus. The extensor mechanism is a chain — quadriceps tendon → patella → patellar ligament → tibial tuberosity; a break anywhere impairs knee extension — the anatomic basis for "assess the mechanism first, then discuss fixation".</span><br><span class="zh"><strong>能证明：</strong>伸膝装置的解剖连续关系。<strong>不能证明：</strong>骨折；1918 年解剖图谱，非影像。</span><span class="en"><strong>Shows:</strong> the anatomic continuity of the extensor mechanism. <strong>Does not show:</strong> any fracture; a 1918 anatomy plate, not imaging.</span><br><span class="srccredit"><span class="zh">来源：Henry Gray《Anatomy of the Human Body》(1918) Plate 350，绘图 Henry Vandyke Carter，公有领域 · <a href="https://commons.wikimedia.org/wiki/File:Gray350.png" target="_blank" rel="noopener">Wikimedia Commons 原页</a> · 独立图例</span><span class="en">Source: Henry Gray, <i>Anatomy of the Human Body</i> (1918), Plate 350, illustrated by Henry Vandyke Carter, public domain · <a href="https://commons.wikimedia.org/wiki/File:Gray350.png" target="_blank" rel="noopener">Wikimedia Commons file page</a> · standalone figure</span></span></figcaption>
+</figure>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u3-patella-transverse.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u3-patella-transverse.jpg" data-alt-zh="髌骨横行骨折对照（CC BY 4.0）：上排无移位横行骨折（示意图、正位X线、CT三维重建），下排移位横行骨折伴分离；上排与下排为两名不同年轻患者。" data-alt-en="Transverse patellar fractures compared (CC BY 4.0): top row non-displaced transverse fracture (drawing, AP X-ray, 3D CT), bottom row displaced transverse fracture with separation; the two rows are two different young patients." alt="髌骨横行骨折对照（CC BY 4.0）：上排无移位横行骨折（示意图、正位X线、CT三维重建），下排移位横行骨折伴分离；上排与下排为两名不同年轻患者。"></a>
+<figcaption><span class="t"><span class="zh">图 3-2 · 横行髌骨骨折：无移位 vs 移位（CC BY 4.0）</span><span class="en">Fig 3-2 · Transverse patellar fractures: non-displaced vs displaced (CC BY 4.0)</span></span><br><span class="zh"><strong>观察点：</strong>两名年轻成人的横行骨折对照。上排（a–c）：无移位横行骨折——示意图、正位 X 线、CT 三维重建，骨折线横贯髌骨体部；下排（d–f）：移位横行骨折——两骨折端分离。<strong>注意：上排与下排是两名不同患者，不是同一病例的时序。</strong>移位者支持带损伤风险更高——对应课程"分离的横形骨折多伴装置断裂"。</span><span class="en"><strong>Observation:</strong> transverse fractures in two young adults compared. Top row (a–c): non-displaced transverse fracture — drawing, AP radiograph, 3D CT reconstruction, fracture line across the patellar body; bottom row (d–f): displaced transverse fracture with fragment separation. <strong>Note: the two rows are two different patients, not one case over time.</strong> Displaced fractures carry higher retinacular injury risk — matching the course point that displaced transverse fractures usually mean a disrupted mechanism.</span><br><span class="zh"><strong>能证明：</strong>横行骨折的形态（无移位 vs 移位）、X 线与 CT 的互补。<strong>不能证明：</strong>伸膝装置查体所见；两名患者均为年轻成人，不能代表老年骨质疏松骨折。</span><span class="en"><strong>Shows:</strong> transverse fracture morphology (non-displaced vs displaced) and the complementary roles of X-ray and CT. <strong>Does not show:</strong> physical-exam findings of the extensor mechanism; both patients are young adults, not representative of elderly osteoporotic fractures.</span><br><span class="srccredit"><span class="zh">来源：Jarraya M 等，"Imaging of patellar fractures"，《Insights into Imaging》2017，Fig. 3，CC BY 4.0（<a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">许可</a>）· <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5265199/" target="_blank" rel="noopener">PMC 原文</a> · 两名独立患者</span><span class="en">Source: Jarraya M et al., "Imaging of patellar fractures", <i>Insights into Imaging</i> 2017, Fig. 3, CC BY 4.0 (<a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">license</a>) · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5265199/" target="_blank" rel="noopener">PMC article</a> · two standalone patients</span></span></figcaption>
+</figure>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u3-patella-inferior-pole.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u3-patella-inferior-pole.jpg" data-alt-zh="髌骨下极骨折（CC BY 4.0）：39岁男性，示意图、正位与侧位X线示髌骨下极横行骨折。" data-alt-en="Inferior pole patellar fracture (CC BY 4.0): 39-year-old man; drawing, AP and lateral radiographs show a transverse fracture of the lower pole of the patella." alt="髌骨下极骨折（CC BY 4.0）：39岁男性，示意图、正位与侧位X线示髌骨下极横行骨折。"></a>
+<figcaption><span class="t"><span class="zh">图 3-3 · 髌骨下极骨折（CC BY 4.0）</span><span class="en">Fig 3-3 · Inferior pole patellar fracture (CC BY 4.0)</span></span><br><span class="zh"><strong>观察点：</strong>39 岁男性髌骨下极横行骨折：示意图、正位与侧位 X 线。本图展示下极骨折线；是否合并髌腱损伤、髌骨高度是否异常，应结合完整侧位片、查体及必要的进一步检查，不能只凭此图确定。</span><span class="en"><strong>Observation:</strong> transverse fracture of the lower pole in a 39-year-old man: drawing, AP and lateral radiographs. The image shows the lower-pole fracture line. Tendon integrity and patellar height require the full lateral view, examination and further investigation when indicated; this image alone is insufficient.</span><br><span class="zh"><strong>能证明：</strong>下极骨折的 X 线表现。<strong>不能证明：</strong>髌腱是否完全断裂（需超声/MRI）；与图 3-2 非同一患者。</span><span class="en"><strong>Shows:</strong> the X-ray appearance of an inferior pole fracture. <strong>Does not show:</strong> whether the patellar tendon is fully ruptured (needs ultrasound/MRI); not the same patient as Fig 3-2.</span><br><span class="srccredit"><span class="zh">来源：Jarraya M 等，"Imaging of patellar fractures"，《Insights into Imaging》2017，Fig. 4，CC BY 4.0（<a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">许可</a>）· <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5265199/" target="_blank" rel="noopener">PMC 原文</a> · 独立病例</span><span class="en">Source: Jarraya M et al., "Imaging of patellar fractures", <i>Insights into Imaging</i> 2017, Fig. 4, CC BY 4.0 (<a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">license</a>) · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5265199/" target="_blank" rel="noopener">PMC article</a> · standalone case</span></span></figcaption>
+</figure>
+</div>
+
+<h3 class="sec"><span class="zh">初评和红旗</span><span class="en">Initial assessment &amp; red flags</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>关键检查是伸膝装置</strong>：让患者做<strong>主动直腿抬高</strong>；能完成 → 装置可能完整；出现<strong>伸膝滞后</strong> → 提示伸膝装置损伤（疼痛抑制也可能影响，需综合评估）。</span><span class="en"><strong>The key exam is the extensor mechanism</strong>: ask for an <strong>active straight-leg raise</strong>; able to do it → mechanism may be intact; <strong>extensor lag</strong> → suggests extensor injury (pain inhibition can also affect it; assess comprehensively).</span></li><li><span class="zh">触诊有无<strong>骨缺损（台阶感）</strong>，观察<strong>关节积血</strong>。</span><span class="en">Palpate for a <strong>bony defect (step)</strong>; look for <strong>hemarthrosis</strong>.</span></li>
+<li><span class="zh">注意：<strong>髌旁支持带完整时，患者仍可能伸直膝盖</strong>，不能单凭"能伸直"排除骨折。</span><span class="en">Note: <strong>with intact retinacula, patients may still extend the knee</strong> — ability to extend does not rule out fracture.</span></li>
+</ul>
+<div class="redflag"><strong><span class="zh">红旗</span><span class="en">Red flags</span></strong>
+<ul>
+<li><span class="zh"><strong>开放性骨折</strong>：膝前位置表浅，开放并不少见 → 按开放骨折处理。</span><span class="en"><strong>Open fracture</strong>: the anterior knee is subcutaneous, so open injuries are not rare → manage as open fracture.</span></li>
+<li><span class="zh">皮肤张力高、张力性水疱 → 警惕软组织坏死风险。</span><span class="en">Tense skin / tension blisters → risk of soft-tissue necrosis.</span></li>
+<li><span class="zh">不要把<strong>髌前滑囊损伤</strong>误认为骨折，也不要漏掉开放伤的分级。</span><span class="en">Don't confuse <strong>prepatellar bursal injury</strong> with fracture; don't under-grade open injuries.</span></li>
+</ul>
+</div>
+<details class="fold"><summary><span class="zh">检查不确定时怎么办？</span><span class="en">What if the exam is uncertain?</span></summary>
+<ul>
+<li><span class="zh">对伸膝装置是否断裂有疑问时，可做<strong>超声或 MRI</strong> 明确股四头肌腱与髌腱情况（见来源）。</span><span class="en">When disruption is uncertain, <strong>ultrasound or MRI</strong> can clarify quadriceps/patellar tendon status (see sources).</span></li>
+</ul>
+</details>
+</div>
+
+<h3 class="sec"><span class="zh">影像 / 分类</span><span class="en">Imaging / classification</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh">膝<strong>正侧位 + 髌骨轴位（skyline）</strong>；侧位最能显示分离程度。</span><span class="en">Knee <strong>AP/lateral + skyline</strong> views; the lateral best shows displacement.</span></li>
+<li><span class="zh"><strong>CT</strong>：评估粉碎程度与关节面台阶。</span><span class="en"><strong>CT</strong>: assess comminution and articular step-off.</span></li>
+<li><span class="zh">AO/OTA 34：关节外 / 部分关节内 / 完全关节内（描述性）；横形骨折伴分离通常意味着伸膝装置断裂。</span><span class="en">AO/OTA 34: extra-articular / partial-articular / complete-articular (descriptive); transverse fractures with separation usually mean a disrupted mechanism.</span></li>
+</ul>
+<div class="caution"><strong><span class="zh">分类 ≠ 手术指征</span><span class="en">Classification ≠ indication</span></strong><span class="zh">：分类描述形态；真正分流治疗的是<strong>伸膝装置是否完整</strong>和移位程度。</span><span class="en">: classification describes morphology; what truly triages treatment is <strong>whether the extensor mechanism is intact</strong> plus displacement.</span></div>
+</div>
+
+<h3 class="sec"><span class="zh">AO 原则如何适用</span><span class="en">How AO principles apply</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>恢复伸膝装置的连续性</strong>是第一目标，其次是<strong>关节面平整</strong>。</span><span class="en"><strong>Restoring extensor continuity</strong> is the first goal, then a <strong>smooth articular surface</strong>.</span></li>
+<li><span class="zh"><strong>稳定固定</strong>允许早期活动，对抗膝僵硬。</span><span class="en"><strong>Stable fixation</strong> permits early motion, fighting knee stiffness.</span></li>
+<li><span class="zh">髌骨血供相对脆弱、软组织覆盖薄，骨折与手术都可能进一步影响血运，手术要<strong>爱护软组织</strong>。</span><span class="en">The patella has relatively tenuous blood supply and thin soft-tissue cover, and both fracture and surgery can compromise it further — <strong>handle soft tissues gently</strong>.</span></li>
+</ul>
+</div>
+
+<h3 class="sec"><span class="zh">治疗选择与限制</span><span class="en">Treatment options &amp; limitations</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>伸膝装置完整 + 无移位/轻微移位</strong>：可考虑<strong>非手术</strong>——伸直位支具固定 4–6 周，允许负重（见来源）。</span><span class="en"><strong>Intact mechanism + undisplaced/minimally displaced</strong>: <strong>nonoperative</strong> may be considered — extension bracing 4–6 weeks with weight bearing allowed (see sources).</span></li>
+<li><span class="zh"><strong>装置断裂或明显移位</strong>：手术重建——张力带、螺钉等，恢复装置连续与关节面。</span><span class="en"><strong>Disrupted mechanism or marked displacement</strong>: surgical reconstruction — tension band, screws, etc., restoring continuity and the joint surface.</span></li>
+<li><span class="zh"><strong>限制</strong>：严重粉碎无法重建、患者全身情况不允许手术、开放伤软组织条件差——方案个体化。</span><span class="en"><strong>Limits</strong>: unreconstructable comminution, unfit patients, poor soft tissue in open injuries — individualize.</span></li>
+</ul>
+</div>
+
+<h3 class="sec"><span class="zh">并发症 / 随访</span><span class="en">Complications / follow-up</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>膝僵硬</strong>：最常见，早期活动是预防关键。</span><span class="en"><strong>Knee stiffness</strong>: most common; early motion is key prevention.</span></li>
+<li><span class="zh"><strong>创伤性髌股关节炎</strong>：关节面损伤越重风险越高。</span><span class="en"><strong>Patellofemoral arthritis</strong>: worse with greater articular injury.</span></li>
+<li><span class="zh"><strong>内固定激惹/失败</strong>：髌前软组织薄，内植物激惹常见。</span><span class="en"><strong>Implant irritation/failure</strong>: common given thin prepatellar cover.</span></li>
+<li><span class="zh"><strong>伸膝滞后</strong>：提示装置愈合不良，需复查。</span><span class="en"><strong>Extensor lag</strong>: suggests poor healing; re-evaluate.</span></li>
+</ul>
+</div>
+
+<h3 class="sec"><span class="zh">病例自测</span><span class="en">Case quiz</span></h3>
+<div class="quiz" id="qz-patella">
+<div class="q" data-answer="b">
+<p class="qstem"><span class="zh">Q1 · 45岁女性，跌倒后右膝肿痛，X线示髌骨横形骨折、分离约8mm。查体最能决定治疗方向的检查是？（合成教学病例）</span><span class="en">Q1 · A 45-year-old woman fell onto her knee; X-ray shows a transverse patella fracture with ~8 mm separation. The exam finding that most directs treatment is? (synthetic teaching case)</span></p>
+<label><input type="radio" name="u3q1" value="a"><span class="zh">A. 膝关节活动度</span><span class="en">A. Knee range of motion</span></label>
+<label><input type="radio" name="u3q1" value="b"><span class="zh">B. 主动直腿抬高（有无伸膝滞后）</span><span class="en">B. Active straight-leg raise (extensor lag or not)</span></label>
+<label><input type="radio" name="u3q1" value="c"><span class="zh">C. 足背动脉搏动</span><span class="en">C. Dorsalis pedis pulse</span></label>
+<p class="verdict ok" hidden><span class="zh">回答正确 ✓</span><span class="en">Correct ✓</span></p>
+<p class="verdict no" hidden><span class="zh">再想想 ✗</span><span class="en">Try again ✗</span></p>
+<div class="fb" hidden><p><span class="ans"><span class="zh">答案：B。</span><span class="en">Answer: B.</span></span><span class="zh">伸膝装置是否完整是分流治疗的关键：分离的横形骨折多伴装置断裂，需手术重建。</span><span class="en">Extensor integrity triages treatment: displaced transverse fractures usually mean a disrupted mechanism needing reconstruction.</span></p></div>
+</div>
+<div class="q" data-answer="a">
+<p class="qstem"><span class="zh">Q2 · 关于髌骨骨折的说法，正确的是？</span><span class="en">Q2 · Which statement about patella fractures is correct?</span></p>
+<label><input type="radio" name="u3q2" value="a"><span class="zh">A. 髌旁支持带完整时，患者仍可能主动伸直膝盖，不能单凭此排除骨折</span><span class="en">A. With intact retinacula patients may still extend the knee — this alone doesn't rule out fracture</span></label>
+<label><input type="radio" name="u3q2" value="b"><span class="zh">B. 能伸直膝盖就一定没有骨折</span><span class="en">B. Ability to extend the knee rules out fracture</span></label>
+<label><input type="radio" name="u3q2" value="c"><span class="zh">C. 髌骨骨折从不开放</span><span class="en">C. Patella fractures are never open</span></label>
+<p class="verdict ok" hidden><span class="zh">回答正确 ✓</span><span class="en">Correct ✓</span></p>
+<p class="verdict no" hidden><span class="zh">再想想 ✗</span><span class="en">Try again ✗</span></p>
+<div class="fb" hidden><p><span class="ans"><span class="zh">答案：A。</span><span class="en">Answer: A.</span></span><span class="zh">辅助伸膝结构（内外侧髌旁支持带）完整时可代偿部分伸膝功能；膝前位置表浅，开放伤并不少见。</span><span class="en">Intact medial/lateral retinacula can compensate partly; the subcutaneous anterior knee makes open injuries not rare.</span></p></div>
+</div>
+<button class="check"><span class="zh">检查答案</span><span class="en">Check answers</span></button>
+</div>
+
+<div class="sources">
+<h4><span class="zh">来源与媒体许可</span><span class="en">Sources &amp; media licensing</span></h4>
+<ol>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/patella/further-reading/patient-examination" target="_blank" rel="noopener">AO Surgery Reference — Patient examination (patella)</a><br><span class="meta"><span class="zh">定位：伸膝装置检查（直腿抬高、支持带代偿、开放伤评估）。访问日期 2026-10-04。</span><span class="en">Relevance: extensor mechanism exam (straight-leg raise, retinacular compensation, open-injury assessment). Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/patella/complete-articular-frontal-coronal-simple-fracture-of-the-middle-and-proximal-third/definition" target="_blank" rel="noopener">AO Surgery Reference — 34C1.1/.2 Complete articular, frontal/coronal simple fracture (definition)</a><br><span class="meta"><span class="zh">定位：横形骨折与伸膝装置断裂的关系。访问日期 2026-10-04。</span><span class="en">Relevance: transverse fractures and extensor mechanism disruption. Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/patella/partial-articular-medial-sagittal-simple-fracture/bracing" target="_blank" rel="noopener">AO Surgery Reference — Bracing for partial articular fractures</a><br><span class="meta"><span class="zh">定位：无移位/装置完整骨折的支具非手术选择。访问日期 2026-10-04。</span><span class="en">Relevance: bracing as nonoperative option for undisplaced/intact-mechanism fractures. Accessed 2026-10-04.</span></span></li>
+</ol>
+<p class="meta"><span class="zh">媒体来源：图 3-1 为公有领域解剖图（Gray's Anatomy 1918）；图 3-2、图 3-3 为 CC BY 4.0（Jarraya M 等，《Insights into Imaging》2017，PMC5265199），随包附带、原页与许可见图注；AO Surgery Reference 为外部来源链接，仅引用未复制其图文与视频，内容版权归 AO Foundation 所有（AO 未提供公开再发布许可）。</span><span class="en">Media sources: Fig 3-1 is a public-domain anatomy plate (Gray's Anatomy, 1918); Figs 3-2 and 3-3 CC BY 4.0 (Jarraya M et al., <i>Insights into Imaging</i> 2017, PMC5265199), bundled with source pages and licenses in their captions; AO Surgery Reference is an external source linked for reference only — no content copied; copyright remains with the AO Foundation (AO offers no open redistribution license).</span></p>
+</div>
+</section>
+<!-- ================= UNIT 4: PLATEAU ================= -->
+<section class="unit" id="u-plateau">
+<h2 class="utitle"><span class="unitnum">4</span><span class="zh">胫骨平台骨折</span><span class="en">Tibial plateau fracture</span></h2>
+<p class="usub"><span class="zh">软组织决定手术时机 · 分期处理 · 反复评估神经血管</span><span class="en">Soft tissue dictates timing · Staged management · Reassess neurovascular status</span></p>
+
+<div class="officialbox">
+<p><span class="t"><span class="zh">官方影像资源（AO Surgery Reference，站内查看）</span><span class="en">Official imaging (AO Surgery Reference, view on-site)</span></span></p>
+<p><span class="zh">胫骨平台骨折官方页面含 AO 官方 X 线/CT 图例与<strong>官方教学视频（站内播放）</strong>：</span><span class="en">The tibial plateau pages carry official AO X-ray/CT figures and an <strong>official teaching video (on-site player)</strong>:</span><br><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-tibia/complete-articular-fracture-with-fragmentary-lateral-plateau/ring-fixation" target="_blank" rel="noopener">AO Surgery Reference — Ring fixation for complete articular fracture with fragmentary lateral plateau</a></p>
+<p><span class="zh">AO 图例与视频版权归 AO Foundation 所有，本课程仅链接原页，<strong>未复制、未热链、未嵌入</strong>（AO 未提供公开再发布许可）。</span><span class="en">AO figures and videos are © AO Foundation; this course links to the original pages only — <strong>not copied, hotlinked or embedded</strong> (AO offers no open redistribution license).</span></p>
+</div>
+
+<h3 class="sec"><span class="zh">解剖与机制</span><span class="en">Anatomy &amp; mechanism</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh">胫骨平台：<strong>内侧大而凹、外侧小而凸</strong>，后倾约10°；内侧承担更多负荷。</span><span class="en">The plateau: <strong>medial is large and concave, lateral small and convex</strong>, with ~10° posterior slope; the medial side bears more load.</span></li>
+<li><span class="zh">机制：<strong>轴向暴力 + 内外翻应力</strong>。年轻人多为高能量（车祸、坠落）；老年人骨质疏松，低能量跌倒即可骨折。</span><span class="en">Mechanism: <strong>axial load + varus/valgus stress</strong>. Young patients: high energy (traffic, falls); elderly osteoporotic patients: low-energy falls suffice.</span></li>
+<li><span class="zh">典型形态：<strong>外侧劈裂塌陷</strong>最常见；高能量可致双髁粉碎。</span><span class="en">Typical pattern: <strong>lateral split-depression</strong> is most common; high energy can shatter both condyles.</span></li>
+</ul>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u4-plateau-anatomy.png" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u4-plateau-anatomy.png" data-alt-zh="胫骨平台解剖（Gray's Anatomy 1918，公有领域）：右胫骨上端俯视，内侧半月板大而C形、外侧小而O形，前后交叉韧带附着于髁间区；对应内侧平台大而凹、外侧小而凸。" data-alt-en="Tibial plateau anatomy (Gray's Anatomy 1918, public domain): superior view of the right tibial head — medial meniscus large and C-shaped, lateral small and O-shaped, cruciate ligaments in the intercondylar area; matches the medial large/concave, lateral small/convex plateau." alt="胫骨平台解剖（Gray's Anatomy 1918，公有领域）：右胫骨上端俯视，内侧半月板大而C形、外侧小而O形，前后交叉韧带附着于髁间区；对应内侧平台大而凹、外侧小而凸。"></a>
+<figcaption><span class="t"><span class="zh">图 4-1 · 胫骨上端俯视：内外侧形态差异（公有领域）</span><span class="en">Fig 4-1 · Tibial head from above: medial–lateral difference (public domain)</span></span><br><span class="zh"><strong>观察点：</strong>右胫骨上端俯视：内侧半月板大而 C 形、外侧半月板小而 O 形；前后交叉韧带附着于髁间区。对应平台形态：内侧平台大而凹、外侧小而凸——外侧骨质相对薄弱，劈裂塌陷好发于外侧。理解这个形态差异，才能读懂图 4-2 的骨折。</span><span class="en"><strong>Observation:</strong> superior view of the right tibial head: medial meniscus large and C-shaped, lateral small and O-shaped; cruciate ligaments attach in the intercondylar area. Matches plateau morphology — medial large/concave, lateral small/convex — the lateral side is relatively weaker, where split-depression typically occurs. Grasping this difference is key to reading Fig 4-2.</span><br><span class="zh"><strong>能证明：</strong>内外侧平台的形态差异。<strong>不能证明：</strong>骨折；1918 年解剖图谱，非影像。</span><span class="en"><strong>Shows:</strong> the medial–lateral morphologic difference. <strong>Does not show:</strong> any fracture; a 1918 anatomy plate, not imaging.</span><br><span class="srccredit"><span class="zh">来源：Henry Gray《Anatomy of the Human Body》(1918) Plate 349，绘图 Henry Vandyke Carter，公有领域 · <a href="https://commons.wikimedia.org/wiki/File:Gray349.png" target="_blank" rel="noopener">Wikimedia Commons 原页</a> · 独立图例</span><span class="en">Source: Henry Gray, <i>Anatomy of the Human Body</i> (1918), Plate 349, illustrated by Henry Vandyke Carter, public domain · <a href="https://commons.wikimedia.org/wiki/File:Gray349.png" target="_blank" rel="noopener">Wikimedia Commons file page</a> · standalone figure</span></span></figcaption>
+</figure>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u4-plateau-depression.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u4-plateau-depression.jpg" data-alt-zh="胫骨平台外侧劈裂塌陷 X 线（CC BY-SA 4.0）：膝关节正位，外侧胫骨平台塌陷，关节面较内侧下沉、失去平整。" data-alt-en="Lateral tibial plateau split-depression X-ray (CC BY-SA 4.0): AP knee view, depressed lateral plateau with loss of articular flatness compared with the medial side." alt="胫骨平台外侧劈裂塌陷 X 线（CC BY-SA 4.0）：膝关节正位，外侧胫骨平台塌陷，关节面较内侧下沉、失去平整。"></a>
+<figcaption><span class="t"><span class="zh">图 4-2 · 外侧平台劈裂塌陷 X 线（CC BY-SA 4.0）</span><span class="en">Fig 4-2 · Lateral plateau split-depression X-ray (CC BY-SA 4.0)</span></span><br><span class="zh"><strong>观察点：</strong>膝关节正位 X 线（L 标记）：外侧胫骨平台塌陷，关节面较内侧下沉、失去平整。对应"外侧劈裂塌陷"——平台骨折最常见的形态之一，与图 4-1 的外侧薄弱形态相呼应。</span><span class="en"><strong>Observation:</strong> AP knee X-ray (L marker): depressed lateral tibial plateau with loss of articular flatness compared with the medial side. Typical lateral split-depression — one of the most common plateau patterns, echoing the weaker lateral morphology in Fig 4-1.</span><br><span class="zh"><strong>能证明：</strong>外侧平台塌陷的 X 线表现。<strong>不能证明：</strong>塌陷的精确深度（需 CT）；软组织状态；与图 4-1 非同一来源。</span><span class="en"><strong>Shows:</strong> the X-ray appearance of lateral plateau depression. <strong>Does not show:</strong> the exact depth of depression (needs CT); soft-tissue status; not the same source as Fig 4-1.</span><br><span class="srccredit"><span class="zh">来源：LottieLattes，Wikimedia Commons，CC BY-SA 4.0（<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">许可</a>）· <a href="https://commons.wikimedia.org/wiki/File:Lateral_Tibial_Plateau_fracture_XRay_with_Depression.jpg" target="_blank" rel="noopener">原页</a> · 独立病例</span><span class="en">Source: LottieLattes, via Wikimedia Commons, CC BY-SA 4.0 (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">license</a>) · <a href="https://commons.wikimedia.org/wiki/File:Lateral_Tibial_Plateau_fracture_XRay_with_Depression.jpg" target="_blank" rel="noopener">file page</a> · standalone case</span></span></figcaption>
+</figure>
+</div>
+
+<h3 class="sec"><span class="zh">初评和红旗</span><span class="en">Initial assessment &amp; red flags</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>软组织是第一位的</strong>：记录肿胀程度、水疱（血疱/张力性水疱）、皮肤张力、开放伤口。</span><span class="en"><strong>Soft tissue comes first</strong>: document swelling, blisters (hemorrhagic/tension), skin tension, open wounds.</span></li>
+<li><span class="zh"><strong>神经血管每次都要查</strong>：足背动脉、足部感觉运动，腓总神经（绕腓骨颈）、腘血管（高能量双髁）。</span><span class="en"><strong>Neurovascular checks every time</strong>: pedal pulses, foot sensation/motion; peroneal nerve (around fibular neck), popliteal vessels (high-energy bicondylar).</span></li>
+</ul>
+<div class="redflag"><strong><span class="zh">红旗</span><span class="en">Red flags</span></strong>
+<ul>
+<li><span class="zh"><strong>骨筋膜室综合征</strong>：与损伤不成比例的剧痛、被动牵拉痛、感觉异常 → 紧急处理。</span><span class="en"><strong>Compartment syndrome</strong>: pain out of proportion, pain on passive stretch, paresthesia → emergency.</span></li>
+<li><span class="zh"><strong>血管损伤</strong>：足部苍白、发凉、无脉 → 紧急血管评估。</span><span class="en"><strong>Vascular injury</strong>: pale, cool, pulseless foot → urgent vascular assessment.</span></li>
+<li><span class="zh"><strong>开放骨折 / 膝关节脱位合并伤</strong>：按相应急诊流程处理。</span><span class="en"><strong>Open fracture / associated knee dislocation</strong>: follow respective emergency pathways.</span></li>
+</ul>
+</div>
+</div>
+
+<h3 class="sec"><span class="zh">影像 / 分类</span><span class="en">Imaging / classification</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh">膝<strong>正侧位 + CT（含三维重建）</strong>：CT 是读懂关节面塌陷、劈裂范围的关键。</span><span class="en">Knee <strong>AP/lateral + CT (with 3D)</strong>: CT is key to reading articular depression and split extent.</span></li>
+<li><span class="zh">Schatzker I–VI 描述骨折形态（描述性）；AO/OTA 41 B（部分关节内）/ C（完全关节内）（描述性）。</span><span class="en">Schatzker I–VI describes morphology (descriptive); AO/OTA 41 B (partial-articular) / C (complete-articular) (descriptive).</span></li>
+</ul>
+<div class="caution"><strong><span class="zh">分类 ≠ 手术指征</span><span class="en">Classification ≠ indication</span></strong><span class="zh">：分类描述形态；是否手术还要看关节面塌陷/不稳定程度、力线、软组织条件与患者需求。</span><span class="en">: classification describes morphology; the decision also weighs articular depression/instability, alignment, soft tissue and patient needs.</span></div>
+</div>
+
+<h3 class="sec"><span class="zh">AO 原则如何适用</span><span class="en">How AO principles apply</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>关节面解剖复位</strong>、<strong>力线恢复</strong>、<strong>稳定固定</strong>、<strong>早期活动</strong>——四个目标不变。</span><span class="en"><strong>Anatomic articular reduction</strong>, <strong>alignment restoration</strong>, <strong>stable fixation</strong>, <strong>early motion</strong> — the four goals stand.</span></li>
+<li><span class="zh">但<strong>软组织决定时机</strong>：肿胀高峰期强行切开 = 伤口灾难。对<strong>高能量复杂平台骨折、软组织明显受损者</strong>，AO 建议先临时复位固定、待软组织恢复后再做充分术前计划、分期手术；<strong>span – scan – plan 只是教学概括（非 AO 原话）</strong>，不是所有平台骨折都一律分期。</span><span class="en">But <strong>soft tissue dictates timing</strong>: cutting through peak swelling invites wound disaster. For <strong>high-energy complex plateau fractures or compromised soft tissue</strong>, AO recommends temporary reduction and fixation until soft tissues recover, then full preoperative planning and staged surgery; <strong>"span – scan – plan" is only a teaching summary (not AO's wording)</strong> — not every plateau fracture needs staging.</span></li>
+</ul>
+
+<details class="fold"><summary><span class="zh">分期三步具体做什么？</span><span class="en">What happens in each stage?</span></summary>
+<ul>
+<li><span class="zh"><strong>Span（跨）</strong>：临时复位固定（如跨关节外固定架），恢复长度与力线、稳定骨折、保护软组织，直到软组织恢复。</span><span class="en"><strong>Span</strong>: temporary reduction and fixation (e.g., spanning external fixator) restores length and alignment, stabilizes the fracture and protects soft tissue until it recovers.</span></li>
+<li><span class="zh"><strong>Scan（看）</strong>：用 CT 精细评估关节面、制定充分的手术计划；同时等待肿胀消退、擦伤愈合，出现<strong>皮纹征</strong>。</span><span class="en"><strong>Scan</strong>: detailed CT assessment of the articular surface with full surgical planning; meanwhile wait for swelling and abrasions to resolve and the <strong>wrinkle sign</strong> to appear.</span></li>
+<li><span class="zh"><strong>Plan（定）</strong>：软组织恢复后，仍需综合全身情况、软组织、感染风险并由专科判断，再行确定性切开复位内固定——皮纹出现不是自动手术指征。</span><span class="en"><strong>Plan</strong>: once soft tissues recover, definitive ORIF still requires overall, soft-tissue and infection assessment with specialist judgment — the wrinkle sign is not an automatic indication.</span></li>
+</ul>
+</details>
+</div>
+
+<h3 class="sec"><span class="zh">治疗选择与限制</span><span class="en">Treatment options &amp; limitations</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>稳定、无移位</strong>：可考虑非手术（支具、早期活动），但需密切随访。</span><span class="en"><strong>Stable, undisplaced</strong>: nonoperative may be considered (bracing, early motion) with close follow-up.</span></li>
+<li><span class="zh"><strong>劈裂</strong>：拉力螺钉；<strong>塌陷</strong>：撬拨复位 + 植骨 + 支撑钢板；<strong>双髁粉碎</strong>：双钢板或外固定。</span><span class="en"><strong>Split</strong>: lag screws; <strong>depression</strong>: elevation + bone graft + buttress plate; <strong>bicondylar comminution</strong>: dual plating or external fixation.</span></li>
+<li><span class="zh"><strong>限制</strong>：严重粉碎、骨质疏松（固定把持力差）、软组织不允许、血管神经损伤未处理——都可能改变方案或推迟手术。</span><span class="en"><strong>Limits</strong>: severe comminution, osteoporosis (poor purchase), hostile soft tissue, unaddressed neurovascular injury — all may change or delay the plan.</span></li>
+</ul>
+</div>
+
+<h3 class="sec"><span class="zh">并发症 / 随访</span><span class="en">Complications / follow-up</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>关节僵硬</strong>、<strong>力线不良</strong>、<strong>创伤性关节炎</strong>。</span><span class="en"><strong>Joint stiffness</strong>, <strong>malalignment</strong>, <strong>post-traumatic arthritis</strong>.</span></li>
+<li><span class="zh"><strong>伤口感染/裂开</strong>：与切开时机和软组织处理直接相关。</span><span class="en"><strong>Wound infection/dehiscence</strong>: directly tied to timing and soft-tissue handling.</span></li>
+<li><span class="zh">随访：复查力线与关节面、渐进负重、康复锻炼；警惕迟发塌陷。</span><span class="en">Follow alignment and articular surface, progressive weight bearing, rehab; watch for late subsidence.</span></li>
+</ul>
+</div>
+
+<h3 class="sec"><span class="zh">病例自测</span><span class="en">Case quiz</span></h3>
+<div class="quiz" id="qz-plateau">
+<div class="q" data-answer="b">
+<p class="qstem"><span class="zh">Q1 · 35岁男性，高处坠落致右侧胫骨平台双髁粉碎骨折，小腿高度肿胀、张力性水疱。此时最合适的处理是？（合成教学病例）</span><span class="en">Q1 · A 35-year-old man fell from height: bicondylar tibial plateau fracture, markedly swollen leg with tension blisters. The most appropriate step now is? (synthetic teaching case)</span></p>
+<label><input type="radio" name="u4q1" value="a"><span class="zh">A. 立即切开复位内固定</span><span class="en">A. Immediate ORIF</span></label>
+<label><input type="radio" name="u4q1" value="b"><span class="zh">B. 跨关节外固定架 + 等待软组织恢复（分期处理）</span><span class="en">B. Spanning external fixator + wait for soft tissue (staged)</span></label>
+<label><input type="radio" name="u4q1" value="c"><span class="zh">C. 石膏固定回家观察</span><span class="en">C. Cast and discharge home</span></label>
+<p class="verdict ok" hidden><span class="zh">回答正确 ✓</span><span class="en">Correct ✓</span></p>
+<p class="verdict no" hidden><span class="zh">再想想 ✗</span><span class="en">Try again ✗</span></p>
+<div class="fb" hidden><p><span class="ans"><span class="zh">答案：B。</span><span class="en">Answer: B.</span></span><span class="zh">软组织决定时机：张力性水疱时强行切开极易导致伤口灾难。先跨关节外固定恢复力线、待软组织恢复，皮纹出现后仍需综合全身与感染情况、由专科判断再确定手术。</span><span class="en">Soft tissue dictates timing: cutting through tension blisters invites wound disaster. Span first to restore alignment, wait for soft-tissue recovery; even after the wrinkle sign, the decision still needs overall and infection assessment with specialist judgment.</span></p></div>
+</div>
+<div class="q" data-answer="a">
+<p class="qstem"><span class="zh">Q2 · 胫骨平台骨折患者，足部发凉、苍白，足背动脉搏动消失。首先要考虑？</span><span class="en">Q2 · Tibial plateau fracture with a cool, pale foot and absent pedal pulse. First concern?</span></p>
+<label><input type="radio" name="u4q2" value="a"><span class="zh">A. 腘血管损伤 → 紧急血管评估</span><span class="en">A. Popliteal vascular injury → urgent vascular assessment</span></label>
+<label><input type="radio" name="u4q2" value="b"><span class="zh">B. 单纯肿胀压迫，观察即可</span><span class="en">B. Simple swelling compression; observe</span></label>
+<label><input type="radio" name="u4q2" value="c"><span class="zh">C. 腓总神经损伤</span><span class="en">C. Peroneal nerve injury</span></label>
+<p class="verdict ok" hidden><span class="zh">回答正确 ✓</span><span class="en">Correct ✓</span></p>
+<p class="verdict no" hidden><span class="zh">再想想 ✗</span><span class="en">Try again ✗</span></p>
+<div class="fb" hidden><p><span class="ans"><span class="zh">答案：A。</span><span class="en">Answer: A.</span></span><span class="zh">高能量平台骨折可伤及腘血管；无脉的肢体是血管急症，不能只归因于肿胀。</span><span class="en">High-energy plateau fractures can injure popliteal vessels; a pulseless limb is a vascular emergency, not just swelling.</span></p></div>
+</div>
+<button class="check"><span class="zh">检查答案</span><span class="en">Check answers</span></button>
+</div>
+
+<div class="sources">
+<h4><span class="zh">来源与媒体许可</span><span class="en">Sources &amp; media licensing</span></h4>
+<ol>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-tibia/complete-articular-fracture-with-fragmentary-lateral-plateau/ring-fixation" target="_blank" rel="noopener">AO Surgery Reference — Ring fixation for complete articular fracture with fragmentary lateral plateau</a><br><span class="meta"><span class="zh">定位：关节面解剖复位、稳定固定原则；页面含官方教学视频（站内播放）。访问日期 2026-10-04。</span><span class="en">Relevance: anatomic articular reduction and stable fixation principles; page includes official teaching video (on-site player). Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-tibia/complete-simple-articular-fracture-with-simple-metaphyseal-components/orif-conventional-plating" target="_blank" rel="noopener">AO Surgery Reference — ORIF – Conventional plating for complete simple articular fracture with simple metaphyseal components</a><br><span class="meta"><span class="zh">定位：近端胫骨骨折的骨筋膜室综合征与神经血管监测——伤后 48 小时内及术后密切监测胫骨骨筋膜室，神经血管状态须动态评估、异常按急症处理。访问日期 2026-10-04。</span><span class="en">Relevance: compartment syndrome and neurovascular monitoring in proximal tibia fractures — close tibial compartment monitoring during the first 48 hours after injury and after surgery; neurovascular status must be reassessed, abnormalities managed as emergencies. Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-tibia/complete-articular-fracture-with-fragmentary-lateral-plateau/orif-conventional-plating" target="_blank" rel="noopener">AO Surgery Reference — ORIF – Conventional plating for complete articular fracture with fragmentary lateral plateau</a><br><span class="meta"><span class="zh">定位：高能量复杂平台骨折的分期原则——Main steps 明确先临时复位固定（至确定性手术）、以软组织恢复为度，再做充分术前计划；Timing 要求推迟手术直至软组织完全恢复（肿胀、水疱、擦伤等），通常需 3–10 天。</span><span class="en">Relevance: staging principle for high-energy complex plateau fractures — Main steps specify temporary reduction and immobilization until definitive surgery, dictated by resolution of soft-tissue injury, then adequate preoperative planning; Timing requires delaying surgery until full soft-tissue recovery (swelling, blisters, abrasions, etc.), usually 3–10 days. Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-tibia/complete-articular-fracture-with-fragmentary-lateral-plateau/bridging-external-fixation" target="_blank" rel="noopener">AO Surgery Reference — Bridging external fixation (temporary) for complete articular fracture with fragmentary lateral plateau</a><br><span class="meta"><span class="zh">定位：临时跨关节外固定架的官方依据（Span 阶段）：跨膝外固定仅作临时固定，牵引下获得初步复位、维持下肢长度。</span><span class="en">Relevance: official support for temporary bridging external fixation (the Span stage): joint-bridging fixator is temporary only, achieving provisional reduction with distraction and maintaining leg length. Accessed 2026-10-04.</span></span></li>
+</ol>
+<p class="meta"><span class="zh">媒体来源：图 4-1 为公有领域解剖图（Gray's Anatomy 1918）；图 4-2 CC BY-SA 4.0（LottieLattes），随包附带、原页与许可见图注；AO Surgery Reference 为外部来源链接，仅引用未复制其图文与视频，内容版权归 AO Foundation 所有（AO 未提供公开再发布许可）。</span><span class="en">Media sources: Fig 4-1 is a public-domain anatomy plate (Gray's Anatomy, 1918); Fig 4-2 CC BY-SA 4.0 (LottieLattes), bundled with source page and license in its caption; AO Surgery Reference is an external source linked for reference only — no content copied; copyright remains with the AO Foundation (AO offers no open redistribution license).</span></p>
+</div>
+</section>
+<!-- ================= UNIT 5: ANKLE ================= -->
+<section class="unit" id="u-ankle">
+<h2 class="utitle"><span class="unitnum">5</span><span class="zh">踝关节骨折</span><span class="en">Ankle fracture</span></h2>
+<p class="usub"><span class="zh">踝穴稳定是核心 · 软组织与分期 · 神经血管一个都不能漏</span><span class="en">Mortise stability is central · Soft tissue &amp; staging · Miss no neurovascular check</span></p>
+
+<div class="officialbox">
+<p><span class="t"><span class="zh">官方影像资源（AO Surgery Reference，站内查看）</span><span class="en">Official imaging (AO Surgery Reference, view on-site)</span></span></p>
+<p><span class="zh">踝关节骨折官方术式页面含 AO 官方 X 线/CT 图例（双踝、三踝、下胫腓分离的 ORIF）：</span><span class="en">The malleoli procedure pages carry official AO X-ray/CT figures (ORIF for bi-/trimalleolar and syndesmotic injuries):</span><br><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/malleoli/transsyndesmotic-posterior-lateral-simple-and-medial-fractures/orif" target="_blank" rel="noopener">AO Surgery Reference — ORIF for transsyndesmotic, posterior, lateral simple, and medial fractures</a></p>
+<p><span class="zh">AO 图例版权归 AO Foundation 所有，本课程仅链接原页，<strong>未复制、未热链</strong>（AO 未提供公开再发布许可）。</span><span class="en">AO figures are © AO Foundation; this course links to the original pages only — <strong>not copied or hotlinked</strong> (AO offers no open redistribution license).</span></p>
+</div>
+
+<h3 class="sec"><span class="zh">解剖与机制</span><span class="en">Anatomy &amp; mechanism</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh">踝穴由<strong>胫骨穹窿、内踝、外踝（腓骨）</strong>与<strong>距骨</strong>构成；<strong>下胫腓联合</strong>（前后联合韧带、骨间韧带）维持踝穴稳定。</span><span class="en">The mortise comprises the <strong>tibial plafond, medial and lateral (fibular) malleoli</strong> and the <strong>talus</strong>; the <strong>syndesmosis</strong> keeps it stable.</span></li>
+<li><span class="zh">机制：足的<strong>旋前/旋后 + 外旋/内收</strong>暴力；Weber 分型只看<strong>腓骨骨折线相对下胫腓联合的位置</strong>：A 在下、B 平齐、C 在上。</span><span class="en">Mechanism: <strong>pronation/supination + rotation/adduction</strong> forces; Weber looks only at the <strong>fibular fracture level vs the syndesmosis</strong>: A below, B at, C above.</span></li>
+<li><span class="zh">位置越高，下胫腓联合损伤可能越重。</span><span class="en">The higher the level, the greater the potential syndesmotic injury.</span></li>
+</ul>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u5-ankle-anatomy.png" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u5-ankle-anatomy.png" data-alt-zh="踝穴解剖（Gray's Anatomy 1918，公有领域）：右距小腿关节冠状切面，胫骨延续为内踝、腓骨延续为外踝，两骨为独立骨块，下胫腓骨间韧带位于两骨之间，距骨坐于踝穴内、胫骨穹窿之下。" data-alt-en="Mortise anatomy (Gray's Anatomy 1918, public domain): coronal section through the right talocrural joint — the tibia continues as the medial malleolus and the fibula as the lateral malleolus, two separate bones; the syndesmotic interosseous ligament lies between them; the talus sits in the mortise beneath the tibial plafond." alt="踝穴解剖（Gray's Anatomy 1918，公有领域）：右距小腿关节冠状切面，胫骨延续为内踝、腓骨延续为外踝，两骨为独立骨块，下胫腓骨间韧带位于两骨之间，距骨坐于踝穴内、胫骨穹窿之下。"></a>
+<figcaption><span class="t"><span class="zh">图 5-1 · 踝穴冠状切面（公有领域）</span><span class="en">Fig 5-1 · Mortise coronal section (public domain)</span></span><br><span class="zh"><strong>观察点：</strong>右距小腿关节与距跟关节冠状切面：胫骨延续为内踝、腓骨延续为外踝——两骨为独立骨块；下胫腓骨间韧带（联合）位于两骨之间；距骨坐于踝穴内、胫骨穹窿之下。这正是"踝穴由胫骨穹窿、内外踝与距骨构成、下胫腓联合维持稳定"的解剖对应。</span><span class="en"><strong>Observation:</strong> coronal section through the right talocrural and talocalcaneal joints: the tibia continues as the medial malleolus and the fibula as the lateral malleolus — two separate bones; the syndesmotic interosseous ligament lies between them; the talus sits in the mortise beneath the tibial plafond. This is the anatomic correlate of "the mortise comprises the tibial plafond, malleoli and talus, stabilized by the syndesmosis".</span><br><span class="zh"><strong>能证明：</strong>踝穴的正常骨性结构（两块独立骨 + 联合 + 距骨）。<strong>不能证明：</strong>骨折或联合损伤；1918 年解剖图谱，非影像。</span><span class="en"><strong>Shows:</strong> the normal bony architecture of the mortise (two separate bones + syndesmosis + talus). <strong>Does not show:</strong> fractures or syndesmotic injury; a 1918 anatomy plate, not imaging.</span><br><span class="srccredit"><span class="zh">来源：Henry Gray《Anatomy of the Human Body》(1918) Plate 357，绘图 Henry Vandyke Carter，公有领域 · <a href="https://commons.wikimedia.org/wiki/File:Gray357.png" target="_blank" rel="noopener">Wikimedia Commons 原页</a> · 独立图例</span><span class="en">Source: Henry Gray, <i>Anatomy of the Human Body</i> (1918), Plate 357, illustrated by Henry Vandyke Carter, public domain · <a href="https://commons.wikimedia.org/wiki/File:Gray357.png" target="_blank" rel="noopener">Wikimedia Commons file page</a> · standalone figure</span></span></figcaption>
+</figure>
+<figure class="media-card">
+<a class="media-image" href="assets/figs/u5-ankle-bimalleolar2.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/u5-ankle-bimalleolar2.jpg" data-alt-zh="双踝骨折 X 线（CC BY 4.0）：踝关节正位，内踝骨折伴移位、外踝（腓骨远端）骨折。" data-alt-en="Bimalleolar fracture X-ray (CC BY 4.0): frontal ankle view, displaced medial malleolar fracture plus distal fibular (lateral malleolar) fracture." alt="双踝骨折 X 线（CC BY 4.0）：踝关节正位，内踝骨折伴移位、外踝（腓骨远端）骨折。"></a>
+<figcaption><span class="t"><span class="zh">图 5-2 · 双踝骨折正位 X 线（CC BY 4.0）</span><span class="en">Fig 5-2 · Bimalleolar fracture frontal X-ray (CC BY 4.0)</span></span><br><span class="zh"><strong>观察点：</strong>踝关节正位 X 线：内踝骨折伴移位、外踝（腓骨远端）骨折，即双踝骨折。双踝骨折意味着踝穴环两处断裂，多不稳定，常需切开复位内固定以恢复踝穴——对应"不稳定 / 双踝 / 三踝：切开复位内固定"的治疗原则。</span><span class="en"><strong>Observation:</strong> frontal ankle X-ray: displaced medial malleolar fracture plus distal fibular (lateral malleolar) fracture — a bimalleolar fracture. Two breaks in the malleolar ring usually mean instability, often requiring ORIF to restore the mortise — matching the "unstable / bi- / trimalleolar: ORIF" principle.</span><br><span class="zh"><strong>能证明：</strong>双踝骨折的 X 线表现（内外踝均骨折）。<strong>不能证明：</strong>下胫腓联合是否损伤（需应力位/CT）；与图 5-1 非同一来源。</span><span class="en"><strong>Shows:</strong> the X-ray appearance of bimalleolar fracture (both malleoli fractured). <strong>Does not show:</strong> whether the syndesmosis is injured (needs stress views/CT); not the same source as Fig 5-1.</span><br><span class="srccredit"><span class="zh">来源：Tellisi N, Abdulkareem IS, Giannoudis PG，"Combined ipsilateral calcaneal and bimalleolar ankle fractures treated by open reduction and internal fixation"，<i>OA Case Reports</i> 2012;1(1)，DOI <a href="https://doi.org/10.13172/2052-0077-1-1-288" target="_blank" rel="noopener">10.13172/2052-0077-1-1-288</a>，经 Wikimedia Commons 以 CC BY 4.0 发布（<a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">许可</a>）· <a href="https://commons.wikimedia.org/wiki/File:X-ray_of_bimalleolar_fracture.jpg" target="_blank" rel="noopener">原页</a> · 独立病例</span><span class="en">Source: Tellisi N, Abdulkareem IS, Giannoudis PG, "Combined ipsilateral calcaneal and bimalleolar ankle fractures treated by open reduction and internal fixation", <i>OA Case Reports</i> 2012;1(1), DOI <a href="https://doi.org/10.13172/2052-0077-1-1-288" target="_blank" rel="noopener">10.13172/2052-0077-1-1-288</a>, via Wikimedia Commons under CC BY 4.0 (<a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">license</a>) · <a href="https://commons.wikimedia.org/wiki/File:X-ray_of_bimalleolar_fracture.jpg" target="_blank" rel="noopener">file page</a> · standalone case</span></span></figcaption>
+</figure>
+</div>
+
+<h3 class="sec"><span class="zh">初评和红旗</span><span class="en">Initial assessment &amp; red flags</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>看 → 摸 → 动</strong>：畸形、肿胀、瘀斑；压痛部位；观察自然体位与自主活动受限，不主动诱发不稳。</span><span class="en"><strong>Look → feel → move</strong>: deformity, swelling, ecchymosis; tender points; resting position and limited spontaneous motion; do not deliberately provoke instability.</span></li>
+<li><span class="zh"><strong>触诊全长腓骨</strong>：近端压痛 → 警惕 <strong>Maisonneuve 损伤</strong>（高位腓骨骨折 + 下胫腓分离）。</span><span class="en"><strong>Palpate the full-length fibula</strong>: proximal tenderness → suspect <strong>Maisonneuve injury</strong> (proximal fibular fracture + syndesmotic disruption).</span></li>
+<li><span class="zh"><strong>神经血管</strong>：足背动脉、足部感觉运动；初评及每次复位操作前后都要记录。</span><span class="en"><strong>Neurovascular</strong>: pedal pulses, foot sensation/motion; document at initial assessment and before and after each reduction.</span></li>
+</ul>
+<div class="redflag"><strong><span class="zh">红旗</span><span class="en">Red flags</span></strong>
+<ul>
+<li><span class="zh"><strong>开放骨折</strong>：踝部皮下就是骨头，开放伤常见 → 按开放骨折处理。</span><span class="en"><strong>Open fracture</strong>: bone is subcutaneous at the ankle, so open injuries are common → manage as open fracture.</span></li>
+<li><span class="zh"><strong>明显移位/脱位</strong>：即使计划手术，也要<strong>尽快复位</strong>，减轻软组织与神经血管压迫。</span><span class="en"><strong>Marked displacement/dislocation</strong>: <strong>reduce ASAP</strong> even if surgery is planned, to relieve soft-tissue and neurovascular compression.</span></li>
+<li><span class="zh"><strong>张力性水疱、皮肤发亮发白</strong>：软组织危象的信号。</span><span class="en"><strong>Tension blisters, shiny pale skin</strong>: signals of soft-tissue crisis.</span></li>
+<li><span class="zh"><strong>糖尿病、血管病变</strong>：显著增加伤口并发症风险，需<strong>专科个体化评估、优化风险并制定稳定策略</strong>，而非自动更保守。</span><span class="en"><strong>Diabetes, vascular disease</strong>: significantly raise wound-complication risk; they need <strong>specialist individualized assessment, risk optimization and a stability-oriented plan</strong> — not automatic conservatism.</span></li>
+</ul>
+</div>
+</div>
+
+<h3 class="sec"><span class="zh">影像 / 分类</span><span class="en">Imaging / classification</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh">踝<strong>正位 + 踝穴位（内旋15–20°）+ 侧位</strong>；疑 Maisonneuve → 加拍<strong>全长胫腓骨</strong>。</span><span class="en">Ankle <strong>AP + mortise (15–20° internal rotation) + lateral</strong>; suspected Maisonneuve → add <strong>full-length tibia-fibula</strong> films.</span></li>
+<li><span class="zh"><strong>应力位</strong>（重力应力位）：帮助判断 Weber B 的稳定性；手法应力须由专科判断，<strong>不要主动诱发不稳</strong>；<strong>CT</strong>：看后踝骨折块与关节面。</span><span class="en"><strong>Stress views</strong> (gravity stress): help judge stability in Weber B; manual stress needs specialist judgment — <strong>do not actively provoke instability</strong>; <strong>CT</strong>: assess the posterior malleolar fragment and joint surface.</span></li>
+<li><span class="zh">Weber A/B/C（看腓骨水平，描述性）；Lauge-Hansen（看损伤机制，描述性）。</span><span class="en">Weber A/B/C (fibular level, descriptive); Lauge-Hansen (injury mechanism, descriptive).</span></li>
+</ul>
+<div class="caution"><strong><span class="zh">分类 ≠ 手术指征</span><span class="en">Classification ≠ indication</span></strong><span class="zh">：Weber 告诉你骨折线在哪；做不做手术看的是<strong>踝穴稳不稳定</strong>（距骨移位、下胫腓联合）与软组织。</span><span class="en">: Weber tells you where the fibular line is; the surgical question is <strong>mortise stability</strong> (talar shift, syndesmosis) plus soft tissue.</span></div>
+</div>
+
+<h3 class="sec"><span class="zh">AO 原则如何适用</span><span class="en">How AO principles apply</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>恢复腓骨长度与旋转</strong>：腓骨短了、转了，踝穴就不对。</span><span class="en"><strong>Restore fibular length and rotation</strong>: a short or rotated fibula means a malreduced mortise.</span></li>
+<li><span class="zh"><strong>踝穴解剖复位</strong>：距骨必须正位于踝穴中央。</span><span class="en"><strong>Anatomic mortise reduction</strong>: the talus must sit centered.</span></li>
+<li><span class="zh"><strong>稳定的下胫腓联合</strong>：联合不稳要固定（定位螺钉等方式，遵术式规范）。</span><span class="en"><strong>Stable syndesmosis</strong>: fix it when unstable (positioning screws etc., per technique standards).</span></li>
+<li><span class="zh">固定顺序没有通用模板：<strong>按 CT 骨折形态、手术入路、软组织条件与稳定性要求制定</strong>；例如经后外侧入路可先固定后踝（Volkmann 块）+ 腓骨，再经内侧入路固定内踝（见 AO 官方页面）。</span><span class="en">There is no universal fixation sequence: <strong>plan the order from CT morphology, surgical approach, soft tissue and stability needs</strong>; e.g., via a posterolateral approach the posterior malleolus (Volkmann fragment) + fibula may be fixed first, then the medial side (see AO page).</span></li>
+</ul>
+</div>
+
+<h3 class="sec"><span class="zh">治疗选择与限制</span><span class="en">Treatment options &amp; limitations</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>稳定、无移位</strong>（如孤立外踝无距骨移位）：可<strong>非手术</strong>（支具/石膏），但需随访防移位。</span><span class="en"><strong>Stable, undisplaced</strong> (e.g., isolated lateral malleolus without talar shift): <strong>nonoperative</strong> (brace/cast) with follow-up against displacement.</span></li>
+<li><span class="zh"><strong>不稳定 / 双踝 / 三踝</strong>：切开复位内固定，恢复踝穴。</span><span class="en"><strong>Unstable / bi- / trimalleolar</strong>: ORIF to restore the mortise.</span></li>
+<li><span class="zh"><strong>肿胀明显</strong>：先复位 + 石膏托 + 抬高，<strong>分期手术</strong>（皮纹征后，仍需综合全身、软组织与感染情况、由专科判断再做）。</span><span class="en"><strong>Marked swelling</strong>: reduce + backslab + elevation, <strong>staged surgery</strong> (after the wrinkle sign, the decision still needs overall, soft-tissue and infection assessment with specialist judgment).</span></li>
+<li><span class="zh"><strong>限制</strong>：糖尿病/血管病变（伤口风险高，需个体化优化）、严重肿胀、依从性差——都可能让方案调整或分期。</span><span class="en"><strong>Limits</strong>: diabetes/vascular disease (high wound risk, needs individualized optimization), severe swelling, poor compliance — all may modify the plan or require staging.</span></li>
+</ul>
+
+</div>
+
+<h3 class="sec"><span class="zh">并发症 / 随访</span><span class="en">Complications / follow-up</span></h3>
+<div class="secbody">
+<ul>
+<li><span class="zh"><strong>畸形愈合</strong>（尤其腓骨短缩旋转）→ 踝穴不正 → 创伤性关节炎。</span><span class="en"><strong>Malunion</strong> (especially fibular shortening/rotation) → malreduced mortise → post-traumatic arthritis.</span></li>
+<li><span class="zh"><strong>下胫腓复位不良</strong>：术中要用影像确认。</span><span class="en"><strong>Syndesmotic malreduction</strong>: confirm with intraoperative imaging.</span></li>
+<li><span class="zh"><strong>伤口问题</strong>：踝部软组织薄，感染/裂开后果严重。</span><span class="en"><strong>Wound problems</strong>: thin cover; infection/dehiscence has serious consequences.</span></li>
+<li><span class="zh">随访：复查踝穴对位、渐进负重；内固定激惹可在愈合后考虑取出。</span><span class="en">Follow mortise alignment, progressive weight bearing; remove symptomatic implants after healing.</span></li>
+</ul>
+</div>
+
+<h3 class="sec"><span class="zh">病例自测</span><span class="en">Case quiz</span></h3>
+<div class="quiz" id="qz-ankle">
+<div class="q" data-answer="c">
+<p class="qstem"><span class="zh">Q1 · 22岁男性，扭伤后右踝肿痛，X线示腓骨骨折线在下胫腓联合水平（Weber B），内踝压痛明显。查体还必须做哪一项？（合成教学病例）</span><span class="en">Q1 · A 22-year-old man twisted his ankle; X-ray shows a fibular fracture at the syndesmosis (Weber B) with marked medial tenderness. What exam step is still mandatory? (synthetic teaching case)</span></p>
+<label><input type="radio" name="u5q1" value="a"><span class="zh">A. 只拍踝关节即可</span><span class="en">A. Ankle films alone suffice</span></label>
+<label><input type="radio" name="u5q1" value="b"><span class="zh">B. 查对侧踝关节</span><span class="en">B. Examine the other ankle</span></label>
+<label><input type="radio" name="u5q1" value="c"><span class="zh">C. 触诊全长腓骨，警惕高位损伤（Maisonneuve）</span><span class="en">C. Palpate the full-length fibula for high (Maisonneuve) injury</span></label>
+<p class="verdict ok" hidden><span class="zh">回答正确 ✓</span><span class="en">Correct ✓</span></p>
+<p class="verdict no" hidden><span class="zh">再想想 ✗</span><span class="en">Try again ✗</span></p>
+<div class="fb" hidden><p><span class="ans"><span class="zh">答案：C。</span><span class="en">Answer: C.</span></span><span class="zh">任何踝骨折都要摸全长腓骨：近端压痛提示 Maisonneuve 损伤，漏诊会导致下胫腓不稳被忽视。</span><span class="en">Always palpate the full fibula: proximal tenderness suggests Maisonneuve injury; missing it leaves syndesmotic instability unaddressed.</span></p></div>
+</div>
+<div class="q" data-answer="b">
+<p class="qstem"><span class="zh">Q2 · Weber 分型的依据是？</span><span class="en">Q2 · The Weber classification is based on?</span></p>
+<label><input type="radio" name="u5q2" value="a"><span class="zh">A. 内踝骨折块大小</span><span class="en">A. Size of the medial fragment</span></label>
+<label><input type="radio" name="u5q2" value="b"><span class="zh">B. 腓骨骨折线相对下胫腓联合的位置</span><span class="en">B. Fibular fracture level relative to the syndesmosis</span></label>
+<label><input type="radio" name="u5q2" value="c"><span class="zh">C. 患者年龄</span><span class="en">C. Patient age</span></label>
+<p class="verdict ok" hidden><span class="zh">回答正确 ✓</span><span class="en">Correct ✓</span></p>
+<p class="verdict no" hidden><span class="zh">再想想 ✗</span><span class="en">Try again ✗</span></p>
+<div class="fb" hidden><p><span class="ans"><span class="zh">答案：B。</span><span class="en">Answer: B.</span></span><span class="zh">Weber 只看一点：腓骨骨折线在联合水平下（A）、平齐（B）还是上（C）。记住：分类描述形态，不直接等于手术指征。</span><span class="en">Weber asks one thing: the fibular line below (A), at (B), or above (C) the syndesmosis. Remember: classification describes morphology; it does not equal indication.</span></p></div>
+</div>
+<button class="check"><span class="zh">检查答案</span><span class="en">Check answers</span></button>
+</div>
+
+<div class="sources">
+<h4><span class="zh">来源与媒体许可</span><span class="en">Sources &amp; media licensing</span></h4>
+<ol>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/malleoli/basic-technique/malleoli-fracture-management-with-minimal-resources" target="_blank" rel="noopener">AO Surgery Reference — Malleoli fracture management with minimal resources</a><br><span class="meta"><span class="zh">定位：非手术原则、移位骨折尽快复位。访问日期 2026-10-04。</span><span class="en">Relevance: nonoperative principles; reduce displaced fractures ASAP. Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/malleoli/transsyndesmotic-lateral-isolated-simple-fracture/definition" target="_blank" rel="noopener">AO Surgery Reference — Transsyndesmotic, lateral isolated simple fracture (definition)</a><br><span class="meta"><span class="zh">定位：Weber B 型（44B1）与 Lauge-Hansen 机制描述。访问日期 2026-10-04。</span><span class="en">Relevance: Weber-B (44B1) pattern and Lauge-Hansen mechanism description. Accessed 2026-10-04.</span></span></li>
+<li><a href="https://media.aofoundation.org/trauma/-/media/project/aocd/aotrauma/documents/competency-based-education/11orphandoutenglishmalleolar-fractures.pdf?rev=ff75541e7d4546298f6161cc6007c043" target="_blank" rel="noopener">AO Trauma — ORP Handout: Malleolar fractures (PDF, official)</a><br><span class="meta"><span class="zh">定位：官方教学讲义；注意固定顺序无通用模板，须按骨折形态、入路与软组织制定（见新增 AO 页面）。访问日期 2026-10-04。</span><span class="en">Relevance: official teaching handout; note there is no universal fixation sequence — plan it from fracture morphology, approach and soft tissue (see new AO page). Accessed 2026-10-04.</span></span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/malleoli/transsyndesmotic-posterior-lateral-simple-and-medial-fractures/orif" target="_blank" rel="noopener">AO Surgery Reference — ORIF for transsyndesmotic, posterior, lateral simple, and medial fractures</a><br><span class="meta"><span class="zh">定位：固定顺序按情况制定——经后外侧入路可先固定后踝（Volkmann 块）+ 腓骨、再固定内侧；或先内外侧、后以前方螺钉固定后踝；内外侧孰先由术者判断。访问日期 2026-10-04。</span><span class="en">Relevance: fixation order is case-dependent — via a posterolateral approach the posterior malleolus (Volkmann fragment) + fibula may be fixed first, then the medial side; or medial/lateral first with anterior screws for the posterior fragment; medial-vs-lateral priority is the surgeon's judgment. Accessed 2026-10-04.</span></span></li>
+</ol>
+<p class="meta"><span class="zh">媒体来源：图 5-1 为公有领域解剖图（Gray's Anatomy 1918）；图 5-2 CC BY 4.0（Tellisi N 等，《OA Case Reports》2012），随包附带、原页与许可见图注；AO Surgery Reference / AO Trauma 为外部来源链接，仅引用未复制其图文与视频，内容版权归 AO Foundation 所有（AO 未提供公开再发布许可）。</span><span class="en">Media sources: Fig 5-1 is a public-domain anatomy plate (Gray's Anatomy, 1918); Fig 5-2 CC BY 4.0 (Tellisi N et al., <i>OA Case Reports</i> 2012), bundled with source page and license in its caption; AO Surgery Reference / AO Trauma are external sources linked for reference only — no content copied; copyright remains with the AO Foundation (AO offers no open redistribution license).</span></p>
+</div>
+</section>
+</main>
+<footer class="site"><div class="wrap"><h2><span class="zh">课程说明</span><span class="en">Course notes</span></h2><p><span class="zh">成人创伤教学资料；需由授课教师结合原始证据审核。公开来源影像与练习病例独立，不能代替临床评估。</span><span class="en">Adult trauma teaching material, for faculty review against primary evidence. Source images are independent of practice cases and do not replace clinical assessment.</span></p><p><a href="assets/media_sources-lower.csv"><span class="zh">14 张图的完整来源与原始图注</span><span class="en">Full provenance and original captions for 14 figures</span></a> · <a href="index.html"><span class="zh">返回骨科课程目录</span><span class="en">Back to orthopaedics</span></a></p></div></footer>
+<script>
+(function(){
+  var btn = document.getElementById('langToggle');
+  function setLang(l){
+    document.documentElement.lang = l;
+    document.title = (l === 'zh') ? '创伤课程｜下肢五单元' : 'Trauma Course | Lower Limb — Five Units';
+    document.querySelectorAll('img[data-alt-zh]').forEach(function(im){
+      im.alt = (l === 'zh') ? im.getAttribute('data-alt-zh') : im.getAttribute('data-alt-en');
+    });
+    document.querySelectorAll('video[data-label-zh]').forEach(function(v){
+      v.setAttribute('aria-label', (l === 'zh') ? v.getAttribute('data-label-zh') : v.getAttribute('data-label-en'));
+    });
+    try{ localStorage.setItem('tma-lowerlimb-lang', l); }catch(e){}
+  }
+  btn.addEventListener('click', function(){
+    setLang(document.documentElement.lang === 'zh' ? 'en' : 'zh');
+  });
+  try{
+    var saved = localStorage.getItem('tma-lowerlimb-lang');
+    if(saved === 'en' || saved === 'zh'){ setLang(saved); }
+  }catch(e){}
+  // quizzes
+  document.querySelectorAll('.quiz').forEach(function(quiz){
+    var check = quiz.querySelector('.check');
+    check.addEventListener('click', function(){
+      quiz.querySelectorAll('.q').forEach(function(q){
+        var ans = q.getAttribute('data-answer');
+        var sel = q.querySelector('input[type=radio]:checked');
+        var fb = q.querySelector('.fb');
+        var ok = q.querySelector('.verdict.ok');
+        var no = q.querySelector('.verdict.no');
+        q.classList.remove('correct','wrong','unanswered');
+        ok.hidden = true; no.hidden = true; fb.hidden = true;
+        if(!sel){ q.classList.add('unanswered'); return; }
+        fb.hidden = false;
+        if(sel.value === ans){ q.classList.add('correct'); ok.hidden = false; }
+        else { q.classList.add('wrong'); no.hidden = false; }
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

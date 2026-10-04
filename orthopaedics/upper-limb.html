@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>创伤课程｜上肢四单元 | Trauma Course｜Four Upper-Limb Modules</title>
+<style>
+:root{--bg:#f5f3eb;--green:#143c32;--gold:#bd8740;--ink:#2e2c26;--card:#fffdf8;--line:#e0d9c4}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;margin:0;line-height:1.8}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px 90px}
+.topbar{position:sticky;top:0;z-index:60;background:var(--green);color:#fff;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.topbar .brand{font-weight:700;letter-spacing:1px;font-size:15px}
+.langbtn{background:var(--gold);border:none;color:#fff;padding:8px 22px;border-radius:22px;font-size:15px;cursor:pointer;font-weight:700}
+.langbtn:hover{filter:brightness(1.08)}
+.hero{background:var(--green);color:var(--bg);padding:52px 20px 44px;text-align:center}
+.hero h1{margin:0 0 12px;font-size:30px;letter-spacing:3px}
+.hero .sub{color:var(--gold);font-size:16px;letter-spacing:1px}
+.hero .scope{margin-top:14px;font-size:14px;color:#cfd8cf}
+.gold-rule{height:5px;background:var(--gold);border:none;margin:0}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:30px 0}
+.toc h2{margin:0 0 10px;color:var(--green);font-size:19px}
+.toc ol{margin:0;padding-left:22px}
+.toc li{margin:8px 0}
+.toc a{color:var(--green);text-decoration:none;font-weight:600;border-bottom:2px solid var(--gold)}
+.notice{border-left:5px solid var(--gold);background:#fff8ea;padding:14px 18px;border-radius:0 10px 10px 0;margin:20px 0;font-size:15px}
+.notice strong{color:var(--green)}
+.redflag{background:#fdf1ec;border:1px solid #e5b8a6;border-left:5px solid #b3402a;border-radius:0 10px 10px 0;padding:12px 16px;margin:14px 0}
+.redflag strong{color:#b3402a}
+.unit{margin:50px 0}
+.unit>h2{background:var(--green);color:#fff;padding:14px 20px;border-radius:12px;font-size:21px;margin:0}
+.unit>h2 .num{background:var(--gold);border-radius:50%;min-width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;margin-right:12px;font-size:18px;padding:0 6px}
+.unit-tools{margin:10px 0;display:flex;gap:10px;flex-wrap:wrap}
+.unit-tools button{background:#fff;border:1.5px solid var(--gold);color:var(--green);border-radius:8px;padding:7px 16px;cursor:pointer;font-size:14px;font-weight:600}
+.unit-tools button:hover{background:var(--gold);color:#fff}
+.sec{margin:20px 0}
+.sec>h3{color:var(--green);border-bottom:2.5px solid var(--gold);padding-bottom:6px;font-size:18px;margin-bottom:8px}
+.subblock{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:12px 0}
+.subblock h4{color:var(--green);margin:0 0 8px;font-size:16px}
+.subblock h4 .tag{display:inline-block;background:var(--gold);color:#fff;font-size:12px;border-radius:12px;padding:2px 10px;margin-right:8px;vertical-align:middle}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:10px 0;padding:2px 18px 8px}
+summary{cursor:pointer;font-weight:700;color:var(--green);padding:11px 0;font-size:16px;list-style:revert}
+summary::marker{color:var(--gold)}
+ul.tight{margin:8px 0;padding-left:22px}
+ul.tight li{margin:7px 0}
+figure{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;margin:18px 0;text-align:center}
+figure img{max-width:100%;height:auto;max-height:640px;border-radius:8px}
+figcaption .credit{font-size:13px;color:#6b6f66;display:block;margin-top:6px}
+figcaption .credit a{color:#143c32}
+figcaption{font-size:14px;color:#5c5a52;margin-top:10px;text-align:left;line-height:1.7}
+figcaption .cap-label{color:var(--green);font-weight:700}
+.quiz{background:#fff;border:2px solid var(--gold);border-radius:12px;padding:16px 18px;margin:16px 0}
+.quiz .q-stem{font-weight:700;color:var(--green);margin:0 0 6px}
+.quiz .opts button{display:block;width:100%;text-align:left;margin:8px 0;padding:10px 14px;border:1.5px solid var(--line);border-radius:8px;background:var(--bg);cursor:pointer;font-size:15px;color:var(--ink);line-height:1.6}
+.quiz .opts button:hover:not(:disabled){border-color:var(--gold)}
+.quiz .opts button:disabled{cursor:default}
+.quiz .opts button.picked{border-color:var(--green);background:#eef3ec}
+.quiz .opts button.right{border-color:#2e7d4f;background:#e9f5ec}
+.quiz .opts button.wrong{border-color:#b3402a;background:#fbeeea}
+.quiz .feedback{margin-top:12px;padding:12px 14px;border-radius:8px;background:#eef3ec;border:1px solid #bcd6c2;display:none;font-size:15px}
+.quiz .feedback.show{display:block}
+.case{background:var(--card);border:1.5px dashed var(--gold);border-radius:12px;padding:16px 18px;margin:16px 0}
+.case h4{color:var(--green);margin:0 0 6px}
+.synthetic{font-size:13px;color:#6b6f66;font-style:italic;margin:0 0 10px}
+.cstep{display:none;margin:12px 0;padding:12px 14px;background:#fff;border-radius:8px;border:1px solid var(--line)}
+.cstep.show{display:block;animation:fadein .3s}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+.cstep .step-tag{display:inline-block;background:var(--green);color:#fff;font-size:12px;border-radius:10px;padding:2px 10px;margin-bottom:6px}
+.stepbtn{background:var(--green);color:#fff;border:none;border-radius:8px;padding:10px 20px;cursor:pointer;font-size:15px;margin-top:8px;font-weight:600}
+.stepbtn:hover{background:#0f2e26}
+.srcbox{background:#f0eee3;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
+.srcbox h4{color:var(--green);margin:0 0 8px}
+.srcbox a{color:var(--green);word-break:break-all}
+.srcbox .pending{color:#a33;font-weight:700}
+.vidbox{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:14px 0;font-size:15px}
+footer{margin-top:70px;padding:26px 20px;text-align:center;color:#6b6f66;font-size:14px;border-top:3px solid var(--gold)}
+.en{display:none}
+body.lang-en .zh{display:none}
+body.lang-en .en{display:inline}
+@media(max-width:640px){.hero h1{font-size:23px}.unit>h2{font-size:18px}}
+</style>
+<link rel="stylesheet" href="media-reading.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="brand"><span class="zh">创伤课程｜上肢四单元</span><span class="en">Trauma Course｜Four Upper-Limb Modules</span></div>
+  <button class="langbtn" id="langBtn" aria-label="Switch language">English</button>
+</div>
+<div class="hero">
+  <h1><span class="zh">创伤课程｜上肢四单元</span><span class="en">Trauma Course｜Four Upper-Limb Modules</span></h1>
+  <div class="sub"><span class="zh">肩关节脱位 · 肘关节脱位 · 肱骨骨折 · 尺桡骨骨折</span><span class="en">Shoulder Dislocation · Elbow Dislocation · Humeral Fractures · Forearm Fractures</span></div>
+  <div class="scope"><span class="zh">成人创伤教学 · 基于 AO Surgery Reference 官方原则 · 配图为真实影像（公开许可）</span><span class="en">Adult trauma teaching · Based on official AO Surgery Reference principles · Illustrated with real, openly licensed images</span></div>
+</div>
+<hr class="gold-rule">
+<div class="wrap">
+
+<nav class="toc" aria-label="Table of contents">
+  <h2><span class="zh">目录</span><span class="en">Contents</span></h2>
+  <ol>
+    <li><a href="#u1"><span class="zh">第一单元　肩关节脱位（单纯脱位 vs 骨折脱位）</span><span class="en">Unit 1　Shoulder Dislocation (Simple vs Fracture-Dislocation)</span></a></li>
+    <li><a href="#u2"><span class="zh">第二单元　肘关节脱位（单纯脱位 vs 骨折脱位）</span><span class="en">Unit 2　Elbow Dislocation (Simple vs Fracture-Dislocation)</span></a></li>
+    <li><a href="#u3"><span class="zh">第三单元　肱骨骨折（近端 / 骨干 / 远端）</span><span class="en">Unit 3　Humeral Fractures (Proximal / Shaft / Distal)</span></a></li>
+    <li><a href="#u4"><span class="zh">第四单元　尺桡骨骨折（骨干 / 远端 · Monteggia / Galeazzi）</span><span class="en">Unit 4　Forearm Fractures (Shaft / Distal · Monteggia / Galeazzi)</span></a></li>
+  </ol>
+</nav>
+
+<div class="notice">
+  <strong><span class="zh">学习说明</span><span class="en">How to use</span></strong><br>
+  <span class="zh">每单元按统一框架组织：解剖与机制 → 初评和红旗 → 影像/分类 → AO 原则如何适用 → 治疗选择与限制 → 并发症/随访 → 病例自测。正文为短句，细节放在折叠区；病例支持分段揭晓。每单元末附来源与媒体许可。</span><span class="en">Each unit follows the same framework: Anatomy &amp; Mechanism → Initial Assessment &amp; Red Flags → Imaging / Classification → How AO Principles Apply → Treatment Options &amp; Limits → Complications / Follow-up → Case Self-Test. Main text uses short sentences; details sit in collapsible sections; cases support step-by-step reveal. Sources and media licences close each unit.</span>
+</div>
+<div class="notice">
+  <strong><span class="zh">重要原则</span><span class="en">Key principle</span></strong><br>
+  <span class="zh">分类描述损伤形态，不等于手术指征。治疗决策需结合患者年龄、功能需求、骨质量、合并伤与医疗条件综合判断。本课程为成人教学，不涉及儿童骨折。</span><span class="en">Classification describes the injury pattern — it is not, by itself, an indication for surgery. Treatment decisions must integrate the patient's age, functional demands, bone quality, associated injuries and available resources. This course covers adult trauma only.</span>
+</div>
+<div class="notice">
+  <strong><span class="zh">关于图像</span><span class="en">About the images</span></strong><br>
+  <span class="zh">本课程配图为真实 X 线/CT（Wikimedia Commons 与 PMC 开放获取，CC0/CC BY/CC BY-SA，逐图核验许可并随包附原文件，清单见 assets/media_sources.csv）。每张图为独立病例图片，不同图片非同一患者，不构成连续病例序列；图注说明实际所见与局限。AO Surgery Reference 图例仅以外链引用原官方页面，未复制、未热链其图片。</span><span class="en">All figures in this course are real radiographs/CT images (Wikimedia Commons and PMC open access, CC0/CC BY/CC BY-SA; each licence verified and originals bundled — see assets/media_sources.csv). Each image is from an independent case; different images are not the same patient and do not form a case sequence. Captions describe what is actually seen and the limitations. AO Surgery Reference illustrations are referenced by link to the official pages only — no images copied or hotlinked.</span>
+</div>
+
+<!-- ================= UNIT 1 ================= -->
+<section class="unit" id="u1">
+<h2><span class="num">1</span><span class="zh">肩关节脱位：单纯脱位 vs 骨折脱位</span><span class="en">Shoulder Dislocation: Simple vs Fracture-Dislocation</span></h2>
+<div class="unit-tools">
+  <button data-expand="u1"><span class="zh">展开本单元全部细节</span><span class="en">Expand all details in this unit</span></button>
+  <button data-collapse="u1"><span class="zh">收起本单元全部细节</span><span class="en">Collapse all details in this unit</span></button>
+</div>
+
+<div class="sec"><h3><span class="zh">1.1　解剖与机制</span><span class="en">1.1　Anatomy &amp; Mechanism</span></h3>
+<ul class="tight">
+<li><span class="zh">盂肱关节是典型的球窝关节，活动度大，稳定性主要依赖软组织：盂唇、关节囊、肩袖与韧带。</span><span class="en">The glenohumeral joint is a classic ball-and-socket joint with a large range of motion; stability relies mainly on soft tissues — labrum, capsule, rotator cuff and ligaments.</span></li>
+<li><span class="zh">前脱位最常见。典型机制：上肢外展外旋位受暴力，或跌倒时手撑地。</span><span class="en">Anterior dislocation is the most common. Typical mechanism: force applied with the arm abducted and externally rotated, or a fall onto the outstretched hand.</span></li>
+<li><span class="zh">后脱位少见，多见于电击伤、癫痫发作或高能量创伤，容易漏诊。</span><span class="en">Posterior dislocation is uncommon, seen after electric shock, seizures or high-energy trauma, and is easily missed.</span></li>
+<li><span class="zh">单纯脱位：仅关节脱位，无骨折。骨折脱位：脱位合并肱骨近端骨折，最常见为大结节骨折。</span><span class="en">Simple dislocation: dislocation without fracture. Fracture-dislocation: dislocation with a proximal humerus fracture, most commonly of the greater tuberosity.</span></li>
+</ul>
+<figure class="media-card">
+<a class="media-image" href="assets/src/u1-anterior-shoulder-dislocation-ap.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/src/u1-anterior-shoulder-dislocation-ap.jpg" data-alt-zh="真实X线：左肩正位（复位前），肱骨头向前下移位、关节盂空虚" data-alt-en="Real radiograph: AP left shoulder (before reduction); humeral head displaced anterior-inferior, empty glenoid" alt="真实X线：左肩正位（复位前），肱骨头向前下移位、关节盂空虚"></a>
+<figcaption><span class="cap-label"><span class="zh">图 1-1　</span><span class="en">Fig 1-1　</span></span><span class="zh">真实 X 线：左肩正位（复位前），肱骨头向前下移位、关节盂空虚，为典型的前下脱位。局限：单张正位片仅展示一种脱位方向；实际阅片需结合穿胸位/Y 位等多体位判断方向并排除合并骨折。独立来源影像，与练习病例无关。</span><span class="en">Real radiograph: AP left shoulder before reduction; the humeral head is displaced anterior-inferior with an empty glenoid — a typical anterior-inferior dislocation. Limitation: a single AP view shows one direction only; real interpretation needs additional projections to confirm direction and exclude associated fracture. Independent source image, separate from the practice vignette.</span><span class="credit"><span class="zh">图片：Mikael Häggström, M.D.（Wikimedia Commons），CC0 1.0 公有领域贡献（<a href="https://commons.wikimedia.org/wiki/File:Shoulder_dislocation,_anteroposterior_before_reduction.jpg">原文件页</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">许可</a>）</span><span class="en">Image: Mikael Häggström, M.D. (Wikimedia Commons), CC0 1.0 public-domain dedication (<a href="https://commons.wikimedia.org/wiki/File:Shoulder_dislocation,_anteroposterior_before_reduction.jpg">file page</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">licence</a>)</span></span></figcaption>
+</figure>
+
+<details><summary><span class="zh">展开：为什么前脱位最常见？</span><span class="en">Expand: why is anterior dislocation the most common?</span></summary>
+<ul class="tight">
+<li><span class="zh">关节盂浅、前下方骨性约束最弱，外展外旋时肱骨头容易向前下方滑出。</span><span class="en">The glenoid is shallow and bony constraint is weakest anteroinferiorly; in abduction-external rotation the humeral head slides out anteroinferiorly.</span></li>
+<li><span class="zh">前脱位常合并 Bankart 损伤（前下盂唇撕脱）与 Hill-Sachs 损伤（肱骨头后外侧压缩骨折），是复发性不稳定的解剖基础。</span><span class="en">Anterior dislocation is often accompanied by a Bankart lesion (anteroinferior labral detachment) and a Hill-Sachs lesion (posterolateral humeral head compression fracture) — the anatomic basis of recurrent instability.</span></li>
+</ul>
+</details>
+</div>
+
+<div class="sec"><h3><span class="zh">1.2　初评和红旗</span><span class="en">1.2　Initial Assessment &amp; Red Flags</span></h3>
+<ul class="tight">
+<li><span class="zh">先看全身：多发伤患者按 ATLS 流程，肩部不是优先处理部位。</span><span class="en">Check the whole patient first: in polytrauma follow ATLS; the shoulder is not the first priority.</span></li>
+<li><span class="zh">视诊：方肩畸形、患肢轻度外展弹性固定。</span><span class="en">Inspection: squared-off shoulder contour, arm held in slight abduction with elastic resistance.</span></li>
+<li><span class="zh">神经血管检查必须在复位前、后各做一次并记录。</span><span class="en">Neurovascular examination is mandatory before and after reduction, and must be documented.</span></li>
+</ul>
+<div class="redflag"><strong><span class="zh">红旗</span><span class="en">Red flags</span></strong>
+<ul class="tight">
+<li><span class="zh">腋神经损伤：三角肌区（上臂外侧）感觉减退、主动外展无力。</span><span class="en">Axillary nerve injury: reduced sensation over the deltoid region (lateral upper arm), weak active abduction.</span></li>
+<li><span class="zh">血管损伤体征：桡动脉搏动减弱/消失、手部苍白发凉（少见但危重）。</span><span class="en">Vascular injury signs: diminished/absent radial pulse, pale cool hand (rare but critical).</span></li>
+<li><span class="zh">皮肤破损/开放性脱位：按开放性损伤流程处理。</span><span class="en">Skin breach / open dislocation: manage as an open injury.</span></li>
+<li><span class="zh">复位后仍有神经症状或血管体征：立即上级评估。</span><span class="en">Persistent neurologic symptoms or vascular signs after reduction: escalate immediately.</span></li>
+</ul></div>
+</div>
+
+<div class="sec"><h3><span class="zh">1.3　影像 / 分类</span><span class="en">1.3　Imaging / Classification</span></h3>
+<ul class="tight">
+<li><span class="zh">常规：肩关节正位 + 腋位（或 Y 位），确认脱位方向、排除骨折。</span><span class="en">Routine: AP + axillary (or Y) views to confirm direction and exclude fracture.</span></li>
+<li><span class="zh">怀疑骨折脱位、骨缺损或复位困难：加做 CT（含三维重建）。</span><span class="en">If fracture-dislocation, bony defect or difficult reduction is suspected: add CT (with 3D reconstruction).</span></li>
+<li><span class="zh">复位后必须复查 X 线，确认肱骨头同心圆复位。</span><span class="en">Post-reduction radiographs are mandatory to confirm concentric reduction of the humeral head.</span></li>
+</ul>
+<details><summary><span class="zh">展开：分类（方向 × 是否合并骨折）</span><span class="en">Expand: classification (direction × fracture or not)</span></summary>
+<ul class="tight">
+<li><span class="zh">按方向：前脱位、后脱位、下脱位（盂下）、上脱位（罕见）。</span><span class="en">By direction: anterior, posterior, inferior (luxatio erecta), superior (rare).</span></li>
+<li><span class="zh">按是否合并骨折：单纯脱位 vs 骨折脱位（大结节 / 外科颈 / 解剖颈 / 头部劈裂）。</span><span class="en">By associated fracture: simple dislocation vs fracture-dislocation (greater tuberosity / surgical neck / anatomic neck / head-split).</span></li>
+<li><span class="zh">分类用于描述损伤，不等于手术指征。是否手术取决于骨折移位、关节稳定性与患者因素。</span><span class="en">Classification describes the injury — it is not an indication for surgery. Operative decisions depend on fracture displacement, joint stability and patient factors.</span></li>
+</ul>
+</details>
+</div>
+
+<div class="sec"><h3><span class="zh">1.4　AO 原则如何适用</span><span class="en">1.4　How AO Principles Apply</span></h3>
+<ul class="tight">
+<li><span class="zh">AO 四原则：解剖复位、稳定固定、保护血供、早期功能锻炼——主要针对骨折；且“解剖复位”按部位理解：关节面追求解剖复位，骨干恢复长度、对线与旋转即可。</span><span class="en">The four AO principles — anatomic reduction, stable fixation, preservation of blood supply, early functional exercise — apply primarily to fractures; and "anatomic reduction" is site-specific: articular surfaces pursue anatomic reduction, while diaphyseal fractures need length, alignment and rotation restored.</span></li>
+<li><span class="zh">稳定性与之匹配：关节内骨折多需绝对稳定，骨干骨折相对稳定下的二期愈合同样是 AO 认可的路径。</span><span class="en">Match stability to the site: intra-articular fractures usually need absolute stability; diaphyseal fractures heal well by secondary intention under relative stability — equally an AO-recognized pathway.</span></li>
+<li><span class="zh">单纯脱位：核心是恢复关节同心圆对合（复位），然后通过短期制动 + 渐进康复恢复功能。</span><span class="en">Simple dislocation: the core is restoring concentric joint congruity (reduction), then short immobilisation plus progressive rehabilitation.</span></li>
+<li><span class="zh">骨折脱位：按骨折处理——先评估骨折块，再决定复位顺序与固定方式；保护肱骨头血供是关键考量。</span><span class="en">Fracture-dislocation: manage as a fracture — assess fragments first, then decide the reduction sequence and fixation; protecting humeral head blood supply is a key consideration.</span></li>
+<li><span class="zh">早期功能锻炼适用于稳定复位之后；不稳定的关节过早活动会导致再脱位。</span><span class="en">Early mobilisation applies after a stable reduction; moving an unstable joint too early risks re-dislocation.</span></li>
+</ul>
+</div>
+
+<div class="sec"><h3><span class="zh">1.5　治疗选择与限制</span><span class="en">1.5　Treatment Options &amp; Limits</span></h3>
+<div class="subblock"><h4><span class="tag"><span class="zh">单纯脱位</span><span class="en">Simple</span></span><span class="zh">闭合复位为主</span><span class="en">Closed reduction first</span></h4>
+<ul class="tight">
+<li><span class="zh">在充分镇静镇痛下轻柔复位；忌暴力。</span><span class="en">Reduce gently under adequate sedation and analgesia; never use force.</span></li>
+<li><span class="zh">复位后：复查神经血管 + X 线；悬吊短期制动，制动时长个体化。</span><span class="en">After reduction: recheck neurovascular status + radiographs; sling immobilisation for a short, individualised period.</span></li>
+<li><span class="zh">年轻、运动需求高的首发前脱位患者复发风险高，需康复随访与复发预案。</span><span class="en">Young, active patients with a first-time anterior dislocation carry a high recurrence risk — arrange rehabilitation follow-up and a recurrence plan.</span></li>
+</ul></div>
+<div class="subblock"><h4><span class="tag"><span class="zh">骨折脱位</span><span class="en">Fracture-dislocation</span></span><span class="zh">按骨折原则处理</span><span class="en">Managed by fracture principles</span></h4>
+<ul class="tight">
+<li><span class="zh">先明确骨折块大小、移位与关节面受累（CT 与否依据骨折复杂度和临床稳定性决定），再定方案；若合并血管损伤等危及肢体的情况，紧急处置优先，不因等待影像而延误。</span><span class="en">First define fragment size, displacement and articular involvement (CT as fracture complexity and clinical stability dictate), then decide; with vascular injury or other limb-threatening conditions, urgent management takes priority and must not wait for imaging.</span></li>
+<li><span class="zh">大结节明显移位、关节面劈裂或复位后不稳定：多需手术（固定或按肱骨近端骨折处理）。</span><span class="en">Markedly displaced greater tuberosity, articular head-split or post-reduction instability: usually operative (fixation, managed as a proximal humerus fracture).</span></li>
+<li><span class="zh">无明显移位的骨折脱位：可在麻醉下复位后按肱骨近端骨折保守治疗并密切随访。</span><span class="en">Minimally displaced fracture-dislocation: may be reduced under anaesthesia and managed non-operatively as a proximal humerus fracture with close follow-up.</span></li>
+</ul></div>
+<details><summary><span class="zh">展开：治疗的限制与注意事项</span><span class="en">Expand: limits and cautions</span></summary>
+<ul class="tight">
+<li><span class="zh">本课程不规定具体复位手法与药物剂量；手法选择与镇静方案遵循本院流程与麻醉科协作。</span><span class="en">This course does not prescribe specific reduction manoeuvres or drug doses; follow local protocols with anaesthesia support.</span></li>
+<li><span class="zh">骨质疏松患者：骨折脱位风险更高，固定选择需考虑骨质量。</span><span class="en">Osteoporotic patients: higher fracture-dislocation risk; fixation choices must account for bone quality.</span></li>
+<li><span class="zh">陈旧性脱位（数周未复位）：不要强行闭合复位，需专科评估。</span><span class="en">Chronic dislocation (unreduced for weeks): do not force closed reduction — refer for specialist assessment.</span></li>
+</ul>
+</details>
+</div>
+
+<div class="sec"><h3><span class="zh">1.6　并发症 / 随访</span><span class="en">1.6　Complications / Follow-up</span></h3>
+<ul class="tight">
+<li><span class="zh">复发性脱位 / 慢性不稳定：尤其年轻首发前脱位患者。</span><span class="en">Recurrent dislocation / chronic instability: especially young patients after a first anterior dislocation.</span></li>
+<li><span class="zh">骨缺损相关不稳：Bankart 与 Hill-Sachs 病变进展。</span><span class="en">Bony-defect-related instability: progression of Bankart and Hill-Sachs lesions.</span></li>
+<li><span class="zh">腋神经损伤：多数为牵拉伤可恢复，需随访肌力与感觉。</span><span class="en">Axillary nerve injury: usually a traction injury that recovers; follow strength and sensation.</span></li>
+<li><span class="zh">创伤性关节炎：反复脱位或关节面损伤后远期风险。</span><span class="en">Post-traumatic arthritis: long-term risk after recurrent dislocation or articular injury.</span></li>
+<li><span class="zh">随访要点：康复计划（活动度→力量→本体感觉）、重返运动/劳动的个体化标准。</span><span class="en">Follow-up: rehabilitation (motion → strength → proprioception), individualised return-to-sport/work criteria.</span></li>
+</ul>
+</div>
+
+<div class="sec"><h3><span class="zh">1.7　病例自测</span><span class="en">1.7　Case Self-Test</span></h3>
+<div class="case">
+<h4><span class="zh">病例 1-1（分段揭晓）</span><span class="en">Case 1-1 (step-by-step reveal)</span></h4>
+<p class="synthetic"><span class="zh">注：本病例为合成教学病例，非真实患者。</span><span class="en">Note: synthetic teaching case, not a real patient.</span></p>
+<p><span class="zh">28 岁男性，篮球争抢篮板后右肩剧痛，不敢活动。点击按钮逐步揭晓诊疗思路。</span><span class="en">A 28-year-old man has severe right shoulder pain and refuses to move it after contesting a rebound. Reveal the workup step by step.</span></p>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 1 · 病史与查体</span><span class="en">Step 1 · History &amp; exam</span></span><br><span class="zh">方肩畸形，患肢弹性固定于轻度外展位。桡动脉搏动可及，手部温暖。三角肌区感觉减退，主动外展不能（疼痛限制 vs 神经损伤，待鉴别）。</span><span class="en">Squared-off shoulder; arm elastically fixed in slight abduction. Radial pulse palpable, hand warm. Reduced sensation over the deltoid; active abduction impossible (pain vs nerve injury — to be clarified).</span></div>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 2 · 影像</span><span class="en">Step 2 · Imaging</span></span><br><span class="zh">正位 + 腋位 X 线：肱骨头位于关节盂前下方，未见明确骨折线。诊断：单纯性肩关节前脱位。</span><span class="en">AP + axillary radiographs: humeral head anteroinferior to the glenoid, no definite fracture line. Diagnosis: simple anterior shoulder dislocation.</span></div>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 3 · 处理</span><span class="en">Step 3 · Management</span></span><br><span class="zh">充分镇痛镇静下轻柔闭合复位。复位后：方肩畸形消失，复查 X 线示同心圆复位；再查神经血管并记录——三角肌区感觉仍减退，拟诊腋神经牵拉伤，安排随访。</span><span class="en">Gentle closed reduction under adequate sedation/analgesia. After reduction: deformity resolved, radiographs confirm concentric reduction; neurovascular recheck documented — deltoid numbness persists, presumed axillary nerve traction injury, follow-up arranged.</span></div>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 4 · 后续</span><span class="en">Step 4 · Follow-up</span></span><br><span class="zh">悬吊短期制动后转康复：活动度→力量→本体感觉。告知年轻首发前脱位复发风险高，若再脱位或出现交锁感及时复诊。</span><span class="en">Short sling immobilisation then rehabilitation: motion → strength → proprioception. Counsel that first-time anterior dislocation in a young patient carries high recurrence risk; return promptly if it re-dislocates or locking occurs.</span></div>
+<button class="stepbtn"><span class="zh">显示下一步</span><span class="en">Reveal next step</span></button>
+</div>
+
+<div class="quiz" data-answer="C">
+<p class="q-stem"><span class="zh">Q1. 肩关节前脱位复位后，最关键的即刻复查是什么？</span><span class="en">Q1. What is the most important immediate recheck after reducing an anterior shoulder dislocation?</span></p>
+<div class="opts">
+<button data-opt="A"><span class="zh">A. 立即开始肩关节全范围主动活动</span><span class="en">A. Start full active range of motion immediately</span></button>
+<button data-opt="B"><span class="zh">B. 测量双上肢血压</span><span class="en">B. Measure blood pressure in both arms</span></button>
+<button data-opt="C"><span class="zh">C. 神经血管检查 + X 线确认同心圆复位</span><span class="en">C. Neurovascular check + radiographs confirming concentric reduction</span></button>
+<button data-opt="D"><span class="zh">D. 直接安排肩关节镜手术</span><span class="en">D. Schedule shoulder arthroscopy directly</span></button>
+</div>
+<div class="feedback"><strong><span class="zh">答案：C</span><span class="en">Answer: C</span></strong><br><span class="zh">复位前后都必须做神经血管检查并记录，X 线确认肱骨头真正复位（排除骨折脱位漏诊）。过早全范围活动（A）可致再脱位；D 无指征。</span><span class="en">Neurovascular status must be checked and documented before and after reduction, and radiographs must confirm true concentric reduction (excluding a missed fracture-dislocation). Early full motion (A) risks re-dislocation; (D) is not indicated.</span></div>
+</div>
+
+<div class="quiz" data-answer="B">
+<p class="q-stem"><span class="zh">Q2. 同一患者 X 线若同时显示大结节骨折块明显移位，处理策略应如何调整？</span><span class="en">Q2. If the same patient's radiograph also shows a markedly displaced greater tuberosity fragment, how should management change?</span></p>
+<div class="opts">
+<button data-opt="A"><span class="zh">A. 与单纯脱位完全相同，无需调整</span><span class="en">A. Identical to simple dislocation, no change needed</span></button>
+<button data-opt="B"><span class="zh">B. 按骨折脱位处理：CT 评估骨折块，明显移位多需手术</span><span class="en">B. Manage as fracture-dislocation: CT to assess fragments; marked displacement usually needs surgery</span></button>
+<button data-opt="C"><span class="zh">C. 延长悬吊制动至 3 个月即可解决骨折问题</span><span class="en">C. Prolonged sling immobilisation for 3 months will resolve the fracture</span></button>
+<button data-opt="D"><span class="zh">D. 先暴力复位，骨折块会自行归位</span><span class="en">D. Reduce forcefully; the fragment will relocate itself</span></button>
+</div>
+<div class="feedback"><strong><span class="zh">答案：B</span><span class="en">Answer: B</span></strong><br><span class="zh">骨折脱位 ≠ 单纯脱位。应先明确骨折块情况（CT 与否依据骨折复杂度和临床稳定性决定），明显移位的大结节骨折多需手术固定；暴力复位（D）可能加重骨折移位或损伤血供。</span><span class="en">Fracture-dislocation ≠ simple dislocation. Define the fracture pattern first (CT as complexity and stability dictate); a markedly displaced greater tuberosity usually needs operative fixation. Forceful reduction (D) may worsen displacement or injure blood supply.</span></div>
+</div>
+</div>
+
+<div class="vidbox">
+<strong><span class="zh">官方影像资源（外链）</span><span class="en">Official imaging resources (external links)</span></strong>
+<div style="font-size:14px;margin-top:8px">
+<span class="zh">对照官方图例，复习损伤识别与处理原则：</span><span class="en">Review injury recognition and management principles alongside the official illustrations:</span>
+<ul>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-humerus/extraarticular-3-part-surgical-neck-and-tuberosity-dislocation/definition">AO Surgery Reference — 肱骨近端骨折脱位定义</a><br><span class="zh">肱骨近端骨折脱位的 AO 定义与分类框架；单纯肩脱位（无骨折）AO 无独立页面</span><span class="en">AO definition and classification framework for proximal humerus fracture-dislocation; AO has no standalone simple-dislocation page</span></li>
+<li><a href="https://www.orthoinfo.org/diseases--conditions/dislocated-shoulder/">AAOS OrthoInfo — 肩关节脱位</a><br><span class="zh">单纯肩脱位：解剖、前脱位最常见、查体与影像、急诊镇静下轻柔复位</span><span class="en">Simple shoulder dislocation: anatomy, anterior most common, examination and imaging, gentle reduction under sedation in the emergency setting</span></li>
+</ul>
+<span class="zh">注：依 AO FAQ，AO 图例仅允许非商业演示使用；在网站转载需申请许可。本课程仅外链官方原页面，未复制、未热链任何 AO 图片。</span><span class="en">Note: per the AO FAQ, AO illustrations may be used in non-commercial presentations only; republication on a website needs permission. This course links to the official pages and copies or hotlinks no AO images.</span><br></div>
+</div>
+
+<div class="srcbox" id="src-u1">
+<h4><span class="zh">本单元来源与媒体许可</span><span class="en">Sources &amp; media licence — Unit 1</span></h4>
+<p style="background:#fff8ea;border-left:4px solid #bd8740;padding:8px 12px;border-radius:0 8px 8px 0"><span class="zh"><strong>注：</strong>“来源（已核验）”仅指该网页于访问日期可正常打开、标题与定位描述相符；不构成对本课程每条医学表述的逐条医学审核。临床决策请结合最新指南与本院流程。</span><span class="en"><strong>Note:</strong> "Source (verified)" means only that the page was accessible on the access date and that its title and scope description match; it does not constitute item-by-item medical review of every statement in this course. Base clinical decisions on current guidelines and local protocols.</span></p>
+<p><strong><span class="zh">来源 1（已核验）</span><span class="en">Source 1 (verified)</span></strong><br>
+<a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-humerus/extraarticular-3-part-surgical-neck-and-tuberosity-dislocation/definition">Extraarticular 3-part, surgical neck and tuberosity, dislocation — definition</a><br>
+<span class="zh">定位：肱骨近端骨折脱位定义页（AO Surgery Reference，成人创伤模块）；支撑本单元“骨折脱位”部分的分类与 AO 原则适用性。</span><span class="en">Scope: proximal humerus fracture-dislocation definition page (AO Surgery Reference, adult trauma); supports the fracture-dislocation classification and AO-principles sections of this unit.</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><strong><span class="zh">来源 2（已核验 · AAOS，非 AO）</span><span class="en">Source 2 (verified · AAOS, not AO)</span></strong><br>
+<a href="https://www.orthoinfo.org/diseases--conditions/dislocated-shoulder/">Shoulder Dislocation - OrthoInfo - AAOS</a><br>
+<span class="zh">定位：美国骨科医师学会（AAOS）OrthoInfo 患者教育页面（由美国肩肘外科医师学会 ASES 成员撰写/审核）；涵盖肩关节解剖、前脱位最常见、电击/癫痫致后脱位、查体（神经血管）、影像（X 线确诊方向与骨折，CT/MRI 指征）与治疗（急诊镇静下轻柔闭合复位、悬吊制动、康复、手术指征）；支撑本单元“单纯脱位”章节。明确标注：AAOS 来源，非 AO Surgery Reference。</span><span class="en">Scope: American Academy of Orthopaedic Surgeons (AAOS) OrthoInfo patient-education page (written/reviewed by an American Shoulder and Elbow Surgeons member); covers shoulder anatomy, anterior dislocation most common, seizure/electric-shock posterior dislocation, examination (neurovascular), imaging (radiographs confirm direction and fracture; CT/MRI indications) and treatment (gentle closed reduction under sedation in the emergency setting, sling immobilisation, rehabilitation, surgical indications); supports this unit's "simple dislocation" sections. Clearly labelled: AAOS source, not AO Surgery Reference.</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><span class="zh"><strong>诚实标注：</strong>AO Surgery Reference 以骨折治疗为核心，未在其官方域名内找到“单纯肩关节脱位（无骨折）独立处理”页面；本单元“单纯脱位”章节改引 AAOS OrthoInfo 来源（来源 2，患者教育页面）。不可将 AO 骨折脱位页面的表述外推为单纯脱位的处理依据。</span><span class="en"><strong>Honesty note:</strong> AO Surgery Reference is fracture-treatment oriented; no standalone simple-shoulder-dislocation (no fracture) page exists on its domain, so this unit's "simple dislocation" sections cite the AAOS OrthoInfo source (Source 2, patient-education page) instead. Do not extrapolate AO fracture-dislocation statements to simple-dislocation management.</span></p>
+<p><span class="zh"><strong>媒体许可：</strong>AO Surgery Reference 页面图片托管于 media.aofoundation.org，版权归 AO Foundation / 原作者所有，<strong>不可下载重传</strong>；本课程仅以外链形式引用原页面，未复制其任何图片。</span><span class="en"><strong>Media licence:</strong> images on AO Surgery Reference pages are hosted at media.aofoundation.org, © AO Foundation / original authors, <strong>not to be downloaded or re-hosted</strong>; this course links to the original pages only and reproduces none of their images.</span></p>
+<span class="zh">本单元图片（图 1-1）：真实 X 线/CT，逐图核验许可；作者、原标题、原 URL、许可与原 caption 见 assets/media_sources.csv，各图注含原文件页与许可链接。各图为不同患者的独立图片，非同一病例序列。</span><span class="en">Unit images (Fig 1-1): real radiographs/CT, licences verified per image; author, original title, source URL, licence and original caption are listed in assets/media_sources.csv, and each caption links its file page and licence. Images are from different patients, not a case sequence.</span>
+</div>
+</section>
+
+<!-- ================= UNIT 2 ================= -->
+<section class="unit" id="u2">
+<h2><span class="num">2</span><span class="zh">肘关节脱位：单纯脱位 vs 骨折脱位</span><span class="en">Elbow Dislocation: Simple vs Fracture-Dislocation</span></h2>
+<div class="unit-tools">
+  <button data-expand="u2"><span class="zh">展开本单元全部细节</span><span class="en">Expand all details in this unit</span></button>
+  <button data-collapse="u2"><span class="zh">收起本单元全部细节</span><span class="en">Collapse all details in this unit</span></button>
+</div>
+
+<div class="sec"><h3><span class="zh">2.1　解剖与机制</span><span class="en">2.1　Anatomy &amp; Mechanism</span></h3>
+<ul class="tight">
+<li><span class="zh">肘关节由肱尺、肱桡、上尺桡三个关节组成，稳定性依赖骨性结构（冠状突、鹰嘴）与内外侧副韧带。</span><span class="en">The elbow comprises the ulnohumeral, radiocapitellar and proximal radioulnar joints; stability depends on bony structures (coronoid, olecranon) and the collateral ligaments.</span></li>
+<li><span class="zh">后脱位最常见，典型机制是跌倒时手撑地、肘过伸伴旋转暴力。</span><span class="en">Posterior dislocation is the most common; typical mechanism is a fall onto the outstretched hand with hyperextension and rotational force.</span></li>
+<li><span class="zh">单纯脱位：无骨折。骨折脱位（复杂脱位）：合并桡骨头 / 冠状突 / 鹰嘴等骨折。</span><span class="en">Simple dislocation: no fracture. Fracture-dislocation (complex dislocation): with fractures of the radial head, coronoid, olecranon, etc.</span></li>
+<li><span class="zh">恐怖三联征 = 肘关节后脱位 + 桡骨头骨折 + 冠状突骨折，常合并外侧副韧带损伤，高度不稳定。</span><span class="en">The terrible triad = posterior elbow dislocation + radial head fracture + coronoid fracture, often with lateral collateral ligament injury — highly unstable.</span></li>
+</ul>
+<figure class="media-card">
+<a class="media-image" href="assets/src/u2-posterior-elbow-dislocation-lateral.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/src/u2-posterior-elbow-dislocation-lateral.jpg" data-alt-zh="真实X线：左肘侧位，尺骨近端向肱骨远端后方移位，为后脱位" data-alt-en="Real radiograph: lateral left elbow; proximal ulna displaced posterior to the distal humerus — posterior dislocation" alt="真实X线：左肘侧位，尺骨近端向肱骨远端后方移位，为后脱位"></a>
+<figcaption><span class="cap-label"><span class="zh">图 2-1　</span><span class="en">Fig 2-1　</span></span><span class="zh">真实 X 线：左肘侧位，尺骨近端/鹰嘴向肱骨远端后方移位，为肘关节后脱位，未见明显骨折线。局限：本图为翻拍 X 线胶片的照片，细节较直接数字片偏软；单张侧位片不能排除隐匿骨折，需结合正位片与查体。独立来源影像，与练习病例无关。</span><span class="en">Real radiograph: lateral left elbow; the proximal ulna/olecranon is displaced posterior to the distal humerus — a posterior elbow dislocation with no obvious fracture line. Limitation: this is a photograph of an X-ray film, softer than a direct digital image; a single lateral view cannot exclude occult fracture — correlate with AP views and examination. Independent source image, separate from the practice vignette.</span><span class="credit"><span class="zh">图片：Flibust1er（Wikimedia Commons），CC0 1.0 公有领域贡献（<a href="https://commons.wikimedia.org/wiki/File:Radiographie_d%E2%80%99une_luxation_post%C3%A9rieur_du_coude_gauche_sans_fracture.jpg">原文件页</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">许可</a>）</span><span class="en">Image: Flibust1er (Wikimedia Commons), CC0 1.0 public-domain dedication (<a href="https://commons.wikimedia.org/wiki/File:Radiographie_d%E2%80%99une_luxation_post%C3%A9rieur_du_coude_gauche_sans_fracture.jpg">file page</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">licence</a>)</span></span></figcaption>
+</figure>
+<figure class="media-card">
+<a class="media-image" href="assets/src/u2-terrible-triad-3dct.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/src/u2-terrible-triad-3dct.jpg" data-alt-zh="真实3D CT（原作者标注）：恐怖三联征变异病例，合并鹰嘴骨折" data-alt-en="Real 3D CT (annotated by the original authors): terrible-triad variant with an associated olecranon fracture" alt="真实3D CT（原作者标注）：恐怖三联征变异病例，合并鹰嘴骨折"></a>
+<figcaption><span class="cap-label"><span class="zh">图 2-2　</span><span class="en">Fig 2-2　</span></span><span class="zh">真实 3D CT（标注为原作者所加）：恐怖三联征的变异病例——后脱位（已复位）合并桡骨头骨折（黄圈）、冠状突骨折（蓝箭头），同时合并尺骨鹰嘴骨折（橙箭头）。局限：此为合并鹰嘴骨折的变异病例，非标准恐怖三联征；分辨率较低，仅作结构示意。独立来源影像，与练习病例无关。</span><span class="en">Real 3D CT (annotations by the original authors): a terrible-triad variant — posterior dislocation (reduced) with radial head fracture (yellow circle) and coronoid fracture (blue arrow), plus an associated olecranon fracture (orange arrow). Limitation: this is a variant case with an olecranon fracture, not a classic terrible triad; low resolution, for structural illustration only. Independent source image, separate from the practice vignette.</span><span class="credit"><span class="zh">图片：Sachinis 等，Cureus 病例报告 Figure 1（PMC12999191），CC BY 4.0（<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12999191/">原文</a> · <a href="https://creativecommons.org/licenses/by/4.0/">许可</a>）</span><span class="en">Image: Sachinis et al., Cureus case report, Figure 1 (PMC12999191), CC BY 4.0 (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12999191/">article</a> · <a href="https://creativecommons.org/licenses/by/4.0/">licence</a>)</span></span></figcaption>
+</figure>
+<details><summary><span class="zh">展开：为什么冠状突如此重要？</span><span class="en">Expand: why is the coronoid so important?</span></summary>
+<ul class="tight">
+<li><span class="zh">冠状突是肘关节前方的骨性阻挡，缺损越大，肘关节越容易向后半脱位。</span><span class="en">The coronoid is the anterior bony buttress of the elbow; the larger the defect, the more prone the elbow is to posterior subluxation.</span></li>
+<li><span class="zh">因此骨折脱位中冠状突骨折块的大小与移位，是判断稳定性的核心依据之一。</span><span class="en">Hence, in fracture-dislocation, the size and displacement of the coronoid fragment are core determinants of stability.</span></li>
+</ul>
+</details>
+</div>
+
+<div class="sec"><h3><span class="zh">2.2　初评和红旗</span><span class="en">2.2　Initial Assessment &amp; Red Flags</span></h3>
+<ul class="tight">
+<li><span class="zh">肘部畸形常很明显，但仍需按流程完成全身评估。</span><span class="en">Elbow deformity is often obvious, but the full systematic assessment still comes first.</span></li>
+<li><span class="zh">复位前、后各做一次神经血管检查并记录：桡动脉搏动、正中/尺/桡神经功能。</span><span class="en">Perform and document a neurovascular examination before and after reduction: radial pulse and median/ulnar/radial nerve function.</span></li>
+</ul>
+<div class="redflag"><strong><span class="zh">红旗</span><span class="en">Red flags</span></strong>
+<ul class="tight">
+<li><span class="zh">肱动脉损伤：尤其合并肱骨远端/近端骨折时；搏动减弱、手部苍白发凉。</span><span class="en">Brachial artery injury: especially with associated distal/proximal humeral fractures; weak pulse, pale cool hand.</span></li>
+<li><span class="zh">骨筋膜室综合征：前臂剧痛、被动牵拉痛、张力性肿胀。</span><span class="en">Compartment syndrome: severe forearm pain, pain on passive stretch, tense swelling.</span></li>
+<li><span class="zh">开放性脱位 / 皮肤破损：按开放性损伤处理。</span><span class="en">Open dislocation / skin breach: manage as an open injury.</span></li>
+<li><span class="zh">复位后仍不稳定、反复半脱位：提示关键稳定结构损伤，需进一步评估。</span><span class="en">Persistent instability or recurrent subluxation after reduction: suggests injury to key stabilisers — further evaluation needed.</span></li>
+</ul></div>
+</div>
+
+<div class="sec"><h3><span class="zh">2.3　影像 / 分类</span><span class="en">2.3　Imaging / Classification</span></h3>
+<ul class="tight">
+<li><span class="zh">常规：肘关节正侧位 X 线，判断脱位方向、有无骨折。</span><span class="en">Routine: AP and lateral elbow radiographs to determine direction and detect fractures.</span></li>
+<li><span class="zh">怀疑骨折脱位：CT 明确桡骨头、冠状突骨折块的大小与移位。</span><span class="en">Suspected fracture-dislocation: CT to define the size and displacement of radial head and coronoid fragments.</span></li>
+<li><span class="zh">复位后复查 X 线，确认关节同心圆复位、无残留半脱位。</span><span class="en">Post-reduction radiographs to confirm concentric reduction without residual subluxation.</span></li>
+</ul>
+<details><summary><span class="zh">展开：分类</span><span class="en">Expand: classification</span></summary>
+<ul class="tight">
+<li><span class="zh">按方向：后脱位（最常见）、前脱位、内/外侧脱位。</span><span class="en">By direction: posterior (most common), anterior, medial/lateral.</span></li>
+<li><span class="zh">按是否合并骨折：单纯脱位 vs 骨折脱位（含恐怖三联征）。</span><span class="en">By associated fracture: simple dislocation vs fracture-dislocation (including the terrible triad).</span></li>
+<li><span class="zh">分类描述损伤，不等于手术指征；是否手术看复位后稳定性与骨折情况。</span><span class="en">Classification describes the injury, not the indication for surgery; operative decisions rest on post-reduction stability and the fracture pattern.</span></li>
+</ul>
+</details>
+</div>
+
+<div class="sec"><h3><span class="zh">2.4　AO 原则如何适用</span><span class="en">2.4　How AO Principles Apply</span></h3>
+<ul class="tight">
+<li><span class="zh">肘关节的核心目标是：稳定 + 同心圆复位 + 早期活动。</span><span class="en">The core goals at the elbow are: stability + concentric reduction + early motion.</span></li>
+<li><span class="zh">解剖复位：骨折块（冠状突、桡骨头）复位到解剖位置，恢复骨性稳定。</span><span class="en">Anatomic reduction: restore fracture fragments (coronoid, radial head) to reconstruct bony stability.</span></li>
+<li><span class="zh">稳定固定：使关节在早期活动中保持同心圆对合，避免长期制动导致的僵硬。</span><span class="en">Stable fixation: keeps the joint concentrically reduced during early motion, avoiding stiffness from prolonged immobilisation.</span></li>
+<li><span class="zh">保护血供与软组织：骨折脱位周围软组织损伤重，手术入路需保护重要结构。</span><span class="en">Preserve blood supply and soft tissues: soft-tissue injury is severe in fracture-dislocation; approaches must protect key structures.</span></li>
+</ul>
+</div>
+
+<div class="sec"><h3><span class="zh">2.5　治疗选择与限制</span><span class="en">2.5　Treatment Options &amp; Limits</span></h3>
+<div class="subblock"><h4><span class="tag"><span class="zh">单纯脱位·稳定</span><span class="en">Simple · stable</span></span><span class="zh">复位后早期活动</span><span class="en">Early motion after reduction</span></h4>
+<ul class="tight">
+<li><span class="zh">肘关节脱位属急症：尽快接受专业评估，在安全条件下复位（充分镇痛镇静、轻柔手法），复位前后检查神经血管与稳定性。</span><span class="en">Elbow dislocation is an emergency: seek prompt professional assessment and reduce under safe conditions (adequate sedation/analgesia, gentle manoeuvre), checking neurovascular status and stability before and after reduction.</span></li>
+<li><span class="zh">复位后稳定：短期支具保护下尽早开始主动活动，避免长期制动。</span><span class="en">If stable after reduction: begin active motion as early as possible with short-term brace protection; avoid prolonged immobilisation.</span></li>
+</ul></div>
+<div class="subblock"><h4><span class="tag"><span class="zh">骨折脱位</span><span class="en">Fracture-dislocation</span></span><span class="zh">按损伤逐一处理，不套用同一方案</span><span class="en">Address each injury; no one-size-fits-all</span></h4>
+<ul class="tight">
+<li><span class="zh">桡骨头骨折：小块稳定可保守；移位明显或影响稳定 → 固定或置换（按骨折块大小与粉碎程度个体化）。</span><span class="en">Radial head fracture: small stable fragments may be non-operative; displaced or stability-compromising fractures → fixation or replacement, individualised to fragment size and comminution.</span></li>
+<li><span class="zh">冠状突骨折：大块移位影响稳定 → 固定恢复前方骨性阻挡。</span><span class="en">Coronoid fracture: large displaced fragments compromising stability → fixation to restore the anterior buttress.</span></li>
+<li><span class="zh">韧带损伤：外侧副韧带撕裂常需修复，以恢复旋转稳定性。</span><span class="en">Ligament injury: lateral collateral ligament tears often need repair to restore rotatory stability.</span></li>
+<li><span class="zh">恐怖三联征：三个稳定结构均受损，多数需手术系统重建。</span><span class="en">Terrible triad: all three stabilisers injured; most need systematic operative reconstruction.</span></li>
+</ul></div>
+<details><summary><span class="zh">展开：限制与注意事项</span><span class="en">Expand: limits and cautions</span></summary>
+<ul class="tight">
+<li><span class="zh">肘关节最怕僵硬：能早期活动就不长期制动，能稳定固定就不靠石膏硬扛。</span><span class="en">The elbow's greatest enemy is stiffness: mobilise early when possible; don't rely on prolonged casting when stable fixation is achievable.</span></li>
+<li><span class="zh">复位困难或复位后反复不稳：不要反复暴力尝试，及时请专科会诊。</span><span class="en">Difficult reduction or recurrent instability: don't repeat forceful attempts — get specialist help.</span></li>
+<li><span class="zh">本课程不规定具体手术入路与内固定型号选择，遵循 AO Surgery Reference 与本院流程。</span><span class="en">This course does not prescribe specific approaches or implant choices; follow AO Surgery Reference and local protocols.</span></li>
+</ul>
+</details>
+</div>
+
+<div class="sec"><h3><span class="zh">2.6　并发症 / 随访</span><span class="en">2.6　Complications / Follow-up</span></h3>
+<ul class="tight">
+<li><span class="zh">关节僵硬：最常见，康复是治疗的一部分。</span><span class="en">Joint stiffness: the most common; rehabilitation is part of treatment.</span></li>
+<li><span class="zh">残留不稳定 / 再脱位：提示稳定结构未充分恢复。</span><span class="en">Residual instability / re-dislocation: suggests incompletely restored stabilisers.</span></li>
+<li><span class="zh">异位骨化：高能量损伤与手术后可能出现，影响活动度。</span><span class="en">Heterotopic ossification: may follow high-energy injury or surgery and limit motion.</span></li>
+<li><span class="zh">尺神经症状、创伤性关节炎：中远期随访观察。</span><span class="en">Ulnar nerve symptoms, post-traumatic arthritis: watch for in mid- to long-term follow-up.</span></li>
+<li><span class="zh">随访要点：活动度进展、稳定性复查、神经症状变化。</span><span class="en">Follow-up: progress of motion, stability recheck, changes in neurologic symptoms.</span></li>
+</ul>
+</div>
+
+<div class="sec"><h3><span class="zh">2.7　病例自测</span><span class="en">2.7　Case Self-Test</span></h3>
+<div class="case">
+<h4><span class="zh">病例 2-1（分段揭晓）</span><span class="en">Case 2-1 (step-by-step reveal)</span></h4>
+<p class="synthetic"><span class="zh">注：本病例为合成教学病例，非真实患者。</span><span class="en">Note: synthetic teaching case, not a real patient.</span></p>
+<p><span class="zh">45 岁女性，跌倒时右手撑地，右肘剧痛畸形。逐步揭晓。</span><span class="en">A 45-year-old woman fell onto her right outstretched hand; the right elbow is severely painful and deformed. Reveal step by step.</span></p>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 1 · 查体</span><span class="en">Step 1 · Exam</span></span><br><span class="zh">肘后空虚、鹰嘴向后突出。桡动脉搏动可及，前臂无张力性肿胀，被动牵拉手指疼痛不明显。正中/尺/桡神经初查无缺失。</span><span class="en">Hollow posterior elbow, olecranon prominent posteriorly. Radial pulse palpable; no tense forearm swelling; no marked pain on passive finger stretch. Median/ulnar/radial nerves grossly intact.</span></div>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 2 · 影像</span><span class="en">Step 2 · Imaging</span></span><br><span class="zh">X 线：肘关节后脱位，桡骨头可见骨折线，冠状突小骨折块。CT 确认：桡骨头骨折轻度移位、未造成前臂旋转的机械性阻挡；冠状突尖部小骨折（Regan–Morrey Ⅰ/Ⅱ型范围）。以下数字仅描述本例，不构成自动阈值。</span><span class="en">Radiographs: posterior elbow dislocation with a radial head fracture line and a small coronoid fragment. CT confirms: mildly displaced radial head fracture with no mechanical block to forearm rotation; small coronoid tip fracture (Regan–Morrey type 1/2 range). The numbers here describe this case only and are not automatic thresholds.</span></div>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 3 · 决策</span><span class="en">Step 3 · Decision</span></span><br><span class="zh">麻醉下闭合复位成功：透视下肘关节同心圆复位，前臂旋转无机械性阻挡，在可接受的活动弧内保持稳定。本例在同时满足严格筛选条件后选择保守（依据 Chan 等 2014 小样本病例系列，见本单元来源 4）：同心圆复位、无机械性旋转阻挡、冠状突骨折小、有稳定活动弧、能做到密切的临床与影像随访。方案：短期支具 + 早期保护下活动，密切随访稳定性与骨折愈合。</span><span class="en">Successful closed reduction under anaesthesia: fluoroscopy shows concentric reduction, no mechanical block to forearm rotation, and stability within an acceptable arc of motion. This case met strict selection criteria before non-operative management was chosen (per the small case series by Chan et al. 2014, Unit 2 source 4): concentric reduction, no mechanical block to rotation, small coronoid fracture, a stable arc of motion, and capacity for close clinical and radiographic follow-up. Plan: short-term bracing + early protected motion, with close follow-up of stability and healing.</span></div>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 4 · 警示</span><span class="en">Step 4 · Caveat</span></span><br><span class="zh">注意：这是一个严格筛选后的例外——多数恐怖三联征仍需手术系统重建（桡骨头、冠状突、外侧副韧带逐一处理）。该保守路径的证据为回顾性小系列（12 例，Level IV），外推需谨慎；切勿把“可保守”当成常规，更不能只凭“骨折面积 1/3、伸直 30°”两个数字自动判定。</span><span class="en">Note: this is a strictly selected exception — most terrible triads still need systematic operative reconstruction (radial head, coronoid, LCL addressed one by one). The evidence for this non-operative pathway is a small retrospective series (12 patients, Level IV); extrapolate cautiously. Never treat "can be non-operative" as routine, and never decide on the two numbers "1/3 of the surface, 30° of extension" alone.</span></div>
+<button class="stepbtn"><span class="zh">显示下一步</span><span class="en">Reveal next step</span></button>
+</div>
+
+<div class="quiz" data-answer="B">
+<p class="q-stem"><span class="zh">Q1. 肘关节脱位查体时，以下哪项属于必须排除的危重红旗？</span><span class="en">Q1. Which critical red flag must be excluded on examination of an elbow dislocation?</span></p>
+<div class="opts">
+<button data-opt="A"><span class="zh">A. 肘部皮肤擦伤</span><span class="en">A. Elbow skin abrasion</span></button>
+<button data-opt="B"><span class="zh">B. 前臂骨筋膜室综合征（剧痛、被动牵拉痛、张力性肿胀）</span><span class="en">B. Forearm compartment syndrome (severe pain, pain on passive stretch, tense swelling)</span></button>
+<button data-opt="C"><span class="zh">C. 肘关节轻度肿胀</span><span class="en">C. Mild elbow swelling</span></button>
+<button data-opt="D"><span class="zh">D. 患者因疼痛不愿活动</span><span class="en">D. Patient unwilling to move because of pain</span></button>
+</div>
+<div class="feedback"><strong><span class="zh">答案：B</span><span class="en">Answer: B</span></strong><br><span class="zh">骨筋膜室综合征可致肌肉神经不可逆坏死，是必须主动排除的急症。擦伤与肿胀常见但非危重。</span><span class="en">Compartment syndrome can cause irreversible muscle and nerve necrosis — a must-exclude emergency. Abrasions and swelling are common but not critical.</span></div>
+</div>
+
+<div class="quiz" data-answer="D">
+<p class="q-stem"><span class="zh">Q2. 关于“恐怖三联征”，正确的是？</span><span class="en">Q2. Which statement about the "terrible triad" is correct?</span></p>
+<div class="opts">
+<button data-opt="A"><span class="zh">A. 仅指三次脱位的复发患者</span><span class="en">A. It refers only to patients with three recurrent dislocations</span></button>
+<button data-opt="B"><span class="zh">B. 单纯脱位的一种，无需特殊处理</span><span class="en">B. A type of simple dislocation needing no special management</span></button>
+<button data-opt="C"><span class="zh">C. 三个骨折都愈合后关节一定稳定</span><span class="en">C. The joint is always stable once all three fractures heal</span></button>
+<button data-opt="D"><span class="zh">D. 后脱位 + 桡骨头骨折 + 冠状突骨折（常合并外侧副韧带损伤），高度不稳定，多需手术重建稳定结构</span><span class="en">D. Posterior dislocation + radial head fracture + coronoid fracture (often with LCL injury); highly unstable and usually needs operative reconstruction of the stabilisers</span></button>
+</div>
+<div class="feedback"><strong><span class="zh">答案：D</span><span class="en">Answer: D</span></strong><br><span class="zh">三联征的本质是三个稳定结构同时受损。治疗按损伤逐一重建，而不是把所有骨折脱位写成同一方案。</span><span class="en">The essence of the triad is simultaneous injury to three stabilisers. Each is reconstructed individually — not one identical protocol for every fracture-dislocation.</span></div>
+</div>
+</div>
+
+<div class="vidbox">
+<strong><span class="zh">官方影像资源（外链）</span><span class="en">Official imaging resources (external links)</span></strong>
+<div style="font-size:14px;margin-top:8px">
+<span class="zh">对照官方图例，复习损伤识别与处理原则：</span><span class="en">Review injury recognition and management principles alongside the official illustrations:</span>
+<ul>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-forearm/further-reading/assessment-of-elbow-stability">AO Surgery Reference — 肘关节稳定性评估</a><br><span class="zh">肘关节稳定结构评估的官方讲解</span><span class="en">Official teaching on assessing elbow stability</span></li>
+<li><a href="https://www.orthoinfo.org/diseases--conditions/elbow-dislocation">AAOS OrthoInfo — 肘关节脱位</a><br><span class="zh">肘脱位的急症属性、复位与康复</span><span class="en">Elbow dislocation: emergency nature, reduction and rehabilitation</span></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/24549776/">PubMed — Chan 2014 恐怖三联征</a><br><span class="zh">严格筛选下部分恐怖三联征可保守治疗的小系列研究（n=12，Level IV）</span><span class="en">Small series (n=12, Level IV) on select terrible-triad injuries treated non-operatively</span></li>
+</ul>
+<span class="zh">注：依 AO FAQ，AO 图例仅允许非商业演示使用；在网站转载需申请许可。本课程仅外链官方原页面，未复制、未热链任何 AO 图片。</span><span class="en">Note: per the AO FAQ, AO illustrations may be used in non-commercial presentations only; republication on a website needs permission. This course links to the official pages and copies or hotlinks no AO images.</span><br></div>
+</div>
+
+<div class="srcbox" id="src-u2">
+<h4><span class="zh">本单元来源与媒体许可</span><span class="en">Sources &amp; media licence — Unit 2</span></h4>
+<p style="background:#fff8ea;border-left:4px solid #bd8740;padding:8px 12px;border-radius:0 8px 8px 0"><span class="zh"><strong>注：</strong>“来源（已核验）”仅指该网页于访问日期可正常打开、标题与定位描述相符；不构成对本课程每条医学表述的逐条医学审核。临床决策请结合最新指南与本院流程。</span><span class="en"><strong>Note:</strong> "Source (verified)" means only that the page was accessible on the access date and that its title and scope description match; it does not constitute item-by-item medical review of every statement in this course. Base clinical decisions on current guidelines and local protocols.</span></p>
+<p><strong><span class="zh">来源 1（已核验）</span><span class="en">Source 1 (verified)</span></strong><br>
+<a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-forearm/further-reading/assessment-of-elbow-stability">Assessment of elbow stability</a><br>
+<span class="zh">定位：肘关节稳定性评估（AO Surgery Reference，成人创伤模块）；明确区分 simple elbow dislocations 与 fracture-dislocations，含复位后稳定性检查流程；支撑本单元初评红旗与“单纯 vs 骨折脱位”鉴别。</span><span class="en">Scope: elbow stability assessment (AO Surgery Reference, adult trauma); distinguishes simple elbow dislocations from fracture-dislocations, with post-reduction stability testing; supports this unit's red-flag and simple-vs-fracture-dislocation sections.</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><strong><span class="zh">来源 2（已核验 · AAOS，非 AO）</span><span class="en">Source 2 (verified · AAOS, not AO)</span></strong><br>
+<a href="https://www.orthoinfo.org/diseases--conditions/elbow-dislocation">Elbow Dislocation - OrthoInfo - AAOS</a><br>
+<span class="zh">定位：美国骨科医师学会（AAOS）OrthoInfo 患者教育页面（由美国肩肘外科医师学会 ASES 成员撰写/审核）；明确肘关节脱位为急症，即刻治疗目标是恢复关节正常对线，通常在急诊室镇静镇痛下轻柔复位；区分单纯脱位（无明显骨折）与复杂脱位（合并骨折）；涵盖神经血管查体与 X 线/CT 指征；支撑本单元“尽快专业评估与安全复位”及单纯/复杂脱位鉴别。明确标注：AAOS 来源，非 AO Surgery Reference。本条已替换 v2 中的儿童创伤来源（“不晚于 12 小时”阈值出自 pediatric-trauma 路径页面，不再用于成人课程）。</span><span class="en">Scope: American Academy of Orthopaedic Surgeons (AAOS) OrthoInfo patient-education page (written/reviewed by an American Shoulder and Elbow Surgeons member); states elbow dislocation is an emergency whose immediate treatment aims to restore normal alignment — usually reduced gently under sedation in the emergency department; distinguishes simple (no major bone injury) from complex (with fractures) dislocations; covers neurovascular examination and X-ray/CT indications; supports this unit's "prompt professional assessment and safe reduction" and simple/complex differentiation. Clearly labelled: AAOS source, not AO Surgery Reference. This entry replaces the v2 pediatric-trauma source (the "no later than 12 hours" threshold came from a pediatric-path page and is no longer used in this adult course).</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><strong><span class="zh">来源 4（已核验 · 原始研究）</span><span class="en">Source 4 (verified · original study)</span></strong><br>
+<a href="https://pubmed.ncbi.nlm.nih.gov/24549776/">Can we treat select terrible triad injuries nonoperatively?</a><br>
+<span class="zh">定位：Chan 等，Clin Orthop Relat Res 2014；2006–2012 年回顾性小系列，12 例恐怖三联征保守治疗（11 例随访 ≥12 个月）。保守的严格筛选标准：同心圆复位、桡骨头骨折不造成旋转的机械性阻挡、冠状突小骨折（Regan–Morrey Ⅰ/Ⅱ型）、伤后 10 天内能在稳定活动弧内主动活动、密切的临床与影像随访；Level IV。病例 2-1 的保守决策即依据此标准，并强调其为例外、不可仅凭数字自动套用。</span><span class="en">Scope: Chan et al., Clin Orthop Relat Res 2014; retrospective small series of 12 terrible triad injuries managed non-operatively 2006–2012 (11 followed ≥12 months). Strict selection criteria: concentric reduction, radial head fracture not causing a mechanical block to rotation, small coronoid fracture (Regan–Morrey type 1/2), a stable arc of motion permitting active motion within 10 days, and close clinical and radiographic follow-up; Level IV. Case 2-1's non-operative decision follows these criteria, presented as an exception — not an automatic rule from numbers alone.</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><span class="zh"><strong>媒体许可：</strong>AO Surgery Reference 页面图片托管于 media.aofoundation.org，版权归 AO Foundation / 原作者所有，<strong>不可下载重传</strong>；本课程仅以外链形式引用原页面，未复制其任何图片。</span><span class="en"><strong>Media licence:</strong> images on AO Surgery Reference pages are hosted at media.aofoundation.org, © AO Foundation / original authors, <strong>not to be downloaded or re-hosted</strong>; this course links to the original pages only and reproduces none of their images.</span></p>
+<span class="zh">本单元图片（图 2-1、图 2-2）：真实 X 线/CT，逐图核验许可；作者、原标题、原 URL、许可与原 caption 见 assets/media_sources.csv，各图注含原文件页与许可链接。各图为不同患者的独立图片，非同一病例序列。</span><span class="en">Unit images (Figs 2-1, 2-2): real radiographs/CT, licences verified per image; author, original title, source URL, licence and original caption are listed in assets/media_sources.csv, and each caption links its file page and licence. Images are from different patients, not a case sequence.</span>
+</div>
+</section>
+
+<!-- ================= UNIT 3 ================= -->
+<section class="unit" id="u3">
+<h2><span class="num">3</span><span class="zh">肱骨骨折：近端 / 骨干 / 远端</span><span class="en">Humeral Fractures: Proximal / Shaft / Distal</span></h2>
+<div class="unit-tools">
+  <button data-expand="u3"><span class="zh">展开本单元全部细节</span><span class="en">Expand all details in this unit</span></button>
+  <button data-collapse="u3"><span class="zh">收起本单元全部细节</span><span class="en">Collapse all details in this unit</span></button>
+</div>
+<div class="notice"><strong><span class="zh">本单元导读</span><span class="en">Unit guide</span></strong><br><span class="zh">近端、骨干、远端是三个不同的解剖部位，治疗逻辑完全不同：近端多可保守、骨干警惕桡神经、远端关节内骨折多需手术。本单元三个部位分开论述，不套用同一方案。</span><span class="en">Proximal, shaft and distal are three different anatomic regions with entirely different logic: proximal fractures are often non-operative, shaft fractures demand vigilance for the radial nerve, and distal intra-articular fractures often need surgery. The three are discussed separately — no single protocol.</span></div>
+
+<div class="sec"><h3><span class="zh">3.1　解剖与机制</span><span class="en">3.1　Anatomy &amp; Mechanism</span></h3>
+<div class="subblock"><h4><span class="tag"><span class="zh">近端</span><span class="en">Proximal</span></span><span class="zh">四个部分：肱骨头、大结节、小结节、肱骨干</span><span class="en">Four segments: head, greater tuberosity, lesser tuberosity, shaft</span></h4>
+<ul class="tight">
+<li><span class="zh">肱骨头由旋肱前、后动脉及其吻合网共同供血——一项尸体定量研究发现后旋肱动脉的贡献大于既往认识（见来源 4；该比例为该研究的测量结果，不外推为所有患者的固定数值），手术入路与固定时注意保护骨折块的软组织附着；骨折移位越重，缺血坏死风险越高。</span><span class="en">The humeral head is supplied jointly by the anterior and posterior circumflex humeral arteries and their anastomoses — a quantitative cadaveric study found the posterior vessel contributes more than previously thought (source 4; that study's proportions are its own measurements, not fixed values for all patients); protect the fragments' soft-tissue attachments during approach and fixation. Greater displacement raises avascular necrosis risk.</span></li>
+<li><span class="zh">老年人骨质疏松性跌倒是主要机制；年轻人多为高能量创伤。</span><span class="en">Osteoporotic falls dominate in the elderly; high-energy trauma in the young.</span></li>
+</ul></div>
+<div class="subblock"><h4><span class="tag"><span class="zh">骨干</span><span class="en">Shaft</span></span><span class="zh">桡神经在中段螺旋沟紧贴骨面</span><span class="en">Radial nerve hugs the bone in the spiral groove</span></h4>
+<ul class="tight">
+<li><span class="zh">桡神经在肱骨中段后方螺旋沟内走行，骨折极易牵拉或嵌顿。</span><span class="en">The radial nerve runs in the spiral groove posteriorly at the midshaft — easily stretched or entrapped by fracture.</span></li>
+<li><span class="zh">远端 1/3 螺旋形骨折（Holstein-Lewis）桡神经嵌顿风险更高。</span><span class="en">Distal-third spiral fractures (Holstein-Lewis) carry higher risk of radial nerve entrapment.</span></li>
+</ul></div>
+<div class="subblock"><h4><span class="tag"><span class="zh">远端</span><span class="en">Distal</span></span><span class="zh">内/外侧柱 + 滑车/小头关节面</span><span class="en">Medial/lateral columns + trochlea/capitellum</span></h4>
+<ul class="tight">
+<li><span class="zh">远端呈三角形柱状结构，关节面包括滑车（对尺骨）与小头（对桡骨）。</span><span class="en">The distal humerus is a triangular columnar structure; the articular surface comprises the trochlea (ulna) and capitellum (radius).</span></li>
+<li><span class="zh">尺神经在内上髁后方尺神经沟内走行，骨折与手术均需保护。</span><span class="en">The ulnar nerve runs in the groove behind the medial epicondyle — protect it in both fracture and surgery.</span></li>
+</ul></div>
+<figure class="media-card">
+<a class="media-image" href="assets/src/u3-proximal-humerus-fracture.png" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/src/u3-proximal-humerus-fracture.png" data-alt-zh="真实X线：肩正位，肱骨外科颈骨折，肱骨头仍在关节盂内" data-alt-en="Real radiograph: AP shoulder; surgical-neck fracture of the proximal humerus, head still seated in the glenoid" alt="真实X线：肩正位，肱骨外科颈骨折，肱骨头仍在关节盂内"></a>
+<figcaption><span class="cap-label"><span class="zh">图 3-1　</span><span class="en">Fig 3-1　</span></span><span class="zh">真实 X 线：肩关节正位，肱骨外科颈骨折（黑色箭头示骨折线），肱骨头仍位于关节盂内。教学观察点：按头、大结节、小结节、干四部分清点受累节段；但分类不等于手术指征。局限：单一体位；肱骨头血供状态 X 线不可见，缺血风险需结合骨折类型综合判断。独立来源影像，与练习病例无关。</span><span class="en">Real radiograph: AP shoulder; surgical-neck fracture of the proximal humerus (black arrow marks the fracture line); the humeral head remains seated in the glenoid. Teaching point: count the involved segments (head, greater/lesser tuberosity, shaft) — yet classification is not an operative indication. Limitation: single projection; humeral-head vascularity is not visible on plain radiographs. Independent source image, separate from the practice vignette.</span><span class="credit"><span class="zh">图片：James Heilman, MD（Wikimedia Commons），CC BY-SA 3.0（<a href="https://commons.wikimedia.org/wiki/File:Proxhumerousfrac.png">原文件页</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0">许可</a>）</span><span class="en">Image: James Heilman, MD (Wikimedia Commons), CC BY-SA 3.0 (<a href="https://commons.wikimedia.org/wiki/File:Proxhumerousfrac.png">file page</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0">licence</a>)</span></span></figcaption>
+</figure>
+<figure class="media-card">
+<a class="media-image" href="assets/src/u3-humeral-shaft-fracture.png" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/src/u3-humeral-shaft-fracture.png" data-alt-zh="真实X线：左肱骨正位，骨干中段骨折伴移位" data-alt-en="Real radiograph: AP left humerus; midshaft fracture with displacement" alt="真实X线：左肱骨正位，骨干中段骨折伴移位"></a>
+<figcaption><span class="cap-label"><span class="zh">图 3-2　</span><span class="en">Fig 3-2　</span></span><span class="zh">真实 X 线：左肱骨正位，骨干中段骨折伴移位（红色箭头为上传者标注）。教学观察点：肱骨干骨折必须在初评及每次操作前后记录桡神经功能（垂腕、虎口区感觉）。局限：神经本身 X 线不可见，神经功能靠查体评估。独立来源影像，与练习病例无关。</span><span class="en">Real radiograph: AP left humerus; midshaft fracture with displacement (red arrow added by the uploader). Teaching point: document radial nerve function (wrist drop, dorsal first-web sensation) at initial assessment and before/after each manipulation. Limitation: the nerve itself is invisible on radiographs — assess by examination. Independent source image, separate from the practice vignette.</span><span class="credit"><span class="zh">图片：James Heilman, MD（Wikimedia Commons），CC BY-SA 4.0（<a href="https://commons.wikimedia.org/wiki/File:MidShaftHumerousMark.png">原文件页</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0">许可</a>）</span><span class="en">Image: James Heilman, MD (Wikimedia Commons), CC BY-SA 4.0 (<a href="https://commons.wikimedia.org/wiki/File:MidShaftHumerousMark.png">file page</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0">licence</a>)</span></span></figcaption>
+</figure>
+
+</div>
+
+<div class="sec"><h3><span class="zh">3.2　初评和红旗</span><span class="en">3.2　Initial Assessment &amp; Red Flags</span></h3>
+<ul class="tight">
+<li><span class="zh">视诊触诊：畸形、肿胀、压痛部位定位骨折节段；检查皮肤完整性。</span><span class="en">Inspection and palpation: deformity, swelling and point tenderness localise the segment; check skin integrity.</span></li>
+<li><span class="zh">三个部位各有必须查的神经：近端—腋神经；骨干—桡神经；远端—尺神经（兼查正中/桡神经）。</span><span class="en">Each region has its must-check nerve: proximal — axillary; shaft — radial; distal — ulnar (plus median/radial).</span></li>
+<li><span class="zh">血管：触桡动脉搏动；高能量损伤警惕血管损伤。</span><span class="en">Vascular: palpate the radial pulse; remain vigilant in high-energy injuries.</span></li>
+</ul>
+<div class="redflag"><strong><span class="zh">红旗</span><span class="en">Red flags</span></strong>
+<ul class="tight">
+<li><span class="zh">垂腕 / 虎口区麻木：桡神经损伤（骨干骨折最常见）。</span><span class="en">Wrist drop / dorsal hand numbness: radial nerve injury (most common with shaft fractures).</span></li>
+<li><span class="zh">手部小指侧麻木、夹纸无力：尺神经症状（远端骨折）。</span><span class="en">Ulnar-sided hand numbness, weak finger adduction: ulnar nerve symptoms (distal fractures).</span></li>
+<li><span class="zh">进行性加重的剧痛、被动牵拉痛：警惕骨筋膜室综合征。</span><span class="en">Progressively worsening severe pain, pain on passive stretch: suspect compartment syndrome.</span></li>
+<li><span class="zh">开放性骨折：按开放性骨折流程（清创、抗生素、破伤风）处理。</span><span class="en">Open fracture: manage per open-fracture protocol (debridement, antibiotics, tetanus).</span></li>
+</ul></div>
+</div>
+
+<div class="sec"><h3><span class="zh">3.3　影像 / 分类</span><span class="en">3.3　Imaging / Classification</span></h3>
+<ul class="tight">
+<li><span class="zh">常规：肱骨正侧位 X 线（含上下关节）。</span><span class="en">Routine: AP and lateral humerus radiographs (including adjacent joints).</span></li>
+<li><span class="zh">近端复杂骨折：CT 明确节段移位与关节面情况。</span><span class="en">Complex proximal fractures: CT to define segment displacement and articular involvement.</span></li>
+<li><span class="zh">远端关节内骨折：CT（含三维）明确柱与关节面粉碎程度。</span><span class="en">Distal intra-articular fractures: CT (with 3D) to define column and articular comminution.</span></li>
+</ul>
+<details><summary><span class="zh">展开：分类概念（不等于手术指征）</span><span class="en">Expand: classification concepts (not operative indications)</span></summary>
+<ul class="tight">
+<li><span class="zh">近端：Neer 四部分概念——按移位的解剖节段（头、大结节、小结节、干）计数。</span><span class="en">Proximal: Neer's four-segment concept — counting displaced anatomic segments (head, greater/lesser tuberosity, shaft).</span></li>
+<li><span class="zh">骨干：按骨折线形态（横形、斜形、螺旋形、粉碎）与部位（上/中/下 1/3）描述。</span><span class="en">Shaft: described by fracture-line pattern (transverse, oblique, spiral, comminuted) and location (proximal/middle/distal third).</span></li>
+<li><span class="zh">远端：按是否累及关节面、柱的完整性描述（部分关节内 / 完全关节内）。</span><span class="en">Distal: described by articular involvement and column integrity (partial- vs complete-articular).</span></li>
+<li><span class="zh">以上分类用于沟通与记录；是否手术取决于移位程度、稳定性、患者年龄功能需求与骨质量。</span><span class="en">These classifications aid communication and documentation; operative decisions depend on displacement, stability, the patient's age and functional demands, and bone quality.</span></li>
+</ul>
+</details>
+</div>
+
+<div class="sec"><h3><span class="zh">3.4　AO 原则如何适用</span><span class="en">3.4　How AO Principles Apply</span></h3>
+<ul class="tight">
+<li><span class="zh">近端：血供保护优先——肱骨头缺血坏死是主要顾虑，粉碎严重时固定与血供之间需权衡。</span><span class="en">Proximal: blood-supply preservation first — humeral head avascular necrosis is the main concern; weigh fixation against perfusion in severe comminution.</span></li>
+<li><span class="zh">骨干：根据骨折模式、软组织条件、伴随损伤与患者功能需求，在功能支具保守与手术之间选择；两者都是合理选项，关键是与适应证匹配。</span><span class="en">Shaft: choose between functional bracing and surgery based on fracture pattern, soft-tissue condition, associated injuries and the patient's functional demands; both are legitimate options — matching the indication is what matters.</span></li>
+<li><span class="zh">远端（成人关节内）：解剖复位 + 双柱稳定固定 + 早期活动，三者缺一不可。</span><span class="en">Distal (adult intra-articular): anatomic reduction + bicolumnar stable fixation + early motion — all three are essential.</span></li>
+</ul>
+</div>
+
+<div class="sec"><h3><span class="zh">3.5　治疗选择与限制</span><span class="en">3.5　Treatment Options &amp; Limits</span></h3>
+<div class="subblock"><h4><span class="tag"><span class="zh">近端</span><span class="en">Proximal</span></span><span class="zh">多数可保守，手术看移位与患者</span><span class="en">Mostly non-operative; surgery depends on displacement &amp; patient</span></h4>
+<ul class="tight">
+<li><span class="zh">无移位 / 轻度移位：悬吊制动后渐进康复，多数愈合良好。</span><span class="en">Non-displaced / minimally displaced: sling then progressive rehabilitation; most heal well.</span></li>
+<li><span class="zh">移位明显的两部分、三部分骨折：年轻、骨质量好 → 多考虑切开复位内固定。</span><span class="en">Displaced two- or three-part fractures: young patients with good bone → usually open reduction and internal fixation.</span></li>
+<li><span class="zh">高龄、粉碎、骨质量差的四部分骨折：固定困难时可考虑关节置换，个体化决策。</span><span class="en">Elderly patients with comminuted four-part fractures and poor bone: arthroplasty may be considered when fixation is unfeasible — individualised.</span></li>
+</ul></div>
+<div class="subblock"><h4><span class="tag"><span class="zh">骨干</span><span class="en">Shaft</span></span><span class="zh">按骨折与患者情况选择支具或手术，警惕桡神经</span><span class="en">Brace or surgery by fracture and patient factors; watch the radial nerve</span></h4>
+<ul class="tight">
+<li><span class="zh">功能支具 / 悬吊 + 早期肩肘活动：适用于骨折模式稳定、软组织条件好、无伴随损伤需手术者。</span><span class="en">Functional bracing / sling + early shoulder-elbow motion: for stable fracture patterns, good soft-tissue conditions and no associated injuries requiring surgery.</span></li>
+<li><span class="zh">原发性桡神经损伤：多为牵拉伤，观察随访为主，记录基线功能。</span><span class="en">Primary radial nerve injury: usually a traction injury — observe with follow-up; document baseline function.</span></li>
+<li><span class="zh">手术指征（示例非穷尽）：开放骨折、血管损伤需修复、浮肘、多发伤需早期活动、复位后无法维持可接受对线。</span><span class="en">Operative indications (not exhaustive): open fracture, vascular injury needing repair, floating elbow, polytrauma needing early mobilisation, unacceptable alignment that cannot be maintained.</span></li>
+<li><span class="zh">Holstein-Lewis 骨折合并桡神经损伤：警惕神经嵌顿，需专科评估。</span><span class="en">Holstein-Lewis fracture with radial nerve injury: beware entrapment — specialist assessment needed.</span></li>
+</ul></div>
+<div class="subblock"><h4><span class="tag"><span class="zh">远端</span><span class="en">Distal</span></span><span class="zh">成人关节内多需手术</span><span class="en">Adult intra-articular often operative</span></h4>
+<ul class="tight">
+<li><span class="zh">关节外 / 轻度移位：可保守，但需保证早期活动防僵硬。</span><span class="en">Extra-articular / minimally displaced: may be non-operative, but ensure early motion to prevent stiffness.</span></li>
+<li><span class="zh">成人关节内移位骨折：解剖复位 + 内外侧柱稳定固定，术后早期活动。</span><span class="en">Displaced adult intra-articular fractures: anatomic reduction + stable medial-lateral column fixation, then early motion.</span></li>
+<li><span class="zh">术中保护尺神经；粉碎严重的高龄患者可个体化考虑置换选项。</span><span class="en">Protect the ulnar nerve intra-operatively; in severely comminuted elderly fractures, replacement may be individualised.</span></li>
+</ul></div>
+<details><summary><span class="zh">展开：限制与注意事项</span><span class="en">Expand: limits and cautions</span></summary>
+<ul class="tight">
+<li><span class="zh">本课程不给出具体成角/短缩数值标准；“可接受对线”按 AO Surgery Reference 与本院流程判断。</span><span class="en">This course gives no numeric angulation/shortening cut-offs; "acceptable alignment" follows AO Surgery Reference and local protocols.</span></li>
+<li><span class="zh">不编造药物剂量与抗生素方案；开放性骨折用药遵循本院流程。</span><span class="en">No drug doses or antibiotic regimens are given here; follow local protocols for open fractures.</span></li>
+<li><span class="zh">三个部位不共用同一治疗方案，决策时回到各部位的解剖与功能目标。</span><span class="en">The three regions do not share one protocol; return to each region's anatomy and functional goals when deciding.</span></li>
+</ul>
+</details>
+</div>
+
+<div class="sec"><h3><span class="zh">3.6　并发症 / 随访</span><span class="en">3.6　Complications / Follow-up</span></h3>
+<ul class="tight">
+<li><span class="zh">近端：肱骨头缺血坏死、骨折不愈合/畸形愈合、肩关节僵硬。</span><span class="en">Proximal: humeral head avascular necrosis, nonunion/malunion, shoulder stiffness.</span></li>
+<li><span class="zh">骨干：桡神经损伤（观察恢复情况）、骨不连（警惕长期不愈合）。</span><span class="en">Shaft: radial nerve injury (monitor recovery), nonunion (watch for delayed healing).</span></li>
+<li><span class="zh">远端：肘关节僵硬（最常见）、尺神经症状、创伤性关节炎、内固定相关问题。</span><span class="en">Distal: elbow stiffness (most common), ulnar nerve symptoms, post-traumatic arthritis, implant-related issues.</span></li>
+<li><span class="zh">随访：X 线愈合进展、神经功能恢复、关节活动度；康复贯穿全程。</span><span class="en">Follow-up: radiographic healing, nerve recovery, range of motion; rehabilitation throughout.</span></li>
+</ul>
+</div>
+
+<div class="sec"><h3><span class="zh">3.7　病例自测</span><span class="en">3.7　Case Self-Test</span></h3>
+<div class="case">
+<h4><span class="zh">病例 3-1（分段揭晓）</span><span class="en">Case 3-1 (step-by-step reveal)</span></h4>
+<p class="synthetic"><span class="zh">注：本病例为合成教学病例，非真实患者。</span><span class="en">Note: synthetic teaching case, not a real patient.</span></p>
+<p><span class="zh">60 岁男性，车祸致左上臂剧痛、畸形。逐步揭晓。</span><span class="en">A 60-year-old man has severe left upper-arm pain and deformity after a road traffic crash. Reveal step by step.</span></p>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 1 · 查体</span><span class="en">Step 1 · Exam</span></span><br><span class="zh">左上臂中段肿胀畸形，皮肤完整。垂腕，虎口区感觉减退，桡动脉搏动可及。</span><span class="en">Swelling and deformity of the left mid-upper arm; skin intact. Wrist drop with reduced dorsal-hand sensation; radial pulse palpable.</span></div>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 2 · 影像</span><span class="en">Step 2 · Imaging</span></span><br><span class="zh">X 线：肱骨中段横形骨折，轻度成角，无明显粉碎。诊断：肱骨干骨折合并桡神经损伤（原发性）。</span><span class="en">Radiographs: transverse midshaft humeral fracture, mild angulation, no major comminution. Diagnosis: humeral shaft fracture with primary radial nerve injury.</span></div>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 3 · 决策</span><span class="en">Step 3 · Decision</span></span><br><span class="zh">骨折本身可保守（功能支具）；桡神经多为牵拉伤，先观察。记录基线神经功能，支具固定后早期肩肘活动，定期复查神经恢复与骨折愈合。</span><span class="en">The fracture itself suits non-operative care (functional bracing); the radial nerve injury is likely tractional — observe first. Document baseline nerve function, brace, begin early shoulder-elbow motion, and follow nerve recovery and union.</span></div>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 4 · 何时升级</span><span class="en">Step 4 · When to escalate</span></span><br><span class="zh">若为开放骨折、血管损伤、Holstein-Lewis 型嵌顿可疑或长期不愈合，则转手术。本例先保守+严密随访。</span><span class="en">Escalate to surgery for open fracture, vascular injury, suspected Holstein-Lewis entrapment or persistent nonunion. This case: non-operative first with close follow-up.</span></div>
+<button class="stepbtn"><span class="zh">显示下一步</span><span class="en">Reveal next step</span></button>
+</div>
+
+<div class="quiz" data-answer="C">
+<p class="q-stem"><span class="zh">Q1. 肱骨干骨折合并垂腕，最合适的初始处理是？</span><span class="en">Q1. What is the most appropriate initial management of a humeral shaft fracture with wrist drop?</span></p>
+<div class="opts">
+<button data-opt="A"><span class="zh">A. 立即急诊探查桡神经</span><span class="en">A. Immediate emergency exploration of the radial nerve</span></button>
+<button data-opt="B"><span class="zh">B. 不用记录神经功能，直接石膏固定即可</span><span class="en">B. No need to document nerve function; just apply a cast</span></button>
+<button data-opt="C"><span class="zh">C. 记录基线神经功能，按本例骨折模式选择处理（功能支具），观察神经恢复并随访</span><span class="en">C. Document baseline nerve function, choose management for this fracture pattern (functional bracing), observe and follow nerve recovery</span></button>
+<button data-opt="D"><span class="zh">D. 不做手术就不会恢复神经功能</span><span class="en">D. Surgery is mandatory, otherwise the nerve never recovers</span></button>
+</div>
+<div class="feedback"><strong><span class="zh">答案：C</span><span class="en">Answer: C</span></strong><br><span class="zh">原发性桡神经损伤多为牵拉伤，可自行恢复；关键是记录基线以便随访对比。本例为横形、中段、轻度成角、无明显粉碎，适合功能支具；若为开放骨折、血管损伤或 Holstein-Lewis 嵌顿可疑，则按手术指征处理——选择取决于骨折模式与伴随情况，而非"一律保守"。</span><span class="en">Primary radial nerve injuries are usually tractional and recover; the key is documenting baseline function for comparison. This case — transverse, midshaft, mild angulation, no major comminution — suits functional bracing; open fracture, vascular injury or suspected Holstein-Lewis entrapment would follow operative indications instead. The choice depends on fracture pattern and associated conditions, not a blanket "always non-operative".</span></div>
+</div>
+
+<div class="quiz" data-answer="B">
+<p class="q-stem"><span class="zh">Q2. 关于肱骨三个部位治疗逻辑，正确的是？</span><span class="en">Q2. Which statement about treatment logic across the three humeral regions is correct?</span></p>
+<div class="opts">
+<button data-opt="A"><span class="zh">A. 三个部位治疗原则完全相同，都应手术</span><span class="en">A. All three regions share identical principles and all need surgery</span></button>
+<button data-opt="B"><span class="zh">B. 近端多可保守、骨干按骨折模式与患者情况选支具或手术（警惕桡神经）、成人远端关节内骨折多需解剖复位固定——三个部位逻辑不同</span><span class="en">B. Proximal often non-operative, shaft: brace or surgery by fracture pattern and patient factors (watch the radial nerve), adult distal intra-articular often needs anatomic fixation — different logic per region</span></button>
+<button data-opt="C"><span class="zh">C. 只要分类相同，治疗就相同</span><span class="en">C. Identical classification always means identical treatment</span></button>
+<button data-opt="D"><span class="zh">D. 肱骨骨折都不需要康复</span><span class="en">D. Humeral fractures never need rehabilitation</span></button>
+</div>
+<div class="feedback"><strong><span class="zh">答案：B</span><span class="en">Answer: B</span></strong><br><span class="zh">分类描述损伤，不等于手术指征；三个部位解剖与功能目标不同，治疗方案不能套用。</span><span class="en">Classification describes injury, not surgical indication; the three regions differ in anatomy and functional goals, so protocols cannot be copy-pasted.</span></div>
+</div>
+</div>
+
+<div class="vidbox">
+<strong><span class="zh">官方影像资源（外链）</span><span class="en">Official imaging resources (external links)</span></strong>
+<div style="font-size:14px;margin-top:8px">
+<span class="zh">对照官方图例，复习损伤识别与处理原则：</span><span class="en">Review injury recognition and management principles alongside the official illustrations:</span>
+<ul>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-humerus/extraarticular-3-part-surgical-neck-and-tuberosity-dislocation/definition">AO Surgery Reference — 肱骨近端骨折脱位定义</a><br><span class="zh">近端骨折的 AO 定义页</span><span class="en">AO definition page for proximal humerus injuries</span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/humeral-shaft/simple-fracture-spiral/definition">AO Surgery Reference — 肱骨干简单骨折定义</a><br><span class="zh">骨干骨折定义的官方示例页</span><span class="en">Official definition page for humeral shaft fractures</span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-humerus/further-reading/anatomical-concepts">AO Surgery Reference — 肱骨远端解剖概念</a><br><span class="zh">远端双柱与关节面的官方解剖讲解</span><span class="en">Official anatomic teaching on the distal humeral columns and articular surface</span></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/20360519/">PubMed — Hettrich 2010 肱骨头血供</a><br><span class="zh">肱骨头由旋肱前/后动脉及吻合网共同供血的尸体定量研究</span><span class="en">Cadaveric quantitative study: humeral head supplied jointly by anterior/posterior circumflex arteries and anastomoses</span></li>
+</ul>
+<span class="zh">注：依 AO FAQ，AO 图例仅允许非商业演示使用；在网站转载需申请许可。本课程仅外链官方原页面，未复制、未热链任何 AO 图片。</span><span class="en">Note: per the AO FAQ, AO illustrations may be used in non-commercial presentations only; republication on a website needs permission. This course links to the official pages and copies or hotlinks no AO images.</span><br></div>
+</div>
+
+<div class="srcbox" id="src-u3">
+<h4><span class="zh">本单元来源与媒体许可</span><span class="en">Sources &amp; media licence — Unit 3</span></h4>
+<p style="background:#fff8ea;border-left:4px solid #bd8740;padding:8px 12px;border-radius:0 8px 8px 0"><span class="zh"><strong>注：</strong>“来源（已核验）”仅指该网页于访问日期可正常打开、标题与定位描述相符；不构成对本课程每条医学表述的逐条医学审核。临床决策请结合最新指南与本院流程。</span><span class="en"><strong>Note:</strong> "Source (verified)" means only that the page was accessible on the access date and that its title and scope description match; it does not constitute item-by-item medical review of every statement in this course. Base clinical decisions on current guidelines and local protocols.</span></p>
+<p><strong><span class="zh">来源 1（已核验 · 近端）</span><span class="en">Source 1 (verified · proximal)</span></strong><br>
+<a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-humerus/extraarticular-3-part-surgical-neck-and-tuberosity-dislocation/definition">Extraarticular 3-part, surgical neck and tuberosity, dislocation — definition</a><br>
+<span class="zh">定位：肱骨近端骨折脱位定义页（AO Surgery Reference，成人创伤模块）；支撑近端骨折的分类概念。</span><span class="en">Scope: proximal humerus fracture-dislocation definition page (AO Surgery Reference, adult trauma); supports proximal fracture classification concepts.</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><strong><span class="zh">来源 2（已核验 · 骨干）</span><span class="en">Source 2 (verified · shaft)</span></strong><br>
+<a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/humeral-shaft/simple-fracture-spiral/definition">12A1 Simple fracture, spiral — definition</a><br>
+<span class="zh">定位：肱骨干螺旋形骨折定义页（AO Surgery Reference，成人创伤模块）；按近 / 中 / 远 1/3 分区，明确远 1/3 桡神经风险更高；支撑骨干分类与“桡神经红旗”。</span><span class="en">Scope: humeral shaft spiral fracture definition page (AO Surgery Reference, adult trauma); zones by proximal/middle/distal third, noting higher radial-nerve risk in the distal third; supports shaft classification and the radial-nerve red flag.</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><strong><span class="zh">来源 3（已核验 · 远端）</span><span class="en">Source 3 (verified · distal)</span></strong><br>
+<a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-humerus/further-reading/anatomical-concepts">Anatomical concepts (distal humerus)</a><br>
+<span class="zh">定位：肱骨远端解剖概念页（AO Surgery Reference，成人创伤模块）；阐述内外侧柱三角稳定结构等解剖/生物力学概念，支撑“解剖与机制”。注意此为解剖页，非某型骨折的治疗页。</span><span class="en">Scope: distal humerus anatomical concepts page (AO Surgery Reference, adult trauma); covers the triangular columnar stability construct and related biomechanics; supports "Anatomy &amp; Mechanism". Note: an anatomy page, not a fracture-subtype treatment page.</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><strong><span class="zh">来源 4（已核验 · 解剖研究）</span><span class="en">Source 4 (verified · anatomic study)</span></strong><br>
+<a href="https://pubmed.ncbi.nlm.nih.gov/20360519/">Quantitative assessment of the vascularity of the proximal part of the humerus</a><br>
+<span class="zh">定位：Hettrich 等，J Bone Joint Surg Am 2010；24 具尸体肩的定量研究：后旋肱动脉对肱骨头的灌注贡献大于既往认识，结论建议手术入路与固定时保护后旋肱动脉。课程仅引用其“后旋肱动脉贡献大于既往认识、应保护软组织附着”的结论，不把该研究的比例数字外推为所有患者的固定数值。</span><span class="en">Scope: Hettrich et al., J Bone Joint Surg Am 2010; quantitative study in 24 cadaver shoulders: the posterior humeral circumflex artery contributes more perfusion to the humeral head than previously described; the authors advise protecting it during approach and fixation. This course cites only the "posterior vessel matters more than previously thought; protect soft-tissue attachments" conclusion, without extrapolating the study's proportions to all patients.</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><span class="zh"><strong>诚实标注：</strong>肱骨远端各骨折亚型的具体术式 treatment 页面未逐页打开核验，本单元未引用任何具体术式页；治疗选择章节仅给原则性分层。</span><span class="en"><strong>Honesty note:</strong> subtype-specific operative treatment pages for distal humerus fractures were not individually opened and verified; this unit cites no specific operative technique pages, and the treatment section stays at the level of principles.</span></p>
+<p><span class="zh"><strong>媒体许可：</strong>AO Surgery Reference 页面图片托管于 media.aofoundation.org，版权归 AO Foundation / 原作者所有，<strong>不可下载重传</strong>；本课程仅以外链形式引用原页面，未复制其任何图片。</span><span class="en"><strong>Media licence:</strong> images on AO Surgery Reference pages are hosted at media.aofoundation.org, © AO Foundation / original authors, <strong>not to be downloaded or re-hosted</strong>; this course links to the original pages only and reproduces none of their images.</span></p>
+<span class="zh">本单元图片（图 3-1、图 3-2）：真实 X 线/CT，逐图核验许可；作者、原标题、原 URL、许可与原 caption 见 assets/media_sources.csv，各图注含原文件页与许可链接。各图为不同患者的独立图片，非同一病例序列。</span><span class="en">Unit images (Figs 3-1, 3-2): real radiographs/CT, licences verified per image; author, original title, source URL, licence and original caption are listed in assets/media_sources.csv, and each caption links its file page and licence. Images are from different patients, not a case sequence.</span>
+</div>
+</section>
+
+<!-- ================= UNIT 4 ================= -->
+<section class="unit" id="u4">
+<h2><span class="num">4</span><span class="zh">尺桡骨骨折：骨干 / 远端 · Monteggia / Galeazzi</span><span class="en">Forearm Fractures: Shaft / Distal · Monteggia / Galeazzi</span></h2>
+<div class="unit-tools">
+  <button data-expand="u4"><span class="zh">展开本单元全部细节</span><span class="en">Expand all details in this unit</span></button>
+  <button data-collapse="u4"><span class="zh">收起本单元全部细节</span><span class="en">Collapse all details in this unit</span></button>
+</div>
+<div class="notice"><strong><span class="zh">本单元铁律</span><span class="en">Unit rule</span></strong><br><span class="zh">每一例前臂骨折，都要看肘、看腕。Monteggia 漏看肘、Galeazzi 漏看腕，是前臂创伤最经典的漏诊。</span><span class="en">For every forearm fracture, examine the elbow and the wrist. Missing the elbow in Monteggia and the wrist in Galeazzi are the classic missed diagnoses of forearm trauma.</span></div>
+
+<div class="sec"><h3><span class="zh">4.1　解剖与机制</span><span class="en">4.1　Anatomy &amp; Mechanism</span></h3>
+<ul class="tight">
+<li><span class="zh">尺桡骨通过上尺桡关节、骨间膜、下尺桡关节（DRUJ）连成一个旋转整体，前臂旋转功能依赖两骨的相对长度与对线。</span><span class="en">Radius and ulna form one rotational unit via the proximal radioulnar joint, interosseous membrane and DRUJ; forearm rotation depends on their relative length and alignment.</span></li>
+<li><span class="zh">双骨折（尺桡骨干双骨折）多为高能量直接暴力。</span><span class="en">Both-bone forearm fractures usually result from high-energy direct trauma.</span></li>
+<li><span class="zh">Monteggia：尺骨近端骨折 + 桡骨头脱位（看肘）。</span><span class="en">Monteggia: proximal ulna fracture + radial head dislocation (check the elbow).</span></li>
+<li><span class="zh">Galeazzi：桡骨干骨折 + 远端尺桡关节（DRUJ）脱位（看腕）。</span><span class="en">Galeazzi: radial shaft fracture + DRUJ dislocation (check the wrist).</span></li>
+<li><span class="zh">桡骨远端骨折：跌倒手撑地最常见；关注关节面、DRUJ 与腕管。</span><span class="en">Distal radius fracture: most commonly a fall onto the outstretched hand; assess the articular surface, DRUJ and carpal tunnel.</span></li>
+</ul>
+<figure class="media-card">
+<a class="media-image" href="assets/src/u4-galeazzi-fracture.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/src/u4-galeazzi-fracture.jpg" data-alt-zh="真实X线：桡骨干骨折合并远端尺桡关节脱位（Galeazzi损伤）" data-alt-en="Real radiographs: radial shaft fracture with DRUJ dislocation (Galeazzi injury)" alt="真实X线：桡骨干骨折合并远端尺桡关节脱位（Galeazzi损伤）"></a>
+<figcaption><span class="cap-label"><span class="zh">图 4-1　</span><span class="en">Fig 4-1　</span></span><span class="zh">真实 X 线（正侧位）：桡骨干远端短斜行骨折，合并远端尺桡关节完全脱位（白色箭头示脱位的尺骨头）——Galeazzi 损伤。教学观察点：桡骨干骨折必须检查腕关节（DRUJ），尺骨干骨折必须检查肘关节。局限：单病例；DRUJ 稳定性需结合查体与专科评估。独立来源影像，与练习病例无关。</span><span class="en">Real radiographs (AP and lateral): short oblique fracture of the distal radial shaft with complete dislocation of the distal radioulnar joint (white arrow marks the dislocated ulnar head) — a Galeazzi injury. Teaching point: always examine the wrist (DRUJ) with a radial shaft fracture, and the elbow with an ulnar shaft fracture. Limitation: single case; DRUJ stability needs clinical assessment. Independent source image, separate from the practice vignette.</span><span class="credit"><span class="zh">图片：Th. Zimmermann（Wikimedia Commons），CC BY-SA 3.0 DE（<a href="https://commons.wikimedia.org/wiki/File:Galeazzifraktur_1_THWZ.jpg">原文件页</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en">许可</a>）</span><span class="en">Image: Th. Zimmermann (Wikimedia Commons), CC BY-SA 3.0 DE (<a href="https://commons.wikimedia.org/wiki/File:Galeazzifraktur_1_THWZ.jpg">file page</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en">licence</a>)</span></span></figcaption>
+</figure>
+<figure class="media-card">
+<a class="media-image" href="assets/src/u4-colles-fracture.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/src/u4-colles-fracture.jpg" data-alt-zh="真实X线：左腕Colles骨折，桡骨远端背侧移位，合并尺骨茎突骨折" data-alt-en="Real radiographs: Colles fracture of the left wrist with dorsal displacement and ulnar styloid fracture" alt="真实X线：左腕Colles骨折，桡骨远端背侧移位，合并尺骨茎突骨折"></a>
+<figcaption><span class="cap-label"><span class="zh">图 4-2　</span><span class="en">Fig 4-2　</span></span><span class="zh">真实 X 线（正侧位）：左腕 Colles 骨折——桡骨远端骨折伴背侧移位（蓝色箭头为上传者标注），合并尺骨茎突骨折。教学观察点：评估关节面是否受累、DRUJ 是否稳定、正中神经与骨筋膜室红旗。局限：DRUJ 受累本身不等于手术指征，需结合稳定性综合判断。独立来源影像，与练习病例无关。</span><span class="en">Real radiographs (AP and lateral): Colles fracture of the left wrist — dorsally displaced distal radius fracture (blue arrows added by the uploader) with an ulnar styloid fracture. Teaching point: assess articular involvement, DRUJ stability, and median-nerve / compartment red flags. Limitation: DRUJ involvement alone is not an operative indication — judge stability comprehensively. Independent source image, separate from the practice vignette.</span><span class="credit"><span class="zh">图片：Lucien Monfils；箭头标注：Doc James（Wikimedia Commons），CC BY-SA 3.0（<a href="https://commons.wikimedia.org/wiki/File:Collesfracture.jpg">原文件页</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0">许可</a>）</span><span class="en">Image: Lucien Monfils; arrows: Doc James (Wikimedia Commons), CC BY-SA 3.0 (<a href="https://commons.wikimedia.org/wiki/File:Collesfracture.jpg">file page</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0">licence</a>)</span></span></figcaption>
+</figure>
+<details><summary><span class="zh">展开：为什么前臂双骨折多需手术？</span><span class="en">Expand: why do both-bone forearm fractures often need surgery?</span></summary>
+<ul class="tight">
+<li><span class="zh">前臂旋转功能对两骨长度与成角极敏感，闭合复位难以同时维持两骨的解剖对线。</span><span class="en">Forearm rotation is highly sensitive to the length and angulation of both bones; closed reduction struggles to hold anatomic alignment of both.</span></li>
+<li><span class="zh">畸形愈合 → 旋转受限，这是前臂骨折区别于肱骨干骨折的关键。</span><span class="en">Malunion → loss of rotation. This is what sets forearm fractures apart from humeral shaft fractures.</span></li>
+</ul>
+</details>
+</div>
+
+<div class="sec"><h3><span class="zh">4.2　初评和红旗</span><span class="en">4.2　Initial Assessment &amp; Red Flags</span></h3>
+<ul class="tight">
+<li><span class="zh">查骨折局部：畸形、肿胀、压痛、皮肤完整性。</span><span class="en">Examine the fracture site: deformity, swelling, tenderness, skin integrity.</span></li>
+<li><span class="zh">查肘：桡骨头有无脱位（Monteggia）。查腕：DRUJ 有无脱位、腕部压痛（Galeazzi）。</span><span class="en">Check the elbow: radial head dislocation (Monteggia). Check the wrist: DRUJ dislocation, wrist tenderness (Galeazzi).</span></li>
+<li><span class="zh">神经血管：桡动脉搏动；正中/尺/桡神经；骨间后神经（Monteggia 合并桡骨头脱位时）。</span><span class="en">Neurovascular: radial pulse; median/ulnar/radial nerves; posterior interosseous nerve (with Monteggia radial-head dislocation).</span></li>
+</ul>
+<div class="redflag"><strong><span class="zh">红旗</span><span class="en">Red flags</span></strong>
+<ul class="tight">
+<li><span class="zh">急性腕管综合征：桡骨远端骨折后正中神经分布区进行性麻木、疼痛加剧。</span><span class="en">Acute carpal tunnel syndrome: progressive median-nerve numbness and worsening pain after distal radius fracture.</span></li>
+<li><span class="zh">骨筋膜室综合征：前臂张力性肿胀、被动牵拉痛。</span><span class="en">Compartment syndrome: tense forearm swelling, pain on passive stretch.</span></li>
+<li><span class="zh">开放性骨折 / 皮肤破损。</span><span class="en">Open fracture / skin breach.</span></li>
+<li><span class="zh">单骨骨折 X 线：必须追看肘与腕，否则 Monteggia / Galeazzi 漏诊。</span><span class="en">Single-bone fracture on X-ray: must review elbow and wrist, or Monteggia/Galeazzi will be missed.</span></li>
+</ul></div>
+</div>
+
+<div class="sec"><h3><span class="zh">4.3　影像 / 分类</span><span class="en">4.3　Imaging / Classification</span></h3>
+<ul class="tight">
+<li><span class="zh">常规：前臂正侧位 X 线，必须包含肘关节与腕关节。</span><span class="en">Routine: AP and lateral forearm radiographs — must include the elbow and the wrist.</span></li>
+<li><span class="zh">桡骨远端：加腕关节正侧位，评估关节面台阶、DRUJ 对合。</span><span class="en">Distal radius: add wrist AP/lateral views to assess articular step and DRUJ congruity.</span></li>
+<li><span class="zh">复杂关节内骨折：CT 明确关节面粉碎与移位。</span><span class="en">Complex intra-articular fractures: CT to define articular comminution and displacement.</span></li>
+</ul>
+<details><summary><span class="zh">展开：分类概念</span><span class="en">Expand: classification concepts</span></summary>
+<ul class="tight">
+<li><span class="zh">骨干：单骨 vs 双骨；骨折线形态与部位；是否合并关节脱位（Monteggia / Galeazzi 为特殊类型）。</span><span class="en">Shaft: single- vs both-bone; fracture-line pattern and location; associated joint dislocation (Monteggia/Galeazzi as special types).</span></li>
+<li><span class="zh">远端：关节外 vs 部分关节内 vs 完全关节内；DRUJ 是否受累。</span><span class="en">Distal: extra-articular vs partial-articular vs complete-articular; DRUJ involvement or not.</span></li>
+<li><span class="zh">分类用于描述，不等于手术指征。</span><span class="en">Classification describes; it is not an operative indication.</span></li>
+</ul>
+</details>
+</div>
+
+<div class="sec"><h3><span class="zh">4.4　AO 原则如何适用</span><span class="en">4.4　How AO Principles Apply</span></h3>
+<ul class="tight">
+<li><span class="zh">解剖复位在这里有功能含义：恢复两骨长度、对线与旋转对合，不只是“接上”。</span><span class="en">Anatomic reduction here has functional meaning: restoring length, alignment and rotational congruity of both bones — not just "joining" them.</span></li>
+<li><span class="zh">稳定固定：为早期功能锻炼创造条件；但若合并 DRUJ 损伤（如 Galeazzi），韧带愈合需优先保护，旋转锻炼须待稳定性确认后进行，不可过早自由旋转。</span><span class="en">Stable fixation: creates the conditions for early functional exercise; but with DRUJ injury (e.g. Galeazzi), ligament healing takes priority — rotational exercises only after stability is confirmed, never early free rotation.</span></li>
+<li><span class="zh">保护血供：前臂软组织包被少，手术入路注意保护皮神经与肌腱。</span><span class="en">Preserve blood supply: thin soft-tissue envelope — protect cutaneous nerves and tendons in surgical approaches.</span></li>
+<li><span class="zh">Monteggia / Galeazzi：复位的核心是恢复脱位关节的对合，骨折固定为关节稳定服务。</span><span class="en">Monteggia/Galeazzi: the core of reduction is restoring the dislocated joint; fracture fixation serves joint stability.</span></li>
+</ul>
+</div>
+
+<div class="sec"><h3><span class="zh">4.5　治疗选择与限制</span><span class="en">4.5　Treatment Options &amp; Limits</span></h3>
+<div class="subblock"><h4><span class="tag"><span class="zh">骨干双骨折</span><span class="en">Both-bone shaft</span></span><span class="zh">成人多需手术恢复旋转功能</span><span class="en">Adults often need surgery to restore rotation</span></h4>
+<ul class="tight">
+<li><span class="zh">成人尺桡骨干双骨折：多需切开复位内固定，恢复两骨解剖对线。</span><span class="en">Adult both-bone diaphyseal fractures: usually open reduction and internal fixation to restore anatomic alignment of both bones.</span></li>
+<li><span class="zh">术后在骨折稳定固定、且 DRUJ 无损伤的前提下，早期开始前臂旋转锻炼。</span><span class="en">After surgery, provided fixation is stable and the DRUJ is intact, begin forearm rotation exercises early.</span></li>
+</ul></div>
+<div class="subblock"><h4><span class="tag"><span class="zh">Monteggia / Galeazzi</span><span class="en">Monteggia / Galeazzi</span></span><span class="zh">先认出，再按关节处理</span><span class="en">Recognise first, then treat the joint</span></h4>
+<ul class="tight">
+<li><span class="zh">Monteggia：复位固定尺骨骨折，恢复桡骨头对合；检查桡骨头稳定性与骨间后神经。</span><span class="en">Monteggia: reduce and fix the ulna fracture, restore radial head congruity; check radial head stability and the posterior interosseous nerve.</span></li>
+<li><span class="zh">Galeazzi：复位固定桡骨骨折，评估 DRUJ 稳定性；DRUJ 不稳定需同期处理。术后将前臂置于 DRUJ 最稳定的旋转体位制动以保护韧带愈合，旋转锻炼待稳定性确认后再开始。</span><span class="en">Galeazzi: reduce and fix the radius fracture, assess DRUJ stability; unstable DRUJ needs concurrent management. Post-operatively, splint the forearm in the rotational position where the DRUJ is most stable to protect ligament healing; rotational exercises only after stability is confirmed.</span></li>
+<li><span class="zh">两者都不是“单纯前臂骨折”，漏诊即治疗错误。</span><span class="en">Neither is "just a forearm fracture" — missing the diagnosis means wrong treatment.</span></li>
+</ul></div>
+<div class="subblock"><h4><span class="tag"><span class="zh">桡骨远端</span><span class="en">Distal radius</span></span><span class="zh">按关节受累与稳定性分层</span><span class="en">Stratify by articular involvement &amp; stability</span></h4>
+<ul class="tight">
+<li><span class="zh">关节外、稳定：闭合复位 + 石膏/支具，多可保守。</span><span class="en">Extra-articular and stable: closed reduction + cast/brace; often non-operative.</span></li>
+<li><span class="zh">关节内明显移位或整体不稳定：多需手术恢复关节面。</span><span class="en">Markedly displaced intra-articular fractures or overall instability: usually operative to restore the articular surface.</span></li>
+<li><span class="zh">DRUJ 受累本身不等于手术指征：仅受累而稳定者可保守并随访；持续不稳定或移位者，结合年龄、功能需求、关节面情况与整体稳定性综合决定。</span><span class="en">DRUJ involvement alone is not a surgical indication: stable involvement may be managed non-operatively with follow-up; persistent instability or displacement calls for an individualised decision integrating age, functional demands, articular status and overall stability.</span></li>
+<li><span class="zh">复位后复查：X 线对位、DRUJ、腕管症状。</span><span class="en">Post-reduction recheck: radiographic alignment, DRUJ, carpal tunnel symptoms.</span></li>
+</ul></div>
+<details><summary><span class="zh">展开：限制与注意事项</span><span class="en">Expand: limits and cautions</span></summary>
+<ul class="tight">
+<li><span class="zh">本课程不给出具体成角数值标准与内固定型号选择，遵循 AO Surgery Reference 与本院流程。</span><span class="en">No numeric angulation cut-offs or implant choices are given; follow AO Surgery Reference and local protocols.</span></li>
+<li><span class="zh">急性腕管综合征是急症：进行性正中神经症状需紧急处理，不要等待观察。</span><span class="en">Acute carpal tunnel syndrome is an emergency: progressive median-nerve symptoms need urgent management, not watchful waiting.</span></li>
+</ul>
+</details>
+</div>
+
+<div class="sec"><h3><span class="zh">4.6　并发症 / 随访</span><span class="en">4.6　Complications / Follow-up</span></h3>
+<ul class="tight">
+<li><span class="zh">旋转功能受限：前臂骨折最特征的并发症，康复重点。</span><span class="en">Loss of rotation: the signature complication of forearm fractures; the focus of rehabilitation.</span></li>
+<li><span class="zh">骨不连 / 畸形愈合：尤其双骨折对线不良者。</span><span class="en">Nonunion / malunion: especially with poor alignment in both-bone fractures.</span></li>
+<li><span class="zh">DRUJ 不稳定、创伤性关节炎（腕关节）。</span><span class="en">DRUJ instability, post-traumatic wrist arthritis.</span></li>
+<li><span class="zh">肌腱粘连、骨间膜挛缩、神经症状残留。</span><span class="en">Tendon adhesions, interosseous membrane contracture, residual neurologic symptoms.</span></li>
+<li><span class="zh">随访：X 线愈合、旋转活动度、DRUJ 稳定性、神经恢复。</span><span class="en">Follow-up: radiographic healing, rotational motion, DRUJ stability, nerve recovery.</span></li>
+</ul>
+</div>
+
+<div class="sec"><h3><span class="zh">4.7　病例自测</span><span class="en">4.7　Case Self-Test</span></h3>
+<div class="case">
+<h4><span class="zh">病例 4-1（分段揭晓）</span><span class="en">Case 4-1 (step-by-step reveal)</span></h4>
+<p class="synthetic"><span class="zh">注：本病例为合成教学病例，非真实患者。</span><span class="en">Note: synthetic teaching case, not a real patient.</span></p>
+<p><span class="zh">30 岁男性，跌倒后左前臂剧痛、畸形。逐步揭晓。</span><span class="en">A 30-year-old man has severe left forearm pain and deformity after a fall. Reveal step by step.</span></p>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 1 · 查体</span><span class="en">Step 1 · Exam</span></span><br><span class="zh">前臂中段畸形，皮肤完整，桡动脉搏动可及。按铁律查肘查腕：肘部压痛不明显，腕部尺侧压痛明显、DRUJ 区饱满。</span><span class="en">Mid-forearm deformity; skin intact; radial pulse palpable. Per the unit rule, check elbow and wrist: elbow non-tender, but marked ulnar-sided wrist tenderness with a prominent DRUJ.</span></div>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 2 · 影像</span><span class="en">Step 2 · Imaging</span></span><br><span class="zh">前臂正侧位（含肘腕）：桡骨干中段骨折、成角移位；腕关节 DRUJ 间隙增宽、尺骨头向背侧半脱位。诊断：Galeazzi 损伤。</span><span class="en">Forearm AP/lateral including elbow and wrist: midshaft radial fracture with angulation; widened DRUJ with dorsal subluxation of the ulnar head. Diagnosis: Galeazzi injury.</span></div>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 3 · 决策</span><span class="en">Step 3 · Decision</span></span><br><span class="zh">这不是单纯桡骨骨折。手术复位固定桡骨，术中评估 DRUJ 稳定性；若 DRUJ 不稳定，同期稳定 DRUJ。术后将前臂置于 DRUJ 最稳定的旋转体位制动（控制旋转，促进韧带愈合），旋转锻炼待稳定性确认后再开始；若 DRUJ 明显不稳定需克氏针临时固定，则制动期间禁止前臂旋转。</span><span class="en">Not just a radial fracture. Operative reduction and fixation of the radius with intra-operative DRUJ stability assessment; stabilise the DRUJ concurrently if unstable. Post-operatively, splint the forearm in the rotational position where the DRUJ is most stable (controlling rotation to allow ligament healing); begin rotational exercises only after stability is confirmed. If gross DRUJ instability requires temporary K-wire transfixation, forearm rotation is prohibited during immobilisation.</span></div>
+<div class="cstep"><span class="step-tag"><span class="zh">步骤 4 · 教训</span><span class="en">Step 4 · Lesson</span></span><br><span class="zh">若只看前臂正侧位中央段、X 线未包含腕关节，DRUJ 脱位将被漏诊，单纯固定桡骨会导致腕关节慢性不稳定。</span><span class="en">Had the radiograph not included the wrist, the DRUJ dislocation would have been missed, and fixing only the radius would leave chronic wrist instability.</span></div>
+<button class="stepbtn"><span class="zh">显示下一步</span><span class="en">Reveal next step</span></button>
+</div>
+
+<div class="quiz" data-answer="B">
+<p class="q-stem"><span class="zh">Q1. 前臂 X 线显示单纯尺骨干骨折，接下来的关键动作是？</span><span class="en">Q1. Forearm radiographs show an isolated ulnar shaft fracture. What is the key next step?</span></p>
+<div class="opts">
+<button data-opt="A"><span class="zh">A. 直接石膏固定，无需再看其他部位</span><span class="en">A. Apply a cast directly; no need to look elsewhere</span></button>
+<button data-opt="B"><span class="zh">B. 确认 X 线包含肘关节，检查桡骨头有无脱位（排除 Monteggia）</span><span class="en">B. Confirm the radiograph includes the elbow; check for radial head dislocation (exclude Monteggia)</span></button>
+<button data-opt="C"><span class="zh">C. 只复查腕关节</span><span class="en">C. Only re-examine the wrist</span></button>
+<button data-opt="D"><span class="zh">D. 立即手术固定尺骨</span><span class="en">D. Immediate operative fixation of the ulna</span></button>
+</div>
+<div class="feedback"><strong><span class="zh">答案：B</span><span class="en">Answer: B</span></strong><br><span class="zh">尺骨骨折 + 桡骨头脱位 = Monteggia。单骨骨折必须看相邻关节，这是前臂创伤的铁律。</span><span class="en">Ulna fracture + radial head dislocation = Monteggia. Single-bone fractures demand assessment of the adjacent joint — the iron rule of forearm trauma.</span></div>
+</div>
+
+<div class="quiz" data-answer="D">
+<p class="q-stem"><span class="zh">Q2. 桡骨远端骨折复位固定后，患者诉拇指、示指进行性麻木、胀痛加重，应首先考虑？</span><span class="en">Q2. After reduction and fixation of a distal radius fracture, the patient reports progressive thumb/index numbness and worsening swelling pain. First consideration?</span></p>
+<div class="opts">
+<button data-opt="A"><span class="zh">A. 正常术后反应，观察即可</span><span class="en">A. Normal post-operative response; observe</span></button>
+<button data-opt="B"><span class="zh">B. 石膏太松，加固即可</span><span class="en">B. Cast too loose; just reinforce it</span></button>
+<button data-opt="C"><span class="zh">C. 抬高患肢 24 小时再看</span><span class="en">C. Elevate for 24 hours and see</span></button>
+<button data-opt="D"><span class="zh">D. 急性腕管综合征 / 骨筋膜室综合征可能，立即评估处理</span><span class="en">D. Possible acute carpal tunnel / compartment syndrome — assess and manage immediately</span></button>
+</div>
+<div class="feedback"><strong><span class="zh">答案：D</span><span class="en">Answer: D</span></strong><br><span class="zh">进行性正中神经分布区麻木 + 疼痛加重是红旗，需立即评估腕管压力与前臂骨筋膜室，必要时紧急减压。等待观察可致不可逆损伤。</span><span class="en">Progressive median-nerve numbness with worsening pain is a red flag — urgently assess carpal tunnel pressure and forearm compartments; decompress emergently if needed. Waiting risks irreversible damage.</span></div>
+</div>
+</div>
+
+<div class="vidbox">
+<strong><span class="zh">官方影像资源（外链）</span><span class="en">Official imaging resources (external links)</span></strong>
+<div style="font-size:14px;margin-top:8px">
+<span class="zh">对照官方图例，复习损伤识别与处理原则：</span><span class="en">Review injury recognition and management principles alongside the official illustrations:</span>
+<ul>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/forearm-shaft/simple-fracture-of-the-ulna-with-dislocation-of-proximal-radioulnar-joint-monteggia">AO Surgery Reference — Monteggia 损伤</a><br><span class="zh">尺骨骨折合并桡骨头脱位的官方定义页</span><span class="en">Official definition page: ulna fracture with radial head dislocation</span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/forearm-shaft/simple-fracture-of-the-radius-with-dislocation-of-distal-radioulnar-joint-galeazzi">AO Surgery Reference — Galeazzi 损伤</a><br><span class="zh">桡骨骨折合并 DRUJ 脱位的官方定义页</span><span class="en">Official definition page: radius fracture with DRUJ dislocation</span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/forearm-shaft/basic-technique/druj-stabilization-galeazzi-fracture-dislocation">AO Surgery Reference — Galeazzi DRUJ 稳定技术</a><br><span class="zh">DRUJ 稳定的官方技术讲解</span><span class="en">Official technique teaching on DRUJ stabilization</span></li>
+<li><a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-forearm/partial-articular-fracture-of-the-radius-involving-the-volar-rim/orif-palmar-plate">AO Surgery Reference — 桡骨远端掌侧钢板</a><br><span class="zh">桡骨远端部分关节内骨折的官方处理页</span><span class="en">Official management page for partial articular distal radius fractures</span></li>
+</ul>
+<span class="zh">注：依 AO FAQ，AO 图例仅允许非商业演示使用；在网站转载需申请许可。本课程仅外链官方原页面，未复制、未热链任何 AO 图片。</span><span class="en">Note: per the AO FAQ, AO illustrations may be used in non-commercial presentations only; republication on a website needs permission. This course links to the official pages and copies or hotlinks no AO images.</span><br></div>
+</div>
+
+<div class="srcbox" id="src-u4">
+<h4><span class="zh">本单元来源与媒体许可</span><span class="en">Sources &amp; media licence — Unit 4</span></h4>
+<p style="background:#fff8ea;border-left:4px solid #bd8740;padding:8px 12px;border-radius:0 8px 8px 0"><span class="zh"><strong>注：</strong>“来源（已核验）”仅指该网页于访问日期可正常打开、标题与定位描述相符；不构成对本课程每条医学表述的逐条医学审核。临床决策请结合最新指南与本院流程。</span><span class="en"><strong>Note:</strong> "Source (verified)" means only that the page was accessible on the access date and that its title and scope description match; it does not constitute item-by-item medical review of every statement in this course. Base clinical decisions on current guidelines and local protocols.</span></p>
+<p><strong><span class="zh">来源 1（已核验 · Monteggia）</span><span class="en">Source 1 (verified · Monteggia)</span></strong><br>
+<a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/forearm-shaft/simple-fracture-of-the-ulna-with-dislocation-of-proximal-radioulnar-joint-monteggia">Simple fracture of the ulna, with dislocation of proximal radioulnar joint (Monteggia)</a><br>
+<span class="zh">定位：Monteggia 损伤治疗模块入口页（AO Surgery Reference，成人创伤模块，含诊断 → 适应证 → 治疗导航）；支撑“相邻关节受累”与 Monteggia 章节。子术式页未逐页点开。</span><span class="en">Scope: Monteggia injury treatment-module entry page (AO Surgery Reference, adult trauma, with diagnosis → indications → treatment navigation); supports the adjacent-joint and Monteggia sections. Sub-technique pages were not individually opened.</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><strong><span class="zh">来源 2（已核验 · Galeazzi）</span><span class="en">Source 2 (verified · Galeazzi)</span></strong><br>
+<a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/forearm-shaft/simple-fracture-of-the-radius-with-dislocation-of-distal-radioulnar-joint-galeazzi">Simple fracture of the radius, with dislocation of distal radioulnar joint (Galeazzi)</a><br>
+<span class="zh">定位：Galeazzi 损伤治疗模块入口页（AO Surgery Reference，成人创伤模块）；支撑 Galeazzi 章节与 DRUJ 稳定性评估。子术式页未逐页点开。</span><span class="en">Scope: Galeazzi injury treatment-module entry page (AO Surgery Reference, adult trauma); supports the Galeazzi section and DRUJ stability assessment. Sub-technique pages were not individually opened.</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><strong><span class="zh">来源 3（已核验 · 桡骨远端）</span><span class="en">Source 3 (verified · distal radius)</span></strong><br>
+<a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-forearm/partial-articular-fracture-of-the-radius-involving-the-volar-rim/orif-palmar-plate">ORIF - Palmar plate (partial articular fracture of the radius, involving the volar rim)</a><br>
+<span class="zh">定位：桡骨远端掌侧缘部分关节内骨折的掌侧接骨板 ORIF 页（AO Surgery Reference，成人创伤模块）；含复位原则、DRUJ 稳定性测试方法、术后随访；支撑治疗选择与随访章节。</span><span class="en">Scope: palmar-plate ORIF page for partial-articular volar-rim distal radius fractures (AO Surgery Reference, adult trauma); covers reduction principles, DRUJ stability testing and post-operative follow-up; supports the treatment and follow-up sections.</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><strong><span class="zh">来源 4（已核验 · Galeazzi DRUJ 处理）</span><span class="en">Source 4 (verified · Galeazzi DRUJ management)</span></strong><br>
+<a href="https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/forearm-shaft/basic-technique/druj-stabilization-galeazzi-fracture-dislocation">DRUJ stabilization (Galeazzi fracture-dislocation)</a><br>
+<span class="zh">定位：Galeazzi 损伤 DRUJ 稳定性处理基本技术页（AO Surgery Reference，成人创伤模块）；明确稳定性确认后建议以控制旋转的可拆卸支具制动 DRUJ 约 3 周以促进韧带愈合，术后制动取 DRUJ 最稳定的旋转体位，明显不稳定者克氏针临时固定 3–4 周并禁止旋转；支撑本单元 v2 康复修正（保护 DRUJ 韧带愈合、依稳定性限制旋转）。</span><span class="en">Scope: basic-technique page on DRUJ stabilisation in Galeazzi fracture-dislocation (AO Surgery Reference, adult trauma); once stability is assured, immobilise the DRUJ ~3 weeks in a rotation-controlling removable splint to allow ligament healing, splint in the most stable rotational position, and for gross instability use temporary K-wire transfixation for 3–4 weeks with rotation prohibited; supports this unit's v2 rehabilitation correction (protect DRUJ ligament healing; limit rotation by stability).</span><br>
+<span class="zh">访问日期：2026-10-04</span><span class="en">Accessed: 2026-10-04</span></p>
+<p><span class="zh"><strong>媒体许可：</strong>AO Surgery Reference 页面图片托管于 media.aofoundation.org，版权归 AO Foundation / 原作者所有，<strong>不可下载重传</strong>；本课程仅以外链形式引用原页面，未复制其任何图片。</span><span class="en"><strong>Media licence:</strong> images on AO Surgery Reference pages are hosted at media.aofoundation.org, © AO Foundation / original authors, <strong>not to be downloaded or re-hosted</strong>; this course links to the original pages only and reproduces none of their images.</span></p>
+<span class="zh">本单元图片（图 4-1、图 4-2）：真实 X 线/CT，逐图核验许可；作者、原标题、原 URL、许可与原 caption 见 assets/media_sources.csv，各图注含原文件页与许可链接。各图为不同患者的独立图片，非同一病例序列。</span><span class="en">Unit images (Figs 4-1, 4-2): real radiographs/CT, licences verified per image; author, original title, source URL, licence and original caption are listed in assets/media_sources.csv, and each caption links its file page and licence. Images are from different patients, not a case sequence.</span>
+</div>
+</section>
+
+<footer>
+<div><span class="zh">Trauma Master Academy · 成人骨科创伤 · 教学试用，待教师复核</span><span class="en">Trauma Master Academy · Adult orthopaedic trauma · Teaching pilot, pending teacher review</span></div>
+<a href="assets/media_sources.csv"><span class="zh">图片来源与许可清单</span><span class="en">Image sources and licences</span></a> · <a href="index.html"><span class="zh">返回课程目录</span><span class="en">Course index</span></a>
+</footer>
+</div><!-- /.wrap -->
+<script>
+(function(){
+  var btn=document.getElementById('langBtn');
+  function setLang(l){
+    document.documentElement.lang=(l==='en'?'en':'zh-CN');
+    document.body.classList.toggle('lang-en',l==='en');
+    btn.textContent=(l==='en'?'中文':'English');
+    document.querySelectorAll('img[data-alt-zh]').forEach(function(im){
+      im.alt=(l==='en'?im.getAttribute('data-alt-en'):im.getAttribute('data-alt-zh'));
+    });
+    try{localStorage.setItem('tma-upperlimb-lang',l);}catch(e){}
+  }
+  btn.addEventListener('click',function(){
+    setLang(document.body.classList.contains('lang-en')?'zh':'en');
+  });
+  var saved=null;try{saved=localStorage.getItem('tma-upperlimb-lang');}catch(e){}
+  if(saved==='en'){setLang('en');}
+
+  document.querySelectorAll('.quiz').forEach(function(q){
+    var ans=q.getAttribute('data-answer');
+    q.querySelectorAll('.opts button').forEach(function(b){
+      b.addEventListener('click',function(){
+        if(q.getAttribute('data-done'))return;
+        q.setAttribute('data-done','1');
+        var pick=b.getAttribute('data-opt');
+        b.classList.add('picked');
+        q.querySelectorAll('.opts button').forEach(function(x){
+          x.disabled=true;
+          if(x.getAttribute('data-opt')===ans){x.classList.add('right');}
+        });
+        if(pick!==ans){b.classList.add('wrong');}
+        var fb=q.querySelector('.feedback');
+        if(fb){fb.classList.add('show');}
+      });
+    });
+  });
+
+  document.querySelectorAll('.case').forEach(function(c){
+    var steps=c.querySelectorAll('.cstep');
+    var btn2=c.querySelector('.stepbtn');
+    var i=0;
+    if(!btn2)return;
+    btn2.addEventListener('click',function(){
+      if(i<steps.length){steps[i].classList.add('show');i++;}
+      if(i>=steps.length){btn2.style.display='none';}
+    });
+  });
+
+  document.querySelectorAll('[data-expand]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var u=document.getElementById(b.getAttribute('data-expand'));
+      if(u){u.querySelectorAll('details').forEach(function(d){d.open=true;});}
+    });
+  });
+  document.querySelectorAll('[data-collapse]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var u=document.getElementById(b.getAttribute('data-collapse'));
+      if(u){u.querySelectorAll('details').forEach(function(d){d.open=false;});}
+    });
+  });
+})();
+</script>
+</body>
+</html>

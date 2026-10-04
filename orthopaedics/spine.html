@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="创伤课程｜脊柱三单元：颈椎、胸椎、腰椎成人教学，中英双语，基于 AO Surgery Reference 与 AO Spine 官方分类。">
+<title data-zh="创伤课程｜脊柱三单元" data-en="Trauma Course | Spine: Three Units">创伤课程｜脊柱三单元</title>
+<style>
+:root{--bg:#f5f3eb;--green:#143c32;--gold:#bd8740;--ink:#2b2b28;--card:#fffdf8;--line:#e2dccb;--muted:#6b6555;--red:#b3442c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",Arial,sans-serif;line-height:1.75}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:50;background:var(--green);color:#fff;padding:12px 0;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:17px;letter-spacing:.5px}
+.brand small{font-weight:400;opacity:.75;font-size:12.5px;margin-left:8px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+button.btn{background:var(--gold);color:#fff;border:none;border-radius:8px;padding:9px 16px;font-size:14px;font-weight:700;cursor:pointer}
+button.btn:hover{filter:brightness(1.08)}
+button.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.6)}
+button.btn:disabled{opacity:.45;cursor:default}
+.hero{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--gold);border-radius:14px;padding:34px 30px;margin:28px 0}
+.hero h1{color:var(--green);margin:0 0 6px;font-size:30px;line-height:1.35}
+.hero .kicker{color:var(--gold);font-weight:800;letter-spacing:1px;font-size:13px;margin-bottom:10px}
+.hero p{margin:8px 0;color:#3d3a33}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.chip{background:#efe9d6;border:1px solid var(--line);border-radius:20px;padding:4px 14px;font-size:12.5px;color:var(--green);font-weight:600}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin:0 0 10px}
+.toc h2{color:var(--green);margin:0 0 12px;font-size:20px}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.toc-unit{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:#fbf9f3}
+.toc-unit h3{margin:0 0 8px;color:var(--green);font-size:16px}
+.toc-unit h3 a{color:var(--green);text-decoration:none}
+.toc-unit h3 a:hover{text-decoration:underline}
+.toc-unit ol{margin:0;padding-left:20px;font-size:13.5px;color:#4a463c}
+.toc-unit ol li{margin:3px 0}
+.toc-unit ol a{color:#4a463c;text-decoration:none}
+.toc-unit ol a:hover{color:var(--gold)}
+.unit{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:34px 0}
+.unit-head{background:var(--green);color:#fff;padding:22px 28px}
+.unit-head .no{color:var(--gold);font-weight:800;letter-spacing:1px;font-size:13px}
+.unit-head h2{margin:4px 0 6px;font-size:24px}
+.unit-head p{margin:0;opacity:.85;font-size:14px}
+.revealbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:#efe9d6;padding:14px 28px;border-bottom:1px solid var(--line)}
+.revealbar .reveal-count{font-size:13.5px;color:var(--green);font-weight:700}
+.revealbar button{background:var(--green);color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:13.5px;font-weight:700;cursor:pointer}
+.revealbar button.plain{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.revealbar button:disabled{opacity:.45;cursor:default}
+.sec{padding:24px 28px;border-top:1px solid var(--line)}
+.sec.hidden{display:none}
+h3.sec-title{color:var(--green);border-left:5px solid var(--gold);padding-left:12px;margin:0 0 12px;font-size:19px}
+.sec p{margin:10px 0}
+.sec ul{margin:8px 0;padding-left:22px}
+.sec li{margin:6px 0}
+details.fold{background:#faf8f1;border:1px solid var(--line);border-radius:10px;margin:14px 0}
+details.fold summary{cursor:pointer;padding:12px 16px;font-weight:700;color:var(--green);list-style:none}
+details.fold summary::-webkit-details-marker{display:none}
+details.fold summary::before{content:"▸ ";color:var(--gold)}
+details.fold[open] summary::before{content:"▾ ";color:var(--gold)}
+details.fold .fold-body{padding:0 16px 14px}
+figure{margin:18px 0;text-align:center}
+figure img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
+figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.6}
+.callout{border-left:5px solid var(--gold);background:#fbf7ec;padding:12px 16px;border-radius:0 10px 10px 0;margin:14px 0}
+.callout.red{border-left-color:var(--red);background:#faf1ec}
+.callout strong{color:var(--green)}
+.quiz{border:2px solid var(--green);border-radius:12px;padding:18px 20px;margin:16px 0;background:#fff}
+.quiz .qstem{font-weight:700;color:var(--green);margin:0 0 10px}
+.opt{display:block;width:100%;text-align:left;margin:8px 0;padding:10px 14px;border:1.5px solid #d8d2bd;border-radius:8px;background:var(--card);cursor:pointer;font-size:14.5px;line-height:1.6;color:var(--ink)}
+.opt:hover{border-color:var(--gold)}
+.opt .k{display:inline-block;min-width:26px;font-weight:800;color:var(--gold)}
+.opt.picked-correct{border-color:var(--green);background:#eef4ee}
+.opt.picked-wrong{border-color:var(--red);background:#faefec}
+.quiz.done .opt{cursor:default}
+.feedback{display:none;margin-top:12px;padding:12px 14px;border-radius:8px;background:#f2efe2;font-size:14px}
+.quiz.done .feedback{display:block}
+.feedback.fb-ok{border-left:5px solid var(--green)}
+.feedback.fb-no{border-left:5px solid var(--red)}
+.sources{background:#f7f4ea;border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:18px 28px 26px;font-size:13.5px}
+.sources h4{margin:0 0 10px;color:var(--green);font-size:16px}
+.sources ol{margin:0;padding-left:20px}
+.sources li{margin:9px 0;line-height:1.65}
+.sources a{color:var(--green);word-break:break-all}
+.sources .lic{color:var(--muted)}
+.pending{color:var(--red);font-weight:700}
+footer{background:#0f2e26;color:#d8d2c0;padding:32px 0;margin-top:40px;font-size:13px;line-height:1.8}
+footer strong{color:#fff}
+@media(max-width:640px){.hero h1{font-size:24px}.sec,.unit-head{padding-left:18px;padding-right:18px}.revealbar{padding-left:18px;padding-right:18px}.sources{margin-left:18px;margin-right:18px}}
+
+.course-video{width:100%;max-width:100%;border-radius:10px;border:1px solid var(--line);background:#000;display:block}
+.vsrc{font-size:13.5px;color:var(--muted)}
+.vsrc a{color:var(--green)}
+.seekrow{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+.seekbtn{background:#efe9d6;border:1.5px solid var(--gold);color:var(--green);border-radius:8px;padding:8px 14px;font-size:13.5px;font-weight:700;cursor:pointer}
+.seekbtn:hover{background:#f7efdc}
+@media print{.sec.hidden{display:block}.topbar .btns{display:none}.revealbar{display:none}}
+
+.srcfig{margin:1.2em 0}
+.srcfig img{max-width:100%;height:auto;border:1px solid #d8d2bd;border-radius:8px;background:#fff;display:block}
+.srcfig figcaption{font-size:.92em;line-height:1.7;margin-top:.6em;color:#3d4a43}
+.oblbl{font-weight:700;color:#143c32}
+.oblim{font-weight:700;color:#8a6d1f}
+.obsrc{color:#5f6f66;font-size:.9em}
+.obsrc a{color:#143c32;text-decoration:underline}
+.aocard{border:1px solid #bd8740;border-radius:10px;padding:1em 1.2em;background:#fbf9f3;margin:.8em 0}
+.aocard ul{margin:.5em 0;padding-left:1.3em;line-height:1.7}
+.aocard a{color:#143c32}
+</style>
+<link rel="stylesheet" href="media-reading.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span data-zh="创伤课程｜脊柱三单元" data-en="Trauma Course | Spine: Three Units">创伤课程｜脊柱三单元</span><small>Trauma Master Academy</small></div>
+    <div class="btns">
+      <button class="btn ghost" id="expandAll" data-zh="全部展开" data-en="Expand all">全部展开</button>
+      <button class="btn" id="langBtn">English</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <div class="kicker">TRAUMA MASTER ACADEMY · <span data-zh="创伤课程" data-en="TRAUMA COURSE">创伤课程</span></div>
+    <h1 data-zh="创伤课程｜脊柱三单元" data-en="Trauma Course | Spine: Three Units">创伤课程｜脊柱三单元</h1>
+    <p data-zh="成人脊柱创伤教学：颈椎骨折、胸椎骨折、腰椎骨折。每单元按「解剖与机制 → 初评与红旗 → 影像与分类 → AO 原则如何适用 → 治疗选择与限制 → 并发症与随访 → 病例自测」展开。正文用短句，细节可折叠展开，各节可分段揭晓。" data-en="Adult spine trauma teaching: cervical, thoracic, and lumbar fractures. Each unit follows: Anatomy &amp; Mechanism → Initial Assessment &amp; Red Flags → Imaging &amp; Classification → How AO Principles Apply → Treatment Options &amp; Limitations → Complications &amp; Follow-up → Case-based Quiz. Short sentences in the main text, foldable details, and step-by-step reveal per section.">成人脊柱创伤教学：颈椎骨折、胸椎骨折、腰椎骨折。每单元按「解剖与机制 → 初评与红旗 → 影像与分类 → AO 原则如何适用 → 治疗选择与限制 → 并发症与随访 → 病例自测」展开。正文用短句，细节可折叠展开，各节可分段揭晓。</p>
+    <p data-zh="分类依据 AO Surgery Reference 与 AO Spine 官方分类系统（脊柱用 AO Spine）。分类是共同语言，不直接等于手术指征；本课程不编造细分类、不给出统一复位操作指令、不涉及药物剂量。" data-en="Classification follows the official AO Surgery Reference and AO Spine systems (AO Spine for the spine). Classification is a common language, not a surgical indication; this course invents no subtypes, gives no universal reduction protocol, and lists no drug doses.">分类依据 AO Surgery Reference 与 AO Spine 官方分类系统（脊柱用 AO Spine）。分类是共同语言，不直接等于手术指征；本课程不编造细分类、不给出统一复位操作指令、不涉及药物剂量。</p>
+    <div class="chips">
+      <span class="chip" data-zh="成人教学" data-en="Adult learners">成人教学</span>
+      <span class="chip" data-zh="中英双语" data-en="Bilingual ZH/EN">中英双语</span>
+      <span class="chip" data-zh="真实影像 · 来源可溯" data-en="Real images · sourced">真实影像 · 来源可溯</span>
+      <span class="chip" data-zh="来源可核验" data-en="Verifiable sources">来源可核验</span>
+      <span class="chip" data-zh="官方资源链接" data-en="Official resource links">官方资源链接</span>
+    </div>
+  </section>
+
+  <nav class="toc" aria-label="目录">
+    <h2 data-zh="目录" data-en="Contents">目录</h2>
+    <div class="toc-grid">
+      <div class="toc-unit">
+        <h3><a href="#unit1" data-zh="单元一 · 颈椎骨折" data-en="Unit 1 · Cervical Spine Fractures">单元一 · 颈椎骨折</a></h3>
+        <ol>
+          <li><a href="#u1s1" data-nav="u1:0" data-zh="解剖与机制" data-en="Anatomy &amp; Mechanism">解剖与机制</a></li>
+          <li><a href="#u1s2" data-nav="u1:1" data-zh="初评与红旗" data-en="Initial Assessment &amp; Red Flags">初评与红旗</a></li>
+          <li><a href="#u1s3" data-nav="u1:2" data-zh="影像与分类" data-en="Imaging &amp; Classification">影像与分类</a></li>
+          <li><a href="#u1s4" data-nav="u1:3" data-zh="AO 原则如何适用" data-en="How AO Principles Apply">AO 原则如何适用</a></li>
+          <li><a href="#u1s5" data-nav="u1:4" data-zh="治疗选择与限制" data-en="Treatment Options &amp; Limitations">治疗选择与限制</a></li>
+          <li><a href="#u1s6" data-nav="u1:5" data-zh="并发症与随访" data-en="Complications &amp; Follow-up">并发症与随访</a></li>
+          <li><a href="#u1s7" data-nav="u1:6" data-zh="病例自测" data-en="Case-based Quiz">病例自测</a></li>
+          <li><a href="#u1s8" data-nav="u1:7" data-zh="官方资源" data-en="Official resources">官方资源</a></li>
+        </ol>
+      </div>
+      <div class="toc-unit">
+        <h3><a href="#unit2" data-zh="单元二 · 胸椎骨折" data-en="Unit 2 · Thoracic Spine Fractures">单元二 · 胸椎骨折</a></h3>
+        <ol>
+          <li><a href="#u2s1" data-nav="u2:0" data-zh="解剖与机制" data-en="Anatomy &amp; Mechanism">解剖与机制</a></li>
+          <li><a href="#u2s2" data-nav="u2:1" data-zh="初评与红旗" data-en="Initial Assessment &amp; Red Flags">初评与红旗</a></li>
+          <li><a href="#u2s3" data-nav="u2:2" data-zh="影像与分类" data-en="Imaging &amp; Classification">影像与分类</a></li>
+          <li><a href="#u2s4" data-nav="u2:3" data-zh="AO 原则如何适用" data-en="How AO Principles Apply">AO 原则如何适用</a></li>
+          <li><a href="#u2s5" data-nav="u2:4" data-zh="治疗选择与限制" data-en="Treatment Options &amp; Limitations">治疗选择与限制</a></li>
+          <li><a href="#u2s6" data-nav="u2:5" data-zh="并发症与随访" data-en="Complications &amp; Follow-up">并发症与随访</a></li>
+          <li><a href="#u2s7" data-nav="u2:6" data-zh="病例自测" data-en="Case-based Quiz">病例自测</a></li>
+          <li><a href="#u2s8" data-nav="u2:7" data-zh="官方资源" data-en="Official resources">官方资源</a></li>
+        </ol>
+      </div>
+      <div class="toc-unit">
+        <h3><a href="#unit3" data-zh="单元三 · 腰椎骨折" data-en="Unit 3 · Lumbar Spine Fractures">单元三 · 腰椎骨折</a></h3>
+        <ol>
+          <li><a href="#u3s1" data-nav="u3:0" data-zh="解剖与机制" data-en="Anatomy &amp; Mechanism">解剖与机制</a></li>
+          <li><a href="#u3s2" data-nav="u3:1" data-zh="初评与红旗" data-en="Initial Assessment &amp; Red Flags">初评与红旗</a></li>
+          <li><a href="#u3s3" data-nav="u3:2" data-zh="影像与分类" data-en="Imaging &amp; Classification">影像与分类</a></li>
+          <li><a href="#u3s4" data-nav="u3:3" data-zh="AO 原则如何适用" data-en="How AO Principles Apply">AO 原则如何适用</a></li>
+          <li><a href="#u3s5" data-nav="u3:4" data-zh="治疗选择与限制" data-en="Treatment Options &amp; Limitations">治疗选择与限制</a></li>
+          <li><a href="#u3s6" data-nav="u3:5" data-zh="并发症与随访" data-en="Complications &amp; Follow-up">并发症与随访</a></li>
+          <li><a href="#u3s7" data-nav="u3:6" data-zh="病例自测" data-en="Case-based Quiz">病例自测</a></li>
+          <li><a href="#u3s8" data-nav="u3:7" data-zh="官方资源" data-en="Official resources">官方资源</a></li>
+        </ol>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= 单元一 · 颈椎骨折 ================= -->
+  <article class="unit" id="unit1">
+    <div class="unit-head">
+      <div class="no">UNIT 1</div>
+      <h2 data-zh="颈椎骨折" data-en="Cervical Spine Fractures">颈椎骨折</h2>
+      <p data-zh="上颈椎（C0–C2）与下颈椎（C3–C7）分开讨论：分类体系不同，稳定关键不同。" data-en="Upper (C0–C2) and subaxial (C3–C7) cervical spine are discussed separately: different classification systems, different keys to stability.">上颈椎（C0–C2）与下颈椎（C3–C7）分开讨论：分类体系不同，稳定关键不同。</p>
+    </div>
+    <div class="revealbar">
+      <span class="reveal-count"></span>
+      <button class="btn-next" data-zh="下一步" data-en="Next">下一步</button>
+      <button class="plain btn-all" data-zh="显示本单元全部" data-en="Show all of this unit">显示本单元全部</button>
+    </div>
+
+    <section class="sec" id="u1s1">
+      <h3 class="sec-title" data-zh="1 · 解剖与机制" data-en="1 · Anatomy &amp; Mechanism">1 · 解剖与机制</h3>
+      <p data-zh="上颈椎（C0–C2）负责头部旋转，寰枢关节承担约一半颈部旋转活动。" data-en="The upper cervical spine (C0–C2) governs head rotation; the atlanto-axial joint provides about half of all neck rotation.">上颈椎（C0–C2）负责头部旋转，寰枢关节承担约一半颈部旋转活动。</p>
+      <p data-zh="稳定关键：齿突加横韧带。横韧带断裂可导致寰枢不稳。" data-en="Keys to stability: the dens plus the transverse ligament. Rupture of the transverse ligament can produce atlanto-axial instability.">稳定关键：齿突加横韧带。横韧带断裂可导致寰枢不稳。</p>
+      <p data-zh="下颈椎（C3–C7）是典型运动节段：椎体、椎间盘、关节突构成三关节复合体。" data-en="The subaxial spine (C3–C7) consists of typical motion segments: body, disc, and facet joints forming a three-joint complex.">下颈椎（C3–C7）是典型运动节段：椎体、椎间盘、关节突构成三关节复合体。</p>
+      <p data-zh="致伤机制：屈曲、伸展、轴向负荷、旋转、剪切。常见于车祸、高处坠落、潜水、运动损伤。" data-en="Mechanisms: flexion, extension, axial loading, rotation, shear. Common in motor-vehicle collisions, falls from height, diving, and sports injuries.">致伤机制：屈曲、伸展、轴向负荷、旋转、剪切。常见于车祸、高处坠落、潜水、运动损伤。</p>
+      <p data-zh="高位颈髓损伤可影响呼吸，因为膈神经发自 C3–C5。" data-en="High cervical cord injury can impair breathing, because the phrenic nerve arises from C3–C5.">高位颈髓损伤可影响呼吸，因为膈神经发自 C3–C5。</p>
+      <details class="fold">
+        <summary data-zh="展开细节：解剖要点" data-en="Details: anatomic notes">展开细节：解剖要点</summary>
+        <div class="fold-body">
+          <p data-zh="寰椎没有椎体，由前后弓与侧块构成；枢椎齿突向上嵌入寰椎环内。" data-en="The atlas has no vertebral body; it is a ring of anterior/posterior arches and lateral masses, with the dens projecting up into it.">寰椎没有椎体，由前后弓与侧块构成；枢椎齿突向上嵌入寰椎环内。</p>
+          <p data-zh="C3–C6 棘突多分叉，C7 棘突不分叉且长，称隆椎，是体表定位标志。" data-en="C3–C6 spinous processes are usually bifid; the C7 spinous process is long and non-bifid (vertebra prominens), a surface landmark.">C3–C6 棘突多分叉，C7 棘突不分叉且长，称隆椎，是体表定位标志。</p>
+          <p data-zh="椎动脉经 C1–C6 横突孔上行。横突孔骨折、关节突脱位时警惕椎动脉损伤，CTA 是常用评估手段。" data-en="The vertebral arteries ascend through the C1–C6 transverse foramina. Fractures involving the foramen or facet dislocations raise concern for vertebral artery injury; CTA is commonly used to assess it.">椎动脉经 C1–C6 横突孔上行。横突孔骨折、关节突脱位时警惕椎动脉损伤，CTA 是常用评估手段。</p>
+        </div>
+      </details>
+      
+
+      
+
+    <figure class="srcfig media-card">
+  <a class="media-image" href="assets/figs/cervical-hangman-xray-ct.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/cervical-hangman-xray-ct.jpg" data-alt-zh="Hangman 骨折：侧位 X 线示 C2 前移，矢状位 CT 示峡部骨折不愈合" data-alt-en="Hangman's fracture: lateral X-ray shows C2 displacement; sagittal CT shows pars nonunion" alt="Hangman 骨折：侧位 X 线示 C2 前移，矢状位 CT 示峡部骨折不愈合"></a>
+  <figcaption data-zh="图 1-1 · <b>Hangman 骨折（C2 创伤性滑脱）：侧位 X 线与矢状位 CT</b><br><span class='oblbl'>观察点：</span>A 为伤后 2 个月侧位 X 线：C2 在 C3 上向前移位（硬质颈托固定下仍出现）；B、C 为伤后 3 个月矢状位 CT：峡部骨折不愈合、骨折间隙增宽。固定下仍移位提示不稳定。<br><span class='oblim'>局限：</span>单个病例的随访影像；无伤后即刻影像对比；该患者的前路手术决策针对个体，不构成通用指征。<br><span class='obsrc'>来源：<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8328804/'>Ashraf AM, Houten JK. Cureus. 2021; 图 2</a> · 许可：<a href='https://creativecommons.org/licenses/by/3.0/'>CC BY 3.0</a></span>" data-en="Fig 1-1 · <b>Hangman's fracture (traumatic C2 spondylolisthesis): lateral X-ray and sagittal CT</b><br><span class='oblbl'>Teaching points:</span> Panel A (lateral X-ray, 2 months post-injury): new anterior displacement of C2 on C3 despite hard-collar immobilization. Panels B/C (sagittal CT, 3 months): pars fracture nonunion with widening clefts. Displacement despite immobilization signals instability.<br><span class='oblim'>Limitations:</span> Single-case follow-up images; no immediate post-injury imaging for comparison; this patient's anterior surgical decision was individual, not a general indication.<br><span class='obsrc'>Source: <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8328804/'>Ashraf AM, Houten JK. Cureus. 2021; Figure 2</a> · License: <a href='https://creativecommons.org/licenses/by/3.0/'>CC BY 3.0</a></span>">图 1-1 · <b>Hangman 骨折（C2 创伤性滑脱）：侧位 X 线与矢状位 CT</b><br><span class='oblbl'>观察点：</span>A 为伤后 2 个月侧位 X 线：C2 在 C3 上向前移位（硬质颈托固定下仍出现）；B、C 为伤后 3 个月矢状位 CT：峡部骨折不愈合、骨折间隙增宽。固定下仍移位提示不稳定。<br><span class='oblim'>局限：</span>单个病例的随访影像；无伤后即刻影像对比；该患者的前路手术决策针对个体，不构成通用指征。<br><span class='obsrc'>来源：<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8328804/'>Ashraf AM, Houten JK. Cureus. 2021; 图 2</a> · 许可：<a href='https://creativecommons.org/licenses/by/3.0/'>CC BY 3.0</a></span></figcaption>
+</figure>
+<figure class="srcfig media-card">
+  <a class="media-image" href="assets/figs/cervical-jefferson-dens-ct.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/cervical-jefferson-dens-ct.jpg" data-alt-zh="CT 示 C1 前弓后弓爆裂骨折与移位齿突骨折" data-alt-en="CT shows C1 anterior/posterior arch burst fractures and displaced dens fracture" alt="CT 示 C1 前弓后弓爆裂骨折与移位齿突骨折"></a>
+  <figcaption data-zh="图 1-2 · <b>Jefferson 骨折（C1 爆裂）合并齿突骨折：CT 多平面</b><br><span class='oblbl'>观察点：</span>C 为轴位 CT：C1 前弓骨折（右侧）、后弓双骨折、左外侧块骨折（黄箭头），即 Jefferson 爆裂；A 为矢状位：移位的齿突 II 型骨折（红箭头）。一图同时展示上颈椎两类核心损伤。<br><span class='oblim'>局限：</span>合并严重冠心病的复杂病例；蓝圈为后颅窝蛛网膜囊肿（偶然发现，与骨折无关）；单病例。<br><span class='obsrc'>来源：<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC10228685/'>Di Francesco ME 等. Front Surg. 2023; 图 1</a> · 许可：<a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a></span>" data-en="Fig 1-2 · <b>Jefferson (C1 burst) fracture with dens fracture: multiplanar CT</b><br><span class='oblbl'>Teaching points:</span> Panel C (axial CT): anterior arch (right), dual posterior arch, and left lateral mass fractures of C1 (yellow arrows) — Jefferson burst. Panel A (sagittal): dislocated type II dens fracture (red arrow). One figure shows both core upper-cervical injuries.<br><span class='oblim'>Limitations:</span> Complex case with severe coronary disease; blue circle marks an incidental arachnoid cyst unrelated to the fractures; single case.<br><span class='obsrc'>Source: <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC10228685/'>Di Francesco ME et al. Front Surg. 2023; Figure 1</a> · License: <a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a></span>">图 1-2 · <b>Jefferson 骨折（C1 爆裂）合并齿突骨折：CT 多平面</b><br><span class='oblbl'>观察点：</span>C 为轴位 CT：C1 前弓骨折（右侧）、后弓双骨折、左外侧块骨折（黄箭头），即 Jefferson 爆裂；A 为矢状位：移位的齿突 II 型骨折（红箭头）。一图同时展示上颈椎两类核心损伤。<br><span class='oblim'>局限：</span>合并严重冠心病的复杂病例；蓝圈为后颅窝蛛网膜囊肿（偶然发现，与骨折无关）；单病例。<br><span class='obsrc'>来源：<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC10228685/'>Di Francesco ME 等. Front Surg. 2023; 图 1</a> · 许可：<a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a></span></figcaption>
+</figure>
+</section>
+
+    <section class="sec" id="u1s2">
+      <h3 class="sec-title" data-zh="2 · 初评与红旗" data-en="2 · Initial Assessment &amp; Red Flags">2 · 初评与红旗</h3>
+      <p data-zh="先完成 ABCDE 初评，气道优先。采取脊柱运动限制等适合患者的保护措施，直至完成可靠评估；由训练有素的人员协调转运，避免不必要的脊柱活动。不对所有患者规定统一的固定或翻身方式。" data-en="Complete the ABCDE primary survey first, airway first. Apply spinal motion restriction and other patient-appropriate protective measures until reliable assessment is complete; transfers are performed in a coordinated manner by trained personnel, avoiding unnecessary spinal movement. No single immobilization or rolling method is prescribed for all patients.">先完成 ABCDE 初评，气道优先。采取脊柱运动限制等适合患者的保护措施，直至完成可靠评估；由训练有素的人员协调转运，避免不必要的脊柱活动。不对所有患者规定统一的固定或翻身方式。</p>
+      <p data-zh="神经检查按 ISNCSCI / ASIA 标准：运动、感觉平面、骶部残留功能。" data-en="Neurological examination per ISNCSCI / ASIA standards: motor scores, sensory level, sacral sparing.">神经检查按 ISNCSCI / ASIA 标准：运动、感觉平面、骶部残留功能。</p>
+      <p data-zh="影像决策可借助 NEXUS 标准与 Canadian C-spine Rule（见本单元来源）。" data-en="Imaging decisions can be aided by the NEXUS criteria and the Canadian C-spine Rule (see sources for this unit).">影像决策可借助 NEXUS 标准与 Canadian C-spine Rule（见本单元来源）。</p>
+      
+      <div class="callout red">
+        <p data-zh="🚩 <strong>红旗：</strong>进行性神经功能恶化；呼吸费力或血氧下降；低血压伴心动过缓、皮肤温暖干燥（神经源性休克）；颈部进行性肿胀、声音嘶哑、吞咽困难（椎前血肿压迫气道）；上肢放射痛伴肌力下降。" data-en="🚩 <strong>Red flags:</strong> progressive neurological worsening; respiratory distress or desaturation; hypotension with bradycardia and warm dry skin (neurogenic shock); expanding neck swelling, hoarseness, dysphagia (prevertebral hematoma compressing the airway); radiating arm pain with weakness.">🚩 <strong>红旗：</strong>进行性神经功能恶化；呼吸费力或血氧下降；低血压伴心动过缓、皮肤温暖干燥（神经源性休克）；颈部进行性肿胀、声音嘶哑、吞咽困难（椎前血肿压迫气道）；上肢放射痛伴肌力下降。</p>
+      </div>
+      <details class="fold">
+        <summary data-zh="展开细节：神经源性休克 vs 失血性休克" data-en="Details: neurogenic vs hemorrhagic shock">展开细节：神经源性休克 vs 失血性休克</summary>
+        <div class="fold-body">
+          <p data-zh="神经源性休克：低血压、心动过缓、皮肤温暖干燥（交感张力丢失）。" data-en="Neurogenic shock: hypotension, bradycardia, warm dry skin (loss of sympathetic tone).">神经源性休克：低血压、心动过缓、皮肤温暖干燥（交感张力丢失）。</p>
+          <p data-zh="失血性休克：低血压、心动过速、皮肤湿冷苍白。两者可并存，先按失血处理并寻找出血源。" data-en="Hemorrhagic shock: hypotension, tachycardia, cool pale clammy skin. The two can coexist — manage as hemorrhage first and search for bleeding sources.">失血性休克：低血压、心动过速、皮肤湿冷苍白。两者可并存，先按失血处理并寻找出血源。</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="sec" id="u1s3">
+      <h3 class="sec-title" data-zh="3 · 影像与分类" data-en="3 · Imaging &amp; Classification">3 · 影像与分类</h3>
+      <p data-zh="成人高能量创伤：CT 用于详细评估骨性结构。MRI 评估韧带、椎间盘、脊髓与后方韧带复合体。" data-en="Adult high-energy trauma: CT provides detailed assessment of bony structures. MRI evaluates ligaments, discs, the cord, and the posterior ligamentous complex.">成人高能量创伤：CT 用于详细评估骨性结构。MRI 评估韧带、椎间盘、脊髓与后方韧带复合体。</p>
+      <p data-zh="<strong>上颈椎</strong>采用 AO Spine 上颈椎分类：按部位分三区 —— I 枕髁与颅颈交界；II 寰椎环与寰枢关节；III 枢椎与 C2–3。每区按损伤性质分为 A（孤立骨性）、B（韧带 / 张力带）、C（移位）。另记录神经状态 N0–N4 / NX 与修饰因子 M1–M4。" data-en="<strong>Upper cervical spine</strong> uses the AO Spine Upper Cervical system: three zones by location — I occipital condyle &amp; craniocervical junction; II C1 ring &amp; atlanto-axial joint; III C2 &amp; C2–3. Each zone is graded by injury nature: A (isolated bony), B (ligamentous / tension band), C (displacement). Also record neuro status N0–N4 / NX and modifiers M1–M4."><strong>上颈椎</strong>采用 AO Spine 上颈椎分类：按部位分三区 —— I 枕髁与颅颈交界；II 寰椎环与寰枢关节；III 枢椎与 C2–3。每区按损伤性质分为 A（孤立骨性）、B（韧带 / 张力带）、C（移位）。另记录神经状态 N0–N4 / NX 与修饰因子 M1–M4。</p>
+      <p data-zh="<strong>下颈椎</strong>采用 AO Spine 下颈椎分类：形态 A（压缩，A0–A4）、B（张力带，B1–B3）、C（移位）；关节突 F1–F4；神经状态 N；修饰因子 M。" data-en="<strong>Subaxial spine</strong> uses the AO Spine Subaxial system: morphology A (compression, A0–A4), B (tension band, B1–B3), C (translation); facet injuries F1–F4; neuro status N; modifiers M."><strong>下颈椎</strong>采用 AO Spine 下颈椎分类：形态 A（压缩，A0–A4）、B（张力带，B1–B3）、C（移位）；关节突 F1–F4；神经状态 N；修饰因子 M。</p>
+      <div class="callout">
+        <p data-zh="<strong>记住：</strong>分类是共同语言，用于准确描述损伤、促进沟通。它不直接等于手术指征。" data-en="<strong>Remember:</strong> classification is a common language for describing injuries and communication. It does not directly equal a surgical indication."><strong>记住：</strong>分类是共同语言，用于准确描述损伤、促进沟通。它不直接等于手术指征。</p>
+      </div>
+      <details class="fold">
+        <summary data-zh="展开细节：下颈椎各型含义（据 AO 官方）" data-en="Details: subaxial subtypes per AO official sources">展开细节：下颈椎各型含义（据 AO 官方）</summary>
+        <div class="fold-body">
+          <p data-zh="A0：棘突、横突、椎板等非结构性骨折。A1：单终板楔形压缩。A2：双终板劈裂（冠状劈裂）。A3：单终板爆裂。A4：双终板爆裂。" data-en="A0: nonstructural fractures (spinous/transverse process, lamina). A1: single-endplate wedge compression. A2: both-endplate split (coronal). A3: single-endplate burst. A4: both-endplate burst.">A0：棘突、横突、椎板等非结构性骨折。A1：单终板楔形压缩。A2：双终板劈裂（冠状劈裂）。A3：单终板爆裂。A4：双终板爆裂。</p>
+          <p data-zh="B1：骨性后方张力带断裂。B2：后方韧带或骨韧带复合断裂。B3：前方张力带损伤（过伸）。C：任何方向的移位 / 脱位。" data-en="B1: bony posterior tension band failure. B2: posterior capsuloligamentous or osseoligamentous disruption. B3: anterior tension band injury (hyperextension). C: displacement / dislocation in any direction.">B1：骨性后方张力带断裂。B2：后方韧带或骨韧带复合断裂。B3：前方张力带损伤（过伸）。C：任何方向的移位 / 脱位。</p>
+          <p data-zh="F1：无移位关节突骨折（骨块 &lt;1 cm 且 &lt;40% 侧块）。F2：潜在不稳的关节突骨折。F3：浮动侧块。F4：病理性半脱位或交锁 / 脱位。可标注双侧（BL）。" data-en="F1: nondisplaced facet fracture (fragment &lt;1 cm and &lt;40% of lateral mass). F2: potentially unstable facet fracture. F3: floating lateral mass. F4: pathologic subluxation or perched / dislocated facet. Bilateral injuries marked (BL).">F1：无移位关节突骨折（骨块 &lt;1 cm 且 &lt;40% 侧块）。F2：潜在不稳的关节突骨折。F3：浮动侧块。F4：病理性半脱位或交锁 / 脱位。可标注双侧（BL）。</p>
+          <p data-zh="N0 神经完整；N1 一过性神经功能障碍已恢复；N2 神经根症状；N3 不全脊髓损伤；N4 完全脊髓损伤；NX 无法检查。" data-en="N0 intact; N1 transient deficit resolved; N2 radicular symptoms; N3 incomplete SCI; N4 complete SCI; NX cannot be examined.">N0 神经完整；N1 一过性神经功能障碍已恢复；N2 神经根症状；N3 不全脊髓损伤；N4 完全脊髓损伤；NX 无法检查。</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="sec" id="u1s4">
+      <h3 class="sec-title" data-zh="4 · AO 原则如何适用" data-en="4 · How AO Principles Apply">4 · AO 原则如何适用</h3>
+      <p data-zh="AO 骨折治疗原则：按部位与损伤选择相对稳定或绝对稳定、保护血供、适当且安全的早期活动。" data-en="AO principles of fracture care: choose relative or absolute stability according to the site and the injury, preserve blood supply, and allow appropriate, safe early mobilization.">AO 骨折治疗原则：按部位与损伤选择相对稳定或绝对稳定、保护血供、适当且安全的早期活动。</p>
+      <p data-zh="在颈椎体现为：恢复可接受的力线与节段序列（不苛求每种损伤都达到解剖复位）；依据神经受压的影像证据决定是否减压；重建与损伤相称的稳定；尽早在安全范围内开始康复。" data-en="In the cervical spine this means: restore acceptable alignment and segmental sequence (anatomic reduction is not demanded of every injury); decompress based on imaging evidence of neural compression; reconstruct stability proportionate to the injury; begin rehabilitation early within safe limits.">在颈椎体现为：恢复可接受的力线与节段序列（不苛求每种损伤都达到解剖复位）；依据神经受压的影像证据决定是否减压；重建与损伤相称的稳定；尽早在安全范围内开始康复。</p>
+      <p data-zh="B1 是骨性后方张力带断裂（骨折线经骨），即使韧带连续也不稳定；B2 为后方骨韧带复合损伤。判断看骨性与韧带整体，不能只看张力带是否完整；怀疑韧带损伤时用 MRI 辅助。B3 为前方张力带损伤，评估逻辑不同。" data-en="B1 is a bony posterior tension-band failure (fracture line through bone) — unstable even with intact ligaments; B2 is a posterior osseoligamentous injury. Judge bone and ligaments as a whole, not tension-band integrity alone; MRI assists when ligament injury is suspected. B3 is an anterior tension band injury and is assessed differently.">B1 是骨性后方张力带断裂（骨折线经骨），即使韧带连续也不稳定；B2 为后方骨韧带复合损伤。判断看骨性与韧带整体，不能只看张力带是否完整；怀疑韧带损伤时用 MRI 辅助。B3 为前方张力带损伤，评估逻辑不同。</p>
+      <p data-zh="神经状态（N）决定减压的紧迫性。分类提供框架；治疗还取决于合并伤、骨质量、年龄与患者整体情况。" data-en="Neurological status (N) drives the urgency of decompression. Classification provides the framework; treatment also depends on associated injuries, bone quality, age, and the whole patient.">神经状态（N）决定减压的紧迫性。分类提供框架；治疗还取决于合并伤、骨质量、年龄与患者整体情况。</p>
+    </section>
+
+    <section class="sec" id="u1s5">
+      <h3 class="sec-title" data-zh="5 · 治疗选择与限制" data-en="5 · Treatment Options &amp; Limitations">5 · 治疗选择与限制</h3>
+      <p data-zh="非手术：硬质颈托。Halo 背心曾广泛使用，限制包括老年耐受差、钉道感染或松动、护理负担重。" data-en="Nonoperative: rigid cervical collar. The halo vest was widely used; limits include poor tolerance in the elderly, pin-site infection or loosening, and heavy nursing burden.">非手术：硬质颈托。Halo 背心曾广泛使用，限制包括老年耐受差、钉道感染或松动、护理负担重。</p>
+      <p data-zh="手术入路：前路、后路或前后联合。依据压迫部位、损伤形态与团队经验选择，没有唯一正确入路。" data-en="Surgical approaches: anterior, posterior, or combined. Chosen by compression site, injury morphology, and team experience — there is no single correct approach.">手术入路：前路、后路或前后联合。依据压迫部位、损伤形态与团队经验选择，没有唯一正确入路。</p>
+      <p data-zh="复位决策个体化，需要神经监测条件。本课程不给出统一复位操作流程。" data-en="Reduction decisions are individualized and require neuromonitoring capability. This course gives no universal reduction protocol.">复位决策个体化，需要神经监测条件。本课程不给出统一复位操作流程。</p>
+      <p data-zh="特殊人群：骨质疏松者固定把持力差；强直性脊柱炎者轻微创伤即可发生长节段不稳骨折，处理原则不同。" data-en="Special populations: osteoporotic bone holds fixation poorly; ankylosing spondylitis patients can sustain long-segment unstable fractures from minor trauma and are managed differently.">特殊人群：骨质疏松者固定把持力差；强直性脊柱炎者轻微创伤即可发生长节段不稳骨折，处理原则不同。</p>
+      <details class="fold">
+        <summary data-zh="展开细节：两种常见上颈椎损伤的教学要点" data-en="Details: teaching points on two common upper cervical injuries">展开细节：两种常见上颈椎损伤的教学要点</summary>
+        <div class="fold-body">
+          <p data-zh="寰椎 Jefferson 骨折：若横韧带完整（IIA），多可硬质颈托治疗并随访；横韧带断裂则不稳，倾向手术。" data-en="Jefferson fracture of the atlas: with an intact transverse ligament (IIA), a rigid collar with follow-up is often sufficient; ligament rupture means instability and favors surgery.">寰椎 Jefferson 骨折：若横韧带完整（IIA），多可硬质颈托治疗并随访；横韧带断裂则不稳，倾向手术。</p>
+          <p data-zh="齿突 II 型骨折：治疗争议大。年龄、骨折线位置、骨质量、合并症都影响愈合与选择，个体化决策，不套统一公式。" data-en="Type II dens fractures: management is debated. Age, fracture-line location, bone quality, and comorbidities all affect healing and choice — decide individually, no fixed formula.">齿突 II 型骨折：治疗争议大。年龄、骨折线位置、骨质量、合并症都影响愈合与选择，个体化决策，不套统一公式。</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="sec" id="u1s6">
+      <h3 class="sec-title" data-zh="6 · 并发症与随访" data-en="6 · Complications &amp; Follow-up">6 · 并发症与随访</h3>
+      <ul>
+        <li data-zh="神经功能恶化；高颈椎损伤的呼吸衰竭。" data-en="Neurological worsening; respiratory failure in high cervical injuries.">神经功能恶化；高颈椎损伤的呼吸衰竭。</li>
+        <li data-zh="前路术后吞咽困难、声音嘶哑；椎前血肿。" data-en="Post-anterior dysphagia, hoarseness; prevertebral hematoma.">前路术后吞咽困难、声音嘶哑；椎前血肿。</li>
+        <li data-zh="内固定失败、骨折不愈合、迟发后凸畸形。" data-en="Hardware failure, nonunion, delayed kyphotic deformity.">内固定失败、骨折不愈合、迟发后凸畸形。</li>
+        <li data-zh="慢性颈痛；椎动脉损伤相关的缺血风险。" data-en="Chronic neck pain; ischemia risk related to vertebral artery injury.">慢性颈痛；椎动脉损伤相关的缺血风险。</li>
+        <li data-zh="长期卧床相关：VTE、压疮、肺炎、尿路感染。" data-en="Immobility-related: VTE, pressure injuries, pneumonia, urinary infection.">长期卧床相关：VTE、压疮、肺炎、尿路感染。</li>
+      </ul>
+      <p data-zh="随访：定期神经功能复查；影像按本地方案；康复训练；骨质疏松评估与跌倒预防。" data-en="Follow-up: regular neurological re-checks; imaging per local protocol; rehabilitation; osteoporosis assessment and fall prevention.">随访：定期神经功能复查；影像按本地方案；康复训练；骨质疏松评估与跌倒预防。</p>
+    </section>
+
+    <section class="sec" id="u1s7">
+      <h3 class="sec-title" data-zh="7 · 病例自测" data-en="7 · Case-based Quiz">7 · 病例自测</h3>
+
+      <div class="quiz">
+        <p class="qstem" data-zh="病例 1-1（合成教学病例）：45 岁男性，高处坠落，颈痛。CT 示寰椎前弓、后弓骨折（Jefferson 骨折），寰齿间距正常；MRI 横韧带完整。按 AO Spine 上颈椎分类，最合适的表述是？" data-en="Case 1-1 (synthetic teaching case): A 45-year-old man fell from height with neck pain. CT shows anterior and posterior arch fractures of the atlas (Jefferson fracture) with a normal atlantodental interval; MRI shows an intact transverse ligament. Under the AO Spine Upper Cervical system, the best description is?">病例 1-1（合成教学病例）：45 岁男性，高处坠落，颈痛。CT 示寰椎前弓、后弓骨折（Jefferson 骨折），寰齿间距正常；MRI 横韧带完整。按 AO Spine 上颈椎分类，最合适的表述是？</p>
+        <button class="opt" data-correct="1" data-zh="<span class='k'>A</span> II 区 A 型（孤立骨性损伤）；横韧带完整是稳定关键，常可硬质颈托治疗并随访" data-en="<span class='k'>A</span> Zone II, type A (isolated bony injury); an intact transverse ligament is the key to stability, and a rigid collar with follow-up is often sufficient"><span class='k'>A</span> II 区 A 型（孤立骨性损伤）；横韧带完整是稳定关键，常可硬质颈托治疗并随访</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>B</span> II 区 B 型韧带损伤，需前后路联合固定" data-en="<span class='k'>B</span> Zone II, type B ligamentous injury requiring combined anterior-posterior fixation"><span class='k'>B</span> II 区 B 型韧带损伤，需前后路联合固定</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>C</span> II 区 C 型移位损伤，需急诊手术" data-en="<span class='k'>C</span> Zone II, type C displacement injury requiring emergency surgery"><span class='k'>C</span> II 区 C 型移位损伤，需急诊手术</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>D</span> 属于下颈椎 B2 型损伤" data-en="<span class='k'>D</span> This is a subaxial B2 injury"><span class='k'>D</span> 属于下颈椎 B2 型损伤</button>
+        <div class="feedback" data-zh="<strong>回答正确。</strong>寰椎环骨折、无韧带断裂、无移位 = II 区 A 型。横韧带完整提示稳定，多数可支具治疗；但需随访警惕迟发不稳，决策仍个体化。" data-en="<strong>Correct.</strong> C1-ring fracture without ligament rupture or displacement = zone II, type A. An intact transverse ligament suggests stability; bracing is often enough, but follow up for delayed instability — decisions remain individualized."><strong>回答正确。</strong>寰椎环骨折、无韧带断裂、无移位 = II 区 A 型。横韧带完整提示稳定，多数可支具治疗；但需随访警惕迟发不稳，决策仍个体化。</div>
+      </div>
+
+      <div class="quiz">
+        <p class="qstem" data-zh="病例 1-2（合成教学病例）：38 岁女性，车祸，C5/C6 双侧关节突交锁，MRI 见 C5/6 椎间盘突出压迫脊髓，查体为不全脊髓损伤（N3）。关于分类与决策，正确的是？" data-en="Case 1-2 (synthetic teaching case): A 38-year-old woman in a car crash with bilateral locked facets at C5/C6; MRI shows a C5/6 disc herniation compressing the cord, and exam shows incomplete SCI (N3). Which statement on classification and decision-making is correct?">病例 1-2（合成教学病例）：38 岁女性，车祸，C5/C6 双侧关节突交锁，MRI 见 C5/6 椎间盘突出压迫脊髓，查体为不全脊髓损伤（N3）。关于分类与决策，正确的是？</p>
+        <button class="opt" data-correct="1" data-zh="<span class='k'>A</span> C 型移位损伤（双侧 F4），N3；分类用于准确描述损伤，减压指征取决于神经受压与神经状态，需多学科个体化决策" data-en="<span class='k'>A</span> Type C translational injury (bilateral F4), N3; classification describes the injury accurately, while decompression depends on neural compression and neuro status — a multidisciplinary, individualized decision"><span class='k'>A</span> C 型移位损伤（双侧 F4），N3；分类用于准确描述损伤，减压指征取决于神经受压与神经状态，需多学科个体化决策</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>B</span> A1 型压缩骨折，硬质颈托固定 6 周即可" data-en="<span class='k'>B</span> Type A1 compression fracture; a rigid collar for 6 weeks is enough"><span class='k'>B</span> A1 型压缩骨折，硬质颈托固定 6 周即可</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>C</span> 只要分类为 C 型，就必须选择前路手术" data-en="<span class='k'>C</span> Any type C injury must be treated via an anterior approach"><span class='k'>C</span> 只要分类为 C 型，就必须选择前路手术</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>D</span> N3 表示完全性脊髓损伤，减压已无意义" data-en="<span class='k'>D</span> N3 means complete SCI, so decompression is pointless"><span class='k'>D</span> N3 表示完全性脊髓损伤，减压已无意义</button>
+        <div class="feedback" data-zh="<strong>回答正确。</strong>双侧关节突交锁 = C 型伴双侧 F4；N3 为不全损伤。分类是共同语言，不直接开处方；不全瘫伴持续压迫是减压的重要考量，但入路与时机个体化。" data-en="<strong>Correct.</strong> Bilateral locked facets = type C with bilateral F4; N3 is incomplete injury. Classification is a common language, not a prescription; incomplete deficit with ongoing compression is a major pro-decompression factor, but approach and timing are individualized."><strong>回答正确。</strong>双侧关节突交锁 = C 型伴双侧 F4；N3 为不全损伤。分类是共同语言，不直接开处方；不全瘫伴持续压迫是减压的重要考量，但入路与时机个体化。</div>
+      </div>
+
+      <div class="quiz">
+        <p class="qstem" data-zh="病例 1-3（合成教学病例）：70 岁男性，跌倒，C2 齿突基底部骨折（II 型），无神经症状。关于治疗，最合适的表述是？" data-en="Case 1-3 (synthetic teaching case): A 70-year-old man fell, sustaining a type II dens (odontoid base) fracture without neurological symptoms. The best statement about treatment is?">病例 1-3（合成教学病例）：70 岁男性，跌倒，C2 齿突基底部骨折（II 型），无神经症状。关于治疗，最合适的表述是？</p>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>A</span> 所有 II 型齿突骨折都必须行齿突螺钉固定" data-en="<span class='k'>A</span> All type II dens fractures must undergo odontoid screw fixation"><span class='k'>A</span> 所有 II 型齿突骨折都必须行齿突螺钉固定</button>
+        <button class="opt" data-correct="1" data-zh="<span class='k'>B</span> 年龄、骨质量、骨折线位置与合并症都影响愈合与选择；稳定且无高危因素可支具，高龄不愈合风险高者常倾向手术 —— 个体化决策" data-en="<span class='k'>B</span> Age, bone quality, fracture-line location, and comorbidities all affect healing and choice; stable low-risk cases may use bracing while elderly patients at high nonunion risk often favor surgery — individualized"><span class='k'>B</span> 年龄、骨质量、骨折线位置与合并症都影响愈合与选择；稳定且无高危因素可支具，高龄不愈合风险高者常倾向手术 —— 个体化决策</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>C</span> 无神经症状即无需任何随访" data-en="<span class='k'>C</span> No neuro symptoms means no follow-up is needed"><span class='k'>C</span> 无神经症状即无需任何随访</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>D</span> 颈托固定 2 周即可去除" data-en="<span class='k'>D</span> A collar for 2 weeks is enough"><span class='k'>D</span> 颈托固定 2 周即可去除</button>
+        <div class="feedback" data-zh="<strong>回答正确。</strong>齿突 II 型治疗争议大，不存在统一公式。高龄、骨质疏松、骨折线靠基底等因素增加不愈合风险，临床常倾向手术；反之可支具。均需随访。" data-en="<strong>Correct.</strong> Type II dens management is debated with no fixed formula. Older age, osteoporosis, and a basal fracture line raise nonunion risk and often favor surgery; otherwise bracing may suit. Follow-up is needed either way."><strong>回答正确。</strong>齿突 II 型治疗争议大，不存在统一公式。高龄、骨质疏松、骨折线靠基底等因素增加不愈合风险，临床常倾向手术；反之可支具。均需随访。</div>
+      </div>
+
+      <div class="quiz">
+        <p class="qstem" data-zh="病例 1-4（合成教学病例）：B3 与 B1/B2 的根本区别是什么？" data-en="Case 1-4 (synthetic teaching case): what fundamentally distinguishes B3 from B1/B2?">病例 1-4（合成教学病例）：B3 与 B1/B2 的根本区别是什么？</p>
+        <button class="opt" data-correct="1" data-zh="<span class='k'>A</span> B3 是前方张力带损伤、后方铰链完整；B1/B2 是后方张力带断裂" data-en="<span class='k'>A</span> B3 is an anterior tension band injury with an intact posterior hinge; B1/B2 are posterior tension band failures"><span class='k'>A</span> B3 是前方张力带损伤、后方铰链完整；B1/B2 是后方张力带断裂</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>B</span> B3 是压缩损伤的一种" data-en="<span class='k'>B</span> B3 is a kind of compression injury"><span class='k'>B</span> B3 是压缩损伤的一种</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>C</span> 三者没有本质区别" data-en="<span class='k'>C</span> There is no essential difference"><span class='k'>C</span> 三者没有本质区别</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>D</span> B3 只见于颈椎" data-en="<span class='k'>D</span> B3 occurs only in the cervical spine"><span class='k'>D</span> B3 只见于颈椎</button>
+        <div class="feedback" data-zh="<strong>回答正确。</strong>B3 前方张开、后方铰链完整（过伸机制）；B1/B2 后方断裂。这是本轮审查修正的要点 —— 不能把全部 B 型等同于后方损伤。" data-en="<strong>Correct.</strong> Pause and compare: B3 opens anteriorly with an intact posterior hinge (hyperextension mechanism); B1/B2 fail posteriorly. This was the review correction — not all type B injuries are posterior."><strong>回答正确。</strong>B3 前方张开、后方铰链完整（过伸机制）；B1/B2 后方断裂。这是本轮审查修正的要点 —— 不能把全部 B 型等同于后方损伤。</div>
+      </div>
+    </section>
+
+
+    <section class="sec" id="u1s8">
+  <h3 class="sec-title" data-zh="8 · 官方影像资源" data-en="8 · Official imaging resources">8 · 官方影像资源</h3>
+  <div class="aocard">
+    <p data-zh="以下为 AO Surgery Reference 官方原页链接（含官方分类图例与讲解）。本课程仅作链接，不复制、不热链 AO 图片——按 <a href='https://surgeryreference.aofoundation.org/further-reading/faq'>AO FAQ</a>，插图仅授权非商业演示（须带 AO 标识并注明来源），出版物或在线转载须另行向 AO 申请许可。" data-en="Links below open official AO Surgery Reference pages (official classification illustrations and explanations). This course links only — no AO images are copied or hotlinked: per the <a href='https://surgeryreference.aofoundation.org/further-reading/faq'>AO FAQ</a>, illustrations are licensed for noncommercial presentations only (with AO logo and source stated); republication online requires separate AO permission.">以下为 AO Surgery Reference 官方原页链接（含官方分类图例与讲解）。本课程仅作链接，不复制、不热链 AO 图片——按 <a href='https://surgeryreference.aofoundation.org/further-reading/faq'>AO FAQ</a>，插图仅授权非商业演示（须带 AO 标识并注明来源），出版物或在线转载须另行向 AO 申请许可。</p>
+    <ul>
+<li><a href='https://surgeryreference.aofoundation.org/spine/trauma/subaxial-cervical/a0/definition'>AO Surgery Reference · 下颈椎 A0 定义</a><br><span data-zh='定位：下颈椎 A 型定义、分类三要素（神经 / 关节突 / 修饰因子）。' data-en='Covers: subaxial A-type definition and the three classification elements (neurology / facet / modifiers).'>定位：下颈椎 A 型定义、分类三要素（神经 / 关节突 / 修饰因子）。</span></li>
+<li><a href='https://media.aofoundation.org/spine/-/media/project/aocd/aospine/documents/aos_injury_classification_pocket_card-subaxial.pdf?hash=27BD3FB0336424325E59117698B5D842&rev=72e079564a384ea988156d58ee1336a4'>AO Spine 下颈椎损伤分类口袋卡（PDF）</a><br><span data-zh='定位：下颈椎 A / B / C / F / N / M 官方定义。' data-en='Covers: official subaxial A / B / C / F / N / M definitions.'>定位：下颈椎 A / B / C / F / N / M 官方定义。</span></li>
+<li><a href='https://media.aofoundation.org/spine/-/media/project/aocd/aospine/documents/aos_injury_classification_pocket_card_uppercervical.pdf?rev=f05b21560d554f9181da6387e1e13e6e'>AO Spine 上颈椎损伤分类口袋卡（PDF）</a><br><span data-zh='定位：上颈椎 I / II / III 分区 × A / B / C 分型、神经 N / 修饰因子 M。' data-en='Covers: upper cervical zones I / II / III × types A / B / C, neuro N, modifiers M.'>定位：上颈椎 I / II / III 分区 × A / B / C 分型、神经 N / 修饰因子 M。</span></li>
+    </ul>
+  </div>
+</section>
+
+    <div class="sources">
+      <h4 data-zh="来源与许可 · 单元一" data-en="Sources &amp; Licensing · Unit 1">来源与许可 · 单元一</h4>
+      <ol>
+        <li><a href="https://surgeryreference.aofoundation.org/spine/trauma/subaxial-cervical/a0/definition">AO Surgery Reference — Spine trauma · Subaxial cervical · “A0 - Minor, nonstructural fractures”</a><br><span data-zh="定位：下颈椎 A 型定义、完整分类三要素（神经 / 关节突 / 修饰因子）。访问日期 2026-10-04。" data-en="Covers: subaxial A-type definition and the three classification elements (neurology / facet / modifiers). Accessed 2026-10-04.">定位：下颈椎 A 型定义、完整分类三要素（神经 / 关节突 / 修饰因子）。访问日期 2026-10-04。</span> <span class="lic" data-zh="许可：AO Foundation 官网内容（链接查看）。" data-en="License: AO Foundation website content (view via link).">许可：AO Foundation 官网内容（链接查看）。</span></li>
+        <li><a href="https://media.aofoundation.org/spine/-/media/project/aocd/aospine/documents/aos_injury_classification_pocket_card-subaxial.pdf?hash=27BD3FB0336424325E59117698B5D842&rev=72e079564a384ea988156d58ee1336a4">AO Spine Subaxial Injury Classification System（官方口袋卡 PDF）</a><br><span data-zh="定位：下颈椎 A / B / C / F / N / M 官方定义。访问日期 2026-10-04。" data-en="Covers: official subaxial A / B / C / F / N / M definitions. Accessed 2026-10-04.">定位：下颈椎 A / B / C / F / N / M 官方定义。访问日期 2026-10-04。</span> <span class="lic">License: CC BY-NC-ND 4.0（<span data-zh="仅链接，未复制内容" data-en="linked only, not reproduced">仅链接，未复制内容</span>）。</span></li>
+        <li><a href="https://media.aofoundation.org/spine/-/media/project/aocd/aospine/documents/aos_injury_classification_pocket_card_uppercervical.pdf?rev=f05b21560d554f9181da6387e1e13e6e">AO Spine Upper Cervical Injury Classification System（官方口袋卡 PDF）</a><br><span data-zh="定位：上颈椎 I / II / III 分区 × A / B / C 分型、神经 N0–N4 / NX、修饰因子 M1–M4。访问日期 2026-10-04。" data-en="Covers: upper cervical zones I / II / III × types A / B / C, neuro N0–N4 / NX, modifiers M1–M4. Accessed 2026-10-04.">定位：上颈椎 I / II / III 分区 × A / B / C 分型、神经 N0–N4 / NX、修饰因子 M1–M4。访问日期 2026-10-04。</span> <span class="lic">License: CC BY-NC-ND 4.0（<span data-zh="仅链接，未复制内容" data-en="linked only, not reproduced">仅链接，未复制内容</span>）。</span></li>
+        <li><span data-zh="期刊引文：Hoffman JR 等，NEXUS 标准，N Engl J Med. 2000；Stiell IG 等，Canadian C-spine Rule，JAMA. 2001。（定位：颈椎影像决策辅助）" data-en="Journal citations: Hoffman JR et al., NEXUS criteria, N Engl J Med. 2000; Stiell IG et al., Canadian C-spine Rule, JAMA. 2001. (Covers: cervical imaging decision aids.)">期刊引文：Hoffman JR 等，NEXUS 标准，N Engl J Med. 2000；Stiell IG 等，Canadian C-spine Rule，JAMA. 2001。（定位：颈椎影像决策辅助）</span></li>
+        
+        
+        
+      <li><span data-zh="真实影像 图 1-1、图 1-2：见各图来源与许可；随包 media_sources-spine.csv 记录作者、文章、图号、原文与许可链接。" data-en="Real images Figs 1-1, 1-2: see individual caption sources and licences; media_sources-spine.csv logs authors, articles, figure numbers, source and license URLs.">真实影像 图 1-1、图 1-2：见各图来源与许可；随包 media_sources-spine.csv 记录作者、文章、图号、原文与许可链接。</span></li>
+      </ol>
+    </div>
+  </article>
+
+  <!-- ================= 单元二 · 胸椎骨折 ================= -->
+  <article class="unit" id="unit2">
+    <div class="unit-head">
+      <div class="no">UNIT 2</div>
+      <h2 data-zh="胸椎骨折" data-en="Thoracic Spine Fractures">胸椎骨折</h2>
+      <p data-zh="T1–T12：肋骨笼带来额外稳定，但椎管相对狭窄；胸腰移行区是损伤好发部位。" data-en="T1–T12: the rib cage adds stability, but the canal is relatively narrow; the thoracolumbar junction is a common injury site.">T1–T12：肋骨笼带来额外稳定，但椎管相对狭窄；胸腰移行区是损伤好发部位。</p>
+    </div>
+    <div class="revealbar">
+      <span class="reveal-count"></span>
+      <button class="btn-next" data-zh="下一步" data-en="Next">下一步</button>
+      <button class="plain btn-all" data-zh="显示本单元全部" data-en="Show all of this unit">显示本单元全部</button>
+    </div>
+
+    <section class="sec" id="u2s1">
+      <h3 class="sec-title" data-zh="1 · 解剖与机制" data-en="1 · Anatomy &amp; Mechanism">1 · 解剖与机制</h3>
+      <p data-zh="胸椎 T1–T12 呈后凸。T1–T10 与肋骨、胸骨构成肋骨笼，整体稳定性高于其他节段。" data-en="The thoracic spine (T1–T12) is kyphotic. T1–T10 form a rib cage with the ribs and sternum, making this region more stable than others.">胸椎 T1–T12 呈后凸。T1–T10 与肋骨、胸骨构成肋骨笼，整体稳定性高于其他节段。</p>
+      <p data-zh="T11–T12 为胸腰移行区：肋骨变为浮肋，活动度增大，是骨折好发部位。" data-en="T11–T12 form the thoracolumbar junction: floating ribs, greater mobility, and a common fracture site.">T11–T12 为胸腰移行区：肋骨变为浮肋，活动度增大，是骨折好发部位。</p>
+      <p data-zh="胸段椎管相对狭窄，骨折移位易伤及脊髓，神经损伤风险高。" data-en="The thoracic canal is relatively narrow, so displaced fractures readily threaten the cord — neurological risk is high.">胸段椎管相对狭窄，骨折移位易伤及脊髓，神经损伤风险高。</p>
+      <p data-zh="机制：车祸、高处坠落等高能量损伤为主；骨质疏松者低能量跌倒也可骨折。" data-en="Mechanisms: mainly high-energy (MVC, falls from height); osteoporotic patients can fracture from low-energy falls.">机制：车祸、高处坠落等高能量损伤为主；骨质疏松者低能量跌倒也可骨折。</p>
+      
+      <details class="fold">
+        <summary data-zh="展开细节：胸段神经定位小提示" data-en="Details: tips on thoracic neuro localization">展开细节：胸段神经定位小提示</summary>
+        <div class="fold-body">
+          <p data-zh="感觉平面有助于定位损伤节段；T1 损伤可出现 Horner 综合征（交感链受累）。" data-en="The sensory level helps localize the injured segment; T1 injury can produce Horner syndrome (sympathetic chain involvement).">感觉平面有助于定位损伤节段；T1 损伤可出现 Horner 综合征（交感链受累）。</p>
+          <p data-zh="胸椎骨折常合并肋骨骨折、血气胸、肺挫伤，初评不要只看脊柱。" data-en="Thoracic fractures often coexist with rib fractures, hemo/pneumothorax, and pulmonary contusion — do not focus on the spine alone during the primary survey.">胸椎骨折常合并肋骨骨折、血气胸、肺挫伤，初评不要只看脊柱。</p>
+        </div>
+      </details>
+    <figure class="srcfig media-card">
+  <a class="media-image" href="assets/figs/thoracic-t12-compression-xray.png" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/thoracic-t12-compression-xray.png" data-alt-zh="侧位 X 线示胸腰段椎体压缩楔形变" data-alt-en="Lateral X-ray shows thoracolumbar compression wedging" alt="侧位 X 线示胸腰段椎体压缩楔形变"></a>
+  <figcaption data-zh="图 2-1 · <b>T12 压缩骨折（胸腰移行区）：侧位 X 线</b><br><span class='oblbl'>观察点：</span>下胸段椎体前缘楔形变，为 A 型压缩形态；T11–T12 是肋骨笼保护减弱、活动度增大的移行区，是骨折好发部位。<br><span class='oblim'>局限：</span>单张 X 线片；不能评估后方韧带复合体与椎管；节段定位以原图注为准。<br><span class='obsrc'>来源：<a href='https://commons.wikimedia.org/wiki/File:T12compressionfrac.png'>Heilman J. Wikimedia Commons; 单图</a> · 许可：<a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a></span>" data-en="Fig 2-1 · <b>T12 compression fracture (thoracolumbar junction): lateral X-ray</b><br><span class='oblbl'>Teaching points:</span> Anterior wedging of a lower thoracic body — A-type compression morphology. T11–T12 is the junction where rib-cage protection wanes and mobility rises: a common fracture site.<br><span class='oblim'>Limitations:</span> Single radiograph; cannot assess the posterior ligamentous complex or canal; level per original caption.<br><span class='obsrc'>Source: <a href='https://commons.wikimedia.org/wiki/File:T12compressionfrac.png'>Heilman J. Wikimedia Commons; single image</a> · License: <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a></span>">图 2-1 · <b>T12 压缩骨折（胸腰移行区）：侧位 X 线</b><br><span class='oblbl'>观察点：</span>下胸段椎体前缘楔形变，为 A 型压缩形态；T11–T12 是肋骨笼保护减弱、活动度增大的移行区，是骨折好发部位。<br><span class='oblim'>局限：</span>单张 X 线片；不能评估后方韧带复合体与椎管；节段定位以原图注为准。<br><span class='obsrc'>来源：<a href='https://commons.wikimedia.org/wiki/File:T12compressionfrac.png'>Heilman J. Wikimedia Commons; 单图</a> · 许可：<a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a></span></figcaption>
+</figure>
+<figure class="srcfig media-card">
+  <a class="media-image" href="assets/figs/thoracic-t6t7-fracture-dislocation-ct3d.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/thoracic-t6t7-fracture-dislocation-ct3d.jpg" data-alt-zh="冠状位 CT 示 T6/T7 骨折脱位伴移位" data-alt-en="Coronal CT shows T6/T7 fracture-dislocation with translation" alt="冠状位 CT 示 T6/T7 骨折脱位伴移位"></a>
+  <figcaption data-zh="图 2-2 · <b>T6–T7 骨折脱位（C 型）：冠状位 CT</b><br><span class='oblbl'>观察点：</span>高能量致 T6/T7 骨折脱位伴明显移位（C 型）；说明肋骨笼的稳定作用有其限度。该例罕见地无神经症状——不能反推 C 型损伤通常无神经损伤。<br><span class='oblim'>局限：</span>罕见病例；冠状位单一切面，移位全貌需结合多平面；单病例。<br><span class='obsrc'>来源：<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC4202694/'>Jiang B 等. J Med Case Rep. 2014; 图 1</a> · 许可：<a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a></span>" data-en="Fig 2-2 · <b>T6–T7 fracture-dislocation (type C): coronal CT</b><br><span class='oblbl'>Teaching points:</span> High-energy T6/T7 fracture-dislocation with marked translation (type C) — rib-cage stability has limits. This case unusually had no neurological deficit; do not infer that type C injuries are typically neurologically intact.<br><span class='oblim'>Limitations:</span> Rare case; single coronal plane — full displacement needs multiplanar review; single case.<br><span class='obsrc'>Source: <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC4202694/'>Jiang B et al. J Med Case Rep. 2014; Figure 1</a> · License: <a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a></span>">图 2-2 · <b>T6–T7 骨折脱位（C 型）：冠状位 CT</b><br><span class='oblbl'>观察点：</span>高能量致 T6/T7 骨折脱位伴明显移位（C 型）；说明肋骨笼的稳定作用有其限度。该例罕见地无神经症状——不能反推 C 型损伤通常无神经损伤。<br><span class='oblim'>局限：</span>罕见病例；冠状位单一切面，移位全貌需结合多平面；单病例。<br><span class='obsrc'>来源：<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC4202694/'>Jiang B 等. J Med Case Rep. 2014; 图 1</a> · 许可：<a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a></span></figcaption>
+</figure>
+</section>
+
+    <section class="sec" id="u2s2">
+      <h3 class="sec-title" data-zh="2 · 初评与红旗" data-en="2 · Initial Assessment &amp; Red Flags">2 · 初评与红旗</h3>
+      <p data-zh="ABCDE 初评，注意合并伤：肋骨骨折、血气胸、肺挫伤、胸骨骨折。" data-en="ABCDE primary survey; look for associated injuries: rib fractures, hemo/pneumothorax, pulmonary contusion, sternal fracture.">ABCDE 初评，注意合并伤：肋骨骨折、血气胸、肺挫伤、胸骨骨折。</p>
+      <p data-zh="神经检查：肋间与腹部感觉平面、双下肢运动感觉、肛门功能。" data-en="Neuro exam: intercostal and abdominal sensory levels, lower-limb motor/sensory function, anal function.">神经检查：肋间与腹部感觉平面、双下肢运动感觉、肛门功能。</p>
+      <div class="callout red">
+        <p data-zh="🚩 <strong>红旗：</strong>进行性截瘫或神经功能恶化；呼吸恶化（胸廓损伤加重）；严重胸背痛伴神经症状；休克 —— 区分失血性与神经源性。" data-en="🚩 <strong>Red flags:</strong> progressive paraplegia or neuro worsening; respiratory deterioration (worsened by chest injury); severe back pain with neuro symptoms; shock — distinguish hemorrhagic from neurogenic.">🚩 <strong>红旗：</strong>进行性截瘫或神经功能恶化；呼吸恶化（胸廓损伤加重）；严重胸背痛伴神经症状；休克 —— 区分失血性与神经源性。</p>
+      </div>
+      
+    </section>
+
+    <section class="sec" id="u2s3">
+      <h3 class="sec-title" data-zh="3 · 影像与分类" data-en="3 · Imaging &amp; Classification">3 · 影像与分类</h3>
+      <p data-zh="CT 用于详细评估骨性结构。MRI 评估后方韧带复合体（PLC）、脊髓、硬膜外血肿与椎间盘。" data-en="CT provides detailed assessment of bony structures. MRI evaluates the posterior ligamentous complex (PLC), the cord, epidural hematoma, and discs.">CT 用于详细评估骨性结构。MRI 评估后方韧带复合体（PLC）、脊髓、硬膜外血肿与椎间盘。</p>
+      <p data-zh="采用 AO Spine 胸腰椎分类：A 压缩（A0–A4）、B 张力带（B1–B3）、C 移位；神经状态 N0–N4 / NX；修饰因子 M1、M2。" data-en="Use the AO Spine Thoracolumbar system: A compression (A0–A4), B tension band (B1–B3), C translation; neuro N0–N4 / NX; modifiers M1, M2.">采用 AO Spine 胸腰椎分类：A 压缩（A0–A4）、B 张力带（B1–B3）、C 移位；神经状态 N0–N4 / NX；修饰因子 M1、M2。</p>
+      <p data-zh="文献中常用 TLICS 评分辅助决策（形态、PLC、神经状态三个维度），见 Vaccaro 等，Spine，2005。" data-en="The TLICS score (morphology, PLC, neuro status) is commonly used in the literature to aid decisions; see Vaccaro et al., Spine, 2005.">文献中常用 TLICS 评分辅助决策（形态、PLC、神经状态三个维度），见 Vaccaro 等，Spine，2005。</p>
+      <div class="callout">
+        <p data-zh="<strong>记住：</strong>分类与评分是沟通和决策辅助工具，不直接等于手术指征。" data-en="<strong>Remember:</strong> classification and scores aid communication and decisions; they do not directly equal a surgical indication."><strong>记住：</strong>分类与评分是沟通和决策辅助工具，不直接等于手术指征。</p>
+      </div>
+      <details class="fold">
+        <summary data-zh="展开细节：B 型各亚型（据 AO 官方）" data-en="Details: type B subtypes per AO official sources">展开细节：B 型各亚型（据 AO 官方）</summary>
+        <div class="fold-body">
+          <p data-zh="B1：单节段骨性后方张力带断裂，骨折线进入椎体，即 Chance 骨折（安全带伤）。" data-en="B1: monosegmental bony posterior tension band failure extending into the vertebral body — the Chance (seatbelt) fracture.">B1：单节段骨性后方张力带断裂，骨折线进入椎体，即 Chance 骨折（安全带伤）。</p>
+          <p data-zh="B2：后方张力带经软组织、或软组织加骨性结构的断裂。" data-en="B2: posterior tension band disruption through soft tissue, or soft tissue plus bone.">B2：后方张力带经软组织、或软组织加骨性结构的断裂。</p>
+          <p data-zh="B3：前方张力带过伸损伤，前纵韧带断裂，脊柱呈过伸位；常见于强直性疾病。" data-en="B3: anterior tension band hyperextension injury with anterior longitudinal ligament rupture; common in ankylotic disorders.">B3：前方张力带过伸损伤，前纵韧带断裂，脊柱呈过伸位；常见于强直性疾病。</p>
+          <p data-zh="M1：影像或查体不能确定张力带有无损伤。M2：可能影响手术决策的患者特异性合并症。" data-en="M1: indeterminate tension band injury on imaging or exam. M2: patient-specific comorbidity that may argue for or against surgery.">M1：影像或查体不能确定张力带有无损伤。M2：可能影响手术决策的患者特异性合并症。</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="sec" id="u2s4">
+      <h3 class="sec-title" data-zh="4 · AO 原则如何适用" data-en="4 · How AO Principles Apply">4 · AO 原则如何适用</h3>
+      <p data-zh="AO 原则在胸椎体现为：按损伤选择相对或绝对稳定、重建与损伤相称的稳定、保护血供与神经、尽早安全活动。" data-en="In the thoracic spine the AO principles mean: select relative or absolute stability according to the injury, reconstruct stability proportionate to the injury, preserve blood supply and neural elements, and mobilize early and safely.">AO 原则在胸椎体现为：按损伤选择相对或绝对稳定、重建与损伤相称的稳定、保护血供与神经、尽早安全活动。</p>
+      <p data-zh="<strong>张力带的作用（区分前后）：</strong>B1 是骨性后方张力带断裂（骨折线经骨），即使韧带连续也不稳定；B2 为后方骨韧带复合损伤。判断看骨性与韧带整体，不能只看 PLC 是否完整；怀疑韧带损伤时用 MRI 辅助，MRI 不是诊断 B1 的唯一关键。B3 为前方张力带过伸损伤，不能把全部 B 型等同于后方损伤。" data-en="<strong>Role of the tension band (anterior vs posterior):</strong> B1 is a bony posterior tension-band failure (fracture line through bone) — unstable even with intact ligaments; B2 is a posterior osseoligamentous injury. Judge bone and ligaments as a whole, not PLC integrity alone; MRI assists when ligament injury is suspected and is not the sole key to diagnosing B1. B3 is an anterior tension-band hyperextension injury — not all type B injuries are posterior."><strong>张力带的作用（区分前后）：</strong>B1 是骨性后方张力带断裂（骨折线经骨），即使韧带连续也不稳定；B2 为后方骨韧带复合损伤。判断看骨性与韧带整体，不能只看 PLC 是否完整；怀疑韧带损伤时用 MRI 辅助，MRI 不是诊断 B1 的唯一关键。B3 为前方张力带过伸损伤，不能把全部 B 型等同于后方损伤。</p>
+      <p data-zh="<strong>神经状态的作用：</strong>神经状态（N）决定减压的紧迫性；进行性神经功能恶化是急诊处理的最强信号之一。" data-en="<strong>Role of neurological status:</strong> neuro status (N) drives decompression urgency; progressive deficit is among the strongest signals for emergent management."><strong>神经状态的作用：</strong>神经状态（N）决定减压的紧迫性；进行性神经功能恶化是急诊处理的最强信号之一。</p>
+      <p data-zh="强直性脊柱炎者：B3 过伸伤好发，轻微创伤即可致长节段不稳，固定常需跨越更长节段 —— 个体化方案。" data-en="Ankylosing spondylitis: prone to B3 hyperextension injuries; minor trauma can cause long-segment instability, and fixation often spans longer segments — individualized.">强直性脊柱炎者：B3 过伸伤好发，轻微创伤即可致长节段不稳，固定常需跨越更长节段 —— 个体化方案。</p>
+    </section>
+
+    <section class="sec" id="u2s5">
+      <h3 class="sec-title" data-zh="5 · 治疗选择与限制" data-en="5 · Treatment Options &amp; Limitations">5 · 治疗选择与限制</h3>
+      <p data-zh="非手术：支具、镇痛、早期活动。限制：长期卧床带来 VTE、肺炎、压疮风险。" data-en="Nonoperative: bracing, analgesia, early mobilization. Limits: prolonged bed rest brings VTE, pneumonia, and pressure-injury risk.">非手术：支具、镇痛、早期活动。限制：长期卧床带来 VTE、肺炎、压疮风险。</p>
+      <p data-zh="手术：后路固定最常用；前路较少单独使用。选择依据压迫部位、损伤形态与团队经验。" data-en="Surgery: posterior fixation most common; anterior alone less used. Chosen by compression site, morphology, and team experience.">手术：后路固定最常用；前路较少单独使用。选择依据压迫部位、损伤形态与团队经验。</p>
+      <p data-zh="骨质疏松者：骨水泥强化是选项之一，适应证个体化；抗骨质疏松治疗应纳入整体管理。" data-en="Osteoporosis: cement augmentation is one option with individualized indications; anti-osteoporosis therapy belongs in overall management.">骨质疏松者：骨水泥强化是选项之一，适应证个体化；抗骨质疏松治疗应纳入整体管理。</p>
+      <p data-zh="复位决策个体化，需神经监测条件。本课程不给出统一复位操作流程。" data-en="Reduction decisions are individualized and require neuromonitoring. This course gives no universal reduction protocol.">复位决策个体化，需神经监测条件。本课程不给出统一复位操作流程。</p>
+    </section>
+
+    <section class="sec" id="u2s6">
+      <h3 class="sec-title" data-zh="6 · 并发症与随访" data-en="6 · Complications &amp; Follow-up">6 · 并发症与随访</h3>
+      <ul>
+        <li data-zh="脊髓损伤相关：VTE、压疮、肺炎、尿路感染、痉挛状态。" data-en="SCI-related: VTE, pressure injuries, pneumonia, urinary infection, spasticity.">脊髓损伤相关：VTE、压疮、肺炎、尿路感染、痉挛状态。</li>
+        <li data-zh="迟发后凸畸形、慢性胸背痛、内固定失败或松动。" data-en="Delayed kyphosis, chronic back pain, hardware failure or loosening.">迟发后凸畸形、慢性胸背痛、内固定失败或松动。</li>
+        <li data-zh="骨质疏松者：邻近椎体再骨折风险。" data-en="Osteoporotic patients: adjacent vertebral re-fracture risk.">骨质疏松者：邻近椎体再骨折风险。</li>
+      </ul>
+      <p data-zh="随访：神经功能、影像（按本地方案）、康复、骨质疏松管理与跌倒预防。" data-en="Follow-up: neurological function, imaging per local protocol, rehabilitation, osteoporosis management and fall prevention.">随访：神经功能、影像（按本地方案）、康复、骨质疏松管理与跌倒预防。</p>
+    </section>
+
+    <section class="sec" id="u2s7">
+      <h3 class="sec-title" data-zh="7 · 病例自测" data-en="7 · Case-based Quiz">7 · 病例自测</h3>
+
+      <div class="quiz">
+        <p class="qstem" data-zh="病例 2-1（合成教学病例）：55 岁男性，高处坠落，T12 爆裂骨折，累及单终板与后壁（A3），神经完整（N0），PLC 状态不确定（M1）。从 AO 框架看，最合适的表述是？" data-en="Case 2-1 (synthetic teaching case): A 55-year-old man fell from height; T12 burst fracture involving a single endplate and the posterior wall (A3), neurologically intact (N0), PLC status uncertain (M1). Under the AO framework, the best statement is?">病例 2-1（合成教学病例）：55 岁男性，高处坠落，T12 爆裂骨折，累及单终板与后壁（A3），神经完整（N0），PLC 状态不确定（M1）。从 AO 框架看，最合适的表述是？</p>
+        <button class="opt" data-correct="1" data-zh="<span class='k'>A</span> A3N0M1；单纯 A3N0 常可非手术，但 M1 提示需 MRI 明确 PLC 并密切随访，决策个体化" data-en="<span class='k'>A</span> A3N0M1; isolated A3N0 is often nonoperative, but M1 calls for MRI to clarify the PLC plus close follow-up — individualized"><span class='k'>A</span> A3N0M1；单纯 A3N0 常可非手术，但 M1 提示需 MRI 明确 PLC 并密切随访，决策个体化</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>B</span> 所有爆裂骨折都只能采用手术固定" data-en="<span class='k'>B</span> All burst fractures must be surgically fixed"><span class='k'>B</span> 所有爆裂骨折都只能采用手术固定</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>C</span> A3 等同于后方张力带断裂" data-en="<span class='k'>C</span> A3 equals posterior tension band rupture"><span class='k'>C</span> A3 等同于后方张力带断裂</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>D</span> 神经完整即无需 MRI" data-en="<span class='k'>D</span> Intact neurology means MRI is unnecessary"><span class='k'>D</span> 神经完整即无需 MRI</button>
+        <div class="feedback" data-zh="<strong>回答正确。</strong>A3 后壁受累但后方张力带可以完整；M1（不确定）正是要求进一步评估的标记。分类描述损伤，治疗看整体。" data-en="<strong>Correct.</strong> A3 involves the posterior wall, but the tension band may still be intact; M1 (indeterminate) is exactly the flag for further workup. Classification describes; treatment considers the whole picture."><strong>回答正确。</strong>A3 后壁受累但后方张力带可以完整；M1（不确定）正是要求进一步评估的标记。分类描述损伤，治疗看整体。</div>
+      </div>
+
+      <div class="quiz">
+        <p class="qstem" data-zh="病例 2-2（合成教学病例）：30 岁女性，安全带伤，L1 Chance 骨折（B1，骨性后方张力带断裂），神经完整。关于 B1，最合适的表述是？" data-en="Case 2-2 (synthetic teaching case): A 30-year-old woman, seatbelt injury, L1 Chance fracture (B1, bony posterior tension band failure), neurologically intact. The best statement about B1 is?">病例 2-2（合成教学病例）：30 岁女性，安全带伤，L1 Chance 骨折（B1，骨性后方张力带断裂），神经完整。关于 B1，最合适的表述是？</p>
+        <button class="opt" data-correct="1" data-zh="<span class='k'>A</span> B1 为骨性后方张力带断裂，多属不稳定损伤，临床多倾向手术稳定，但仍需结合神经、合并伤与患者情况个体化决策" data-en="<span class='k'>A</span> B1 is bony posterior tension band failure, usually unstable; practice often favors surgical stabilization, still individualized with neuro status, associated injuries, and patient factors"><span class='k'>A</span> B1 为骨性后方张力带断裂，多属不稳定损伤，临床多倾向手术稳定，但仍需结合神经、合并伤与患者情况个体化决策</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>B</span> B1 是压缩损伤，支具固定、无需随访即可" data-en="<span class='k'>B</span> B1 is a compression injury; bracing without follow-up is enough"><span class='k'>B</span> B1 是压缩损伤，支具固定、无需随访即可</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>C</span> B1 只见于颈椎" data-en="<span class='k'>C</span> B1 occurs only in the cervical spine"><span class='k'>C</span> B1 只见于颈椎</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>D</span> B1 等同于 A3 爆裂骨折" data-en="<span class='k'>D</span> B1 equals an A3 burst fracture"><span class='k'>D</span> B1 等同于 A3 爆裂骨折</button>
+        <div class="feedback" data-zh="<strong>回答正确。</strong>Chance 骨折是经骨性的后方张力带断裂（B1），与单纯压缩（A 型）机制不同；张力带断裂多不稳定，临床多倾向手术，但决策仍看整体。" data-en="<strong>Correct.</strong> The Chance fracture is a transosseous posterior tension band failure (B1), mechanistically different from pure compression (type A); tension band failure is usually unstable and often managed surgically, but the whole picture still decides."><strong>回答正确。</strong>Chance 骨折是经骨性的后方张力带断裂（B1），与单纯压缩（A 型）机制不同；张力带断裂多不稳定，临床多倾向手术，但决策仍看整体。</div>
+      </div>
+
+      <div class="quiz">
+        <p class="qstem" data-zh="病例 2-3（合成教学病例）：胸椎骨折患者出现进行性双下肢无力、血压下降。首要处理是？" data-en="Case 2-3 (synthetic teaching case): A thoracic fracture patient develops progressive leg weakness and hypotension. The first step is?">病例 2-3（合成教学病例）：胸椎骨折患者出现进行性双下肢无力、血压下降。首要处理是？</p>
+        <button class="opt" data-correct="1" data-zh="<span class='k'>A</span> 立即按 ABCDE 复评：排查神经源性休克与失血，急诊影像复查并请专科会诊" data-en="<span class='k'>A</span> Immediate ABCDE reassessment: rule out neurogenic vs hemorrhagic shock, emergent repeat imaging, urgent specialty consult"><span class='k'>A</span> 立即按 ABCDE 复评：排查神经源性休克与失血，急诊影像复查并请专科会诊</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>B</span> 先拍 X 线片再决定" data-en="<span class='k'>B</span> Get an X-ray first, then decide"><span class='k'>B</span> 先拍 X 线片再决定</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>C</span> 鼓励患者自行活动下肢" data-en="<span class='k'>C</span> Encourage the patient to move the legs"><span class='k'>C</span> 鼓励患者自行活动下肢</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>D</span> 观察等待，自行恢复" data-en="<span class='k'>D</span> Watch and wait for spontaneous recovery"><span class='k'>D</span> 观察等待，自行恢复</button>
+        <div class="feedback" data-zh="<strong>回答正确。</strong>进行性神经恶化合并休克是红旗中的红旗：先稳定生命体征、鉴别休克类型，同时启动急诊影像与专科通道。" data-en="<strong>Correct.</strong> Progressive deficit plus shock is the reddest of flags: stabilize vitals, sort out shock type, and activate emergent imaging plus specialty input."><strong>回答正确。</strong>进行性神经恶化合并休克是红旗中的红旗：先稳定生命体征、鉴别休克类型，同时启动急诊影像与专科通道。</div>
+      </div>
+
+      <div class="quiz">
+        <p class="qstem" data-zh="病例 2-4（合成教学病例）：B1（Chance）骨折的形态特点是？" data-en="Case 2-4 (synthetic teaching case): what characterizes a B1 (Chance) fracture in the video?">病例 2-4（合成教学病例）：B1（Chance）骨折的形态特点是？</p>
+        <button class="opt" data-correct="1" data-zh="<span class='k'>A</span> 经骨性的后方张力带水平断裂，骨折线进入椎体" data-en="<span class='k'>A</span> A transosseous horizontal posterior tension band failure extending into the vertebral body"><span class='k'>A</span> 经骨性的后方张力带水平断裂，骨折线进入椎体</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>B</span> 前方张力带过伸损伤" data-en="<span class='k'>B</span> Anterior tension band hyperextension injury"><span class='k'>B</span> 前方张力带过伸损伤</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>C</span> 双终板爆裂" data-en="<span class='k'>C</span> Both-endplate burst"><span class='k'>C</span> 双终板爆裂</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>D</span> 椎体向前移位" data-en="<span class='k'>D</span> Anterior vertebral translation"><span class='k'>D</span> 椎体向前移位</button>
+        <div class="feedback" data-zh="<strong>回答正确。</strong>B1 是单节段骨性后方张力带断裂（安全带伤）；B3 是前方过伸损伤 —— 一后一前，不要混淆。" data-en="<strong>Correct.</strong> B1 is a monosegmental bony posterior tension band failure (seatbelt injury); B3 is anterior hyperextension — posterior vs anterior, don't confuse them."><strong>回答正确。</strong>B1 是单节段骨性后方张力带断裂（安全带伤）；B3 是前方过伸损伤 —— 一后一前，不要混淆。</div>
+      </div>
+    </section>
+
+
+    <section class="sec" id="u2s8">
+  <h3 class="sec-title" data-zh="8 · 官方影像资源" data-en="8 · Official imaging resources">8 · 官方影像资源</h3>
+  <div class="aocard">
+    <p data-zh="以下为 AO Surgery Reference 官方原页链接（含官方分类图例与讲解）。本课程仅作链接，不复制、不热链 AO 图片——按 <a href='https://surgeryreference.aofoundation.org/further-reading/faq'>AO FAQ</a>，插图仅授权非商业演示（须带 AO 标识并注明来源），出版物或在线转载须另行向 AO 申请许可。" data-en="Links below open official AO Surgery Reference pages (official classification illustrations and explanations). This course links only — no AO images are copied or hotlinked: per the <a href='https://surgeryreference.aofoundation.org/further-reading/faq'>AO FAQ</a>, illustrations are licensed for noncommercial presentations only (with AO logo and source stated); republication online requires separate AO permission.">以下为 AO Surgery Reference 官方原页链接（含官方分类图例与讲解）。本课程仅作链接，不复制、不热链 AO 图片——按 <a href='https://surgeryreference.aofoundation.org/further-reading/faq'>AO FAQ</a>，插图仅授权非商业演示（须带 AO 标识并注明来源），出版物或在线转载须另行向 AO 申请许可。</p>
+    <ul>
+<li><a href='https://surgeryreference.aofoundation.org/spine/trauma/thoracolumbar/further-reading/rationale-for-fracture-classification-a0-a1-a2-a3-a4-b1-b2-b3-c'>AO Surgery Reference · 胸腰椎骨折分类依据</a><br><span data-zh='定位：胸腰椎 A0–A4 / B1–B3 / C 分型的官方依据。' data-en='Covers: official rationale for thoracolumbar A0–A4 / B1–B3 / C classification.'>定位：胸腰椎 A0–A4 / B1–B3 / C 分型的官方依据。</span></li>
+    </ul>
+  </div>
+</section>
+
+    <div class="sources">
+      <h4 data-zh="来源与许可 · 单元二" data-en="Sources &amp; Licensing · Unit 2">来源与许可 · 单元二</h4>
+      <ol>
+        <li><a href="https://surgeryreference.aofoundation.org/spine/trauma/thoracolumbar/further-reading/rationale-for-fracture-classification-a0-a1-a2-a3-a4-b1-b2-b3-c">AO Surgery Reference — Spine trauma · Thoracolumbar · “AO Spine thoracolumbar injury classification system”</a><br><span data-zh="定位：胸腰椎 A0–A4 / B1–B3 / C 定义、M1–M2 修饰因子、分类命名示例。访问日期 2026-10-04。" data-en="Covers: thoracolumbar A0–A4 / B1–B3 / C definitions, M1–M2 modifiers, nomenclature examples. Accessed 2026-10-04.">定位：胸腰椎 A0–A4 / B1–B3 / C 定义、M1–M2 修饰因子、分类命名示例。访问日期 2026-10-04。</span> <span class="lic" data-zh="许可：AO Foundation 官网内容（链接查看）。" data-en="License: AO Foundation website content (view via link).">许可：AO Foundation 官网内容（链接查看）。</span></li>
+        <li><span data-zh="期刊引文：Vaccaro AR 等，AO Spine 胸腰椎分类，Spine. 2013；Vaccaro AR 等，TLICS 评分，Spine. 2005。（定位：分类体系与辅助评分的原始文献）" data-en="Journal citations: Vaccaro AR et al., AO Spine thoracolumbar classification, Spine. 2013; Vaccaro AR et al., TLICS score, Spine. 2005. (Covers: original literature of the classification and adjunct score.)">期刊引文：Vaccaro AR 等，AO Spine 胸腰椎分类，Spine. 2013；Vaccaro AR 等，TLICS 评分，Spine. 2005。（定位：分类体系与辅助评分的原始文献）</span></li>
+        
+        
+        
+      <li><span data-zh="真实影像 图 2-1（CC BY-SA 4.0）、图 2-2（CC BY 4.0）：见图注来源与许可；随包 media_sources-spine.csv 记录作者、文章、图号、原文与许可链接。" data-en="Real images Fig 2-1 (CC BY-SA 4.0), Fig 2-2 (CC BY 4.0): see caption sources and licenses; media_sources-spine.csv logs authors, articles, figure numbers, source and license URLs.">真实影像 图 2-1（CC BY-SA 4.0）、图 2-2（CC BY 4.0）：见图注来源与许可；随包 media_sources-spine.csv 记录作者、文章、图号、原文与许可链接。</span></li>
+      </ol>
+    </div>
+  </article>
+
+  <!-- ================= 单元三 · 腰椎骨折 ================= -->
+  <article class="unit" id="unit3">
+    <div class="unit-head">
+      <div class="no">UNIT 3</div>
+      <h2 data-zh="腰椎骨折" data-en="Lumbar Spine Fractures">腰椎骨折</h2>
+      <p data-zh="L1–L5：脊髓圆锥约止于 L1–L2，以下为马尾；神经状态与张力带状态是决策的两大支柱。" data-en="L1–L5: the conus ends around L1–L2, with cauda equina below; neuro status and tension band status are the two pillars of decision-making.">L1–L5：脊髓圆锥约止于 L1–L2，以下为马尾；神经状态与张力带状态是决策的两大支柱。</p>
+    </div>
+    <div class="revealbar">
+      <span class="reveal-count"></span>
+      <button class="btn-next" data-zh="下一步" data-en="Next">下一步</button>
+      <button class="plain btn-all" data-zh="显示本单元全部" data-en="Show all of this unit">显示本单元全部</button>
+    </div>
+
+    <section class="sec" id="u3s1">
+      <h3 class="sec-title" data-zh="1 · 解剖与机制" data-en="1 · Anatomy &amp; Mechanism">1 · 解剖与机制</h3>
+      <p data-zh="腰椎 L1–L5：椎体大而坚固，椎间盘厚，整体呈前凸，承担主要轴向负荷。" data-en="Lumbar spine (L1–L5): large sturdy bodies, thick discs, lordotic curve, carrying most axial load.">腰椎 L1–L5：椎体大而坚固，椎间盘厚，整体呈前凸，承担主要轴向负荷。</p>
+      <p data-zh="脊髓圆锥约止于 L1–L2 水平；圆锥以下为马尾（多发神经根）。" data-en="The conus medullaris ends around L1–L2; below it lies the cauda equina (multiple nerve roots).">脊髓圆锥约止于 L1–L2 水平；圆锥以下为马尾（多发神经根）。</p>
+      <p data-zh="机制：高处坠落的轴向负荷、屈曲压缩多见；骨质疏松者低能量跌倒也可发生压缩骨折。" data-en="Mechanisms: axial loading from falls from height and flexion-compression are typical; osteoporotic patients fracture from low-energy falls.">机制：高处坠落的轴向负荷、屈曲压缩多见；骨质疏松者低能量跌倒也可发生压缩骨折。</p>
+      
+      <details class="fold">
+        <summary data-zh="展开细节：圆锥损伤 vs 马尾损伤" data-en="Details: conus vs cauda equina injury">展开细节：圆锥损伤 vs 马尾损伤</summary>
+        <div class="fold-body">
+          <p data-zh="圆锥损伤表现为脊髓损伤特征（上运动神经元与下运动神经元混合）。" data-en="Conus injury shows spinal cord injury features (mixed upper and lower motor neuron signs).">圆锥损伤表现为脊髓损伤特征（上运动神经元与下运动神经元混合）。</p>
+          <p data-zh="马尾损伤表现为多发神经根特征（下运动神经元为主）。恢复潜力的表述需谨慎，个体化评估。" data-en="Cauda equina injury shows polyradicular features (predominantly lower motor neuron). Statements about recovery potential must be cautious and individualized.">马尾损伤表现为多发神经根特征（下运动神经元为主）。恢复潜力的表述需谨慎，个体化评估。</p>
+        </div>
+      </details>
+    <figure class="srcfig media-card">
+  <a class="media-image" href="assets/figs/lumbar-burst-ct-a3.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/lumbar-burst-ct-a3.jpg" data-alt-zh="CT 示 L1 爆裂骨折（矢状位与轴位）" data-alt-en="CT shows L1 burst fracture (sagittal and axial)" alt="CT 示 L1 爆裂骨折（矢状位与轴位）"></a>
+  <figcaption data-zh="图 3-1 · <b>L1 爆裂骨折（A3）：矢状位与轴位 CT</b><br><span class='oblbl'>观察点：</span>A 为矢状位（含层面定位线），B 为轴位：L1 椎体爆裂（红圈），原作者按 AO 分为 A3。该例初发时椎管无明显受压、后期出现神经症状而 MRI 无对应——形态与神经状态可分离，N 需独立评估。<br><span class='oblim'>局限：</span>A3 分型为原作者判定；单病例；不能仅凭形态预测神经结局。<br><span class='obsrc'>来源：<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC11781822/'>Nadeson Y, Zakaria AF. Cureus. 2024; 图 1</a> · 许可：<a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a></span>" data-en="Fig 3-1 · <b>L1 burst fracture (A3): sagittal and axial CT</b><br><span class='oblbl'>Teaching points:</span> Panel A sagittal (with slice localizer), panel B axial: L1 burst (red circles), classified A3 by the authors. This case had no initial canal compromise yet developed delayed deficits without MRI correlate — morphology and neurology can dissociate; assess N independently.<br><span class='oblim'>Limitations:</span> A3 per original authors; single case; morphology alone does not predict neurological outcome.<br><span class='obsrc'>Source: <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC11781822/'>Nadeson Y, Zakaria AF. Cureus. 2024; Figure 1</a> · License: <a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a></span>">图 3-1 · <b>L1 爆裂骨折（A3）：矢状位与轴位 CT</b><br><span class='oblbl'>观察点：</span>A 为矢状位（含层面定位线），B 为轴位：L1 椎体爆裂（红圈），原作者按 AO 分为 A3。该例初发时椎管无明显受压、后期出现神经症状而 MRI 无对应——形态与神经状态可分离，N 需独立评估。<br><span class='oblim'>局限：</span>A3 分型为原作者判定；单病例；不能仅凭形态预测神经结局。<br><span class='obsrc'>来源：<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC11781822/'>Nadeson Y, Zakaria AF. Cureus. 2024; 图 1</a> · 许可：<a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a></span></figcaption>
+</figure>
+<figure class="srcfig media-card">
+  <a class="media-image" href="assets/figs/lumbar-ces-mri-sagittal.jpg" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/figs/lumbar-ces-mri-sagittal.jpg" data-alt-zh="矢状位 MRI 示 L1 爆裂后突压迫马尾" data-alt-en="Sagittal MRI shows L1 burst retropulsion compressing cauda equina" alt="矢状位 MRI 示 L1 爆裂后突压迫马尾"></a>
+  <figcaption data-zh="图 3-2 · <b>L1 爆裂致马尾受压：矢状位 T2 MRI</b><br><span class='oblbl'>观察点：</span>L1 塌陷、后突骨块压迫硬膜囊/马尾；该例有急性尿潴留、肛门张力消失——马尾红旗。L1 位于圆锥（约 L1–L2）与马尾交界，损伤平面决定受威胁的神经结构。<br><span class='oblim'>局限：</span>骨质疏松患者跌倒后的单病例；圆锥终止存在个体变异；MRI 为单一切面。<br><span class='obsrc'>来源：<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8856586/'>Hsin LY, Yilun H. Cureus. 2022; 图 1</a> · 许可：<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8856586/#article-notes'>CC BY</a></span>" data-en="Fig 3-2 · <b>L1 burst with cauda equina compression: sagittal T2 MRI</b><br><span class='oblbl'>Teaching points:</span> Collapsed L1 with retropulsed fragment compressing the thecal sac/cauda equina; this patient had acute urinary retention and absent anal tone — cauda equina red flags. L1 sits at the conus–cauda junction; level determines the neural structures at risk.<br><span class='oblim'>Limitations:</span> Single case after a fall in a patient with osteoporosis; conus level varies; single MRI plane.<br><span class='obsrc'>Source: <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8856586/'>Hsin LY, Yilun H. Cureus. 2022; Figure 1</a> · License: <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8856586/#article-notes'>CC BY</a></span>">图 3-2 · <b>L1 爆裂致马尾受压：矢状位 T2 MRI</b><br><span class='oblbl'>观察点：</span>L1 塌陷、后突骨块压迫硬膜囊/马尾；该例有急性尿潴留、肛门张力消失——马尾红旗。L1 位于圆锥（约 L1–L2）与马尾交界，损伤平面决定受威胁的神经结构。<br><span class='oblim'>局限：</span>骨质疏松患者跌倒后的单病例；圆锥终止存在个体变异；MRI 为单一切面。<br><span class='obsrc'>来源：<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8856586/'>Hsin LY, Yilun H. Cureus. 2022; 图 1</a> · 许可：<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8856586/#article-notes'>CC BY</a></span></figcaption>
+</figure>
+</section>
+
+    <section class="sec" id="u3s2">
+      <h3 class="sec-title" data-zh="2 · 初评与红旗" data-en="2 · Initial Assessment &amp; Red Flags">2 · 初评与红旗</h3>
+      <p data-zh="ABCDE 初评。腰痛伴神经症状者需急诊评估，不要只开止痛药打发。" data-en="ABCDE primary survey. Back pain with neurological symptoms needs emergent evaluation — not just analgesics.">ABCDE 初评。腰痛伴神经症状者需急诊评估，不要只开止痛药打发。</p>
+      <div class="callout red">
+        <p data-zh="🚩 <strong>马尾综合征红旗：</strong>鞍区麻木；排尿困难、尿潴留或失禁；排便障碍；性功能障碍；双下肢进行性无力或广泛神经根痛。出现即按急症处理。" data-en="🚩 <strong>Cauda equina red flags:</strong> saddle anesthesia; difficulty voiding, retention, or incontinence; bowel dysfunction; sexual dysfunction; progressive bilateral leg weakness or widespread radicular pain. Treat as an emergency when present.">🚩 <strong>马尾综合征红旗：</strong>鞍区麻木；排尿困难、尿潴留或失禁；排便障碍；性功能障碍；双下肢进行性无力或广泛神经根痛。出现即按急症处理。</p>
+      </div>
+      
+    </section>
+
+    <section class="sec" id="u3s3">
+      <h3 class="sec-title" data-zh="3 · 影像与分类" data-en="3 · Imaging &amp; Classification">3 · 影像与分类</h3>
+      <p data-zh="CT 评估骨性结构；MRI 评估 PLC、椎间盘、马尾受压与硬膜外血肿。" data-en="CT for bony structures; MRI for the PLC, discs, cauda equina compression, and epidural hematoma.">CT 评估骨性结构；MRI 评估 PLC、椎间盘、马尾受压与硬膜外血肿。</p>
+      <p data-zh="腰椎同样采用 AO Spine 胸腰椎分类：A 压缩（A0–A4）、B 张力带（B1–B3）、C 移位；神经状态 N；修饰因子 M。" data-en="The lumbar spine uses the same AO Spine Thoracolumbar system: A compression (A0–A4), B tension band (B1–B3), C translation; neuro N; modifiers M.">腰椎同样采用 AO Spine 胸腰椎分类：A 压缩（A0–A4）、B 张力带（B1–B3）、C 移位；神经状态 N；修饰因子 M。</p>
+      <p data-zh="注意：AO 框架中 N3 包含任何程度的马尾损伤。记录神经状态时不要遗漏骶部与会阴检查。" data-en="Note: in the AO framework, N3 includes cauda equina injury of any degree. Do not skip sacral and perineal examination when documenting neuro status.">注意：AO 框架中 N3 包含任何程度的马尾损伤。记录神经状态时不要遗漏骶部与会阴检查。</p>
+      <div class="callout">
+        <p data-zh="<strong>记住：</strong>分类是共同语言，不直接等于手术指征。腰椎同样如此。" data-en="<strong>Remember:</strong> classification is a common language, not a surgical indication — in the lumbar spine too."><strong>记住：</strong>分类是共同语言，不直接等于手术指征。腰椎同样如此。</p>
+      </div>
+    </section>
+
+    <section class="sec" id="u3s4">
+      <h3 class="sec-title" data-zh="4 · AO 原则如何适用" data-en="4 · How AO Principles Apply">4 · AO 原则如何适用</h3>
+      <p data-zh="AO 原则在腰椎体现为：按损伤选择相对或绝对稳定、基于神经受压证据减压、保护血供、早期安全活动。" data-en="In the lumbar spine the AO principles mean: select relative or absolute stability according to the injury, decompress based on evidence of neural compression, preserve blood supply, and mobilize early and safely.">AO 原则在腰椎体现为：按损伤选择相对或绝对稳定、基于神经受压证据减压、保护血供、早期安全活动。</p>
+      <p data-zh="<strong>神经状态的作用：</strong>神经状态（N）是决策的核心权重。马尾综合征确诊后，临床共识倾向于尽快减压；具体时间窗存在争议，个体化决策。" data-en="<strong>Role of neurological status:</strong> neuro status (N) carries the central weight. Once cauda equina syndrome is confirmed, consensus favors prompt decompression; the exact time window is debated — decide individually."><strong>神经状态的作用：</strong>神经状态（N）是决策的核心权重。马尾综合征确诊后，临床共识倾向于尽快减压；具体时间窗存在争议，个体化决策。</p>
+      <p data-zh="<strong>张力带的作用（区分前后）：</strong>B1 是骨性后方张力带断裂，即使韧带连续也不稳定；B2 为后方骨韧带复合损伤。判断看骨性与韧带整体，不能只看 PLC；怀疑韧带损伤时用 MRI 辅助。B3 为前方张力带损伤，评估逻辑不同。" data-en="<strong>Role of the tension band (anterior vs posterior):</strong> B1 is a bony posterior tension-band failure — unstable even with intact ligaments; B2 is a posterior osseoligamentous injury. Judge bone and ligaments as a whole, not PLC alone; MRI assists suspected ligament injury. B3 is an anterior tension band injury and is assessed differently."><strong>张力带的作用（区分前后）：</strong>B1 是骨性后方张力带断裂，即使韧带连续也不稳定；B2 为后方骨韧带复合损伤。判断看骨性与韧带整体，不能只看 PLC；怀疑韧带损伤时用 MRI 辅助。B3 为前方张力带损伤，评估逻辑不同。</p>
+    </section>
+
+    <section class="sec" id="u3s5">
+      <h3 class="sec-title" data-zh="5 · 治疗选择与限制" data-en="5 · Treatment Options &amp; Limitations">5 · 治疗选择与限制</h3>
+      <p data-zh="非手术：支具、镇痛、早期下床活动。稳定压缩骨折常采用此路径。" data-en="Nonoperative: bracing, analgesia, early mobilization. Stable compression fractures often follow this path.">非手术：支具、镇痛、早期下床活动。稳定压缩骨折常采用此路径。</p>
+      <p data-zh="手术：后路减压固定最常用；前路较少单独使用。依据压迫部位、形态与团队经验选择。" data-en="Surgery: posterior decompression and fixation most common; anterior alone less used. Chosen by compression site, morphology, and team experience.">手术：后路减压固定最常用；前路较少单独使用。依据压迫部位、形态与团队经验选择。</p>
+      <p data-zh="骨质疏松性骨折：保守或骨水泥强化，适应证个体化；抗骨质疏松治疗是随访重点，不要只治骨折不治骨质疏松。" data-en="Osteoporotic fractures: conservative care or cement augmentation with individualized indications; anti-osteoporosis therapy is a follow-up priority — treat the osteoporosis, not just the fracture.">骨质疏松性骨折：保守或骨水泥强化，适应证个体化；抗骨质疏松治疗是随访重点，不要只治骨折不治骨质疏松。</p>
+      <p data-zh="复位决策个体化，需神经监测条件。本课程不给出统一复位操作流程。" data-en="Reduction decisions are individualized and require neuromonitoring. This course gives no universal reduction protocol.">复位决策个体化，需神经监测条件。本课程不给出统一复位操作流程。</p>
+    </section>
+
+    <section class="sec" id="u3s6">
+      <h3 class="sec-title" data-zh="6 · 并发症与随访" data-en="6 · Complications &amp; Follow-up">6 · 并发症与随访</h3>
+      <ul>
+        <li data-zh="马尾功能残留：膀胱、肠道、性功能障碍，需长期管理。" data-en="Residual cauda equina dysfunction: bladder, bowel, and sexual dysfunction requiring long-term management.">马尾功能残留：膀胱、肠道、性功能障碍，需长期管理。</li>
+        <li data-zh="慢性腰痛；邻近节段退变；内固定相关问题。" data-en="Chronic low back pain; adjacent-segment degeneration; hardware-related issues.">慢性腰痛；邻近节段退变；内固定相关问题。</li>
+        <li data-zh="骨质疏松者再骨折；长期卧床相关 VTE、压疮、肺炎。" data-en="Re-fracture in osteoporotic patients; immobility-related VTE, pressure injuries, pneumonia.">骨质疏松者再骨折；长期卧床相关 VTE、压疮、肺炎。</li>
+      </ul>
+      <p data-zh="随访：神经功能、影像（按本地方案）、康复、骨密度评估与跌倒预防。" data-en="Follow-up: neurological function, imaging per local protocol, rehabilitation, bone-density assessment and fall prevention.">随访：神经功能、影像（按本地方案）、康复、骨密度评估与跌倒预防。</p>
+    </section>
+
+    <section class="sec" id="u3s7">
+      <h3 class="sec-title" data-zh="7 · 病例自测" data-en="7 · Case-based Quiz">7 · 病例自测</h3>
+
+      <div class="quiz">
+        <p class="qstem" data-zh="病例 3-1（合成教学病例）：60 岁女性，跌倒，L1 压缩骨折（A1），神经完整（N0），PLC 完整。最合适的表述是？" data-en="Case 3-1 (synthetic teaching case): A 60-year-old woman fell; L1 compression fracture (A1), neurologically intact (N0), PLC intact. The best statement is?">病例 3-1（合成教学病例）：60 岁女性，跌倒，L1 压缩骨折（A1），神经完整（N0），PLC 完整。最合适的表述是？</p>
+        <button class="opt" data-correct="1" data-zh="<span class='k'>A</span> A1N0 稳定压缩骨折，常可支具加镇痛加早期活动，并评估骨质疏松" data-en="<span class='k'>A</span> A1N0 stable compression fracture; bracing plus analgesia plus early mobilization is often enough, with osteoporosis assessment"><span class='k'>A</span> A1N0 稳定压缩骨折，常可支具加镇痛加早期活动，并评估骨质疏松</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>B</span> 必须严格卧床 3 个月" data-en="<span class='k'>B</span> Strict bed rest for 3 months is mandatory"><span class='k'>B</span> 必须严格卧床 3 个月</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>C</span> 所有压缩骨折都需骨水泥强化" data-en="<span class='k'>C</span> All compression fractures need cement augmentation"><span class='k'>C</span> 所有压缩骨折都需骨水泥强化</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>D</span> A1 属于移位损伤" data-en="<span class='k'>D</span> A1 is a translational injury"><span class='k'>D</span> A1 属于移位损伤</button>
+        <div class="feedback" data-zh="<strong>回答正确。</strong>稳定压缩骨折多非手术；骨水泥有特定适应证，不常规使用。骨质疏松评估与治疗是随访重点。" data-en="<strong>Correct.</strong> Stable compression fractures are usually nonoperative; cement has specific indications, not routine use. Osteoporosis workup and treatment are follow-up priorities."><strong>回答正确。</strong>稳定压缩骨折多非手术；骨水泥有特定适应证，不常规使用。骨质疏松评估与治疗是随访重点。</div>
+      </div>
+
+      <div class="quiz">
+        <p class="qstem" data-zh="病例 3-2（合成教学病例）：52 岁男性，腰痛，鞍区麻木、排尿困难。最合适的处理是？" data-en="Case 3-2 (synthetic teaching case): A 52-year-old man with back pain, saddle anesthesia, and difficulty voiding. The best next step is?">病例 3-2（合成教学病例）：52 岁男性，腰痛，鞍区麻木、排尿困难。最合适的处理是？</p>
+        <button class="opt" data-correct="1" data-zh="<span class='k'>A</span> 按马尾综合征急症处理：急诊 MRI 与专科会诊；确诊后临床共识倾向尽快减压，具体时机个体化" data-en="<span class='k'>A</span> Manage as cauda equina emergency: emergent MRI and specialty consult; once confirmed, consensus favors prompt decompression with individualized timing"><span class='k'>A</span> 按马尾综合征急症处理：急诊 MRI 与专科会诊；确诊后临床共识倾向尽快减压，具体时机个体化</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>B</span> 观察一周再复查" data-en="<span class='k'>B</span> Observe for a week, then recheck"><span class='k'>B</span> 观察一周再复查</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>C</span> 只需止痛，无需影像" data-en="<span class='k'>C</span> Analgesia only; no imaging needed"><span class='k'>C</span> 只需止痛，无需影像</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>D</span> 先做腰部理疗" data-en="<span class='k'>D</span> Start with lumbar physiotherapy"><span class='k'>D</span> 先做腰部理疗</button>
+        <div class="feedback" data-zh="<strong>回答正确。</strong>鞍区麻木加排尿障碍是典型马尾红旗。减压时机存在争议，但倾向是确诊后尽快；本课程不写统一时间窗指令。" data-en="<strong>Correct.</strong> Saddle anesthesia plus voiding difficulty is classic cauda equina red-flag territory. Decompression timing is debated, but the lean is toward prompt surgery once confirmed; this course states no fixed time window."><strong>回答正确。</strong>鞍区麻木加排尿障碍是典型马尾红旗。减压时机存在争议，但倾向是确诊后尽快；本课程不写统一时间窗指令。</div>
+      </div>
+
+      <div class="quiz">
+        <p class="qstem" data-zh="病例 3-3（合成教学病例）：L3 爆裂骨折（A4），马尾损伤（N3；AO 胸腰椎框架中 N3 包括任何程度的马尾损伤），MRI 示马尾持续受压。关于 AO 框架下的决策，正确的是？" data-en="Case 3-3 (synthetic teaching case): L3 burst fracture (A4) with cauda equina injury (N3 — in the AO thoracolumbar framework, N3 includes cauda equina injury of any degree) and ongoing cauda equina compression on MRI. Under the AO framework, which is correct?">病例 3-3（合成教学病例）：L3 爆裂骨折（A4），马尾损伤（N3；AO 胸腰椎框架中 N3 包括任何程度的马尾损伤），MRI 示马尾持续受压。关于 AO 框架下的决策，正确的是？</p>
+        <button class="opt" data-correct="1" data-zh="<span class='k'>A</span> A4N3；L3 水平神经结构为马尾（脊髓圆锥约止于 L1–L2）。马尾持续受压与神经状态是减压考量的核心；分类用于沟通而非直接处方，方案个体化" data-en="<span class='k'>A</span> A4N3; at L3 the neural elements are the cauda equina (the conus ends around L1–L2). Ongoing cauda equina compression plus neuro status are central to decompression decisions; classification communicates rather than prescribes — individualized plan"><span class='k'>A</span> A4N3；L3 水平神经结构为马尾（脊髓圆锥约止于 L1–L2）。马尾持续受压与神经状态是减压考量的核心；分类用于沟通而非直接处方，方案个体化</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>B</span> 分类 A4 自动决定行后路手术" data-en="<span class='k'>B</span> An A4 classification automatically mandates posterior surgery"><span class='k'>B</span> 分类 A4 自动决定行后路手术</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>C</span> L3 水平不可能记录 N3，因为 N3 只代表脊髓损伤" data-en="<span class='k'>C</span> N3 cannot be recorded at L3 because N3 only means spinal cord injury"><span class='k'>C</span> L3 水平不可能记录 N3，因为 N3 只代表脊髓损伤</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>D</span> 影像表现不影响决策" data-en="<span class='k'>D</span> Imaging findings do not affect decisions"><span class='k'>D</span> 影像表现不影响决策</button>
+        <div class="feedback" data-zh="<strong>回答正确。</strong>L3 骨折损伤的是马尾而非脊髓（脊髓圆锥约止于 L1–L2）；AO 胸腰椎框架中 N3 包括任何程度的马尾损伤，因此 N3 记录正确。马尾持续受压加神经状态是减压的重要考量，但分类本身不是手术指征，具体方案看整体。" data-en="<strong>Correct.</strong> An L3 fracture injures the cauda equina, not the cord (the conus ends around L1–L2); in the AO thoracolumbar framework N3 includes cauda equina injury of any degree, so N3 is correctly recorded. Ongoing compression plus neuro status are major pro-decompression factors, but the classification itself is not an indication — the whole picture decides."><strong>回答正确。</strong>L3 骨折损伤的是马尾而非脊髓（脊髓圆锥约止于 L1–L2）；AO 胸腰椎框架中 N3 包括任何程度的马尾损伤，因此 N3 记录正确。马尾持续受压加神经状态是减压的重要考量，但分类本身不是手术指征，具体方案看整体。</div>
+      </div>
+
+      <div class="quiz">
+        <p class="qstem" data-zh="病例 3-4（合成教学病例）：脊髓圆锥通常终止于哪个水平？" data-en="Case 3-4 (synthetic teaching case): at what level does the conus medullaris typically end?">病例 3-4（合成教学病例）：脊髓圆锥通常终止于哪个水平？</p>
+        <button class="opt" data-correct="1" data-zh="<span class='k'>A</span> 约 L1–L2，其下为马尾" data-en="<span class='k'>A</span> Around L1–L2, with cauda equina below"><span class='k'>A</span> 约 L1–L2，其下为马尾</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>B</span> 约 T12" data-en="<span class='k'>B</span> Around T12"><span class='k'>B</span> 约 T12</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>C</span> 约 L5" data-en="<span class='k'>C</span> Around L5"><span class='k'>C</span> 约 L5</button>
+        <button class="opt" data-correct="0" data-zh="<span class='k'>D</span> 骶骨水平" data-en="<span class='k'>D</span> At the sacrum"><span class='k'>D</span> 骶骨水平</button>
+        <div class="feedback" data-zh="<strong>回答正确。</strong>L3 骨折损伤的是马尾而非脊髓 —— 这正是病例 3-3 修正的解剖依据。" data-en="<strong>Correct.</strong> An L3 fracture injures the cauda equina, not the cord — the anatomic basis of the Case 3-3 correction."><strong>回答正确。</strong>L3 骨折损伤的是马尾而非脊髓 —— 这正是病例 3-3 修正的解剖依据。</div>
+      </div>
+    </section>
+
+
+    <section class="sec" id="u3s8">
+  <h3 class="sec-title" data-zh="8 · 官方影像资源" data-en="8 · Official imaging resources">8 · 官方影像资源</h3>
+  <div class="aocard">
+    <p data-zh="以下为 AO Surgery Reference 官方原页链接（含官方分类图例与讲解）。本课程仅作链接，不复制、不热链 AO 图片——按 <a href='https://surgeryreference.aofoundation.org/further-reading/faq'>AO FAQ</a>，插图仅授权非商业演示（须带 AO 标识并注明来源），出版物或在线转载须另行向 AO 申请许可。" data-en="Links below open official AO Surgery Reference pages (official classification illustrations and explanations). This course links only — no AO images are copied or hotlinked: per the <a href='https://surgeryreference.aofoundation.org/further-reading/faq'>AO FAQ</a>, illustrations are licensed for noncommercial presentations only (with AO logo and source stated); republication online requires separate AO permission.">以下为 AO Surgery Reference 官方原页链接（含官方分类图例与讲解）。本课程仅作链接，不复制、不热链 AO 图片——按 <a href='https://surgeryreference.aofoundation.org/further-reading/faq'>AO FAQ</a>，插图仅授权非商业演示（须带 AO 标识并注明来源），出版物或在线转载须另行向 AO 申请许可。</p>
+    <ul>
+<li><a href='https://surgeryreference.aofoundation.org/spine/trauma/thoracolumbar/further-reading/rationale-for-fracture-classification-a0-a1-a2-a3-a4-b1-b2-b3-c'>AO Surgery Reference · 胸腰椎骨折分类依据</a><br><span data-zh='定位：胸腰椎 A0–A4 / B1–B3 / C 分型的官方依据。' data-en='Covers: official rationale for thoracolumbar A0–A4 / B1–B3 / C classification.'>定位：胸腰椎 A0–A4 / B1–B3 / C 分型的官方依据。</span></li>
+    </ul>
+  </div>
+</section>
+
+    <div class="sources">
+      <h4 data-zh="来源与许可 · 单元三" data-en="Sources &amp; Licensing · Unit 3">来源与许可 · 单元三</h4>
+      <ol>
+        <li><a href="https://surgeryreference.aofoundation.org/spine/trauma/thoracolumbar/further-reading/rationale-for-fracture-classification-a0-a1-a2-a3-a4-b1-b2-b3-c">AO Surgery Reference — Spine trauma · Thoracolumbar · “AO Spine thoracolumbar injury classification system”</a><br><span data-zh="定位：胸腰椎 A / B / C 定义、神经状态记录、M1–M2 修饰因子 —— 同样适用于腰椎。访问日期 2026-10-04。" data-en="Covers: thoracolumbar A / B / C definitions, neuro documentation, M1–M2 modifiers — equally applicable to the lumbar spine. Accessed 2026-10-04.">定位：胸腰椎 A / B / C 定义、神经状态记录、M1–M2 修饰因子 —— 同样适用于腰椎。访问日期 2026-10-04。</span> <span class="lic" data-zh="许可：AO Foundation 官网内容（链接查看）。" data-en="License: AO Foundation website content (view via link).">许可：AO Foundation 官网内容（链接查看）。</span></li>
+        <li><span data-zh="期刊引文：Vaccaro AR 等，AO Spine 胸腰椎分类，Spine. 2013。（定位：分类体系原始文献）" data-en="Journal citation: Vaccaro AR et al., AO Spine thoracolumbar classification, Spine. 2013. (Covers: original classification literature.)">期刊引文：Vaccaro AR 等，AO Spine 胸腰椎分类，Spine. 2013。（定位：分类体系原始文献）</span></li>
+        <li><span data-zh="马尾综合征处理原则：临床共识倾向确诊后尽快减压，具体时间窗存在争议 —— 本课程表述为教学共识，具体请遵循本地指南。（定位：单元三第 4–5 节）" data-en="Cauda equina management: consensus favors prompt decompression once confirmed; the exact window is debated — stated here as a teaching consensus; follow local guidelines. (Covers: Unit 3, sections 4–5.)">马尾综合征处理原则：临床共识倾向确诊后尽快减压，具体时间窗存在争议 —— 本课程表述为教学共识，具体请遵循本地指南。（定位：单元三第 4–5 节）</span></li>
+        
+        
+        
+      <li><span data-zh="真实影像 图 3-1、图 3-2：见各图来源与许可；随包 media_sources-spine.csv 记录作者、文章、图号、原文与许可链接。" data-en="Real images Figs 3-1, 3-2: see individual caption sources and licences; media_sources-spine.csv logs authors, articles, figure numbers, source and license URLs.">真实影像 图 3-1、图 3-2：见各图来源与许可；随包 media_sources-spine.csv 记录作者、文章、图号、原文与许可链接。</span></li>
+      </ol>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><strong data-zh="使用声明" data-en="Disclaimer">使用声明</strong></p>
+    <p data-zh="本课程为成人医学教学材料，不构成医疗建议。分类系统用于教学与沟通，不直接等于手术指征；治疗决策请结合患者具体情况、本地指南与多学科团队。各来源访问日期为 2026-10-04。" data-en="This course is adult medical teaching material, not medical advice. Classification systems serve teaching and communication and do not directly equal surgical indications; treatment decisions must consider the individual patient, local guidelines, and a multidisciplinary team. All sources were accessed on 2026-10-04.">本课程为成人医学教学材料，不构成医疗建议。分类系统用于教学与沟通，不直接等于手术指征；治疗决策请结合患者具体情况、本地指南与多学科团队。各来源访问日期为 2026-10-04。</p>
+    <p data-zh="影像许可：本课程内嵌的 6 张真实影像中 分别按原图 CC BY 或 CC BY-SA 许可引用，均来自可公开再发布的来源；随包 media_sources-spine.csv 记录作者、文章、图号、原文链接与许可链接。AO Surgery Reference 的图例未复制、未热链，仅作官方原页链接——按其 FAQ，插图仅授权非商业演示（须带 AO 标识并注明来源），出版物或在线转载须另行向 AO 申请许可。" data-en="Image licensing: of the 6 embedded real images, are used under their individual CC BY or CC BY-SA licences, all from sources permitting public republication; media_sources-spine.csv logs authors, articles, figure numbers, source and license URLs. AO Surgery Reference illustrations are not copied or hotlinked — official pages are linked only: per its FAQ, illustrations are licensed for noncommercial presentations only (with AO logo and source stated), and republication online requires separate AO permission.">影像许可：本课程内嵌的 6 张真实影像中 分别按原图 CC BY 或 CC BY-SA 许可引用，均来自可公开再发布的来源；随包 media_sources-spine.csv 记录作者、文章、图号、原文链接与许可链接。AO Surgery Reference 的图例未复制、未热链，仅作官方原页链接——按其 FAQ，插图仅授权非商业演示（须带 AO 标识并注明来源），出版物或在线转载须另行向 AO 申请许可。</p>
+    <p data-zh="来源可访问不等于临床专家审核：本课程尚未经过临床专家审阅；课堂使用前，建议请脊柱外科或创伤骨科专家审读。" data-en="Source accessibility is not clinical expert review: this course has not undergone clinical expert review; before classroom use, have a spine or trauma orthopaedic surgeon review it.">来源可访问不等于临床专家审阅：本课程尚未经过临床专家审阅；课堂使用前，建议请脊柱外科或创伤骨科专家审读。</p>
+
+  </div>
+</footer>
+
+<script>
+(function(){
+  var LANG = 'zh';
+  try{ LANG = localStorage.getItem('tma-spine-lang') || 'zh'; }catch(e){}
+  var paints = [];
+  function applyLang(){
+    document.querySelectorAll('[data-zh]').forEach(function(el){
+      el.innerHTML = el.dataset[LANG];
+    });
+    document.querySelectorAll('img[data-alt-zh]').forEach(function(im){
+      im.alt = im.dataset[LANG === 'zh' ? 'altZh' : 'altEn'];
+    });
+    document.documentElement.lang = LANG === 'zh' ? 'zh-CN' : 'en';
+    document.getElementById('langBtn').textContent = LANG === 'zh' ? 'English' : '中文';
+    paints.forEach(function(p){ p(); });
+    try{ localStorage.setItem('tma-spine-lang', LANG); }catch(e){}
+  }
+  // Reveal per unit
+  document.querySelectorAll('.unit').forEach(function(unit, ui){
+    var secs = Array.prototype.slice.call(unit.querySelectorAll('.sec'));
+    var n = 1;
+    var nextBtn = unit.querySelector('.btn-next');
+    var allBtn = unit.querySelector('.btn-all');
+    var count = unit.querySelector('.reveal-count');
+    secs.forEach(function(s, i){ if(i > 0) s.classList.add('hidden'); });
+    function paint(){
+      count.textContent = LANG === 'zh' ? ('已揭晓 ' + n + ' / ' + secs.length) : ('Revealed ' + n + ' / ' + secs.length);
+      var label;
+      if(n < secs.length){
+        var t = secs[n].querySelector('h3').dataset[LANG];
+        label = (LANG === 'zh' ? '下一步：' : 'Next: ') + t.replace(/^\d+\s*[·•]\s*/, '');
+      } else {
+        label = LANG === 'zh' ? '本单元已全部揭晓' : 'All revealed';
+      }
+      nextBtn.textContent = label;
+      nextBtn.disabled = n >= secs.length;
+    }
+    nextBtn.addEventListener('click', function(){
+      if(n < secs.length){
+        secs[n].classList.remove('hidden');
+        n++; paint();
+        secs[n-1].scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
+    allBtn.addEventListener('click', function(){
+      secs.forEach(function(s){ s.classList.remove('hidden'); });
+      n = secs.length; paint();
+    });
+    unit._revealTo = function(idx){
+      while(n <= idx && n < secs.length){ secs[n].classList.remove('hidden'); n++; }
+      paint();
+    };
+    unit._revealAll = function(){
+      secs.forEach(function(s){ s.classList.remove('hidden'); });
+      n = secs.length; paint();
+    };
+    paints.push(paint);
+    paint();
+  });
+  // TOC navigation
+  document.querySelectorAll('a[data-nav]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var parts = a.dataset.nav.split(':');
+      var unit = document.getElementById('unit' + parts[0].replace(/^u/, ''));
+      var idx = parseInt(parts[1], 10);
+      if(unit && unit._revealTo){
+        unit._revealTo(idx);
+        setTimeout(function(){
+          var target = document.getElementById(a.getAttribute('href').slice(1));
+          if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+        }, 60);
+      }
+    });
+  });
+  document.querySelectorAll('.toc-unit h3 a').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var unit = document.getElementById(a.getAttribute('href').slice(1));
+      if(unit) unit.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+  // Expand all
+  document.getElementById('expandAll').addEventListener('click', function(){
+    document.querySelectorAll('.unit').forEach(function(u){ if(u._revealAll) u._revealAll(); });
+    document.querySelectorAll('details.fold').forEach(function(d){ d.open = true; });
+  });
+  // Language toggle
+  document.getElementById('langBtn').addEventListener('click', function(){
+    LANG = LANG === 'zh' ? 'en' : 'zh';
+    applyLang();
+  });
+  // Quiz
+  document.querySelectorAll('.quiz').forEach(function(q){
+    q.querySelectorAll('.opt').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        if(q.classList.contains('done')) return;
+        q.classList.add('done');
+        var ok = btn.dataset.correct === '1';
+        btn.classList.add(ok ? 'picked-correct' : 'picked-wrong');
+        if(!ok){
+          var right = q.querySelector('.opt[data-correct="1"]');
+          if(right) right.classList.add('picked-correct');
+        }
+        var fb = q.querySelector('.feedback');
+        fb.classList.add(ok ? 'fb-ok' : 'fb-no');
+      });
+    });
+  });
+  applyLang();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>骨科创伤 Orthopaedics · Trauma Academy</title>
+<meta name="description" content="成人骨折与脱位教学：脊柱、上肢、下肢 12 个单元。先观察，再理解，再复盘。">
+<style>
+  :root{
+    --paper:#f7f1e2; --paper2:#fffdf6; --ink:#2b2a23; --muted:#6f6a58;
+    --green:#1d5c40; --green-deep:#123f2c; --line:#ddd2b4; --card:#fffdf6;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  html,body{overflow-x:hidden}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    line-height:1.7; font-size:16px}
+  .wrap{max-width:960px; margin:0 auto; padding:0 18px}
+  /* language toggle */
+  .t-en{display:none}
+  body.lang-en .t-zh{display:none}
+  body.lang-en .t-en{display:inline}
+  header.top{border-bottom:1px solid var(--line); background:var(--paper2)}
+  header.top .wrap{display:flex; align-items:center; justify-content:space-between; padding:12px 18px; gap:10px}
+  .brand{font-weight:700; color:var(--green-deep); text-decoration:none; font-size:15px}
+  .brand small{display:block; font-weight:400; color:var(--muted); font-size:12px}
+  .topnav{display:flex; align-items:center; gap:12px}
+  .topnav a{color:var(--green); text-decoration:none; font-size:14px}
+  .lang-toggle{display:inline-flex; align-items:center; border:1px solid var(--green); border-radius:999px;
+    background:transparent; padding:0; cursor:pointer; font-size:13px; overflow:hidden}
+  .lang-toggle .opt{padding:6px 12px; color:var(--green); font-weight:600}
+  .lang-toggle .opt.active{background:var(--green); color:#fff}
+  /* typographic hero — no fabricated anatomy */
+  .hero{background:var(--green-deep); color:#f7f1e2; border-bottom:1px solid var(--line)}
+  .hero .wrap{padding:44px 18px 34px}
+  .hero .kicker{font-size:12px; letter-spacing:.14em; color:#cfe0d2; margin:0 0 10px; font-weight:600}
+  .hero h1{font-size:32px; margin:0 0 6px; letter-spacing:.02em; color:#fff}
+  .hero .subtitle{margin:0; font-size:15px; color:#d8e4d6}
+  .hero .imgpolicy{margin:14px 0 0; font-size:13px; color:#a9bfa8; border-top:1px solid rgba(255,255,255,.18); padding-top:12px}
+  section{padding:30px 0; border-bottom:1px solid var(--line)}
+  h2{font-size:21px; color:var(--green-deep); margin:0 0 6px}
+  p.lead{color:var(--muted); margin:6px 0 18px; font-size:15px}
+  .phases{display:grid; gap:12px; grid-template-columns:1fr}
+  @media(min-width:720px){.phases{grid-template-columns:1fr 1fr 1fr}}
+  details.phase{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px}
+  details.phase summary{cursor:pointer; font-weight:700; color:var(--green-deep); list-style:none; font-size:16px}
+  details.phase summary::-webkit-details-marker{display:none}
+  details.phase summary .step{display:inline-flex; align-items:center; justify-content:center;
+    width:26px; height:26px; border-radius:50%; background:var(--green); color:#fff;
+    font-size:14px; margin-right:8px}
+  details.phase p{font-size:14.5px; color:var(--ink); margin:10px 0 0}
+  .tracks{display:grid; gap:14px; grid-template-columns:1fr}
+  @media(min-width:720px){.tracks{grid-template-columns:1fr 1fr 1fr}}
+  a.track{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px;
+    text-decoration:none; color:var(--ink); display:block; transition:transform .15s ease, box-shadow .15s ease}
+  a.track:hover{transform:translateY(-2px); box-shadow:0 6px 18px rgba(29,92,64,.12)}
+  a.track h3{margin:0 0 4px; color:var(--green-deep); font-size:18px}
+  a.track .count{font-size:13px; color:var(--muted)}
+  a.track ul{margin:10px 0 0; padding-left:18px; font-size:14px; color:var(--muted)}
+  a.track ul li{margin:3px 0}
+  a.track .go{display:inline-block; margin-top:12px; color:var(--green); font-weight:700; font-size:14px}
+  .table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line);
+    border-radius:12px; background:var(--card)}
+  table.cat{width:100%; min-width:420px; border-collapse:collapse; font-size:14.5px}
+  table.cat th, table.cat td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line)}
+  table.cat th{background:var(--green); color:#fff; font-weight:600; font-size:14px; white-space:nowrap}
+  table.cat tr:last-child td{border-bottom:none}
+  table.cat td a{color:var(--green-deep); font-weight:600; text-decoration:underline;
+    text-decoration-color:var(--line); text-underline-offset:3px}
+  .note{background:#fdf6e3; border:1px dashed var(--line); border-radius:10px; padding:12px 14px;
+    font-size:13.5px; color:var(--muted); margin-top:14px}
+  .note ul{margin:8px 0 0; padding-left:18px}
+  .note li{margin:6px 0}
+  footer{padding:26px 0 40px; font-size:13px; color:var(--muted)}
+  footer .disc{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin-bottom:14px}
+  footer strong{color:var(--green-deep)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Trauma Academy<small><span class="t-zh">独立教学项目</span><span class="t-en">Independent teaching project</span></small></a>
+    <nav class="topnav">
+      <a href="../index.html"><span class="t-zh">首页</span><span class="t-en">Home</span></a>
+      <button class="lang-toggle" id="langToggle" aria-label="Language / 语言切换">
+        <span class="opt active" data-setlang="zh">中文</span><span class="opt" data-setlang="en">EN</span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="kicker"><span class="t-zh">创伤学院 · 骨科创伤子站</span><span class="t-en">TRAUMA ACADEMY · ORTHOPAEDICS</span></p>
+    <h1><span class="t-zh">骨科创伤</span><span class="t-en">Orthopaedics</span></h1>
+    <p class="subtitle"><span class="t-zh">成人骨折与脱位 · 12 个教学单元</span><span class="t-en">Adult fractures &amp; dislocations · 12 teaching units</span></p>
+    <p class="imgpolicy"><span class="t-zh">真实影像读图 · AO 原则释义 · 中英双语自测</span><span class="t-en">Published imaging · AO principles explained · Bilingual case questions</span></p>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section>
+  <h2><span class="t-zh">学习方法</span><span class="t-en">How to learn</span></h2>
+  <p class="lead"><span class="t-zh">每个单元都按三段推进：分阶段展开，文字只给关键层，需要时再深入。</span><span class="t-en">Each unit follows three stages: content unfolds step by step — key points first, details on demand.</span></p>
+  <div class="phases">
+    <details class="phase" open>
+      <summary><span class="step">1</span><span class="t-zh">先观察</span><span class="t-en">Observe</span></summary>
+      <p><span class="t-zh">先看解剖与影像：这块骨头长什么样、断在哪里、关节对位丢失多少。</span><span class="t-en">Start with anatomy and images: what the bone looks like, where it broke, how much joint alignment is lost.</span></p>
+    </details>
+    <details class="phase">
+      <summary><span class="step">2</span><span class="t-zh">再理解</span><span class="t-en">Understand</span></summary>
+      <p><span class="t-zh">再看机制与分型：分型辅助沟通，结合稳定性、神经血管与软组织状态比较治疗选择。</span><span class="t-en">Then mechanism and classification: classifications aid communication; compare treatment options using stability, neurovascular status, and soft-tissue condition.</span></p>
+    </details>
+    <details class="phase">
+      <summary><span class="step">3</span><span class="t-zh">再复盘</span><span class="t-en">Review</span></summary>
+      <p><span class="t-zh">最后自测与复盘：用自测题检验是否真正掌握，错题回看前两段。</span><span class="t-en">Finish with a self-quiz and review: check what you really know, then loop back to the earlier stages for anything you missed.</span></p>
+    </details>
+  </div>
+</section>
+
+<section>
+  <h2><span class="t-zh">三大模块</span><span class="t-en">Three tracks</span></h2>
+  <p class="lead"><span class="t-zh">点击进入各模块。</span><span class="t-en">Tap a track to enter.</span></p>
+  <div class="tracks">
+    <a class="track" href="spine.html">
+      <h3><span class="t-zh">脊柱</span><span class="t-en">Spine</span></h3>
+      <div class="count"><span class="t-zh">3 个单元</span><span class="t-en">3 units</span></div>
+      <ul>
+        <li><span class="t-zh">颈椎</span><span class="t-en">Cervical</span></li>
+        <li><span class="t-zh">胸椎</span><span class="t-en">Thoracic</span></li>
+        <li><span class="t-zh">腰椎</span><span class="t-en">Lumbar</span></li>
+      </ul>
+      <span class="go"><span class="t-zh">进入模块 →</span><span class="t-en">Enter →</span></span>
+    </a>
+    <a class="track" href="upper-limb.html">
+      <h3><span class="t-zh">上肢</span><span class="t-en">Upper limb</span></h3>
+      <div class="count"><span class="t-zh">4 个单元</span><span class="t-en">4 units</span></div>
+      <ul>
+        <li><span class="t-zh">肩关节脱位</span><span class="t-en">Shoulder dislocation</span></li>
+        <li><span class="t-zh">肘关节脱位</span><span class="t-en">Elbow dislocation</span></li>
+        <li><span class="t-zh">肱骨骨折</span><span class="t-en">Humeral fracture</span></li>
+        <li><span class="t-zh">尺桡骨骨折</span><span class="t-en">Radius–ulna fracture</span></li>
+      </ul>
+      <span class="go"><span class="t-zh">进入模块 →</span><span class="t-en">Enter →</span></span>
+    </a>
+    <a class="track" href="lower-limb.html">
+      <h3><span class="t-zh">下肢</span><span class="t-en">Lower limb</span></h3>
+      <div class="count"><span class="t-zh">5 个单元</span><span class="t-en">5 units</span></div>
+      <ul>
+        <li><span class="t-zh">髋关节脱位</span><span class="t-en">Hip dislocation</span></li>
+        <li><span class="t-zh">股骨骨折</span><span class="t-en">Femoral fracture</span></li>
+        <li><span class="t-zh">髌骨骨折</span><span class="t-en">Patellar fracture</span></li>
+        <li><span class="t-zh">胫骨平台骨折</span><span class="t-en">Tibial plateau fracture</span></li>
+        <li><span class="t-zh">踝关节骨折脱位</span><span class="t-en">Ankle fracture-dislocation</span></li>
+      </ul>
+      <span class="go"><span class="t-zh">进入模块 →</span><span class="t-en">Enter →</span></span>
+    </a>
+  </div>
+</section>
+
+<section>
+  <h2><span class="t-zh">单元目录</span><span class="t-en">Unit catalogue</span></h2>
+  <p class="lead"><span class="t-zh">全部 12 个成人骨折 / 脱位教学单元。点击单元名称进入对应位置。</span><span class="t-en">All 12 adult fracture &amp; dislocation units. Tap a unit name to jump to it.</span></p>
+  <div class="table-wrap">
+  <table class="cat">
+    <tr><th>#</th><th><span class="t-zh">模块</span><span class="t-en">Track</span></th><th><span class="t-zh">单元</span><span class="t-en">Unit</span></th></tr>
+    <tr><td>01</td><td><span class="t-zh">脊柱</span><span class="t-en">Spine</span></td><td><a href="spine.html#unit1"><span class="t-zh">颈椎骨折脱位</span><span class="t-en">Cervical spine fracture-dislocation</span></a></td></tr>
+    <tr><td>02</td><td><span class="t-zh">脊柱</span><span class="t-en">Spine</span></td><td><a href="spine.html#unit2"><span class="t-zh">胸椎骨折</span><span class="t-en">Thoracic spine fracture</span></a></td></tr>
+    <tr><td>03</td><td><span class="t-zh">脊柱</span><span class="t-en">Spine</span></td><td><a href="spine.html#unit3"><span class="t-zh">腰椎骨折</span><span class="t-en">Lumbar spine fracture</span></a></td></tr>
+    <tr><td>04</td><td><span class="t-zh">上肢</span><span class="t-en">Upper limb</span></td><td><a href="upper-limb.html#u1"><span class="t-zh">肩关节脱位</span><span class="t-en">Shoulder dislocation</span></a></td></tr>
+    <tr><td>05</td><td><span class="t-zh">上肢</span><span class="t-en">Upper limb</span></td><td><a href="upper-limb.html#u2"><span class="t-zh">肘关节脱位</span><span class="t-en">Elbow dislocation</span></a></td></tr>
+    <tr><td>06</td><td><span class="t-zh">上肢</span><span class="t-en">Upper limb</span></td><td><a href="upper-limb.html#u3"><span class="t-zh">肱骨骨折</span><span class="t-en">Humeral fracture</span></a></td></tr>
+    <tr><td>07</td><td><span class="t-zh">上肢</span><span class="t-en">Upper limb</span></td><td><a href="upper-limb.html#u4"><span class="t-zh">尺桡骨骨折</span><span class="t-en">Radius–ulna fracture</span></a></td></tr>
+    <tr><td>08</td><td><span class="t-zh">下肢</span><span class="t-en">Lower limb</span></td><td><a href="lower-limb.html"><span class="t-zh">髋关节脱位</span><span class="t-en">Hip dislocation</span></a></td></tr>
+    <tr><td>09</td><td><span class="t-zh">下肢</span><span class="t-en">Lower limb</span></td><td><a href="lower-limb.html"><span class="t-zh">股骨骨折</span><span class="t-en">Femoral fracture</span></a></td></tr>
+    <tr><td>10</td><td><span class="t-zh">下肢</span><span class="t-en">Lower limb</span></td><td><a href="lower-limb.html"><span class="t-zh">髌骨骨折</span><span class="t-en">Patellar fracture</span></a></td></tr>
+    <tr><td>11</td><td><span class="t-zh">下肢</span><span class="t-en">Lower limb</span></td><td><a href="lower-limb.html"><span class="t-zh">胫骨平台骨折</span><span class="t-en">Tibial plateau fracture</span></a></td></tr>
+    <tr><td>12</td><td><span class="t-zh">下肢</span><span class="t-en">Lower limb</span></td><td><a href="lower-limb.html"><span class="t-zh">踝关节骨折脱位</span><span class="t-en">Ankle fracture-dislocation</span></a></td></tr>
+  </table>
+  </div>
+</section>
+
+<section>
+  <h2><span class="t-zh">影像 · 图例 · 许可</span><span class="t-en">Images, figures &amp; licensing</span></h2>
+  <p class="lead"><span class="t-zh">本子站的影像政策，一条一条说清楚。</span><span class="t-en">This subsite's imaging policy, stated plainly.</span></p>
+  <div class="note">
+    <ul>
+      <li><span class="t-zh">本页零配图：不编造医学影像，不用卡通解剖图教学。</span><span class="t-en">Zero images on this page: no fabricated medical imagery, no cartoon anatomy for teaching.</span></li>
+      <li><span class="t-zh">各单元真实影像读图见内容页，逐图注来源、许可与原 caption。</span><span class="t-en">Real imaging for each unit lives on the content pages, with per-image source, license, and original caption.</span></li>
+      <li><span class="t-zh">AO 官方图例不转载、不热链（据 AO 网站使用条款，转载需事先申请许可）；分型图例请经内容页"官方资源入口"进入官方原页查看。</span><span class="t-en">AO figures are never reposted or hotlinked (republication requires prior permission under AO's site terms); view classification figures on the official pages via each unit's official-resource entries.</span></li>
+      <li><span class="t-zh">官方视频资源仅以官方原链形式引用，不转存、不二传。</span><span class="t-en">Official videos are referenced by their original official links only; never re-uploaded or redistributed.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="t-zh">来源与限制</span><span class="t-en">Sources &amp; limitations</span></h2>
+  <div class="note">
+    <ul>
+      <li><span class="t-zh">本子站为教学演示内容，依据公开医学教材与临床共识整理，不构成个体诊疗建议。</span><span class="t-en">Teaching material based on public textbooks and clinical consensus; not individual medical advice.</span></li>
+      <li><span class="t-zh">分型引用（如 AO/OTA）仅作教学表述，不代表任何机构的认证或授权。</span><span class="t-en">Classifications (e.g. AO/OTA) are cited for teaching only and imply no certification or authorization by any institution.</span></li>
+    </ul>
+  </div>
+</section>
+
+</div>
+
+<footer><div class="wrap">
+  <div class="disc"><strong><span class="t-zh">独立声明</span><span class="t-en">Independence note</span></strong><span class="t-zh">：本子站为 Trauma Academy 独立制作的教学内容，与 AO Foundation 及任何学术机构无隶属关系；文中出现的分类命名（如 AO/OTA）仅为教学引用，不作为认证、授权或官方背书使用。</span><span class="t-en">: independently produced teaching material by Trauma Academy; no affiliation with AO Foundation or any institution. Classification names (e.g. AO/OTA) are cited for teaching only — not as certification, endorsement, or authorization.</span></div>
+  <div><span class="t-zh">Trauma Academy · 骨科创伤子站 v1.3（2026-10-04）</span><span class="t-en">Trauma Academy · Orthopaedics subsite v1.3 (2026-10-04)</span></div>
+</div></footer>
+
+<script>
+(function(){
+  var KEY='ortho-lang';
+  function setLang(l){
+    var en = (l==='en');
+    document.body.classList.toggle('lang-en', en);
+    document.documentElement.lang = en ? 'en' : 'zh-CN';
+    document.title = en ? 'Orthopaedics · Trauma Academy' : '骨科创伤 Orthopaedics · Trauma Academy';
+    document.querySelectorAll('#langToggle .opt').forEach(function(o){
+      o.classList.toggle('active', o.getAttribute('data-setlang')===l);
+    });
+    try{ localStorage.setItem(KEY, l); }catch(e){}
+  }
+  document.getElementById('langToggle').addEventListener('click', function(){
+    setLang(document.body.classList.contains('lang-en') ? 'zh' : 'en');
+  });
+  var saved = null;
+  try{ saved = localStorage.getItem(KEY); }catch(e){}
+  if(saved==='en'){ setLang('en'); }
+})();
+</script>
+
+</body>
+</html>

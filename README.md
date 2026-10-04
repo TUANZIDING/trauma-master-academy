@@ -2,6 +2,10 @@
 
 [中文](#中文说明) · [English](#english)
 
+**在线课程 / Live website:** https://tuanziding.github.io/trauma-master-academy/
+
+**骨科创伤 12 单元 / Orthopaedics:** [进入课程 / Open course](https://tuanziding.github.io/trauma-master-academy/orthopaedics/) — 教学试用，待教师复核 / Teaching pilot, pending teacher review.
+
 An open, bilingual trauma-care learning platform that connects the complete pathway from pre-alert and trauma-bay teamwork to xABCDE, organ-system reasoning, procedural simulation, transfer, and reassessment.
 
 一个中英文开放式创伤救治教学平台，将院前预警、团队到位、xABCDE、病种推理、操作模拟、资源协同、转运交接和动态复评连接为完整学习链。

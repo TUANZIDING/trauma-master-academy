@@ -1,0 +1,7 @@
+/* Source images retain their original pixels; open the image for full-size review. */
+figure.media-card {display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:24px;align-items:center;padding:20px;background:#fff;border:1px solid #dcd9ca;border-radius:12px;}
+figure.media-card .media-image {display:block;min-width:0;text-align:center;}
+figure.media-card .media-image img {width:auto;max-width:100%;height:auto;max-height:400px;object-fit:contain;border:0;border-radius:3px;}
+figure.media-card figcaption {margin:0;text-align:left;font-size:15px;line-height:1.8;overflow-wrap:anywhere;}
+figure.media-card .obsrc,figure.media-card .credit {display:block;margin-top:12px;font-size:12px;line-height:1.6;}
+@media(max-width:760px){figure.media-card{grid-template-columns:minmax(0,1fr);padding:14px;gap:16px;}figure.media-card .media-image img{max-height:340px;}figure.media-card figcaption{font-size:14px;}}
