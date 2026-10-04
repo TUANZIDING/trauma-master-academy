@@ -7,6 +7,8 @@
   const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[character]));
   const currentLang = () => document.body.dataset.lang === "en" ? "en" : "zh";
   const mediaLabel = (kind) => ({
+    "public-domain": ["公有领域实景", "Public-domain photograph"],
+    "task-card-only": ["观察任务卡", "Observation task card"],
     "official-embed": ["官方播放器", "Official player"],
     "official-link": ["专业机构原站", "Professional source"],
     "open-image": ["开放许可影像", "Open-licence image"],
@@ -26,19 +28,9 @@
   };
 
   function routeMedia(node) {
-    const fallback = node.fallbackImage || node.image;
-    if (node.mediaKind === "official-embed") return `<div class="route-media-frame video-frame"><iframe src="${node.mediaUrl}" title="${node.mediaTitleZh}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`;
-    if (node.mediaKind === "open-video" || node.mediaKind === "local-video") return `<div class="route-media-frame video-frame"><video controls preload="metadata" playsinline poster="${fallback}"><source src="${node.mediaUrl}" type="video/mp4" />${bilingual("浏览器不支持此视频，请使用下方原始来源。", "This browser cannot play the video; use the source link below.")}</video></div>`;
-    return `<div class="route-media-frame"><img src="${node.image}" data-fallback="${fallback}" alt="${node.mediaTitleZh || node.titleZh}教学视觉" /></div>`;
-  }
-
-  function mediaLibrary(skill) {
-    const featured = skill.competencyRoute.find((node) => node.mediaKind === "local-video" || node.mediaKind === "official-embed" || node.mediaKind === "open-video");
-    return `<div class="verified-media">
-      <div class="verified-media-copy"><span>${bilingual("媒体学习入口", "Media learning access")}</span><h3>${bilingual("先看站内模拟序列，再到权威原站核对", "Start with the local simulation, then verify at the authoritative source")}</h3><p>${bilingual("站内原创媒体可稳定播放；版权未明确允许再利用的专业内容只链接原站，不下载、不剪辑、不冒充本课程自制视频。", "Locally authored media remains directly playable. Professional content without explicit reuse rights is linked at source without downloading, editing, or claiming ownership.")}</p></div>
-      ${featured ? `<div class="verified-media-player">${featured.mediaKind === "official-embed" ? `<iframe src="${featured.mediaUrl}" title="${featured.mediaTitleZh}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>` : `<video controls preload="metadata" playsinline poster="${featured.fallbackImage || featured.image}"><source src="${featured.mediaUrl}" type="video/mp4" /></video>`}<small>${bilingual(featured.mediaScopeZh, featured.mediaScopeEn)}</small></div>` : `<figure class="verified-media-player"><img src="${skill.realismVisual || skill.heroImage}" alt="${skill.titleZh}高仿真训练视觉" /><small>${bilingual("原创高仿真教学视觉；不含真实患者资料。", "Original high-fidelity teaching visual; no real-patient data.")}</small></figure>`}
-      <div class="verified-media-links">${skill.competencyRoute.map((node, index) => { const label = mediaLabel(node.mediaKind); return `<a href="${node.sourceUrl || node.mediaUrl || node.fallbackImage}" target="_blank" rel="noreferrer"><b>0${index + 1}</b><span><strong>${bilingual(node.mediaTitleZh || node.titleZh, node.mediaTitleEn || node.titleEn)}</strong><small>${bilingual(label[0], label[1])}</small></span></a>`; }).join("")}</div>
-    </div>`;
+    if (node.mediaKind === "official-link") return `<div class="sb-video"><strong>${bilingual("带着问题到官方原页观看", "Watch at the official source with a question")}</strong><p>${bilingual(node.sourceObserveZh, node.sourceObserveEn)}</p><a class="button" href="${escapeHtml(node.mediaUrl)}" target="_blank" rel="noreferrer">${bilingual("打开官方视频原页", "Open official video page")}</a><small>${bilingual("授课前检查播放；原页演示不等于本地通用操作标准。", "Check playback before class; a demonstration is not a universal local protocol.")}</small></div>`;
+    if (!node.image) return `<div class="sb-task-marker">${bilingual("先描述事实，再提出判断依据与下一次复评。", "Describe facts, explain your judgement, and plan reassessment.")}</div>`;
+    return `<div class="route-media-frame"><img src="${escapeHtml(node.image)}" loading="lazy" alt="${escapeHtml(node.mediaTitleEn || node.titleEn)}" /></div><p class="sb-observe">${bilingual(node.sourceObserveZh, node.sourceObserveEn)}</p>`;
   }
 
   function renderHub() {
@@ -47,7 +39,7 @@
     grid.innerHTML = list.map((skill, index) => `
       <article class="skill-card accent-${skill.accent}">
         <div class="skill-card-visual">
-          <img src="${skill.heroImage}" alt="${skill.titleZh}模拟教学场景" loading="lazy" />
+          <img src="${skill.heroImage}" alt="${skill.titleEn} source photograph" loading="lazy" /><small class="skill-card-credit">${escapeHtml(skill.heroAttribution)}</small>
           <span class="skill-number">${String(index + 1).padStart(2, "0")}</span>
           <strong>${skill.icon}</strong>
         </div>
@@ -68,7 +60,7 @@
           ${skill.competencyRoute.map((node, index) => `
             <li>
               <button type="button" class="route-tab ${index === 0 ? "active" : ""}" data-route-index="${index}" ${index === 0 ? 'aria-current="step"' : ""}>
-                <img src="${node.image}" alt="${node.titleZh}高仿真模拟教学照片" />
+                ${node.image ? `<img src="${escapeHtml(node.image)}" alt="${escapeHtml(node.titleEn)} source photograph" />` : `<span class="route-task-icon" aria-hidden="true">${node.mediaKind === "official-link" ? "▶" : "?"}</span>`}
                 <span class="route-count">${String(index + 1).padStart(2, "0")}</span>
                 ${node.visualKind === "local-simulation" ? `<small class="route-visual-label">${bilingual("合成模拟场景 · 不用于影像判读", "Synthetic simulation · not for image interpretation")}</small>` : node.visualKind === "open-image" ? `<small class="route-visual-label verified-image">${bilingual("真实开放影像 · 仅限所示窗口", "Authentic open image · shown view only")}</small>` : ""}
                 <strong>${bilingual(node.titleZh, node.titleEn)}</strong>
@@ -89,7 +81,7 @@
       <div class="decision-guardrail"><strong>${bilingual("先问这一句", "Ask this first")}</strong><p>${bilingual(decision.guardrailZh, decision.guardrailEn)}</p></div>
       <ol class="decision-ladder">
         ${decision.steps.map((step, index) => { const routeNode = skill.competencyRoute[index]; const image = repeatedStepImage ? (routeNode?.image || step.image) : step.image; return `<li class="decision-step step-${step.id}">
-          <figure><img src="${image}" alt="${step.titleZh}教学视觉" /><span>${step.number}</span>${routeNode?.visualKind === "local-simulation" ? `<small class="visual-origin-badge">${bilingual("合成模拟场景 · 不用于影像判读", "Synthetic simulation · not for image interpretation")}</small>` : routeNode?.visualKind === "open-image" ? `<small class="visual-origin-badge verified-image">${bilingual("真实开放影像 · 仅限所示窗口", "Authentic open image · shown view only")}</small>` : ""}</figure>
+          <figure class="decision-task"><span>${step.number}</span><strong>${bilingual("判断节点", "Decision point")}</strong></figure>
           <div class="decision-step-copy"><h3>${bilingual(step.titleZh, step.titleEn)}</h3>
             <dl><div><dt>${bilingual("何时进入", "Enter when")}</dt><dd>${bilingual(step.enterZh, step.enterEn)}</dd></div><div><dt>${bilingual("如何确认有效", "Confirm effect")}</dt><dd>${bilingual(step.checkZh, step.checkEn)}</dd></div><div class="escalate"><dt>${bilingual("何时升级", "Escalate when")}</dt><dd>${bilingual(step.escalateZh, step.escalateEn)}</dd></div></dl>
             <div class="decision-sources">${step.sourceIds.map((id) => `<code>${id}</code>`).join("")}</div>
@@ -134,22 +126,7 @@
   }
 
   function visualSection(skill) {
-    return `
-      <section class="skill-section visual-lab" data-storyboard>
-        <div class="section-heading"><div class="section-kicker">03 · ${bilingual("视觉与视频", "Visuals & video")}</div><h2>${bilingual("真实动态示例 + 可拍摄的本地教学脚本", "Authentic motion examples + a shoot-ready local script")}</h2><p>${bilingual("先通过开放许可影像或专业机构原站建立视觉认识，再用高仿真模型完成本地授权训练。", "Build visual recognition through open-licence media or professional source sites, then practise locally on high-fidelity trainers under authorisation.")}</p></div>
-        ${mediaLibrary(skill)}
-        <div class="visual-stage">
-          <figure class="visual-main"><img data-story-image src="${skill.storyboard[0].image}" alt="${skill.storyboard[0].titleZh}教学关键帧" /><figcaption><span data-story-duration>${skill.storyboard[0].duration}</span><strong data-story-title>${bilingual(skill.storyboard[0].titleZh, skill.storyboard[0].titleEn)}</strong></figcaption></figure>
-          <div class="visual-chapters" role="tablist" aria-label="Video storyboard chapters">
-            ${skill.storyboard.map((item, index) => `<button type="button" role="tab" aria-selected="${index === 0}" class="story-tab ${index === 0 ? "active" : ""}" data-story-index="${index}"><span>0${index + 1}</span><strong>${bilingual(item.titleZh, item.titleEn)}</strong><small>${item.duration}</small></button>`).join("")}
-          </div>
-        </div>
-        <div class="story-notes" aria-live="polite">
-          <div><span>${bilingual("本章目标", "Objective")}</span><p data-story-objective>${bilingual(skill.storyboard[0].objectiveZh, skill.storyboard[0].objectiveEn)}</p></div>
-          <div><span>${bilingual("暂停提问", "Pause prompt")}</span><p data-story-prompt>${bilingual(skill.storyboard[0].promptZh, skill.storyboard[0].promptEn)}</p></div>
-          <div><span>${bilingual("拍摄边界", "Filming boundary")}</span><p>${bilingual("侵入性环节仅使用模拟器、授权教师与遮挡镜头；公开页不展示可脱离监督复制的动作序列。", "Invasive segments use trainers, authorised instructors, and obscured views; the public page does not show a sequence reproducible without supervision.")}</p></div>
-        </div>
-      </section>`;
+    return skill.sourceBackedHtml || "";
   }
 
   function simulationSection(skill) {
@@ -202,9 +179,9 @@
     root.innerHTML = `
       <section class="skill-detail-hero accent-${selected.accent}">
         <div class="skill-hero-copy"><span class="eyebrow">${selected.code} · ${bilingual(selected.domainZh, selected.domainEn)}</span><h1>${bilingual(selected.titleZh, selected.titleEn)}</h1><p class="lead">${bilingual(selected.objectiveZh, selected.objectiveEn)}</p><div class="tag-row"><span class="tag warning">${bilingual("教师预览 / 模拟训练草案", "Instructor preview / simulation draft")}</span><span class="tag">${bilingual("逐条临床复核中", "Claim-level clinical review in progress")}</span></div></div>
-        <figure class="skill-hero-image"><img src="${selected.heroImage}" alt="${selected.titleZh}模拟教学场景" /><figcaption>${bilingual("模拟技能中心视觉，不含真实患者资料", "Simulated skills-lab visual; no real-patient data")}</figcaption></figure>
+        <figure class="skill-hero-image"><img src="${selected.heroImage}" alt="${selected.titleEn} source photograph" /><figcaption>${bilingual("真实来源图：训练/设备场景；不是本课病例影像", "Authentic source training/equipment image; not the course patient")}<br>${escapeHtml(selected.heroAttribution)}</figcaption></figure>
       </section>
-      <section class="skill-section"><div class="section-heading"><div class="section-kicker">01 · ${bilingual("能力路线", "Competency route")}</div><h2>${bilingual("每一个节点都有图、有观察任务、有复评问题", "Every node has a visual, observation task, and reassessment question")}</h2><p>${bilingual("点击五个节点，查看‘看什么—如何组织—下一次确认什么’。", "Select each node to inspect what to observe, how to organise, and what to confirm next.")}</p></div>${routeSection(selected)}</section>
+      <section class="skill-section"><div class="section-heading"><div class="section-kicker">01 · ${bilingual("能力路线", "Competency route")}</div><h2>${bilingual("每个节点有观察任务、来源边界与复评问题", "Each node has an observation task, source limits and reassessment question")}</h2><p>${bilingual("点击五个节点，查看‘看什么—如何组织—下一次确认什么’。", "Select each node to inspect what to observe, how to organise, and what to confirm next.")}</p></div>${routeSection(selected)}</section>
       ${decisionLadder(selected)}
       ${evidenceSection(selected)}
       ${visualSection(selected)}
@@ -220,7 +197,7 @@
       const node = skill.competencyRoute[index];
       const label = mediaLabel(node.visualKind || node.mediaKind);
       const attribution = node.visualAttribution || node.attribution;
-      routeDetail.innerHTML = `<div class="route-detail-media">${routeMedia(node)}<div class="media-provenance"><span>${bilingual(label[0], label[1])}</span><strong>${bilingual(node.mediaTitleZh || node.titleZh, node.mediaTitleEn || node.titleEn)}</strong>${attribution ? `<small>${attribution}</small>` : ""}</div></div><div class="route-detail-copy"><span>${String(index + 1).padStart(2, "0")} · ${bilingual("临床识别节点", "Clinical recognition node")}</span><h3>${bilingual(node.titleZh, node.titleEn)}</h3><p class="route-scene">${bilingual(node.sceneZh || node.summaryZh, node.sceneEn || node.summaryEn)}</p><div class="learning-grid"><article><b>${bilingual("为什么现在讨论", "Why now")}</b><p>${bilingual(node.whyZh || node.summaryZh, node.whyEn || node.summaryEn)}</p></article><article><b>${bilingual("监督下怎么练", "How to practise")}</b><p>${bilingual(node.practiceZh || node.summaryZh, node.practiceEn || node.summaryEn)}</p></article><article class="success"><b>${bilingual("成功表现", "Success looks like")}</b><p>${bilingual(node.successZh || node.summaryZh, node.successEn || node.summaryEn)}</p></article><article class="failure"><b>${bilingual("失败或危险表现", "Failure / danger signs")}</b><p>${bilingual(node.failureZh || node.summaryZh, node.failureEn || node.summaryEn)}</p></article></div><div class="reassess-question"><strong>${bilingual("下一次复评", "Next reassessment")}</strong><p>${bilingual(node.reassessZh, node.reassessEn)}</p></div><div class="media-action"><a class="button" href="${node.sourceUrl || node.mediaUrl || node.fallbackImage}" target="_blank" rel="noreferrer">${bilingual(node.sourceUrl ? "打开权威补充来源" : "打开原始媒体与适用边界", node.sourceUrl ? "Open authoritative supplement" : "Open original media and scope")}</a><small>${bilingual(node.mediaScopeZh || "原创模拟视觉用于教学认识，不替代临床判断。", node.mediaScopeEn || "Original simulation visual supports learning and does not replace clinical judgement.")}</small></div></div>`;
+      routeDetail.innerHTML = `<div class="route-detail-media">${routeMedia(node)}<div class="media-provenance"><span>${bilingual(label[0], label[1])}</span><strong>${bilingual(node.mediaTitleZh || node.titleZh, node.mediaTitleEn || node.titleEn)}</strong>${attribution ? `<small>${attribution}</small>` : ""}</div></div><div class="route-detail-copy"><span>${String(index + 1).padStart(2, "0")} · ${bilingual("临床识别节点", "Clinical recognition node")}</span><h3>${bilingual(node.titleZh, node.titleEn)}</h3><p class="route-scene">${bilingual(node.sceneZh || node.summaryZh, node.sceneEn || node.summaryEn)}</p><div class="learning-grid"><article><b>${bilingual("为什么现在讨论", "Why now")}</b><p>${bilingual(node.whyZh || node.summaryZh, node.whyEn || node.summaryEn)}</p></article><article><b>${bilingual("监督下怎么练", "How to practise")}</b><p>${bilingual(node.practiceZh || node.summaryZh, node.practiceEn || node.summaryEn)}</p></article><article class="success"><b>${bilingual("成功表现", "Success looks like")}</b><p>${bilingual(node.successZh || node.summaryZh, node.successEn || node.summaryEn)}</p></article><article class="failure"><b>${bilingual("失败或危险表现", "Failure / danger signs")}</b><p>${bilingual(node.failureZh || node.summaryZh, node.failureEn || node.summaryEn)}</p></article></div><div class="reassess-question"><strong>${bilingual("下一次复评", "Next reassessment")}</strong><p>${bilingual(node.reassessZh, node.reassessEn)}</p></div><div class="media-action">${node.sourceUrl || node.mediaUrl || node.fallbackImage ? `<a class="button" href="${node.sourceUrl || node.mediaUrl || node.fallbackImage}" target="_blank" rel="noreferrer">${bilingual(node.sourceUrl ? "打开权威补充来源" : "打开原始媒体与适用边界", node.sourceUrl ? "Open authoritative supplement" : "Open original media and scope")}</a>` : ""}<small>${bilingual(node.mediaScopeZh || "来源素材用于观察训练，不替代临床判断。", node.mediaScopeEn || "Teaching material supports learning and does not replace clinical judgement.")}</small></div></div>`;
       routeDetail.querySelectorAll("img[data-fallback]").forEach((img) => img.addEventListener("error", () => { if (img.src !== img.dataset.fallback) img.src = img.dataset.fallback; }, { once: true }));
       document.querySelectorAll("[data-route-index]").forEach((button, i) => { button.classList.toggle("active", i === index); button.toggleAttribute("aria-current", i === index); });
     };

@@ -4171,3 +4171,39 @@ body[data-disaster-mode="challenge"] .answer-block {
     position: static;
   }
 }
+
+/* Source-backed reading windows: keep clinical images uncropped and evidence secondary. */
+.source-backed { margin: 32px 0; padding: clamp(18px,3vw,36px); background:#faf8f1; border:1px solid #d9d7cb; border-radius:22px; }
+.source-backed > header { margin-bottom:24px; max-width:76ch; }
+.source-backed header .eyebrow { color:#24776b; font-size:.72rem; letter-spacing:.12em; }
+.sb-reading { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:24px; padding:24px 0; border-top:1px solid #deddd3; }
+.sb-reading figure { margin:0; min-width:0; }
+.sb-reading figure img { display:block; width:100%; max-height:520px; object-fit:contain; background:#0f1717; border-radius:12px; }
+.sb-reading figcaption { font-size:.8rem; line-height:1.6; margin-top:10px; color:#4d5a54; }
+.sb-reading-copy { align-self:center; min-width:0; }
+.sb-reading-copy h3 { margin-top:0; }
+.sb-reading-copy p { line-height:1.75; }
+.sb-limit { border-left:3px solid #bd8740; padding:12px 16px; background:#f0ede3; }
+.sb-reading details,.sb-evidence { margin-top:16px; font-size:.85rem; overflow-wrap:anywhere; }
+.source-backed summary { cursor:pointer; font-weight:650; padding:12px 0; }
+.sb-reasoning { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-top:20px; }
+.sb-reasoning article { padding:18px; background:white; border-radius:12px; border:1px solid #e3e1d6; }
+.sb-reasoning article > span { color:#b78540; font-weight:700; }
+.sb-reasoning h3 { font-size:1rem; margin:8px 0; }
+.sb-reasoning p { font-size:.92rem; line-height:1.75; }
+.sb-quiz { margin-top:20px; padding:8px 18px; background:#e6efeb; border-radius:12px; }
+.sb-video { padding:20px; margin-top:20px; border-radius:12px; background:#153e36; color:#f7f4e8; }
+.sb-video a { color:#f9d08c; text-decoration:underline; }
+.sb-video small { display:block; margin-top:12px; opacity:.85; }
+.sb-task-marker { padding:22px; border:1px dashed #aab7af; border-radius:12px; background:#eff2ec; color:#29544a; font-size:.85rem; }
+.source-backed a { overflow-wrap:anywhere; }
+.sb-video a.button { color:#143c32; background:#f5f3eb; }
+@media(max-width:720px){.sb-reading,.sb-reasoning{grid-template-columns:1fr}.sb-reading{gap:16px}.source-backed{padding:18px}.sb-reading figure img{max-height:440px}.source-backed h2{font-size:1.5rem}}
+
+.sb-context {max-width:760px;margin:24px auto}.sb-context img{width:100%;max-height:380px;object-fit:contain;background:#e8e8e2}.sb-context figcaption,.hero-credit,.source-credit{font-size:12px;line-height:1.5}.sb-context figcaption{padding:12px}
+
+.source-backed{scroll-margin-top:110px}.route-task-icon{display:grid;place-items:center;min-height:90px;background:#173e36;color:#f2d5a3;font-size:32px}.module-visual .source-credit{color:#fff;background:rgba(0,0,0,.65);padding:5px 8px}
+
+.decision-task{min-height:150px;display:flex;align-items:center;justify-content:center;gap:20px;background:#143c32;color:#fff}.decision-task span{position:static!important;font-size:40px}.skill-hero-image img{object-fit:contain!important;background:#eee}
+
+.skill-card-credit{display:block;font-size:11px;padding:5px 12px;color:#53645c}.source-backed img{max-height:570px}

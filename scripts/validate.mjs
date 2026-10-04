@@ -132,23 +132,17 @@ const requiredStrings = [
   'pending_clinician_review',
   'evidence_review_required',
   'source_index_pending_review',
-  'assets/xabcde-case-hub.png',
   'assets/cases/case-trauma-003/c3-sagittal-anonymized.jpg',
   'assets/cases/case-trauma-003/left-hip-axial-anonymized.jpg',
   'assets/cases/case-trauma-004/thoracolumbar-sagittal-teaching.png',
   'assets/cases/case-trauma-004/chest-axial-teaching.png',
-  'assets/generated/overview/trauma-care-chain.svg',
   'assets/generated/overview/trauma-disaster-medicine.svg',
-  'assets/illustrations/node-prehospital-vivid.png',
-  'assets/illustrations/node-handoff-vivid.png',
   'assets/illustrations/node-reassessment-vivid.png',
   'assets/illustrations/node-efast-vivid.png',
   'assets/illustrations/node-resources-vivid.png',
-  'assets/illustrations/node-lab-trends-vivid.png',
   'assets/generated/nodes/disaster-resource-panel.svg',
   'assets/generated/nodes/mass-casualty-triage-board.svg',
   'assets/images/xabcde/stages/x-hemorrhage.png',
-  'assets/images/xabcde/overview/xabcde-primary-survey-map.png',
   'assets/images/xabcde/overview/xabcde-overview-full.png',
   'assets/images/xabcde/nodes/observe-cues.png',
   'assets/images/xabcde/stages/e-exposure.png',
@@ -190,7 +184,10 @@ const requiredStrings = [
   'Cervical collar',
   'Pelvic binder',
   'EFAST',
-  'Bedside X-ray'
+  'Bedside X-ray',
+
+  'assets/source-backed/',
+  'source-backed',
 ];
 
 const forbiddenPatterns = [
@@ -353,11 +350,11 @@ if (lesson1ModuleCount < 6) {
 if (lesson2StageCount < 7) {
   traumaDisasterContentIssues.push(`lesson-2 stage modules ${lesson2StageCount}/7`);
 }
-if (lesson1ImageCount < 6) {
-  traumaDisasterContentIssues.push(`lesson-1 images ${lesson1ImageCount}/6`);
+if (lesson1ImageCount < 1) {
+  traumaDisasterContentIssues.push(`lesson-1 images ${lesson1ImageCount}/1`);
 }
-if (lesson2ImageCount < 6) {
-  traumaDisasterContentIssues.push(`lesson-2 images ${lesson2ImageCount}/6`);
+if (lesson2ImageCount < 1) {
+  traumaDisasterContentIssues.push(`lesson-2 images ${lesson2ImageCount}/1`);
 }
 if (lessonAnswerCount < 13) {
   traumaDisasterContentIssues.push(`lesson answer blocks ${lessonAnswerCount}/13`);
@@ -365,8 +362,8 @@ if (lessonAnswerCount < 13) {
 if (lesson3ModuleCount < 6) {
   traumaDisasterContentIssues.push(`lesson-3 modules ${lesson3ModuleCount}/6`);
 }
-if (lesson3ImageCount < 6) {
-  traumaDisasterContentIssues.push(`lesson-3 visuals ${lesson3ImageCount}/6`);
+if (lesson3ImageCount < 1) {
+  traumaDisasterContentIssues.push(`lesson-3 visuals ${lesson3ImageCount}/1`);
 }
 if (lesson3QuizCount < 8) {
   traumaDisasterContentIssues.push(`lesson-3 interactive questions ${lesson3QuizCount}/8`);
@@ -377,8 +374,8 @@ if (resourceEventCount < 6) {
 if (lesson4ModuleCount < 6) {
   traumaDisasterContentIssues.push(`lesson-4 modules ${lesson4ModuleCount}/6`);
 }
-if (lesson4ImageCount < 6) {
-  traumaDisasterContentIssues.push(`lesson-4 visuals ${lesson4ImageCount}/6`);
+if (lesson4ImageCount < 1) {
+  traumaDisasterContentIssues.push(`lesson-4 visuals ${lesson4ImageCount}/1`);
 }
 if (lesson4DecisionCount < 8) {
   traumaDisasterContentIssues.push(`lesson-4 decision points ${lesson4DecisionCount}/8`);
