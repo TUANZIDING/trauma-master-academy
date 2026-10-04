@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://traumamaster.academy/schemas/clinical-case-intake.schema.json",
+  "title": "TraumaMaster Clinical Experience Intake",
+  "type": "object",
+  "required": ["case_id", "case_type", "distribution_scope", "privacy_status", "authorization_status", "source_layers", "conflicts", "implementation_gate"],
+  "properties": {
+    "case_id": {"type": "string", "pattern": "^CASE-TRAUMA-[A-Z0-9-]+$"},
+    "case_type": {"enum": ["synthetic_no_real_patient", "real_case_restricted"]},
+    "distribution_scope": {"enum": ["structure_only", "instructor_preview", "student_release"]},
+    "privacy_status": {"enum": ["not_applicable_synthetic", "pending_deidentification_review", "deidentified_reviewed"]},
+    "authorization_status": {"enum": ["not_applicable_synthetic", "pending_documented_authorization", "pending_conflict_resolution", "authorized_for_instructor_preview", "authorized_for_student_release"]},
+    "source_layers": {"type": "array", "items": {"enum": ["medical_record_fact", "clinician_recollection", "imaging_report", "laboratory_report", "teaching_inference", "guideline_supported_claim", "local_protocol_pending"]}},
+    "conflicts": {"type": "array"},
+    "implementation_gate": {"enum": ["blocked_patient_payload", "legacy_public_derivative_review_required", "structure_only_ready", "ready_for_instructor_preview", "ready_for_student_release"]}
+  },
+  "additionalProperties": true
+}

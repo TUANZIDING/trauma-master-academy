@@ -1,0 +1,18 @@
+{
+  "summary_version": 1,
+  "generated_at": "2026-09-08T14:59:48.804Z",
+  "claim_count": 88,
+  "status_counts": {
+    "evidence_review_required": 50,
+    "pending_deidentification_review": 4,
+    "pending_local_confirmation": 18,
+    "source_locator_verified": 16
+  },
+  "missing_evidence_location_count": 69,
+  "missing_source_count": 0,
+  "local_adaptation_count": 22,
+  "privacy_review_count": 4,
+  "evidence_verified_count": 0,
+  "publishable_count": 0,
+  "interpretation": "Counts describe governance state only. They do not measure clinical quality or authorize publication."
+}

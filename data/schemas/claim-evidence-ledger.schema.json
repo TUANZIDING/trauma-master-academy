@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://traumamaster.academy/schemas/claim-evidence-ledger.schema.json",
+  "title": "TraumaMaster Claim-level Evidence Ledger",
+  "type": "object",
+  "required": ["ledger_version", "generated_at", "claims"],
+  "properties": {
+    "ledger_version": {"type": "integer", "minimum": 1},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim_id", "claim_zh", "claim_en", "teaching_context", "source_organization", "source_title", "publication_or_update_year", "source_url", "evidence_location", "evidence_level", "review_status", "local_adaptation_required", "last_verified_at"],
+        "properties": {
+          "claim_id": {"type": "string", "pattern": "^[A-Z0-9-]+$"},
+          "claim_zh": {"type": "string", "minLength": 1},
+          "claim_en": {"type": "string", "minLength": 1},
+          "teaching_context": {"type": "string", "minLength": 1},
+          "source_organization": {"type": ["string", "null"]},
+          "source_title": {"type": ["string", "null"]},
+          "publication_or_update_year": {"type": ["string", "integer", "null"]},
+          "source_url": {"type": ["string", "null"]},
+          "evidence_location": {"type": "string", "minLength": 1},
+          "evidence_level": {"type": "string", "minLength": 1},
+          "review_status": {"enum": ["source_required", "source_locator_verified", "evidence_review_required", "evidence_verified", "pending_clinician_review", "pending_local_confirmation", "pending_deidentification_review", "privacy_authorized", "ready_for_implementation", "publishable"]},
+          "local_adaptation_required": {"type": "boolean"},
+          "last_verified_at": {"type": ["string", "null"]}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

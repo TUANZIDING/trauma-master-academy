@@ -1,0 +1,49 @@
+{
+  "workflow_version": 1,
+  "method_source": "https://github.com/TUANZIDING/harness-interview-workflow",
+  "method_use": "adapted_not_merged",
+  "current_phase": "foundation_verified_case_review_pending",
+  "required_sequence": [
+    "goal_restatement",
+    "blindspot_scan",
+    "high_leverage_interview",
+    "source_classification",
+    "timeline_and_conflicts",
+    "known_unknown_feared",
+    "xabcde_priorities",
+    "claim_atomization",
+    "evidence_review",
+    "privacy_review",
+    "route_comparison",
+    "explicit_approval",
+    "implementation",
+    "verification"
+  ],
+  "source_layers": [
+    "medical_record_fact",
+    "clinician_recollection",
+    "imaging_report",
+    "laboratory_report",
+    "teaching_inference",
+    "guideline_supported_claim",
+    "local_protocol_pending"
+  ],
+  "review_statuses": [
+    "source_required",
+    "source_locator_verified",
+    "evidence_review_required",
+    "evidence_verified",
+    "pending_clinician_review",
+    "pending_local_confirmation",
+    "pending_deidentification_review",
+    "privacy_authorized",
+    "ready_for_implementation",
+    "publishable"
+  ],
+  "approval_labels_require_traceable_evidence": true,
+  "approval_phrase": "确认执行，使用推荐方案",
+  "approval_received": true,
+  "implementation_branch": "codex/evidence-grounded-optimization",
+  "last_verified_at": "2026-09-08",
+  "next_gate": "resolve legacy real-case privacy and authorization conflicts"
+}

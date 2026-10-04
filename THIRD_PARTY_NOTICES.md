@@ -37,3 +37,19 @@ These materials are released for display within the authorised, de-identified te
 ATLS, ETM, WHO, NICE, WSES, AIUM, AO and other organisation names identify sources. No trademark licence, certification, partnership, or endorsement is granted or implied.
 
 ATLS、ETM、WHO、NICE、WSES、AIUM、AO 等名称仅用于来源定位，不授予商标许可，也不表示认证、合作或背书。
+
+## Workflow method reference / 工作流方法参考
+
+The clinical-experience interview method is adapted from the MIT-licensed Harness Interview Workflow project:
+
+- Source: https://github.com/TUANZIDING/harness-interview-workflow
+- Use: method inspiration and project-specific reimplementation; repositories are not merged and no Git submodule is used.
+- Boundary: TraumaMaster Academy adds its own medical-evidence, bilingual, privacy, authorization, and copyright gates.
+
+临床经验采访方法参考 MIT 许可的 Harness Interview Workflow。本项目只进行方法适配和重新实现，不合并仓库、不使用 Git submodule，并新增医学证据、双语、隐私、授权和版权门禁。
+
+## Licensed course materials / 合法持有的课程资料
+
+Licensed ATLS/ETM materials may be consulted by authorized humans for internal review only. Their protected text, algorithms, tables, screenshots, or figures are not copied into this repository, prompts, generated datasets, or public courseware. Public organization pages are used as source locators and do not imply endorsement.
+
+合法持有的 ATLS/ETM 资料仅供获授权人员内部人工审校。其受保护的文字、算法、表格、截图和图形不复制到本仓库、提示词、生成数据或公开课件。公开机构页面仅作为来源定位，不表示背书。

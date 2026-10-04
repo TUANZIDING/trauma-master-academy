@@ -52,6 +52,8 @@ Trauma Master Academy 面向医学生、实习医师、住培医师和青年临�
 - 生命体征、查体、床旁影像、实验室信息与团队资源共同进入推理。
 - 九项技能使用“五节点能力路线”，覆盖为什么做、怎么组织、成功表现、失败表现和下一次复评。
 - 公开来源定位、主张级证据台账、隐私边界和发布前自动验证。
+- 采用“盲点扫描、每轮 1–3 个关键问题、方案比较、批准后执行”的临床经验采访工作流。
+- 医学主张、双语语义、本院适配、隐私授权和技术验证使用彼此独立的门禁。
 
 ### 医学、版权与隐私边界
 
@@ -60,6 +62,16 @@ Trauma Master Academy 面向医学生、实习医师、住培医师和青年临�
 - 病例只在已脱敏且获授权的教学范围内展示，禁止再识别患者或传播原始病例文件。
 - ATLS、ETM、WHO、NICE、WSES、AIUM、AO 等名称仅用于来源定位，不表示机构认证或背书。
 - 自动验证通过不等同于临床专家审批。
+- 教师模式只控制课堂呈现，不提供访问控制；未获授权的真实病例载荷不得进入公开仓库。
+
+### 临床经验转化与证据工作台
+
+- [临床经验采访工作流](docs/CLINICAL_EXPERIENCE_WORKFLOW.md)
+- [医学证据治理](docs/EVIDENCE_GOVERNANCE.md)
+- [隐私与教学授权检查表](docs/PRIVACY_AUTHORIZATION_CHECKLIST.md)
+- [浏览器证据工作台](courses/evidence-governance.html)
+
+规范化台账由 `npm run build:evidence-ledger` 从现有证据图谱生成。生成过程不会自动把任何记录升级为 `evidence_verified` 或 `publishable`。
 
 ### 本地运行
 
@@ -116,6 +128,8 @@ See the bilingual [project map](docs/PROJECT_MAP.md) for the complete structure.
 - Integrated vital signs, examination, bedside imaging, laboratory information, and team resources.
 - Five-node capability routes for nine procedural skills: why, organisation, success, failure, and next reassessment.
 - Public-source locators, claim-level evidence registers, privacy boundaries, and automated pre-release checks.
+- An interview workflow using blindspot scans, one to three high-leverage questions per round, route comparison, and approval before implementation.
+- Independent gates for medical claims, bilingual meaning, local adaptation, privacy authorization, and technical validation.
 
 ### Clinical, copyright, and privacy boundaries
 
@@ -124,6 +138,16 @@ See the bilingual [project map](docs/PROJECT_MAP.md) for the complete structure.
 - Cases are displayed only within their de-identified, authorised teaching scope. Re-identification and redistribution of original case files are prohibited.
 - ATLS, ETM, WHO, NICE, WSES, AIUM, and AO identify sources only; no endorsement or certification is implied.
 - Passing automated validation does not constitute clinical approval.
+- Instructor mode controls classroom presentation only and is not access control; unauthorized real-case payload must remain outside the public repository.
+
+### Clinical experience and evidence workspace
+
+- [Clinical experience workflow](docs/CLINICAL_EXPERIENCE_WORKFLOW.md)
+- [Evidence governance](docs/EVIDENCE_GOVERNANCE.md)
+- [Privacy and teaching authorization checklist](docs/PRIVACY_AUTHORIZATION_CHECKLIST.md)
+- [Browser evidence workspace](courses/evidence-governance.html)
+
+Run `npm run build:evidence-ledger` to normalize the existing evidence graph. Generation never upgrades a record automatically to `evidence_verified` or `publishable`.
 
 ### Run locally
 
@@ -153,6 +177,7 @@ data/             Structured course and case data / 课程与病例数据
 docs/             Project map, safety, design and source notes / 项目地图与审核文档
 scripts/          Build and validation tools / 构建与验证脚本
 .graph/           Auditable education-governance records / 可审计治理记录
+.workflow/        Interview, route and approval templates / 采访、方案与批准模板
 ```
 
 ## Licence / 许可证

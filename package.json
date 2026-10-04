@@ -5,10 +5,13 @@
   "description": "Bilingual full-pathway trauma education, clinical reasoning, simulation, and skills courseware.",
   "scripts": {
     "build:evidence-pack": "node scripts/build-evidence-pack.mjs",
+    "build:evidence-ledger": "node scripts/build-evidence-ledger.mjs",
     "build:release-archive": "node scripts/build-release-archive.mjs",
     "audit:student-status": "node scripts/audit-student-status.mjs",
+    "verify:sources": "node scripts/verify-source-links.mjs",
     "generate:xabcde-stages": "node scripts/create-xabcde-stage-assets.mjs",
-    "validate": "node scripts/validate.mjs && node scripts/audit-student-status.mjs && node scripts/validate-trauma-skills-decisions.mjs && node scripts/validate-trauma-skills-visuals.mjs",
+    "validate:evidence": "node scripts/validate-evidence-governance.mjs",
+    "validate": "node scripts/validate.mjs && node scripts/validate-evidence-governance.mjs && node scripts/audit-student-status.mjs && node scripts/validate-trauma-skills-decisions.mjs && node scripts/validate-trauma-skills-visuals.mjs",
     "serve": "python3 -m http.server 8088"
   }
 }
