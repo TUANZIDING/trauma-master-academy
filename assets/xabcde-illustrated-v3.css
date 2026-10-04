@@ -1,0 +1,72 @@
+/* xABCDE illustrated pilot. Scoped to one page; generated scenes cue learning, not diagnosis. */
+.xabcde-illustrated-v3{--xv-ink:#153c33;--xv-gold:#a77935;--xv-paper:#faf7ef}
+.xabcde-illustrated-v3 .wrap{max-width:1280px}
+.xabcde-illustrated-v3 .xv-tools{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:22px 0 16px;color:var(--xv-ink)}
+.xv-tools strong{margin-right:auto;font-size:14px;letter-spacing:.02em}.xv-tools button,.xv-tools a{padding:9px 16px;border:1px solid #c9d6cb;border-radius:999px;background:#fffdf8;color:#153c33;font:inherit;font-size:14px;cursor:pointer;text-decoration:none}
+.xabcde-illustrated-v3 .reader-hero{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:32px;align-items:center;padding:30px}
+.xabcde-illustrated-v3 .hero-course-figure{min-width:0;padding:0;border:0;background:transparent;box-shadow:none;overflow:visible}
+.xabcde-illustrated-v3 .hero-course-figure .board-title{padding:0 0 12px;font-size:11px;gap:8px;flex-wrap:wrap}
+.xv-hero-art{position:relative;border-radius:14px;overflow:hidden;background:#ede9df}
+.xabcde-illustrated-v3 .xv-hero-art img{display:block;width:100%;height:auto;min-height:0;max-height:none;aspect-ratio:3/2;object-fit:cover;border:0;border-radius:0}
+.xv-art-title{position:absolute;left:0;right:0;bottom:0;padding:36px 20px 16px;background:linear-gradient(transparent,rgba(16,47,40,.94));color:white;font-size:20px;font-weight:700;line-height:1.45}
+.xv-legend{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
+.xv-legend a{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;align-items:center;min-width:0;padding:10px 8px;background:#eef3ec;border-radius:8px;color:#153c33;font-size:12px;line-height:1.45;text-decoration:none}
+.xv-legend a>b{grid-area:1/1;font-size:24px;color:#9c6b2e}.xv-legend a>span{grid-area:1/2;overflow-wrap:anywhere}
+.xabcde-illustrated-v3 .hero-course-figure figcaption{padding:12px 0 0;font-size:12px;line-height:1.6;color:#66766b}
+.xabcde-illustrated-v3 #route-overview{padding:28px;background:#fffdf8;border-radius:16px}
+.xv-loop-board{border:1px solid #d7dfd4;border-radius:14px;background:#f8f8ef;overflow:hidden}
+.xv-priority{margin:0;padding:16px 22px;background:#153c33;color:#fff4d7;font-size:17px;line-height:1.6;font-weight:700}
+.xv-loop-board>img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover}
+.xv-loop-labels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;background:#fffdf8}
+.xv-loop-labels>div{padding:14px 18px;display:flex;align-items:center;gap:12px;border-right:1px solid #e2e5db;font-weight:700;color:#153c33;font-size:16px;line-height:1.5}
+.xv-loop-labels b{order:-1;color:#a77935;font-size:23px;flex:0 0 auto}
+.xv-return{margin:0;padding:14px 20px;color:#153c33;border-top:1px solid #d7dfd4;font-size:16px;font-weight:700}
+.xv-caption{display:block;padding:0 20px 14px;color:#69766c;line-height:1.6;font-size:12px}
+.xabcde-illustrated-v3 #route-overview .node-visual-grid{margin-top:18px;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.xabcde-illustrated-v3 .xv-role-card{display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;align-items:start;padding:18px;background:transparent;border:0;border-radius:0}
+.xv-role-index{font-size:30px;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#153c33;background:#e5eee4}
+.xv-role-card strong{font-size:18px}.xv-role-card p{font-size:15px;line-height:1.6;margin:6px 0}.xv-role-card .learner-status{font-size:10px}
+/* Full reading area, rather than an increasingly narrow column beside the roadmap. */
+.xabcde-illustrated-v3 .reader-layout{display:block}
+.xabcde-illustrated-v3 .side-nav{display:flex;gap:16px;align-items:center;overflow-x:auto;position:sticky;top:64px;z-index:3;border:1px solid #e1e5dc;background:#fffdf9;padding:9px 16px;margin:0 0 24px;border-radius:10px;max-width:100%}
+.xabcde-illustrated-v3 .side-nav strong{margin:0;font-size:12px;white-space:nowrap}
+.xabcde-illustrated-v3 .side-nav a{margin:0;padding:6px 0;border:0;white-space:nowrap;font-size:13px;flex:0 0 auto}
+.xabcde-illustrated-v3 .lesson-stack{min-width:0}.xabcde-illustrated-v3 .lesson{padding:28px}
+.xabcde-illustrated-v3 #stages .stage-visual-list{gap:24px}
+.xabcde-illustrated-v3 .stage-visual-card{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:26px;padding:22px;align-items:start;border:1px solid #d9dfd5;border-radius:14px;box-shadow:0 8px 24px rgba(20,51,39,.035);background:#fffef9}
+.xv-stage-figure{margin:0;min-width:0}.xv-stage-figure figcaption{font-size:11px;color:#66756a;padding-top:9px;line-height:1.5}
+.xv-scene{width:100%;aspect-ratio:1;background-image:url('./generated/xabcde-v3/observation-scenes.png');background-size:300% 200%;background-repeat:no-repeat;border-radius:10px;background-color:#f2edde;overflow:hidden}
+.xv-scene-0{background-position:0 0}.xv-scene-1{background-position:50% 0}.xv-scene-2{background-position:100% 0}.xv-scene-3{background-position:0 100%}.xv-scene-4{background-position:50% 100%}.xv-scene-5{background-position:100% 100%}
+.xabcde-illustrated-v3 .stage-visual-copy{align-content:start;gap:14px}
+.xabcde-illustrated-v3 .stage-visual-copy h3{font-size:23px;line-height:1.5;display:block;margin:0}
+.xabcde-illustrated-v3 .stage-letter{display:inline-grid;vertical-align:middle;margin:0 10px 4px 0;width:38px;height:38px;font-size:22px;border-radius:9px;background:#153c33}
+.xabcde-illustrated-v3 .xv-task{font-size:16px;line-height:1.65;color:#5d6d64;margin:0}
+.xabcde-illustrated-v3 .stage-brief-grid{display:grid;grid-template-columns:1fr;gap:0;border:1px solid #e0e5da;border-radius:10px;overflow:hidden}
+.xabcde-illustrated-v3 .stage-brief{display:grid;grid-template-columns:90px minmax(0,1fr);gap:12px;border:0;border-left:3px solid #b3cbb9;border-bottom:1px solid #e0e5da;padding:12px 14px;border-radius:0;background:#f3f6ef}
+.xabcde-illustrated-v3 .stage-brief:last-child{background:#faf4e5;border-left-color:#b68b47;border-bottom:0}
+.xabcde-illustrated-v3 .stage-brief strong{font-size:13px;color:#153c33;line-height:1.6}.xabcde-illustrated-v3 .stage-brief p{font-size:15px;line-height:1.6;margin:0;color:#354f43}
+.xabcde-illustrated-v3 details{height:auto;max-height:none;overflow:visible;min-width:0;overflow-wrap:anywhere}
+.xabcde-illustrated-v3 details>summary{cursor:pointer;padding:10px 12px;font-size:14px;line-height:1.65;white-space:normal}
+.xabcde-illustrated-v3 details[open]>summary{margin-bottom:8px;border-bottom:1px solid #dbe3d5}
+.xv-explanation{background:#f9f8ef;border:1px solid #dce3d6;border-radius:9px;padding:0 4px}.xv-explanation p{padding:0 12px;font-size:14px;line-height:1.8;color:#5a6a60}.xv-explanation .tag-row{padding:0 12px 12px}
+.xabcde-illustrated-v3 .deep-card{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:start;gap:26px}
+.xabcde-illustrated-v3 .xv-deep-figure{margin:0}.xv-deep-figure figcaption{font-size:13px;line-height:1.7;padding:12px 0}
+.xabcde-illustrated-v3 .micro-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.xabcde-illustrated-v3 #pitfalls{background:#153c33;border-color:#153c33;border-radius:16px;padding:28px}
+.xabcde-illustrated-v3 #pitfalls>h2{color:#fff8e6;margin-bottom:22px}
+.xv-pitfall-art{margin:0 0 22px}.xv-pitfall-art img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;object-position:50% 42%;border-radius:10px}.xv-pitfall-art figcaption{color:#ccdacd;font-size:12px;padding-top:10px;line-height:1.6}
+.xv-pitfall-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+.xv-pitfall-card{padding:20px;background:#fffcf2;border-radius:12px;min-width:0;display:flex;flex-direction:column}
+.xv-error-label{display:inline-block;align-self:flex-start;background:#f3e4d8;color:#8d4733;font-size:12px;padding:5px 10px;border-radius:999px;font-weight:700}
+.xv-wrong{font-size:16px;color:#683d30;line-height:1.75;border-bottom:1px solid #e4ddd0;padding-bottom:16px;margin:12px 0 16px;flex:1}
+.xv-pitfall-card>strong{font-size:13px;color:#647d61}.xv-right{font-size:16px;color:#153c33;line-height:1.75;margin:10px 0 0;font-weight:700}
+.xabcde-illustrated-v3 :is(a,button,summary):focus-visible{outline:3px solid #b78a40;outline-offset:4px}
+@media(max-width:1000px){.xabcde-illustrated-v3 .reader-hero{grid-template-columns:1fr}.xv-hero-art{max-width:760px;margin:auto}.xv-legend{grid-template-columns:repeat(3,minmax(0,1fr))}.xabcde-illustrated-v3 .stage-visual-card,.xabcde-illustrated-v3 .deep-card{grid-template-columns:1fr}.xv-stage-figure .xv-scene,.xv-deep-figure .xv-scene{max-width:540px;margin:0 auto}.xabcde-illustrated-v3 #route-overview .node-visual-grid{grid-template-columns:1fr}.xv-pitfall-grid{grid-template-columns:1fr}.xv-pitfall-card{display:block}.xabcde-illustrated-v3 .xv-role-card{padding:10px}.xabcde-illustrated-v3 .side-nav{top:64px}}
+@media(max-width:600px){.xabcde-illustrated-v3 .wrap{width:100%;padding:0 12px}.xabcde-illustrated-v3 .reader-hero,.xabcde-illustrated-v3 .lesson,.xabcde-illustrated-v3 #route-overview,.xabcde-illustrated-v3 #pitfalls{padding:18px}.xabcde-illustrated-v3 .reader-hero{gap:20px}.xabcde-illustrated-v3 .reader-hero h1{font-size:34px;line-height:1.25}.xabcde-illustrated-v3 .lead{font-size:16px}.xv-legend{grid-template-columns:repeat(2,minmax(0,1fr))}.xv-legend a{font-size:12px}.xv-loop-labels>div{display:block;padding:12px 9px;font-size:13px}.xv-loop-labels b{display:block;font-size:19px;margin-bottom:5px}.xv-priority,.xv-return{font-size:15px;padding:14px}.xabcde-illustrated-v3 .stage-visual-card{padding:14px;gap:18px}.xabcde-illustrated-v3 .stage-visual-copy h3{font-size:21px}.xabcde-illustrated-v3 .stage-brief{grid-template-columns:1fr;gap:5px}.xabcde-illustrated-v3 .micro-grid{grid-template-columns:1fr}.xabcde-illustrated-v3 .side-nav{top:88px}.xv-tools{gap:8px}.xv-tools strong{flex-basis:100%}.xv-tools button,.xv-tools a{font-size:12px;padding:8px 12px}}
+@media print{.xv-tools,.xabcde-illustrated-v3 .side-nav{display:none}.xabcde-illustrated-v3 details{break-inside:avoid}.xabcde-illustrated-v3 .stage-visual-card{break-inside:avoid}.xv-scene{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+/* Explicit grid placement avoids inheriting the old figure-first slot for text-only role cards. */
+.xabcde-illustrated-v3 .xv-role-card>div{grid-column:2;grid-row:1;min-width:0}
+.xabcde-illustrated-v3 .xv-role-card>.xv-role-index{grid-column:1;grid-row:1}
+.xabcde-illustrated-v3 main [id]{scroll-margin-top:145px}
+@media(max-width:600px){.xabcde-illustrated-v3 main [id]{scroll-margin-top:175px}}
+.xv-mini-loop{display:grid;gap:10px;margin:18px 0}.xv-mini-loop>div{display:flex;align-items:center;gap:14px;padding:12px 16px;border:1px solid #cddccc;border-radius:999px;background:#edf3e9}.xv-mini-loop b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#153c33;color:#fff6df;font-size:19px}.xv-mini-loop>div:last-child{background:#f8efda;border-color:#d9c69d}
