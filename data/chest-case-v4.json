@@ -1,0 +1,239 @@
+{
+  "id": "CHEST-SYN-V4",
+  "type": "synthetic teaching case",
+  "review_status": "pending_clinician_review",
+  "stages": [
+    {
+      "title": [
+        "01 从病例进入：机制与院前交接",
+        "01 Case entry: mechanism and handoff"
+      ],
+      "info": [
+        "38岁男性，交通碰撞后右前外侧胸壁受力，伤后约40分钟。主诉右胸痛伴气促40分钟。院前监护、脊柱保护、保暖与快速转运；院前是否吸氧未明确，到院首组按原病例记为吸氧前测量。无已知抗凝药使用，过敏与其他病史待核实。",
+        "A 38-year-old man, about 40 min after a collision impacting the right anterolateral chest. Right chest pain and dyspnoea for 40 min. Prehospital monitoring, spinal precautions, warmth and prompt transfer; prehospital oxygen is not specified. The first arrival observations remain recorded before oxygen, as in the original case. No known anticoagulant use; allergies and further history need verification."
+      ],
+      "unknown": [
+        "不能仅凭机制判定连枷胸；仍需全身xABCDE。",
+        "Mechanism alone does not establish flail chest; whole-body xABCDE is still needed."
+      ],
+      "priority": [
+        "先识别立即威胁，B轴观察与x/A/C/D/E并行。",
+        "Identify immediate threats first; B-axis observation runs with x/A/C/D/E."
+      ],
+      "reassess": [
+        "对比氧疗条件、胸廓运动、呼吸功和灌注。",
+        "Compare oxygen conditions, chest movement, work of breathing and perfusion."
+      ],
+      "vitals": {
+        "HR": "108 /min",
+        "BP": "116/74 mmHg",
+        "RR": "26 /min",
+        "SpO₂": "94%",
+        "GCS": "15 · E4 V5 M6",
+        "T": "36.4 °C",
+        "time": [
+          "胸部病例 · 到院0分钟",
+          "Chest case · arrival 0 min"
+        ],
+        "oxygen": [
+          "空气；吸氧前记录",
+          "Room air; recorded before oxygen"
+        ]
+      },
+      "question": [
+        "应只数肋骨还是先评估呼吸生理？",
+        "Count ribs only, or assess respiratory physiology first?"
+      ],
+      "good": [
+        "先看当前生理，再将结构信息整合进去。",
+        "Assess current physiology, then integrate structural information."
+      ],
+      "bad": [
+        "骨折数量不能替代呼吸评估。",
+        "Fracture count cannot replace respiratory assessment."
+      ],
+      "labs": []
+    },
+    {
+      "title": [
+        "02 初评：胸壁、肺与全身风险",
+        "02 Primary survey: chest wall, lung and whole-body risk"
+      ],
+      "info": [
+        "x：未见进行性外出血。A：可说完整句，无明显喉鸣，保持颈椎保护。B：右胸压痛、捏发感，吸气时右前胸局部内陷、咳嗽受疼痛限制。C：肢端尚暖，无新的外出血。D：GCS15、瞳孔反应存在。E：完成有序暴露与保暖；其他部位损伤仍需查找。",
+        "x: no progressive external bleeding seen. A: full sentences, no obvious stridor, spinal precautions maintained. B: right tenderness and crepitus, local right-anterior inward movement during inspiration and pain-limited cough. C: extremities remain warm, no new external bleeding. D: GCS 15 and reactive pupils. E: organised exposure and warmth; continue searching for other injuries."
+      ],
+      "unknown": [
+        "反常运动需动态查体；静态CT不证明它。",
+        "Paradoxical movement requires dynamic examination; static CT cannot prove it."
+      ],
+      "priority": [
+        "团队评估疼痛、咳嗽、胸膜腔损伤及呼吸支持需求。",
+        "The team assesses pain, cough, pleural injury and respiratory-support needs."
+      ],
+      "reassess": [
+        "深吸气与有效咳嗽是否改善，氧需求是否增加？",
+        "Do deep inspiration and effective cough improve? Is oxygen requirement increasing?"
+      ],
+      "vitals": {
+        "HR": "108 /min",
+        "BP": "116/74 mmHg",
+        "RR": "26 /min",
+        "SpO₂": "94%",
+        "GCS": "15 · E4 V5 M6",
+        "T": "36.4 °C",
+        "time": [
+          "胸部病例 · 到院0分钟",
+          "Chest case · arrival 0 min"
+        ],
+        "oxygen": [
+          "空气；吸氧前记录",
+          "Room air; recorded before oxygen"
+        ]
+      },
+      "question": [
+        "把所有气促归于胸壁疼痛是否足够？",
+        "Can all dyspnoea be attributed to chest-wall pain?"
+      ],
+      "good": [
+        "不够；同时保留肺、胸膜腔和其他系统因素。",
+        "No; retain lung, pleural and other systemic contributors."
+      ],
+      "bad": [
+        "过早固定机制会漏掉并行问题。",
+        "Early anchoring misses concurrent problems."
+      ],
+      "labs": []
+    },
+    {
+      "title": [
+        "03 真实影像：读图与病例分开",
+        "03 Authentic images: separate image and case"
+      ],
+      "info": [
+        "下方真实胸片/CT用于独立读图：观察胸膜线、缺失肺纹理与肋软骨连接分离。它们来自不同公开来源，并非本合成患者，不能拼成他的检查或治疗时序。",
+        "The authentic CXR/CT below support independent reading: pleural line, absent peripheral markings and costochondral separation. They come from different public sources, are not this synthetic patient and must not be combined into his test/treatment timeline."
+      ],
+      "unknown": [
+        "合成患者尚未提供确定性CT结论；图像不能单独解释全部生理。",
+        "No definitive CT result is specified for the synthetic patient; images alone cannot explain all physiology."
+      ],
+      "priority": [
+        "先回答图上看到了什么，再讨论不能证明什么。",
+        "Describe what the image shows, then discuss what it cannot establish."
+      ],
+      "reassess": [
+        "不因一次阴性影像停止呼吸复评。",
+        "Do not stop respiratory reassessment after one negative image."
+      ],
+      "vitals": {
+        "HR": "108 /min",
+        "BP": "116/74 mmHg",
+        "RR": "26 /min",
+        "SpO₂": "94%",
+        "GCS": "15 · E4 V5 M6",
+        "T": "36.4 °C",
+        "time": [
+          "胸部病例 · 到院0分钟",
+          "Chest case · arrival 0 min"
+        ],
+        "oxygen": [
+          "空气；吸氧前记录",
+          "Room air; recorded before oxygen"
+        ]
+      },
+      "question": [
+        "真实来源CT是否就是这位患者的CT？",
+        "Is a sourced CT this patient’s CT?"
+      ],
+      "good": [
+        "不是；它是独立外部读图练习。",
+        "No; it is a separate external image-reading exercise."
+      ],
+      "bad": [
+        "将他人图冒充此病例会造成错误证据链。",
+        "Assigning another patient’s image to this case creates a false evidence chain."
+      ],
+      "labs": [
+        [
+          "20分钟静脉血：Hb 132 g/L，乳酸2.4 mmol/L，肌酐82 μmol/L。新增合成资料，用于讨论信息边界；不据此排除严重损伤。",
+          "Venous blood at +20 min: Hb 132 g/L, lactate 2.4 mmol/L, creatinine 82 μmol/L. New synthetic information for discussing limits; these values do not exclude serious injury."
+        ]
+      ],
+      "images": [
+        {
+          "src": "../assets/source-backed/sb-chest-tension-pneumothorax-cxr.jpg",
+          "alt": "External left pneumothorax radiograph; not this synthetic patient",
+          "caption": [
+            "外部左侧气胸胸片 · 非本病例",
+            "External left pneumothorax CXR; not this case"
+          ]
+        },
+        {
+          "src": "../assets/source-backed/sb-chest-flail-costochondral-separation-ct.jpg",
+          "alt": "Taylor et al 2023 costochondral separation CT; not this synthetic patient",
+          "caption": [
+            "Taylor 2023 CT · 非本病例",
+            "Taylor 2023 CT; not this case"
+          ]
+        }
+      ]
+    },
+    {
+      "title": [
+        "04 30分钟：恶化后重写优先级",
+        "04 At 30 min: reprioritise deterioration"
+      ],
+      "info": [
+        "说话变短，辅助呼吸肌参与，RR32、SpO₂89%（原病例数值保留）；此版新增氧疗条件为鼻导管4 L/min。HR116、BP112/70为补充合成记录。持续气促需要团队立即复评，而不是等到下一张教学卡。",
+        "Shorter speech, accessory-muscle use, RR 32 and SpO₂ 89% (original case values retained). This version adds nasal oxygen 4 L/min; HR 116 and BP 112/70 are supplemental synthetic observations. Persistent distress needs immediate team reassessment, without waiting for another teaching card."
+      ],
+      "unknown": [
+        "需同时判断肺挫伤、胸膜腔问题、疼痛、分泌物与疲劳；没有确证单一机制。",
+        "Consider contusion, pleural problems, pain, secretions and fatigue together; no single mechanism is proven."
+      ],
+      "priority": [
+        "团队同步评估呼吸支持、可逆原因、镇痛效果与高级监护。",
+        "The team concurrently assesses support, reversible causes, analgesic function and higher-level monitoring."
+      ],
+      "reassess": [
+        "频率下降但胸廓幅度、说话或意识变差，也可能是疲劳。",
+        "Falling rate with worse excursion, speech or consciousness can reflect fatigue."
+      ],
+      "vitals": {
+        "HR": "116 /min",
+        "BP": "112/70 mmHg",
+        "RR": "32 /min",
+        "SpO₂": "89%",
+        "GCS": "15 · E4 V5 M6",
+        "T": "36.4 °C",
+        "time": [
+          "胸部病例 · 到院30分钟",
+          "Chest case · arrival +30 min"
+        ],
+        "oxygen": [
+          "鼻导管4 L/min（新增合成设定）；实际FiO₂未知",
+          "Nasal oxygen 4 L/min (new synthetic setting); actual FiO₂ unknown"
+        ]
+      },
+      "question": [
+        "只提高SpO₂数字是否就是复评终点？",
+        "Is improving the SpO₂ number alone the reassessment endpoint?"
+      ],
+      "good": [
+        "不是；同时比较氧需求、通气、呼吸功、咳嗽、意识和循环。",
+        "No; compare oxygen requirement, ventilation, effort, cough, consciousness and circulation."
+      ],
+      "bad": [
+        "氧合不能代替通气或疲劳评估。",
+        "Oxygenation cannot replace ventilation or fatigue assessment."
+      ],
+      "labs": [
+        [
+          "30分钟动脉血气（鼻导管4 L/min）：pH7.32，PaCO₂50 mmHg，PaO₂58 mmHg，HCO₃⁻25 mmol/L。新增合成值；实际FiO₂未知，不计算精确P/F比。",
+          "Arterial gas at +30 min on nasal oxygen 4 L/min: pH 7.32, PaCO₂ 50 mmHg, PaO₂ 58 mmHg, HCO₃⁻ 25 mmol/L. New synthetic values; actual FiO₂ unknown, so no precise P/F ratio is calculated."
+        ]
+      ]
+    }
+  ]
+}
