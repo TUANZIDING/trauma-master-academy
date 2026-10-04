@@ -50,30 +50,35 @@ const data = {
       ],
       [
         "T",
-        "—",
-        "°C"
+        "36.3",
+        "°C",
+        true
       ]
     ],
     "v1": [
       [
         "HR",
-        "—",
-        "/min"
+        "110",
+        "/min",
+        true
       ],
       [
         "BP",
-        "—",
-        "mmHg"
+        "110/72",
+        "mmHg",
+        true
       ],
       [
         "RR",
-        "—",
-        "/min"
+        "24",
+        "/min",
+        true
       ],
       [
         "SpO₂",
-        "—",
-        "%"
+        "95",
+        "%",
+        true
       ],
       [
         "GCS",
@@ -82,8 +87,9 @@ const data = {
       ],
       [
         "T",
-        "—",
-        "°C"
+        "36.4",
+        "°C",
+        true
       ]
     ],
     "time": [
@@ -91,8 +97,8 @@ const data = {
       "+35 min"
     ],
     "condition": [
-      "氧疗条件与体温未记录；恶化时点未给出的数值不沿用首组。",
-      "Oxygen conditions and temperature were not recorded; missing later values are not carried forward."
+      "空气（氧疗条件补充）；体温为合成补充。",
+      "Room air (added context); temperature is a synthetic addition."
     ],
     "labs": [
       [
@@ -240,6 +246,39 @@ const data = {
         "Repeat GCS components, pupils, limb movement, SpO₂, BP, and glucose together.",
         "State owner, timing, and escalation red flags."
       ]
+    ],
+    "conditions": [
+      [
+        "首组氧疗条件原记录未明确；体温为合成补充。",
+        "Initial oxygen context was not recorded; temperature is a synthetic addition."
+      ],
+      [
+        "鼻导管2 L/min（合成观察条件）；GCS原值保留，其余本时点生命体征为教学补充。",
+        "Nasal cannula 2 L/min (synthetic observation context); original GCS retained, other vitals at this time added."
+      ]
+    ],
+    "provenance": [
+      "※为本轮合成教学补充，并非从真实病历追回的数据。氧疗条件是病例设定，不是推荐剂量；数值随预设观察时点变化，不由答题决定。",
+      "※ marks synthetic teaching additions, not recovered patient records. Oxygen context is a case assumption, not a prescribed dose; preset observations change by time, never by quiz answer."
+    ],
+    "snapshotFromStage": 2,
+    "roundTitles": [
+      [
+        "机制与首轮查体",
+        "Mechanism and initial exam"
+      ],
+      [
+        "全身生理与首次CT",
+        "Physiology and first CT"
+      ],
+      [
+        "神经恶化与再评估",
+        "Neurologic decline and reassessment"
+      ],
+      [
+        "专科升级与交接",
+        "Specialist escalation and handover"
+      ]
     ]
   },
   "abdomen": {
@@ -287,13 +326,15 @@ const data = {
       ],
       [
         "GCS",
-        "—",
-        "alert"
+        "15",
+        "E4 V5 M6",
+        true
       ],
       [
         "T",
-        "—",
-        "°C"
+        "36.2",
+        "°C",
+        true
       ]
     ],
     "v1": [
@@ -314,18 +355,21 @@ const data = {
       ],
       [
         "SpO₂",
-        "—",
-        "%"
+        "95",
+        "%",
+        true
       ],
       [
-        "Lactate",
-        "4.6",
-        "mmol/L"
+        "GCS",
+        "14",
+        "E4 V4 M6",
+        true
       ],
       [
         "T",
-        "—",
-        "°C"
+        "35.8",
+        "°C",
+        true
       ]
     ],
     "time": [
@@ -333,8 +377,8 @@ const data = {
       "+25 min"
     ],
     "condition": [
-      "SpO₂氧疗条件、GCS分项与体温未记录。后组仅显示原病例确实提供的观察值。",
-      "Oxygen conditions, GCS components and temperature were not recorded. Later display includes only observations actually given."
+      "空气（补充条件）；GCS分项与体温为合成教学补充。",
+      "Room air (added context); GCS components and temperature are synthetic additions."
     ],
     "labs": [
       [
@@ -490,6 +534,39 @@ const data = {
         "Next BP, HR, abdominal findings, lactate/base deficit, and urine output need an owner and time.",
         "State who, when, what to compare, and what triggers escalation."
       ]
+    ],
+    "conditions": [
+      [
+        "首组氧疗条件原记录未明确；GCS分项与体温为合成教学补充。",
+        "Initial oxygen context was not recorded; GCS components and temperature are synthetic additions."
+      ],
+      [
+        "鼻导管2 L/min（合成条件）；SpO₂、GCS及体温为补充，原乳酸4.6 mmol/L见检验单。",
+        "Nasal cannula 2 L/min (synthetic context); SpO₂, GCS and temperature added; original lactate 4.6 mmol/L remains on the lab sheet."
+      ]
+    ],
+    "provenance": [
+      "※为本轮合成教学补充，并非从真实病历追回的数据。氧疗条件是病例设定，不是推荐剂量；数值随预设观察时点变化，不由答题决定。",
+      "※ marks synthetic teaching additions, not recovered patient records. Oxygen context is a case assumption, not a prescribed dose; preset observations change by time, never by quiz answer."
+    ],
+    "snapshotFromStage": 2,
+    "roundTitles": [
+      [
+        "机制与首轮生理",
+        "Mechanism and arrival physiology"
+      ],
+      [
+        "查体与FAST边界",
+        "Examination and FAST limits"
+      ],
+      [
+        "生理恶化与并行救治",
+        "Deterioration and parallel rescue"
+      ],
+      [
+        "定位、去向与复评",
+        "Localisation, destination and reassessment"
+      ]
     ]
   },
   "polytrauma": {
@@ -538,7 +615,8 @@ const data = {
       [
         "GCS",
         "13",
-        "components ?"
+        "E3 V4 M6 ※",
+        false
       ],
       [
         "T",
@@ -549,8 +627,9 @@ const data = {
     "v1": [
       [
         "HR",
-        "—",
-        "/min"
+        "134",
+        "/min",
+        true
       ],
       [
         "BP",
@@ -559,8 +638,9 @@ const data = {
       ],
       [
         "RR",
-        "—",
-        "/min"
+        "34",
+        "/min",
+        true
       ],
       [
         "SpO₂",
@@ -569,13 +649,15 @@ const data = {
       ],
       [
         "GCS",
-        "—",
-        "slower response"
+        "12",
+        "E3 V4 M5",
+        true
       ],
       [
         "T",
-        "—",
-        "°C"
+        "35.2",
+        "°C",
+        true
       ]
     ],
     "time": [
@@ -583,8 +665,8 @@ const data = {
       "+10 min"
     ],
     "condition": [
-      "氧疗条件和GCS分项需补问；复评缺失值保持空缺，不能把总分13拆成猜测分项。",
-      "Verify oxygen context and GCS components; later missing values stay missing, and a total of 13 is not split into guessed components."
+      "储氧面罩15 L/min为合成观察条件；原GCS总分13保留，E3V4M6为本版教学设定。",
+      "Reservoir mask 15 L/min is synthetic observation context; original GCS total 13 retained, E3V4M6 is a teaching assignment."
     ],
     "labs": [
       [
@@ -622,8 +704,8 @@ const data = {
         "Resuscitation and localisation proceed together; retain blood, chest, abdomen, pelvis and long-bone sources."
       ],
       [
-        "10分钟低氧和血压更差即触发重排序；不等完成所有检查或课堂答题。",
-        "Worse oxygenation and BP at +10 min trigger reprioritisation without waiting for all tests or quiz completion."
+        "D/E先按到院记录复核，明确保护、保温与资源到位情况；10分钟恶化留到下一轮同步更新。",
+        "Review arrival D/E, protection, warming and resource readiness; the ten-minute decline updates together in the next round."
       ],
       [
         "移交前说清责任人、资源到位时间与失败替代路径；不把所有任务交给“团队”。",
@@ -728,11 +810,11 @@ const data = {
       ],
       [
         "7 · 十分钟趋势",
-        "BP 78/48，SpO₂ 87%，意识反应较前迟缓。",
-        "现在请全队停下 20 秒，重新排序主导风险和并行任务。",
+        "BP 78/48，SpO₂ 87%，意识反应较前迟缓。 ※本版续设：氧合支持与血液复苏已启动，尚无持续改善；颈椎保护及疑出血性骨盆环损伤的骨盆带由团队核查。当前不转运CT，先升级救治与出血控制。",
+        "团队负责人用简短口头更新重新排序，救命任务继续并行，不停下正在进行的处理。",
         "7 · Ten-minute trend",
-        "BP 78/48, SpO₂ 87%, and slower responses.",
-        "Pause the team for 20 seconds and reprioritize threats and parallel tasks."
+        "BP 78/48, SpO₂ 87%, and slower responses. Added teaching context: oxygen support and blood resuscitation have begun without sustained improvement; the team checks spinal protection and the binder for suspected bleeding pelvic-ring injury. Do not transfer to CT at this point; escalate rescue and haemorrhage control.",
+        "The leader briefly reprioritises aloud while life-saving tasks continue in parallel."
       ],
       [
         "8 · 闭环契约",
@@ -742,25 +824,66 @@ const data = {
         "Each task reports completion, result, priority impact, and next node.",
         "Deliver a full 60–90 second handover."
       ]
+    ],
+    "conditions": [
+      [
+        "首组氧疗条件原记录未明确；原GCS总分13保留，E3V4M6为本版教学设定。",
+        "Initial oxygen context was not recorded; original GCS total 13 retained, E3V4M6 is a teaching assignment."
+      ],
+      [
+        "储氧面罩15 L/min（合成条件）；仍低氧且灌注恶化，需要立即复评升级，不等待课堂播放。",
+        "Reservoir mask 15 L/min (synthetic context); persistent hypoxaemia and worsening perfusion require immediate escalation, not waiting for classroom playback."
+      ]
+    ],
+    "provenance": [
+      "※为本轮合成教学补充，并非从真实病历追回的数据。氧疗条件是病例设定，不是推荐剂量；数值随预设观察时点变化，不由答题决定。",
+      "※ marks synthetic teaching additions, not recovered patient records. Oxygen context is a case assumption, not a prescribed dose; preset observations change by time, never by quiz answer."
+    ],
+    "snapshotFromStage": 3,
+    "roundTitles": [
+      [
+        "机制与到院生理",
+        "Mechanism and arrival physiology"
+      ],
+      [
+        "B/C轴并行判断",
+        "Parallel B/C reasoning"
+      ],
+      [
+        "D/E与首轮资源",
+        "D/E and first resource returns"
+      ],
+      [
+        "十分钟恶化与重排序",
+        "Ten-minute decline and reprioritisation"
+      ]
     ]
   }
 }
 ;
 const key=document.body.dataset.miniCase,c=data[key];if(!c)return;
 const bi=(z,e)=>`<span class="zh">${z}</span><span class="en">${e}</span>`;
-const root=document.querySelector('#case-entry'),slot=root.querySelector('[data-mv-release]');let stage=0,answer=null;
-const values=v=>v.map(([k,n,u])=>`<div class="mv-metric"><small>${k}</small><strong>${n}</strong><span>${u}</span></div>`).join('');
-function snapshot(n){root.querySelector('[data-mv-vitals]').innerHTML=values(c[n?'v1':'v0']);root.querySelectorAll('[data-mv-snapshot]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.mvSnapshot===n)));root.querySelector('.mv-monitor-head span').innerHTML=n?bi('病例监护 · '+c.time[0],'Case observations · '+c.time[1]):bi('病例监护 · 到院0分钟','Case observations · arrival 0 min');}
+const root=document.querySelector('#case-entry'),slot=root.querySelector('[data-mv-release]');let stage=0,answer=null,activeSnapshot=0;
+const values=v=>v.map(([k,n,u,added])=>`<div class="mv-metric"><small>${k}</small><strong>${n}${added?'<sup title="Synthetic teaching addition">※</sup>':''}</strong><span>${u}</span></div>`).join('');
+const panel=document.querySelector('#route-overview .monitor-panel');
+const sceneClass={tbi:'mv-scene-neuro',abdomen:'mv-scene-abdomen',polytrauma:'mv-scene-poly'}[key];
+const sceneLabel=bi('ChatGPT合成教学情景；图中人物、体征和屏幕不是本病例或诊断证据。','ChatGPT synthetic teaching scene; people, signs and screens are not this case or diagnostic evidence.');
+const routeData={
+tbi:{title:['神经复评：全身生理与床边表现一起看','Neurologic reassessment: physiology and bedside findings together'],names:[['意识 · GCS','Consciousness · GCS'],['瞳孔 · 右/左','Pupils · right/left'],['语言 · V分项','Speech · V component'],['运动 · M分项','Motor · M component']],states:[['14','3 / 3 mm','V4','M6'],['12','4 / 3 mm','V4','M5']],notes:[['到院观察：双瞳等大灵敏；氧合与灌注同步核对。','Arrival: equal reactive pupils; check oxygenation and perfusion together.'],['GCS下降与新瞳孔/运动变化需立即升级；V4未变，不能把每个分项都画成下降。','GCS decline and new pupil/motor changes need urgent escalation; V4 is unchanged, not every component declines.']]},
+abdomen:{title:['独立趋势练习：灌注与氧合同时恶化','Separate trend exercise: perfusion and oxygenation worsen together'],names:[['心率 · HR','Heart rate · HR'],['血压 · BP','Blood pressure · BP'],['呼吸频率 · RR','Respiratory rate · RR'],['氧合 · SpO₂','Oxygenation · SpO₂']],states:[['86 /min','67/46 mmHg','26 /min','85%'],['105 /min','58/36 mmHg','33 /min','81%']],notes:[['独立教学示例，非上方96→118病例；氧疗条件未提供，不能量化治疗反应。','Separate example, not the 96→118 case above; oxygen context is unavailable, so treatment response cannot be quantified.'],['低血压伴严重低氧：并行复评气道、胸部、灌注和监测可靠性，不能只归因于腹部。','Hypotension plus severe hypoxaemia: reassess airway, chest, perfusion and measurement quality together, not abdomen alone.']]},
+polytrauma:{title:['多轴复评：每次变化都重排优先级','Multi-axis reassessment: every change revises priorities'],names:[['A/D · GCS','A/D · GCS'],['B · SpO₂','B · SpO₂'],['C · 血压','C · Blood pressure'],['E · 体温','E · Temperature']],states:[['13','90%','86/54 mmHg','35.4°C'],['12 ※','87%','78/48 mmHg','35.2°C ※']],notes:[['到院：气道、氧合、出血和保温分工并行；保护措施不替代生理复评。','Arrival: assign airway, oxygenation, bleeding and warming in parallel; protection does not replace reassessment.'],['10分钟：低氧、低灌注、意识和低温同步加重；源控制与呼吸处理不能等待CT或答题。','At +10 min: oxygenation, perfusion, consciousness and temperature worsen together; rescue care cannot wait for CT or a quiz.']]}}
+let routeState=0;
+function route(n){if(!panel)return;routeState=n;const r=routeData[key];panel.classList.add('mv-trend-panel');panel.innerHTML=`<header><span class="eyebrow">COMPARE → EXPLAIN → REASSESS</span><h3>${bi(...r.title)}</h3></header><div class="mv-trend-layout"><figure><p class="mv-scene-badge">${bi("AI合成观察图 · 非病例影像","AI observation illustration · not case imaging")}</p><div class="mv-scene ${sceneClass}" role="img" aria-label="Synthetic educational bedside observation scene"></div><figcaption>${sceneLabel}</figcaption></figure><div><div class="mv-trend-controls"><button class="button" data-mv-route="0" aria-pressed="${n===0}">${key==='abdomen'?bi('首轮示例','First example'):bi('到院0分钟','Arrival 0 min')}</button><button class="button" data-mv-route="1" aria-pressed="${n===1}">${key==='abdomen'?bi('后续示例','Later example'):bi(...c.time)}</button></div><div class="mv-trend-cards">${r.names.map((name,i)=>`<article><small>${bi(...name)}</small><strong>${r.states[n][i]}</strong><span>${r.states[0][i]} → ${r.states[1][i]}</span></article>`).join('')}</div><p class="mv-trend-insight" role="status">${bi(...r.notes[n])}</p></div></div><p class="mv-trend-foot">${bi('交互式教学快照，非连续监测或处置阈值；立即威胁需要并行处理。','Interactive teaching snapshots, not continuous monitoring or treatment thresholds; immediate threats require parallel care.')}</p>`;
+panel.querySelectorAll('[data-mv-route]').forEach(b=>b.addEventListener('click',()=>{let n=+b.dataset.mvRoute;if(key==='abdomen')route(n);else snapshot(n);}));}
+function snapshot(n){activeSnapshot=n;root.querySelector('[data-mv-vitals]').innerHTML=values(c[n?'v1':'v0']);root.querySelectorAll('[data-mv-snapshot]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.mvSnapshot===n)));root.querySelector('.mv-monitor-head span').innerHTML=n?bi('病例监护 · '+c.time[0],'Case observations · '+c.time[1]):bi('病例监护 · 到院0分钟','Case observations · arrival 0 min');root.querySelector('.mv-condition').innerHTML=bi(...c.conditions[n]);if(key!=='abdomen')route(n);}
 root.querySelectorAll('[data-mv-snapshot]').forEach(b=>b.addEventListener('click',()=>snapshot(+b.dataset.mvSnapshot)));
 function render(){
 const releases=c.releases.slice(stage*2,stage*2+2);
-slot.innerHTML=`<div class="mv-release-head"><span>${bi('信息释放','Information release')} ${stage+1} / 4</span><span>${bi('判断与处理同步','Reason and act together')}</span></div><h3>${bi(releases[0][0],releases[0][3])}</h3><div class="mv-facts">${releases.map(r=>`<article><p>${bi(r[1],r[4])}</p><strong>${bi(r[2],r[5])}</strong></article>`).join('')}</div><details><summary>${bi('展开团队优先级与下一次复评','Team priorities and next reassessment')}</summary><p>${bi(...c.priorities[stage])}</p></details><div class="mv-decision"><p>${bi('你会如何处理这些信息？','How will you use this information?')}</p><button class="button" data-mv-answer="1" aria-pressed="${answer===1}">${bi('整合生理、检查与复评','Integrate physiology, findings and reassessment')}</button><button class="button" data-mv-answer="0" aria-pressed="${answer===0}">${bi('用一个正常结果结束判断','Close reasoning with one normal result')}</button><p class="mv-feedback" role="status">${answer===null?bi('先作判断，再核对反馈；不影响病例数据。','Reason first, then check feedback; case data are unchanged.'):answer===1?bi(...c.priorities[stage]):bi('单项检查不能关闭多机制风险。请比较当前趋势、未知项与立即威胁；必要处理不等待下一条信息。','One test cannot close multiple risks. Compare trends, unknowns and immediate threats; needed care does not wait for the next release.')}</p></div><div class="mv-controls"><button class="button" data-mv-action="back" ${stage===0?'disabled':''}>${bi('上一轮','Previous')}</button><button class="button primary" data-mv-action="next" ${stage===3?'disabled':''}>${bi('释放下一轮','Release next')}</button><button class="button" data-mv-action="reset">${bi('重新开始','Restart')}</button></div>`;
+slot.innerHTML=`<div class="mv-release-head"><span>${bi('信息释放','Information release')} ${stage+1} / 4</span><span>${bi('判断与处理同步','Reason and act together')}</span></div><h3>${stage+1} · ${bi(...c.roundTitles[stage])}</h3><div class="mv-facts">${releases.map(r=>`<article><h4>${bi(r[0].replace(/^\d+\s*·\s*/,''),r[3].replace(/^\d+\s*·\s*/,''))}</h4><p>${bi(r[1],r[4])}</p><strong>${bi(r[2],r[5])}</strong></article>`).join('')}</div><details><summary>${bi('展开团队优先级与下一次复评','Team priorities and next reassessment')}</summary><p>${bi(...c.priorities[stage])}</p></details><div class="mv-decision"><p>${bi('你会如何处理这些信息？','How will you use this information?')}</p><button class="button" data-mv-answer="1" aria-pressed="${answer===1}">${bi('整合生理、检查与复评','Integrate physiology, findings and reassessment')}</button><button class="button" data-mv-answer="0" aria-pressed="${answer===0}">${bi('用一个正常结果结束判断','Close reasoning with one normal result')}</button><p class="mv-feedback" role="status">${answer===null?bi('先作判断，再核对反馈；不影响病例数据。','Reason first, then check feedback; case data are unchanged.'):answer===1?bi(...c.priorities[stage]):bi('单项检查不能关闭多机制风险。请比较当前趋势、未知项与立即威胁；必要处理不等待下一条信息。','One test cannot close multiple risks. Compare trends, unknowns and immediate threats; needed care does not wait for the next release.')}</p></div><div class="mv-controls"><button class="button" data-mv-action="back" ${stage===0?'disabled':''}>${bi('上一轮','Previous')}</button><button class="button primary" data-mv-action="next" ${stage===3?'disabled':''}>${bi('释放下一轮','Release next')}</button><button class="button" data-mv-action="reset">${bi('重新开始','Restart')}</button></div>`;
 slot.querySelectorAll('[data-mv-answer]').forEach(b=>b.addEventListener('click',()=>{answer=+b.dataset.mvAnswer;render();}));
-slot.querySelectorAll('[data-mv-action]').forEach(b=>b.addEventListener('click',()=>{let a=b.dataset.mvAction;stage=a==='reset'?0:Math.max(0,Math.min(3,stage+(a==='next'?1:-1)));answer=null;snapshot(stage>=2?1:0);render();}));
+slot.querySelectorAll('[data-mv-action]').forEach(b=>b.addEventListener('click',()=>{let a=b.dataset.mvAction;stage=a==='reset'?0:Math.max(0,Math.min(3,stage+(a==='next'?1:-1)));answer=null;snapshot(stage>=c.snapshotFromStage?1:0);render();}));
 }
-render();
-// Original case, scoring and anchors remain intact inside an instructor disclosure.
-const legacy=document.querySelector('.mini-case-expansion');if(legacy){const det=document.createElement('details');det.className='section mv-teacher';det.innerHTML=`<summary>${bi('教师延伸：原病例、完整交接与复盘','Teacher extension: original case, handover and debrief')}</summary>`;legacy.before(det);det.append(legacy);}
+render();snapshot(0);if(key==='abdomen')route(0);
+const legacy=document.querySelector('.mini-case-expansion');if(legacy){const det=document.createElement('details');det.className='section mv-teacher';det.innerHTML=`<summary>${bi('教师延伸：原病例、完整交接与复盘','Teacher extension: original case, handover and debrief')}</summary><p>${bi('下方保留原版记录；本版补全的合成监护请以上方病例入口为准，勿拼接两版本时序。','Original version retained below; use the case entry above for the enriched synthetic observations, without joining different versions.')}</p>`;legacy.before(det);det.append(legacy);}
 document.querySelectorAll('.vl-process').forEach(el=>el.remove());
-document.querySelectorAll('#route-overview .monitor-wave').forEach(el=>el.remove());
 })();

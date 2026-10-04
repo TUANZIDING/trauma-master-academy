@@ -49,30 +49,35 @@
       ],
       [
         "T",
-        "—",
-        "°C"
+        "36.3",
+        "°C",
+        true
       ]
     ],
     "v1": [
       [
         "HR",
-        "—",
-        "/min"
+        "110",
+        "/min",
+        true
       ],
       [
         "BP",
-        "—",
-        "mmHg"
+        "110/72",
+        "mmHg",
+        true
       ],
       [
         "RR",
-        "—",
-        "/min"
+        "24",
+        "/min",
+        true
       ],
       [
         "SpO₂",
-        "—",
-        "%"
+        "95",
+        "%",
+        true
       ],
       [
         "GCS",
@@ -81,8 +86,9 @@
       ],
       [
         "T",
-        "—",
-        "°C"
+        "36.4",
+        "°C",
+        true
       ]
     ],
     "time": [
@@ -90,8 +96,8 @@
       "+35 min"
     ],
     "condition": [
-      "氧疗条件与体温未记录；恶化时点未给出的数值不沿用首组。",
-      "Oxygen conditions and temperature were not recorded; missing later values are not carried forward."
+      "空气（氧疗条件补充）；体温为合成补充。",
+      "Room air (added context); temperature is a synthetic addition."
     ],
     "labs": [
       [
@@ -239,6 +245,39 @@
         "Repeat GCS components, pupils, limb movement, SpO₂, BP, and glucose together.",
         "State owner, timing, and escalation red flags."
       ]
+    ],
+    "conditions": [
+      [
+        "首组氧疗条件原记录未明确；体温为合成补充。",
+        "Initial oxygen context was not recorded; temperature is a synthetic addition."
+      ],
+      [
+        "鼻导管2 L/min（合成观察条件）；GCS原值保留，其余本时点生命体征为教学补充。",
+        "Nasal cannula 2 L/min (synthetic observation context); original GCS retained, other vitals at this time added."
+      ]
+    ],
+    "provenance": [
+      "※为本轮合成教学补充，并非从真实病历追回的数据。氧疗条件是病例设定，不是推荐剂量；数值随预设观察时点变化，不由答题决定。",
+      "※ marks synthetic teaching additions, not recovered patient records. Oxygen context is a case assumption, not a prescribed dose; preset observations change by time, never by quiz answer."
+    ],
+    "snapshotFromStage": 2,
+    "roundTitles": [
+      [
+        "机制与首轮查体",
+        "Mechanism and initial exam"
+      ],
+      [
+        "全身生理与首次CT",
+        "Physiology and first CT"
+      ],
+      [
+        "神经恶化与再评估",
+        "Neurologic decline and reassessment"
+      ],
+      [
+        "专科升级与交接",
+        "Specialist escalation and handover"
+      ]
     ]
   },
   "abdomen": {
@@ -286,13 +325,15 @@
       ],
       [
         "GCS",
-        "—",
-        "alert"
+        "15",
+        "E4 V5 M6",
+        true
       ],
       [
         "T",
-        "—",
-        "°C"
+        "36.2",
+        "°C",
+        true
       ]
     ],
     "v1": [
@@ -313,18 +354,21 @@
       ],
       [
         "SpO₂",
-        "—",
-        "%"
+        "95",
+        "%",
+        true
       ],
       [
-        "Lactate",
-        "4.6",
-        "mmol/L"
+        "GCS",
+        "14",
+        "E4 V4 M6",
+        true
       ],
       [
         "T",
-        "—",
-        "°C"
+        "35.8",
+        "°C",
+        true
       ]
     ],
     "time": [
@@ -332,8 +376,8 @@
       "+25 min"
     ],
     "condition": [
-      "SpO₂氧疗条件、GCS分项与体温未记录。后组仅显示原病例确实提供的观察值。",
-      "Oxygen conditions, GCS components and temperature were not recorded. Later display includes only observations actually given."
+      "空气（补充条件）；GCS分项与体温为合成教学补充。",
+      "Room air (added context); GCS components and temperature are synthetic additions."
     ],
     "labs": [
       [
@@ -489,6 +533,39 @@
         "Next BP, HR, abdominal findings, lactate/base deficit, and urine output need an owner and time.",
         "State who, when, what to compare, and what triggers escalation."
       ]
+    ],
+    "conditions": [
+      [
+        "首组氧疗条件原记录未明确；GCS分项与体温为合成教学补充。",
+        "Initial oxygen context was not recorded; GCS components and temperature are synthetic additions."
+      ],
+      [
+        "鼻导管2 L/min（合成条件）；SpO₂、GCS及体温为补充，原乳酸4.6 mmol/L见检验单。",
+        "Nasal cannula 2 L/min (synthetic context); SpO₂, GCS and temperature added; original lactate 4.6 mmol/L remains on the lab sheet."
+      ]
+    ],
+    "provenance": [
+      "※为本轮合成教学补充，并非从真实病历追回的数据。氧疗条件是病例设定，不是推荐剂量；数值随预设观察时点变化，不由答题决定。",
+      "※ marks synthetic teaching additions, not recovered patient records. Oxygen context is a case assumption, not a prescribed dose; preset observations change by time, never by quiz answer."
+    ],
+    "snapshotFromStage": 2,
+    "roundTitles": [
+      [
+        "机制与首轮生理",
+        "Mechanism and arrival physiology"
+      ],
+      [
+        "查体与FAST边界",
+        "Examination and FAST limits"
+      ],
+      [
+        "生理恶化与并行救治",
+        "Deterioration and parallel rescue"
+      ],
+      [
+        "定位、去向与复评",
+        "Localisation, destination and reassessment"
+      ]
     ]
   },
   "polytrauma": {
@@ -537,7 +614,8 @@
       [
         "GCS",
         "13",
-        "components ?"
+        "E3 V4 M6 ※",
+        false
       ],
       [
         "T",
@@ -548,8 +626,9 @@
     "v1": [
       [
         "HR",
-        "—",
-        "/min"
+        "134",
+        "/min",
+        true
       ],
       [
         "BP",
@@ -558,8 +637,9 @@
       ],
       [
         "RR",
-        "—",
-        "/min"
+        "34",
+        "/min",
+        true
       ],
       [
         "SpO₂",
@@ -568,13 +648,15 @@
       ],
       [
         "GCS",
-        "—",
-        "slower response"
+        "12",
+        "E3 V4 M5",
+        true
       ],
       [
         "T",
-        "—",
-        "°C"
+        "35.2",
+        "°C",
+        true
       ]
     ],
     "time": [
@@ -582,8 +664,8 @@
       "+10 min"
     ],
     "condition": [
-      "氧疗条件和GCS分项需补问；复评缺失值保持空缺，不能把总分13拆成猜测分项。",
-      "Verify oxygen context and GCS components; later missing values stay missing, and a total of 13 is not split into guessed components."
+      "储氧面罩15 L/min为合成观察条件；原GCS总分13保留，E3V4M6为本版教学设定。",
+      "Reservoir mask 15 L/min is synthetic observation context; original GCS total 13 retained, E3V4M6 is a teaching assignment."
     ],
     "labs": [
       [
@@ -621,8 +703,8 @@
         "Resuscitation and localisation proceed together; retain blood, chest, abdomen, pelvis and long-bone sources."
       ],
       [
-        "10分钟低氧和血压更差即触发重排序；不等完成所有检查或课堂答题。",
-        "Worse oxygenation and BP at +10 min trigger reprioritisation without waiting for all tests or quiz completion."
+        "D/E先按到院记录复核，明确保护、保温与资源到位情况；10分钟恶化留到下一轮同步更新。",
+        "Review arrival D/E, protection, warming and resource readiness; the ten-minute decline updates together in the next round."
       ],
       [
         "移交前说清责任人、资源到位时间与失败替代路径；不把所有任务交给“团队”。",
@@ -727,11 +809,11 @@
       ],
       [
         "7 · 十分钟趋势",
-        "BP 78/48，SpO₂ 87%，意识反应较前迟缓。",
-        "现在请全队停下 20 秒，重新排序主导风险和并行任务。",
+        "BP 78/48，SpO₂ 87%，意识反应较前迟缓。 ※本版续设：氧合支持与血液复苏已启动，尚无持续改善；颈椎保护及疑出血性骨盆环损伤的骨盆带由团队核查。当前不转运CT，先升级救治与出血控制。",
+        "团队负责人用简短口头更新重新排序，救命任务继续并行，不停下正在进行的处理。",
         "7 · Ten-minute trend",
-        "BP 78/48, SpO₂ 87%, and slower responses.",
-        "Pause the team for 20 seconds and reprioritize threats and parallel tasks."
+        "BP 78/48, SpO₂ 87%, and slower responses. Added teaching context: oxygen support and blood resuscitation have begun without sustained improvement; the team checks spinal protection and the binder for suspected bleeding pelvic-ring injury. Do not transfer to CT at this point; escalate rescue and haemorrhage control.",
+        "The leader briefly reprioritises aloud while life-saving tasks continue in parallel."
       ],
       [
         "8 · 闭环契约",
@@ -740,6 +822,39 @@
         "8 · Closed-loop contract",
         "Each task reports completion, result, priority impact, and next node.",
         "Deliver a full 60–90 second handover."
+      ]
+    ],
+    "conditions": [
+      [
+        "首组氧疗条件原记录未明确；原GCS总分13保留，E3V4M6为本版教学设定。",
+        "Initial oxygen context was not recorded; original GCS total 13 retained, E3V4M6 is a teaching assignment."
+      ],
+      [
+        "储氧面罩15 L/min（合成条件）；仍低氧且灌注恶化，需要立即复评升级，不等待课堂播放。",
+        "Reservoir mask 15 L/min (synthetic context); persistent hypoxaemia and worsening perfusion require immediate escalation, not waiting for classroom playback."
+      ]
+    ],
+    "provenance": [
+      "※为本轮合成教学补充，并非从真实病历追回的数据。氧疗条件是病例设定，不是推荐剂量；数值随预设观察时点变化，不由答题决定。",
+      "※ marks synthetic teaching additions, not recovered patient records. Oxygen context is a case assumption, not a prescribed dose; preset observations change by time, never by quiz answer."
+    ],
+    "snapshotFromStage": 3,
+    "roundTitles": [
+      [
+        "机制与到院生理",
+        "Mechanism and arrival physiology"
+      ],
+      [
+        "B/C轴并行判断",
+        "Parallel B/C reasoning"
+      ],
+      [
+        "D/E与首轮资源",
+        "D/E and first resource returns"
+      ],
+      [
+        "十分钟恶化与重排序",
+        "Ten-minute decline and reprioritisation"
       ]
     ]
   }
