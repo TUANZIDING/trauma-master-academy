@@ -1,0 +1,2686 @@
+{
+  "version": "2026-10-08",
+  "sources": {
+    "cn-shock": {
+      "title": [
+        "创伤失血性休克中国急诊专家共识（2023）",
+        "Chinese emergency consensus on traumatic hemorrhagic shock (2023)"
+      ],
+      "url": "https://doi.org/10.3760/cma.j.issn.1671-0282.2023.11.006",
+      "locator": "中华急诊医学杂志 32(11):1451–1464; R2, R22, R27, R33–34",
+      "coverage": "full_text_pdf_mirror",
+      "domestic": true,
+      "checkedDate": "2026-10-08",
+      "accessUrl": "https://www.icuguideline.com/wp-content/uploads/2023/11/%E5%88%9B%E4%BC%A4%E5%A4%B1%E8%A1%80%E6%80%A7%E4%BC%91%E5%85%8B%E4%B8%AD%E5%9B%BD%E6%80%A5%E8%AF%8A%E4%B8%93%E5%AE%B6%E5%85%B1%E8%AF%86%EF%BC%882023%EF%BC%89.pdf"
+    },
+    "cn-prehospital": {
+      "title": [
+        "中华医学会相关学组：重伤院前救治共识（2026）",
+        "Chinese expert consensus on prehospital major trauma (2026)"
+      ],
+      "url": "https://doi.org/10.1016/j.cjtee.2026.01.002",
+      "locator": "Clinical questions 2, 6, 9, 12; recommendations 6, 7, 11; PMC13070844 full XML",
+      "coverage": "full_text_xml",
+      "domestic": true,
+      "checkedDate": "2026-10-08"
+    },
+    "eu-bleeding": {
+      "title": [
+        "欧洲创伤大出血指南第六版（2023）",
+        "European major bleeding guideline, sixth edition (2023)"
+      ],
+      "url": "https://link.springer.com/article/10.1186/s13054-023-04327-7",
+      "locator": "R13, R16, R23, R29, R31, R33–35",
+      "coverage": "full_text",
+      "domestic": false,
+      "checkedDate": "2026-10-08"
+    },
+    "cn-periop": {
+      "title": [
+        "围术期出凝血管理麻醉专家共识",
+        "Chinese anesthesia consensus on perioperative bleeding"
+      ],
+      "url": "https://seleguide.yiigle.com/uploads/guide_html/%E5%9B%B4%E6%9C%AF%E6%9C%9F%E5%87%BA%E5%87%9D%E8%A1%80%E7%AE%A1%E7%90%86%E9%BA%BB%E9%86%89%E4%B8%93%E5%AE%B6%E5%85%B1%E8%AF%86.html",
+      "locator": "2.4; 3.1, 3.3, 3.8; perioperative scope, not a trauma-specific replacement",
+      "coverage": "full_text",
+      "domestic": true,
+      "checkedDate": "2026-10-08"
+    },
+    "cn-blood": {
+      "title": [
+        "国家卫健委：临床用血技术规范（2025年版）",
+        "NHC clinical blood use technical standard (2025)"
+      ],
+      "url": "https://www.nhc.gov.cn/ylyjs/zcwj/202512/1f0e99982b49476b9b076ee10ef9ca75.shtml",
+      "locator": "Patient blood management; assessment, consent and post-transfusion evaluation; does not specify the adult 70–90 target",
+      "coverage": "official_publication",
+      "domestic": true,
+      "checkedDate": "2026-10-08"
+    },
+    "cn-records": {
+      "title": [
+        "病历书写基本规范（2010）",
+        "Basic norms for medical record writing (2010)"
+      ],
+      "url": "https://www.nhc.gov.cn/wjw/gfxwj/201002/79d42b9c8b3f47ee91000d31de116784.shtml",
+      "locator": "Articles 8, 10, 22(5,8), 25, 27; NHC indexed text; hospital republication cross-check",
+      "coverage": "official_index_and_republication",
+      "domestic": true,
+      "checkedDate": "2026-10-08",
+      "accessUrl": "https://hospital.seu.edu.cn/2023/0304/c29923a435970/pagem.htm"
+    },
+    "cn-hip": {
+      "title": [
+        "国家卫健委：老年髋部骨折诊疗与管理指南（2022年版）",
+        "NHC geriatric hip fracture care and management guideline (2022)"
+      ],
+      "url": "https://www.nhc.gov.cn/yzygj/c100068/202212/07dc9155b03c41ce9482bea34e643a6d.shtml",
+      "locator": "Official publication; domestic hip-fracture pathway entry only, not a source for the SBP threshold",
+      "coverage": "publication_metadata",
+      "domestic": true,
+      "checkedDate": "2026-10-08"
+    },
+    "cn-pediatric": {
+      "title": [
+        "WS/T 795—2022 儿科输血指南",
+        "WS/T 795—2022 pediatric transfusion guideline"
+      ],
+      "url": "https://www.nhc.gov.cn/fzs/c100048/202202/fc6310d72212427c9f5ef2f7f0166aac/files/1733125181067_16379.pdf",
+      "locator": "9.5.2.2 traumatic hemorrhagic shock; Table 5 excludes emergency rescue/major bleeding",
+      "coverage": "full_text_pdf",
+      "domestic": true,
+      "checkedDate": "2026-10-08"
+    },
+    "rch": {
+      "title": [
+        "RCH：儿童重大创伤初评",
+        "RCH: major pediatric trauma primary survey"
+      ],
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Major_paediatric_trauma_The_primary_survey/",
+      "locator": "Circulation: initial crystalloid / packed RBC aliquots; reassessment",
+      "coverage": "full_text",
+      "domestic": false,
+      "checkedDate": "2026-10-08"
+    },
+    "qld-pregnancy": {
+      "title": [
+        "Queensland：妊娠创伤指南",
+        "Queensland: traumatic injury in pregnancy"
+      ],
+      "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0013/140611/g-trauma.pdf",
+      "locator": "Positioning; fetal assessment; Rh D negative / FMH; current PDF F26.31",
+      "coverage": "full_text_pdf",
+      "domestic": false,
+      "checkedDate": "2026-10-08"
+    },
+    "aha-pregnancy": {
+      "title": [
+        "AHA 2025：妊娠心脏骤停",
+        "AHA 2025: cardiac arrest in pregnancy"
+      ],
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
+      "locator": "Pregnancy recommendations: immediate preparation; goal delivery by 5 minutes; uterus at/above umbilicus",
+      "coverage": "full_text",
+      "domestic": false,
+      "checkedDate": "2026-10-08"
+    },
+    "cn-burn": {
+      "title": [
+        "国家卫健委：突发事件烧伤伤员医疗救治规范（2025年版）",
+        "NHC emergency burn treatment standard (2025 edition; published 2026)"
+      ],
+      "url": "https://doi.org/10.7507/1002-1892.202601151",
+      "locator": "2.1 Table 1; 4.2.2 adult crystalloid/colloid formula; 8.1 children; PMC12948514 indexed full text",
+      "coverage": "indexed_primary_sections",
+      "domestic": true,
+      "checkedDate": "2026-10-08",
+      "accessUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12948514/"
+    },
+    "nice": {
+      "title": [
+        "NICE NG39 重大创伤",
+        "NICE NG39 major trauma"
+      ],
+      "url": "https://www.nice.org.uk/guidance/ng39/chapter/recommendations",
+      "locator": "Assessment, bleeding and specialist care",
+      "coverage": "full_text",
+      "domestic": false,
+      "checkedDate": "2026-10-08"
+    },
+    "acs-mtp": {
+      "title": [
+        "ACS TQIP 大量输血指南",
+        "ACS TQIP massive transfusion guidance"
+      ],
+      "url": "https://www.facs.org/media/zcjdtrd1/transfusion_guildelines.pdf",
+      "locator": "MTP activation / ABC examples",
+      "coverage": "full_text_pdf",
+      "domestic": false,
+      "checkedDate": "2026-10-08"
+    },
+    "pelvic-study": {
+      "title": [
+        "IJEM 2025 多发伤骨盆骨折研究",
+        "IJEM 2025 pelvic fracture polytrauma study"
+      ],
+      "url": "https://doi.org/10.1186/s12245-025-00990-5",
+      "locator": "Published observational cohort; not an individual treatment rule",
+      "coverage": "previously_checked_full_text",
+      "domestic": true,
+      "checkedDate": "2026-10-08"
+    },
+    "who": {
+      "title": [
+        "WHO 创伤救治核对单与团队交接",
+        "WHO trauma care checklist and team handover"
+      ],
+      "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/service-organizations-and-integration/emergency-critical-and-operative-care/trauma-care",
+      "locator": "Team checks, transitions and referral",
+      "coverage": "full_text",
+      "domestic": false,
+      "checkedDate": "2026-10-08"
+    },
+    "rcs-survey": {
+      "title": [
+        "RCH：二次评估",
+        "RCH secondary survey"
+      ],
+      "url": "https://www.rch.org.au/trauma-service/manual/secondary-survey/",
+      "locator": "AMPLE; systematic examination; return to primary survey if deteriorating",
+      "coverage": "full_text",
+      "domestic": false,
+      "checkedDate": "2026-10-08"
+    }
+  },
+  "claims": [
+    {
+      "id": "txa",
+      "title": [
+        "TXA：时间与方案",
+        "TXA: timing and regimen"
+      ],
+      "anchor": [
+        "≤3 h；1 g 静滴 ≥10 min → 1 g 静脉维持 8 h",
+        "≤3 h; 1 g IV over ≥10 min → 1 g IV over 8 h"
+      ],
+      "scope": [
+        "成人创伤活动/疑似严重出血；从受伤起算。",
+        "Adults with active/suspected major traumatic bleeding; time from injury."
+      ],
+      "decision": [
+        "尽早使用；国内 R33 维持表述为“8 h以上”，欧洲 R23 为8 h。",
+        "Give early; Chinese R33 states at least eight hours for maintenance, European R23 eight hours."
+      ],
+      "upgrade": [
+        "超3 h、疑纤溶关闭或特殊人群：交由团队按来源与本院规范重新判断。",
+        "After three hours, possible fibrinolytic shutdown or special populations: source/local-policy review."
+      ],
+      "references": [
+        "cn-shock",
+        "eu-bleeding"
+      ],
+      "domesticReferences": [
+        "cn-shock"
+      ],
+      "domesticAlignment": "matching_with_wording_difference",
+      "comparisonNote": [
+        "按本院药品说明书、配制及输注流程执行；不得快速静推。",
+        "Follow local product, preparation and infusion policy; avoid rapid IV push."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "bp",
+      "title": [
+        "成人出血：血压目标",
+        "Adult bleeding: BP target"
+      ],
+      "anchor": [
+        "SBP 80–90 mmHg",
+        "SBP 80–90 mmHg"
+      ],
+      "scope": [
+        "止血前、无颅脑/脊髓损伤的成人初期出血。",
+        "Early adult bleeding before control, without brain/spinal injury."
+      ],
+      "decision": [
+        "老年、慢性高血压慎重；儿童与孕妇另按专门方案。",
+        "Caution with older age/chronic hypertension; separate pediatric/pregnancy protocols."
+      ],
+      "upgrade": [
+        "灌注持续恶化或合并神经损伤：重新定目标并升级止血。",
+        "Worsening perfusion or neurological injury: revise targets and escalate bleeding control."
+      ],
+      "references": [
+        "cn-shock",
+        "eu-bleeding"
+      ],
+      "domesticReferences": [
+        "cn-shock"
+      ],
+      "domesticAlignment": "matching",
+      "comparisonNote": [
+        "国内R22与欧洲R13支持有条件的目标；不是所有伤者通用。",
+        "Chinese R22 / European R13 support conditional use, not a universal target."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "si",
+      "title": [
+        "休克指数",
+        "Shock index"
+      ],
+      "anchor": [
+        "SI = HR / SBP；国内 SI ≥1",
+        "SI = HR / SBP; Chinese SI ≥1"
+      ],
+      "scope": [
+        "成人风险识别，结合查体与趋势。",
+        "Adult risk recognition, with examination and trends."
+      ],
+      "decision": [
+        "国内R2将≥1列入诊断条件；欧洲R5讨论0.9–1附近风险。",
+        "Chinese R2 includes ≥1 in diagnostic criteria; European R5 discusses risk around 0.9–1."
+      ],
+      "upgrade": [
+        "药物抑制心率或老人“正常”生命体征仍保留休克担心。",
+        "Blunted HR or apparently normal older-adult vitals do not exclude shock."
+      ],
+      "references": [
+        "cn-shock",
+        "eu-bleeding"
+      ],
+      "domesticReferences": [
+        "cn-shock"
+      ],
+      "domesticAlignment": "different_context",
+      "comparisonNote": [
+        "不凭单个指数排除出血或决定输血。",
+        "Do not use SI alone to exclude bleeding or decide transfusion."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "mtp",
+      "title": [
+        "大量输血启动评估",
+        "MTP activation assessment"
+      ],
+      "anchor": [
+        "ABC ≥2 + 临床状态",
+        "ABC ≥2 + clinical state"
+      ],
+      "scope": [
+        "成人；ACS TQIP 评分示例。",
+        "Adults; ACS TQIP example."
+      ],
+      "decision": [
+        "穿透躯干伤、FAST阳性、HR >120、SBP <90各1分；核对本院版本。",
+        "One point each: penetrating torso, positive FAST, HR >120, SBP <90; verify local version."
+      ],
+      "upgrade": [
+        "持续不稳定或活动出血需止血也可触发评估，不等累计输血量。",
+        "Persistent instability/active bleeding may also trigger assessment; do not wait for cumulative volume."
+      ],
+      "references": [
+        "acs-mtp",
+        "cn-shock",
+        "cn-blood"
+      ],
+      "domesticReferences": [
+        "cn-shock",
+        "cn-blood"
+      ],
+      "domesticAlignment": "general_not_same_numeric_rule",
+      "comparisonNote": [
+        "国内支持早期血液管理与本院流程；未据此声称ABC为全国统一启动标准。",
+        "Chinese guidance supports early blood/local policy; ABC is not claimed as a national activation rule."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "fib",
+      "title": [
+        "纤维蛋白原",
+        "Fibrinogen"
+      ],
+      "anchor": [
+        "Clauss Fib ≤1.5 g/L + 大出血",
+        "Clauss Fib ≤1.5 g/L + major bleeding"
+      ],
+      "scope": [
+        "严重活动出血，或黏弹性检测提示功能性缺乏。",
+        "Major active bleeding or viscoelastic evidence of functional deficit."
+      ],
+      "decision": [
+        "欧洲R29：评估纤维蛋白原/冷沉淀补充并复测。",
+        "European R29: assess fibrinogen/cryo replacement and retest."
+      ],
+      "upgrade": [
+        "出血持续、检测恶化：血库/凝血团队按本院方案升级。",
+        "Ongoing bleeding/worsening tests: blood-bank/coagulation escalation."
+      ],
+      "references": [
+        "eu-bleeding",
+        "cn-periop"
+      ],
+      "domesticReferences": [
+        "cn-periop"
+      ],
+      "domesticAlignment": "different_scope_and_range",
+      "comparisonNote": [
+        "国内围术期共识：严重渗血冷沉淀条款为<1.5，纤维蛋白原条款为<1.5–2.0；场景及边界不同。",
+        "Chinese perioperative consensus uses <1.5 for cryo in severe oozing and <1.5–2.0 for fibrinogen; scope/operators differ."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "hb",
+      "title": [
+        "输血时 Hb 目标",
+        "Hb target during transfusion"
+      ],
+      "anchor": [
+        "Hb 70–90 g/L",
+        "Hb 70–90 g/L"
+      ],
+      "scope": [
+        "成人创伤，需要红细胞输注时的欧洲R16目标。",
+        "European R16 target for adult trauma requiring RBC transfusion."
+      ],
+      "decision": [
+        "结合活动出血、灌注与病程；早期Hb正常不能排除大出血。",
+        "Use bleeding/perfusion/trajectory; normal early Hb does not exclude hemorrhage."
+      ],
+      "upgrade": [
+        "TBI、心肌缺血及特殊人群按专科目标；不等Hb下降才启动抢救。",
+        "TBI, myocardial ischemia and special populations need specific goals; do not await Hb fall."
+      ],
+      "references": [
+        "eu-bleeding",
+        "cn-blood"
+      ],
+      "domesticReferences": [
+        "cn-blood"
+      ],
+      "domesticAlignment": "general_no_identical_numeric_target",
+      "comparisonNote": [
+        "国内2025用血规范要求个体评估与输后评价，不能据其声称全国统一70–90目标。",
+        "Chinese 2025 blood-use standard requires individual assessment/response review, not a national 70–90 target."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "calcium",
+      "title": [
+        "离子钙",
+        "Ionized calcium"
+      ],
+      "anchor": [
+        "iCa：维持本实验室正常范围",
+        "iCa: maintain the local normal range"
+      ],
+      "scope": [
+        "成人大出血，尤其大量输血。",
+        "Adult major bleeding, especially massive transfusion."
+      ],
+      "decision": [
+        "复测血气iCa并结合pH，按本院补钙方案纠正。",
+        "Recheck blood-gas iCa with pH; correct under local replacement policy."
+      ],
+      "upgrade": [
+        "输血仍在进行、iCa下降或心律变化：及时团队复评。",
+        "Ongoing transfusion, falling iCa or rhythm changes: prompt reassessment."
+      ],
+      "references": [
+        "eu-bleeding",
+        "cn-periop"
+      ],
+      "domesticReferences": [
+        "cn-periop"
+      ],
+      "domesticAlignment": "matching_principle",
+      "comparisonNote": [
+        "欧洲R31与国内围术期3.8均强调监测/正常化；本页不统一药品或补钙剂量。",
+        "European R31 and Chinese perioperative 3.8 support monitoring/normalization; products/doses are local."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "tbi-pressure",
+      "title": [
+        "重型颅脑伤：灌注目标",
+        "Severe TBI: perfusion target"
+      ],
+      "anchor": [
+        "MAP ≥80 mmHg",
+        "MAP ≥80 mmHg"
+      ],
+      "scope": [
+        "重型TBI（GCS ≤8）；不能套用允许性低血压。",
+        "Severe TBI (GCS ≤8); avoid permissive hypotension."
+      ],
+      "decision": [
+        "国内2023 R22另列SBP >110；2026院前R6写SBP ≥110或MAP ≥80。",
+        "Chinese 2023 R22 also gives SBP >110; 2026 prehospital R6 gives SBP ≥110 or MAP ≥80."
+      ],
+      "upgrade": [
+        "意识/瞳孔变化、目标未达：同步纠正氧合/灌注并升级神经救治。",
+        "Changing consciousness/pupils or unmet goals: address oxygenation/perfusion and escalate neurological care."
+      ],
+      "references": [
+        "cn-shock",
+        "cn-prehospital",
+        "eu-bleeding"
+      ],
+      "domesticReferences": [
+        "cn-shock",
+        "cn-prehospital"
+      ],
+      "domesticAlignment": "matching_with_version_difference",
+      "comparisonNote": [
+        "已有ICP监测时结合CPP等个体目标；MAP不是完整神经监护方案。",
+        "With ICP monitoring, individualize CPP and other goals; MAP is not a complete neurocritical protocol."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "geriatric",
+      "title": [
+        "老年：提早警惕隐匿休克",
+        "Older adults: occult shock warning"
+      ],
+      "anchor": [
+        "≥65 岁；SBP <110 mmHg",
+        "Age ≥65; SBP <110 mmHg"
+      ],
+      "scope": [
+        "老年创伤高风险识别/分诊提示，不等于单独确诊休克。",
+        "Older-trauma high-risk triage signal, not a stand-alone shock diagnosis."
+      ],
+      "decision": [
+        "补问抗凝、基线功能、降压/控心率药及头部受伤。",
+        "Ask about anticoagulants, baseline function, BP/HR drugs and head injury."
+      ],
+      "upgrade": [
+        "低能量伤合并症状、抗凝或灌注异常：提早高级评估。",
+        "Low-energy injury with symptoms, anticoagulation or poor perfusion: early senior review."
+      ],
+      "references": [
+        "cn-prehospital",
+        "cn-hip"
+      ],
+      "domesticReferences": [
+        "cn-prehospital",
+        "cn-hip"
+      ],
+      "domesticAlignment": "different_topic",
+      "comparisonNote": [
+        "110阈值源于重伤院前共识；髋部指南仅作国内骨科后续路径入口。",
+        "The 110 signal comes from prehospital consensus; hip guidance is a domestic orthopedic pathway entry."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "anticoagulants",
+      "title": [
+        "抗凝药：识别后逆转路径",
+        "Anticoagulants: reversal pathway"
+      ],
+      "anchor": [
+        "药名 → 末次剂量 → 出血严重度",
+        "Drug → last dose → bleeding severity"
+      ],
+      "scope": [
+        "危及生命/不可控出血或紧急高风险手术；由授权团队决策。",
+        "Life-threatening/uncontrolled bleeding or urgent high-risk surgery; authorized team decisions."
+      ],
+      "decision": [
+        "华法林：PCC + 静脉维K；达比加群：依达赛珠单抗；Xa药：特异拮抗剂或PCC路径。",
+        "Warfarin: PCC + IV vitamin K; dabigatran: idarucizumab; Xa agents: specific reversal or PCC pathway."
+      ],
+      "upgrade": [
+        "同步查肾功能、INR/TT/抗Xa及本院药品可及性；正常PT不能排除DOAC效应。",
+        "Check renal function, INR/TT/anti-Xa and formulary; normal PT does not exclude DOAC effect."
+      ],
+      "references": [
+        "eu-bleeding",
+        "cn-periop",
+        "cn-shock"
+      ],
+      "domesticReferences": [
+        "cn-periop",
+        "cn-shock"
+      ],
+      "domesticAlignment": "matching_principle",
+      "comparisonNote": [
+        "Xa具体药物、适应证与可及性按本院药事/血库方案核对；不对每名服药者自动逆转。",
+        "Verify Xa agent, indication and availability locally; reversal is not automatic for every treated patient."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "pregnancy",
+      "title": [
+        "孕妇创伤：母体与产科并行",
+        "Pregnancy trauma: maternal/obstetric care"
+      ],
+      "anchor": [
+        "母体优先；子宫左推；Rh D",
+        "Mother first; left uterine displacement; Rh D"
+      ],
+      "scope": [
+        "子宫增大至脐水平/以上；Rh阴性且未致敏的腹部/重大创伤。",
+        "Uterus at/above umbilicus; unsensitized Rh-negative abdominal/major trauma."
+      ],
+      "decision": [
+        "有效按压同时人工左推；抗D由产科按孕周、致敏状态、胎母出血与本院方案评估。",
+        "Manual displacement with effective CPR; obstetric anti-D assessment by gestation, sensitization, FMH and local policy."
+      ],
+      "upgrade": [
+        "母体不稳定、腹痛/流血或胎心担心：创伤—产科共同升级。",
+        "Instability, pain/bleeding or fetal concern: trauma/obstetric escalation."
+      ],
+      "references": [
+        "qld-pregnancy",
+        "aha-pregnancy"
+      ],
+      "domesticReferences": [],
+      "domesticAlignment": "international_reference_only",
+      "comparisonNote": [
+        "尚未核实覆盖这些具体条款的国内同等指南；保留国际参考标识，本院产科流程确认。",
+        "No equivalent Chinese guidance for these specific items was verified; international reference, local obstetric confirmation."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "pregnancy-arrest",
+      "title": [
+        "孕妇心停：复苏性分娩",
+        "Pregnancy arrest: resuscitative delivery"
+      ],
+      "anchor": [
+        "识别心停即准备；目标 ≤5 min 完成",
+        "Prepare at arrest recognition; goal delivery by ≤5 min"
+      ],
+      "scope": [
+        "子宫底在脐水平/以上且标准复苏未获ROSC。",
+        "Fundus at/above umbilicus with no ROSC despite standard resuscitation."
+      ],
+      "decision": [
+        "AHA2025：在心停现场组织产科/麻醉/新生儿团队与复苏性分娩。",
+        "AHA 2025: organize obstetric/anesthetic/neonatal teams and resuscitative delivery at the arrest site."
+      ],
+      "upgrade": [
+        "传统4 min启动/5 min娩出是历史时间框架；不等4 min才叫人或准备。",
+        "Historical four-minute start/five-minute birth framing does not mean waiting four minutes to call or prepare."
+      ],
+      "references": [
+        "aha-pregnancy"
+      ],
+      "domesticReferences": [],
+      "domesticAlignment": "international_reference_only",
+      "comparisonNote": [
+        "本院需预先落实团队、物资与演练；不是所有孕周的自动手术指令。",
+        "Pre-plan teams, equipment and drills locally; not an automatic operation at every gestation."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "peds-fluid",
+      "title": [
+        "儿童：体重与首轮复苏",
+        "Children: weight and first aliquot"
+      ],
+      "anchor": [
+        "实测/近期体重；晶体液 10 mL/kg",
+        "Measured/recent weight; crystalloid 10 mL/kg"
+      ],
+      "scope": [
+        "RCH儿童重大创伤，循环不足的首轮等渗液体评估；并行识别出血。",
+        "RCH major pediatric trauma with poor circulation; assess bleeding in parallel."
+      ],
+      "decision": [
+        "无法称重按本院验证的身长体重工具；RCH持续出血可用RBC 10 mL/kg初始小份。",
+        "If unweighable use a locally validated length-based tool; RCH ongoing bleeding: initial RBC aliquot 10 mL/kg."
+      ],
+      "upgrade": [
+        "每份后复评；持续失血尽早血库/儿科MTP，不重复大量晶体液。",
+        "Reassess each aliquot; ongoing hemorrhage needs blood-bank/pediatric MTP, avoiding repeated large crystalloids."
+      ],
+      "references": [
+        "rch",
+        "cn-pediatric"
+      ],
+      "domesticReferences": [
+        "cn-pediatric"
+      ],
+      "domesticAlignment": "different_stage",
+      "comparisonNote": [
+        "国内重症失血性休克成分方案见下一卡；常规RBC 10–15表不适用于急救大出血。",
+        "Chinese major-hemorrhage component regimen is on the next card; routine RBC table excludes emergency major bleeding."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "peds-blood",
+      "title": [
+        "儿童：国内失血性休克输血索引",
+        "Children: Chinese hemorrhagic transfusion index"
+      ],
+      "anchor": [
+        "RBC : FFP = 1 : 1（容量）",
+        "RBC : FFP = 1 : 1 (volume)"
+      ],
+      "scope": [
+        "WS/T795—2022 §9.5.2.2：儿童创伤性失血性休克。",
+        "WS/T795—2022 §9.5.2.2: pediatric traumatic hemorrhagic shock."
+      ],
+      "decision": [
+        "标准举例RBC 20 mL/kg + FFP 20 mL/kg；不是常规贫血或非创伤比例。",
+        "Standard example: RBC 20 mL/kg + FFP 20 mL/kg; not routine anemia/non-trauma ratio."
+      ],
+      "upgrade": [
+        "持续出血按标准及本院儿科MTP补充其他成分；结果返回后调整并监测容量超负荷。",
+        "Persistent bleeding: additional components under standard/local MTP; adjust to labs and monitor overload."
+      ],
+      "references": [
+        "cn-pediatric"
+      ],
+      "domesticReferences": [
+        "cn-pediatric"
+      ],
+      "domesticAlignment": "domestic_specific",
+      "comparisonNote": [
+        "此为成分容量方案示例，与RCH首轮小份的阶段不同；核对产品规格和本院儿童流程。",
+        "A component-volume regimen, at a different stage from RCH initial aliquots; check product/local pediatric policy."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "burn-area",
+      "title": [
+        "烧伤：中国新九分法",
+        "Burns: Chinese rule of nines"
+      ],
+      "anchor": [
+        "成人：9 + 18 + 27 + 46 = 100%",
+        "Adult: 9 + 18 + 27 + 46 = 100%"
+      ],
+      "scope": [
+        "头面颈、双上肢、躯干含会阴、双下肢含臀足。",
+        "Head/face/neck; both arms; trunk including perineum; both legs including buttocks/feet."
+      ],
+      "decision": [
+        "12岁以下：头面颈=9+(12−年龄)%；双下肢=46−(12−年龄)%。",
+        "Under 12: head/neck=9+(12−age)%; both legs=46−(12−age)%."
+      ],
+      "upgrade": [
+        "面积或深度不确定、关键部位/吸入/电化学伤：烧伤专科复评。",
+        "Uncertain area/depth, key-site/inhalation/electrical/chemical injury: burn review."
+      ],
+      "references": [
+        "cn-burn"
+      ],
+      "domesticReferences": [
+        "cn-burn"
+      ],
+      "domesticAlignment": "domestic_specific",
+      "comparisonNote": [
+        "按2025版规范表1及§2.1；补液面积只计Ⅱ/Ⅲ度，不将Ⅰ度纳入。",
+        "2025 standard Table 1 / §2.1; fluid-formula area uses second/third degree, excluding superficial burns."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "burn-fluid",
+      "title": [
+        "烧伤：国内成人补液公式",
+        "Burns: Chinese adult fluid formula"
+      ],
+      "anchor": [
+        "首24 h：1.5–2 mL × kg × %TBSA + 2000 mL",
+        "First 24 h: 1.5–2 mL × kg × %TBSA + 2000 mL"
+      ],
+      "scope": [
+        "国内2025规范晶胶混合公式；Ⅱ/Ⅲ度，%填百分数数值。",
+        "Chinese 2025 crystalloid/colloid formula; second/third degree; enter percentage number."
+      ],
+      "decision": [
+        "晶:胶=1–2:1；总估算量一半在伤后首8 h，余量分后两个8 h。",
+        "Crystalloid:colloid=1–2:1; half estimated total in first eight hours from injury, quarters in next two intervals."
+      ],
+      "upgrade": [
+        "按灌注、尿量和过负荷反馈调整；成人公式不套儿童/心肾病。",
+        "Titrate to perfusion, urine and overload; do not apply adult formula to children/cardiorenal disease."
+      ],
+      "references": [
+        "cn-burn"
+      ],
+      "domesticReferences": [
+        "cn-burn"
+      ],
+      "domesticAlignment": "domestic_specific",
+      "comparisonNote": [
+        "1.5是该版范围下限，不是唯一固定量；已输入液体计入总量，以本院烧伤流程为准。",
+        "1.5 is the lower end, not a fixed universal amount; include prior fluids and follow local burn policy."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "records",
+      "title": [
+        "抢救、告知与交接文书",
+        "Resuscitation, consent and handover records"
+      ],
+      "anchor": [
+        "抢救结束后 ≤6 h 据实补记并注明",
+        "Truthful, marked supplementation ≤6 h after rescue ends"
+      ],
+      "scope": [
+        "仅限因抢救急危患者未能及时书写；不是所有病历可延迟。",
+        "Only when urgent rescue prevented timely writing; not permission to delay all records."
+      ],
+      "decision": [
+        "时间到分钟；措施、反应、人员、告知与交接责任。",
+        "Minute-level time, actions, responses, staff, communication and handover ownership."
+      ],
+      "upgrade": [
+        "签署困难记录原因并走合法授权/急救审批流程，不造签名或回填时间。",
+        "Record signing difficulties and use lawful emergency authorization; never fabricate signatures/times."
+      ],
+      "references": [
+        "cn-records",
+        "cn-blood"
+      ],
+      "domesticReferences": [
+        "cn-records",
+        "cn-blood"
+      ],
+      "domesticAlignment": "domestic_specific",
+      "comparisonNote": [
+        "病历规范第22条(八)、25/27条；输血告知同步遵循2025用血规范。",
+        "Record norms Article 22(8), 25/27; transfusion consent also follows 2025 blood-use standards."
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-08"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    }
+  ],
+  "cards": [
+    {
+      "id": "txa",
+      "title": [
+        "TXA：时间与方案",
+        "TXA: timing and regimen"
+      ],
+      "courses": [
+        "damage-control-resuscitation"
+      ],
+      "rows": [
+        [
+          "≤3 h；1 g 静滴 ≥10 min → 1 g 静脉维持 8 h",
+          "≤3 h; 1 g IV over ≥10 min → 1 g IV over 8 h"
+        ],
+        [
+          "尽早使用；国内 R33 维持表述为“8 h以上”，欧洲 R23 为8 h。",
+          "Give early; Chinese R33 states at least eight hours for maintenance, European R23 eight hours."
+        ],
+        [
+          "超3 h、疑纤溶关闭或特殊人群：交由团队按来源与本院规范重新判断。",
+          "After three hours, possible fibrinolytic shutdown or special populations: source/local-policy review."
+        ]
+      ],
+      "scope": [
+        "成人创伤活动/疑似严重出血；从受伤起算。",
+        "Adults with active/suspected major traumatic bleeding; time from injury."
+      ],
+      "references": [
+        "cn-shock",
+        "eu-bleeding"
+      ],
+      "claimIds": [
+        "txa"
+      ],
+      "axis": "x"
+    },
+    {
+      "id": "bp",
+      "title": [
+        "成人出血：血压目标",
+        "Adult bleeding: BP target"
+      ],
+      "courses": [
+        "damage-control-resuscitation"
+      ],
+      "rows": [
+        [
+          "SBP 80–90 mmHg",
+          "SBP 80–90 mmHg"
+        ],
+        [
+          "老年、慢性高血压慎重；儿童与孕妇另按专门方案。",
+          "Caution with older age/chronic hypertension; separate pediatric/pregnancy protocols."
+        ],
+        [
+          "灌注持续恶化或合并神经损伤：重新定目标并升级止血。",
+          "Worsening perfusion or neurological injury: revise targets and escalate bleeding control."
+        ]
+      ],
+      "scope": [
+        "止血前、无颅脑/脊髓损伤的成人初期出血。",
+        "Early adult bleeding before control, without brain/spinal injury."
+      ],
+      "references": [
+        "cn-shock",
+        "eu-bleeding"
+      ],
+      "claimIds": [
+        "bp"
+      ],
+      "axis": "c"
+    },
+    {
+      "id": "si",
+      "title": [
+        "休克指数",
+        "Shock index"
+      ],
+      "courses": [
+        "damage-control-resuscitation"
+      ],
+      "rows": [
+        [
+          "SI = HR / SBP；国内 SI ≥1",
+          "SI = HR / SBP; Chinese SI ≥1"
+        ],
+        [
+          "国内R2将≥1列入诊断条件；欧洲R5讨论0.9–1附近风险。",
+          "Chinese R2 includes ≥1 in diagnostic criteria; European R5 discusses risk around 0.9–1."
+        ],
+        [
+          "药物抑制心率或老人“正常”生命体征仍保留休克担心。",
+          "Blunted HR or apparently normal older-adult vitals do not exclude shock."
+        ]
+      ],
+      "scope": [
+        "成人风险识别，结合查体与趋势。",
+        "Adult risk recognition, with examination and trends."
+      ],
+      "references": [
+        "cn-shock",
+        "eu-bleeding"
+      ],
+      "claimIds": [
+        "si"
+      ],
+      "axis": "c"
+    },
+    {
+      "id": "mtp",
+      "title": [
+        "大量输血启动评估",
+        "MTP activation assessment"
+      ],
+      "courses": [
+        "damage-control-resuscitation"
+      ],
+      "rows": [
+        [
+          "ABC ≥2 + 临床状态",
+          "ABC ≥2 + clinical state"
+        ],
+        [
+          "穿透躯干伤、FAST阳性、HR >120、SBP <90各1分；核对本院版本。",
+          "One point each: penetrating torso, positive FAST, HR >120, SBP <90; verify local version."
+        ],
+        [
+          "持续不稳定或活动出血需止血也可触发评估，不等累计输血量。",
+          "Persistent instability/active bleeding may also trigger assessment; do not wait for cumulative volume."
+        ]
+      ],
+      "scope": [
+        "成人；ACS TQIP 评分示例。",
+        "Adults; ACS TQIP example."
+      ],
+      "references": [
+        "acs-mtp",
+        "cn-shock",
+        "cn-blood"
+      ],
+      "claimIds": [
+        "mtp"
+      ],
+      "axis": "c"
+    },
+    {
+      "id": "fib",
+      "title": [
+        "纤维蛋白原",
+        "Fibrinogen"
+      ],
+      "courses": [
+        "damage-control-resuscitation"
+      ],
+      "rows": [
+        [
+          "Clauss Fib ≤1.5 g/L + 大出血",
+          "Clauss Fib ≤1.5 g/L + major bleeding"
+        ],
+        [
+          "欧洲R29：评估纤维蛋白原/冷沉淀补充并复测。",
+          "European R29: assess fibrinogen/cryo replacement and retest."
+        ],
+        [
+          "出血持续、检测恶化：血库/凝血团队按本院方案升级。",
+          "Ongoing bleeding/worsening tests: blood-bank/coagulation escalation."
+        ]
+      ],
+      "scope": [
+        "严重活动出血，或黏弹性检测提示功能性缺乏。",
+        "Major active bleeding or viscoelastic evidence of functional deficit."
+      ],
+      "references": [
+        "eu-bleeding",
+        "cn-periop"
+      ],
+      "claimIds": [
+        "fib"
+      ],
+      "axis": "c"
+    },
+    {
+      "id": "hb",
+      "title": [
+        "输血时 Hb 目标",
+        "Hb target during transfusion"
+      ],
+      "courses": [
+        "damage-control-resuscitation"
+      ],
+      "rows": [
+        [
+          "Hb 70–90 g/L",
+          "Hb 70–90 g/L"
+        ],
+        [
+          "结合活动出血、灌注与病程；早期Hb正常不能排除大出血。",
+          "Use bleeding/perfusion/trajectory; normal early Hb does not exclude hemorrhage."
+        ],
+        [
+          "TBI、心肌缺血及特殊人群按专科目标；不等Hb下降才启动抢救。",
+          "TBI, myocardial ischemia and special populations need specific goals; do not await Hb fall."
+        ]
+      ],
+      "scope": [
+        "成人创伤，需要红细胞输注时的欧洲R16目标。",
+        "European R16 target for adult trauma requiring RBC transfusion."
+      ],
+      "references": [
+        "eu-bleeding",
+        "cn-blood"
+      ],
+      "claimIds": [
+        "hb"
+      ],
+      "axis": "c"
+    },
+    {
+      "id": "calcium",
+      "title": [
+        "离子钙",
+        "Ionized calcium"
+      ],
+      "courses": [
+        "damage-control-resuscitation"
+      ],
+      "rows": [
+        [
+          "iCa：维持本实验室正常范围",
+          "iCa: maintain the local normal range"
+        ],
+        [
+          "复测血气iCa并结合pH，按本院补钙方案纠正。",
+          "Recheck blood-gas iCa with pH; correct under local replacement policy."
+        ],
+        [
+          "输血仍在进行、iCa下降或心律变化：及时团队复评。",
+          "Ongoing transfusion, falling iCa or rhythm changes: prompt reassessment."
+        ]
+      ],
+      "scope": [
+        "成人大出血，尤其大量输血。",
+        "Adult major bleeding, especially massive transfusion."
+      ],
+      "references": [
+        "eu-bleeding",
+        "cn-periop"
+      ],
+      "claimIds": [
+        "calcium"
+      ],
+      "axis": "c"
+    },
+    {
+      "id": "tbi-pressure",
+      "title": [
+        "重型颅脑伤：灌注目标",
+        "Severe TBI: perfusion target"
+      ],
+      "courses": [
+        "tbi-mini",
+        "damage-control-resuscitation"
+      ],
+      "rows": [
+        [
+          "MAP ≥80 mmHg",
+          "MAP ≥80 mmHg"
+        ],
+        [
+          "国内2023 R22另列SBP >110；2026院前R6写SBP ≥110或MAP ≥80。",
+          "Chinese 2023 R22 also gives SBP >110; 2026 prehospital R6 gives SBP ≥110 or MAP ≥80."
+        ],
+        [
+          "意识/瞳孔变化、目标未达：同步纠正氧合/灌注并升级神经救治。",
+          "Changing consciousness/pupils or unmet goals: address oxygenation/perfusion and escalate neurological care."
+        ]
+      ],
+      "scope": [
+        "重型TBI（GCS ≤8）；不能套用允许性低血压。",
+        "Severe TBI (GCS ≤8); avoid permissive hypotension."
+      ],
+      "references": [
+        "cn-shock",
+        "cn-prehospital",
+        "eu-bleeding"
+      ],
+      "claimIds": [
+        "tbi-pressure"
+      ],
+      "axis": "team"
+    },
+    {
+      "id": "geriatric",
+      "title": [
+        "老年：提早警惕隐匿休克",
+        "Older adults: occult shock warning"
+      ],
+      "courses": [
+        "special-populations",
+        "lower-limb"
+      ],
+      "rows": [
+        [
+          "≥65 岁；SBP <110 mmHg",
+          "Age ≥65; SBP <110 mmHg"
+        ],
+        [
+          "补问抗凝、基线功能、降压/控心率药及头部受伤。",
+          "Ask about anticoagulants, baseline function, BP/HR drugs and head injury."
+        ],
+        [
+          "低能量伤合并症状、抗凝或灌注异常：提早高级评估。",
+          "Low-energy injury with symptoms, anticoagulation or poor perfusion: early senior review."
+        ]
+      ],
+      "scope": [
+        "老年创伤高风险识别/分诊提示，不等于单独确诊休克。",
+        "Older-trauma high-risk triage signal, not a stand-alone shock diagnosis."
+      ],
+      "references": [
+        "cn-prehospital",
+        "cn-hip"
+      ],
+      "claimIds": [
+        "geriatric"
+      ],
+      "axis": "team"
+    },
+    {
+      "id": "anticoagulants",
+      "title": [
+        "抗凝药：识别后逆转路径",
+        "Anticoagulants: reversal pathway"
+      ],
+      "courses": [
+        "special-populations"
+      ],
+      "rows": [
+        [
+          "药名 → 末次剂量 → 出血严重度",
+          "Drug → last dose → bleeding severity"
+        ],
+        [
+          "华法林：PCC + 静脉维K；达比加群：依达赛珠单抗；Xa药：特异拮抗剂或PCC路径。",
+          "Warfarin: PCC + IV vitamin K; dabigatran: idarucizumab; Xa agents: specific reversal or PCC pathway."
+        ],
+        [
+          "同步查肾功能、INR/TT/抗Xa及本院药品可及性；正常PT不能排除DOAC效应。",
+          "Check renal function, INR/TT/anti-Xa and formulary; normal PT does not exclude DOAC effect."
+        ]
+      ],
+      "scope": [
+        "危及生命/不可控出血或紧急高风险手术；由授权团队决策。",
+        "Life-threatening/uncontrolled bleeding or urgent high-risk surgery; authorized team decisions."
+      ],
+      "references": [
+        "eu-bleeding",
+        "cn-periop",
+        "cn-shock"
+      ],
+      "claimIds": [
+        "anticoagulants"
+      ],
+      "axis": "team"
+    },
+    {
+      "id": "pregnancy",
+      "title": [
+        "孕妇创伤：母体与产科并行",
+        "Pregnancy trauma: maternal/obstetric care"
+      ],
+      "courses": [
+        "special-populations"
+      ],
+      "rows": [
+        [
+          "母体优先；子宫左推；Rh D",
+          "Mother first; left uterine displacement; Rh D"
+        ],
+        [
+          "有效按压同时人工左推；抗D由产科按孕周、致敏状态、胎母出血与本院方案评估。",
+          "Manual displacement with effective CPR; obstetric anti-D assessment by gestation, sensitization, FMH and local policy."
+        ],
+        [
+          "母体不稳定、腹痛/流血或胎心担心：创伤—产科共同升级。",
+          "Instability, pain/bleeding or fetal concern: trauma/obstetric escalation."
+        ]
+      ],
+      "scope": [
+        "子宫增大至脐水平/以上；Rh阴性且未致敏的腹部/重大创伤。",
+        "Uterus at/above umbilicus; unsensitized Rh-negative abdominal/major trauma."
+      ],
+      "references": [
+        "qld-pregnancy",
+        "aha-pregnancy"
+      ],
+      "claimIds": [
+        "pregnancy"
+      ],
+      "axis": "team"
+    },
+    {
+      "id": "pregnancy-arrest",
+      "title": [
+        "孕妇心停：复苏性分娩",
+        "Pregnancy arrest: resuscitative delivery"
+      ],
+      "courses": [
+        "special-populations"
+      ],
+      "rows": [
+        [
+          "识别心停即准备；目标 ≤5 min 完成",
+          "Prepare at arrest recognition; goal delivery by ≤5 min"
+        ],
+        [
+          "AHA2025：在心停现场组织产科/麻醉/新生儿团队与复苏性分娩。",
+          "AHA 2025: organize obstetric/anesthetic/neonatal teams and resuscitative delivery at the arrest site."
+        ],
+        [
+          "传统4 min启动/5 min娩出是历史时间框架；不等4 min才叫人或准备。",
+          "Historical four-minute start/five-minute birth framing does not mean waiting four minutes to call or prepare."
+        ]
+      ],
+      "scope": [
+        "子宫底在脐水平/以上且标准复苏未获ROSC。",
+        "Fundus at/above umbilicus with no ROSC despite standard resuscitation."
+      ],
+      "references": [
+        "aha-pregnancy"
+      ],
+      "claimIds": [
+        "pregnancy-arrest"
+      ],
+      "axis": "team"
+    },
+    {
+      "id": "peds-fluid",
+      "title": [
+        "儿童：体重与首轮复苏",
+        "Children: weight and first aliquot"
+      ],
+      "courses": [
+        "special-populations"
+      ],
+      "rows": [
+        [
+          "实测/近期体重；晶体液 10 mL/kg",
+          "Measured/recent weight; crystalloid 10 mL/kg"
+        ],
+        [
+          "无法称重按本院验证的身长体重工具；RCH持续出血可用RBC 10 mL/kg初始小份。",
+          "If unweighable use a locally validated length-based tool; RCH ongoing bleeding: initial RBC aliquot 10 mL/kg."
+        ],
+        [
+          "每份后复评；持续失血尽早血库/儿科MTP，不重复大量晶体液。",
+          "Reassess each aliquot; ongoing hemorrhage needs blood-bank/pediatric MTP, avoiding repeated large crystalloids."
+        ]
+      ],
+      "scope": [
+        "RCH儿童重大创伤，循环不足的首轮等渗液体评估；并行识别出血。",
+        "RCH major pediatric trauma with poor circulation; assess bleeding in parallel."
+      ],
+      "references": [
+        "rch",
+        "cn-pediatric"
+      ],
+      "claimIds": [
+        "peds-fluid"
+      ],
+      "axis": "team"
+    },
+    {
+      "id": "peds-blood",
+      "title": [
+        "儿童：国内失血性休克输血索引",
+        "Children: Chinese hemorrhagic transfusion index"
+      ],
+      "courses": [
+        "special-populations"
+      ],
+      "rows": [
+        [
+          "RBC : FFP = 1 : 1（容量）",
+          "RBC : FFP = 1 : 1 (volume)"
+        ],
+        [
+          "标准举例RBC 20 mL/kg + FFP 20 mL/kg；不是常规贫血或非创伤比例。",
+          "Standard example: RBC 20 mL/kg + FFP 20 mL/kg; not routine anemia/non-trauma ratio."
+        ],
+        [
+          "持续出血按标准及本院儿科MTP补充其他成分；结果返回后调整并监测容量超负荷。",
+          "Persistent bleeding: additional components under standard/local MTP; adjust to labs and monitor overload."
+        ]
+      ],
+      "scope": [
+        "WS/T795—2022 §9.5.2.2：儿童创伤性失血性休克。",
+        "WS/T795—2022 §9.5.2.2: pediatric traumatic hemorrhagic shock."
+      ],
+      "references": [
+        "cn-pediatric"
+      ],
+      "claimIds": [
+        "peds-blood"
+      ],
+      "axis": "team"
+    },
+    {
+      "id": "burn-area",
+      "title": [
+        "烧伤：中国新九分法",
+        "Burns: Chinese rule of nines"
+      ],
+      "courses": [
+        "special-populations"
+      ],
+      "rows": [
+        [
+          "成人：9 + 18 + 27 + 46 = 100%",
+          "Adult: 9 + 18 + 27 + 46 = 100%"
+        ],
+        [
+          "12岁以下：头面颈=9+(12−年龄)%；双下肢=46−(12−年龄)%。",
+          "Under 12: head/neck=9+(12−age)%; both legs=46−(12−age)%."
+        ],
+        [
+          "面积或深度不确定、关键部位/吸入/电化学伤：烧伤专科复评。",
+          "Uncertain area/depth, key-site/inhalation/electrical/chemical injury: burn review."
+        ]
+      ],
+      "scope": [
+        "头面颈、双上肢、躯干含会阴、双下肢含臀足。",
+        "Head/face/neck; both arms; trunk including perineum; both legs including buttocks/feet."
+      ],
+      "references": [
+        "cn-burn"
+      ],
+      "claimIds": [
+        "burn-area"
+      ],
+      "axis": "team"
+    },
+    {
+      "id": "burn-fluid",
+      "title": [
+        "烧伤：国内成人补液公式",
+        "Burns: Chinese adult fluid formula"
+      ],
+      "courses": [
+        "special-populations"
+      ],
+      "rows": [
+        [
+          "首24 h：1.5–2 mL × kg × %TBSA + 2000 mL",
+          "First 24 h: 1.5–2 mL × kg × %TBSA + 2000 mL"
+        ],
+        [
+          "晶:胶=1–2:1；总估算量一半在伤后首8 h，余量分后两个8 h。",
+          "Crystalloid:colloid=1–2:1; half estimated total in first eight hours from injury, quarters in next two intervals."
+        ],
+        [
+          "按灌注、尿量和过负荷反馈调整；成人公式不套儿童/心肾病。",
+          "Titrate to perfusion, urine and overload; do not apply adult formula to children/cardiorenal disease."
+        ]
+      ],
+      "scope": [
+        "国内2025规范晶胶混合公式；Ⅱ/Ⅲ度，%填百分数数值。",
+        "Chinese 2025 crystalloid/colloid formula; second/third degree; enter percentage number."
+      ],
+      "references": [
+        "cn-burn"
+      ],
+      "claimIds": [
+        "burn-fluid"
+      ],
+      "axis": "team"
+    },
+    {
+      "id": "records",
+      "title": [
+        "抢救、告知与交接文书",
+        "Resuscitation, consent and handover records"
+      ],
+      "courses": [
+        "documentation-handover"
+      ],
+      "rows": [
+        [
+          "抢救结束后 ≤6 h 据实补记并注明",
+          "Truthful, marked supplementation ≤6 h after rescue ends"
+        ],
+        [
+          "时间到分钟；措施、反应、人员、告知与交接责任。",
+          "Minute-level time, actions, responses, staff, communication and handover ownership."
+        ],
+        [
+          "签署困难记录原因并走合法授权/急救审批流程，不造签名或回填时间。",
+          "Record signing difficulties and use lawful emergency authorization; never fabricate signatures/times."
+        ]
+      ],
+      "scope": [
+        "仅限因抢救急危患者未能及时书写；不是所有病历可延迟。",
+        "Only when urgent rescue prevented timely writing; not permission to delay all records."
+      ],
+      "references": [
+        "cn-records",
+        "cn-blood"
+      ],
+      "claimIds": [
+        "records"
+      ],
+      "axis": "team"
+    },
+    {
+      "id": "course-trauma-bay",
+      "title": [
+        "抢救室：到院前",
+        "Trauma bay: before arrival"
+      ],
+      "courses": [
+        "trauma-bay"
+      ],
+      "rows": [
+        [
+          "角色：床头 / 胸部 / 循环 / 记录",
+          "Roles: head / chest / circulation / recorder"
+        ],
+        [
+          "确认空间、监护、血库与高级支援",
+          "Confirm space, monitors, blood bank and senior support"
+        ],
+        [
+          "交接：机制、发现、已做、未知",
+          "Handover: mechanism, findings, actions, unknowns"
+        ],
+        [
+          "升级：立即威胁或资源不能覆盖需求",
+          "Escalate immediate threats or inadequate resources"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "who",
+        "cn-prehospital"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-xabcde",
+      "title": [
+        "xABCDE：每轮回看",
+        "xABCDE: revisit each cycle"
+      ],
+      "courses": [
+        "xabcde"
+      ],
+      "rows": [
+        [
+          "x出血 → A气道/保护 → B呼吸 → C循环 → D神经 → E暴露/保暖",
+          "x bleeding → A airway/protection → B breathing → C circulation → D neurology → E exposure/warmth"
+        ],
+        [
+          "具体事实 + 趋势 + 责任人",
+          "Specific findings + trends + owner"
+        ],
+        [
+          "措施后核查有效性，补齐未知区域",
+          "Check effect after actions; revisit unknown regions"
+        ],
+        [
+          "恶化：回到初评，同时升级",
+          "Deterioration: return to primary survey and escalate"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-pelvic-trauma",
+      "title": [
+        "骨盆：并行识别风险",
+        "Pelvis: parallel risk recognition"
+      ],
+      "courses": [
+        "pelvic-trauma"
+      ],
+      "rows": [
+        [
+          "看灌注、开放伤与胸腹其他失血源",
+          "Assess perfusion, open wounds and other bleeding sources"
+        ],
+        [
+          "束带技能：适用场景、位置、复评与失败升级",
+          "Binder skill: context, placement, review and failure escalation"
+        ],
+        [
+          "联系骨科 / 止血 / 泌尿 / 软组织团队",
+          "Coordinate orthopedic / hemorrhage / urological / soft-tissue teams"
+        ],
+        [
+          "本土队列用于讨论，不能替代患者决策",
+          "Local cohort supports discussion, not individual decisions"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-prehospital",
+        "pelvic-study"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-trauma-care-chain",
+      "title": [
+        "救治链：跨节点不断线",
+        "Care chain: continuity at transitions"
+      ],
+      "courses": [
+        "trauma-care-chain"
+      ],
+      "rows": [
+        [
+          "先明确接收能力与负责人",
+          "Confirm destination capability and owner"
+        ],
+        [
+          "交接已知 / 未知 / 担心 / 下一次复评",
+          "Hand over knowns / unknowns / concerns / next review"
+        ],
+        [
+          "移动前核查监护、气道、出血与装备",
+          "Before movement check monitoring, airway, bleeding, equipment"
+        ],
+        [
+          "资源堵塞或患者变化：重新定去向",
+          "Bottleneck or patient change: reassess destination"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "who",
+        "cn-prehospital"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-trauma-disaster-medicine",
+      "title": [
+        "灾难：患者与系统双复评",
+        "Disaster: patient and system review"
+      ],
+      "courses": [
+        "trauma-disaster-medicine"
+      ],
+      "rows": [
+        [
+          "需求是否超过可用能力？",
+          "Does demand exceed available capacity?"
+        ],
+        [
+          "更新人数、空间、血液、手术、转运",
+          "Update numbers, space, blood, surgery, transport"
+        ],
+        [
+          "患者：趋势 / 新发现；系统：瓶颈 / 新危险",
+          "Patients: trends/findings; system: bottlenecks/hazards"
+        ],
+        [
+          "用本院认可分诊工具，变化后再评",
+          "Use institutional triage tools; reassess after change"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "who"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-damage-control-resuscitation",
+      "title": [
+        "复苏：四项并行",
+        "Resuscitation: parallel tasks"
+      ],
+      "courses": [
+        "damage-control-resuscitation"
+      ],
+      "rows": [
+        [
+          "止血与资源调度",
+          "Hemorrhage control and resource coordination"
+        ],
+        [
+          "早期TXA / 血液 / 凝血监测",
+          "Early TXA / blood / coagulation monitoring"
+        ],
+        [
+          "保暖、iCa、灌注与措施后反应",
+          "Warmth, iCa, perfusion and response checks"
+        ],
+        [
+          "数字分别见成人/TBI口袋卡",
+          "See separate adult/TBI numerical cards"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-shock",
+        "eu-bleeding"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-secondary-tertiary-survey",
+      "title": [
+        "二次 / 三次：防漏诊",
+        "Secondary / tertiary: prevent missed injury"
+      ],
+      "courses": [
+        "secondary-tertiary-survey"
+      ],
+      "rows": [
+        [
+          "稳定后：AMPLE + 从头到脚查体",
+          "After stabilization: AMPLE + head-to-toe exam"
+        ],
+        [
+          "标明未评区域、影像待定与限制",
+          "Mark unassessed regions, pending imaging and limits"
+        ],
+        [
+          "重复查体、核对正式报告，指派责任人",
+          "Repeat exam, reconcile final reports, assign ownership"
+        ],
+        [
+          "新症状/恶化先回xABCDE；不等下一班",
+          "New symptoms/deterioration: xABCDE review without waiting"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "rcs-survey",
+        "who"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-special-populations",
+      "title": [
+        "特殊人群：先分组",
+        "Special populations: identify group"
+      ],
+      "courses": [
+        "special-populations"
+      ],
+      "rows": [
+        [
+          "老年：抗凝 / 低能量重伤 / 基线功能",
+          "Older adults: anticoagulation, serious low-energy injury, baseline"
+        ],
+        [
+          "儿童：体重 / 年龄 / 血液方案",
+          "Children: weight, age, blood protocol"
+        ],
+        [
+          "妊娠：母体优先 / 产科并行",
+          "Pregnancy: mother first, obstetric collaboration"
+        ],
+        [
+          "烧伤：深度 / 中国九分法 / 专科复评",
+          "Burns: depth, Chinese rule of nines, specialist review"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-prehospital",
+        "cn-pediatric",
+        "cn-burn",
+        "qld-pregnancy"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-documentation-handover",
+      "title": [
+        "交接：写得出，接得住",
+        "Handover: record and accept"
+      ],
+      "courses": [
+        "documentation-handover"
+      ],
+      "rows": [
+        [
+          "发现与时间；措施与反应",
+          "Findings/time; actions/response"
+        ],
+        [
+          "未知事项与复评期限",
+          "Unknowns and review deadlines"
+        ],
+        [
+          "告知 / 同意 / 接收者确认",
+          "Communication / consent / receiver confirmation"
+        ],
+        [
+          "抢救补记条件与6小时见文书卡",
+          "See record card for six-hour rescue supplementation"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-records",
+        "cn-blood"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-open-pelvic-injury-case",
+      "title": [
+        "骨盆MDT病例：分步复盘",
+        "Pelvic MDT case: staged debrief"
+      ],
+      "courses": [
+        "open-pelvic-injury-case"
+      ],
+      "rows": [
+        [
+          "区分原材料记载与课堂推演",
+          "Distinguish recorded facts from classroom simulation"
+        ],
+        [
+          "出血与开放伤风险并行",
+          "Assess bleeding and open-wound risks in parallel"
+        ],
+        [
+          "解释协作节点与复评责任",
+          "Explain collaboration points and reassessment ownership"
+        ],
+        [
+          "资料缺失不补造；队列归属未确认",
+          "Do not invent gaps; cohort membership unconfirmed"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "pelvic-study"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-trauma-skills-academy",
+      "title": [
+        "技能：从决定到复评",
+        "Skills: decision to reassessment"
+      ],
+      "courses": [
+        "trauma-skills-academy"
+      ],
+      "rows": [
+        [
+          "判断时机 → 准备与授权 → 关键步骤",
+          "Timing → preparation/authorization → key steps"
+        ],
+        [
+          "效果核查 → 失败识别 → 求助升级",
+          "Effect checks → failure recognition → escalation"
+        ],
+        [
+          "0未做到 / 1提示后做到 / 2独立完整",
+          "0 absent / 1 after prompting / 2 complete independently"
+        ],
+        [
+          "只在监督下模拟；评分不等于临床授权",
+          "Supervised simulation; scores do not authorize practice"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-tbi-mini",
+      "title": [
+        "颅脑：神经与ABC联动",
+        "TBI: neurology with ABC"
+      ],
+      "courses": [
+        "tbi-mini"
+      ],
+      "rows": [
+        [
+          "记录意识、瞳孔与运动的变化",
+          "Track consciousness, pupils and movement"
+        ],
+        [
+          "避免低氧/低灌注；压力目标见TBI卡",
+          "Avoid hypoxia/hypoperfusion; see TBI pressure card"
+        ],
+        [
+          "核对抗凝、用药和基线状态",
+          "Check anticoagulation, drugs and baseline"
+        ],
+        [
+          "新神经变化：高级气道/神经团队复评",
+          "New neurological change: senior airway/neurosurgical review"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-shock",
+        "cn-prehospital"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-chest-trauma-mini",
+      "title": [
+        "胸部：双侧对照",
+        "Chest: bilateral comparison"
+      ],
+      "courses": [
+        "chest-trauma-mini"
+      ],
+      "rows": [
+        [
+          "呼吸费力、胸廓起伏与呼吸音",
+          "Work of breathing, chest excursion and breath sounds"
+        ],
+        [
+          "床旁发现与监护趋势一起报告",
+          "Report bedside findings with monitor trends"
+        ],
+        [
+          "操作由授权人员，措施后再查",
+          "Authorized operators; reassess after intervention"
+        ],
+        [
+          "呼吸/灌注迅速恶化：立即团队升级",
+          "Rapid respiratory/perfusion decline: urgent team escalation"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-abdominal-injury-mini",
+      "title": [
+        "腹部：保留隐匿出血担心",
+        "Abdomen: consider occult bleeding"
+      ],
+      "courses": [
+        "abdominal-injury-mini"
+      ],
+      "rows": [
+        [
+          "机制、腹部查体、灌注与变化",
+          "Mechanism, examination, perfusion and change"
+        ],
+        [
+          "单次阴性FAST不能排除腹部损伤",
+          "One negative FAST does not exclude abdominal injury"
+        ],
+        [
+          "按稳定性与本院路径组织再查/影像",
+          "Repeat review/imaging by stability and local pathway"
+        ],
+        [
+          "恶化：初评、止血与外科同步",
+          "Deterioration: primary survey, bleeding and surgical review"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "nice",
+        "cn-shock"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-polytrauma-mini",
+      "title": [
+        "多发伤：全局排序",
+        "Polytrauma: global priorities"
+      ],
+      "courses": [
+        "polytrauma-mini"
+      ],
+      "rows": [
+        [
+          "各轴发现并列，避免单一区域吸引全部注意",
+          "Keep axes visible; avoid fixation on one region"
+        ],
+        [
+          "每项行动明确责任人和效果核查",
+          "Assign owner and effect check to each action"
+        ],
+        [
+          "稳定后补二次/三次评估",
+          "After stabilization complete secondary/tertiary review"
+        ],
+        [
+          "新发现与资源变化触发重新排序",
+          "New findings/resources trigger reprioritization"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "who",
+        "cn-shock"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-abdominal-hemorrhagic-shock-case",
+      "title": [
+        "腹部病例：用趋势复盘",
+        "Abdominal case: debrief trends"
+      ],
+      "courses": [
+        "abdominal-hemorrhagic-shock-case"
+      ],
+      "rows": [
+        [
+          "已知发现与推测分别列出",
+          "Separate known findings and assumptions"
+        ],
+        [
+          "串联灌注、影像与血液资源",
+          "Connect perfusion, imaging and blood resources"
+        ],
+        [
+          "解释每次选择后还需核查什么",
+          "State checks needed after each choice"
+        ],
+        [
+          "无改善：重新寻找出血源并升级",
+          "No improvement: revisit bleeding sources and escalate"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-shock",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-polytrauma-shock-reassessment-case",
+      "title": [
+        "休克复评：改善了吗？",
+        "Shock reassessment: improvement?"
+      ],
+      "courses": [
+        "polytrauma-shock-reassessment-case"
+      ],
+      "rows": [
+        [
+          "灌注、神经、出血与体温一起看",
+          "Review perfusion, neurology, bleeding and warmth"
+        ],
+        [
+          "记录措施—时间—反应",
+          "Record action–time–response"
+        ],
+        [
+          "区分预设病例趋势与真实治疗效果",
+          "Distinguish scripted trends from real treatment effects"
+        ],
+        [
+          "恶化/未知持续：并行团队复评",
+          "Worsening/persistent unknowns: parallel team review"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-shock"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-cspine-hip-dislocation-case",
+      "title": [
+        "颈椎与髋：神经血管复查",
+        "Spine/hip: neurovascular recheck"
+      ],
+      "courses": [
+        "cspine-hip-dislocation-case"
+      ],
+      "rows": [
+        [
+          "记录疼痛、运动、感觉和远端灌注",
+          "Record pain, movement, sensation, distal perfusion"
+        ],
+        [
+          "移动和干预前后复查并留痕",
+          "Document rechecks before/after movement or intervention"
+        ],
+        [
+          "关联机制，补查其他区域",
+          "Link mechanism and examine other regions"
+        ],
+        [
+          "新神经/灌注异常：骨科/脊柱升级",
+          "New neurological/perfusion deficit: orthopedic/spine escalation"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-orthopaedics",
+      "title": [
+        "骨科：先全身后局部",
+        "Orthopedics: systemic then local"
+      ],
+      "courses": [
+        "orthopaedics"
+      ],
+      "rows": [
+        [
+          "先识别xABCDE立即威胁",
+          "First identify immediate xABCDE threats"
+        ],
+        [
+          "局部查体与神经血管状态",
+          "Local examination and neurovascular status"
+        ],
+        [
+          "临时保护后复查，继续找合并伤",
+          "Recheck after temporary protection; look for associated injury"
+        ],
+        [
+          "开放伤、缺血、神经异常：高级评估",
+          "Open injury, ischemia or neurological deficit: senior review"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-spine",
+      "title": [
+        "脊柱：保护与动态神经查体",
+        "Spine: protection and serial neurology"
+      ],
+      "courses": [
+        "spine"
+      ],
+      "rows": [
+        [
+          "机制、疼痛、运动感觉与可信度",
+          "Mechanism, pain, motor/sensory exam and reliability"
+        ],
+        [
+          "移动限制按风险/本院标准",
+          "Motion restriction by risk/local criteria"
+        ],
+        [
+          "移动前后记录神经变化",
+          "Record neurology before/after movement"
+        ],
+        [
+          "新无力/感觉异常或灌注恶化：升级",
+          "New weakness/sensory change or poor perfusion: escalate"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-upper-limb",
+      "title": [
+        "上肢：前后对照查体",
+        "Upper limb: pre/post comparison"
+      ],
+      "courses": [
+        "upper-limb"
+      ],
+      "rows": [
+        [
+          "伤口、畸形、运动、感觉、灌注",
+          "Wound, deformity, movement, sensation, perfusion"
+        ],
+        [
+          "覆盖开放伤，临时保护与镇痛讨论",
+          "Cover open injury; discuss temporary protection/analgesia"
+        ],
+        [
+          "固定前后记录神经血管",
+          "Document neurovascular state before/after splinting"
+        ],
+        [
+          "缺血、疼痛不相称/进行性神经异常：升级",
+          "Ischemia, disproportionate pain/progressive deficit: escalate"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "nice",
+        "cn-prehospital"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "course-lower-limb",
+      "title": [
+        "下肢：局部与全身风险",
+        "Lower limb: local and systemic risk"
+      ],
+      "courses": [
+        "lower-limb"
+      ],
+      "rows": [
+        [
+          "失血、开放伤、神经血管与疼痛",
+          "Bleeding, open injury, neurovascular state and pain"
+        ],
+        [
+          "老人低能量髋部伤也补查抗凝/基线功能",
+          "Older low-energy hip injury: anticoagulation/baseline review"
+        ],
+        [
+          "固定/移动后复查；核对去向和责任人",
+          "Recheck after splint/movement; verify destination/owner"
+        ],
+        [
+          "缺血或持续恶化：升级；国内髋部路径另查",
+          "Ischemia/deterioration: escalate; see domestic hip pathway"
+        ]
+      ],
+      "scope": [
+        "分层课程速记；规培关键步骤与模拟须有监督，按本院流程。",
+        "Tiered recall; resident key-step simulation requires supervision and local policy."
+      ],
+      "references": [
+        "cn-hip",
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "skill-bvm",
+      "title": [
+        "球囊面罩：技能口袋卡",
+        "Bvm: skill pocket"
+      ],
+      "courses": [
+        "skill-bvm"
+      ],
+      "rows": [
+        [
+          "双人配合、密封与胸廓反应",
+          "Two-person coordination, seal and chest response"
+        ],
+        [
+          "持续检查氧合/通气，准备下一气道方案",
+          "Review oxygenation/ventilation and next airway plan"
+        ],
+        [
+          "授权、监督、失败方案先说清",
+          "State authorization, supervision and rescue plan"
+        ],
+        [
+          "OSCE：0未做 / 1提示 / 2完整；重错单列",
+          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+        ]
+      ],
+      "scope": [
+        "监督下模型训练；真实操作按本院授权与技能课来源。",
+        "Supervised trainer practice; real procedures follow authorization and skill sources."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "skill-intubation",
+      "title": [
+        "插管：技能口袋卡",
+        "Intubation: skill pocket"
+      ],
+      "courses": [
+        "skill-intubation"
+      ],
+      "rows": [
+        [
+          "准备、预氧合、备选方案与团队角色",
+          "Preparation, preoxygenation, backup plan and roles"
+        ],
+        [
+          "管位确认与持续监测；失败及时进入救援路径",
+          "Confirm placement/monitor; failed attempt needs rescue plan"
+        ],
+        [
+          "授权、监督、失败方案先说清",
+          "State authorization, supervision and rescue plan"
+        ],
+        [
+          "OSCE：0未做 / 1提示 / 2完整；重错单列",
+          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+        ]
+      ],
+      "scope": [
+        "监督下模型训练；真实操作按本院授权与技能课来源。",
+        "Supervised trainer practice; real procedures follow authorization and skill sources."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "skill-cricothyrotomy",
+      "title": [
+        "紧急颈前气道：技能口袋卡",
+        "Cricothyrotomy: skill pocket"
+      ],
+      "courses": [
+        "skill-cricothyrotomy"
+      ],
+      "rows": [
+        [
+          "识别不能插管且不能氧合情境并呼叫支援",
+          "Recognize failed intubation/oxygenation and call support"
+        ],
+        [
+          "模型练习解剖、器械与效果核查",
+          "Trainer-based anatomy, equipment and effect checks"
+        ],
+        [
+          "授权、监督、失败方案先说清",
+          "State authorization, supervision and rescue plan"
+        ],
+        [
+          "OSCE：0未做 / 1提示 / 2完整；重错单列",
+          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+        ]
+      ],
+      "scope": [
+        "监督下模型训练；真实操作按本院授权与技能课来源。",
+        "Supervised trainer practice; real procedures follow authorization and skill sources."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "skill-needle-decompression",
+      "title": [
+        "胸部减压：技能口袋卡",
+        "Needle Decompression: skill pocket"
+      ],
+      "courses": [
+        "skill-needle-decompression"
+      ],
+      "rows": [
+        [
+          "综合临床怀疑与呼吸/灌注变化",
+          "Integrate suspicion with respiratory/perfusion changes"
+        ],
+        [
+          "减压后查效果；无效重新评估与升级",
+          "Check effect; failure needs reassessment/escalation"
+        ],
+        [
+          "授权、监督、失败方案先说清",
+          "State authorization, supervision and rescue plan"
+        ],
+        [
+          "OSCE：0未做 / 1提示 / 2完整；重错单列",
+          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+        ]
+      ],
+      "scope": [
+        "监督下模型训练；真实操作按本院授权与技能课来源。",
+        "Supervised trainer practice; real procedures follow authorization and skill sources."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "skill-tube-thoracostomy",
+      "title": [
+        "胸腔引流：技能口袋卡",
+        "Tube Thoracostomy: skill pocket"
+      ],
+      "courses": [
+        "skill-tube-thoracostomy"
+      ],
+      "rows": [
+        [
+          "适用判断、准备、监督下关键步骤",
+          "Indication, preparation, supervised key steps"
+        ],
+        [
+          "效果、引流系统、并发症与复查",
+          "Effect, drainage system, complications and review"
+        ],
+        [
+          "授权、监督、失败方案先说清",
+          "State authorization, supervision and rescue plan"
+        ],
+        [
+          "OSCE：0未做 / 1提示 / 2完整；重错单列",
+          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+        ]
+      ],
+      "scope": [
+        "监督下模型训练；真实操作按本院授权与技能课来源。",
+        "Supervised trainer practice; real procedures follow authorization and skill sources."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "skill-efast",
+      "title": [
+        "EFAST：技能口袋卡",
+        "Efast: skill pocket"
+      ],
+      "courses": [
+        "skill-efast"
+      ],
+      "rows": [
+        [
+          "标准窗逐项看；记录质量与未见窗口",
+          "Review standard windows; record quality/missing views"
+        ],
+        [
+          "阴性不排除损伤，结合稳定性与重复检查",
+          "Negative scan does not exclude injury; use stability/repeat review"
+        ],
+        [
+          "授权、监督、失败方案先说清",
+          "State authorization, supervision and rescue plan"
+        ],
+        [
+          "OSCE：0未做 / 1提示 / 2完整；重错单列",
+          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+        ]
+      ],
+      "scope": [
+        "监督下模型训练；真实操作按本院授权与技能课来源。",
+        "Supervised trainer practice; real procedures follow authorization and skill sources."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    },
+    {
+      "id": "skill-tourniquet",
+      "title": [
+        "止血带：技能口袋卡",
+        "Tourniquet: skill pocket"
+      ],
+      "courses": [
+        "skill-tourniquet"
+      ],
+      "rows": [
+        [
+          "识别危及生命的肢体外出血",
+          "Recognize life-threatening external limb bleeding"
+        ],
+        [
+          "控制效果、时间、远端与交接记录",
+          "Control effect, time, distal state and handover"
+        ],
+        [
+          "授权、监督、失败方案先说清",
+          "State authorization, supervision and rescue plan"
+        ],
+        [
+          "OSCE：0未做 / 1提示 / 2完整；重错单列",
+          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+        ]
+      ],
+      "scope": [
+        "监督下模型训练；真实操作按本院授权与技能课来源。",
+        "Supervised trainer practice; real procedures follow authorization and skill sources."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "x"
+    },
+    {
+      "id": "skill-pelvic-binder",
+      "title": [
+        "骨盆束带：技能口袋卡",
+        "Pelvic Binder: skill pocket"
+      ],
+      "courses": [
+        "skill-pelvic-binder"
+      ],
+      "rows": [
+        [
+          "疑骨盆伤与循环风险，核对本院适用条件",
+          "Suspected pelvic injury/perfusion risk; local indications"
+        ],
+        [
+          "模拟位置核查、皮肤风险、效果与持续复评",
+          "Simulated placement, skin risks, effect and serial review"
+        ],
+        [
+          "授权、监督、失败方案先说清",
+          "State authorization, supervision and rescue plan"
+        ],
+        [
+          "OSCE：0未做 / 1提示 / 2完整；重错单列",
+          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+        ]
+      ],
+      "scope": [
+        "监督下模型训练；真实操作按本院授权与技能课来源。",
+        "Supervised trainer practice; real procedures follow authorization and skill sources."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "c"
+    },
+    {
+      "id": "skill-splinting",
+      "title": [
+        "临时固定：技能口袋卡",
+        "Splinting: skill pocket"
+      ],
+      "courses": [
+        "skill-splinting"
+      ],
+      "rows": [
+        [
+          "固定前后神经血管查体并记录",
+          "Document neurovascular checks before/after splinting"
+        ],
+        [
+          "疼痛/灌注变化或新感觉异常及时升级",
+          "Escalate pain/perfusion changes or new sensory deficit"
+        ],
+        [
+          "授权、监督、失败方案先说清",
+          "State authorization, supervision and rescue plan"
+        ],
+        [
+          "OSCE：0未做 / 1提示 / 2完整；重错单列",
+          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+        ]
+      ],
+      "scope": [
+        "监督下模型训练；真实操作按本院授权与技能课来源。",
+        "Supervised trainer practice; real procedures follow authorization and skill sources."
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice"
+      ],
+      "claimIds": [],
+      "axis": "team"
+    }
+  ]
+}

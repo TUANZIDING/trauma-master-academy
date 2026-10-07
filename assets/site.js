@@ -1,7 +1,8 @@
 (function () {
   const body = document.body;
   const buttons = Array.from(document.querySelectorAll("[data-set-lang]"));
-  const stored = window.localStorage.getItem("trauma-academy-language");
+  let stored;
+  try { stored = window.localStorage.getItem("trauma-academy-language"); } catch {}
 
   function setLanguage(lang) {
     body.dataset.lang = lang;
@@ -9,7 +10,7 @@
     buttons.forEach((button) => {
       button.classList.toggle("active", button.dataset.setLang === lang);
     });
-    window.localStorage.setItem("trauma-academy-language", lang);
+    try { window.localStorage.setItem("trauma-academy-language", lang); } catch {}
   }
 
   buttons.forEach((button) => {

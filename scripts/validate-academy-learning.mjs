@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=file=>fs.readFileSync(path.join(root,file),'utf8');
-const context={window:{}};vm.createContext(context);
+const context={window:{},encodeURIComponent};vm.createContext(context);
 for(const file of ['assets/trauma-skills-data.js','assets/trauma-skills-enriched-data.js','assets/trauma-skills-decision-airway.js','assets/trauma-skills-decision-thoracic.js','assets/trauma-skills-decision-hemorrhage-ortho.js','assets/academy-curriculum.js']) vm.runInContext(read(file),context);
 const pair=(v,label)=>assert.ok(Array.isArray(v)&&v.length===2&&v.every(x=>typeof x==='string'&&x.trim()),label);
 function questions(items,label){
@@ -18,12 +18,23 @@ function questions(items,label){
  });
 }
 const courses=context.window.ACADEMY_COURSES;
+vm.runInContext(read('assets/academy-learning-markup.js'),context);
 for(const [id,course] of Object.entries(courses)){
  pair(course.title,id);assert.equal(course.objectives.length,3,`${id}: three objectives`);course.objectives.forEach(o=>pair(o,id));
  assert.ok(course.minutes>0,id);questions(course.questions,id);
  const file=id==='orthopaedics'?'orthopaedics/index.html':['spine','upper-limb','lower-limb'].includes(id)?`orthopaedics/${id}.html`:`courses/${id}.html`;
  const text=read(file);assert.ok(text.includes('academy-curriculum.js')&&text.includes('academy-learning.js')&&text.includes('academy-refresh.css'),`${id} mounted learning module`);
+ assert.ok(text.includes(context.window.ACADEMY_MARKUP.start(course,id,'../')),`${id}: static goals/duration/pocket link`);
+ for(const kind of ['pre','post']){
+  assert.ok(text.includes(context.window.ACADEMY_MARKUP.test(course,id,kind)),`${id}: static ${kind} questions`);
+  assert.equal((text.match(new RegExp(`id="course-${kind}test"`,'g'))||[]).length,1,`${id}: no duplicate ${kind}`);
+ }
+ assert.equal((text.match(/id="learning-start"/g)||[]).length,1,`${id}: unique learning start`);
+ assert.ok(!/<(?:p|span)[^>]*class="eyebrow"[^>]*>TRAUMA-ACADEMY/.test(text),`${id}: learner title has no internal ID`);
 }
+assert.equal(courses.xabcde.minutes,45);assert.equal(courses['trauma-care-chain'].minutes,35);
+assert.ok(read('courses/xabcde.html').includes('data-course-duration>45 min'));
+assert.ok(read('courses/trauma-care-chain.html').includes('data-course-duration>35 min'));
 for(const skill of context.window.TRAUMA_SKILLS){
  assert.equal(skill.osceZh.length,5);assert.equal(skill.osceEn.length,5);assert.equal(skill.stationsZh.length,5);assert.equal(skill.stationsEn.length,5);
  const branch=(skill.clinicalDecision.branchQuestions||[]).slice(0,2).map(x=>({pre:[x.promptZh,x.promptEn],post:[x.promptZh,x.promptEn],options:x.options.map(o=>[o[1],o[2]]),answer:x.options.findIndex(o=>o[3]==='best-supported'),why:x.options.filter(o=>o[3]==='best-supported').map(o=>[o[4],o[5]])[0]}));

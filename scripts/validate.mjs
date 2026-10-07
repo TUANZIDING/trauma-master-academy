@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import {validateClinicalData,stripQualifiedClinical} from './clinical-boundary.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -213,10 +214,14 @@ const missing = requiredStrings.filter((item) => !allText.includes(item));
 const forbidden = [];
 const legacyBoundaryFindings = [];
 const boundaryBaseline = JSON.parse(fs.readFileSync(path.join(root,'data/legacy-boundary-findings.json'),'utf8'));
+const clinicalData=JSON.parse(fs.readFileSync(path.join(root,'data/clinical-pockets.json'),'utf8'));
+const sourceQualifiedClinical=validateClinicalData(clinicalData);
 const contextHashes = (text,pattern) => [...text.matchAll(new RegExp(pattern.source,pattern.flags+'g'))].map(m=>createHash('sha256').update(text.slice(Math.max(0,m.index-80),m.index+m[0].length+80)).digest('hex')).sort();
 
-for (const { rel, text } of corpus) {
+for (const { rel, text: rawText } of corpus) {
   if(rel === 'data/legacy-boundary-findings.json') continue;
+  if(rel === 'data/clinical-pockets.json') continue; // Validated structured ledger above.
+  const text=stripQualifiedClinical(rel,rawText,clinicalData);
   for (const pattern of forbiddenPatterns) {
     if (pattern.test(text)) {
       const baseline = boundaryBaseline.findings.find(row=>row.file===rel && row.pattern===String(pattern));
@@ -232,7 +237,7 @@ const enCount = (html.match(/class="en"/g) || []).length;
 
 const claimIssues = [];
 for (const { rel, text } of htmlFiles) {
-  const claims = text.match(/<li class="claim">[\s\S]*?<\/li>|<article class="claim">[\s\S]*?<\/article>/g) || [];
+  const claims = text.match(/<li class="claim"[^>]*>[\s\S]*?<\/li>|<article class="claim"[^>]*>[\s\S]*?<\/article>/g) || [];
   claims.forEach((claim, index) => {
     if (!/(source_required|source_verified|source_index_pending_review|evidence_review_required|pending_clinician_review|pending_deidentification_review|pending_local_confirmation)/.test(claim)) {
       claimIssues.push(`${rel} claim ${index + 1}`);

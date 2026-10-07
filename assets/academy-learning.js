@@ -43,18 +43,20 @@
   if(course){
     const main=document.querySelector('main') || document.querySelector('body>.wrap');
     const hero=document.querySelector('.reader-hero,.skill-detail-hero,.hero');
-    const start=document.createElement('section');start.className='learning-start';start.id='learning-start';
-    start.innerHTML=`<p class="eyebrow">${bi(['预计学习','Estimated learning time'])} · ${course.minutes} ${bi(['分钟','min'])}</p><h2>${bi(['学完这门课，你能……','After this course, you can…'])}</h2><ol>${course.objectives.map(o=>`<li>${bi(o)}</li>`).join('')}</ol><div class="learning-level">${levelMarkup()}</div><div class="hero-actions"><a class="button primary" href="#course-pretest">${bi(['先做 5 题前测','Start five-question pretest'])}</a><a class="button" href="#course-posttest">${bi(['学完做 5 题后测','Complete five-question posttest'])}</a><a class="button" href="${base}courses/quality-governance.html#learning-levels">${bi(['分层范围与来源','Tier scope and sources'])}</a>${id.startsWith('skill-')?`<a class="button" href="osce-checklists.html?id=${id.slice(6)}">${bi(['打印本技能 OSCE 表','Print this skill OSCE sheet'])}</a>`:''}</div>`;
-    if(hero&&hero.parentElement===main)hero.after(start);else if(hero&&hero.closest('main'))hero.after(start);else if(main)main.prepend(start);else{start.classList.add('wrap');hero?.after(start);}
+    let start=document.querySelector('#learning-start');
+    if(!start){
+      const block=document.createElement('div');block.innerHTML=window.ACADEMY_MARKUP.start(course,id,base);start=block.firstElementChild;
+      if(hero)hero.after(start);else if(main)main.prepend(start);
+    }
+    start.querySelector('.learning-level').innerHTML=levelMarkup();
     const scoreKey=`academy-practice-v1:${id}`;
     const comparison=document.createElement('p');comparison.className='learning-results';comparison.setAttribute('aria-live','polite');
     function compare(){const result=read(scoreKey)||{};comparison.innerHTML=bi(result.pre&&result.post?[`本地练习记录：前测 ${result.pre.score}/5 → 后测 ${result.post.score}/5。题目用于形成性反馈，未作测量学验证。`,`Local practice: pre ${result.pre.score}/5 → post ${result.post.score}/5. Formative items are not psychometrically validated.`]:['练习记录仅保存在本浏览器；不收集姓名，不上传成绩。','Practice records stay in this browser; no names or scores are submitted.']);}
     function makeTest(kind){
-      const section=document.createElement('details');section.className='learning-test';section.id=`course-${kind}test`;
-      const label=kind==='pre'?['课前测 · 5 题','Pretest · five questions']:['课后测 · 5 题','Posttest · five questions'];
-      const order=course.questions.map((item,i)=>item.options.map((_,j)=>(j+i+(kind==='post'?1:0))%item.options.length));
-      section.innerHTML=`<summary>${bi(label)}</summary><form><p class="learning-source-note">${bi(['独立完成后提交；每题 1 分。反馈用于找出需要回看的概念，不能判断执业资格。','Submit after answering independently; one point each. Feedback identifies concepts to revisit and does not certify clinical competence.'])}</p>${course.questions.map((item,i)=>`<fieldset><legend>${i+1}. ${bi(item[kind])}</legend>${order[i].map((option,j)=>`<label><input type="radio" name="${kind}-${id}-${i}" value="${option}" required>${bi(item.options[option])}</label>`).join('')}</fieldset>`).join('')}<div class="test-actions"><button type="submit" class="button primary">${bi(['提交并看解析','Submit and review'])}</button><button type="reset" class="button">${bi(['重新作答','Try again'])}</button></div><div class="test-feedback" hidden aria-live="polite"></div></form>`;
-      const form=section.querySelector('form');const feedback=section.querySelector('.test-feedback');
+      let section=document.querySelector(`#course-${kind}test`);
+      if(!section){const block=document.createElement('div');block.innerHTML=window.ACADEMY_MARKUP.test(course,id,kind);section=block.firstElementChild;}
+      const form=section.querySelector('form'),feedback=section.querySelector('.test-feedback');
+      form.querySelector('[data-grade-submit]').disabled=false;
       form.addEventListener('submit',event=>{
         event.preventDefault();const answers=course.questions.map((_,i)=>Number(new FormData(form).get(`${kind}-${id}-${i}`)));
         const score=answers.filter((answer,i)=>answer===course.questions[i].answer).length;
@@ -62,9 +64,9 @@
         feedback.hidden=false;feedback.innerHTML=`<strong>${bi(['本次得分','Score'])}: ${score}/5</strong>${course.questions.map((item,i)=>`<p>${i+1}. ${bi(answers[i]===item.answer?['正确','Correct']:['需回看','Revisit'])} — ${bi(item.why)}</p>`).join('')}`;compare();
       });form.addEventListener('reset',()=>{feedback.hidden=true;feedback.textContent='';});return section;
     }
-    const pre=makeTest('pre');start.after(pre);const post=makeTest('post');
+    const pre=makeTest('pre');if(!pre.isConnected)start.after(pre);const post=makeTest('post');
     const clear=document.createElement('button');clear.type='button';clear.className='button';clear.innerHTML=bi(['清除本课练习记录','Clear this course practice record']);clear.addEventListener('click',()=>{try{localStorage.removeItem(scoreKey);}catch{}compare();});
-    if(main)main.append(post,comparison,clear);else start.parentElement.append(post,comparison,clear);compare();
+    if(!post.isConnected)(main||start.parentElement).append(post);(main||start.parentElement).append(comparison,clear);compare();
     function openLinkedTest(){if(location.hash==='#course-pretest')pre.open=true;if(location.hash==='#course-posttest')post.open=true;}
     addEventListener('hashchange',openLinkedTest);openLinkedTest();
   }

@@ -25,6 +25,40 @@ body[data-lang=zh] .en,body[data-lang=en] .zh{display:none!important}
 .tag.approved,.tag.review,.tag.warning,.tag.student-status-aligned{background:#e8f1f2;color:var(--teal);border-color:var(--line)}
 .tag.review,.tag.warning{background:#fff2d9;color:var(--gold)}
 .academy-internal-id{display:none!important}
+/* Detailed audit labels are available on request, never repeated on learner cards. */
+body:not([data-audit="true"]) :is(.learner-status,.audit-code,.claim>code){display:none!important}
+.course-review-link{display:inline-block;font-size:13px;color:var(--gold);margin-top:10px}
+.clinical-anchor-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.clinical-anchor,.record-examples article{padding:24px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.clinical-anchor h3{margin:0 0 16px;font-size:23px}
+.clinical-number{display:block;font-size:clamp(22px,2.4vw,30px);line-height:1.45;color:var(--teal)}
+.clinical-scope{padding:12px;background:#e8f1f2;border-radius:8px;font-size:15px}
+.clinical-escalation{border-left:3px solid var(--gold);padding-left:12px;font-size:16px}
+.clinical-citations{font-size:13px;line-height:1.7;overflow-wrap:anywhere}
+.clinical-anchor details{border-top:1px solid var(--line);padding-top:12px;font-size:14px}
+.clinical-anchor summary{font-weight:600;color:var(--teal);cursor:pointer}
+.pocket-page .wrap{max-width:1100px}
+.pocket-heading{padding-block:32px 24px}
+.pocket-heading h1{font-size:36px}
+.pocket-controls{display:flex;flex-wrap:wrap;align-items:end;gap:10px}
+.pocket-controls label{display:grid;font-size:14px;gap:5px;max-width:100%}
+.pocket-controls select{max-width:100%;width:350px;font:inherit;padding:10px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:#fff}
+.pocket-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.pocket-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;min-width:0}
+.pocket-face{padding:22px}
+.pocket-page .pocket-face h2{font-size:23px;margin:0 0 10px;line-height:1.3}
+.pocket-scope{font-size:13px;line-height:1.55;margin:0 0 16px;color:var(--muted)}
+.pocket-face ol{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.pocket-face li{padding:12px 0;border-top:1px solid var(--line);font-size:15px;line-height:1.6}
+.pocket-face li:first-child{font-size:18px;font-weight:700;color:var(--teal)}
+.pocket-card[data-pocket-axis=x] li:first-child,.pocket-card[data-pocket-axis=c] li:first-child{color:var(--alert)}
+.pocket-source-line{font-size:11px;line-height:1.5;margin:14px 0 10px}
+.pocket-face small{font-size:11px}
+.pocket-more{padding:12px 22px;background:#e8f1f2;font-size:13px}
+.pocket-more summary{cursor:pointer;font-weight:600;color:var(--teal)}
+.pocket-grid:has(.pocket-card[hidden]){grid-template-columns:minmax(0,540px);justify-content:center}
+@media(max-width:650px){.clinical-anchor-grid,.pocket-grid{grid-template-columns:1fr}.clinical-anchor{padding:20px}.pocket-page .wrap{padding-inline:14px}.pocket-heading h1{font-size:27px}.pocket-face{padding:18px}.pocket-heading{padding-block:20px}.pocket-controls select{width:100%}.pocket-controls label{width:100%}.pocket-page .topbar .nav{display:none}.pocket-face li{padding:10px 0}}
+@media print{.pocket-page .pocket-heading,.pocket-page .topbar,.pocket-page footer,.pocket-more{display:none!important}.pocket-grid,.pocket-grid:has(.pocket-card[hidden]){display:block}.pocket-card{break-after:page;break-inside:avoid;border:0;max-width:145mm;margin:auto}.pocket-card:last-child{break-after:auto}.pocket-face{padding:0}.pocket-face li{font-size:12pt}.pocket-source-line{font-size:9pt}.clinical-anchor{break-inside:avoid}}
 .academy-page{font-size:17px;line-height:1.75}
 .academy-page .topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px clamp(18px,4vw,48px)}
 .academy-page .wrap{max-width:1240px;margin-inline:auto;padding-inline:clamp(18px,4vw,48px)}
@@ -188,3 +222,16 @@ body:is(.tma-v2,.academy-skills) :is(.skill-card-visual,.radar-core){background:
 .learning-start a:not(.button){color:var(--teal)}
 
 @media(max-width:650px){body.academy-page .topbar{display:flex;flex-direction:row;justify-content:space-between;gap:10px;padding:12px 18px}body.academy-page .brand{font-size:14px;gap:8px;white-space:nowrap}body.academy-page .brand-mark{width:32px;height:32px;font-size:13px}body.academy-page .language-toggle button{padding:6px 10px;font-size:13px}body.academy-page .nav{font-size:13px;width:100%;order:3}}
+
+/* A selected pocket keeps the card prominent on a phone; download links remain available. */
+@media(max-width:650px){
+ .pocket-page .topbar{padding:12px 14px;gap:8px}
+ .pocket-page .brand{font-size:14px}.pocket-page .brand-mark{display:none}
+ .pocket-page .pocket-heading{padding-block:12px}
+ .pocket-page .pocket-heading h1{font-size:24px;margin-block:0 10px}
+ .pocket-page .pocket-heading>p{font-size:13px;margin-block:6px}
+ .pocket-page:has(.pocket-card[hidden]) .pocket-heading>h1,
+ .pocket-page:has(.pocket-card[hidden]) .pocket-heading>p{display:none}
+ .pocket-page .pocket-controls .button{font-size:12px;padding:7px 10px}
+ .pocket-page .pocket-grid{gap:12px}
+}
