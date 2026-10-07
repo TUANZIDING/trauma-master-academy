@@ -1,352 +1,234 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trauma Master Academy · 创伤救治学院</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css?v=20260724-care-chain-center1">
-<link rel="stylesheet" href="assets/visual-learning-v2.css?v=20261004-v2">
-<link rel="stylesheet" href="assets/muse-visual-v2.css?v=20261004-v2"></head>
-<body data-lang="zh" class="tma-v2">
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Trauma Master Academy">
-      <span class="brand-mark">TM</span>
-      <span>Trauma Master Academy</span>
-    </a>
-    <nav class="nav" aria-label="Courseware navigation">
-      <a href="#modules"><span class="zh">课程模块</span><span class="en">Modules</span></a>
-      <a href="#skills"><span class="zh">操作技能</span><span class="en">Skills</span></a>
-      <a href="#curriculum"><span class="zh">课程体系</span><span class="en">Curriculum</span></a>
-      <a href="#workflow"><span class="zh">制作流程</span><span class="en">Workflow</span></a>
-      <a href="#safety"><span class="zh">安全边界</span><span class="en">Boundaries</span></a>
-      <a href="#sources"><span class="zh">来源审核</span><span class="en">Review</span></a>
-    </nav>
-    <div class="language-toggle" aria-label="Language toggle">
-      <button type="button" class="active" data-set-lang="zh">中文</button>
-      <button type="button" data-set-lang="en">EN</button>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="wrap hero hero-cinematic">
-      <div class="hero-copy">
-        <span class="eyebrow">
-          <span class="zh">医生主导 · 证据约束 · 双语开放课件</span>
-          <span class="en">Clinician-led · Evidence-constrained · Bilingual courseware</span>
-        </span>
-        <h1>
-          <span class="zh">创伤救治临床思维课程集</span>
-          <span class="en">Visual Trauma Reasoning Courseware</span>
-        </h1>
-        <p class="lead">
-          <span class="zh">面向青年医生、住院医师、实习医生、规培医生和进修医生，用 xABCDE、团队沟通、病例化路径和可视化复评帮助学习者建立整体创伤救治思维框架。</span>
-          <span class="en">For interns, residents, standardized trainees, visiting doctors, and early clinicians, this site uses xABCDE, team communication, case pathways, and visual reassessment to build a whole-trauma mental model.</span>
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="courses/xabcde.html"><span class="zh">进入 xABCDE 课程</span><span class="en">Open xABCDE course</span></a>
-          <a class="button" href="#modules"><span class="zh">浏览五门主干课程</span><span class="en">Browse five core courses</span></a>
-          <button class="button" type="button" onclick="window.print()"><span class="zh">打印 / 另存为 PDF</span><span class="en">Print / save as PDF</span></button>
-        </div>
-      </div>
-      <figure class="hero-cinematic-media" aria-label="Trauma care chain visual">
-        <img src="assets/generated/homepage/trauma-care-chain-cinematic-v2.png" loading="lazy" alt="Conceptual teaching montage of alert, handoff, assessment, teamwork and reassessment; not patient evidence"><figcaption><span class="zh">教学概念合成图：串联预警、交接、初评、团队协作与复评；其中屏幕和场景不用于医学判读。</span><span class="en">Conceptual teaching montage: alert, handoff, assessment, teamwork and reassessment. Screens and scenes are not clinical evidence.</span></figcaption></figure>
-    </section>
-
-    <div class="wrap notice" id="safety">
-      <strong><span class="zh">固定安全边界：</span><span class="en">Fixed safety boundary: </span></strong>
-      <span class="zh">本课件仅用于创伤教学、模拟准备和比赛演示，不构成临床决策支持、诊断、处方、操作指导或急救建议；真实患者由具备资质的临床团队依据本地规范处理。</span>
-      <span class="en">This courseware is only for trauma education, simulation preparation, and competition demonstration. It is not clinical decision support, diagnosis, prescription, procedural instruction, or emergency advice; real patients are managed by qualified clinical teams under local policy.</span>
-    </div>
-
-    <section class="wrap clinical-overview portal-overview care-chain-panel" aria-labelledby="portal-map-title">
-      <header class="care-chain-heading">
-        <div class="overview-copy">
-          <span class="eyebrow">
-            <span class="zh">总览图入口 · visual route first</span>
-            <span class="en">Overview-first entry · visual route first</span>
-          </span>
-          <h2 id="portal-map-title">
-            <span class="zh">创伤救治链地图</span>
-            <span class="en">Trauma Care Chain Map</span>
-          </h2>
-          <p class="muted">
-            <span class="zh">用同一条可追踪路线，建立从院前信息到归处交接的共同临床语言，再进入各课程节点学习。</span>
-            <span class="en">Use one traceable route to build a shared clinical language from prehospital information to disposition, then enter each learning module.</span>
-          </p>
-          <div class="tag-row">
-            <span class="tag approved"><span class="zh">教学发布已批准</span><span class="en">Teaching release approved</span></span>
-            <span class="tag"><span class="zh">限创伤中心场景</span><span class="en">Trauma-center scope</span></span>
-          </div>
-        </div>
-        <a class="care-chain-open" href="courses/trauma-care-chain.html">
-          <span class="zh">进入救治链课程</span><span class="en">Open care-chain course</span><span aria-hidden="true">→</span>
-        </a>
-      </header>
-
-      <div class="care-chain-layout">
-        <figure class="care-chain-figure">
-          <picture>
-
-            <img src="assets/source-backed/trauma-bay-team-briefing.jpg" loading="lazy" alt="Team briefing before a trauma exercise">
-          </picture>
-          <figcaption>
-            <span>TRAUMA CARE PATHWAY · REAL EXERCISE</span><small class="sb-home-credit">Capt. Jordan Beagle / U.S. Army · Public domain · <a href="https://commons.wikimedia.org/wiki/File:US,_Angola_conduct_trauma_activation_simulation_(9918722).jpg">Source / 原图出处</a></small>
-            <p class="zh">从院前预警到院内团队接手，信息、生理趋势与资源状态沿同一救治链连续传递。</p>
-            <p class="en">From pre-alert to hospital-team reception, information, physiological trends, and resource status move along one continuous care pathway.</p>
-          </figcaption>
-        </figure>
-
-        <ol class="care-chain-steps" aria-label="Trauma care chain stages">
-          <li class="care-chain-step">
-            <span class="care-step-index">01</span>
-            <div><strong><span class="zh">院前预警</span><span class="en">Pre-alert</span></strong><p><span class="zh">机制、伤后时间与已知信息</span><span class="en">Mechanism, time since injury, and known information</span></p></div>
-          </li>
-          <li class="care-chain-step">
-            <span class="care-step-index">02</span>
-            <div><strong><span class="zh">团队启动</span><span class="en">Team activation</span></strong><p><span class="zh">角色、空间与资源准备状态</span><span class="en">Roles, space, and resource readiness</span></p></div>
-          </li>
-          <li class="care-chain-step">
-            <span class="care-step-index">03</span>
-            <div><strong><span class="zh">入院交接</span><span class="en">Arrival handoff</span></strong><p><span class="zh">事实、风险判断与待确认问题</span><span class="en">Facts, risk concerns, and questions to confirm</span></p></div>
-          </li>
-          <li class="care-chain-step">
-            <span class="care-step-index">04</span>
-            <div><strong>xABCDE</strong><p><span class="zh">共同优先级与并行任务</span><span class="en">Shared priorities and parallel tasks</span></p></div>
-          </li>
-          <li class="care-chain-step">
-            <span class="care-step-index">05</span>
-            <div><strong><span class="zh">资源协调</span><span class="en">Resource coordination</span></strong><p><span class="zh">检查、专科与转运的衔接</span><span class="en">Linking investigations, specialties, and transfer</span></p></div>
-          </li>
-          <li class="care-chain-step">
-            <span class="care-step-index">06</span>
-            <div><strong><span class="zh">归处交接</span><span class="en">Disposition handoff</span></strong><p><span class="zh">趋势、未解问题与下一责任人</span><span class="en">Trends, unresolved questions, and next owner</span></p></div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="wrap section" id="modules">
-      <div class="section-header">
-        <div>
-          <h2><span class="zh">五门主干课程</span><span class="en">Five Core Courses</span></h2><p class="sb-release-note"><span class="zh">2026-10-04 真实来源更新：新增内容与医学适用性待临床教师复核；既往批准范围不自动涵盖本次补充。</span><span class="en">Source-backed update, 4 October 2026: new content and clinical applicability await teacher review; earlier approval does not automatically extend to these additions.</span></p>
-          <p class="muted">
-            <span class="zh">从抢救室导览、xABCDE、骨盆创伤和救治链，扩展到 4 学时的创伤急救与灾难医学总论。每门课都有图文窗口、互动题和来源审核状态。</span>
-            <span class="en">The core set now expands from trauma bay orientation, xABCDE, pelvic trauma, and care chain to a four-lesson trauma resuscitation and disaster medicine course. Each course includes visuals, interactions, and source-review status.</span>
-          </p>
-        </div>
-        <span class="tag approved"><span class="zh">教学发布 · 受限范围</span><span class="en">Teaching release · limited scope</span></span>
-      </div>
-      <div class="course-grid">
-        <article class="course-card">
-          <figure class="mini-figure course-visual course-visual--disaster">
-            <img src="assets/source-backed/disaster-ndms-triage-exercise.jpg" loading="lazy" alt="NDMS simulated-patient triage exercise"><small class="sb-home-credit">TSgt Michael O'Halloran（美国空军） · Public domain · <a href="https://commons.wikimedia.org/wiki/File:Emergency_medical_services_providers_triage_a_simulated_patient_in_a_105th_Airlift_Wing_hangar_during_the_National_Disaster_Medical_System_(NDMS)_exercise_Golden_Eagle_III_at_Stewart_Air_National_Guard_Base_130601-Z-GJ424-054.jpg" target="_blank" rel="noreferrer">原图出处 / Source</a></small>
-            <figcaption><div class="board-title"><span>Trauma disaster medicine</span><span class="tag approved"><span class="zh">教学发布</span><span class="en">Teaching release</span></span></div><div class="course-visual-points"><span><span class="zh">优先级</span><span class="en">Priorities</span></span><span><span class="zh">资源状态</span><span class="en">Resources</span></span><span><span class="zh">团队推演</span><span class="en">Team simulation</span></span></div></figcaption>
-          </figure>
-          <div class="course-card-body">
-            <h3><span class="zh">创伤急救与灾难医学总论</span><span class="en">Introduction to Trauma Resuscitation and Disaster Medicine</span></h3>
-            <p class="muted"><span class="zh">4 个学时串联创伤优先级、xABCDE、立即威胁、灾难资源失衡和综合推演，适合课堂授课与模拟前训练。</span><span class="en">Four lessons connect trauma priorities, xABCDE, immediate threats, disaster resource imbalance, and integrated simulation for classroom teaching and simulation preparation.</span></p>
-            <div class="tag-row"><span class="tag">TRAUMA-ACADEMY-005</span><span class="tag">4 Lessons</span><span class="tag">180 Minutes</span><span class="tag approved"><span class="zh">教学版</span><span class="en">Teaching edition</span></span></div>
-            <div class="course-meta">
-              <span><strong><span class="zh">课程模式</span><span class="en">Modes</span></strong><br><span class="zh">学员学习、病例挑战、教师授课。</span><span class="en">Learner, challenge, and instructor modes.</span></span>
-              <span><strong><span class="zh">课程边界</span><span class="en">Boundary</span></strong><br><span class="zh">只做观察、报告、资源协调、复评。</span><span class="en">Observation, reporting, resource coordination, reassessment only.</span></span>
-            </div>
-            <div class="hero-actions compact-actions">
-              <a class="button primary" href="courses/trauma-disaster-medicine.html"><span class="zh">开始课程</span><span class="en">Start course</span></a>
-              <a class="button" href="courses/trauma-disaster-medicine.html?mode=instructor"><span class="zh">教师授课</span><span class="en">Instructor</span></a>
-              <a class="button" href="courses/trauma-disaster-medicine.html#simulation"><span class="zh">进入模拟</span><span class="en">Simulation</span></a>
-              <a class="button" href="courses/trauma-disaster-medicine.html#materials"><span class="zh">教学资料</span><span class="en">Materials</span></a>
-              <a class="button" href="courses/trauma-disaster-medicine.html#sources"><span class="zh">来源审核</span><span class="en">Review</span></a>
-            </div>
-          </div>
-        </article>
-
-        <article class="course-card">
-          <figure class="mini-figure course-visual course-visual--chain">
-            <img src="assets/source-backed/care-chain-hems-takeoff.jpg" loading="lazy" alt="Air ambulance helicopter photograph"><small class="sb-home-credit">Julian Herzog（Wikimedia Commons 用户，本人作品） · CC BY 4.0 · <a href="https://commons.wikimedia.org/wiki/File:DRF_Eurocopter_EC135_Christoph_44_D-HDRK_G%C3%B6ttingen_2017_03.jpg" target="_blank" rel="noreferrer">原图出处 / Source</a></small>
-            <figcaption><div class="board-title"><span>Trauma care chain</span><span class="tag approved"><span class="zh">教学发布</span><span class="en">Teaching release</span></span></div><div class="course-visual-points"><span><span class="zh">预警</span><span class="en">Pre-alert</span></span><span><span class="zh">交接</span><span class="en">Handoff</span></span><span><span class="zh">复评</span><span class="en">Reassess</span></span></div></figcaption>
-          </figure>
-          <div class="course-card-body">
-            <h3><span class="zh">创伤救治链总览</span><span class="en">Trauma Care Chain Overview</span></h3>
-            <p class="muted"><span class="zh">把院前预警、到院交接、xABCDE、休克识别、资源协调和转运交接连成系统课程。</span><span class="en">Connects pre-alert, bay handoff, xABCDE, shock recognition, resource coordination, and transfer handoff into one system course.</span></p>
-            <div class="tag-row"><span class="tag">TRAUMA-ACADEMY-004</span><span class="tag approved"><span class="zh">教学版</span><span class="en">Teaching edition</span></span></div>
-            <div class="course-meta">
-              <span><strong><span class="zh">来源输入</span><span class="en">Source input</span></strong><br><span class="zh">Obsidian 流程路径结构。</span><span class="en">Obsidian pathway structure.</span></span>
-              <span><strong><span class="zh">课程边界</span><span class="en">Boundary</span></strong><br><span class="zh">只做观察、报告、资源、复评。</span><span class="en">Observation, reporting, resources, reassessment only.</span></span>
-            </div>
-            <a class="button primary" href="courses/trauma-care-chain.html"><span class="zh">打开课程</span><span class="en">Open course</span></a>
-          </div>
-        </article>
-
-        <article class="course-card">
-          <figure class="mini-figure course-visual course-visual--bay">
-            <img src="assets/source-backed/trauma-bay-resuscitation-room.jpg" loading="lazy" alt="CHUM resuscitation room photograph"><small class="sb-home-credit">Calvin411（Wikimedia Commons 用户，本人作品） · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:CHUM_Emergency_Level_Resuscitation.jpg" target="_blank" rel="noreferrer">原图出处 / Source</a></small>
-            <figcaption><div class="board-title"><span>Trauma bay orientation</span><span class="tag approved"><span class="zh">教学发布</span><span class="en">Teaching release</span></span></div><div class="course-visual-points"><span><span class="zh">空间</span><span class="en">Zones</span></span><span><span class="zh">角色</span><span class="en">Roles</span></span><span><span class="zh">并行任务</span><span class="en">Parallel work</span></span></div></figcaption>
-          </figure>
-          <div class="course-card-body">
-            <h3><span class="zh">第一次进入创伤抢救室</span><span class="en">First Day in the Trauma Bay</span></h3>
-            <p class="muted"><span class="zh">帮助初学者看懂空间、角色、交接信息和团队协作节奏。</span><span class="en">Helps beginners read space, roles, handoff information, and team rhythm.</span></p>
-            <div class="tag-row"><span class="tag">TRAUMA-ACADEMY-001</span><span class="tag approved"><span class="zh">教学版</span><span class="en">Teaching edition</span></span></div>
-            <div class="course-meta">
-              <span><strong><span class="zh">学习对象</span><span class="en">Learners</span></strong><br><span class="zh">实习、住院、规培、进修医生。</span><span class="en">Interns, residents, trainees, visiting doctors.</span></span>
-              <span><strong><span class="zh">课程边界</span><span class="en">Boundary</span></strong><br><span class="zh">观察和沟通训练，不发布医嘱。</span><span class="en">Observation and communication, no orders.</span></span>
-            </div>
-            <a class="button primary" href="courses/trauma-bay.html"><span class="zh">打开课程</span><span class="en">Open course</span></a>
-          </div>
-        </article>
-
-        <article class="course-card">
-          <figure class="mini-figure course-visual course-visual--xabcde">
-            <div class="tma-card-graphic" role="img" aria-label="xABCDE 六个评估阶段图形标识"><div class="tma-cg-letters"><b aria-hidden="true">x</b><b aria-hidden="true">A</b><b aria-hidden="true">B</b><b aria-hidden="true">C</b><b aria-hidden="true">D</b><b aria-hidden="true">E</b></div><span class="tma-cg-sub">SHARED LANGUAGE · 共同语言</span></div>
-            <figcaption><div class="board-title"><span>xABCDE primary survey</span><span class="tag approved"><span class="zh">来源已建立</span><span class="en">Sources mapped</span></span></div><div class="course-visual-points course-visual-points--letters"><span class="alert">x</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span></div></figcaption>
-          </figure>
-          <div class="course-card-body">
-            <h3><span class="zh">看懂 xABCDE 创伤初评</span><span class="en">Understanding the xABCDE Primary Survey</span></h3>
-            <p class="muted"><span class="zh">把 x-A-B-C-D-E 理解为观察、报告、团队协作和再评估的共同语言。</span><span class="en">Frames x-A-B-C-D-E as shared language for observation, reporting, teamwork, and reassessment.</span></p>
-            <div class="tag-row"><span class="tag">TRAUMA-ACADEMY-002</span><span class="tag approved"><span class="zh">教学版</span><span class="en">Teaching edition</span></span></div>
-            <div class="course-meta">
-              <span><strong><span class="zh">来源方向</span><span class="en">Source path</span></strong><br><span class="zh">ACS ATLS 11 公开说明。</span><span class="en">ACS ATLS 11 public description.</span></span>
-              <span><strong><span class="zh">课程边界</span><span class="en">Boundary</span></strong><br><span class="zh">框架教学，不复制教材算法。</span><span class="en">Framework teaching, no manual algorithm copied.</span></span>
-            </div>
-            <a class="button primary" href="courses/xabcde.html"><span class="zh">打开课程</span><span class="en">Open course</span></a>
-          </div>
-        </article>
-
-        <article class="course-card">
-          <figure class="mini-figure course-visual course-visual--pelvic">
-            <div class="tma-card-graphic" role="img" aria-label="骨盆创伤课程图形标识"><div class="tma-cg-word">骨盆</div><span class="tma-cg-sub">PELVIC TRAUMA · 隐匿出血 · OCCULT RISK</span></div>
-            <figcaption><div class="board-title"><span>Pelvic trauma</span><span class="tag approved"><span class="zh">来源已建立</span><span class="en">Sources mapped</span></span></div><div class="course-visual-points"><span><span class="zh">机制</span><span class="en">Mechanism</span></span><span class="alert"><span class="zh">隐匿风险</span><span class="en">Occult risk</span></span><span><span class="zh">资源协同</span><span class="en">Coordination</span></span></div></figcaption>
-          </figure>
-          <div class="course-card-body">
-            <h3><span class="zh">骨盆创伤临床思维训练</span><span class="en">Pelvic Trauma Reasoning Lab</span></h3>
-            <p class="muted"><span class="zh">用合成病例逐步训练问题表征、C/E 优先级、隐匿出血担心、资源协调和双层复评。</span><span class="en">A synthetic progressive case for problem representation, C/E priority, occult-bleeding concern, resource coordination, and dual reassessment.</span></p>
-            <div class="tag-row"><span class="tag">TRAUMA-ACADEMY-003</span><span class="tag">45 min</span><span class="tag">interactive case</span><span class="tag approved"><span class="zh">教学版</span><span class="en">Teaching edition</span></span></div>
-            <div class="course-meta">
-              <span><strong><span class="zh">设备呈现</span><span class="en">Device framing</span></strong><br><span class="zh">骨盆带只作沟通节点。</span><span class="en">Pelvic binder as communication node only.</span></span>
-              <span><strong><span class="zh">课程边界</span><span class="en">Boundary</span></strong><br><span class="zh">不写操作步骤或输血比例。</span><span class="en">No procedure steps or transfusion ratios.</span></span>
-            </div>
-            <a class="button primary" href="courses/pelvic-trauma.html"><span class="zh">打开课程</span><span class="en">Open course</span></a>
-          </div>
-        </article>
-        <article class="course-card">
-          <figure class="mini-figure course-visual course-visual--ortho">
-            <div class="ortho-typographic" style="position:absolute; inset:0; z-index:-2; background:#123f2c; color:#f7f1e2; border-radius:10px; padding:34px 20px; text-align:center;">
-              <div style="font-size:26px; font-weight:800; letter-spacing:.06em;"><span class="zh">骨科创伤</span><span class="en">Orthopaedics</span></div>
-              <div style="font-size:13px; letter-spacing:.22em; color:#cfe0d2; margin-top:6px;">ORTHOPAEDICS</div>
-              <div style="font-size:13px; color:#d8e4d6; margin-top:10px;"><span class="zh">脊柱 · 上肢 · 下肢</span><span class="en">Spine · Upper limb · Lower limb</span></div>
-            </div>
-            <figcaption><div class="board-title"><span>Orthopaedics</span><span class="tag review"><span class="zh">教学试用</span><span class="en">Teaching pilot</span></span></div><div class="course-visual-points"><span><span class="zh">脊柱</span><span class="en">Spine</span></span><span><span class="zh">上肢</span><span class="en">Upper limb</span></span><span><span class="zh">下肢</span><span class="en">Lower limb</span></span></div></figcaption>
-          </figure>
-          <div class="course-card-body">
-            <h3><span class="zh">骨科创伤：成人骨折与脱位</span><span class="en">Orthopaedics: Adult Fractures &amp; Dislocations</span></h3>
-            <p class="muted"><span class="zh">12 个教学单元：脊柱 / 上肢 / 下肢三模块，先观察、再理解、再复盘。</span><span class="en">12 teaching units across spine, upper limb and lower limb: observe, understand, then review.</span></p>
-            <div class="tag-row"><span class="tag">TRAUMA-ACADEMY-ORTHO</span><span class="tag review"><span class="zh">教学试用</span><span class="en">Teaching pilot</span></span><span class="tag review"><span class="zh">待教师复核</span><span class="en">Pending teacher review</span></span></div>
-            <div class="course-meta">
-              <span><strong><span class="zh">学习对象</span><span class="en">Learners</span></strong><br><span class="zh">实习、住院、规培、进修医生及护理教学。</span><span class="en">Interns, residents, trainees, visiting doctors, nursing education.</span></span>
-              <span><strong><span class="zh">课程边界</span><span class="en">Boundary</span></strong><br><span class="zh">教学演示，不构成诊疗建议；分类引用不作认证。</span><span class="en">Teaching only, not medical advice; classifications cited, not certified.</span></span>
-            </div>
-            <a class="button primary" href="orthopaedics/index.html"><span class="zh">进入子站</span><span class="en">Open subsite</span></a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="wrap section" id="skills">
-      <div class="section-header">
-        <div>
-          <span class="eyebrow"><span class="zh">新增 · 教师预览</span><span class="en">New · Instructor preview</span></span>
-          <h2 style="margin-top:14px"><span class="zh">Trauma Skills Academy：九项核心技能</span><span class="en">Trauma Skills Academy: Nine Core Skills</span></h2>
-          <p class="muted"><span class="zh">BVM、气管插管、紧急颈前气道、胸腔减压、胸腔闭式引流、EFAST、止血带、骨盆束带和四肢临时固定，统一采用“识别—准备—模拟—核查—复评”结构。</span><span class="en">BVM, tracheal intubation, emergency front-of-neck airway, chest decompression, tube thoracostomy, EFAST, tourniquet, pelvic binder, and temporary extremity splinting share a recognise-prepare-simulate-check-reassess structure.</span></p>
-        </div>
-        <span class="tag warning"><span class="zh">待逐项临床审核</span><span class="en">Claim-level review pending</span></span>
-      </div>
-      <div class="depth-standard-grid">
-        <article class="depth-standard-card"><strong><span class="zh">气道与通气</span><span class="en">Airway &amp; ventilation</span></strong><p>BVM · ETI · FONA</p></article>
-        <article class="depth-standard-card"><strong><span class="zh">胸部与影像</span><span class="en">Thorax &amp; imaging</span></strong><p>Decompression · Drain · EFAST</p></article>
-        <article class="depth-standard-card"><strong><span class="zh">止血与固定</span><span class="en">Haemorrhage &amp; stabilisation</span></strong><p>Tourniquet · Pelvic binder · Splint</p></article>
-        <article class="depth-standard-card"><strong><span class="zh">证据与模拟</span><span class="en">Evidence &amp; simulation</span></strong><p><span class="zh">来源定位、合成病例、视觉脚本与形成性 OSCE。</span><span class="en">Source locators, synthetic cases, visual scripts, and formative OSCE.</span></p></article>
-      </div>
-      <div class="hero-actions" style="margin-top:22px"><a class="button primary" href="courses/trauma-skills-academy.html"><span class="zh">进入九项技能地图</span><span class="en">Open nine-skill map</span></a></div>
-    </section>
-
-    <section class="wrap section" id="curriculum">
-      <div class="section-header">
-        <div>
-          <h2><span class="zh">病种迷你模块矩阵</span><span class="en">Disease Mini-Module Matrix</span></h2>
-          <p class="muted">
-            <span class="zh">四个病种迷你模块与三个脱敏教学病例共同构成可点击矩阵。每个模块逐步升级为“机制—动态查体—监护趋势—影像讨论—处置—循证来源”的完整学习单元。</span>
-            <span class="en">Four disease mini modules and three de-identified teaching cases form a clickable matrix. Each module is being upgraded into a complete unit spanning mechanism, dynamic examination, monitor trends, imaging discussion, management, and traceable evidence.</span>
-          </p>
-        </div>
-      </div>
-      <div class="depth-standard-grid"><article class="depth-standard-card"><strong><span class="zh">1 · 机制与病理生理</span><span class="en">1 · Mechanism and physiology</span></strong><p><span class="zh">解释能量、方向、解剖和时间如何产生损伤。</span><span class="en">Explain how energy, direction, anatomy, and time create injury.</span></p></article><article class="depth-standard-card"><strong><span class="zh">2 · 动态查体与监护</span><span class="en">2 · Dynamic exam and monitoring</span></strong><p><span class="zh">至少两轮查体和三时点趋势，明确与前次相比的变化。</span><span class="en">At least two examination rounds and three trend points, always compared with prior.</span></p></article><article class="depth-standard-card"><strong><span class="zh">3 · 影像团队讨论</span><span class="en">3 · Imaging team discussion</span></strong><p><span class="zh">说明看哪里、回答什么、不能排除什么，以及如何与生理整合。</span><span class="en">State where to look, what is answered, what is not excluded, and how it fits physiology.</span></p></article><article class="depth-standard-card"><strong><span class="zh">4 · 循证处置与复评</span><span class="en">4 · Evidence-based care and reassessment</span></strong><p><span class="zh">用团队决策框架展示支持、升级和专科资源，并链接权威指南。</span><span class="en">Show support, escalation, and specialty resources as a team framework with authoritative links.</span></p></article></div>
-      <div class="stage-grid">
-        <article class="stage-card"><strong><span class="zh">颅脑损伤</span><span class="en">Traumatic brain injury</span></strong><p><span class="zh">A/D 轴：意识、瞳孔、全身生理、影像边界、继发性损伤预防与连续复评。</span><span class="en">A/D axis: mental status, pupils, systemic physiology, imaging limits, secondary-injury prevention, and serial reassessment.</span></p><div class="tag-row"><span class="tag warning"><span class="zh">ACS 2024 来源已建立</span><span class="en">ACS 2024 source mapped</span></span><a class="tag" href="courses/tbi-mini.html"><span class="zh">打开迷你模块</span><span class="en">Open mini module</span></a></div></article>
-        <article class="stage-card"><strong><span class="zh">胸部外伤与连枷胸</span><span class="en">Chest trauma and flail chest</span></strong><p><span class="zh">B 轴完整示范：机制图、反常运动、四阶段监护、影像讨论和循证处置。</span><span class="en">Complete B-axis example: mechanism figure, paradoxical motion, four-stage monitoring, imaging discussion, and evidence-based management.</span></p><div class="tag-row"><span class="tag warning"><span class="zh">2025 最新指南已核对</span><span class="en">Latest 2025 guidance checked</span></span><a class="tag" href="courses/chest-trauma-mini.html"><span class="zh">打开迷你模块</span><span class="en">Open mini module</span></a></div></article>
-        <article class="stage-card"><strong><span class="zh">腹部脏器破裂出血</span><span class="en">Abdominal organ injury and bleeding</span></strong><p><span class="zh">C/E 轴：机制、连续腹部查体、灌注趋势、FAST 边界、增强 CT 与分层处置。</span><span class="en">C/E axis: mechanism, serial examination, perfusion trends, FAST limits, contrast CT, and stratified management.</span></p><div class="tag-row"><span class="tag warning"><span class="zh">WSES 来源已建立</span><span class="en">WSES sources mapped</span></span><a class="tag" href="courses/abdominal-injury-mini.html"><span class="zh">打开迷你模块</span><span class="en">Open mini module</span></a></div></article>
-        <article class="stage-card"><strong><span class="zh">头胸腹骨盆多发伤</span><span class="en">Integrated polytrauma</span></strong><p><span class="zh">整合轴：三张同步地图、并行任务、出血/凝血复评、资源冲突与重新排序。</span><span class="en">Integration axis: synchronized maps, parallel tasks, hemorrhage/coagulation reassessment, resource conflicts, and reprioritization.</span></p><div class="tag-row"><span class="tag warning"><span class="zh">ATLS/大出血指南已建立</span><span class="en">ATLS/bleeding guidance mapped</span></span><a class="tag" href="courses/polytrauma-mini.html"><span class="zh">打开迷你模块</span><span class="en">Open mini module</span></a></div></article>
-        <article class="stage-card"><strong><span class="zh">腹腔脏器损伤与持续失血病例</span><span class="en">Abdominal injury and ongoing hemorrhage case</span></strong><p><span class="zh">高龄多发伤脱敏病例，训练循环趋势、肝脾与腹盆腔出血风险、资源时间轴及不良结局复盘。</span><span class="en">A de-identified older-polytrauma case for perfusion trend, liver/spleen and abdominopelvic bleeding concern, the resource timeline, and adverse-outcome debrief.</span></p><div class="tag-row"><span class="tag approved"><span class="zh">脱敏授权范围内展示</span><span class="en">Shown within de-identified authorization</span></span><a class="tag" href="courses/abdominal-hemorrhagic-shock-case.html"><span class="zh">打开病例</span><span class="en">Open case</span></a></div></article>
-        <article class="stage-card"><strong><span class="zh">多发伤与休克再评估病例</span><span class="en">Polytrauma and shock reassessment case</span></strong><p><span class="zh">脱敏多发骨折、胸部与脊柱损伤病例，训练休克机制再评估、避免锚定及影像信息边界。</span><span class="en">A de-identified fracture, chest, and spine injury case for shock-mechanism reassessment, anchoring avoidance, and imaging-information limits.</span></p><div class="tag-row"><span class="tag approved"><span class="zh">脱敏授权范围内展示</span><span class="en">Shown within de-identified authorization</span></span><a class="tag" href="courses/polytrauma-shock-reassessment-case.html"><span class="zh">打开病例</span><span class="en">Open case</span></a></div></article>
-        <article class="stage-card"><strong><span class="zh">颈椎风险与髋关节脱位病例</span><span class="en">C-spine risk and hip dislocation case</span></strong><p><span class="zh">真实经验脱敏后转为教师预览病例，训练高能量机制、神经症状、髋部畸形和交接复评。</span><span class="en">A de-identified experience converted into a teacher-preview case for mechanism, neurologic symptoms, hip deformity, and handoff reassessment.</span></p><div class="tag-row"><span class="tag approved"><span class="zh">脱敏授权范围内展示</span><span class="en">Shown within de-identified authorization</span></span><a class="tag" href="courses/cspine-hip-dislocation-case.html"><span class="zh">打开病例</span><span class="en">Open case</span></a></div></article>
-        <article class="stage-card"><strong><span class="zh">模拟病例连接</span><span class="en">Simulation case link</span></strong><p><span class="zh">成熟模块可连接 TraumaMaster 模拟病例；课件只做思维预热，评分仍由原系统负责。</span><span class="en">Mature modules can link to TraumaMaster simulation cases; courseware warms up reasoning while scoring stays in the original system.</span></p><span class="tag">scoring unchanged</span></article>
-        <article class="stage-card"><strong><span class="zh">国际化结构</span><span class="en">International structure</span></strong><p><span class="zh">中文和英文内容逐段配对，便于中国医生和国际学习者共同使用。</span><span class="en">Chinese and English are paired section by section for Chinese doctors and international learners.</span></p><span class="tag">bilingual</span></article>
-      </div>
-    </section>
-
-    <section class="wrap section" id="workflow">
-      <div class="section-header">
-        <div>
-          <h2><span class="zh">医生主导、证据约束的制作流程</span><span class="en">Clinician-led, evidence-constrained workflow</span></h2>
-          <p class="muted"><span class="zh">视觉帮助学习，不作为医学证据；医学主张的来源、适用范围与审批决定均保留在可审计台账中。</span><span class="en">Visuals support learning but are not evidence; source, scope, and approval decisions for medical claims are retained in an auditable register.</span></p>
-        </div>
-      </div>
-      <div class="workflow">
-        <div class="workflow-card"><h3>1. Source index</h3><p><span class="zh">从公开指南入口和本地教学资料索引开始。</span><span class="en">Start from public guideline entry points and local teaching-source indexes.</span></p></div>
-        <div class="workflow-card"><h3>2. Claim mapping</h3><p><span class="zh">把教学陈述拆成 claim、来源和审核状态。</span><span class="en">Split teaching statements into claims, sources, and review statuses.</span></p></div>
-        <div class="workflow-card"><h3>3. Visual courseware</h3><p><span class="zh">用图文解释空间、流程、团队和复评。</span><span class="en">Use visuals to teach space, flow, teamwork, and reassessment.</span></p></div>
-        <div class="workflow-card"><h3>4. Clinical review</h3><p><span class="zh">创伤方向主任医师审批后，按批准范围发布；超出范围的内容必须回到人工审核。</span><span class="en">After trauma-chief-physician approval, publish only within the approved scope; out-of-scope content returns to human review.</span></p></div>
-      </div>
-    </section>
-
-    <section class="wrap section">
-      <div class="section-header">
-        <div>
-          <h2><span class="zh">设备与检查只作为团队沟通节点</span><span class="en">Equipment and Tests as Team Communication Nodes Only</span></h2>
-          <p class="muted"><span class="zh">这些名称可以帮助学习者理解救治链，但不写独立操作指导。</span><span class="en">These names help learners understand the care chain, but no standalone procedural instruction is provided.</span></p>
-        </div>
-      </div>
-      <div class="stage-grid">
-        <article class="stage-card"><strong><span class="zh">颈托 / 颈椎保护</span><span class="en">Cervical collar / c-spine protection</span></strong><p><span class="zh">作为 A/E 中的保护意识、角色确认和移动前沟通节点。</span><span class="en">A communication node for protection awareness, role confirmation, and pre-movement team language.</span></p><span class="tag approved"><span class="zh">教学来源已定位</span><span class="en">Teaching source mapped</span></span></article>
-        <article class="stage-card"><strong><span class="zh">骨盆带</span><span class="en">Pelvic binder</span></strong><p><span class="zh">作为骨盆环风险、隐匿出血和资源协作的视觉语言。</span><span class="en">Visual language for pelvic-ring risk, occult bleeding, and resource coordination.</span></p><span class="tag approved"><span class="zh">教学来源已定位</span><span class="en">Teaching source mapped</span></span></article>
-        <article class="stage-card"><strong>EFAST / FAST</strong><p><span class="zh">作为团队是否需要床旁超声信息的讨论节点，不教授扫查步骤。</span><span class="en">A node for whether bedside ultrasound information is being discussed; scanning steps are not taught.</span></p><span class="tag approved"><span class="zh">专题来源已定位</span><span class="en">Topic source mapped</span></span></article>
-        <article class="stage-card"><strong><span class="zh">胸部固定概念</span><span class="en">Chest stabilization concept</span></strong><p><span class="zh">帮助学习者观察胸廓运动、疼痛限制和呼吸支持讨论。</span><span class="en">Helps learners observe chest movement, pain-limited breathing, and respiratory-support discussion.</span></p><span class="tag approved"><span class="zh">专题来源已定位</span><span class="en">Topic source mapped</span></span></article>
-        <article class="stage-card"><strong><span class="zh">床旁 X-ray / CT</span><span class="en">Bedside X-ray / CT</span></strong><p><span class="zh">作为信息获取方式受病情、资源和团队判断影响的教学概念。</span><span class="en">A teaching concept that information gathering depends on condition, resources, and team judgement.</span></p><span class="tag approved"><span class="zh">教学来源已定位</span><span class="en">Teaching source mapped</span></span></article>
-        <article class="stage-card"><strong><span class="zh">气道辅助与插管讨论</span><span class="en">Airway adjuncts and intubation discussion</span></strong><p><span class="zh">只训练识别气道风险、意识变化和向团队报告，不写器械规格、药物或步骤。</span><span class="en">Trains recognition of airway risk, mental-status change, and team reporting; no device sizes, drugs, or steps.</span></p><span class="tag approved"><span class="zh">教学来源已定位</span><span class="en">Teaching source mapped</span></span></article>
-      </div>
-    </section>
-
-    <section class="wrap section" id="sources">
-      <div class="section-header">
-        <div>
-          <h2><span class="zh">来源索引与审核状态</span><span class="en">Source Index and Review Status</span></h2>
-          <p class="muted"><span class="zh">公开来源入口与专题定位共同支撑教学主张；具体适用范围以课程内提示和审批台账为准。</span><span class="en">Public source entry points and topic locators support teaching claims; course notices and the approval register define the applicable scope.</span></p>
-        </div>
-      </div>
-      <div class="source-grid">
-        <article class="claim" data-review-status="source_verified"><code>PUBLIC-SOURCE-ACS-ATLS-11</code><p><span class="zh">ACS ATLS 11 公开页面可作为 xABCDE 课程框架来源入口。</span><span class="en">ACS ATLS 11 public page can index the xABCDE course frame.</span></p><a class="tag approved" href="https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/"><span class="zh">查看公开来源</span><span class="en">View public source</span></a></article>
-        <article class="claim" data-review-status="source_verified"><code>PUBLIC-SOURCE-ACS-ATLS-ABOUT</code><p><span class="zh">ACS ATLS 课程介绍用于确认课程性质和公开说明边界。</span><span class="en">ACS ATLS about page is used to confirm course nature and public-description boundaries.</span></p><a class="tag approved" href="https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/about/"><span class="zh">查看公开来源</span><span class="en">View public source</span></a></article>
-        <article class="claim" data-review-status="source_verified"><code>PUBLIC-SOURCE-NICE-NG39</code><p><span class="zh">NICE NG39 可作为重大创伤初始评估与管理的公开审核入口。</span><span class="en">NICE NG39 can serve as a public review entry for major trauma initial assessment and management.</span></p><a class="tag approved" href="https://www.nice.org.uk/guidance/NG39"><span class="zh">查看公开来源</span><span class="en">View public source</span></a></article>
-        <article class="claim" data-review-status="source_verified"><code>PUBLIC-SOURCE-ACS-TBI-BEST-PRACTICES</code><p><span class="zh">ACS TBI 最佳实践指南可作为颅脑损伤未来模块来源索引。</span><span class="en">ACS TBI best practices can index the future traumatic brain injury module.</span></p><a class="tag approved" href="https://www.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf"><span class="zh">查看公开来源</span><span class="en">View public source</span></a></article>
-        <article class="claim" data-review-status="source_verified"><code>PUBLIC-SOURCE-EAST-PMG</code><p><span class="zh">EAST 指南库可作为胸部、腹部和创伤专题的公开来源入口。</span><span class="en">EAST guideline library can serve as a public source entry for chest, abdominal, and trauma topics.</span></p><a class="tag approved" href="https://www.east.org/education-resources/practice-management-guidelines"><span class="zh">查看公开来源</span><span class="en">View public source</span></a></article>
-        <article class="claim" data-review-status="source_verified"><code>PUBLIC-SOURCE-ACEP-FAST</code><p><span class="zh">ACEP FAST 资料可作为床旁超声教学角色的来源入口。</span><span class="en">ACEP FAST material can index the teaching role of bedside ultrasound.</span></p><a class="tag approved" href="https://www.acep.org/sonoguide/basic/fast"><span class="zh">查看公开来源</span><span class="en">View public source</span></a></article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer wrap">
-    <span class="zh">Trauma Master Academy 创伤救治全流程教学平台。教学演示，不替代临床判断。</span>
-    <span class="en">Trauma Master Academy full-pathway trauma education platform. Educational demo only; not a substitute for clinical judgement.</span>
-  </footer>
-  <script src="assets/site.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>创伤救治学院 | TraumaMaster Academy</title>
+<link rel="icon" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/academy-refresh.css?v=20261007h">
+</head>
+<body data-lang="zh" class="tma-v2 academy-page" data-academy-home>
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">TM</span><span>TraumaMaster Academy</span></a>
+<nav class="nav"><a href="#learning-path"><span class="zh">学习路径</span><span class="en">Learning paths</span></a><a href="#modules"><span class="zh">课程</span><span class="en">Courses</span></a><a href="courses/quality-governance.html"><span class="zh">质量治理</span><span class="en">Quality governance</span></a>
+</nav>
+<div class="language-toggle"><button type="button" class="active" data-set-lang="zh">中文</button><button type="button" data-set-lang="en">EN</button>
+</div>
+</header>
+<main id="top">
+<section class="wrap hero">
+<div>
+<p class="eyebrow"><span class="zh">从临床现场到课堂训练</span><span class="en">From clinical practice to classroom learning</span>
+</p>
+<h1><span class="zh">把创伤救治学成一条完整的路线</span><span class="en">Learn the whole trauma care pathway</span>
+</h1>
+<p class="lead"><span class="zh">先选你的学习层级，再用图解、病例与监督下技能训练，学会评估、协作和持续复评。</span><span class="en">Choose your level, then learn assessment, teamwork and reassessment through visuals, cases and supervised skills.</span>
+</p>
+<div class="hero-actions"><a class="button primary" href="#learning-path"><span class="zh">选择学习路径</span><span class="en">Choose your path</span></a><a class="button" href="#modules"><span class="zh">浏览六门主干课</span><span class="en">Browse six core courses</span></a>
+</div>
+</div>
+<figure><img src="assets/generated/homepage/trauma-care-chain-cinematic-v2.png" alt="Conceptual illustration of trauma teamwork, not patient evidence">
+<figcaption><span class="zh">教学概念图：预警、交接、初评、协作与复评。</span><span class="en">Concept illustration: alert, handover, assessment, teamwork and reassessment.</span>
+</figcaption>
+</figure>
+</section>
+<section class="wrap section" id="learning-path">
+<p class="eyebrow">01 · <span class="zh">从这里开始</span><span class="en">Start here</span>
+</p>
+<h2><span class="zh">我现在处于哪个学习阶段？</span><span class="en">Where am I in my training?</span>
+</h2>
+<div class="academy-tier-grid"><button type="button" data-learner-level="intern" aria-pressed="false"><strong><span class="zh">我是实习医生</span><span class="en">I am an intern</span></strong><small><span class="zh">识别线索，清楚报告。</span><span class="en">Recognize cues and report clearly.</span></small></button><button type="button" data-learner-level="resident" aria-pressed="false"><strong><span class="zh">我是规培医生</span><span class="en">I am a resident</span></strong><small><span class="zh">判断时机，监督下练习。</span><span class="en">Judge timing and practise under supervision.</span></small></button><button type="button" data-learner-level="attending" aria-pressed="false"><strong><span class="zh">我是青年主治</span><span class="en">I am an early attending</span></strong><small><span class="zh">统筹团队，调度资源。</span><span class="en">Lead teams and coordinate resources.</span></small></button>
+</div>
+<div class="academy-path" data-learning-path aria-live="polite">
+</div>
+</section>
+<section class="wrap section" id="care-chain">
+<p class="eyebrow">02 · <span class="zh">共享心智模型</span><span class="en">Shared mental model</span>
+</p>
+<h2><span class="zh">创伤救治链地图</span><span class="en">Trauma care chain map</span>
+</h2>
+<ol class="academy-chain">
+<li><b><span class="zh">院前预警</span><span class="en">Pre-alert</span></b><small><span class="zh">机制与时间</span><span class="en">Mechanism and timing</span></small>
+</li>
+<li><b><span class="zh">团队启动</span><span class="en">Team activation</span></b><small><span class="zh">角色与准备</span><span class="en">Roles and readiness</span></small>
+</li>
+<li><b><span class="zh">xABCDE</span><span class="en">xABCDE</span></b><small><span class="zh">威胁与并行任务</span><span class="en">Threats and parallel tasks</span></small>
+</li>
+<li><b><span class="zh">复苏与止血</span><span class="en">Resuscitation</span></b><small><span class="zh">措施与反应</span><span class="en">Actions and response</span></small>
+</li>
+<li><b><span class="zh">二次/三次评估</span><span class="en">Secondary/tertiary survey</span></b><small><span class="zh">防遗漏与复评</span><span class="en">Missed-injury prevention</span></small>
+</li>
+<li><b><span class="zh">归处交接</span><span class="en">Disposition handover</span></b><small><span class="zh">责任人与待办</span><span class="en">Owners and pending tasks</span></small>
+</li>
+</ol>
+<p><span class="zh">x 与 C 使用红色提示致命出血/循环威胁；A、B、D、E 使用深青，并始终保留字母。</span><span class="en">Red x and C indicate lethal bleeding/circulatory threats; A, B, D and E use deep teal with letters always visible.</span>
+</p>
+<div><span class="academy-axis" data-axis="x">x</span> <span class="academy-axis" data-axis="a">A</span> <span class="academy-axis" data-axis="b">B</span> <span class="academy-axis" data-axis="c">C</span> <span class="academy-axis" data-axis="d">D</span> <span class="academy-axis" data-axis="e">E</span>
+</div>
+<p><a class="button" href="courses/trauma-care-chain.html"><span class="zh">进入救治链课程</span><span class="en">Open the care-chain course</span></a>
+</p>
+</section>
+<section class="wrap section" id="modules">
+<p class="eyebrow">03 · <span class="zh">主干课程</span><span class="en">Core courses</span>
+</p>
+<h2><span class="zh">六门主干课程</span><span class="en">Six core courses</span>
+</h2>
+<div class="course-grid">
+<article class="course-card">
+<figure><img loading="lazy" src="assets/generated/homepage/trauma-care-chain-cinematic-v2.png" alt="Conceptual teaching illustration">
+</figure>
+<div class="course-card-body">
+<div class="course-meta-line"><span>25 <span class="zh">分钟</span><span class="en">min</span></span><span class="tag"><span class="zh">教学课程</span><span class="en">Teaching course</span></span>
+</div>
+<h3><span class="zh">第一次进入创伤抢救室</span><span class="en">First day in the trauma bay</span>
+</h3>
+<p class="muted"><span class="zh">认清空间与角色，完成第一份团队简报。</span><span class="en">Read the room and roles; give your first team briefing.</span>
+</p><a class="button primary" href="courses/trauma-bay.html"><span class="zh">开始学习</span><span class="en">Start learning</span></a>
+</div>
+</article>
+<article class="course-card">
+<figure><img loading="lazy" src="assets/images/xabcde/overview/xabcde-primary-survey-map.png" alt="Conceptual teaching illustration">
+</figure>
+<div class="course-card-body">
+<div class="course-meta-line"><span>45 <span class="zh">分钟</span><span class="en">min</span></span><span class="tag"><span class="zh">教学课程</span><span class="en">Teaching course</span></span>
+</div>
+<h3><span class="zh">看懂 xABCDE 创伤初评</span><span class="en">xABCDE primary survey</span>
+</h3>
+<p class="muted"><span class="zh">把威胁、信息缺口和复评放在同一张图里。</span><span class="en">Connect threats, information gaps and reassessment.</span>
+</p><a class="button primary" href="courses/xabcde.html"><span class="zh">开始学习</span><span class="en">Start learning</span></a>
+</div>
+</article>
+<article class="course-card">
+<figure><img loading="lazy" src="assets/illustrations/node-resources-vivid.png" alt="Conceptual teaching illustration">
+</figure>
+<div class="course-card-body">
+<div class="course-meta-line"><span>45 <span class="zh">分钟</span><span class="en">min</span></span><span class="tag"><span class="zh">教学课程</span><span class="en">Teaching course</span></span>
+</div>
+<h3><span class="zh">骨盆创伤临床思维</span><span class="en">Pelvic trauma reasoning</span>
+</h3>
+<p class="muted"><span class="zh">辨认隐匿出血风险，连接骨盆带技能与 MDT。</span><span class="en">Recognize occult bleeding and connect binder skills with MDT care.</span>
+</p><a class="button primary" href="courses/pelvic-trauma.html"><span class="zh">开始学习</span><span class="en">Start learning</span></a>
+</div>
+</article>
+<article class="course-card">
+<figure><img loading="lazy" src="assets/generated/homepage/trauma-care-chain-cinematic-v2.png" alt="Conceptual teaching illustration">
+</figure>
+<div class="course-card-body">
+<div class="course-meta-line"><span>35 <span class="zh">分钟</span><span class="en">min</span></span><span class="tag"><span class="zh">教学课程</span><span class="en">Teaching course</span></span>
+</div>
+<h3><span class="zh">创伤救治链总览</span><span class="en">Trauma care chain</span>
+</h3>
+<p class="muted"><span class="zh">从院前信息到归处交接，明确每一步责任。</span><span class="en">Connect pre-alert to disposition with clear ownership.</span>
+</p><a class="button primary" href="courses/trauma-care-chain.html"><span class="zh">开始学习</span><span class="en">Start learning</span></a>
+</div>
+</article>
+<article class="course-card">
+<figure><img loading="lazy" src="assets/disaster-v9-route.png" alt="Conceptual teaching illustration">
+</figure>
+<div class="course-card-body">
+<div class="course-meta-line"><span>180 <span class="zh">分钟</span><span class="en">min</span></span><span class="tag"><span class="zh">教学课程</span><span class="en">Teaching course</span></span>
+</div>
+<h3><span class="zh">创伤急救与灾难医学</span><span class="en">Trauma and disaster medicine</span>
+</h3>
+<p class="muted"><span class="zh">四个学时，从单个患者走向系统资源与综合推演。</span><span class="en">Four lessons from one patient to system capacity and simulation.</span>
+</p><a class="button primary" href="courses/trauma-disaster-medicine.html"><span class="zh">开始学习</span><span class="en">Start learning</span></a>
+</div>
+</article>
+<article class="course-card">
+<figure><img loading="lazy" src="assets/images/xabcde/stages/e-exposure.png" alt="Conceptual teaching illustration">
+</figure>
+<div class="course-card-body">
+<div class="course-meta-line"><span>180 <span class="zh">分钟</span><span class="en">min</span></span><span class="tag"><span class="zh">教学课程</span><span class="en">Teaching course</span></span>
+</div>
+<h3><span class="zh">骨科创伤：骨折与脱位</span><span class="en">Orthopaedics: fractures and dislocations</span>
+</h3>
+<p class="muted"><span class="zh">比较结构、稳定性与神经血管，学习成人十二单元。</span><span class="en">Compare anatomy, stability and neurovascular status across twelve adult units.</span>
+</p><a class="button primary" href="orthopaedics/index.html"><span class="zh">开始学习</span><span class="en">Start learning</span></a>
+</div>
+</article>
+</div>
+<h3><span class="zh">补齐临床闭环</span><span class="en">Complete the clinical learning loop</span>
+</h3>
+<div class="academy-extension-grid"><a href="courses/damage-control-resuscitation.html"><strong><span class="zh">损伤控制复苏</span><span class="en">Damage control resuscitation</span></strong>
+<p><span class="zh">止血、TXA、输血策略与四个数字锚点。</span><span class="en">Hemorrhage control, TXA, transfusion and four numeric anchors.</span>
+</p></a><a href="courses/secondary-tertiary-survey.html"><strong><span class="zh">二次/三次评估与漏诊</span><span class="en">Secondary/tertiary survey</span></strong>
+<p><span class="zh">AMPLE、头到脚查体和防遗漏闭环。</span><span class="en">AMPLE, head-to-toe examination and missed-injury prevention.</span>
+</p></a><a href="courses/special-populations.html"><strong><span class="zh">老年、儿童、孕妇与烧伤</span><span class="en">Special populations and burns</span></strong>
+<p><span class="zh">关注普通成人路径不能覆盖的风险。</span><span class="en">Assess risks beyond routine adult pathways.</span>
+</p></a><a href="courses/documentation-handover.html"><strong><span class="zh">文书、告知与交接</span><span class="en">Documentation and handover</span></strong>
+<p><span class="zh">把评估、沟通和未解问题留在记录里。</span><span class="en">Record assessment, communication and unresolved concerns.</span>
+</p></a>
+</div>
+</section>
+<section class="wrap section" id="skills">
+<p class="eyebrow">04 · <span class="zh">监督下练习</span><span class="en">Supervised practice</span>
+</p>
+<h2><span class="zh">九项技能，把知识练成行为</span><span class="en">Nine skills: turn knowledge into action</span>
+</h2>
+<p><span class="zh">每项按识别、准备、模型演练、效果确认和失败升级组织，配可打印 OSCE 核对单。</span><span class="en">Each skill covers recognition, preparation, trainer practice, effect confirmation and failure escalation, with a printable OSCE checklist.</span>
+</p>
+<ul class="academy-skills-list">
+<li><a href="courses/trauma-skill.html?id=bvm"><span class="zh">球囊面罩通气</span><span class="en">BVM ventilation</span><span aria-hidden="true">→</span></a>
+</li>
+<li><a href="courses/trauma-skill.html?id=intubation"><span class="zh">气管插管</span><span class="en">Tracheal intubation</span><span aria-hidden="true">→</span></a>
+</li>
+<li><a href="courses/trauma-skill.html?id=cricothyrotomy"><span class="zh">紧急颈前气道</span><span class="en">Emergency front-of-neck airway</span><span aria-hidden="true">→</span></a>
+</li>
+<li><a href="courses/trauma-skill.html?id=needle-decompression"><span class="zh">胸腔减压</span><span class="en">Chest decompression</span><span aria-hidden="true">→</span></a>
+</li>
+<li><a href="courses/trauma-skill.html?id=tube-thoracostomy"><span class="zh">胸腔闭式引流</span><span class="en">Tube thoracostomy</span><span aria-hidden="true">→</span></a>
+</li>
+<li><a href="courses/trauma-skill.html?id=efast"><span class="zh">EFAST 床旁超声</span><span class="en">EFAST</span><span aria-hidden="true">→</span></a>
+</li>
+<li><a href="courses/trauma-skill.html?id=tourniquet"><span class="zh">止血带</span><span class="en">Tourniquet</span><span aria-hidden="true">→</span></a>
+</li>
+<li><a href="courses/trauma-skill.html?id=pelvic-binder"><span class="zh">骨盆带</span><span class="en">Pelvic binder</span><span aria-hidden="true">→</span></a>
+</li>
+<li><a href="courses/trauma-skill.html?id=splinting"><span class="zh">四肢临时固定</span><span class="en">Temporary splinting</span><span aria-hidden="true">→</span></a>
+</li>
+</ul>
+<div class="hero-actions"><a class="button primary" href="courses/trauma-skills-academy.html"><span class="zh">进入技能地图</span><span class="en">Open skill map</span></a><a class="button" href="courses/osce-checklists.html"><span class="zh">打印九项 OSCE 表</span><span class="en">Print nine OSCE sheets</span></a>
+</div>
+</section>
+<section class="wrap section" id="curriculum">
+<p class="eyebrow">05 · <span class="zh">病例与专题</span><span class="en">Cases and focused lessons</span>
+</p>
+<h2><span class="zh">把新信息放回复评循环</span><span class="en">Return new information to reassessment</span>
+</h2>
+<div class="academy-case-grid"><a href="courses/tbi-mini.html"><strong><span class="zh">颅脑损伤</span><span class="en">Traumatic brain injury</span></strong>
+<p><span class="zh">意识、瞳孔与继发性损伤预防。</span><span class="en">Consciousness, pupils and secondary injury prevention.</span>
+</p></a><a href="courses/chest-trauma-mini.html"><strong><span class="zh">胸部创伤</span><span class="en">Chest trauma</span></strong>
+<p><span class="zh">胸廓、呼吸趋势与胸部技能衔接。</span><span class="en">Chest movement, breathing trends and thoracic skills.</span>
+</p></a><a href="courses/abdominal-injury-mini.html"><strong><span class="zh">腹部损伤</span><span class="en">Abdominal injury</span></strong>
+<p><span class="zh">隐匿出血、FAST 边界和连续查体。</span><span class="en">Occult bleeding, FAST limits and serial examination.</span>
+</p></a><a href="courses/polytrauma-mini.html"><strong><span class="zh">多发伤整合</span><span class="en">Integrated polytrauma</span></strong>
+<p><span class="zh">解剖、生理和并行任务。</span><span class="en">Anatomy, physiology and parallel tasks.</span>
+</p></a><a href="courses/open-pelvic-injury-case.html"><strong><span class="zh">开放性骨盆伤 MDT 复盘</span><span class="en">Open pelvic injury MDT debrief</span></strong>
+<p><span class="zh">真实病例脱敏改编，逐步释放和风险复查。</span><span class="en">Adapted de-identified real case with staged release and risk review.</span>
+</p></a><a href="courses/polytrauma-shock-reassessment-case.html"><strong><span class="zh">休克机制再评估</span><span class="en">Shock-mechanism reassessment</span></strong>
+<p><span class="zh">识别锚定偏差，整合未解问题。</span><span class="en">Recognize anchoring and integrate unresolved concerns.</span>
+</p></a>
+</div>
+<details style="margin-top:20px">
+<summary><span class="zh">更多病例讨论</span><span class="en">More case discussions</span>
+</summary>
+<p><a href="courses/abdominal-hemorrhagic-shock-case.html"><span class="zh">腹部持续出血复盘</span><span class="en">Ongoing abdominal hemorrhage debrief</span></a> · <a href="courses/cspine-hip-dislocation-case.html"><span class="zh">颈椎风险与髋脱位</span><span class="en">C-spine risk and hip dislocation</span></a>
+</p>
+</details>
+</section>
+<section class="wrap section academy-about" id="about"><span id="safety"></span>
+<h2><span class="zh">关于这套课程</span><span class="en">About these courses</span>
+</h2>
+<p><span class="zh">用于医学教育、课堂讨论和监督下模拟训练。真实患者的决策与操作由具备相应资质、授权的团队依据本地规范完成。</span><span class="en">For medical education, classroom discussion and supervised simulation. Real-patient decisions and procedures require appropriately credentialed and authorized teams following local policy.</span>
+</p><a class="button" href="courses/quality-governance.html"><span class="zh">查看来源、分层范围与质量治理</span><span class="en">View sources, tier scope and quality governance</span></a>
+</section>
+</main>
+<footer class="wrap footer"><span class="zh">用于医学教育和监督下模拟训练；真实患者的决策与操作遵循本地规范及授权。</span><span class="en">For medical education and supervised simulation; real-patient decisions and procedures follow local policy and authorization.</span>
+</footer>
+<script src="assets/site.js">
+</script>
+<script src="assets/academy-curriculum.js?v=20261007f">
+</script>
+<script src="assets/academy-learning.js?v=20261007f">
+</script>
 </body>
 </html>

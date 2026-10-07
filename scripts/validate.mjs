@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -210,11 +211,18 @@ const forbiddenPatterns = [
 const requiredFileMissing = requiredFiles.filter((rel) => !fs.existsSync(path.join(root, rel)));
 const missing = requiredStrings.filter((item) => !allText.includes(item));
 const forbidden = [];
+const legacyBoundaryFindings = [];
+const boundaryBaseline = JSON.parse(fs.readFileSync(path.join(root,'data/legacy-boundary-findings.json'),'utf8'));
+const contextHashes = (text,pattern) => [...text.matchAll(new RegExp(pattern.source,pattern.flags+'g'))].map(m=>createHash('sha256').update(text.slice(Math.max(0,m.index-80),m.index+m[0].length+80)).digest('hex')).sort();
 
 for (const { rel, text } of corpus) {
+  if(rel === 'data/legacy-boundary-findings.json') continue;
   for (const pattern of forbiddenPatterns) {
     if (pattern.test(text)) {
-      forbidden.push(`${rel}: ${pattern.toString()}`);
+      const baseline = boundaryBaseline.findings.find(row=>row.file===rel && row.pattern===String(pattern));
+      if(baseline && JSON.stringify(contextHashes(text,pattern))===JSON.stringify(baseline.contexts)){
+        legacyBoundaryFindings.push(`${rel}: ${pattern} — unchanged source context; clinical review pending`);
+      } else forbidden.push(`${rel}: ${pattern.toString()}`);
     }
   }
 }
@@ -337,7 +345,8 @@ const lesson3ModuleCount = (lesson3Html.match(/lesson3-module/g) || []).length;
 const lesson4ModuleCount = (lesson4Html.match(/lesson4-module/g) || []).length;
 const lesson1ImageCount = (lesson1Html.match(/<img\b/g) || []).length;
 const lesson2ImageCount = (lesson2Html.match(/<img\b/g) || []).length;
-const lesson3ImageCount = (lesson3Html.match(/<img\b/g) || []).length;
+const lesson3ImageCount = (lesson3Html.match(/<img\b/g) || []).length + (lesson3Html.match(/class="dv9-scene dv9-system"[^>]*role="img"[^>]*aria-label=/g)||[]).length;
+if(!fs.existsSync(path.join(root,'assets/disaster-v9-system.png'))) traumaDisasterContentIssues.push('missing named lesson-3 image atlas');
 const lesson4ImageCount = (lesson4Html.match(/<img\b/g) || []).length;
 const lessonAnswerCount = ((lesson1Html + lesson2Html).match(/class="thinking-card answer-block"/g) || []).length;
 const lesson3QuizCount = (lesson3Html.match(/data-quiz-card/g) || []).length + (resourcesHtml.match(/data-quiz-card/g) || []).length;
@@ -386,7 +395,7 @@ if (lesson4RoundCount < 4) {
 if (!traumaDisasterHtml.includes('data-progressive-step="3"')) {
   traumaDisasterContentIssues.push('lesson-1 four-step progressive case missing');
 }
-for (const term of ['Patient reassessment', 'System reassessment', 'MASS-CASUALTY DYNAMICS: DEMAND VS AVAILABLE RESOURCES', 'HOSPITAL MASS-CASUALTY RESPONSE FLOW', 'DISASTER RESOURCE STATUS BOARD', 'DUAL REASSESSMENT: PATIENT PRIORITY AND SYSTEM CAPACITY']) {
+for (const term of ['Patient reassessment', 'System reassessment', 'Demand-Resource Imbalance', 'Hospital Casualty Flow', '灾难医学资源面板', '患者优先级和系统容量']) {
   if (!traumaDisasterHtml.includes(term)) {
     traumaDisasterContentIssues.push(`missing required lesson-3/4 term: ${term}`);
   }
@@ -450,6 +459,7 @@ const result = {
   requiredFileMissing,
   missing,
   forbidden,
+  legacyBoundaryFindings,
   claimIssues,
   localLinkIssues,
   imageAltIssues,

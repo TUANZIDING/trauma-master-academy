@@ -1,5 +1,7 @@
 (function () {
   const list = window.TRAUMA_SKILLS || [];
+  const teachingImages={bvm:'bvm-team-ventilation',intubation:'intubation',cricothyrotomy:'cricothyrotomy','needle-decompression':'chest-assessment','tube-thoracostomy':'tube-thoracostomy',efast:'efast',tourniquet:'tourniquet','pelvic-binder':'pelvic-risk',splinting:'splinting'};
+  const teachingImage=skill=>`../assets/trauma-skills/realism/${teachingImages[skill.id]}.png`;
   const sourceCatalog = window.TRAUMA_SKILL_SOURCES || {};
   const params = new URLSearchParams(window.location.search);
   const selected = list.find((item) => item.id === params.get("id")) || list[0];
@@ -39,7 +41,7 @@
     grid.innerHTML = list.map((skill, index) => `
       <article class="skill-card accent-${skill.accent}">
         <div class="skill-card-visual">
-          <img src="${skill.heroImage}" alt="${skill.titleEn} source photograph" loading="lazy" /><small class="skill-card-credit">${escapeHtml(skill.heroAttribution)}</small>
+          <img src="${teachingImage(skill)}" alt="${skill.titleEn} conceptual teaching illustration" loading="lazy" /><small class="skill-card-credit">${bilingual("AI 教学示意", "AI teaching illustration")}</small>
           <span class="skill-number">${String(index + 1).padStart(2, "0")}</span>
           <strong>${skill.icon}</strong>
         </div>
@@ -150,7 +152,7 @@
   function assessmentSection(skill) {
     return `
       <section class="skill-section formative-board" data-assessment>
-        <div class="section-heading"><div class="section-kicker">05 · ${bilingual("形成性反馈", "Formative feedback")}</div><h2>${bilingual("记录行为证据，不急着给一个总分", "Record behavioural evidence—not a premature total score")}</h2><p>${bilingual(skill.assessment.noteZh, skill.assessment.noteEn)}</p></div>
+        <div class="section-heading"><div class="section-kicker">05 · ${bilingual("形成性反馈", "Formative feedback")}</div><h2>${bilingual("记录行为证据，不急着给一个总分", "Record behavioural evidence—not a premature total score")}</h2><p>${bilingual("本页在线行为观察不合并总分；前后测及纸质 OSCE 的分数只作本轮形成性反馈，无统一合格线或独立执业认证。导师记录行为依据和下一项改进。", "Online behavior ratings here are not combined into a total. Pre/posttest and paper OSCE scores are formative feedback only, without a universal pass mark or independent-practice certification. Record evidence and one next improvement.")}</p></div>
         <div class="assessment-grid">
           ${skill.assessment.domains.map((domain, index) => `<article class="assessment-domain"><span class="domain-number">0${index + 1}</span><h3>${bilingual(domain.titleZh, domain.titleEn)}</h3><ul>${domain.behavioursZh.map((item, i) => `<li>${bilingual(item, domain.behavioursEn[i])}</li>`).join("")}</ul><div class="rating-group" role="group" aria-label="${domain.titleZh}观察等级">${skill.assessment.levels.map((level) => `<button type="button" data-domain="${domain.id}" data-rating="${level.id}" aria-pressed="false">${bilingual(level.zh, level.en)}</button>`).join("")}</div></article>`).join("")}
         </div>
@@ -164,8 +166,8 @@
     document.title = `${selected.titleZh} | Trauma Skills Academy`;
     root.innerHTML = `
       <section class="skill-detail-hero accent-${selected.accent}">
-        <div class="skill-hero-copy"><span class="eyebrow">${selected.code} · ${bilingual(selected.domainZh, selected.domainEn)}</span><h1>${bilingual(selected.titleZh, selected.titleEn)}</h1><p class="lead">${bilingual(selected.objectiveZh, selected.objectiveEn)}</p><div class="tag-row"><span class="tag warning">${bilingual("教师预览 / 模拟训练草案", "Instructor preview / simulation draft")}</span><span class="tag">${bilingual("逐条临床复核中", "Claim-level clinical review in progress")}</span></div></div>
-        <figure class="skill-hero-image"><img src="${selected.heroImage}" alt="${selected.titleEn} source photograph" /><figcaption>${bilingual("真实来源图：训练/设备场景；不是本课病例影像", "Authentic source training/equipment image; not the course patient")}<br>${escapeHtml(selected.heroAttribution)}</figcaption></figure>
+        <div class="skill-hero-copy"><span class="eyebrow">${bilingual(selected.domainZh, selected.domainEn)}</span><h1>${bilingual(selected.titleZh, selected.titleEn)}</h1><p class="lead">${bilingual(selected.objectiveZh, selected.objectiveEn)}</p><div class="tag-row"><span class="tag warning">${bilingual("教师预览 / 模拟训练草案", "Instructor preview / simulation draft")}</span><span class="tag">${bilingual("逐条临床复核中", "Claim-level clinical review in progress")}</span></div></div>
+        <figure class="skill-hero-image"><img src="${teachingImage(selected)}" alt="${selected.titleEn} conceptual teaching illustration" /><figcaption>${bilingual("AI 教学示意：用于理解任务，非病例或操作成效证据", "AI teaching illustration of tasks, not case evidence or proof of procedural success")}</figcaption></figure>
       </section>
       <section class="skill-section"><div class="section-heading"><div class="section-kicker">01 · ${bilingual("能力路线", "Competency route")}</div><h2>${bilingual("每个节点有观察任务、来源边界与复评问题", "Each node has an observation task, source limits and reassessment question")}</h2><p>${bilingual("点击五个节点，查看‘看什么—如何组织—下一次确认什么’。", "Select each node to inspect what to observe, how to organise, and what to confirm next.")}</p></div>${routeSection(selected)}</section>
       ${decisionLadder(selected)}

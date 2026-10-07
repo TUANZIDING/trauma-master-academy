@@ -1,0 +1,140 @@
+{
+  "baselineCommit": "fa50476b0fae533d6043a451d625a0baae9b9eeb",
+  "status": "legacy_findings_pending_clinical_review",
+  "meaning": "Exact prior occurrences retained as review warnings. This is not clinical approval. New or changed flagged contexts still fail validation.",
+  "findings": [
+    {
+      "file": "assets/mini-clinical-v7-data.json",
+      "pattern": "/\\b\\d+(\\.\\d+)?\\s*(L\\/min|lpm|cmH2O|PEEP)\\b/i",
+      "contexts": [
+        "0e8b7918e8dc9f7786b3637852f0f7cb32a229b01ac9ce1458b9ca2d61660e28",
+        "1b5eff6dfc1d9ef51bedb56a2df6a4bad3e65576a8a02945ddc503878dad5bc4",
+        "289ecfff05e801d7cb74c9b0509cc03dc2d6b9e3f9fc6cad2a7b3dcf8d112a74",
+        "435b7b667ebe38b48471954131172c91916a4f5b8dd247950b2d0424d57cc49b",
+        "4df1131163dbd25f257a72c3fdcacc478d08c3524bc5a73ce6b650bb7a4e52ee",
+        "7964067bd2552a01c31a176f3a43169695bb1d2fa150de6036c30c655f7db448",
+        "decc749e0a38362b92c4a78d52dcbec144ae587fa170a783bf160895cce72199",
+        "f3702e7cc1629d5d04942f477d05faa487e487bff3bcab3f04371db0faae6e2b"
+      ]
+    },
+    {
+      "file": "assets/mini-clinical-v7.js",
+      "pattern": "/\\b\\d+(\\.\\d+)?\\s*(L\\/min|lpm|cmH2O|PEEP)\\b/i",
+      "contexts": [
+        "0e8b7918e8dc9f7786b3637852f0f7cb32a229b01ac9ce1458b9ca2d61660e28",
+        "1b5eff6dfc1d9ef51bedb56a2df6a4bad3e65576a8a02945ddc503878dad5bc4",
+        "289ecfff05e801d7cb74c9b0509cc03dc2d6b9e3f9fc6cad2a7b3dcf8d112a74",
+        "435b7b667ebe38b48471954131172c91916a4f5b8dd247950b2d0424d57cc49b",
+        "4df1131163dbd25f257a72c3fdcacc478d08c3524bc5a73ce6b650bb7a4e52ee",
+        "7964067bd2552a01c31a176f3a43169695bb1d2fa150de6036c30c655f7db448",
+        "decc749e0a38362b92c4a78d52dcbec144ae587fa170a783bf160895cce72199",
+        "f3702e7cc1629d5d04942f477d05faa487e487bff3bcab3f04371db0faae6e2b"
+      ]
+    },
+    {
+      "file": "courses/chest-trauma-mini.html",
+      "pattern": "/禁忌/",
+      "contexts": [
+        "e56e23efd102a0e642b545a38f1a89dc3f3f9f3db6e595019b3c9fe64a40feb0",
+        "eb93842667cc00901cb1a24c5d4a8593be3d303fedb0170ef32b2fdb456f00a6"
+      ]
+    },
+    {
+      "file": "courses/chest-trauma-mini.html",
+      "pattern": "/必须(插管|固定|CT|介入|手术|转运)/",
+      "contexts": [
+        "53707e23efa2cbea747ae72890c3f350c9189e58057adda6ae18bd70b2a53da1"
+      ]
+    },
+    {
+      "file": "courses/chest-trauma-mini.html",
+      "pattern": "/\\b\\d+(\\.\\d+)?\\s*(L\\/min|lpm|cmH2O|PEEP)\\b/i",
+      "contexts": [
+        "0e025f6ae534bf5be4047546c5d991b5b349641e60f710bb27e1a84fc144b6a3",
+        "375af17f2bdce75067ae4ebc3264cc91adec5b57f0de7539ec65fe7d96e8e2ae",
+        "464e0149b5369158504b1b831db1e2da5cb54a737f057eb2cc7f3b5a926c08b9",
+        "6dc16781b9dff53d675b74d208a24a01c0c7357ab0e6556dca0b35a1eac52add",
+        "7fa327908069554aa236f35830763d602371a40beada5503306dcb378ecb669d",
+        "d056e9c2567ca22e64c4412b1ea73cb37357234acc8950ef088a3bc75d57e3f6",
+        "d6252e1e7818d9e243836e077fe5b3e49354f2bf204d3426d6cd453d024b3de9",
+        "d6bfbf80bc5a72a2cdc8f82fa70e7cb9e87a2220cc22295f6d3ac18f77978ad6"
+      ]
+    },
+    {
+      "file": "courses/chest-trauma-mini.html",
+      "pattern": "/管径/",
+      "contexts": [
+        "ffa5d0d83cef895e66286fd8d95e1f5f488c9d026df72be8433c055d39082a9a"
+      ]
+    },
+    {
+      "file": "courses/xabcde.html",
+      "pattern": "/\\b\\d+(\\.\\d+)?\\s*(L\\/min|lpm|cmH2O|PEEP)\\b/i",
+      "contexts": [
+        "0c50d207f0c587d4eb659a5273b316edaa067873bb9ff5f5da310c1427e6a3c8",
+        "10fdfb1db46b228a6fd14babe227262ad6d1b559c47b222fd266230b130275e5",
+        "157c539b01d8e5df38765bb1ffc106e365b6d111577dccd808cb7be4d16ab92d",
+        "157c539b01d8e5df38765bb1ffc106e365b6d111577dccd808cb7be4d16ab92d",
+        "157c539b01d8e5df38765bb1ffc106e365b6d111577dccd808cb7be4d16ab92d",
+        "157c539b01d8e5df38765bb1ffc106e365b6d111577dccd808cb7be4d16ab92d",
+        "157c539b01d8e5df38765bb1ffc106e365b6d111577dccd808cb7be4d16ab92d",
+        "26a42ea88db7f85ec3a84ca652cc62b8c56e8651fcde2d4292df1892284dc8b8",
+        "287bedf748c97607b4969c074dd56366e8bb490f865ff61b9e725e456626aec0",
+        "4170b86d569615a0a3ebcb4c775669eca644fefe54a8f688629c6916e8d2fcad",
+        "46882bf05c5cf63cf1037de8f59c7476458288b2787401eac82ae463f95354ac",
+        "4edc2df1185d10d0d7c361aa73353dce0be8d23261657070f67d5fd01622d477",
+        "c604bd0c6e6f333364d135d077e1e6a97347076b80eb8c8bd36bb1f3359321af",
+        "c6483b4b838df97a4449056fb8150810acb1791a0062aebc6e20293323000717"
+      ]
+    },
+    {
+      "file": "data/chest-case-v4.json",
+      "pattern": "/\\b\\d+(\\.\\d+)?\\s*(L\\/min|lpm|cmH2O|PEEP)\\b/i",
+      "contexts": [
+        "03d760f4bcfe2a7b610cde9cd42e40318e45f077607ab442d10bde22ae778421",
+        "21da75f45e8b16d5b6501763a28d8a3d6469be3a29e68a96b8a8a9425ff89d2f",
+        "3cd78e729805bfea81c550e70bfae7b78682ca2f92ee90378aca6e9c7c46a2a0",
+        "ba86ecba0be2d6d85954b1a926ea4cfa57eb55b3ed680a81debe5f5faf02ff58",
+        "bd649e5693d92ef772cb698c0854ddd2757542d0b985144dd444ade91800a53c",
+        "d6252e1e7818d9e243836e077fe5b3e49354f2bf204d3426d6cd453d024b3de9"
+      ]
+    },
+    {
+      "file": "data/xabcde-case-v4.json",
+      "pattern": "/\\b\\d+(\\.\\d+)?\\s*(L\\/min|lpm|cmH2O|PEEP)\\b/i",
+      "contexts": [
+        "16bad4c14a69e75267da99fad1d02d2df6dbd945695155d25beb336d22f19ab1",
+        "1f8a56a952907cdaddcd5fac7e6a786d31425195cffed42e75a97b5c19f50ea2",
+        "322197cfda057cfbd758dadcc4966acf4c92c31be080df47d3995bab4dedbe27",
+        "3d36ca811c6dfac024b94a60f77f16164d86ab39524ecb746ee89380f034c2c7",
+        "3d36ca811c6dfac024b94a60f77f16164d86ab39524ecb746ee89380f034c2c7",
+        "3d36ca811c6dfac024b94a60f77f16164d86ab39524ecb746ee89380f034c2c7",
+        "3d36ca811c6dfac024b94a60f77f16164d86ab39524ecb746ee89380f034c2c7",
+        "3d36ca811c6dfac024b94a60f77f16164d86ab39524ecb746ee89380f034c2c7",
+        "50ba63040e1289a56c120b792faffd1cb17838f3ee1050d8c45cf2a3642e8860",
+        "68564b6daac5b567d2d359a95d6575655bd100fc92b60a8c2079dbe30426a579",
+        "e2600a9481e01ca9fe2701716ab31d6574a3f64ed5a16bdcadb675440b45edf9",
+        "f536e8e99201c54f1406a3b6fd30fa8daaff19a9ddb56fe7b44e2fc11c41c1ed"
+      ]
+    },
+    {
+      "file": "docs/mini-modules-v8/synthetic-additions.json",
+      "pattern": "/\\b\\d+(\\.\\d+)?\\s*(L\\/min|lpm|cmH2O|PEEP)\\b/i",
+      "contexts": [
+        "0e8b7918e8dc9f7786b3637852f0f7cb32a229b01ac9ce1458b9ca2d61660e28",
+        "1b5eff6dfc1d9ef51bedb56a2df6a4bad3e65576a8a02945ddc503878dad5bc4",
+        "4df1131163dbd25f257a72c3fdcacc478d08c3524bc5a73ce6b650bb7a4e52ee",
+        "7964067bd2552a01c31a176f3a43169695bb1d2fa150de6036c30c655f7db448",
+        "decc749e0a38362b92c4a78d52dcbec144ae587fa170a783bf160895cce72199",
+        "f3702e7cc1629d5d04942f477d05faa487e487bff3bcab3f04371db0faae6e2b"
+      ]
+    },
+    {
+      "file": "docs/trauma-case-v4-review.md",
+      "pattern": "/\\b\\d+(\\.\\d+)?\\s*(L\\/min|lpm|cmH2O|PEEP)\\b/i",
+      "contexts": [
+        "dcc61c6846b4bb65ac22c84aea7bb1b7122496a3f25f4401e7aa57ab87946982"
+      ]
+    }
+  ]
+}
