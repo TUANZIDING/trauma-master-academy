@@ -32,8 +32,8 @@
         "GCS": "14 · E4 V4 M6",
         "T": "35.8 °C",
         "time": [
-          "院前 · 到院前12分钟",
-          "Prehospital · 12 min before arrival"
+          "伤后13 min · 院前",
+          "13 min after injury · prehospital"
         ],
         "oxygen": [
           "空气；随后开始吸氧，现场流量未记录",
@@ -41,8 +41,8 @@
         ]
       },
       "question": [
-        "胸部症状明显，是否只准备胸部检查？",
-        "With prominent chest symptoms, should preparation focus only on the chest?"
+        "到院前如何同时准备？",
+        "How should pre-arrival preparation be organized?"
       ],
       "good": [
         "保留全身威胁，团队并行准备并核对未知信息。",
@@ -52,7 +52,50 @@
         "单病种准备可能遗漏其他立即威胁。",
         "Single-injury preparation can miss other immediate threats."
       ],
-      "labs": []
+      "labs": [],
+      "injuryMinutes": 13,
+      "options": [
+        {
+          "label": [
+            "按xABCDE分工、预警血库与胸部救援",
+            "Assign xABCDE roles, alert blood bank and thoracic rescue"
+          ],
+          "correct": true,
+          "feedback": [
+            "高能量机制与多轴症状要求并行准备。",
+            "High-energy mechanism and multiple-axis symptoms require parallel readiness."
+          ]
+        },
+        {
+          "label": [
+            "只预约胸部CT",
+            "Book chest CT alone"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：高能量机制与多轴症状要求并行准备。",
+            "This misses current risk: High-energy mechanism and multiple-axis symptoms require parallel readiness."
+          ]
+        },
+        {
+          "label": [
+            "只为左大腿骨折准备固定",
+            "Prepare only for the femoral injury"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：高能量机制与多轴症状要求并行准备。",
+            "This misses current risk: High-energy mechanism and multiple-axis symptoms require parallel readiness."
+          ]
+        }
+      ],
+      "references": [
+        "cn-shock",
+        "bts",
+        "nice",
+        "cn-prehospital",
+        "acs-mtp"
+      ]
     },
     {
       "title": [
@@ -68,8 +111,8 @@
         "A treated wound does not establish adequate haemorrhage control; shock mechanism is not yet established."
       ],
       "priority": [
-        "接手同时启动初评与复苏；复述措施、时间及未解风险。",
-        "Begin primary survey and resuscitation during handoff; repeat interventions, timing and unresolved risks."
+        "实习：计算并报告SI/ABC、请求MTP；规培：监督下准备TXA 1 g静脉输注≥10 min+1 g/8 h、骨盆带大转子水平与EFAST；主治：启动MTP、协调手术/介入。以本院规范为准。",
+        "Intern: report SI/ABC and request MTP; resident: supervised TXA preparation (1 g IV over at least ten minutes then 1 g/eight hours), binder at greater trochanters and EFAST; attending: activate MTP and coordinate surgery/intervention. Follow institutional policy."
       ],
       "reassess": [
         "同一初评时间点，后续x/A/B/C/D/E卡不代表等待数分钟。",
@@ -83,17 +126,17 @@
         "GCS": "14 · E4 V4 M6",
         "T": "35.5 °C",
         "time": [
-          "到院0分钟 · 同一次初评",
-          "Arrival 0 min · same primary survey"
+          "伤后25 min · 到院0 min并行初评",
+          "25 min after injury · arrival primary survey"
         ],
         "oxygen": [
-          "面罩氧疗6 L/min；实际FiO₂未测",
-          "Face-mask oxygen 6 L/min; actual FiO₂ unmeasured"
+          "初始面罩6 L/min不足：改储氧面罩15 L/min，目标94–98%；以本院规范为准。",
+          "Initial 6 L/min mask oxygen is inadequate: reservoir mask 15 L/min, target 94–98%; follow institutional policy."
         ]
       },
       "question": [
-        "如何把交接转成当前的问题表征？",
-        "How should handoff become a current problem representation?"
+        "此刻应启动什么？",
+        "What should be activated now?"
       ],
       "good": [
         "高能量多发伤伴呼吸受损与灌注不足，机制仍需并行判断。",
@@ -103,7 +146,55 @@
         "只复述诊断名称会漏掉变化与未解问题。",
         "Repeating a diagnostic label alone misses changes and unresolved questions."
       ],
-      "labs": []
+      "labs": [
+        [
+          "乳酸4.8 mmol/L；SI=126/88≈1.43；ABC心率/血压两项使评分至少2。",
+          "Lactate 4.8 mmol/L; SI=126/88 about 1.43; HR/BP give at least two ABC points."
+        ]
+      ],
+      "injuryMinutes": 25,
+      "options": [
+        {
+          "label": [
+            "启动MTP评估、TXA与止血资源并行",
+            "Activate MTP assessment, TXA and hemorrhage-control resources"
+          ],
+          "correct": true,
+          "feedback": [
+            "HR/SBP两项ABC已至少2，伤后25 min在TXA时间窗内。",
+            "Two ABC criteria are present; at25 minutes the TXA window is open."
+          ]
+        },
+        {
+          "label": [
+            "先全身CT后联系血库",
+            "Whole-body CT before blood-bank contact"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：HR/SBP两项ABC已至少2，伤后25 min在TXA时间窗内。",
+            "This misses current risk: Two ABC criteria are present; at25 minutes the TXA window is open."
+          ]
+        },
+        {
+          "label": [
+            "先大量晶体液等Hb下降再输血",
+            "Large crystalloid volume while waiting for hemoglobin to fall"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：HR/SBP两项ABC已至少2，伤后25 min在TXA时间窗内。",
+            "This misses current risk: Two ABC criteria are present; at25 minutes the TXA window is open."
+          ]
+        }
+      ],
+      "references": [
+        "cn-shock",
+        "bts",
+        "nice",
+        "cn-prehospital",
+        "acs-mtp"
+      ]
     },
     {
       "title": [
@@ -119,8 +210,8 @@
         "Dressing appearance does not quantify total blood loss; speech does not close airway risk."
       ],
       "priority": [
-        "具备资质团队处理立即威胁，学习者报告、协助与复评。",
-        "Qualified clinicians address immediate threats; learners report, assist and reassess."
+        "实习：计算并报告SI/ABC、请求MTP；规培：监督下准备TXA 1 g静脉输注≥10 min+1 g/8 h、骨盆带大转子水平与EFAST；主治：启动MTP、协调手术/介入。以本院规范为准。",
+        "Intern: report SI/ABC and request MTP; resident: supervised TXA preparation (1 g IV over at least ten minutes then 1 g/eight hours), binder at greater trochanters and EFAST; attending: activate MTP and coordinate surgery/intervention. Follow institutional policy."
       ],
       "reassess": [
         "看敷料是否继续变化、声音/分泌物/意识是否改变。",
@@ -134,17 +225,17 @@
         "GCS": "14 · E4 V4 M6",
         "T": "35.5 °C",
         "time": [
-          "到院0分钟 · 同一次初评",
-          "Arrival 0 min · same primary survey"
+          "伤后25 min · 到院0 min并行初评",
+          "25 min after injury · arrival primary survey"
         ],
         "oxygen": [
-          "面罩氧疗6 L/min；实际FiO₂未测",
-          "Face-mask oxygen 6 L/min; actual FiO₂ unmeasured"
+          "储氧面罩15 L/min，目标SpO₂94–98%；以本院规范为准。",
+          "Reservoir mask 15 L/min, target SpO2 94–98%; follow institutional policy."
         ]
       },
       "question": [
-        "能说话且敷料未扩大，能否完成x和A？",
-        "Can x and A be closed because he speaks and the dressing is not expanding?"
+        "可说短句但口内有血，A如何处理？",
+        "He speaks short phrases but has blood in the mouth. Airway action?"
       ],
       "good": [
         "不能；持续复评并将新变化立即报告。",
@@ -154,7 +245,55 @@
         "一次观察不能排除随后恶化。",
         "One observation cannot exclude later deterioration."
       ],
-      "labs": []
+      "labs": [
+        [
+          "乳酸4.8 mmol/L；SI=126/88≈1.43；ABC心率/血压两项使评分至少2。",
+          "Lactate 4.8 mmol/L; SI=126/88 about 1.43; HR/BP give at least two ABC points."
+        ]
+      ],
+      "injuryMinutes": 25,
+      "options": [
+        {
+          "label": [
+            "吸引清理、复评保护能力、保持SMR并准备失败救援",
+            "Suction, reassess protection, maintain SMR and prepare rescue"
+          ],
+          "correct": true,
+          "feedback": [
+            "说话提供信息，污染和后续意识变化仍需观察。",
+            "Speech is informative but contamination and consciousness change still require surveillance."
+          ]
+        },
+        {
+          "label": [
+            "说话即判气道安全，不再观察",
+            "Treat speech as proof of a safe airway"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：说话提供信息，污染和后续意识变化仍需观察。",
+            "This misses current risk: Speech is informative but contamination and consciousness change still require surveillance."
+          ]
+        },
+        {
+          "label": [
+            "先撤保护做完整口咽检查再报告",
+            "Remove protection for a full oral examination before reporting"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：说话提供信息，污染和后续意识变化仍需观察。",
+            "This misses current risk: Speech is informative but contamination and consciousness change still require surveillance."
+          ]
+        }
+      ],
+      "references": [
+        "cn-shock",
+        "bts",
+        "nice",
+        "cn-prehospital",
+        "acs-mtp"
+      ]
     },
     {
       "title": [
@@ -170,8 +309,8 @@
         "Bedside imaging is not yet available; oxygenation does not describe ventilation fully."
       ],
       "priority": [
-        "团队立即评估呼吸威胁与支持需求，不为等待影像延误临床危急处理。",
-        "The team immediately assesses respiratory threats and support needs; critical clinical care must not be delayed for imaging."
+        "实习：计算并报告SI/ABC、请求MTP；规培：监督下准备TXA 1 g静脉输注≥10 min+1 g/8 h、骨盆带大转子水平与EFAST；主治：启动MTP、协调手术/介入。以本院规范为准。",
+        "Intern: report SI/ABC and request MTP; resident: supervised TXA preparation (1 g IV over at least ten minutes then 1 g/eight hours), binder at greater trochanters and EFAST; attending: activate MTP and coordinate surgery/intervention. Follow institutional policy."
       ],
       "reassess": [
         "RR、深度、说话、氧疗需求、SpO₂和意识一起比较。",
@@ -185,17 +324,17 @@
         "GCS": "14 · E4 V4 M6",
         "T": "35.5 °C",
         "time": [
-          "到院0分钟 · 同一次初评",
-          "Arrival 0 min · same primary survey"
+          "伤后25 min · 到院0 min并行初评",
+          "25 min after injury · arrival primary survey"
         ],
         "oxygen": [
-          "面罩氧疗6 L/min；实际FiO₂未测",
-          "Face-mask oxygen 6 L/min; actual FiO₂ unmeasured"
+          "储氧面罩15 L/min，目标SpO₂94–98%；以本院规范为准。",
+          "Reservoir mask 15 L/min, target SpO2 94–98%; follow institutional policy."
         ]
       },
       "question": [
-        "胸部CT能否先于当前威胁评估？",
-        "Should chest CT precede assessment of current threats?"
+        "休克伴单侧呼吸音弱、持续低氧，先做什么？",
+        "Shock, unilateral quiet breath sounds and persistent hypoxia: first?"
       ],
       "good": [
         "先结合生理处理立即威胁，床旁信息与复苏并行。",
@@ -205,7 +344,55 @@
         "把CT当先决条件可能延误团队处理。",
         "Making CT a prerequisite can delay team care."
       ],
-      "labs": []
+      "labs": [
+        [
+          "乳酸4.8 mmol/L；SI=126/88≈1.43；ABC心率/血压两项使评分至少2。",
+          "Lactate 4.8 mmol/L; SI=126/88 about 1.43; HR/BP give at least two ABC points."
+        ]
+      ],
+      "injuryMinutes": 25,
+      "options": [
+        {
+          "label": [
+            "床旁立即评估张力/血胸并按资质救援",
+            "Immediately assess tension/hemothorax and provide skilled rescue"
+          ],
+          "correct": true,
+          "feedback": [
+            "严重呼吸/循环损害下疑张力不能为影像延迟。",
+            "Suspected tension with severe respiratory/circulatory compromise must not wait for imaging."
+          ]
+        },
+        {
+          "label": [
+            "等增强CT确诊才减压",
+            "Await contrast CT before decompression"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：严重呼吸/循环损害下疑张力不能为影像延迟。",
+            "This misses current risk: Suspected tension with severe respiratory/circulatory compromise must not wait for imaging."
+          ]
+        },
+        {
+          "label": [
+            "只重复测一次SpO₂",
+            "Repeat saturation alone"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：严重呼吸/循环损害下疑张力不能为影像延迟。",
+            "This misses current risk: Suspected tension with severe respiratory/circulatory compromise must not wait for imaging."
+          ]
+        }
+      ],
+      "references": [
+        "cn-shock",
+        "bts",
+        "nice",
+        "cn-prehospital",
+        "acs-mtp"
+      ]
     },
     {
       "title": [
@@ -221,8 +408,8 @@
         "No quantified urine output or confirmed bleeding source; early Hb cannot alone exclude major blood loss."
       ],
       "priority": [
-        "团队复苏、查找出血与胸部原因、血库及专科协调并行。",
-        "Team resuscitation, haemorrhage/chest assessment, blood-bank and specialty coordination run in parallel."
+        "实习：计算并报告SI/ABC、请求MTP；规培：监督下准备TXA 1 g静脉输注≥10 min+1 g/8 h、骨盆带大转子水平与EFAST；主治：启动MTP、协调手术/介入。以本院规范为准。",
+        "Intern: report SI/ABC and request MTP; resident: supervised TXA preparation (1 g IV over at least ten minutes then 1 g/eight hours), binder at greater trochanters and EFAST; attending: activate MTP and coordinate surgery/intervention. Follow institutional policy."
       ],
       "reassess": [
         "灌注、意识、BP趋势和乳酸后续变化一起复评。",
@@ -236,17 +423,17 @@
         "GCS": "14 · E4 V4 M6",
         "T": "35.5 °C",
         "time": [
-          "到院0分钟 · 同一次初评",
-          "Arrival 0 min · same primary survey"
+          "伤后25 min · 到院0 min并行初评",
+          "25 min after injury · arrival primary survey"
         ],
         "oxygen": [
-          "面罩氧疗6 L/min；实际FiO₂未测",
-          "Face-mask oxygen 6 L/min; actual FiO₂ unmeasured"
+          "储氧面罩15 L/min，目标SpO₂94–98%；以本院规范为准。",
+          "Reservoir mask 15 L/min, target SpO2 94–98%; follow institutional policy."
         ]
       },
       "question": [
-        "Hb 118 g/L是否可以排除持续出血？",
-        "Does Hb 118 g/L exclude ongoing haemorrhage?"
+        "FAST阴性但SBP88，怎样继续C？",
+        "FAST is negative but SBP88 persists. Circulation plan?"
       ],
       "good": [
         "不能，必须放回机制、体征和连续趋势。",
@@ -258,9 +445,52 @@
       ],
       "labs": [
         [
-          "到院2分钟静脉采样：Hb 118 g/L；乳酸4.8 mmol/L；INR 1.3。用于教学的新设数值，不是阈值。",
-          "Venous sample at arrival +2 min: Hb 118 g/L; lactate 4.8 mmol/L; INR 1.3. Newly specified teaching values, not thresholds."
+          "乳酸4.8 mmol/L；SI=126/88≈1.43；ABC心率/血压两项使评分至少2。",
+          "Lactate 4.8 mmol/L; SI=126/88 about 1.43; HR/BP give at least two ABC points."
         ]
+      ],
+      "injuryMinutes": 25,
+      "options": [
+        {
+          "label": [
+            "继续MTP与隐匿出血源评估、协调止血",
+            "Continue MTP/occult-source assessment and coordinate control"
+          ],
+          "correct": true,
+          "feedback": [
+            "阴性FAST不排除骨盆/腹膜后出血。",
+            "Negative FAST does not exclude pelvic/retroperitoneal bleeding."
+          ]
+        },
+        {
+          "label": [
+            "阴性FAST后停止寻找腹膜后来源",
+            "Stop searching retroperitoneum after negative FAST"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：阴性FAST不排除骨盆/腹膜后出血。",
+            "This misses current risk: Negative FAST does not exclude pelvic/retroperitoneal bleeding."
+          ]
+        },
+        {
+          "label": [
+            "仅按肢体创口解释全部休克",
+            "Attribute all shock to the limb wound"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：阴性FAST不排除骨盆/腹膜后出血。",
+            "This misses current risk: Negative FAST does not exclude pelvic/retroperitoneal bleeding."
+          ]
+        }
+      ],
+      "references": [
+        "cn-shock",
+        "bts",
+        "nice",
+        "cn-prehospital",
+        "acs-mtp"
       ]
     },
     {
@@ -269,16 +499,16 @@
         "06 D + E: neurology, missed injury and environment"
       ],
       "info": [
-        "GCS14（E4V4M6），瞳孔等大约3 mm、对光反应存在；四肢可按指令活动但左腿受疼痛限制。暴露检查发现腹部安全带痕与左大腿伤；持续保暖和隐私保护。未反复挤压骨盆以诱发不稳。",
-        "GCS 14 (E4V4M6), equal approximately 3-mm reactive pupils; obeys limb commands, left-leg movement limited by pain. Exposure reveals an abdominal seat-belt mark and left-thigh injury. Maintain warmth and privacy; do not repeatedly compress the pelvis to provoke instability."
+        "GCS14（E4V4M6），瞳孔等大约3 mm、对光反应存在；四肢可按指令活动但左腿受疼痛限制。暴露检查发现腹部安全带痕与左大腿伤；持续保暖和隐私保护。未反复挤压骨盆以诱发不稳。 安全带征伴低血压需警惕空腔脏器伤及Chance型屈曲牵张伤；先床旁FAST/胸片，复苏有反应且允许时CT，不稳定无反应直接止血。",
+        "GCS 14 (E4V4M6), equal approximately 3-mm reactive pupils; obeys limb commands, left-leg movement limited by pain. Exposure reveals an abdominal seat-belt mark and left-thigh injury. Maintain warmth and privacy; do not repeatedly compress the pelvis to provoke instability. A seatbelt mark with hypotension raises concern for hollow-viscus and Chance flexion-distraction injuries; use bedside FAST/chest X-ray, CT only when physiology allows, and direct control for an unstable nonresponder."
       ],
       "unknown": [
         "意识改变可能涉及头伤、低灌注或低氧；瞳孔正常不排除颅内损伤。",
         "Altered consciousness may involve head injury, poor perfusion or hypoxia; normal pupils do not exclude intracranial injury."
       ],
       "priority": [
-        "保护、记录并补查遗漏损伤；新风险立即反馈x/A/B/C。",
-        "Protect, document and identify missed injury; new risks feed immediately back to x/A/B/C."
+        "实习：计算并报告SI/ABC、请求MTP；规培：监督下准备TXA 1 g静脉输注≥10 min+1 g/8 h、骨盆带大转子水平与EFAST；主治：启动MTP、协调手术/介入。以本院规范为准。",
+        "Intern: report SI/ABC and request MTP; resident: supervised TXA preparation (1 g IV over at least ten minutes then 1 g/eight hours), binder at greater trochanters and EFAST; attending: activate MTP and coordinate surgery/intervention. Follow institutional policy."
       ],
       "reassess": [
         "GCS分项、瞳孔、运动和体温与前次比较。",
@@ -292,17 +522,17 @@
         "GCS": "14 · E4 V4 M6",
         "T": "35.5 °C",
         "time": [
-          "到院0分钟 · 同一次初评",
-          "Arrival 0 min · same primary survey"
+          "伤后25 min · 到院0 min并行初评",
+          "25 min after injury · arrival primary survey"
         ],
         "oxygen": [
-          "面罩氧疗6 L/min；实际FiO₂未测",
-          "Face-mask oxygen 6 L/min; actual FiO₂ unmeasured"
+          "储氧面罩15 L/min，目标SpO₂94–98%；以本院规范为准。",
+          "Reservoir mask 15 L/min, target SpO2 94–98%; follow institutional policy."
         ]
       },
       "question": [
-        "新发现应留到全部卡片读完才报告吗？",
-        "Should a new threat wait until every card is read?"
+        "安全带痕、新神经变化和低温，需要哪组任务？",
+        "Seatbelt mark, neurological change and low temperature: tasks?"
       ],
       "good": [
         "不应；教学顺序不等于临床等待顺序。",
@@ -312,7 +542,55 @@
         "任何立即威胁都需及时团队处理。",
         "Any immediate threat requires timely team attention."
       ],
-      "labs": []
+      "labs": [
+        [
+          "乳酸4.8 mmol/L；SI=126/88≈1.43；ABC心率/血压两项使评分至少2。",
+          "Lactate 4.8 mmol/L; SI=126/88 about 1.43; HR/BP give at least two ABC points."
+        ]
+      ],
+      "injuryMinutes": 25,
+      "options": [
+        {
+          "label": [
+            "并行SMR、神经复评、保暖与腹部/脊柱相关伤检查",
+            "Parallel SMR, neurological review, warming and associated-injury assessment"
+          ],
+          "correct": true,
+          "feedback": [
+            "新线索立即改变任务，查体不应加重低温。",
+            "New findings alter tasks immediately; examination should not worsen hypothermia."
+          ]
+        },
+        {
+          "label": [
+            "等待所有卡片完成再报告新发现",
+            "Wait until all cards are complete to report"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：新线索立即改变任务，查体不应加重低温。",
+            "This misses current risk: New findings alter tasks immediately; examination should not worsen hypothermia."
+          ]
+        },
+        {
+          "label": [
+            "先放弃保暖以完成全部暴露",
+            "Stop warming to finish full exposure"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：新线索立即改变任务，查体不应加重低温。",
+            "This misses current risk: New findings alter tasks immediately; examination should not worsen hypothermia."
+          ]
+        }
+      ],
+      "references": [
+        "cn-shock",
+        "bts",
+        "nice",
+        "cn-prehospital",
+        "acs-mtp"
+      ]
     },
     {
       "title": [
@@ -320,40 +598,40 @@
         "07 Reassessment at 8 min: oxygenation better, perfusion unresolved"
       ],
       "info": [
-        "团队已复核敷料、气道、氧疗与呼吸表现，并启动复苏和出血源评估；未给出确定性操作或剂量。新测值提示氧合略改善，但仍心动过速、低血压和灌注担心。",
-        "The team has rechecked dressing, airway, oxygen delivery and respiratory findings, and initiated resuscitation and bleeding-source assessment; no definitive procedure or dose is specified. New observations show slightly better oxygenation but persistent tachycardia, low BP and perfusion concern."
+        "已升级储氧面罩并复核出血、气道、胸部；MTP评估及止血团队联络已启动。氧合改善但BP88/56、HR126、乳酸4.8仍提示灌注问题；复评不是结束。",
+        "Reservoir oxygen and bleeding/airway/chest reassessment are in place; MTP assessment and hemorrhage-control coordination have started. Better oxygenation does not resolve BP88/56, HR126 and lactate4.8 perfusion concern."
       ],
       "unknown": [
         "不能用SpO₂改善宣布稳定；出血源、胸部原因和乳酸趋势仍待明确。",
         "Improved SpO₂ does not establish stability; bleeding source, chest causes and lactate trend remain unresolved."
       ],
       "priority": [
-        "重新排序x/B/C，明确责任人和下一次复评指标。",
-        "Reprioritise x/B/C; assign an owner and variables for the next reassessment."
+        "实习：计算并报告SI/ABC、请求MTP；规培：监督下准备TXA 1 g静脉输注≥10 min+1 g/8 h、骨盆带大转子水平与EFAST；主治：启动MTP、协调手术/介入。以本院规范为准。",
+        "Intern: report SI/ABC and request MTP; resident: supervised TXA preparation (1 g IV over at least ten minutes then 1 g/eight hours), binder at greater trochanters and EFAST; attending: activate MTP and coordinate surgery/intervention. Follow institutional policy."
       ],
       "reassess": [
         "这是预设观察记录；选择题不改变这些数值，不模拟治疗的必然效果。",
         "This is a scripted observation; quiz choices do not change these values or imply a guaranteed treatment effect."
       ],
       "vitals": {
-        "HR": "124 /min",
-        "BP": "90/58 mmHg",
+        "HR": "126 /min",
+        "BP": "88/56 mmHg",
         "RR": "30 /min",
         "SpO₂": "94%",
         "GCS": "14 · E4 V4 M6",
         "T": "35.7 °C",
         "time": [
-          "到院8分钟 · 新的观察记录",
-          "Arrival 8 min · new observed record"
+          "伤后33 min · 到院8 min复评",
+          "33 min after injury · arrival +8 min reassessment"
         ],
         "oxygen": [
-          "面罩氧疗6 L/min；实际FiO₂未测",
-          "Face-mask oxygen 6 L/min; actual FiO₂ unmeasured"
+          "储氧面罩15 L/min，目标SpO₂94–98%；以本院规范为准。",
+          "Reservoir mask 15 L/min, target SpO2 94–98%; follow institutional policy."
         ]
       },
       "question": [
-        "此时可以结束复苏观察吗？",
-        "Can resuscitation observation now end?"
+        "SpO₂改善但灌注未解决，接下来？",
+        "Oxygenation improves but perfusion is unresolved. Next?"
       ],
       "good": [
         "不能，持续处理未解风险并比较趋势。",
@@ -363,7 +641,55 @@
         "单一指标改善不能代表整体恢复。",
         "One improved variable does not establish overall recovery."
       ],
-      "labs": []
+      "labs": [
+        [
+          "乳酸4.8 mmol/L；SI=126/88≈1.43；ABC心率/血压两项使评分至少2。",
+          "Lactate 4.8 mmol/L; SI=126/88 about 1.43; HR/BP give at least two ABC points."
+        ]
+      ],
+      "injuryMinutes": 33,
+      "options": [
+        {
+          "label": [
+            "复评出血控制、血液效果并推进手术/介入路径",
+            "Reassess hemorrhage control/blood response and advance surgery/intervention"
+          ],
+          "correct": true,
+          "feedback": [
+            "单一氧合改善不等于休克解决。",
+            "Improved oxygenation alone does not resolve shock."
+          ]
+        },
+        {
+          "label": [
+            "结束复苏并移入普通等待区",
+            "End resuscitation and move to an ordinary waiting area"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：单一氧合改善不等于休克解决。",
+            "This misses current risk: Improved oxygenation alone does not resolve shock."
+          ]
+        },
+        {
+          "label": [
+            "继续重复面罩调整代替循环处理",
+            "Keep adjusting the mask instead of addressing circulation"
+          ],
+          "correct": false,
+          "feedback": [
+            "该选择会遗漏当前风险：单一氧合改善不等于休克解决。",
+            "This misses current risk: Improved oxygenation alone does not resolve shock."
+          ]
+        }
+      ],
+      "references": [
+        "cn-shock",
+        "bts",
+        "nice",
+        "cn-prehospital",
+        "acs-mtp"
+      ]
     }
   ]
 }

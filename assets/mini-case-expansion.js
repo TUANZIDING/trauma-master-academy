@@ -41,7 +41,7 @@
       panorama: [
         ['机制', '高能量侧向撞击，右前外侧胸壁受力。', 'Mechanism', 'High-energy lateral impact to the right anterolateral chest.'],
         ['到院生理', 'HR 108，BP 116/74，RR 26，SpO₂ 94%（吸氧前）。', 'Arrival physiology', 'HR 108, BP 116/74, RR 26, SpO₂ 94% before oxygen.'],
-        ['胸壁查体', '局部压痛、捏发感，吸气时右前胸局部内陷。', 'Chest-wall exam', 'Focal tenderness and crepitus with inspiratory inward movement of the right anterior segment.'],
+        ['胸壁查体', '局部压痛、捻发感，吸气时右前胸局部内陷。', 'Chest-wall exam', 'Focal tenderness and crepitus with inspiratory inward movement of the right anterior segment.'],
         ['呼吸趋势', '30 分钟后 RR 32，SpO₂ 89%，说话变短，辅助呼吸肌参与。', 'Respiratory trend', 'After 30 min: RR 32, SpO₂ 89%, shorter speech, accessory-muscle use.'],
         ['床旁信息', '肺超声/胸片用于检查气胸、血胸与肺挫伤线索。', 'Bedside information', 'Lung ultrasound and radiography assess pneumothorax, hemothorax, and contusion clues.'],
         ['核心失配', '胸壁损伤不只是“骨折数量”；疼痛、挫伤和疲劳共同决定恶化。', 'Core mismatch', 'Chest-wall injury is not just a fracture count; pain, contusion, and fatigue drive deterioration together.']
@@ -52,7 +52,7 @@
         ['3 · 动态视诊', '吸气时局部内陷，呼气时向外凸；右侧呼吸音减弱。', '请分开报告胸壁运动、通气和氧合。', '3 · Dynamic inspection', 'Local inward inspiration and outward expiration; reduced right breath sounds.', 'Report chest motion, ventilation, and oxygenation separately.'],
         ['4 · 疼痛与分泌物', '深呼吸和咳嗽受限，痰液排出效率下降。', '疼痛如何通过呼吸力学促进肺不张和感染风险？', '4 · Pain and clearance', 'Deep breathing and cough are limited, reducing secretion clearance.', 'How can pain promote atelectasis and infection through respiratory mechanics?'],
         ['5 · 趋势恶化', '30 分钟后 RR 32，SpO₂ 89%，说话变短，辅助肌参与。', '此时“氧饱和度”与“呼吸功”哪个更重要？为什么两者都要看？', '5 · Deterioration', 'After 30 min: RR 32, SpO₂ 89%, short speech, accessory-muscle use.', 'Why must oxygenation and work of breathing be interpreted together?'],
-        ['6 · 影像节点', '影像提示多根胸骨折及肺挫伤，并需继续排查气/血胸。', '影像中哪些发现能解释床边恶化，哪些仍不能？', '6 · Imaging node', 'Imaging suggests multiple rib fractures and lung contusion while pneumothorax/hemothorax remain under assessment.', 'Which findings explain the bedside decline, and which do not?'],
+        ['6 · 影像节点', '影像提示多根肋骨骨折及肺挫伤，并需继续排查气/血胸。', '影像中哪些发现能解释床边恶化，哪些仍不能？', '6 · Imaging node', 'Imaging suggests multiple rib fractures and lung contusion while pneumothorax/hemothorax remain under assessment.', 'Which findings explain the bedside decline, and which do not?'],
         ['7 · 疲劳警报', '若 RR 从 32 降至 22，但意识变差、呼吸变浅，这可能是疲劳而非好转。', '请重新定义“趋势改善”。', '7 · Fatigue alarm', 'A fall in RR from 32 to 22 with worse mentation and shallow breathing may indicate fatigue, not improvement.', 'Redefine what true trend improvement means.'],
         ['8 · 复评契约', '下一次复评应同时比较说话、呼吸功、胸壁运动、呼吸音、SpO₂ 与二氧化碳趋势。', '请指定责任人、时间和升级信号。', '8 · Reassessment contract', 'Compare speech, work, chest motion, breath sounds, SpO₂, and carbon-dioxide trend.', 'Name owner, timing, and escalation signals.']
       ],
@@ -68,7 +68,7 @@
         ['15–60 分钟', '根据趋势升级呼吸支持，并与多模式镇痛、肺卫生及胸壁专科评估并行。', '15–60 min', 'Escalate respiratory support by trend alongside multimodal analgesia, pulmonary hygiene, and chest-wall review.'],
         ['稳定后', '继续前 72 小时呼吸趋势、疼痛控制、排痰能力与并发症监测。', 'After stabilization', 'Continue early respiratory trends, pain control, secretion clearance, and complication surveillance.']
       ],
-      handover: ['患者受高能量右前外侧胸部撞击。到院 HR 108、BP 116/74 mmHg、RR 26、SpO₂ 94%，右前胸局部反常运动、压痛和捏发感，右侧呼吸音减弱。30 分钟后 RR 升至 32、SpO₂ 降至 89%，说话变短且辅助肌参与。当前评估为胸壁不稳定合并肺挫伤导致的进展性呼吸功增加和低氧，仍需快速排查气胸/血胸及其他低氧原因。已进入氧合支持、连续监护、多模式镇痛与肺卫生路径；请在下一时点重复说话能力、呼吸功、胸壁运动、呼吸音、SpO₂ 与二氧化碳趋势，并明确呼吸支持升级责任人。', 'High-energy impact affected the right anterolateral chest. Arrival values were HR 108, BP 116/74 mmHg, RR 26, and SpO₂ 94%, with focal paradoxical motion, tenderness, crepitus, and reduced right breath sounds. Thirty minutes later RR rose to 32, SpO₂ fell to 89%, speech shortened, and accessory muscles were recruited. Current assessment is progressive work of breathing and hypoxemia from chest-wall instability with pulmonary contusion; pneumothorax, hemothorax, and other causes remain under rapid evaluation. Oxygenation, monitoring, multimodal analgesia, and pulmonary hygiene are active. Repeat speech, work, motion, breath sounds, SpO₂, and CO₂ trend at the next checkpoint and name the owner of escalation.']
+      handover: ['患者受高能量右前外侧胸部撞击。到院 HR 108、BP 116/74 mmHg、RR 26、SpO₂ 94%，右前胸局部反常运动、压痛和捻发感，右侧呼吸音减弱。30 分钟后 RR 升至 32、SpO₂ 降至 89%，说话变短且辅助肌参与。当前评估为胸壁不稳定合并肺挫伤导致的进展性呼吸功增加和低氧，仍需快速排查气胸/血胸及其他低氧原因。已进入氧合支持、连续监护、多模式镇痛与肺卫生路径；请在下一时点重复说话能力、呼吸功、胸壁运动、呼吸音、SpO₂ 与二氧化碳趋势，并明确呼吸支持升级责任人。', 'High-energy impact affected the right anterolateral chest. Arrival values were HR 108, BP 116/74 mmHg, RR 26, and SpO₂ 94%, with focal paradoxical motion, tenderness, crepitus, and reduced right breath sounds. Thirty minutes later RR rose to 32, SpO₂ fell to 89%, speech shortened, and accessory muscles were recruited. Current assessment is progressive work of breathing and hypoxemia from chest-wall instability with pulmonary contusion; pneumothorax, hemothorax, and other causes remain under rapid evaluation. Oxygenation, monitoring, multimodal analgesia, and pulmonary hygiene are active. Repeat speech, work, motion, breath sounds, SpO₂, and CO₂ trend at the next checkpoint and name the owner of escalation.']
     },
     tbi: {
       label: ['颅脑损伤与继发性脑损伤预防', 'TBI and prevention of secondary brain injury'],

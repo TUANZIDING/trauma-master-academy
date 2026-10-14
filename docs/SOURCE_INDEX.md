@@ -50,15 +50,15 @@ This file is a source index only. It does not approve any medical claim.
 
 The following local Obsidian notes were used as course-structure inputs, not as clinical approval:
 
-- `/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/02-ATLS课程材料索引.md`
-- `/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/03-急诊创伤总流程路径.md`
-- `/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/04-创伤失血性休克路径.md`
-- `/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/05-骨盆创伤与盆腔出血路径.md`
-- `/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/06-院前急救与突发事件创伤路径.md`
-- `/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/07-创伤性出血血液管理与凝血病.md`
-- `/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/08-TraumaMaster首批课程公开依据核验.md`
-- `/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/cases/README.md`
-- `/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/cases/CASE-TRAUMA-003-高能量交通伤合并颈髓风险与髋关节脱位.md`
+- `本地教学资料`
+- `本地教学资料`
+- `本地教学资料`
+- `本地教学资料`
+- `本地教学资料`
+- `本地教学资料`
+- `本地教学资料`
+- `本地教学资料`
+- `本地教学资料`
 
 ## A+B Expansion Inputs
 

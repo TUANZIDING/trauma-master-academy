@@ -390,7 +390,7 @@
     branchQuestions: [
       {
         stageIndex: 1,
-        promptZh: "四个腹部窗口未见明确液体，但一个窗口受限，最佳报告是哪一句？", promptEn: "No definite fluid is seen in four abdominal windows, but one is limited. Which report is best?",
+        promptZh: "三个腹部窗口加剑突下心包窗未见明确液体，但一个窗口受限，最佳报告是哪一句？", promptEn: "No definite fluid is seen in three abdominal views plus a subxiphoid pericardial view, but one is limited. Which report is best?",
         options: [
           ["accurate", "本次 EFAST 腹部评估未见明确游离液；其中一窗受肠气限制，不能排除腹腔内、腹膜后或其他损伤", "No definite free fluid is seen on this abdominal EFAST assessment; one window is limited by bowel gas, and intraperitoneal, retroperitoneal, or other injury is not excluded", "best-supported", "它区分了可见事实、检查质量和不能回答的问题。", "It separates visible fact, examination quality, and unanswered questions."],
           ["negative", "EFAST 阴性，已排除内出血", "EFAST negative; internal bleeding excluded", "unsafe", "NICE 明确阴性 FAST 不能排除腹腔内或腹膜后出血。", "NICE states that negative FAST does not exclude intraperitoneal or retroperitoneal bleeding."],

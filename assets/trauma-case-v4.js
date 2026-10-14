@@ -3,10 +3,17 @@
   document.querySelectorAll('[data-trauma-case]').forEach(root => {
     const stages = JSON.parse(root.querySelector('[data-tc-data]').textContent);
     let index = 0;
+    const choiceHost=root.querySelector('[data-tc-choice]')?.parentElement;
+    if(choiceHost)root.addEventListener('click',event=>{
+      const button=event.target.closest('[data-tc-option]');if(!button)return;
+      const item=stages[index].options?.[Number(button.dataset.tcOption)];if(!item)return;
+      set('feedback',item.feedback);choiceHost.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+    });
     const el = name => root.querySelector(`[data-tc-${name}]`);
     const set = (name,p) => {el(name).innerHTML=bi(p);};
     function render() {
       const s=stages[index];
+      if(s.options&&choiceHost)choiceHost.innerHTML=s.options.map((o,i)=>`<button type="button" data-tc-option="${i}">${bi(o.label)}</button>`).join('');
       for(const k of ['title','info','unknown','priority','reassess','question'])set(k,s[k]);
       set('time',s.vitals.time);set('oxygen',s.vitals.oxygen);
       el('vitals').innerHTML=['HR','BP','RR','SpO₂','GCS','T'].map(k=>`<div class="tc-vital"><small>${k}</small><strong>${s.vitals[k]}</strong></div>`).join('');
@@ -28,13 +35,10 @@
     render();
   });
 })();
-// Preserve the original case and handoff exercises as optional teacher extension.
+// The four-stage comparison is an instructor extension of the eight-stage chest case.
 (() => {
- if (!document.querySelector('#chest-case-entry')) return;
- const original=document.querySelector('.mini-case-expansion');
- if(!original)return;
- const details=document.createElement('details');details.className='tc-original-extension';
- const summary=document.createElement('summary');
- summary.innerHTML='<span class="zh">教师延伸：原病例复盘、机制权重与交接练习</span><span class="en">Teacher extension: original debrief, mechanisms and handoff</span>';
- original.before(details);details.append(summary,original);
+ const short=document.querySelector('#chest-case-entry');if(!short)return;
+ const details=document.createElement('details');details.className='tc-original-extension';details.dataset.teacherOnly='';
+ details.innerHTML='<summary><span class="zh">教师对照：四步前导病例</span><span class="en">Teacher comparison: four-stage introduction</span></summary>';
+ short.before(details);details.append(short);
 })();

@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-08",
+  "version": "2026-10-14",
   "sources": {
     "cn-shock": {
       "title": [
@@ -7,11 +7,15 @@
         "Chinese emergency consensus on traumatic hemorrhagic shock (2023)"
       ],
       "url": "https://doi.org/10.3760/cma.j.issn.1671-0282.2023.11.006",
-      "locator": "中华急诊医学杂志 32(11):1451–1464; R2, R22, R27, R33–34",
+      "locator": "R2/Table2; R12, R16, R20, R22, R25–29, R33–34; Chinese Emergency Medicine 2023 full PDF",
       "coverage": "full_text_pdf_mirror",
       "domestic": true,
-      "checkedDate": "2026-10-08",
-      "accessUrl": "https://www.icuguideline.com/wp-content/uploads/2023/11/%E5%88%9B%E4%BC%A4%E5%A4%B1%E8%A1%80%E6%80%A7%E4%BC%91%E5%85%8B%E4%B8%AD%E5%9B%BD%E6%80%A5%E8%AF%8A%E4%B8%93%E5%AE%B6%E5%85%B1%E8%AF%86%EF%BC%882023%EF%BC%89.pdf"
+      "checkedDate": "2026-10-14",
+      "accessUrl": "https://www.icuguideline.com/wp-content/uploads/2023/11/%E5%88%9B%E4%BC%A4%E5%A4%B1%E8%A1%80%E6%80%A7%E4%BC%91%E5%85%8B%E4%B8%AD%E5%9B%BD%E6%80%A5%E8%AF%8A%E4%B8%93%E5%AE%B6%E5%85%B1%E8%AF%86%EF%BC%882023%EF%BC%89.pdf",
+      "shortTitle": [
+        "中国休克共识2023",
+        "Chinese shock2023"
+      ]
     },
     "cn-prehospital": {
       "title": [
@@ -22,7 +26,11 @@
       "locator": "Clinical questions 2, 6, 9, 12; recommendations 6, 7, 11; PMC13070844 full XML",
       "coverage": "full_text_xml",
       "domestic": true,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "中国院前共识2026",
+        "Chinese prehospital2026"
+      ]
     },
     "eu-bleeding": {
       "title": [
@@ -30,10 +38,14 @@
         "European major bleeding guideline, sixth edition (2023)"
       ],
       "url": "https://link.springer.com/article/10.1186/s13054-023-04327-7",
-      "locator": "R13, R16, R23, R29, R31, R33–35",
+      "locator": "R5, R13–16, R20–21, R23, R29–31, R33–36; European 2023 sixth edition",
       "coverage": "full_text",
       "domestic": false,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "欧洲出血2023",
+        "European bleeding2023"
+      ]
     },
     "cn-periop": {
       "title": [
@@ -44,7 +56,11 @@
       "locator": "2.4; 3.1, 3.3, 3.8; perioperative scope, not a trauma-specific replacement",
       "coverage": "full_text",
       "domestic": true,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "国内围术期共识",
+        "Chinese perioperative"
+      ]
     },
     "cn-blood": {
       "title": [
@@ -55,7 +71,11 @@
       "locator": "Patient blood management; assessment, consent and post-transfusion evaluation; does not specify the adult 70–90 target",
       "coverage": "official_publication",
       "domestic": true,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "国家卫健委：临床用血技术规范（2025年版）",
+        "NHC clinical blood use technical standard (2025)"
+      ]
     },
     "cn-records": {
       "title": [
@@ -66,8 +86,12 @@
       "locator": "Articles 8, 10, 22(5,8), 25, 27; NHC indexed text; hospital republication cross-check",
       "coverage": "official_index_and_republication",
       "domestic": true,
-      "checkedDate": "2026-10-08",
-      "accessUrl": "https://hospital.seu.edu.cn/2023/0304/c29923a435970/pagem.htm"
+      "checkedDate": "2026-10-14",
+      "accessUrl": "https://hospital.seu.edu.cn/2023/0304/c29923a435970/pagem.htm",
+      "shortTitle": [
+        "病历书写基本规范（2010）",
+        "Basic norms for medical record writing (2010)"
+      ]
     },
     "cn-hip": {
       "title": [
@@ -78,7 +102,11 @@
       "locator": "Official publication; domestic hip-fracture pathway entry only, not a source for the SBP threshold",
       "coverage": "publication_metadata",
       "domestic": true,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "国家卫健委：老年髋部骨折诊疗与管理指南（2022年版）",
+        "NHC geriatric hip fracture care and management guideline (2022)"
+      ]
     },
     "cn-pediatric": {
       "title": [
@@ -89,7 +117,11 @@
       "locator": "9.5.2.2 traumatic hemorrhagic shock; Table 5 excludes emergency rescue/major bleeding",
       "coverage": "full_text_pdf",
       "domestic": true,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "WS/T795—2022",
+        "WS/T795—2022"
+      ]
     },
     "rch": {
       "title": [
@@ -100,7 +132,11 @@
       "locator": "Circulation: initial crystalloid / packed RBC aliquots; reassessment",
       "coverage": "full_text",
       "domestic": false,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "RCH：儿童重大创伤初评",
+        "RCH: major pediatric trauma primary survey"
+      ]
     },
     "qld-pregnancy": {
       "title": [
@@ -111,7 +147,11 @@
       "locator": "Positioning; fetal assessment; Rh D negative / FMH; current PDF F26.31",
       "coverage": "full_text_pdf",
       "domestic": false,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "Queensland妊娠创伤",
+        "Queensland pregnancy"
+      ]
     },
     "aha-pregnancy": {
       "title": [
@@ -122,19 +162,27 @@
       "locator": "Pregnancy recommendations: immediate preparation; goal delivery by 5 minutes; uterus at/above umbilicus",
       "coverage": "full_text",
       "domestic": false,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "AHA2025",
+        "AHA2025"
+      ]
     },
     "cn-burn": {
       "title": [
         "国家卫健委：突发事件烧伤伤员医疗救治规范（2025年版）",
         "NHC emergency burn treatment standard (2025 edition; published 2026)"
       ],
-      "url": "https://doi.org/10.7507/1002-1892.202601151",
-      "locator": "2.1 Table 1; 4.2.2 adult crystalloid/colloid formula; 8.1 children; PMC12948514 indexed full text",
+      "url": "https://www.nhc.gov.cn/ylyjs/zcwj/202601/3c4f6b771aba4ce7bdb8112823f7825a.shtml",
+      "locator": "2.1 Chinese rule of nines; 4.2.2(1–2), 8.1.2, 8.2.2; adult/child resuscitation",
       "coverage": "indexed_primary_sections",
       "domestic": true,
-      "checkedDate": "2026-10-08",
-      "accessUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12948514/"
+      "checkedDate": "2026-10-14",
+      "accessUrl": "https://www.nhc.gov.cn/ylyjs/zcwj/202601/3c4f6b771aba4ce7bdb8112823f7825a/files/%E9%99%84%E4%BB%B62.%E7%AA%81%E5%8F%91%E4%BA%8B%E4%BB%B6%E7%83%A7%E4%BC%A4%E4%BC%A4%E5%91%98%E5%8C%BB%E7%96%97%E6%95%91%E6%B2%BB%E8%A7%84%E8%8C%83%EF%BC%882025%E5%B9%B4%E7%89%88%EF%BC%89.pdf",
+      "shortTitle": [
+        "卫健委烧伤规范2025",
+        "NHC burns2025"
+      ]
     },
     "nice": {
       "title": [
@@ -145,7 +193,11 @@
       "locator": "Assessment, bleeding and specialist care",
       "coverage": "full_text",
       "domestic": false,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "NICE NG39",
+        "NICE NG39"
+      ]
     },
     "acs-mtp": {
       "title": [
@@ -156,7 +208,11 @@
       "locator": "MTP activation / ABC examples",
       "coverage": "full_text_pdf",
       "domestic": false,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "ACS TQIP 大量输血指南",
+        "ACS TQIP massive transfusion guidance"
+      ]
     },
     "pelvic-study": {
       "title": [
@@ -167,7 +223,11 @@
       "locator": "Published observational cohort; not an individual treatment rule",
       "coverage": "previously_checked_full_text",
       "domestic": true,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "IJEM 2025 多发伤骨盆骨折研究",
+        "IJEM 2025 pelvic fracture polytrauma study"
+      ]
     },
     "who": {
       "title": [
@@ -178,7 +238,11 @@
       "locator": "Team checks, transitions and referral",
       "coverage": "full_text",
       "domestic": false,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "WHO 创伤救治核对单与团队交接",
+        "WHO trauma care checklist and team handover"
+      ]
     },
     "rcs-survey": {
       "title": [
@@ -189,7 +253,761 @@
       "locator": "AMPLE; systematic examination; return to primary survey if deteriorating",
       "coverage": "full_text",
       "domestic": false,
-      "checkedDate": "2026-10-08"
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "RCH：二次评估",
+        "RCH secondary survey"
+      ]
+    },
+    "bts": {
+      "title": [
+        "BTS 成人急救氧疗指南（2017）",
+        "BTS emergency oxygen guideline (2017)"
+      ],
+      "url": "https://thorax.bmj.com/content/72/Suppl_1/ii1",
+      "locator": "E2, E5; critically ill adults, reservoir oxygen and titrated targets",
+      "coverage": "primary_sections_checked",
+      "domestic": false,
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "BTS 成人急救氧疗指南（2017）",
+        "BTS emergency oxygen guideline (2017)"
+      ]
+    },
+    "cn-core": {
+      "title": [
+        "医疗质量安全核心制度要点（2018）",
+        "Chinese core medical quality requirements (2018)"
+      ],
+      "url": "https://www.nhc.gov.cn/yzygj/c100068/201804/42ab2552298047679cd6ec733f233862.shtml",
+      "locator": "Shift handover, rescue and critical-value systems; rescue-record signoff cross-checked against hospital appraisal standards",
+      "coverage": "primary_sections_checked",
+      "domestic": true,
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "医疗质量安全核心制度要点（2018）",
+        "Chinese core medical quality requirements (2018)"
+      ]
+    },
+    "cn-transfer": {
+      "title": [
+        "WS/T 815—2023 严重创伤院前与院内信息链接标准",
+        "WS/T 815—2023 severe-trauma information linkage"
+      ],
+      "url": "https://www.nhc.gov.cn/fzs/c100048/202309/3c6a75b497774200b3c39aa1765806e2/files/1733125843463_67689.pdf",
+      "locator": "4.1–4.4 and Appendix A; pre-alert and handover record",
+      "coverage": "primary_sections_checked",
+      "domestic": true,
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "WS/T 815—2023 严重创伤院前与院内信息链接标准",
+        "WS/T 815—2023 severe-trauma information linkage"
+      ]
+    },
+    "ics-transfer": {
+      "title": [
+        "ICS 成人重症转运指南第5版（2026）",
+        "ICS transfer of critically ill adults, fifth edition (2026)"
+      ],
+      "url": "https://ics.ac.uk/static/60aaa368-3687-47f4-ad8f07fc239aed9d/The-Transfer-Of-The-Critically-Ill-Adultedition52026FINALs.pdf",
+      "locator": "Preparation, minimum equipment/medication, documentation, §18 and Appendices 6–8; maternity supplement separate",
+      "coverage": "primary_sections_checked",
+      "domestic": false,
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "ICS 成人重症转运指南第5版（2026）",
+        "ICS transfer of critically ill adults, fifth edition (2026)"
+      ]
+    },
+    "atls11": {
+      "title": [
+        "ACS：ATLS 第11版公开更新",
+        "ACS public ATLS 11 update"
+      ],
+      "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/",
+      "locator": "Public overview: xABCDE, team communication, trauma systems; restricted manual details not reproduced",
+      "coverage": "primary_sections_checked",
+      "domestic": false,
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "ACS：ATLS 第11版公开更新",
+        "ACS public ATLS 11 update"
+      ]
+    },
+    "rcuk-special": {
+      "title": [
+        "RCUK 特殊情况复苏指南（2025）",
+        "RCUK special-circumstances resuscitation (2025)"
+      ],
+      "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/special-circumstances-guidelines",
+      "locator": "Adult traumatic cardiac arrest/peri-arrest; HOTT and prioritized reversible-cause correction; anaphylaxis adult IM500 mcg",
+      "coverage": "primary_sections_checked",
+      "domestic": false,
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "RCUK 特殊情况复苏指南（2025）",
+        "RCUK special-circumstances resuscitation (2025)"
+      ]
+    },
+    "fda-andexxa": {
+      "title": [
+        "FDA：Andexxa安全通讯（2025-12-18）",
+        "FDA Andexxa safety communication (2025-12-18)"
+      ],
+      "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa",
+      "locator": "US commercial sales/manufacture stopped after 2025-12-22",
+      "coverage": "primary_sections_checked",
+      "domestic": false,
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "FDA2025",
+        "FDA2025"
+      ]
+    },
+    "acep-doac-2026": {
+      "title": [
+        "ACEP：DOAC大出血临床政策（2026）",
+        "ACEP DOAC major-bleeding policy (2026)"
+      ],
+      "url": "https://www.acep.org/patient-care/clinical-policies/direct-oral-anticoagulants",
+      "locator": "Level C recommendations, August 2026; adults aged at least 16; shared decision making",
+      "coverage": "primary_sections_checked",
+      "domestic": false,
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "ACEP2026",
+        "ACEP2026"
+      ]
+    },
+    "ncs-sccm-ich-2026": {
+      "title": [
+        "NCS/SCCM：抗栓相关颅内出血更新（2026）",
+        "NCS/SCCM antithrombotic ICH update (2026)"
+      ],
+      "url": "https://link.springer.com/article/10.1007/s12028-026-02601-4",
+      "locator": "Conditional 4F-PCC preference; VHA in traumatic ICH; no platelet-transfusion recommendation for antiplatelet-associated traumatic ICH",
+      "coverage": "primary_sections_checked",
+      "domestic": false,
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "NCS/SCCM2026",
+        "NCS/SCCM2026"
+      ]
+    },
+    "bsh-andexanet-2026": {
+      "title": [
+        "BSH：andexanet立场声明（2026）",
+        "BSH andexanet position statement (2026)"
+      ],
+      "url": "https://b-s-h.org.uk/guidelines/guidelines/use-of-andexanet-alfa-a-british-society-for-haematology-position-statement",
+      "locator": "US cessation versus conditional EU/UK availability; early thrombosis risk",
+      "coverage": "primary_sections_checked",
+      "domestic": false,
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "BSH2026",
+        "BSH2026"
+      ]
+    },
+    "crash3": {
+      "title": [
+        "CRASH-3：颅脑损伤TXA随机试验（2019）",
+        "CRASH-3 TBI TXA randomized trial (2019)"
+      ],
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)32233-0/fulltext",
+      "locator": "Treatment within three hours; mild-to-moderate injury subgroup; not a universal TBI benefit",
+      "coverage": "primary_sections_checked",
+      "domestic": false,
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "CRASH-3",
+        "CRASH-3"
+      ]
+    },
+    "cn-pediatric-expl": {
+      "title": [
+        "儿科输血指南重症/大出血编制说明（2025）",
+        "Chinese pediatric transfusion critical-bleeding interpretation (2025)"
+      ],
+      "url": "https://www.zgddek.com/CN/article/downloadArticleFile.do?attachType=PDF&id=26144",
+      "locator": "Figure 1 example for patients under 50 kg; RBC/FFP20 mL/kg, RBC above40 mL/kg triggers consideration of PLT/cryo, laboratory goals",
+      "coverage": "primary_guideline_author_interpretation_indexed",
+      "domestic": true,
+      "checkedDate": "2026-10-14",
+      "shortTitle": [
+        "儿科输血解读2025",
+        "Pediatric interpretation2025"
+      ]
+    },
+    "wses-chest": {
+      "title": [
+        "WSES-AAST胸部2025",
+        "WSES-AAST thoracic2025"
+      ],
+      "shortTitle": [
+        "WSES-AAST胸部2025",
+        "WSES-AAST thoracic2025"
+      ],
+      "url": "https://link.springer.com/article/10.1186/s13017-025-00651-1",
+      "locator": "Pleural injuries; volumes, tube sizes and surgical escalation",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "east-htx": {
+      "title": [
+        "EAST血胸2021",
+        "EAST hemothorax2021"
+      ],
+      "shortTitle": [
+        "EAST血胸2021",
+        "EAST hemothorax2021"
+      ],
+      "url": "https://www.aast.org/static/effa81ff-76ac-46dc-8ad6019e6dac3791/T6-PatelManagement-of-Hemothorax-PMGAJS-2021.pdf",
+      "locator": "PICO2, conditional pigtail recommendation in stable patients",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "east-edt": {
+      "title": [
+        "EAST复苏性开胸2015",
+        "EAST thoracotomy2015"
+      ],
+      "shortTitle": [
+        "EAST复苏性开胸2015",
+        "EAST thoracotomy2015"
+      ],
+      "url": "https://www.east.org/education-resources/practice-management-guidelines/details/emergency-department-thoracotomy",
+      "locator": "Penetrating thoracic injury, pulseless with signs of life",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "wta-edt": {
+      "title": [
+        "WTA复苏性开胸",
+        "WTA thoracotomy"
+      ],
+      "shortTitle": [
+        "WTA复苏性开胸",
+        "WTA thoracotomy"
+      ],
+      "url": "https://www.westerntrauma.org/western-trauma-association-algorithms/resuscitative-thoracotomy/note-b/",
+      "locator": "Time and mechanism selection; not a stand-alone futility rule",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "svs-btai": {
+      "title": [
+        "SVS主动脉损伤2026",
+        "SVS BTAI2026"
+      ],
+      "shortTitle": [
+        "SVS主动脉损伤2026",
+        "SVS BTAI2026"
+      ],
+      "url": "https://vascular.org/news-advocacy/articles-press-releases/society-vascular-surgery-releases-clinical-practice-guideline",
+      "locator": "Final March24,2026 official summary; grades1–3 and TBI",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "wses-liver": {
+      "title": [
+        "WSES肝损伤2020",
+        "WSES liver2020"
+      ],
+      "shortTitle": [
+        "WSES肝损伤2020",
+        "WSES liver2020"
+      ],
+      "url": "https://link.springer.com/article/10.1186/s13017-020-00302-7",
+      "locator": "WSES grades, instability, NOM and angioembolization",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "wses-spleen": {
+      "title": [
+        "WSES脾损伤2017",
+        "WSES spleen2017"
+      ],
+      "shortTitle": [
+        "WSES脾损伤2017",
+        "WSES spleen2017"
+      ],
+      "url": "https://link.springer.com/article/10.1186/s13017-017-0151-4",
+      "locator": "Grades, NOM resources and post-splenectomy vaccination",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "btf": {
+      "title": [
+        "BTF重型颅脑第4版",
+        "BTF severe TBI4"
+      ],
+      "shortTitle": [
+        "BTF重型颅脑第4版",
+        "BTF severe TBI4"
+      ],
+      "url": "https://braintrauma.org/coma/guidelines/severe-tbi",
+      "locator": "Blood pressure LevelIII, ICP/CPP LevelIIB; no current dose endorsement",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "nice-head": {
+      "title": [
+        "NICE NG232",
+        "NICE NG232"
+      ],
+      "shortTitle": [
+        "NICE NG232",
+        "NICE NG232"
+      ],
+      "url": "https://www.nice.org.uk/guidance/ng232/chapter/recommendations",
+      "locator": "1.3.17 TXA;1.5.8/9/13 adult CT;1.5.10/11 children",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "acs-tbi": {
+      "title": [
+        "ACS颅脑2024",
+        "ACS TBI2024"
+      ],
+      "shortTitle": [
+        "ACS颅脑2024",
+        "ACS TBI2024"
+      ],
+      "url": "https://www.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf",
+      "locator": "Table goals p19; ventilation p39; brief rescue hyperventilation",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "cn-tbi": {
+      "title": [
+        "国内成人颅脑共识2025",
+        "Chinese adult TBI2025"
+      ],
+      "shortTitle": [
+        "国内成人颅脑共识2025",
+        "Chinese adult TBI2025"
+      ],
+      "url": "https://castjournals.cast.org.cn/joweb/jfjyxzz/CN/1194617491579183281",
+      "locator": "Recommendations3,4,6,13,17,18,22; accessible PLA-journal publication DOI10.11855/j.issn.0577-7402.0144.2025.0211; user CEM citation separately supplied",
+      "domestic": true,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "enls-pharm": {
+      "title": [
+        "ENLS药物5版",
+        "ENLS pharmacotherapy5"
+      ],
+      "shortTitle": [
+        "ENLS药物5版",
+        "ENLS pharmacotherapy5"
+      ],
+      "url": "https://www.neurocriticalcare.org/Portals/0/Docs/ENLS/ENLS_5_Protocol_Pharm.pdf",
+      "locator": "Adult mannitol0.5–1g/kg; hypertonic doses vary by protocol",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "pecarn": {
+      "title": [
+        "PECARN儿童头伤原研究",
+        "PECARN pediatric head study"
+      ],
+      "shortTitle": [
+        "PECARN儿童头伤原研究",
+        "PECARN pediatric head study"
+      ],
+      "url": "https://doi.org/10.1016/S0140-6736(09)61558-0",
+      "locator": "Kuppermann2009, minor blunt head trauma, age-stratified rule",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "wses-pelvic": {
+      "title": [
+        "WSES骨盆2017",
+        "WSES pelvic2017"
+      ],
+      "shortTitle": [
+        "WSES骨盆2017",
+        "WSES pelvic2017"
+      ],
+      "url": "https://link.springer.com/article/10.1186/s13017-017-0117-6",
+      "locator": "Instability definition, greater-trochanter binder, AE/PPP/exfix, ZoneIII bridge, rectal injury",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "nice-fracture": {
+      "title": [
+        "NICE NG37",
+        "NICE NG37"
+      ],
+      "shortTitle": [
+        "NICE NG37",
+        "NICE NG37"
+      ],
+      "url": "https://www.nice.org.uk/guidance/ng37/chapter/recommendations",
+      "locator": "1.1.10 antibiotics;1.2.16–18 pelvic hemorrhage and binder removal; vascular signs",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "nice-spine": {
+      "title": [
+        "NICE NG41",
+        "NICE NG41"
+      ],
+      "shortTitle": [
+        "NICE NG41",
+        "NICE NG41"
+      ],
+      "url": "https://www.nice.org.uk/guidance/ng41/chapter/Recommendations",
+      "locator": "Canadian c-spine risk;1.5.6 CT and1.5.7 MRI after CT for cord findings",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "hip-timing": {
+      "title": [
+        "髋脱位复位时点研究2017",
+        "Hip reduction timing2017"
+      ],
+      "shortTitle": [
+        "髋脱位复位时点研究2017",
+        "Hip reduction timing2017"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28578459/",
+      "locator": "Early under6 hours versus delayed reduction; observational meta-analysis, not safe waiting time",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "acep-sedation": {
+      "title": [
+        "ACEP程序镇静2026",
+        "ACEP sedation2026"
+      ],
+      "shortTitle": [
+        "ACEP程序镇静2026",
+        "ACEP sedation2026"
+      ],
+      "url": "https://www.acmt.net/wp-content/uploads/2026/08/Part-2-Unscheduled-Procedural-Sedation.pdf",
+      "locator": "Part2 clinical practice; ventilation capnography and correct volume depletion before sedation where feasible",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "tccc": {
+      "title": [
+        "TCCC2024",
+        "TCCC2024"
+      ],
+      "shortTitle": [
+        "TCCC2024",
+        "TCCC2024"
+      ],
+      "url": "https://learning-media.allogy.com/api/v1/pdf/42b34d77-09aa-4487-be41-4303823f3304/contents",
+      "locator": "25Jan2024; tactical field care sections3,5,6. Combat-specific reference, not unqualified civilian protocol",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "das25": {
+      "title": [
+        "DAS困难插管2025",
+        "DAS intubation2025"
+      ],
+      "shortTitle": [
+        "DAS困难插管2025",
+        "DAS intubation2025"
+      ],
+      "url": "https://doi.org/10.1016/j.bja.2025.10.006",
+      "locator": "PlanA/D; official algorithm https://das.uk.com/algorithms/; full paper society-hosted copy https://emergencymed.org.il/wp-content/uploads/2026/03/Difficult-Airway-Society-2025-guidelines-for-management-of.pdf",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "jts-anesthesia": {
+      "title": [
+        "JTS创伤麻醉2021/2023",
+        "JTS trauma anesthesia2021/2023"
+      ],
+      "shortTitle": [
+        "JTS创伤麻醉2021/2023",
+        "JTS trauma anesthesia2021/2023"
+      ],
+      "url": "https://jts.health.mil/assets/docs/cpgs/Anesthesia_for_Trauma_Patients_05_Apr_2021_ID40.pdf",
+      "locator": "Induction pp2–3; severe hemorrhage, reduced/titrated doses with ongoing resuscitation; not default dosing in every patient",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "jts-airway26": {
+      "title": [
+        "JTS创伤气道2026",
+        "JTS trauma airway2026"
+      ],
+      "shortTitle": [
+        "JTS创伤气道2026",
+        "JTS trauma airway2026"
+      ],
+      "url": "https://jts.health.mil/assets/docs/cpgs/Airway_Management_in_Trauma_28_Jan_2026_ID39.pdf",
+      "locator": "Airway planning, waveform confirmation and resuscitation; distinct military setting",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "start": {
+      "title": [
+        "START成人/HHS",
+        "START adult/HHS"
+      ],
+      "shortTitle": [
+        "START成人/HHS",
+        "START adult/HHS"
+      ],
+      "url": "https://remm.hhs.gov/startalgotext.htm",
+      "locator": "Adult RPM and mobility; repeat secondary triage",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "jumpstart": {
+      "title": [
+        "JumpSTART儿童/HHS",
+        "JumpSTART pediatric/HHS"
+      ],
+      "shortTitle": [
+        "JumpSTART儿童/HHS",
+        "JumpSTART pediatric/HHS"
+      ],
+      "url": "https://remm.hhs.gov/startpediatric.htm",
+      "locator": "Age-specific algorithm; apneic palpable-pulse branch receives five rescue breaths",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "salt": {
+      "title": [
+        "SALT/MUCC/HHS",
+        "SALT/MUCC/HHS"
+      ],
+      "shortTitle": [
+        "SALT/MUCC/HHS",
+        "SALT/MUCC/HHS"
+      ],
+      "url": "https://www.chemm.hhs.gov/incident-primer/triage/salt-triage",
+      "locator": "Five categories; global sort, individual life-saving interventions, pediatric two breaths",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "cn-disaster-plan": {
+      "title": [
+        "国家医疗救援预案2006",
+        "Chinese medical-rescue plan2006"
+      ],
+      "shortTitle": [
+        "国家医疗救援预案2006",
+        "Chinese medical-rescue plan2006"
+      ],
+      "url": "https://ncmhc.org.cn/channel/newsinfo/6203",
+      "locator": "Government plan reproduced by national NHC-affiliated center;2.1–2.4 event levels and4.2.1 blue/yellow/red/black",
+      "domestic": true,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "erbp-crush": {
+      "title": [
+        "ERBP挤压综合征2012",
+        "ERBP crush2012"
+      ],
+      "shortTitle": [
+        "ERBP挤压综合征2012",
+        "ERBP crush2012"
+      ],
+      "url": "https://doi.org/10.1093/ndt/gfr720",
+      "locator": "SectionII.3/4/6; original full document at https://nefro.cl/web/biblio/guias/26.pdf; historical disaster-specific hydration reference",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "cdc-blast": {
+      "title": [
+        "CDC爆炸伤教学材料",
+        "CDC blast primer"
+      ],
+      "shortTitle": [
+        "CDC爆炸伤教学材料",
+        "CDC blast primer"
+      ],
+      "url": "https://stacks.cdc.gov/view/cdc/28987/cdc_28987_DS1.pdf",
+      "locator": "Mechanisms table,48-hour delayed lung signs, inverted triage and first-hour×2 rough first-wave estimate",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "hhs-decon": {
+      "title": [
+        "HHS化学去污",
+        "HHS chemical decontamination"
+      ],
+      "shortTitle": [
+        "HHS化学去污",
+        "HHS chemical decontamination"
+      ],
+      "url": "https://www.chemm.hhs.gov/incident-primer/decontamination",
+      "locator": "Disrobe, dry/gross/technical decontamination selected by substance/context",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "cn-open-fracture": {
+      "title": [
+        "中国开放骨折2019",
+        "Chinese open fracture2019"
+      ],
+      "shortTitle": [
+        "中国开放骨折2019",
+        "Chinese open fracture2019"
+      ],
+      "url": "https://cmab.yiigle.com/uploads/guide_html/中国开放性骨折诊断与治疗指南(2019版).html",
+      "locator": "SectionIV/table3 antibiotics, V debridement, VIII compartment syndrome; historical differences retained",
+      "domestic": true,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "boast-open": {
+      "title": [
+        "BOAST开放骨折2017",
+        "BOAST open fracture2017"
+      ],
+      "shortTitle": [
+        "BOAST开放骨折2017",
+        "BOAST open fracture2017"
+      ],
+      "url": "https://www.boa.ac.uk/resource/boast-4-pdf.html",
+      "locator": "Antibiotics1h, immediate/12h/24h debridement,72h cover, no ED mini-washout; long bones/hindmidfoot scope",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "boast-acs": {
+      "title": [
+        "BOAST筋膜室2025",
+        "BOAST compartment2025"
+      ],
+      "shortTitle": [
+        "BOAST筋膜室2025",
+        "BOAST compartment2025"
+      ],
+      "url": "https://www.boa.ac.uk/resource/boast-10-pdf.html",
+      "locator": "RevisedJuly2025; hourly/30min review, immediate surgery after diagnosis, delta30/absolute40",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "boast-vascular": {
+      "title": [
+        "BOAST血管2026",
+        "BOAST arterial2026"
+      ],
+      "shortTitle": [
+        "BOAST血管2026",
+        "BOAST arterial2026"
+      ],
+      "url": "https://www.boa.ac.uk/resource/diagnosis-and-management-of-arterial-injuries-associated-with-musculoskeletal-trauma.html",
+      "locator": "Revascularization COMMENCED within one hour of arrival, not guaranteed completed by then; temporary shunt",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "ao-sci24": {
+      "title": [
+        "AO/Praxis脊髓2024",
+        "AO/Praxis SCI2024"
+      ],
+      "shortTitle": [
+        "AO/Praxis脊髓2024",
+        "AO/Praxis SCI2024"
+      ],
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/21925682231189928",
+      "locator": "Author guideline overview; MAP75–80 lower/90–95 upper3–7d, decompression24h; hemodynamic recommendation weak/very-low evidence",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "ao-mpss17": {
+      "title": [
+        "AO脊髓激素2017",
+        "AO SCI steroid2017"
+      ],
+      "shortTitle": [
+        "AO脊髓激素2017",
+        "AO SCI steroid2017"
+      ],
+      "url": "https://escholarship.org/uc/item/6dn0d36x",
+      "locator": "Original guideline repository, optional24h infusion within8h, weak; not after8h or48h infusion",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "nice-hip": {
+      "title": [
+        "NICE CG124",
+        "NICE CG124"
+      ],
+      "shortTitle": [
+        "NICE CG124",
+        "NICE CG124"
+      ],
+      "url": "https://www.nice.org.uk/guidance/cg124/chapter/recommendations",
+      "locator": "1.2.1 same/next-day surgery,1.3.6 consider nerve block if inadequate analgesia, not a substitute for surgery",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "cn-hip-implementation": {
+      "title": [
+        "国内髋部48h官方实施说明",
+        "Chinese hip48h official implementation"
+      ],
+      "shortTitle": [
+        "国内髋部48h官方实施说明",
+        "Chinese hip48h official implementation"
+      ],
+      "url": "https://wjw.beijing.gov.cn/xwzx_20031/jcdt/202604/t20260415_4583307.html",
+      "locator": "Beijing health authority citing NHC2022 guideline; full national attachment not accessible in this session",
+      "domestic": true,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
+    },
+    "aha-bls25": {
+      "title": [
+        "AHA成人BLS2025",
+        "AHA adult BLS2025"
+      ],
+      "shortTitle": [
+        "AHA成人BLS2025",
+        "AHA adult BLS2025"
+      ],
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support",
+      "locator": "Adult abnormal/absent breathing with a pulse: one breath every6 seconds(10/min); distinct from cardiac-arrest compression/ventilation ratio",
+      "domestic": false,
+      "coverage": "primary_full_text_checked",
+      "checkedDate": "2026-10-14"
     }
   },
   "claims": [
@@ -200,24 +1018,25 @@
         "TXA: timing and regimen"
       ],
       "anchor": [
-        "≤3 h；1 g 静滴 ≥10 min → 1 g 静脉维持 8 h",
-        "≤3 h; 1 g IV over ≥10 min → 1 g IV over 8 h"
+        "≤3 h；1 g 静滴 ≥10 min → 1 g 静脉维持 8 h以本院规范为准。",
+        "≤3 h; 1 g IV over ≥10 min → 1 g IV over 8 h Follow institutional policy."
       ],
       "scope": [
         "成人创伤活动/疑似严重出血；从受伤起算。",
         "Adults with active/suspected major traumatic bleeding; time from injury."
       ],
       "decision": [
-        "尽早使用；国内 R33 维持表述为“8 h以上”，欧洲 R23 为8 h。",
-        "Give early; Chinese R33 states at least eight hours for maintenance, European R23 eight hours."
+        "尽早使用；国内 R33 维持表述为“8 h以上”，欧洲 R23 为8 h。以本院规范为准。",
+        "Give early; Chinese R33 states at least eight hours for maintenance, European R23 eight hours. Follow institutional policy."
       ],
       "upgrade": [
-        "超3 h、疑纤溶关闭或特殊人群：交由团队按来源与本院规范重新判断。",
-        "After three hours, possible fibrinolytic shutdown or special populations: source/local-policy review."
+        "超过3 h不常规使用；仅有黏弹性检测纤溶亢进证据时由上级结合本院方案决定，已知纤溶抑制者不用。以本院规范为准。",
+        "Beyond three hours, not routine; only with viscoelastic hyperfibrinolysis evidence and senior/local-policy review; avoid known fibrinolytic shutdown. Follow institutional policy."
       ],
       "references": [
         "cn-shock",
-        "eu-bleeding"
+        "eu-bleeding",
+        "nice"
       ],
       "domesticReferences": [
         "cn-shock"
@@ -229,7 +1048,7 @@
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -241,8 +1060,8 @@
         "Adult bleeding: BP target"
       ],
       "anchor": [
-        "SBP 80–90 mmHg",
-        "SBP 80–90 mmHg"
+        "SBP 80–90 mmHg以本院规范为准。",
+        "SBP 80–90 mmHg Follow institutional policy."
       ],
       "scope": [
         "止血前、无颅脑/脊髓损伤的成人初期出血。",
@@ -253,8 +1072,8 @@
         "Caution with older age/chronic hypertension; separate pediatric/pregnancy protocols."
       ],
       "upgrade": [
-        "灌注持续恶化或合并神经损伤：重新定目标并升级止血。",
-        "Worsening perfusion or neurological injury: revise targets and escalate bleeding control."
+        "目标达不到可按欧洲R14加去甲肾上腺素；国内R28在MAP<50或SBP<70危及生命时考虑，不能替代血液和止血。以本院规范为准。",
+        "If targets fail, consider norepinephrine (European R14); Chinese R28 considers it in life-threatening MAP below50 or SBP below70, alongside blood/control rather than replacing them. Follow institutional policy."
       ],
       "references": [
         "cn-shock",
@@ -270,7 +1089,7 @@
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -282,16 +1101,16 @@
         "Shock index"
       ],
       "anchor": [
-        "SI = HR / SBP；国内 SI ≥1",
-        "SI = HR / SBP; Chinese SI ≥1"
+        "SI≥1 或脉压<30 mmHg（国内R2）以本院规范为准。",
+        "SI at least one or pulse pressure below30 mmHg (Chinese R2) Follow institutional policy."
       ],
       "scope": [
         "成人风险识别，结合查体与趋势。",
         "Adult risk recognition, with examination and trends."
       ],
       "decision": [
-        "国内R2将≥1列入诊断条件；欧洲R5讨论0.9–1附近风险。",
-        "Chinese R2 includes ≥1 in diagnostic criteria; European R5 discusses risk around 0.9–1."
+        "国内表2：SI≥1.0/≥1.5/≥2.0粗估失血20–30%/30–50%/50–70%；β阻滞剂、老幼及运动员可失真，不能当精确失血量。以本院规范为准。",
+        "Chinese Table2: SI at least1.0/1.5/2.0 roughly associates with20–30%/30–50%/50–70% loss; beta blockers, age and athletic physiology confound it, so not precise volume. Follow institutional policy."
       ],
       "upgrade": [
         "药物抑制心率或老人“正常”生命体征仍保留休克担心。",
@@ -306,12 +1125,12 @@
       ],
       "domesticAlignment": "different_context",
       "comparisonNote": [
-        "不凭单个指数排除出血或决定输血。",
-        "Do not use SI alone to exclude bleeding or decide transfusion."
+        "欧洲R5用SI和/或脉压评估休克与输血需求；同时看机制、意识、灌注、乳酸和反应。",
+        "European R5 uses SI and/or pulse pressure for shock/transfusion assessment; integrate mechanism, consciousness, perfusion, lactate and response."
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -323,20 +1142,20 @@
         "MTP activation assessment"
       ],
       "anchor": [
-        "ABC ≥2 + 临床状态",
-        "ABC ≥2 + clinical state"
+        "ABC ≥2 + 临床状态以本院规范为准。",
+        "ABC ≥2 + clinical state Follow institutional policy."
       ],
       "scope": [
         "成人；ACS TQIP 评分示例。",
         "Adults; ACS TQIP example."
       ],
       "decision": [
-        "穿透躯干伤、FAST阳性、HR >120、SBP <90各1分；核对本院版本。",
-        "One point each: penetrating torso, positive FAST, HR >120, SBP <90; verify local version."
+        "穿透躯干伤、FAST阳性、HR≥120、SBP≤90各1分；ABC≥2启动评估；原版等号边界与本院版本核对。以本院规范为准。",
+        "Penetrating torso injury, positive FAST, HR at least120 and SBP at most90 each score one; ABC at least two triggers assessment; verify local boundaries. Follow institutional policy."
       ],
       "upgrade": [
-        "持续不稳定或活动出血需止血也可触发评估，不等累计输血量。",
-        "Persistent instability/active bleeding may also trigger assessment; do not wait for cumulative volume."
+        "抢救室已输血、需手术/介入止血也是TQIP触发因素；结合持续出血和复苏反应，不等24 h累计10 U。以本院规范为准。",
+        "Blood already required in the bay and operative/interventional control are TQIP triggers; consider ongoing bleeding/response without waiting for24-hour10-unit totals. Follow institutional policy."
       ],
       "references": [
         "acs-mtp",
@@ -349,12 +1168,12 @@
       ],
       "domesticAlignment": "general_not_same_numeric_rule",
       "comparisonNote": [
-        "国内支持早期血液管理与本院流程；未据此声称ABC为全国统一启动标准。",
-        "Chinese guidance supports early blood/local policy; ABC is not claimed as a national activation rule."
+        "初始血浆:血小板:红细胞1:1:1–1:1:2（国内R27）后尽早目标导向。国内1 U红细胞通常来自200 mL全血，不可按国外1 unit原样计数；血小板按血库治疗量换算。以本院规范为准。",
+        "Initial plasma:platelets:RBC1:1:1–1:1:2 (Chinese R27), then early goal-directed therapy. Domestic RBC units generally derive from200 mL whole blood and differ from overseas units; convert platelet therapeutic amounts with the blood bank. Follow institutional policy."
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -366,16 +1185,16 @@
         "Fibrinogen"
       ],
       "anchor": [
-        "Clauss Fib ≤1.5 g/L + 大出血",
-        "Clauss Fib ≤1.5 g/L + major bleeding"
+        "Clauss Fib ≤1.5 g/L + 大出血以本院规范为准。",
+        "Clauss Fib ≤1.5 g/L + major bleeding Follow institutional policy."
       ],
       "scope": [
         "严重活动出血，或黏弹性检测提示功能性缺乏。",
         "Major active bleeding or viscoelastic evidence of functional deficit."
       ],
       "decision": [
-        "欧洲R29：评估纤维蛋白原/冷沉淀补充并复测。",
-        "European R29: assess fibrinogen/cryo replacement and retest."
+        "欧洲R29首剂约3–4 g纤维蛋白原浓缩物，或按本院冷沉淀每U实际含量折算；国内U来源与国外不同，不能直接套15–20 U；输后复测。以本院血库规范为准。",
+        "European R29 initial fibrinogen concentrate about3–4 g, or cryoprecipitate by measured local content per unit; domestic and overseas units differ, so do not copy15–20 units directly; recheck. Follow institutional blood-bank policy. Follow institutional policy."
       ],
       "upgrade": [
         "出血持续、检测恶化：血库/凝血团队按本院方案升级。",
@@ -395,7 +1214,7 @@
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -407,8 +1226,8 @@
         "Hb target during transfusion"
       ],
       "anchor": [
-        "Hb 70–90 g/L",
-        "Hb 70–90 g/L"
+        "Hb 70–90 g/L以本院规范为准。",
+        "Hb 70–90 g/L Follow institutional policy."
       ],
       "scope": [
         "成人创伤，需要红细胞输注时的欧洲R16目标。",
@@ -436,7 +1255,7 @@
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -448,16 +1267,16 @@
         "Ionized calcium"
       ],
       "anchor": [
-        "iCa：维持本实验室正常范围",
-        "iCa: maintain the local normal range"
+        "iCa≥1.00 mmol/L（国内）；欧洲正常范围1.1–1.3 mmol/L以本院规范为准。",
+        "iCa at least1.00 mmol/L (Chinese); European normal1.1–1.3 mmol/L Follow institutional policy."
       ],
       "scope": [
         "成人大出血，尤其大量输血。",
         "Adult major bleeding, especially massive transfusion."
       ],
       "decision": [
-        "复测血气iCa并结合pH，按本院补钙方案纠正。",
-        "Recheck blood-gas iCa with pH; correct under local replacement policy."
+        "开始输血即测iCa；10%氯化钙10 mL约元素钙270 mg，10%葡萄糖酸钙10 mL约90 mg；补低钙时核对浓度、通路及复测。以本院规范为准。",
+        "Measure iCa at transfusion start; 10 mL of10% calcium chloride contains about270 mg elemental calcium, versus about90 mg in10% calcium gluconate. Verify concentration/access and recheck. Follow institutional policy."
       ],
       "upgrade": [
         "输血仍在进行、iCa下降或心律变化：及时团队复评。",
@@ -468,16 +1287,17 @@
         "cn-periop"
       ],
       "domesticReferences": [
+        "cn-shock",
         "cn-periop"
       ],
-      "domesticAlignment": "matching_principle",
+      "domesticAlignment": "matching_with_numeric_target",
       "comparisonNote": [
-        "欧洲R31与国内围术期3.8均强调监测/正常化；本页不统一药品或补钙剂量。",
-        "European R31 and Chinese perioperative 3.8 support monitoring/normalization; products/doses are local."
+        "欧洲R31推荐氯化钙纠正低钙；上述为元素钙含量对照，不是两药逐毫升互换处方。国内R27下限与欧洲正常范围分开理解。",
+        "European R31 prefers calcium chloride for hypocalcemia; this compares elemental content rather than interchangeable volume prescriptions. Distinguish the Chinese lower target from European normal range."
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -489,16 +1309,16 @@
         "Severe TBI: perfusion target"
       ],
       "anchor": [
-        "MAP ≥80 mmHg",
-        "MAP ≥80 mmHg"
+        "MAP ≥80 mmHg以本院规范为准。",
+        "MAP ≥80 mmHg Follow institutional policy."
       ],
       "scope": [
         "重型TBI（GCS ≤8）；不能套用允许性低血压。",
         "Severe TBI (GCS ≤8); avoid permissive hypotension."
       ],
       "decision": [
-        "国内2023 R22另列SBP >110；2026院前R6写SBP ≥110或MAP ≥80。",
-        "Chinese 2023 R22 also gives SBP >110; 2026 prehospital R6 gives SBP ≥110 or MAP ≥80."
+        "GCS9–15且伤后≤3 h可按CRASH-3讨论TXA；TBI出血血小板目标>100×10⁹/L（欧洲R30）；创伤性ICH用TEG/ROTEM指导凝血纠正（NCS/SCCM2026）。以本院规范为准。",
+        "For GCS9–15 within three hours, discuss TXA by CRASH-3 scope; TBI bleeding platelet goal above100×10⁹/L (European R30); VHA-guided traumatic-ICH correction (NCS/SCCM2026). Follow institutional policy."
       ],
       "upgrade": [
         "意识/瞳孔变化、目标未达：同步纠正氧合/灌注并升级神经救治。",
@@ -507,7 +1327,9 @@
       "references": [
         "cn-shock",
         "cn-prehospital",
-        "eu-bleeding"
+        "eu-bleeding",
+        "crash3",
+        "ncs-sccm-ich-2026"
       ],
       "domesticReferences": [
         "cn-shock",
@@ -515,12 +1337,12 @@
       ],
       "domesticAlignment": "matching_with_version_difference",
       "comparisonNote": [
-        "已有ICP监测时结合CPP等个体目标；MAP不是完整神经监护方案。",
-        "With ICP monitoring, individualize CPP and other goals; MAP is not a complete neurocritical protocol."
+        "CRASH-3招募GCS≤12或CT证实颅内出血、无严重颅外出血；轻中度亚组结果不能推广为所有TBI获益。",
+        "CRASH-3 enrolled GCS at most12 or CT-confirmed intracranial bleeding without major extracranial hemorrhage; subgroup benefit is not universal TBI benefit."
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -532,16 +1354,16 @@
         "Older adults: occult shock warning"
       ],
       "anchor": [
-        "≥65 岁；SBP <110 mmHg",
-        "Age ≥65; SBP <110 mmHg"
+        "≥65 岁；SBP <110 mmHg以本院规范为准。",
+        "Age ≥65; SBP <110 mmHg Follow institutional policy."
       ],
       "scope": [
         "老年创伤高风险识别/分诊提示，不等于单独确诊休克。",
         "Older-trauma high-risk triage signal, not a stand-alone shock diagnosis."
       ],
       "decision": [
-        "补问抗凝、基线功能、降压/控心率药及头部受伤。",
-        "Ask about anticoagulants, baseline function, BP/HR drugs and head injury."
+        "≥65岁SBP<110或HR>SBP提示风险；抗凝+头伤即使体征正常也升级评估。以本院规范为准。",
+        "At least65 years with SBP below110 or HR above SBP raises concern; anticoagulated head injury escalates assessment even with apparently normal signs. Follow institutional policy."
       ],
       "upgrade": [
         "低能量伤合并症状、抗凝或灌注异常：提早高级评估。",
@@ -562,7 +1384,7 @@
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -574,25 +1396,29 @@
         "Anticoagulants: reversal pathway"
       ],
       "anchor": [
-        "药名 → 末次剂量 → 出血严重度",
-        "Drug → last dose → bleeding severity"
+        "危及生命出血：核对药物、末次剂量、INR/肾功能/抗Xa",
+        "Life-threatening bleeding: drug, last dose, INR/renal function/anti-Xa"
       ],
       "scope": [
         "危及生命/不可控出血或紧急高风险手术；由授权团队决策。",
         "Life-threatening/uncontrolled bleeding or urgent high-risk surgery; authorized team decisions."
       ],
       "decision": [
-        "华法林：PCC + 静脉维K；达比加群：依达赛珠单抗；Xa药：特异拮抗剂或PCC路径。",
-        "Warfarin: PCC + IV vitamin K; dabigatran: idarucizumab; Xa agents: specific reversal or PCC pathway."
+        "华法林：4F-PCC25–50 IU/kg按INR+维生素K₁5–10 mg缓慢静注；可及4F-PCC优于FFP。达比加群：依达赛珠单抗5 g静注。Xa药：可考虑4F-PCC25–50 IU/kg；ICH按2026条件性推荐优先4F-PCC。以本院规范为准。",
+        "Warfarin: 4F-PCC25–50 IU/kg by INR plus vitamin K1 5–10 mg slow IV; available 4F-PCC preferred to FFP. Dabigatran: idarucizumab5 g IV. Xa agents: consider4F-PCC25–50 IU/kg; 2026 ICH conditional guidance favors4F-PCC. Follow institutional policy."
       ],
       "upgrade": [
-        "同步查肾功能、INR/TT/抗Xa及本院药品可及性；正常PT不能排除DOAC效应。",
-        "Check renal function, INR/TT/anti-Xa and formulary; normal PT does not exclude DOAC effect."
+        "andexanet美商业销售已停止；欧盟/英国仍可条件获得，权衡获益不确定、血栓和费用。创伤性ICH抗血小板输注尚无统一推荐，不自动常规使用。",
+        "US andexanet sales have ceased; conditional EU/UK availability requires benefit/thrombosis/cost review. Traumatic antiplatelet-associated ICH has no uniform platelet-transfusion recommendation; do not use automatically."
       ],
       "references": [
-        "eu-bleeding",
+        "cn-shock",
         "cn-periop",
-        "cn-shock"
+        "eu-bleeding",
+        "fda-andexxa",
+        "acep-doac-2026",
+        "ncs-sccm-ich-2026",
+        "bsh-andexanet-2026"
       ],
       "domesticReferences": [
         "cn-periop",
@@ -600,12 +1426,12 @@
       ],
       "domesticAlignment": "matching_principle",
       "comparisonNote": [
-        "Xa具体药物、适应证与可及性按本院药事/血库方案核对；不对每名服药者自动逆转。",
-        "Verify Xa agent, indication and availability locally; reversal is not automatic for every treated patient."
+        "核对本院PCC三/四因子与标示单位、药品注册和可及性；4F不可及时按血库替代流程，不把FFP等同4F-PCC。与患方共同决策，监测血栓。 andexanet后72 h内血栓风险需重点观察。",
+        "Check three/four-factor products, units, registration and availability; use local alternatives if4F is unavailable without equating FFP with4F-PCC. Shared decisions and thrombosis monitoring apply. Pay particular attention to early thrombosis within72 hours after andexanet."
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -625,8 +1451,8 @@
         "Uterus at/above umbilicus; unsensitized Rh-negative abdominal/major trauma."
       ],
       "decision": [
-        "有效按压同时人工左推；抗D由产科按孕周、致敏状态、胎母出血与本院方案评估。",
-        "Manual displacement with effective CPR; obstetric anti-D assessment by gestation, sensitization, FMH and local policy."
+        "≥20周手推子宫或左倾15–30°；未致敏RhD阴性≥13⁺⁰周用KB指导抗D剂量并核对可及性；育龄女性查HCG（国内R20）。以本院规范为准。",
+        "At least20 weeks: manual uterine displacement or left tilt15–30 degrees; unsensitized RhD-negative at least13+0 weeks: KB-guided anti-D assessment and availability check; test HCG when appropriate (Chinese R20). Follow institutional policy."
       ],
       "upgrade": [
         "母体不稳定、腹痛/流血或胎心担心：创伤—产科共同升级。",
@@ -634,17 +1460,19 @@
       ],
       "references": [
         "qld-pregnancy",
-        "aha-pregnancy"
+        "cn-shock"
       ],
-      "domesticReferences": [],
-      "domesticAlignment": "international_reference_only",
+      "domesticReferences": [
+        "cn-shock"
+      ],
+      "domesticAlignment": "domestic_labs_international_obstetric_details",
       "comparisonNote": [
         "尚未核实覆盖这些具体条款的国内同等指南；保留国际参考标识，本院产科流程确认。",
         "No equivalent Chinese guidance for these specific items was verified; international reference, local obstetric confirmation."
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -656,33 +1484,34 @@
         "Pregnancy arrest: resuscitative delivery"
       ],
       "anchor": [
-        "识别心停即准备；目标 ≤5 min 完成",
-        "Prepare at arrest recognition; goal delivery by ≤5 min"
+        "识别心停即准备；目标 ≤5 min 完成以本院规范为准。",
+        "Prepare at arrest recognition; goal delivery by ≤5 min Follow institutional policy."
       ],
       "scope": [
-        "子宫底在脐水平/以上且标准复苏未获ROSC。",
-        "Fundus at/above umbilicus with no ROSC despite standard resuscitation."
+        "宫底达脐或以上（约≥20孕周）、标准复苏无ROSC；受训团队。",
+        "Fundus at/above umbilicus (approximately at least20 weeks), no ROSC with standard resuscitation; skilled team."
       ],
       "decision": [
-        "AHA2025：在心停现场组织产科/麻醉/新生儿团队与复苏性分娩。",
-        "AHA 2025: organize obstetric/anesthetic/neonatal teams and resuscitative delivery at the arrest site."
+        "AHA2025：在心停现场组织产科/麻醉/新生儿团队与复苏性分娩。以本院规范为准。",
+        "AHA 2025: organize obstetric/anesthetic/neonatal teams and resuscitative delivery at the arrest site. Follow institutional policy."
       ],
       "upgrade": [
-        "传统4 min启动/5 min娩出是历史时间框架；不等4 min才叫人或准备。",
-        "Historical four-minute start/five-minute birth framing does not mean waiting four minutes to call or prepare."
+        "4 min启动、5 min娩出仍是AHA 2025推荐时间目标；识别心停即呼叫准备，就地实施；超过5 min仍可能获益，不因超时放弃，并行处理创伤可逆原因。以本院规范为准。",
+        "Four-minute initiation/five-minute birth remains the AHA2025 timing goal; call/prepare at arrest recognition, perform on site; benefit may remain beyond five minutes, so do not abandon solely for delay; address traumatic causes. Follow institutional policy."
       ],
       "references": [
-        "aha-pregnancy"
+        "aha-pregnancy",
+        "qld-pregnancy"
       ],
       "domesticReferences": [],
       "domesticAlignment": "international_reference_only",
       "comparisonNote": [
-        "本院需预先落实团队、物资与演练；不是所有孕周的自动手术指令。",
-        "Pre-plan teams, equipment and drills locally; not an automatic operation at every gestation."
+        "四/五分钟时点不意味着等待四分钟才呼叫、备器械或备新生儿救援；母体复苏与分娩准备并行。",
+        "Four/five-minute timing does not justify waiting four minutes to call, prepare equipment or neonatal rescue; maternal resuscitation and delivery preparation are parallel."
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -694,16 +1523,16 @@
         "Children: weight and first aliquot"
       ],
       "anchor": [
-        "实测/近期体重；晶体液 10 mL/kg",
-        "Measured/recent weight; crystalloid 10 mL/kg"
+        "实测/近期体重；晶体液 10 mL/kg以本院规范为准。",
+        "Measured/recent weight; crystalloid 10 mL/kg Follow institutional policy."
       ],
       "scope": [
         "RCH儿童重大创伤，循环不足的首轮等渗液体评估；并行识别出血。",
         "RCH major pediatric trauma with poor circulation; assess bleeding in parallel."
       ],
       "decision": [
-        "无法称重按本院验证的身长体重工具；RCH持续出血可用RBC 10 mL/kg初始小份。",
-        "If unweighable use a locally validated length-based tool; RCH ongoing bleeding: initial RBC aliquot 10 mL/kg."
+        "疑出血血流动力学受损：小量初始复苏并早用血；RCH初剂TXA15 mg/kg，上限与速度核对儿科药品方案。以本院规范为准。",
+        "Suspected bleeding with compromise: small initial resuscitation aliquots and early blood; RCH initial TXA15 mg/kg, with maximum/rate checked in the pediatric product protocol. Follow institutional policy."
       ],
       "upgrade": [
         "每份后复评；持续失血尽早血库/儿科MTP，不重复大量晶体液。",
@@ -723,7 +1552,7 @@
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -735,23 +1564,24 @@
         "Children: Chinese hemorrhagic transfusion index"
       ],
       "anchor": [
-        "RBC : FFP = 1 : 1（容量）",
-        "RBC : FFP = 1 : 1 (volume)"
+        "RBC : FFP = 1 : 1（容量）以本院规范为准。",
+        "RBC : FFP = 1 : 1 (volume) Follow institutional policy."
       ],
       "scope": [
         "WS/T795—2022 §9.5.2.2：儿童创伤性失血性休克。",
         "WS/T795—2022 §9.5.2.2: pediatric traumatic hemorrhagic shock."
       ],
       "decision": [
-        "标准举例RBC 20 mL/kg + FFP 20 mL/kg；不是常规贫血或非创伤比例。",
-        "Standard example: RBC 20 mL/kg + FFP 20 mL/kg; not routine anemia/non-trauma ratio."
+        "标准举例RBC 20 mL/kg + FFP 20 mL/kg；不是常规贫血或非创伤比例。以本院规范为准。",
+        "Standard example: RBC 20 mL/kg + FFP 20 mL/kg; not routine anemia/non-trauma ratio. Follow institutional policy."
       ],
       "upgrade": [
-        "持续出血按标准及本院儿科MTP补充其他成分；结果返回后调整并监测容量超负荷。",
-        "Persistent bleeding: additional components under standard/local MTP; adjust to labs and monitor overload."
+        "RBC累计>40 mL/kg可考虑PLT15–20 mL/kg+冷沉淀10 mL/kg；按化验目标Hb>80、Fib>1.5、APTT/PT<中点1.5倍、PLT>75×10⁹/L调整并监测超负荷。以本院儿科方案为准。",
+        "With cumulative RBC above40 mL/kg, consider platelets15–20 mL/kg and cryo10 mL/kg; adjust to Hb above80 g/L, Fib above1.5 g/L, APTT/PT below1.5 times reference midpoint and PLT above75×10⁹/L; monitor overload. Follow institutional pediatric policy. Follow institutional policy."
       ],
       "references": [
-        "cn-pediatric"
+        "cn-pediatric",
+        "cn-pediatric-expl"
       ],
       "domesticReferences": [
         "cn-pediatric"
@@ -763,7 +1593,7 @@
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -775,20 +1605,20 @@
         "Burns: Chinese rule of nines"
       ],
       "anchor": [
-        "成人：9 + 18 + 27 + 46 = 100%",
-        "Adult: 9 + 18 + 27 + 46 = 100%"
+        "成人：9 + 18 + 27 + 46 = 100%以本院规范为准。",
+        "Adult: 9 + 18 + 27 + 46 = 100% Follow institutional policy."
       ],
       "scope": [
         "头面颈、双上肢、躯干含会阴、双下肢含臀足。",
         "Head/face/neck; both arms; trunk including perineum; both legs including buttocks/feet."
       ],
       "decision": [
-        "12岁以下：头面颈=9+(12−年龄)%；双下肢=46−(12−年龄)%。",
-        "Under 12: head/neck=9+(12−age)%; both legs=46−(12−age)%."
+        "12岁以下：头面颈=9+(12−年龄)%；双下肢=46−(12−年龄)%。以本院规范为准。",
+        "Under 12: head/neck=9+(12−age)%; both legs=46−(12−age)%. Follow institutional policy."
       ],
       "upgrade": [
-        "面积或深度不确定、关键部位/吸入/电化学伤：烧伤专科复评。",
-        "Uncertain area/depth, key-site/inhalation/electrical/chemical injury: burn review."
+        "静脉复苏评估：成人Ⅱ/Ⅲ度>15%、儿童>5%、老年>10%或Ⅲ度>5%；吸入伤与循环状态可独立升级。以本院规范为准。",
+        "IV resuscitation assessment: adult partial/full-thickness over15%, child over5%, elder over10% or full-thickness over5%; inhalation injury/physiology may independently escalate. Follow institutional policy."
       ],
       "references": [
         "cn-burn"
@@ -803,7 +1633,7 @@
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -815,20 +1645,20 @@
         "Burns: Chinese adult fluid formula"
       ],
       "anchor": [
-        "首24 h：1.5–2 mL × kg × %TBSA + 2000 mL",
-        "First 24 h: 1.5–2 mL × kg × %TBSA + 2000 mL"
+        "首24 h：1.5–2 mL × kg × %TBSA + 2000 mL以本院规范为准。",
+        "First 24 h: 1.5–2 mL × kg × %TBSA + 2000 mL Follow institutional policy."
       ],
       "scope": [
         "国内2025规范晶胶混合公式；Ⅱ/Ⅲ度，%填百分数数值。",
         "Chinese 2025 crystalloid/colloid formula; second/third degree; enter percentage number."
       ],
       "decision": [
-        "晶:胶=1–2:1；总估算量一半在伤后首8 h，余量分后两个8 h。",
-        "Crystalloid:colloid=1–2:1; half estimated total in first eight hours from injury, quarters in next two intervals."
+        "晶:胶=1–2:1；总估算量一半在伤后首8 h，余量分后两个8 h。以本院规范为准。",
+        "Crystalloid:colloid=1–2:1; half estimated total in first eight hours from injury, quarters in next two intervals. Follow institutional policy."
       ],
       "upgrade": [
-        "按灌注、尿量和过负荷反馈调整；成人公式不套儿童/心肾病。",
-        "Titrate to perfusion, urine and overload; do not apply adult formula to children/cardiorenal disease."
+        "尿量0.5–1 mL/(kg·h)，电击/挤压/溶血性化学伤1–2；第二24 h晶胶减半、基础水分同首日；基础水分分配按烧伤科方案。以本院规范为准。",
+        "Urine0.5–1 mL/(kg·h),1–2 for electrical/crush/hemolytic chemical injury; second-day crystalloid/colloid half first-day actual amount, maintenance unchanged; allocate maintenance per burn service. Follow institutional policy."
       ],
       "references": [
         "cn-burn"
@@ -843,7 +1673,7 @@
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -855,8 +1685,8 @@
         "Resuscitation, consent and handover records"
       ],
       "anchor": [
-        "抢救结束后 ≤6 h 据实补记并注明",
-        "Truthful, marked supplementation ≤6 h after rescue ends"
+        "抢救结束后 ≤6 h 据实补记并注明以本院规范为准。",
+        "Truthful, marked supplementation ≤6 h after rescue ends Follow institutional policy."
       ],
       "scope": [
         "仅限因抢救急危患者未能及时书写；不是所有病历可延迟。",
@@ -885,7 +1715,88 @@
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-08"
+        "date": "2026-10-14"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "hypothermia",
+      "title": [
+        "低体温与损伤控制",
+        "Hypothermia and damage control"
+      ],
+      "anchor": [
+        "核心体温<35 ℃；复温目标36–37 ℃以本院规范为准。",
+        "Core below35 C; rewarm toward36–37 C Follow institutional policy."
+      ],
+      "scope": [
+        "成人创伤大出血；测食管、膀胱或鼻咽等核心温度",
+        "Adult major traumatic bleeding; use a core-temperature method"
+      ],
+      "decision": [
+        "到院即去湿衣、保暖、加温毯及输液/血液加温；37 ℃实验室检测可能低估低温凝血障碍以本院规范为准。",
+        "Remove wet clothing, insulate and warm patient/infusions/blood;37 C laboratory testing may understate hypothermic coagulopathy Follow institutional policy."
+      ],
+      "upgrade": [
+        "T≤35 ℃合并pH≤7.2、凝血病、持续出血和长重建手术风险：考虑分期损伤控制手术。以本院规范为准。",
+        "T at most35 C with pH at most7.2, coagulopathy, ongoing bleeding and lengthy-reconstruction risk: consider staged damage-control surgery. Follow institutional policy."
+      ],
+      "references": [
+        "cn-shock",
+        "eu-bleeding"
+      ],
+      "domesticReferences": [
+        "cn-shock"
+      ],
+      "domesticAlignment": "domestic_specific",
+      "comparisonNote": [
+        "国内R12/R29；不是用一个体温数字单独决定手术",
+        "Chinese R12/R29; one temperature does not decide surgery alone"
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-14"
+      },
+      "clinicalReviewer": null,
+      "clinicalReviewDate": null
+    },
+    {
+      "id": "burn-fluid-peds",
+      "title": [
+        "儿童烧伤补液",
+        "Pediatric burn fluids"
+      ],
+      "anchor": [
+        "首24 h：2 mL×kg×%TBSA（Ⅱ/Ⅲ度）+基础水分以本院规范为准。",
+        "First24 hours:2 mL×kg×%TBSA (partial/full thickness)+maintenance Follow institutional policy."
+      ],
+      "scope": [
+        "儿童；基础水分70–100 mL/kg，<2岁100–150 mL/kg",
+        "Children; maintenance70–100 mL/kg, under two years100–150 mL/kg"
+      ],
+      "decision": [
+        "晶:胶1–3:1；1/2伤后首8 h，余量分后两个8 h；尿量约1 mL/(kg·h)。以本院烧伤规范为准。",
+        "Crystalloid:colloid1–3:1; half in first eight hours from injury, remainder in the next two eight-hour periods; urine about1 mL/(kg·h). Follow institutional burn policy. Follow institutional policy."
+      ],
+      "upgrade": [
+        ">5%可出现休克；头面颈伤警惕气道，按已输入量、循环和血糖动态调整。以本院规范为准。",
+        "Over5% may cause shock; head/face/neck injury raises airway concern; adjust to previous fluids, circulation and glucose. Follow institutional policy."
+      ],
+      "references": [
+        "cn-burn"
+      ],
+      "domesticReferences": [
+        "cn-burn"
+      ],
+      "domesticAlignment": "domestic_specific",
+      "comparisonNote": [
+        "不使用成人2000 mL基础水分；用实际体重和面积百分数数值",
+        "Do not use adult2000 mL maintenance; use actual weight and percentage-number area"
+      ],
+      "sourceCheck": {
+        "by": "Codex-assisted source cross-check",
+        "date": "2026-10-14"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -903,16 +1814,16 @@
       ],
       "rows": [
         [
-          "≤3 h；1 g 静滴 ≥10 min → 1 g 静脉维持 8 h",
-          "≤3 h; 1 g IV over ≥10 min → 1 g IV over 8 h"
+          "≤3 h；1 g 静滴 ≥10 min → 1 g 静脉维持 8 h以本院规范为准。",
+          "≤3 h; 1 g IV over ≥10 min → 1 g IV over 8 h Follow institutional policy."
         ],
         [
-          "尽早使用；国内 R33 维持表述为“8 h以上”，欧洲 R23 为8 h。",
-          "Give early; Chinese R33 states at least eight hours for maintenance, European R23 eight hours."
+          "尽早使用；国内 R33 维持表述为“8 h以上”，欧洲 R23 为8 h。以本院规范为准。",
+          "Give early; Chinese R33 states at least eight hours for maintenance, European R23 eight hours. Follow institutional policy."
         ],
         [
-          "超3 h、疑纤溶关闭或特殊人群：交由团队按来源与本院规范重新判断。",
-          "After three hours, possible fibrinolytic shutdown or special populations: source/local-policy review."
+          "超过3 h不常规使用；仅有黏弹性检测纤溶亢进证据时由上级结合本院方案决定，已知纤溶抑制者不用。以本院规范为准。",
+          "Beyond three hours, not routine; only with viscoelastic hyperfibrinolysis evidence and senior/local-policy review; avoid known fibrinolytic shutdown. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -921,7 +1832,8 @@
       ],
       "references": [
         "cn-shock",
-        "eu-bleeding"
+        "eu-bleeding",
+        "nice"
       ],
       "claimIds": [
         "txa"
@@ -939,16 +1851,16 @@
       ],
       "rows": [
         [
-          "SBP 80–90 mmHg",
-          "SBP 80–90 mmHg"
+          "SBP 80–90 mmHg以本院规范为准。",
+          "SBP 80–90 mmHg Follow institutional policy."
         ],
         [
           "老年、慢性高血压慎重；儿童与孕妇另按专门方案。",
           "Caution with older age/chronic hypertension; separate pediatric/pregnancy protocols."
         ],
         [
-          "灌注持续恶化或合并神经损伤：重新定目标并升级止血。",
-          "Worsening perfusion or neurological injury: revise targets and escalate bleeding control."
+          "目标达不到可按欧洲R14加去甲肾上腺素；国内R28在MAP<50或SBP<70危及生命时考虑，不能替代血液和止血。以本院规范为准。",
+          "If targets fail, consider norepinephrine (European R14); Chinese R28 considers it in life-threatening MAP below50 or SBP below70, alongside blood/control rather than replacing them. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -975,12 +1887,12 @@
       ],
       "rows": [
         [
-          "SI = HR / SBP；国内 SI ≥1",
-          "SI = HR / SBP; Chinese SI ≥1"
+          "SI≥1 或脉压<30 mmHg（国内R2）以本院规范为准。",
+          "SI at least one or pulse pressure below30 mmHg (Chinese R2) Follow institutional policy."
         ],
         [
-          "国内R2将≥1列入诊断条件；欧洲R5讨论0.9–1附近风险。",
-          "Chinese R2 includes ≥1 in diagnostic criteria; European R5 discusses risk around 0.9–1."
+          "国内表2：SI≥1.0/≥1.5/≥2.0粗估失血20–30%/30–50%/50–70%；β阻滞剂、老幼及运动员可失真，不能当精确失血量。以本院规范为准。",
+          "Chinese Table2: SI at least1.0/1.5/2.0 roughly associates with20–30%/30–50%/50–70% loss; beta blockers, age and athletic physiology confound it, so not precise volume. Follow institutional policy."
         ],
         [
           "药物抑制心率或老人“正常”生命体征仍保留休克担心。",
@@ -1011,16 +1923,20 @@
       ],
       "rows": [
         [
-          "ABC ≥2 + 临床状态",
-          "ABC ≥2 + clinical state"
+          "ABC ≥2 + 临床状态以本院规范为准。",
+          "ABC ≥2 + clinical state Follow institutional policy."
         ],
         [
-          "穿透躯干伤、FAST阳性、HR >120、SBP <90各1分；核对本院版本。",
-          "One point each: penetrating torso, positive FAST, HR >120, SBP <90; verify local version."
+          "穿透躯干伤、FAST阳性、HR≥120、SBP≤90各1分；ABC≥2启动评估；原版等号边界与本院版本核对。以本院规范为准。",
+          "Penetrating torso injury, positive FAST, HR at least120 and SBP at most90 each score one; ABC at least two triggers assessment; verify local boundaries. Follow institutional policy."
         ],
         [
-          "持续不稳定或活动出血需止血也可触发评估，不等累计输血量。",
-          "Persistent instability/active bleeding may also trigger assessment; do not wait for cumulative volume."
+          "抢救室已输血、需手术/介入止血也是TQIP触发因素；结合持续出血和复苏反应，不等24 h累计10 U。以本院规范为准。",
+          "Blood already required in the bay and operative/interventional control are TQIP triggers; consider ongoing bleeding/response without waiting for24-hour10-unit totals. Follow institutional policy."
+        ],
+        [
+          "初始血浆:血小板:红细胞1:1:1–1:1:2（国内R27）后尽早目标导向。国内1 U红细胞通常来自200 mL全血，不可按国外1 unit原样计数；血小板按血库治疗量换算。以本院规范为准。",
+          "Initial plasma:platelets:RBC1:1:1–1:1:2 (Chinese R27), then early goal-directed therapy. Domestic RBC units generally derive from200 mL whole blood and differ from overseas units; convert platelet therapeutic amounts with the blood bank. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -1048,12 +1964,12 @@
       ],
       "rows": [
         [
-          "Clauss Fib ≤1.5 g/L + 大出血",
-          "Clauss Fib ≤1.5 g/L + major bleeding"
+          "Clauss Fib ≤1.5 g/L + 大出血以本院规范为准。",
+          "Clauss Fib ≤1.5 g/L + major bleeding Follow institutional policy."
         ],
         [
-          "欧洲R29：评估纤维蛋白原/冷沉淀补充并复测。",
-          "European R29: assess fibrinogen/cryo replacement and retest."
+          "欧洲R29首剂约3–4 g纤维蛋白原浓缩物，或按本院冷沉淀每U实际含量折算；国内U来源与国外不同，不能直接套15–20 U；输后复测。以本院血库规范为准。",
+          "European R29 initial fibrinogen concentrate about3–4 g, or cryoprecipitate by measured local content per unit; domestic and overseas units differ, so do not copy15–20 units directly; recheck. Follow institutional blood-bank policy. Follow institutional policy."
         ],
         [
           "出血持续、检测恶化：血库/凝血团队按本院方案升级。",
@@ -1084,8 +2000,8 @@
       ],
       "rows": [
         [
-          "Hb 70–90 g/L",
-          "Hb 70–90 g/L"
+          "Hb 70–90 g/L以本院规范为准。",
+          "Hb 70–90 g/L Follow institutional policy."
         ],
         [
           "结合活动出血、灌注与病程；早期Hb正常不能排除大出血。",
@@ -1120,12 +2036,12 @@
       ],
       "rows": [
         [
-          "iCa：维持本实验室正常范围",
-          "iCa: maintain the local normal range"
+          "iCa≥1.00 mmol/L（国内）；欧洲正常范围1.1–1.3 mmol/L以本院规范为准。",
+          "iCa at least1.00 mmol/L (Chinese); European normal1.1–1.3 mmol/L Follow institutional policy."
         ],
         [
-          "复测血气iCa并结合pH，按本院补钙方案纠正。",
-          "Recheck blood-gas iCa with pH; correct under local replacement policy."
+          "开始输血即测iCa；10%氯化钙10 mL约元素钙270 mg，10%葡萄糖酸钙10 mL约90 mg；补低钙时核对浓度、通路及复测。以本院规范为准。",
+          "Measure iCa at transfusion start; 10 mL of10% calcium chloride contains about270 mg elemental calcium, versus about90 mg in10% calcium gluconate. Verify concentration/access and recheck. Follow institutional policy."
         ],
         [
           "输血仍在进行、iCa下降或心律变化：及时团队复评。",
@@ -1157,12 +2073,12 @@
       ],
       "rows": [
         [
-          "MAP ≥80 mmHg",
-          "MAP ≥80 mmHg"
+          "MAP ≥80 mmHg以本院规范为准。",
+          "MAP ≥80 mmHg Follow institutional policy."
         ],
         [
-          "国内2023 R22另列SBP >110；2026院前R6写SBP ≥110或MAP ≥80。",
-          "Chinese 2023 R22 also gives SBP >110; 2026 prehospital R6 gives SBP ≥110 or MAP ≥80."
+          "GCS9–15且伤后≤3 h可按CRASH-3讨论TXA；TBI出血血小板目标>100×10⁹/L（欧洲R30）；创伤性ICH用TEG/ROTEM指导凝血纠正（NCS/SCCM2026）。以本院规范为准。",
+          "For GCS9–15 within three hours, discuss TXA by CRASH-3 scope; TBI bleeding platelet goal above100×10⁹/L (European R30); VHA-guided traumatic-ICH correction (NCS/SCCM2026). Follow institutional policy."
         ],
         [
           "意识/瞳孔变化、目标未达：同步纠正氧合/灌注并升级神经救治。",
@@ -1176,7 +2092,9 @@
       "references": [
         "cn-shock",
         "cn-prehospital",
-        "eu-bleeding"
+        "eu-bleeding",
+        "crash3",
+        "ncs-sccm-ich-2026"
       ],
       "claimIds": [
         "tbi-pressure"
@@ -1195,12 +2113,12 @@
       ],
       "rows": [
         [
-          "≥65 岁；SBP <110 mmHg",
-          "Age ≥65; SBP <110 mmHg"
+          "≥65 岁；SBP <110 mmHg以本院规范为准。",
+          "Age ≥65; SBP <110 mmHg Follow institutional policy."
         ],
         [
-          "补问抗凝、基线功能、降压/控心率药及头部受伤。",
-          "Ask about anticoagulants, baseline function, BP/HR drugs and head injury."
+          "≥65岁SBP<110或HR>SBP提示风险；抗凝+头伤即使体征正常也升级评估。以本院规范为准。",
+          "At least65 years with SBP below110 or HR above SBP raises concern; anticoagulated head injury escalates assessment even with apparently normal signs. Follow institutional policy."
         ],
         [
           "低能量伤合并症状、抗凝或灌注异常：提早高级评估。",
@@ -1231,16 +2149,16 @@
       ],
       "rows": [
         [
-          "药名 → 末次剂量 → 出血严重度",
-          "Drug → last dose → bleeding severity"
+          "危及生命出血：核对药物、末次剂量、INR/肾功能/抗Xa",
+          "Life-threatening bleeding: drug, last dose, INR/renal function/anti-Xa"
         ],
         [
-          "华法林：PCC + 静脉维K；达比加群：依达赛珠单抗；Xa药：特异拮抗剂或PCC路径。",
-          "Warfarin: PCC + IV vitamin K; dabigatran: idarucizumab; Xa agents: specific reversal or PCC pathway."
+          "华法林：4F-PCC25–50 IU/kg按INR+维生素K₁5–10 mg缓慢静注；可及4F-PCC优于FFP。达比加群：依达赛珠单抗5 g静注。Xa药：可考虑4F-PCC25–50 IU/kg；ICH按2026条件性推荐优先4F-PCC。以本院规范为准。",
+          "Warfarin: 4F-PCC25–50 IU/kg by INR plus vitamin K1 5–10 mg slow IV; available 4F-PCC preferred to FFP. Dabigatran: idarucizumab5 g IV. Xa agents: consider4F-PCC25–50 IU/kg; 2026 ICH conditional guidance favors4F-PCC. Follow institutional policy."
         ],
         [
-          "同步查肾功能、INR/TT/抗Xa及本院药品可及性；正常PT不能排除DOAC效应。",
-          "Check renal function, INR/TT/anti-Xa and formulary; normal PT does not exclude DOAC effect."
+          "andexanet美商业销售已停止；欧盟/英国仍可条件获得，权衡获益不确定、血栓和费用。创伤性ICH抗血小板输注尚无统一推荐，不自动常规使用。",
+          "US andexanet sales have ceased; conditional EU/UK availability requires benefit/thrombosis/cost review. Traumatic antiplatelet-associated ICH has no uniform platelet-transfusion recommendation; do not use automatically."
         ]
       ],
       "scope": [
@@ -1248,9 +2166,13 @@
         "Life-threatening/uncontrolled bleeding or urgent high-risk surgery; authorized team decisions."
       ],
       "references": [
-        "eu-bleeding",
+        "cn-shock",
         "cn-periop",
-        "cn-shock"
+        "eu-bleeding",
+        "fda-andexxa",
+        "acep-doac-2026",
+        "ncs-sccm-ich-2026",
+        "bsh-andexanet-2026"
       ],
       "claimIds": [
         "anticoagulants"
@@ -1272,8 +2194,8 @@
           "Mother first; left uterine displacement; Rh D"
         ],
         [
-          "有效按压同时人工左推；抗D由产科按孕周、致敏状态、胎母出血与本院方案评估。",
-          "Manual displacement with effective CPR; obstetric anti-D assessment by gestation, sensitization, FMH and local policy."
+          "≥20周手推子宫或左倾15–30°；未致敏RhD阴性≥13⁺⁰周用KB指导抗D剂量并核对可及性；育龄女性查HCG（国内R20）。以本院规范为准。",
+          "At least20 weeks: manual uterine displacement or left tilt15–30 degrees; unsensitized RhD-negative at least13+0 weeks: KB-guided anti-D assessment and availability check; test HCG when appropriate (Chinese R20). Follow institutional policy."
         ],
         [
           "母体不稳定、腹痛/流血或胎心担心：创伤—产科共同升级。",
@@ -1286,7 +2208,7 @@
       ],
       "references": [
         "qld-pregnancy",
-        "aha-pregnancy"
+        "cn-shock"
       ],
       "claimIds": [
         "pregnancy"
@@ -1304,24 +2226,25 @@
       ],
       "rows": [
         [
-          "识别心停即准备；目标 ≤5 min 完成",
-          "Prepare at arrest recognition; goal delivery by ≤5 min"
+          "识别心停即准备；目标 ≤5 min 完成以本院规范为准。",
+          "Prepare at arrest recognition; goal delivery by ≤5 min Follow institutional policy."
         ],
         [
-          "AHA2025：在心停现场组织产科/麻醉/新生儿团队与复苏性分娩。",
-          "AHA 2025: organize obstetric/anesthetic/neonatal teams and resuscitative delivery at the arrest site."
+          "AHA2025：在心停现场组织产科/麻醉/新生儿团队与复苏性分娩。以本院规范为准。",
+          "AHA 2025: organize obstetric/anesthetic/neonatal teams and resuscitative delivery at the arrest site. Follow institutional policy."
         ],
         [
-          "传统4 min启动/5 min娩出是历史时间框架；不等4 min才叫人或准备。",
-          "Historical four-minute start/five-minute birth framing does not mean waiting four minutes to call or prepare."
+          "4 min启动、5 min娩出仍是AHA 2025推荐时间目标；识别心停即呼叫准备，就地实施；超过5 min仍可能获益，不因超时放弃，并行处理创伤可逆原因。以本院规范为准。",
+          "Four-minute initiation/five-minute birth remains the AHA2025 timing goal; call/prepare at arrest recognition, perform on site; benefit may remain beyond five minutes, so do not abandon solely for delay; address traumatic causes. Follow institutional policy."
         ]
       ],
       "scope": [
-        "子宫底在脐水平/以上且标准复苏未获ROSC。",
-        "Fundus at/above umbilicus with no ROSC despite standard resuscitation."
+        "宫底达脐或以上（约≥20孕周）、标准复苏无ROSC；受训团队。",
+        "Fundus at/above umbilicus (approximately at least20 weeks), no ROSC with standard resuscitation; skilled team."
       ],
       "references": [
-        "aha-pregnancy"
+        "aha-pregnancy",
+        "qld-pregnancy"
       ],
       "claimIds": [
         "pregnancy-arrest"
@@ -1339,12 +2262,12 @@
       ],
       "rows": [
         [
-          "实测/近期体重；晶体液 10 mL/kg",
-          "Measured/recent weight; crystalloid 10 mL/kg"
+          "实测/近期体重；晶体液 10 mL/kg以本院规范为准。",
+          "Measured/recent weight; crystalloid 10 mL/kg Follow institutional policy."
         ],
         [
-          "无法称重按本院验证的身长体重工具；RCH持续出血可用RBC 10 mL/kg初始小份。",
-          "If unweighable use a locally validated length-based tool; RCH ongoing bleeding: initial RBC aliquot 10 mL/kg."
+          "疑出血血流动力学受损：小量初始复苏并早用血；RCH初剂TXA15 mg/kg，上限与速度核对儿科药品方案。以本院规范为准。",
+          "Suspected bleeding with compromise: small initial resuscitation aliquots and early blood; RCH initial TXA15 mg/kg, with maximum/rate checked in the pediatric product protocol. Follow institutional policy."
         ],
         [
           "每份后复评；持续失血尽早血库/儿科MTP，不重复大量晶体液。",
@@ -1375,16 +2298,16 @@
       ],
       "rows": [
         [
-          "RBC : FFP = 1 : 1（容量）",
-          "RBC : FFP = 1 : 1 (volume)"
+          "RBC : FFP = 1 : 1（容量）以本院规范为准。",
+          "RBC : FFP = 1 : 1 (volume) Follow institutional policy."
         ],
         [
-          "标准举例RBC 20 mL/kg + FFP 20 mL/kg；不是常规贫血或非创伤比例。",
-          "Standard example: RBC 20 mL/kg + FFP 20 mL/kg; not routine anemia/non-trauma ratio."
+          "标准举例RBC 20 mL/kg + FFP 20 mL/kg；不是常规贫血或非创伤比例。以本院规范为准。",
+          "Standard example: RBC 20 mL/kg + FFP 20 mL/kg; not routine anemia/non-trauma ratio. Follow institutional policy."
         ],
         [
-          "持续出血按标准及本院儿科MTP补充其他成分；结果返回后调整并监测容量超负荷。",
-          "Persistent bleeding: additional components under standard/local MTP; adjust to labs and monitor overload."
+          "RBC累计>40 mL/kg可考虑PLT15–20 mL/kg+冷沉淀10 mL/kg；按化验目标Hb>80、Fib>1.5、APTT/PT<中点1.5倍、PLT>75×10⁹/L调整并监测超负荷。以本院儿科方案为准。",
+          "With cumulative RBC above40 mL/kg, consider platelets15–20 mL/kg and cryo10 mL/kg; adjust to Hb above80 g/L, Fib above1.5 g/L, APTT/PT below1.5 times reference midpoint and PLT above75×10⁹/L; monitor overload. Follow institutional pediatric policy. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -1392,7 +2315,8 @@
         "WS/T795—2022 §9.5.2.2: pediatric traumatic hemorrhagic shock."
       ],
       "references": [
-        "cn-pediatric"
+        "cn-pediatric",
+        "cn-pediatric-expl"
       ],
       "claimIds": [
         "peds-blood"
@@ -1410,16 +2334,16 @@
       ],
       "rows": [
         [
-          "成人：9 + 18 + 27 + 46 = 100%",
-          "Adult: 9 + 18 + 27 + 46 = 100%"
+          "成人：9 + 18 + 27 + 46 = 100%以本院规范为准。",
+          "Adult: 9 + 18 + 27 + 46 = 100% Follow institutional policy."
         ],
         [
-          "12岁以下：头面颈=9+(12−年龄)%；双下肢=46−(12−年龄)%。",
-          "Under 12: head/neck=9+(12−age)%; both legs=46−(12−age)%."
+          "12岁以下：头面颈=9+(12−年龄)%；双下肢=46−(12−年龄)%。以本院规范为准。",
+          "Under 12: head/neck=9+(12−age)%; both legs=46−(12−age)%. Follow institutional policy."
         ],
         [
-          "面积或深度不确定、关键部位/吸入/电化学伤：烧伤专科复评。",
-          "Uncertain area/depth, key-site/inhalation/electrical/chemical injury: burn review."
+          "静脉复苏评估：成人Ⅱ/Ⅲ度>15%、儿童>5%、老年>10%或Ⅲ度>5%；吸入伤与循环状态可独立升级。以本院规范为准。",
+          "IV resuscitation assessment: adult partial/full-thickness over15%, child over5%, elder over10% or full-thickness over5%; inhalation injury/physiology may independently escalate. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -1445,16 +2369,16 @@
       ],
       "rows": [
         [
-          "首24 h：1.5–2 mL × kg × %TBSA + 2000 mL",
-          "First 24 h: 1.5–2 mL × kg × %TBSA + 2000 mL"
+          "首24 h：1.5–2 mL × kg × %TBSA + 2000 mL以本院规范为准。",
+          "First 24 h: 1.5–2 mL × kg × %TBSA + 2000 mL Follow institutional policy."
         ],
         [
-          "晶:胶=1–2:1；总估算量一半在伤后首8 h，余量分后两个8 h。",
-          "Crystalloid:colloid=1–2:1; half estimated total in first eight hours from injury, quarters in next two intervals."
+          "晶:胶=1–2:1；总估算量一半在伤后首8 h，余量分后两个8 h。以本院规范为准。",
+          "Crystalloid:colloid=1–2:1; half estimated total in first eight hours from injury, quarters in next two intervals. Follow institutional policy."
         ],
         [
-          "按灌注、尿量和过负荷反馈调整；成人公式不套儿童/心肾病。",
-          "Titrate to perfusion, urine and overload; do not apply adult formula to children/cardiorenal disease."
+          "尿量0.5–1 mL/(kg·h)，电击/挤压/溶血性化学伤1–2；第二24 h晶胶减半、基础水分同首日；基础水分分配按烧伤科方案。以本院规范为准。",
+          "Urine0.5–1 mL/(kg·h),1–2 for electrical/crush/hemolytic chemical injury; second-day crystalloid/colloid half first-day actual amount, maintenance unchanged; allocate maintenance per burn service. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -1480,8 +2404,8 @@
       ],
       "rows": [
         [
-          "抢救结束后 ≤6 h 据实补记并注明",
-          "Truthful, marked supplementation ≤6 h after rescue ends"
+          "抢救结束后 ≤6 h 据实补记并注明以本院规范为准。",
+          "Truthful, marked supplementation ≤6 h after rescue ends Follow institutional policy."
         ],
         [
           "时间到分钟；措施、反应、人员、告知与交接责任。",
@@ -1592,20 +2516,16 @@
       ],
       "rows": [
         [
-          "看灌注、开放伤与胸腹其他失血源",
-          "Assess perfusion, open wounds and other bleeding sources"
+          "WSES：SBP<90，或需持续补液/输血/升压药维持；BD>6 mmol/L、SI>1或24 h需4–6 U RBC也是风险依据，单位不可跨国直接折算。以本院规范为准。",
+          "WSES: SBP below90 or maintained by ongoing fluids/blood/vasopressors; BD over6, SI over1 or4–6 RBC units in24 hours also indicate risk. Do not directly convert national component units. Follow institutional policy."
         ],
         [
-          "束带技能：适用场景、位置、复评与失败升级",
-          "Binder skill: context, placement, review and failure escalation"
+          "骨盆带中心位于大转子/耻骨联合水平；无相关肢体禁忌时双膝并拢、踝内旋，避免反复挤压分离试验。同步血液、保温、TXA及其他出血源检查。以本院规范为准。",
+          "Center the binder at greater trochanters/symphysis level; knees together and internal leg rotation when associated injuries allow. Avoid repeated springing. Coordinate blood, warming, TXA and other-source checks. Follow institutional policy."
         ],
         [
-          "联系骨科 / 止血 / 泌尿 / 软组织团队",
-          "Coordinate orthopedic / hemorrhage / urological / soft-tissue teams"
-        ],
-        [
-          "本土队列用于讨论，不能替代患者决策",
-          "Local cohort supports discussion, not individual decisions"
+          "骨盆带→动脉出血且不需开腹：血管造影栓塞；需开腹/快速控制：腹膜外填塞+外固定。REBOA Zone III仅受训团队为疑盆腔来源、极不稳定者的过渡，不是所有路径的必经最后一步。以本院规范为准。",
+          "Binder→arterial bleeding without laparotomy need: AE; laparotomy/rapid control need: preperitoneal packing plus external fixation. ZoneIII REBOA is a skilled-team bridge in extreme instability with suspected pelvic source, not a mandatory final step. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -1613,8 +2533,10 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "cn-prehospital",
-        "pelvic-study"
+        "wses-pelvic",
+        "nice-fracture",
+        "eu-bleeding",
+        "cn-shock"
       ],
       "claimIds": [],
       "axis": "team"
@@ -1668,20 +2590,16 @@
       ],
       "rows": [
         [
-          "需求是否超过可用能力？",
-          "Does demand exceed available capacity?"
+          "行走先绿；开放气道仍无呼吸为黑；RR>30、无桡动脉/CRT>2 s、不能遵嘱任一为红；其余黄。初次标签仍需复评。以本院规范为准。",
+          "Walking initially green; apnea after airway opening black; RR over30, absent radial pulse/CRT over two seconds, or inability to obey commands red; otherwise yellow. Reassess initial tags. Follow institutional policy."
         ],
         [
-          "更新人数、空间、血液、手术、转运",
-          "Update numbers, space, blood, surgery, transport"
+          "ERBP2012：尽早解救前等渗盐水，成人1000 mL/h、儿童15–20 mL/kg/h；2 h后成人不超过500 mL/h、儿童约10 mL/kg/h或更低。禁机械套用大出血/TBI/心肾衰者。以本院规范为准。",
+          "ERBP2012: early pre-extrication saline, adult1000 mL/h/child15–20 mL/kg/h; after two hours adult at most500/child about10 mL/kg/h or lower. Do not mechanically apply to bleeding/TBI/cardiac-renal failure. Follow institutional policy."
         ],
         [
-          "患者：趋势 / 新发现；系统：瓶颈 / 新危险",
-          "Patients: trends/findings; system: bottlenecks/hazards"
-        ],
-        [
-          "用本院认可分诊工具，变化后再评",
-          "Use institutional triage tools; reassess after change"
+          "一级冲击波（肺/耳/空腔）；二级破片；三级抛掷撞击；四级烧伤/吸入/挤压等。爆震肺可迟至48 h出现表现；鼓膜破裂单独不能衡量重伤，也不能排除。以本院规范为准。",
+          "Primary pressure wave(lung/ear/hollow organs), secondary fragments, tertiary displacement, quaternary burns/inhalation/crush. Lung signs may appear up to48 hours; isolated eardrum rupture neither measures nor excludes serious injury. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -1689,7 +2607,11 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "who"
+        "start",
+        "jumpstart",
+        "salt",
+        "cn-disaster-plan",
+        "erbp-crush"
       ],
       "claimIds": [],
       "axis": "team"
@@ -1833,8 +2755,8 @@
           "Communication / consent / receiver confirmation"
         ],
         [
-          "抢救补记条件与6小时见文书卡",
-          "See record card for six-hour rescue supplementation"
+          "抢救补记条件与6小时见文书卡以本院规范为准。",
+          "See record card for six-hour rescue supplementation Follow institutional policy."
         ]
       ],
       "scope": [
@@ -1859,20 +2781,16 @@
       ],
       "rows": [
         [
-          "区分原材料记载与课堂推演",
-          "Distinguish recorded facts from classroom simulation"
+          "早期静脉抗生素，NICE开放骨折尽量伤后1 h内；会阴伤口保护、污染记录，疑直肠伤由受训者直肠指检，阳性行直肠镜。以本院规范为准。",
+          "Early IV antibiotics; NICE open-fracture goal within one hour. Protect perineal wounds/document contamination; trained digital rectal assessment when rectal injury suspected, proctoscopy if positive. Follow institutional policy."
         ],
         [
-          "出血与开放伤风险并行",
-          "Assess bleeding and open-wound risks in parallel"
+          "清创/填塞与血液复苏并行；直肠/泌尿伤评估后选择粪便转流或耻骨上膀胱造瘘，不是所有患者常规。以下是教学路径，未在原记录确认的措施不标作已实施。以本院规范为准。",
+          "Debridement/packing and blood resuscitation proceed together. Fecal diversion or suprapubic drainage depends on rectal/urinary injury, not routine for everyone. Proposed teaching pathways are not documented performed care. Follow institutional policy."
         ],
         [
-          "解释协作节点与复评责任",
-          "Explain collaboration points and reassessment ownership"
-        ],
-        [
-          "资料缺失不补造；队列归属未确认",
-          "Do not invent gaps; cohort membership unconfirmed"
+          "原始生命体征、Hb/乳酸/BE不足，不生成看似真实的轨迹。另作模拟时须明确合成并与真实病例分离。以本院规范为准。",
+          "Do not create a plausible real trajectory when original vitals/Hb/lactate/BE are missing. Any simulation must be distinctly synthetic. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -1880,7 +2798,9 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "pelvic-study"
+        "wses-pelvic",
+        "nice-fracture",
+        "cn-shock"
       ],
       "claimIds": [],
       "axis": "team"
@@ -1904,8 +2824,8 @@
           "Effect checks → failure recognition → escalation"
         ],
         [
-          "0未做到 / 1提示后做到 / 2独立完整",
-          "0 absent / 1 after prompting / 2 complete independently"
+          "0未做到 / 1提示后做到 / 2独立完整以本院规范为准。",
+          "0 absent / 1 after prompting / 2 complete independently Follow institutional policy."
         ],
         [
           "只在监督下模拟；评分不等于临床授权",
@@ -1933,20 +2853,16 @@
       ],
       "rows": [
         [
-          "记录意识、瞳孔与运动的变化",
-          "Track consciousness, pupils and movement"
+          "重型TBI：SBP≥100（50–69岁），≥110（15–49岁或>70岁）；国内MAP≥80 mmHg。CPP60–70 mmHg、ICP>22 mmHg需处理；BTF压力证据III级，ICP/CPP为IIB级。以本院规范为准。",
+          "Severe TBI: SBP at least100 at50–69 years, at least110 at15–49 or over70; Chinese MAP at least80 mmHg. CPP60–70, treat ICP over22; BTF pressure evidence LevelIII, ICP/CPP LevelIIB. Follow institutional policy."
         ],
         [
-          "避免低氧/低灌注；压力目标见TBI卡",
-          "Avoid hypoxia/hypoperfusion; see TBI pressure card"
+          "国内SpO₂至少90%、理想>95%；ACS目标≥94%。无颅内高压时PaCO₂/PetCO₂参考35–45 mmHg，休克时EtCO₂不能替代动脉血气。以本院规范为准。",
+          "Chinese SpO₂ floor90%, ideally over95%; ACS target at least94%. Without intracranial hypertension, PaCO₂/PetCO₂ reference35–45 mmHg; shock invalidates assuming EtCO₂ equals arterial CO₂. Follow institutional policy."
         ],
         [
-          "核对抗凝、用药和基线状态",
-          "Check anticoagulation, drugs and baseline"
-        ],
-        [
-          "新神经变化：高级气道/神经团队复评",
-          "New neurological change: senior airway/neurosurgical review"
+          "国内推荐22：伤后3 h内1 g缓慢静脉给药>10 min，随后1 g维持≥8 h。NICE：≥16岁、GCS≤12、无活动性颅外出血，伤后2 h内考虑2 g静脉单次，在影像前实施。以本院规范为准。",
+          "Chinese recommendation22: within three hours,1 g slow IV over ten minutes, then1 g over at least eight hours. NICE: age at least16, GCS at most12, no active extracranial bleeding: consider a single2 g IV dose within two hours, before imaging. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -1954,8 +2870,9 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "cn-shock",
-        "cn-prehospital"
+        "cn-tbi",
+        "btf",
+        "nice-head"
       ],
       "claimIds": [],
       "axis": "team"
@@ -1971,20 +2888,16 @@
       ],
       "rows": [
         [
-          "呼吸费力、胸廓起伏与呼吸音",
-          "Work of breathing, chest excursion and breath sounds"
+          "成人第4/5肋间、腋中线稍前；备选第2肋间锁骨中线。儿童第2肋间锁骨中线。针长≥8 cm、14G/10G为成人TCCC器材参考，按体型与器械选择。以本院规范为准。",
+          "Adults: fourth/fifth interspace just anterior to midaxillary line; second interspace midclavicular alternative. Children: second midclavicular. At least8 cm,14G/10G is an adult TCCC equipment reference; adjust to anatomy/device. Follow institutional policy."
         ],
         [
-          "床旁发现与监护趋势一起报告",
-          "Report bedside findings with monitor trends"
+          "不稳定或胸内活动出血>1500 mL、或>200 mL/h连续3 h：立即胸外科评估。稳定≥500 mL引流，<300 mL可严密观察；300–499 mL结合生理和趋势判断。以本院规范为准。",
+          "Instability or active thoracic bleeding over1500 mL or over200 mL/h for three hours needs immediate surgical evaluation. Stable at least500 mL: drain; below300 mL: close observation;300–499 mL requires individualized assessment. Follow institutional policy."
         ],
         [
-          "操作由授权人员，措施后再查",
-          "Authorized operators; reassess after intervention"
-        ],
-        [
-          "呼吸/灌注迅速恶化：立即团队升级",
-          "Rapid respiratory/perfusion decline: urgent team escalation"
+          "气胸8.5–24 Fr；稳定血胸EAST条件推荐14 Fr或更小猪尾管，WSES-AAST较大血胸倾向28–40 Fr；不稳定用大口径。两者人群不同，不能互换。以本院规范为准。",
+          "Pneumothorax8.5–24 Fr; EAST conditionally supports14 Fr or smaller pigtails in stable hemothorax, while WSES-AAST favors28–40 Fr for larger hemothorax. Unstable patients need large-bore drainage; populations differ. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -1993,7 +2906,8 @@
       ],
       "references": [
         "cn-prehospital",
-        "nice"
+        "wses-chest",
+        "east-htx"
       ],
       "claimIds": [],
       "axis": "team"
@@ -2009,20 +2923,16 @@
       ],
       "rows": [
         [
-          "机制、腹部查体、灌注与变化",
-          "Mechanism, examination, perfusion and change"
+          "SBP<90 mmHg伴休克征，或维持压力需持续补液/输血/血管活性药：按不稳定路径评估。FAST阳性且对复苏无反应→直接手术/损伤控制止血；有反应且可安全监护才增强CT。以本院规范为准。",
+          "SBP below90 with shock signs, or pressure requiring ongoing fluids/blood/vasopressors, indicates instability. Positive FAST with no response goes directly to surgery/damage-control hemorrhage control; responders may have monitored contrast CT. Follow institutional policy."
         ],
         [
-          "单次阴性FAST不能排除腹部损伤",
-          "One negative FAST does not exclude abdominal injury"
+          "BE应连同符号、乳酸与变化解释；不把WSES原文BE>−5单独当触发器，碱缺失BD与负BE不可混用。以本院规范为准。",
+          "Interpret BE sign with lactate and trend; do not use the WSES printed BE greater than−5 as a stand-alone trigger or interchange BD with negative BE. Follow institutional policy."
         ],
         [
-          "按稳定性与本院路径组织再查/影像",
-          "Repeat review/imaging by stability and local pathway"
-        ],
-        [
-          "恶化：初评、止血与外科同步",
-          "Deterioration: primary survey, bleeding and surgical review"
+          "WSES I：稳定AAST I–II；II：稳定AAST III；III：稳定AAST IV–V；IV：任何解剖级别但不稳定。以本院规范为准。",
+          "WSES I: stable AAST I–II;II: stable AAST III;III: stable AAST IV–V;IV: unstable at any anatomic grade. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2031,7 +2941,8 @@
       ],
       "references": [
         "nice",
-        "cn-shock"
+        "wses-liver",
+        "wses-spleen"
       ],
       "claimIds": [],
       "axis": "team"
@@ -2047,20 +2958,16 @@
       ],
       "rows": [
         [
-          "各轴发现并列，避免单一区域吸引全部注意",
-          "Keep axes visible; avoid fixation on one region"
+          "教学新增EFAST：左胸膜无滑动、右侧有滑动、无明显心包液；结合左呼吸音减低、BP78/48，立即由受训团队减压/胸引并复评，不等CT。以本院规范为准。",
+          "Synthetic EFAST addition: absent left pleural sliding, right sliding present, no clear pericardial fluid. With reduced left sounds and BP78/48, trained teams decompress/drain and reassess without CT delay. Follow institutional policy."
         ],
         [
-          "每项行动明确责任人和效果核查",
-          "Assign owner and effect check to each action"
+          "到院SI126/86≈1.47、ABC≥2：启动本院大量输血路径评估，血液与源控制同步。以本院规范为准。",
+          "Arrival SI126/86 about1.47, ABC at least2: activate assessment for the institutional massive-transfusion pathway while controlling the source. Follow institutional policy."
         ],
         [
-          "稳定后补二次/三次评估",
-          "After stabilization complete secondary/tertiary review"
-        ],
-        [
-          "新发现与资源变化触发重新排序",
-          "New findings/resources trigger reprioritization"
+          "大出血Fib≤1.5 g/L考虑补充；iCa欧洲1.1–1.3 mmol/L、国内≥1.00；已给Fib1.7/iCa1.05是复查点，不应冒充已达补充阈值。以本院规范为准。",
+          "Major bleeding Fib at most1.5 g/L prompts replacement assessment; European iCa1.1–1.3 mmol/L, Chinese at least1.00. Given Fib1.7/iCa1.05 prompt review, not false claims that every replacement threshold is crossed. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2068,8 +2975,9 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "who",
-        "cn-shock"
+        "cn-shock",
+        "eu-bleeding",
+        "wses-chest"
       ],
       "claimIds": [],
       "axis": "team"
@@ -2085,20 +2993,12 @@
       ],
       "rows": [
         [
-          "已知发现与推测分别列出",
-          "Separate known findings and assumptions"
+          "原记录SBP67伴低氧，不能等58 mmHg再启动。相对心动过缓应询问β阻滞剂/抗凝药，但不能据此否认休克。FAST原始结果、年龄、Hb、乳酸、BE、GCS分项均保留未知。以本院规范为准。",
+          "Original SBP67 with hypoxemia warrants escalation before58. Relative bradycardia prompts beta-blocker/anticoagulant history but does not negate shock. Original FAST, age, Hb, lactate, BE and GCS components remain unknown. Follow institutional policy."
         ],
         [
-          "串联灌注、影像与血液资源",
-          "Connect perfusion, imaging and blood resources"
-        ],
-        [
-          "解释每次选择后还需核查什么",
-          "State checks needed after each choice"
-        ],
-        [
-          "无改善：重新寻找出血源并升级",
-          "No improvement: revisit bleeding sources and escalate"
+          "条件练习：不稳定+FAST阳性且复苏无反应→直接损伤控制剖腹；疑盆腔来源同步骨盆带/填塞路径。血液优先、TXA时间核查；不得把条件设定写为原病历已完成。以本院规范为准。",
+          "Conditional exercise: unstable positive FAST with no response→damage-control laparotomy; suspected pelvis→binder/packing pathway. Prioritize blood and check TXA timing; do not describe proposed care as performed. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2106,8 +3006,9 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "cn-shock",
-        "nice"
+        "nice",
+        "eu-bleeding",
+        "wses-pelvic"
       ],
       "claimIds": [],
       "axis": "team"
@@ -2123,20 +3024,16 @@
       ],
       "rows": [
         [
-          "灌注、神经、出血与体温一起看",
-          "Review perfusion, neurology, bleeding and warmth"
+          "原FAST只记录腹腔/胸膜阴性，不能视为心包阴性；剑突下心包窗、泵功能与右心负荷应在持续休克早期补查，不等第8轮。Hb数值及CT是否增强未在源资料确认，保留未知。以本院规范为准。",
+          "Original FAST records negative abdomen/pleura, not a negative pericardium. Add subxiphoid view, pump function and right-heart assessment early in persistent shock, not at round8. Hb and contrast-CT status are unconfirmed. Follow institutional policy."
         ],
         [
-          "记录措施—时间—反应",
-          "Record action–time–response"
+          "疑出血以血制品为主、限制晶体；无重型TBI未止血期SBP80–90 mmHg为参考。不是将原病历“加压补液”改写成已输血。以本院规范为准。",
+          "For suspected hemorrhage prioritize blood, limit crystalloid; SBP80–90 is a reference before control without severe TBI. Do not rewrite original pressurized fluid as confirmed transfusion. Follow institutional policy."
         ],
         [
-          "区分预设病例趋势与真实治疗效果",
-          "Distinguish scripted trends from real treatment effects"
-        ],
-        [
-          "恶化/未知持续：并行团队复评",
-          "Worsening/persistent unknowns: parallel team review"
+          "过敏性反应伴低压/呼吸受损：成人肾上腺素0.5 mg IM，必要时5 min重复，按本院过敏急救流程。AMPLE的A询问过敏；糖皮质激素后改善不能证明病因或替代一线肾上腺素。以本院规范为准。",
+          "Anaphylaxis with circulatory/respiratory compromise: adult adrenaline0.5 mg IM, repeat after five minutes if needed per local pathway. AMPLE A asks allergies; improvement after steroids neither proves causality nor substitutes first-line adrenaline. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2144,7 +3041,9 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "cn-shock"
+        "cn-shock",
+        "eu-bleeding",
+        "rcuk-special"
       ],
       "claimIds": [],
       "axis": "team"
@@ -2160,20 +3059,16 @@
       ],
       "rows": [
         [
-          "记录疼痛、运动、感觉和远端灌注",
-          "Record pain, movement, sensation, distal perfusion"
+          "双上肢烧灼痛/运动异常而下肢相对保留：考虑中央脊髓综合征，补ASIA/ISNCSCI运动感觉及骶段检查，不凭症状确诊。弹射/感觉异常为高危：全程SMR、CT；有脊髓神经异常则CT后MRI。以本院规范为准。",
+          "Bilateral arm burning pain/weakness with relative leg sparing raises central-cord concern. Complete ASIA/ISNCSCI motor/sensory/sacral assessment, not symptom-only diagnosis. Ejection/paresthesia are high risk: SMR and CT, then MRI for cord abnormalities. Follow institutional policy."
         ],
         [
-          "移动和干预前后复查并留痕",
-          "Document rechecks before/after movement or intervention"
+          "尽早、常以伤后6 h内为研究比较目标，不能等待至6 h；复位前后记录坐骨神经及腓总支、血运，复位后CT查骨折/游离体/同心复位，随访股骨头坏死。以本院规范为准。",
+          "Reduce urgently; six hours is a research comparison reference, not permission to wait. Document sciatic/peroneal function and perfusion before/after; post-reduction CT assesses fracture/fragments/congruence, followed by AVN surveillance. Follow institutional policy."
         ],
         [
-          "关联机制，补查其他区域",
-          "Link mechanism and examine other regions"
-        ],
-        [
-          "新神经/灌注异常：骨科/脊柱升级",
-          "New neurological/perfusion deficit: orthopedic/spine escalation"
+          "镇静减轻痛苦但须独立监护、波形CO₂、复苏与气道救援准备，维持SMR并说明麻醉/骨科角色。ACEP2026强调容量不足者在可行时先纠正。以本院规范为准。",
+          "Sedation needs dedicated monitoring, waveform CO₂, resuscitation/airway rescue and maintained SMR with anesthesia/orthopedic roles. ACEP2026 recommends correcting volume depletion first where feasible. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2181,8 +3076,10 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "cn-prehospital",
-        "nice"
+        "nice-spine",
+        "nice-fracture",
+        "hip-timing",
+        "acep-sedation"
       ],
       "claimIds": [],
       "axis": "team"
@@ -2198,20 +3095,16 @@
       ],
       "rows": [
         [
-          "先识别xABCDE立即威胁",
-          "First identify immediate xABCDE threats"
+          "尽早静脉抗生素，尽量伤后1 h内。国内2019 Gustilo I–II以一代头孢（原文头孢唑啉）为基础；III加氨基糖苷，粪便/厌氧污染加青霉素或甲硝唑；过敏/肾功能及本地耐药谱决定替代。以本院规范为准。",
+          "Early IV antibiotics, ideally within one hour. Chinese2019 GustiloI–II first-generation cephalosporin(cefazolin), III adds aminoglycoside, fecal/anaerobic contamination adds penicillin/metronidazole; allergy/renal function/local resistance guide alternatives. Follow institutional policy."
         ],
         [
-          "局部查体与神经血管状态",
-          "Local examination and neurovascular status"
+          "高风险每小时查体，记录疼痛/被动牵拉痛及镇痛剂量；有症状松解环形层至皮肤，心脏水平，30 min内复评并即时骨科会诊。以本院规范为准。",
+          "High risk: hourly exam, pain/passive stretch/analgesic dose. Symptoms: release circumferential layers to skin, heart-level limb, reassess within30 minutes and consult orthopedics immediately. Follow institutional policy."
         ],
         [
-          "临时保护后复查，继续找合并伤",
-          "Recheck after temporary protection; look for associated injury"
-        ],
-        [
-          "开放伤、缺血、神经异常：高级评估",
-          "Open injury, ischemia or neurological deficit: senior review"
+          "无脉、持续出血、扩张性血肿为硬征；毛细血管再充盈或Doppler不能单独排除。立即骨科/血管/整形协同，必要时临时分流。以本院规范为准。",
+          "Absent pulse/ongoing bleeding/expanding hematoma are hard signs; CRT/Doppler alone cannot exclude injury. Immediate orthopedic/vascular/plastic coordination, temporary shunt when needed. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2219,8 +3112,11 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "cn-prehospital",
-        "nice"
+        "cn-open-fracture",
+        "boast-open",
+        "nice-fracture",
+        "boast-acs",
+        "boast-vascular"
       ],
       "claimIds": [],
       "axis": "team"
@@ -2236,20 +3132,16 @@
       ],
       "rows": [
         [
-          "机制、疼痛、运动感觉与可信度",
-          "Mechanism, pain, motor/sensory exam and reliability"
+          "MAP主动增压下限75–80、上限90–95 mmHg，维持3–7天；弱推荐、极低质量证据。不是所有人的自然血压超过95都必须降压，区别重型TBI目标。以本院规范为准。",
+          "Active MAP augmentation lower limit75–80/upper90–95 mmHg for3–7 days, weak recommendation/very-low evidence. Do not lower every spontaneous pressure above95; distinguish severe-TBI targets. Follow institutional policy."
         ],
         [
-          "移动限制按风险/本院标准",
-          "Motion restriction by risk/local criteria"
+          "可行时伤后24 h内减压，神经体征与CT后MRI、完整ASIA/骶段检查同步。以本院规范为准。",
+          "When feasible decompress within24 hours; combine neurologic findings, CT-then-MRI, complete ASIA/sacral assessment. Follow institutional policy."
         ],
         [
-          "移动前后记录神经变化",
-          "Record neurology before/after movement"
-        ],
-        [
-          "新无力/感觉异常或灌注恶化：升级",
-          "New weakness/sensory change or poor perfusion: escalate"
+          "AANS/CNS2013不推荐常规甲泼尼龙；AO2017仅弱建议成人伤后8 h内开始24 h输注作为选项，>8 h或48 h输注不建议。收益/感染等风险由专科与本院方案决定。以本院规范为准。",
+          "AANS/CNS2013 discourages routine MPSS; AO2017 weakly offers adult24-hour infusion starting within eight hours as an option, not after eight or48-hour infusion. Specialists/local policy weigh benefit/infection risk. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2257,8 +3149,9 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "cn-prehospital",
-        "nice"
+        "ao-sci24",
+        "ao-mpss17",
+        "nice-spine"
       ],
       "claimIds": [],
       "axis": "team"
@@ -2274,20 +3167,16 @@
       ],
       "rows": [
         [
-          "伤口、畸形、运动、感觉、灌注",
-          "Wound, deformity, movement, sensation, perfusion"
+          "尽早静脉抗生素，尽量伤后1 h内。国内2019 Gustilo I–II以一代头孢（原文头孢唑啉）为基础；III加氨基糖苷，粪便/厌氧污染加青霉素或甲硝唑；过敏/肾功能及本地耐药谱决定替代。以本院规范为准。",
+          "Early IV antibiotics, ideally within one hour. Chinese2019 GustiloI–II first-generation cephalosporin(cefazolin), III adds aminoglycoside, fecal/anaerobic contamination adds penicillin/metronidazole; allergy/renal function/local resistance guide alternatives. Follow institutional policy."
         ],
         [
-          "覆盖开放伤，临时保护与镇痛讨论",
-          "Cover open injury; discuss temporary protection/analgesia"
+          "高风险每小时查体，记录疼痛/被动牵拉痛及镇痛剂量；有症状松解环形层至皮肤，心脏水平，30 min内复评并即时骨科会诊。以本院规范为准。",
+          "High risk: hourly exam, pain/passive stretch/analgesic dose. Symptoms: release circumferential layers to skin, heart-level limb, reassess within30 minutes and consult orthopedics immediately. Follow institutional policy."
         ],
         [
-          "固定前后记录神经血管",
-          "Document neurovascular state before/after splinting"
-        ],
-        [
-          "缺血、疼痛不相称/进行性神经异常：升级",
-          "Ischemia, disproportionate pain/progressive deficit: escalate"
+          "无脉、持续出血、扩张性血肿为硬征；毛细血管再充盈或Doppler不能单独排除。立即骨科/血管/整形协同，必要时临时分流。以本院规范为准。",
+          "Absent pulse/ongoing bleeding/expanding hematoma are hard signs; CRT/Doppler alone cannot exclude injury. Immediate orthopedic/vascular/plastic coordination, temporary shunt when needed. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2295,8 +3184,11 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "nice",
-        "cn-prehospital"
+        "cn-open-fracture",
+        "boast-open",
+        "nice-fracture",
+        "boast-acs",
+        "boast-vascular"
       ],
       "claimIds": [],
       "axis": "team"
@@ -2312,20 +3204,16 @@
       ],
       "rows": [
         [
-          "失血、开放伤、神经血管与疼痛",
-          "Bleeding, open injury, neurovascular state and pain"
+          "尽早静脉抗生素，尽量伤后1 h内。国内2019 Gustilo I–II以一代头孢（原文头孢唑啉）为基础；III加氨基糖苷，粪便/厌氧污染加青霉素或甲硝唑；过敏/肾功能及本地耐药谱决定替代。以本院规范为准。",
+          "Early IV antibiotics, ideally within one hour. Chinese2019 GustiloI–II first-generation cephalosporin(cefazolin), III adds aminoglycoside, fecal/anaerobic contamination adds penicillin/metronidazole; allergy/renal function/local resistance guide alternatives. Follow institutional policy."
         ],
         [
-          "老人低能量髋部伤也补查抗凝/基线功能",
-          "Older low-energy hip injury: anticoagulation/baseline review"
+          "高风险每小时查体，记录疼痛/被动牵拉痛及镇痛剂量；有症状松解环形层至皮肤，心脏水平，30 min内复评并即时骨科会诊。以本院规范为准。",
+          "High risk: hourly exam, pain/passive stretch/analgesic dose. Symptoms: release circumferential layers to skin, heart-level limb, reassess within30 minutes and consult orthopedics immediately. Follow institutional policy."
         ],
         [
-          "固定/移动后复查；核对去向和责任人",
-          "Recheck after splint/movement; verify destination/owner"
-        ],
-        [
-          "缺血或持续恶化：升级；国内髋部路径另查",
-          "Ischemia/deterioration: escalate; see domestic hip pathway"
+          "无脉、持续出血、扩张性血肿为硬征；毛细血管再充盈或Doppler不能单独排除。立即骨科/血管/整形协同，必要时临时分流。以本院规范为准。",
+          "Absent pulse/ongoing bleeding/expanding hematoma are hard signs; CRT/Doppler alone cannot exclude injury. Immediate orthopedic/vascular/plastic coordination, temporary shunt when needed. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2333,9 +3221,11 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "cn-hip",
-        "cn-prehospital",
-        "nice"
+        "cn-open-fracture",
+        "boast-open",
+        "nice-fracture",
+        "boast-acs",
+        "boast-vascular"
       ],
       "claimIds": [],
       "axis": "team"
@@ -2351,20 +3241,20 @@
       ],
       "rows": [
         [
-          "双人配合、密封与胸廓反应",
-          "Two-person coordination, seal and chest response"
+          "评估呼吸/保护反射与SMR，吸引血液/分泌物；无禁忌选择口/鼻咽通气道。以本院规范为准。",
+          "Assess breathing/protection/SMR, suction blood/secretions, choose appropriate oral/nasal adjunct without contraindications. Follow institutional policy."
         ],
         [
-          "持续检查氧合/通气，准备下一气道方案",
-          "Review oxygenation/ventilation and next airway plan"
+          "双人双手扣面罩并托下颌，助手挤球囊，以可见胸廓起伏和漏气核查。以本院规范为准。",
+          "Two-person two-hand seal/jaw support; assistant bags, checking chest rise and leak. Follow institutional policy."
         ],
         [
-          "授权、监督、失败方案先说清",
-          "State authorization, supervision and rescue plan"
+          "氧合/胸廓无改善查密闭、阻塞、体位及胸部原因；持续失败升级高级气道，记录SpO₂/EtCO₂及灌注。以本院规范为准。",
+          "If oxygen/chest rise fails check seal, obstruction, position and chest causes; persistent failure escalates airway with SpO₂/EtCO₂/perfusion review. Follow institutional policy."
         ],
         [
-          "OSCE：0未做 / 1提示 / 2完整；重错单列",
-          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+          "OSCE 0未做/不安全、1提示后完成、2独立完成；满分10，关键失败否决。以本院规范为准。",
+          "OSCE0 omitted/unsafe,1 prompted,2 independent; total10, critical failure overrides. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2372,11 +3262,13 @@
         "Supervised trainer practice; real procedures follow authorization and skill sources."
       ],
       "references": [
-        "cn-prehospital",
-        "nice"
+        "bts",
+        "rcuk-special",
+        "nice-spine",
+        "aha-bls25"
       ],
       "claimIds": [],
-      "axis": "team"
+      "axis": "a"
     },
     {
       "id": "skill-intubation",
@@ -2389,20 +3281,20 @@
       ],
       "rows": [
         [
-          "准备、预氧合、备选方案与团队角色",
-          "Preparation, preoxygenation, backup plan and roles"
+          "DAS成人视频喉镜首选；SMR/MILS按颈椎损伤场景，吸引、B/C/D失败计划和角色明确。以本院规范为准。",
+          "DAS adult video laryngoscopy first; use trauma-specific SMR/MILS, suction, B/C/D backup plans and assigned roles. Follow institutional policy."
         ],
         [
-          "管位确认与持续监测；失败及时进入救援路径",
-          "Confirm placement/monitor; failed attempt needs rescue plan"
+          "JTS严重失血麻醉参考减量滴定：氯胺酮约1 mg/kg IV，丙泊酚0.5–1 mg/kg IV可降压；不是所有患者默认方案。按本院麻醉医师评估。以本院规范为准。",
+          "JTS severe-hemorrhage anesthesia references reduced/titrated ketamine about1 mg/kg IV, propofol0.5–1 mg/kg IV with hypotension risk, not default doses for everyone; local anesthesia assessment. Follow institutional policy."
         ],
         [
-          "授权、监督、失败方案先说清",
-          "State authorization, supervision and rescue plan"
+          "持续波形CO₂确认后固定，查深度、双肺、SpO₂、血压；移动后再确认，失败进入DAS救援。以本院规范为准。",
+          "Confirm with sustained waveform CO₂, secure and check depth/bilateral lungs/SpO₂/pressure; reconfirm after movement, enter DAS rescue on failure. Follow institutional policy."
         ],
         [
-          "OSCE：0未做 / 1提示 / 2完整；重错单列",
-          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+          "OSCE 0未做/不安全、1提示后完成、2独立完成；满分10，关键失败否决。以本院规范为准。",
+          "OSCE0 omitted/unsafe,1 prompted,2 independent; total10, critical failure overrides. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2410,11 +3302,12 @@
         "Supervised trainer practice; real procedures follow authorization and skill sources."
       ],
       "references": [
-        "cn-prehospital",
-        "nice"
+        "das25",
+        "jts-anesthesia",
+        "nice-spine"
       ],
       "claimIds": [],
-      "axis": "team"
+      "axis": "a"
     },
     {
       "id": "skill-cricothyrotomy",
@@ -2427,20 +3320,20 @@
       ],
       "rows": [
         [
-          "识别不能插管且不能氧合情境并呼叫支援",
-          "Recognize failed intubation/oxygenation and call support"
+          "DAS成人#10刀片、bougie、6.0 mm套囊管，充分肌松、吸引；原指南最大伸颈为成人困难气道场景，创伤疑颈椎伤须权衡氧合救命与SMR，不能常规强行伸颈。以本院规范为准。",
+          "DAS adult #10 scalpel, bougie,6.0 mm cuffed tube, full paralysis/suction. Maximal extension belongs to its adult difficult-airway context; suspected trauma spine injury requires oxygen-rescue/SMR judgment, not routine forced extension. Follow institutional policy."
         ],
         [
-          "模型练习解剖、器械与效果核查",
-          "Trainer-based anatomy, equipment and effect checks"
+          "训练器步骤：中线纵切口自下而上、最长约8 cm，手指辨认环甲膜；横刺膜、保持刀垂直、转90°刃朝足侧。以本院规范为准。",
+          "Trainer: caudal-to-cephalad vertical midline incision up to about8 cm, finger identify membrane; transverse stab, scalpel perpendicular, rotate90 degrees edge caudal. Follow institutional policy."
         ],
         [
-          "授权、监督、失败方案先说清",
-          "State authorization, supervision and rescue plan"
+          "充套囊、连接通气，持续波形CO₂确认；失败考虑小管、延长切口、改位置/操作者，随后固定与交接。以本院规范为准。",
+          "Inflate cuff/connect ventilation, sustained waveform CO₂; failure considers smaller tube/extended incision/position or operator change, then secure/handover. Follow institutional policy."
         ],
         [
-          "OSCE：0未做 / 1提示 / 2完整；重错单列",
-          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+          "OSCE 0未做/不安全、1提示后完成、2独立完成；满分10，关键失败否决。以本院规范为准。",
+          "OSCE0 omitted/unsafe,1 prompted,2 independent; total10, critical failure overrides. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2448,11 +3341,11 @@
         "Supervised trainer practice; real procedures follow authorization and skill sources."
       ],
       "references": [
-        "cn-prehospital",
-        "nice"
+        "das25",
+        "nice-spine"
       ],
       "claimIds": [],
-      "axis": "team"
+      "axis": "a"
     },
     {
       "id": "skill-needle-decompression",
@@ -2465,20 +3358,20 @@
       ],
       "rows": [
         [
-          "综合临床怀疑与呼吸/灌注变化",
-          "Integrate suspicion with respiratory/perfusion changes"
+          "成人第4/5肋间腋中线稍前；备选第2肋间锁骨中线，不在乳头线内侧；儿童第2肋间锁骨中线。以本院规范为准。",
+          "Adult fourth/fifth interspace just anterior to midaxillary; alternate second midclavicular, not medial to nipple; child second midclavicular. Follow institutional policy."
         ],
         [
-          "减压后查效果；无效重新评估与升级",
-          "Check effect; failure needs reassessment/escalation"
+          "成人TCCC14G/10G、约8 cm（3.25英寸）导管参考；体型/器材按本院，沿下位肋骨上缘垂直进针，避免肋间血管神经。以本院规范为准。",
+          "Adult TCCC14G/10G, about8 cm(3.25 inches) catheter reference; local anatomy/device selection, perpendicular over superior border of the lower rib. Follow institutional policy."
         ],
         [
-          "授权、监督、失败方案先说清",
-          "State authorization, supervision and rescue plan"
+          "仍无效或院内有熟练团队，转开放/手指胸廓造口并接胸管；TCCC院前第二次后路径与院内资源不同，不混称同一算法。以本院规范为准。",
+          "Persistent failure or skilled hospital setting: open/finger thoracostomy then drain; TCCC post-second-attempt field care differs from the hospital pathway. Follow institutional policy."
         ],
         [
-          "OSCE：0未做 / 1提示 / 2完整；重错单列",
-          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+          "OSCE 0未做/不安全、1提示后完成、2独立完成；满分10，关键失败否决。以本院规范为准。",
+          "OSCE0 omitted/unsafe,1 prompted,2 independent; total10, critical failure overrides. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2486,11 +3379,13 @@
         "Supervised trainer practice; real procedures follow authorization and skill sources."
       ],
       "references": [
+        "tccc",
         "cn-prehospital",
-        "nice"
+        "nice",
+        "wses-chest"
       ],
       "claimIds": [],
-      "axis": "team"
+      "axis": "b"
     },
     {
       "id": "skill-tube-thoracostomy",
@@ -2503,20 +3398,20 @@
       ],
       "rows": [
         [
-          "适用判断、准备、监督下关键步骤",
-          "Indication, preparation, supervised key steps"
+          "第4–6肋间腋前至腋中线安全三角，按患者影像/解剖确认；受训者钝性分离、手指确认胸膜入口，避免盲用套管针。以本院规范为准。",
+          "Fourth–sixth interspace anterior-to-midaxillary safe triangle, confirm patient anatomy/imaging; trained blunt dissection/finger confirmation, no blind trocar. Follow institutional policy."
         ],
         [
-          "效果、引流系统、并发症与复查",
-          "Effect, drainage system, complications and review"
+          "气胸8.5–24 Fr；稳定血胸EAST条件支持14 Fr猪尾，较大/不稳定血胸WSES28–40 Fr（>32未见额外优势）。以本院规范为准。",
+          "Pneumothorax8.5–24 Fr; stable hemothorax EAST conditional14 Fr pigtail, larger/unstable WSES28–40 Fr(no added benefit above32). Follow institutional policy."
         ],
         [
-          "授权、监督、失败方案先说清",
-          "State authorization, supervision and rescue plan"
+          "输出>1500 mL或>200 mL/h连续3 h、或持续不稳定，立即外科升级；生理可先于量触发，残留/堵塞复查。以本院规范为准。",
+          "Output over1500 or over200 mL/h for three hours, or ongoing instability prompts immediate surgical escalation; physiology may trigger before volume, review retained blood/blockage. Follow institutional policy."
         ],
         [
-          "OSCE：0未做 / 1提示 / 2完整；重错单列",
-          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+          "OSCE 0未做/不安全、1提示后完成、2独立完成；满分10，关键失败否决。以本院规范为准。",
+          "OSCE0 omitted/unsafe,1 prompted,2 independent; total10, critical failure overrides. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2524,11 +3419,12 @@
         "Supervised trainer practice; real procedures follow authorization and skill sources."
       ],
       "references": [
-        "cn-prehospital",
+        "wses-chest",
+        "east-htx",
         "nice"
       ],
       "claimIds": [],
-      "axis": "team"
+      "axis": "b"
     },
     {
       "id": "skill-efast",
@@ -2541,20 +3437,20 @@
       ],
       "rows": [
         [
-          "标准窗逐项看；记录质量与未见窗口",
-          "Review standard windows; record quality/missing views"
+          "双側胸膜查滑动/肺点及积液；阴性或无滑动各有鉴别，不能单图诊断。以本院规范为准。",
+          "Bilateral pleura: sliding/lung point/fluid; negative/absent sliding have alternatives, not a single-image diagnosis. Follow institutional policy."
         ],
         [
-          "阴性不排除损伤，结合稳定性与重复检查",
-          "Negative scan does not exclude injury; use stability/repeat review"
+          "报窗口、图像质量、看见什么、哪些未完成与检查时点。以本院规范为准。",
+          "Report windows/quality/findings/missing views/time. Follow institutional policy."
         ],
         [
-          "授权、监督、失败方案先说清",
-          "State authorization, supervision and rescue plan"
+          "重复观察与临床生理匹配；有反应稳定者增强CT，疑张力即减压不等超声完成。以本院规范为准。",
+          "Repeat matched to physiology; monitored stable responders get contrast CT, suspected tension is treated without completing ultrasound first. Follow institutional policy."
         ],
         [
-          "OSCE：0未做 / 1提示 / 2完整；重错单列",
-          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+          "OSCE 0未做/不安全、1提示后完成、2独立完成；满分10，关键失败否决。以本院规范为准。",
+          "OSCE0 omitted/unsafe,1 prompted,2 independent; total10, critical failure overrides. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2562,11 +3458,12 @@
         "Supervised trainer practice; real procedures follow authorization and skill sources."
       ],
       "references": [
-        "cn-prehospital",
-        "nice"
+        "nice",
+        "rch",
+        "wses-pelvic"
       ],
       "claimIds": [],
-      "axis": "team"
+      "axis": "b"
     },
     {
       "id": "skill-tourniquet",
@@ -2579,20 +3476,20 @@
       ],
       "rows": [
         [
-          "识别危及生命的肢体外出血",
-          "Recognize life-threatening external limb bleeding"
+          "已见伤口：TCCC近心端5–7 cm、非关节；国内共识≥10 cm按所选体系。不明部位高而紧；无效再紧固并加第二条并排/近端。以本院规范为准。",
+          "Visible wound: TCCC5–7 cm proximal, off a joint; Chinese reference at least10 cm per selected system. If unseen, high-and-tight; tighten/add a second alongside/proximal if ineffective. Follow institutional policy."
         ],
         [
-          "控制效果、时间、远端与交接记录",
-          "Control effect, time, distal state and handover"
+          "成功同时确认出血停止和远端脉搏消失（截肢不适用远端脉搏）；不能只看脉搏。以本院规范为准。",
+          "Confirm both bleeding cessation and absent distal pulse, with pulse not applicable to amputation; pulse alone is insufficient. Follow institutional policy."
         ],
         [
-          "授权、监督、失败方案先说清",
-          "State authorization, supervision and rescue plan"
+          "尽力2 h内转加压/止血敷料，须无休克、可严密观察、非截肢；>6 h缺监护/化验不松解。仅受训团队转换。以本院规范为准。",
+          "Aim for conversion within two hours only without shock, with close monitoring, and not amputation; after six hours do not remove without monitoring/labs. Trained team conversion only. Follow institutional policy."
         ],
         [
-          "OSCE：0未做 / 1提示 / 2完整；重错单列",
-          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+          "OSCE 0未做/不安全、1提示后完成、2独立完成；满分10，关键失败否决。以本院规范为准。",
+          "OSCE0 omitted/unsafe,1 prompted,2 independent; total10, critical failure overrides. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2600,8 +3497,9 @@
         "Supervised trainer practice; real procedures follow authorization and skill sources."
       ],
       "references": [
+        "tccc",
         "cn-prehospital",
-        "nice"
+        "cn-shock"
       ],
       "claimIds": [],
       "axis": "x"
@@ -2617,20 +3515,20 @@
       ],
       "rows": [
         [
-          "疑骨盆伤与循环风险，核对本院适用条件",
-          "Suspected pelvic injury/perfusion risk; local indications"
+          "中心定位大转子和耻骨联合水平，不是髂嵴或腰；先核查衣物和皮肤。以本院规范为准。",
+          "Center at greater trochanters/symphysis, not iliac crest/waist; check clothing/skin. Follow institutional policy."
         ],
         [
-          "模拟位置核查、皮肤风险、效果与持续复评",
-          "Simulated placement, skin risks, effect and serial review"
+          "无伴随肢体禁忌时双膝并拢、踝内旋；只做温和观察，不反复弹性分离。以本院规范为准。",
+          "Knees together/internal rotation when associated injuries allow; gentle observation, no repeated springing. Follow institutional policy."
         ],
         [
-          "授权、监督、失败方案先说清",
-          "State authorization, supervision and rescue plan"
+          "持续不稳定转AE/PPP及固定，建立移除替代方案，NICE24 h内去除且不稳定先与外科计划。以本院规范为准。",
+          "Persistent instability→AE/PPP/stabilization; plan removal/replacement, NICE within24 hours with surgical plan for instability. Follow institutional policy."
         ],
         [
-          "OSCE：0未做 / 1提示 / 2完整；重错单列",
-          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+          "OSCE 0未做/不安全、1提示后完成、2独立完成；满分10，关键失败否决。以本院规范为准。",
+          "OSCE0 omitted/unsafe,1 prompted,2 independent; total10, critical failure overrides. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2638,8 +3536,9 @@
         "Supervised trainer practice; real procedures follow authorization and skill sources."
       ],
       "references": [
-        "cn-prehospital",
-        "nice"
+        "wses-pelvic",
+        "nice-fracture",
+        "cn-shock"
       ],
       "claimIds": [],
       "axis": "c"
@@ -2655,20 +3554,20 @@
       ],
       "rows": [
         [
-          "固定前后神经血管查体并记录",
-          "Document neurovascular checks before/after splinting"
+          "开放骨折尽早1 h内静脉抗生素，盐水湿敷+封闭层，按授权拍照，急诊不冲洗、不探查；破伤风按本院。以本院规范为准。",
+          "Open fracture: early IV antibiotics within one hour, saline-moistened/occlusive dressing, authorized photo, no ED irrigation/probing; local tetanus policy. Follow institutional policy."
         ],
         [
-          "疼痛/灌注变化或新感觉异常及时升级",
-          "Escalate pain/perfusion changes or new sensory deficit"
+          "股骨干牵引夹板仅按装置与伤型；合并骨盆、同侧膝/小腿/踝损伤避免牵引，选普通固定。以本院规范为准。",
+          "Femoral-shaft traction depends on device/pattern; avoid with pelvis or ipsilateral knee/lower-leg/ankle injury, use other immobilization. Follow institutional policy."
         ],
         [
-          "授权、监督、失败方案先说清",
-          "State authorization, supervision and rescue plan"
+          "疑筋膜室：松解环形包扎/夹板至皮肤，肢体心脏水平、立即骨科评估，不能因有脉搏排除。以本院规范为准。",
+          "Suspected compartment syndrome: release circumferential dressings/splint to skin, limb at heart level, immediate orthopedics; a pulse does not exclude it. Follow institutional policy."
         ],
         [
-          "OSCE：0未做 / 1提示 / 2完整；重错单列",
-          "OSCE: 0 absent / 1 prompted / 2 complete; flag critical errors"
+          "OSCE 0未做/不安全、1提示后完成、2独立完成；满分10，关键失败否决。以本院规范为准。",
+          "OSCE0 omitted/unsafe,1 prompted,2 independent; total10, critical failure overrides. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2676,11 +3575,1503 @@
         "Supervised trainer practice; real procedures follow authorization and skill sources."
       ],
       "references": [
-        "cn-prehospital",
-        "nice"
+        "nice-fracture",
+        "nice-spine"
       ],
       "claimIds": [],
-      "axis": "team"
+      "axis": "e"
+    },
+    {
+      "id": "hypothermia",
+      "title": [
+        "低体温与损伤控制",
+        "Hypothermia and damage control"
+      ],
+      "courses": [
+        "damage-control-resuscitation",
+        "xabcde"
+      ],
+      "rows": [
+        [
+          "核心体温<35 ℃；复温目标36–37 ℃以本院规范为准。",
+          "Core below35 C; rewarm toward36–37 C Follow institutional policy."
+        ],
+        [
+          "到院即去湿衣、保暖、加温毯及输液/血液加温；37 ℃实验室检测可能低估低温凝血障碍以本院规范为准。",
+          "Remove wet clothing, insulate and warm patient/infusions/blood;37 C laboratory testing may understate hypothermic coagulopathy Follow institutional policy."
+        ],
+        [
+          "T≤35 ℃合并pH≤7.2、凝血病、持续出血和长重建手术风险：考虑分期损伤控制手术。以本院规范为准。",
+          "T at most35 C with pH at most7.2, coagulopathy, ongoing bleeding and lengthy-reconstruction risk: consider staged damage-control surgery. Follow institutional policy."
+        ]
+      ],
+      "scope": [
+        "成人创伤大出血；测食管、膀胱或鼻咽等核心温度",
+        "Adult major traumatic bleeding; use a core-temperature method"
+      ],
+      "references": [
+        "cn-shock",
+        "eu-bleeding"
+      ],
+      "claimIds": [
+        "hypothermia"
+      ],
+      "axis": "e"
+    },
+    {
+      "id": "burn-fluid-peds",
+      "title": [
+        "儿童烧伤补液",
+        "Pediatric burn fluids"
+      ],
+      "courses": [
+        "special-populations"
+      ],
+      "rows": [
+        [
+          "首24 h：2 mL×kg×%TBSA（Ⅱ/Ⅲ度）+基础水分以本院规范为准。",
+          "First24 hours:2 mL×kg×%TBSA (partial/full thickness)+maintenance Follow institutional policy."
+        ],
+        [
+          "晶:胶1–3:1；1/2伤后首8 h，余量分后两个8 h；尿量约1 mL/(kg·h)。以本院烧伤规范为准。",
+          "Crystalloid:colloid1–3:1; half in first eight hours from injury, remainder in the next two eight-hour periods; urine about1 mL/(kg·h). Follow institutional burn policy. Follow institutional policy."
+        ],
+        [
+          ">5%可出现休克；头面颈伤警惕气道，按已输入量、循环和血糖动态调整。以本院规范为准。",
+          "Over5% may cause shock; head/face/neck injury raises airway concern; adjust to previous fluids, circulation and glucose. Follow institutional policy."
+        ]
+      ],
+      "scope": [
+        "儿童；基础水分70–100 mL/kg，<2岁100–150 mL/kg",
+        "Children; maintenance70–100 mL/kg, under two years100–150 mL/kg"
+      ],
+      "references": [
+        "cn-burn"
+      ],
+      "claimIds": [
+        "burn-fluid-peds"
+      ],
+      "axis": "e"
     }
-  ]
+  ],
+  "lessonSections": {
+    "documentation-handover": [
+      {
+        "id": "record-timing",
+        "title": [
+          "两种补记时限，不能混用",
+          "Two supplementation deadlines that differ"
+        ],
+        "references": [
+          "cn-records",
+          "cn-core"
+        ],
+        "cards": [
+          {
+            "title": [
+              "抢救记录：6 h",
+              "Rescue record: six hours"
+            ],
+            "rows": [
+              [
+                "因抢救未能及时书写，结束后6 h内据实补记并注明；记录时间到分钟。以本院规范为准。",
+                "If rescue prevents timely writing, supplement truthfully and mark within six hours after rescue; timestamp to minutes. Follow institutional policy."
+              ],
+              [
+                "参加人员姓名及专业技术职称；主持抢救者审核签字。",
+                "Record participant names and professional technical titles; the rescue leader reviews and signs."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "口头医嘱：即刻",
+              "Verbal order: immediately"
+            ],
+            "rows": [
+              [
+                "仅限急危抢救必要情形；护士复诵，抢救结束后医师即刻据实补记（第28条）。",
+                "For necessary emergency-rescue orders, the nurse repeats the order; the physician documents it immediately after rescue (Article 28)."
+              ],
+              [
+                "不能将医嘱补记推迟到6 h期限；药名、剂量、途径及时间逐项核对。",
+                "The six-hour record deadline does not extend the order deadline; verify drug, dose, route and time."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "交接与急会诊",
+              "Handover and urgent consultation"
+            ],
+            "rows": [
+              [
+                "交班记录交班前完成；接班记录接班后24 h内完成；急会诊10 min内到场、结束后即刻完成记录。以本院规范为准。",
+                "Outgoing record before handover; incoming record within 24 hours; urgent consultation arrival within ten minutes and record immediately after consultation. Follow institutional policy."
+              ],
+              [
+                "危重患者床旁交班、专册记录、双方签字；危急值记录、复读确认、立即通知医师并跟踪处理。",
+                "Hand over critical patients at the bedside, with dedicated records and both signatures; record/read back/confirm critical values, notify the physician promptly and follow through."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "consent-and-blood",
+        "title": [
+          "紧急签署与输血：按国内流程闭环",
+          "Emergency consent and transfusion: close the loop"
+        ],
+        "references": [
+          "cn-records",
+          "cn-blood"
+        ],
+        "cards": [
+          {
+            "title": [
+              "紧急授权和拒绝意见",
+              "Emergency authorization and refusal"
+            ],
+            "rows": [
+              [
+                "第10条：抢救时法定签署人无法及时签字，按医疗机构负责人或授权负责人签署流程办理，记录原因。",
+                "Article 10: when timely signing by the lawful decision maker is impossible during rescue, use the institution-head/authorized-head pathway and record why."
+              ],
+              [
+                "输血告知包括目的、成分、替代方法、方式、风险及签署时限；不同意输血也应形成签署的书面记录。",
+                "Discuss purpose, components, alternatives, method, risk and signing time; document refusal in a signed written record."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "即刻输血与评价",
+              "Immediate transfusion and evaluation"
+            ],
+            "rows": [
+              [
+                "血型无法确认且必须即刻输血，可发O型红细胞和/或AB型血浆；发血单注明“紧急-相容性检测未完成”，发血后即刻开始相容性检测。以本院规范为准。",
+                "If immediate transfusion is required before blood group confirmation, emergency O red cells and/or AB plasma may be issued; label incomplete compatibility testing and commence it immediately after issue. Follow institutional policy."
+              ],
+              [
+                "输血后24 h内评价成分、剂量、反应和效果，记入病历；未达预期时与输血科共同分析。以本院规范为准。",
+                "Within 24 hours, document components, dose, reactions and effect; investigate inadequate response with transfusion services. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "trauma-care-chain": [
+      {
+        "id": "linked-handover",
+        "title": [
+          "从预警到归处：国内标准与交接",
+          "Pre-alert to disposition: standards and handover"
+        ],
+        "references": [
+          "cn-transfer",
+          "cn-prehospital",
+          "nice"
+        ],
+        "cards": [
+          {
+            "title": [
+              "预警要素",
+              "Pre-alert elements"
+            ],
+            "rows": [
+              [
+                "年龄/性别、事件时间、机制、疑似损伤、生命体征及GCS、已做措施和反应、预计到达时刻、特殊需求。",
+                "Age/sex, event time, mechanism, suspected injuries, vitals/GCS, actions/response, arrival estimate and special needs."
+              ],
+              [
+                "WS/T 815：双方核对时间、伤情与措施，院前/院内交接者签名；推荐14采用ATMIST结构，推荐16以xABCDE为训练基础。",
+                "WS/T 815: verify timing, injuries and actions, with prehospital/in-hospital signatures; recommendation 14 uses ATMIST, recommendation 16 trains xABCDE."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "记录员和可衡量的资源时间",
+              "Recorder and measurable resource timing"
+            ],
+            "rows": [
+              [
+                "指定记录员实时记录，团队负责人检查完整性；结构化交接文书、影像与待回报结果随患者同行。",
+                "Assign contemporaneous recording and leader review; transfer structured records, images and pending-result ownership with the patient."
+              ],
+              [
+                "质量指标：MTP启动至首单位红细胞、首批血浆到达/输注时间分别记录；先约定起止定义，不编造统一达标分钟数。",
+                "Measure MTP activation to first red cells and plasma arrival/administration separately; define endpoints locally without inventing a universal minute target."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "critical-transfer",
+        "title": [
+          "院间转运前：一张核查清单",
+          "Interhospital transfer: one preparation checklist"
+        ],
+        "references": [
+          "ics-transfer"
+        ],
+        "cards": [
+          {
+            "title": [
+              "人、设备、药品、文书",
+              "People, equipment, medicines, records"
+            ],
+            "rows": [
+              [
+                "确认接收医院与床位、风险和转运团队；处理可纠正威胁，核查气道、循环、脊柱活动限制、保暖和镇痛。",
+                "Confirm receiving team/bed, risk and escort team; address reversible threats and check airway, circulation, SMR, temperature and analgesia."
+              ],
+              [
+                "设备：氧源与备用、吸引、通气设备、ECG/SpO₂/BP监护；人工气道持续波形EtCO₂。药品与泵、备用电池按路程准备。",
+                "Check oxygen/reserve, suction, ventilation, ECG/SpO2/BP and continuous waveform capnography for an artificial airway; prepare medicines, pumps and batteries for the journey."
+              ],
+              [
+                "带走诊疗摘要、给药/输血记录、影像及结果、告知与应急计划；孕产妇使用专门转运补充指南。",
+                "Carry clinical summary, medication/blood records, imaging/results, communication and contingency plan; use the maternity transfer supplement where applicable."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "xabcde": [
+      {
+        "id": "source-based-first-actions",
+        "title": [
+          "参考数字与立即威胁",
+          "Reference numbers and immediate threats"
+        ],
+        "references": [
+          "cn-shock",
+          "bts",
+          "nice",
+          "cn-prehospital"
+        ],
+        "cards": [
+          {
+            "title": [
+              "B：重伤氧疗",
+              "B: oxygen for major trauma"
+            ],
+            "rows": [
+              [
+                "储氧面罩15 L/min，成人危重创伤目标SpO₂ 94–98%；血气和高碳酸血症风险指导后续滴定。以本院规范为准。",
+                "Reservoir mask 15 L/min; target SpO2 94–98% in critically ill adults, then titrate to blood gases/hypercapnia risk. Follow institutional policy."
+              ],
+              [
+                "氧疗后仍低氧并单侧胸部异常、循环受损：立即评估张力性气胸等可逆威胁，不能只加流量后等待。",
+                "Persistent hypoxia with unilateral chest findings and circulatory compromise requires immediate assessment for reversible threats such as tension pneumothorax."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "A：气道与SMR",
+              "A: airway and SMR"
+            ],
+            "rows": [
+              [
+                "GCS≤8需评估确定性气道；把通气、氧合、出血复苏与脊柱活动限制（SMR）并行组织。以本院规范为准。",
+                "GCS at or below eight prompts definitive-airway assessment; coordinate ventilation, oxygenation, hemorrhage resuscitation and spinal motion restriction. Follow institutional policy."
+              ],
+              [
+                "不是仅给一个总GCS；记录E/V/M、瞳孔、污染和保护反射，并复查插管后的波形EtCO₂。",
+                "Record E/V/M, pupils, contamination and protective reflexes, and confirm intubation with waveform capnography."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "C：启动、止血、再评估",
+              "C: activate, control bleeding, reassess"
+            ],
+            "rows": [
+              [
+                "伤后≤3 h尽早TXA：1 g静脉输注至少10 min，后1 g维持8 h；无TBI出血SBP目标80–90，重型TBI MAP≥80 mmHg。以本院规范为准。",
+                "Give early TXA within three hours: 1 g IV over at least ten minutes, then 1 g over eight hours; bleeding without TBI SBP 80–90, severe TBI MAP at least 80 mmHg. Follow institutional policy."
+              ],
+              [
+                "HR126/SBP88使SI≈1.43；HR与SBP两项已使ABC≥2，应启动大量输血评估并同步寻找止血路径，不能等CT报告。",
+                "HR 126/SBP 88 gives SI about 1.43; two ABC criteria meet at least two points: activate MTP assessment while arranging hemorrhage control."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "atls-and-arrest",
+        "title": [
+          "新版框架与创伤性心停",
+          "Updated framework and traumatic arrest"
+        ],
+        "references": [
+          "atls11",
+          "rcuk-special"
+        ],
+        "cards": [
+          {
+            "title": [
+              "ATLS 11（2025）：公开更新",
+              "ATLS 11 (2025): public update"
+            ],
+            "rows": [
+              [
+                "ABCDE扩展为xABCDE，更突出危及生命外出血；课程更新覆盖创伤系统、团队沟通与灾难准备。",
+                "ABCDE expands to xABCDE, highlighting catastrophic external hemorrhage; public updates cover systems, team communication and disaster preparation."
+              ],
+              [
+                "具体手册章节、器械与完整算法以合法课程资料核对；本页仅用公开来源说明变化。",
+                "Verify exact manual chapters, equipment and full algorithms in authorized course material; this page summarizes public updates."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "创伤性心脏骤停",
+              "Traumatic cardiac arrest"
+            ],
+            "rows": [
+              [
+                "在复苏团队同时纠正出血/低血容量、氧合与气道、张力性气胸、心包填塞；并行处理，避免仅做胸外按压而遗漏病因。",
+                "The resuscitation team addresses hemorrhage/hypovolemia, oxygenation/airway, tension pneumothorax and tamponade in parallel; do not overlook the cause while performing compressions."
+              ],
+              [
+                "胸廓造口、复苏性开胸等由具备相应技能团队按事件时间、机制、生命征与资源判断。",
+                "Thoracostomy and resuscitative thoracotomy require skilled teams considering timing, mechanism, signs of life and resources."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "chest-trauma-mini": [
+      {
+        "id": "chest-pleural",
+        "title": [
+          "胸膜威胁：减压、引流和升级",
+          "Pleural threats: decompression, drainage and escalation"
+        ],
+        "references": [
+          "cn-prehospital",
+          "wses-chest",
+          "east-htx",
+          "nice",
+          "atls11",
+          "tccc"
+        ],
+        "cards": [
+          {
+            "title": [
+              "先救生理，再核查效果",
+              "Treat physiology, then check response"
+            ],
+            "rows": [
+              [
+                "成人第4/5肋间、腋中线稍前；备选第2肋间锁骨中线。儿童第2肋间锁骨中线。针长≥8 cm、14G/10G为成人TCCC器材参考，按体型与器械选择。以本院规范为准。",
+                "Adults: fourth/fifth interspace just anterior to midaxillary line; second interspace midclavicular alternative. Children: second midclavicular. At least8 cm,14G/10G is an adult TCCC equipment reference; adjust to anatomy/device. Follow institutional policy."
+              ],
+              [
+                "疑张力性气胸伴不稳定立即减压；具技能院内团队可开放/手指胸廓造口接胸管，不能等待影像。开放胸伤临时三边敷料，持续查张力并接正式引流。以本院规范为准。",
+                "Suspected tension physiology with instability needs immediate decompression; skilled hospital teams may use open/finger thoracostomy followed by drainage, without waiting for imaging. Three-sided dressing is temporary; monitor tension and arrange definitive drainage. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "血胸与管径",
+              "Hemothorax and drain size"
+            ],
+            "rows": [
+              [
+                "不稳定或胸内活动出血>1500 mL、或>200 mL/h连续3 h：立即胸外科评估。稳定≥500 mL引流，<300 mL可严密观察；300–499 mL结合生理和趋势判断。以本院规范为准。",
+                "Instability or active thoracic bleeding over1500 mL or over200 mL/h for three hours needs immediate surgical evaluation. Stable at least500 mL: drain; below300 mL: close observation;300–499 mL requires individualized assessment. Follow institutional policy."
+              ],
+              [
+                "气胸8.5–24 Fr；稳定血胸EAST条件推荐14 Fr或更小猪尾管，WSES-AAST较大血胸倾向28–40 Fr；不稳定用大口径。两者人群不同，不能互换。以本院规范为准。",
+                "Pneumothorax8.5–24 Fr; EAST conditionally supports14 Fr or smaller pigtails in stable hemothorax, while WSES-AAST favors28–40 Fr for larger hemothorax. Unstable patients need large-bore drainage; populations differ. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "chest-tamponade",
+        "title": [
+          "心包填塞与复苏性开胸",
+          "Tamponade and resuscitative thoracotomy"
+        ],
+        "references": [
+          "east-edt",
+          "wta-edt",
+          "rcuk-special"
+        ],
+        "cards": [
+          {
+            "title": [
+              "心包窗与4E",
+              "Pericardial view and4E"
+            ],
+            "rows": [
+              [
+                "EFAST加剑突下心包窗；心包积液与休克/无脉综合判断，早期外科支援。EAST强推荐穿透性胸伤、无脉但有生命征者急诊开胸。以本院规范为准。",
+                "Include a subxiphoid pericardial view; interpret fluid with shock/arrest and call surgical support early. EAST strongly recommends emergency thoracotomy for pulseless penetrating thoracic trauma with signs of life. Follow institutional policy."
+              ],
+              [
+                "WTA选择参考：穿透躯干伤CPR<15 min、钝性伤<10 min；非独立停止复苏规则。RCUK2025并行纠正缺氧、低容量、张力气胸、填塞；双侧胸廓造口及开胸核对Expertise/Equipment/Environment/Elapsed time。以本院规范为准。",
+                "WTA selection references: penetrating torso CPR under15 min, blunt under10 min; these are not independent termination rules. RCUK2025 corrects hypoxia, hypovolemia, tension and tamponade in parallel; bilateral thoracostomy/EDT need expertise, equipment, environment and elapsed-time checks. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "chest-aorta",
+        "title": [
+          "BTAI：先分级，再安排TEVAR",
+          "BTAI: grade first, then plan TEVAR"
+        ],
+        "references": [
+          "svs-btai"
+        ],
+        "cards": [
+          {
+            "title": [
+              "SVS2026分层",
+              "SVS2026 stratification"
+            ],
+            "rows": [
+              [
+                "1–2级非手术；2级复查一次CTA。稳定3级可延迟TEVAR>24 h先处理合并伤；怀疑主动脉损伤导致不稳定则紧急<24 h或立即干预。以本院规范为准。",
+                "Grades1–2: nonoperative care; grade2 gets one follow-up CTA. Stable grade3 may have TEVAR after24 hours to address associated injury; aortic-driven instability needs urgent within24 hours or emergency intervention. Follow institutional policy."
+              ],
+              [
+                "合并TBI的血压目标由创伤、神经与血管团队协调，以脑灌注安全为优先；不是机械降压。以本院规范为准。",
+                "With TBI, trauma/neurosurgical/vascular teams coordinate pressure management around cerebral perfusion safety. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "abdominal-injury-mini": [
+      {
+        "id": "abd-stability",
+        "title": [
+          "FAST阳性后，先问复苏反应",
+          "Positive FAST: ask about resuscitation response"
+        ],
+        "references": [
+          "nice",
+          "wses-liver",
+          "wses-spleen"
+        ],
+        "cards": [
+          {
+            "title": [
+              "不稳定：不去CT",
+              "Unstable: no CT detour"
+            ],
+            "rows": [
+              [
+                "SBP<90 mmHg伴休克征，或维持压力需持续补液/输血/血管活性药：按不稳定路径评估。FAST阳性且对复苏无反应→直接手术/损伤控制止血；有反应且可安全监护才增强CT。以本院规范为准。",
+                "SBP below90 with shock signs, or pressure requiring ongoing fluids/blood/vasopressors, indicates instability. Positive FAST with no response goes directly to surgery/damage-control hemorrhage control; responders may have monitored contrast CT. Follow institutional policy."
+              ],
+              [
+                "BE应连同符号、乳酸与变化解释；不把WSES原文BE>−5单独当触发器，碱缺失BD与负BE不可混用。以本院规范为准。",
+                "Interpret BE sign with lactate and trend; do not use the WSES printed BE greater than−5 as a stand-alone trigger or interchange BD with negative BE. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "abd-solid-organ",
+        "title": [
+          "肝/脾损伤：生理决定路径",
+          "Liver/spleen injury: physiology directs care"
+        ],
+        "references": [
+          "wses-liver",
+          "wses-spleen"
+        ],
+        "cards": [
+          {
+            "title": [
+              "WSES I–IV不是AAST I–V",
+              "WSES I–IV differs from AAST I–V"
+            ],
+            "rows": [
+              [
+                "WSES I：稳定AAST I–II；II：稳定AAST III；III：稳定AAST IV–V；IV：任何解剖级别但不稳定。以本院规范为准。",
+                "WSES I: stable AAST I–II;II: stable AAST III;III: stable AAST IV–V;IV: unstable at any anatomic grade. Follow institutional policy."
+              ],
+              [
+                "NOM须稳定、连续监护/查体/Hb、有即刻手术、血液及介入能力；稳定者造影剂外溢可评估AE。脾切除/功能性无脾者安排肺炎球菌、脑膜炎球菌及Hib疫苗与感染教育，时点按专科。以本院规范为准。",
+                "NOM needs stability, serial monitoring/exam/Hb, immediate surgery/blood and interventional capacity; stable contrast blush may prompt AE. Splenectomy/functional asplenia needs pneumococcal, meningococcal and Hib vaccination plus infection education on a specialist schedule. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "tbi-mini": [
+      {
+        "id": "tbi-targets",
+        "title": [
+          "防继发损伤：年龄、氧合与灌注",
+          "Prevent secondary injury: age, oxygenation and perfusion"
+        ],
+        "references": [
+          "cn-tbi",
+          "btf",
+          "acs-tbi"
+        ],
+        "cards": [
+          {
+            "title": [
+              "先报告E/V/M与瞳孔",
+              "Report E/V/M and pupils"
+            ],
+            "rows": [
+              [
+                "重型TBI：SBP≥100（50–69岁），≥110（15–49岁或>70岁）；国内MAP≥80 mmHg。CPP60–70 mmHg、ICP>22 mmHg需处理；BTF压力证据III级，ICP/CPP为IIB级。以本院规范为准。",
+                "Severe TBI: SBP at least100 at50–69 years, at least110 at15–49 or over70; Chinese MAP at least80 mmHg. CPP60–70, treat ICP over22; BTF pressure evidence LevelIII, ICP/CPP LevelIIB. Follow institutional policy."
+              ],
+              [
+                "GCS≤8、保护反射丧失或脑疝提示气管插管评估；同时预氧合、SMR、纠正低血压。报GCS分项、不可评估因素、双瞳大小/反射；GCS-P=总分减无反应瞳孔数。以本院规范为准。",
+                "GCS at most8, lost protective reflexes or herniation prompts airway/intubation evaluation with preoxygenation, SMR and pressure correction. Report components, confounders and both pupils; GCS-P subtracts the count of unreactive pupils. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "正常通气，不常规过度通气",
+              "Normoventilate, avoid routine hyperventilation"
+            ],
+            "rows": [
+              [
+                "国内SpO₂至少90%、理想>95%；ACS目标≥94%。无颅内高压时PaCO₂/PetCO₂参考35–45 mmHg，休克时EtCO₂不能替代动脉血气。以本院规范为准。",
+                "Chinese SpO₂ floor90%, ideally over95%; ACS target at least94%. Without intracranial hypertension, PaCO₂/PetCO₂ reference35–45 mmHg; shock invalidates assuming EtCO₂ equals arterial CO₂. Follow institutional policy."
+              ],
+              [
+                "脑疝可短时救援通气，先35–38、必要时32–35 mmHg，严密监测并连接确定性治疗；不能对所有TBI持续降CO₂。以本院规范为准。",
+                "Herniation permits brief rescue ventilation, initially35–38, if necessary32–35 mmHg, with close monitoring and definitive treatment; do not persistently lower CO₂ for all TBI. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tbi-osmotic",
+        "title": [
+          "高渗治疗：适应证与原文差异",
+          "Hyperosmolar therapy: indication and source differences"
+        ],
+        "references": [
+          "cn-tbi",
+          "enls-pharm",
+          "btf"
+        ],
+        "cards": [
+          {
+            "title": [
+              "脑疝/颅内高压，由授权团队实施",
+              "Herniation/raised ICP, authorized team"
+            ],
+            "rows": [
+              [
+                "国内2025推荐17：3%盐水2 mL/kg、避免Na⁺>155 mmol/L；监测钠、氯、肾功能与容量，不作院前预防性给药。以本院规范为准。",
+                "Chinese2025 recommendation17:3% saline2 mL/kg, avoid sodium over155 mmol/L; monitor sodium/chloride/renal function/volume, not routine prehospital prophylaxis. Follow institutional policy."
+              ],
+              [
+                "甘露醇采用ENLS成人0.5–1 g/kg参考；国内原文20%制剂mL/kg与括注g/kg存在换算不一致，不能照抄体积。按本院制剂、渗透压和血压核算；BTF第4版未确立优选药/剂量。以本院规范为准。",
+                "Use ENLS adult mannitol0.5–1 g/kg reference. The Chinese text contains inconsistent20% mL/kg versus g/kg conversion: do not copy the volume. Verify formulation, osmolality and pressure locally; BTF4 does not establish a preferred agent/dose. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tbi-txa-ct",
+        "title": [
+          "TXA与CT：同名处置，不同人群",
+          "TXA and CT: same intervention, different scope"
+        ],
+        "references": [
+          "cn-tbi",
+          "nice-head",
+          "crash3",
+          "pecarn"
+        ],
+        "cards": [
+          {
+            "title": [
+              "TXA两种方案不得叠加",
+              "Do not stack the two TXA regimens"
+            ],
+            "rows": [
+              [
+                "国内推荐22：伤后3 h内1 g缓慢静脉给药>10 min，随后1 g维持≥8 h。NICE：≥16岁、GCS≤12、无活动性颅外出血，伤后2 h内考虑2 g静脉单次，在影像前实施。以本院规范为准。",
+                "Chinese recommendation22: within three hours,1 g slow IV over ten minutes, then1 g over at least eight hours. NICE: age at least16, GCS at most12, no active extracranial bleeding: consider a single2 g IV dose within two hours, before imaging. Follow institutional policy."
+              ],
+              [
+                "CRASH-3早用的轻中度亚组获益较清楚；不能承诺所有重型均获益。先确认已给剂量与伤后时刻，再选本院一种方案。以本院规范为准。",
+                "CRASH-3 benefit is clearer with early use in mild/moderate subgroups; benefit is not established for all severe cases. Check prior dose/injury time and choose one local regimen. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "成人NICE，儿童按年龄分层",
+              "Adult NICE, age-specific pediatric tools"
+            ],
+            "rows": [
+              [
+                "成人1 h CT：GCS≤12、2 h仍<15、颅底/开放凹陷骨折疑征、创伤后癫痫、局灶异常或呕吐>1次。曾意识丧失/遗忘者另核查≥65岁、凝血障碍、危险机制或逆行遗忘>30 min。以本院规范为准。",
+                "Adult one-hour CT: GCS at most12, under15 at two hours, suspected basal/open depressed fracture, seizure, focal deficit or more than one vomiting episode. With LOC/amnesia, also assess age at least65, coagulopathy, dangerous mechanism or retrograde amnesia over30 minutes. Follow institutional policy."
+              ],
+              [
+                "抗凝/抗血小板（不含单用阿司匹林）按NICE1.5.13考虑8 h内CT，伤后>8 h就诊考虑1 h内；加拿大规则不用于抗凝者。PECARN仅轻度钝性儿童头伤，<2岁与≥2岁分开，不能套成人或重伤。以本院规范为准。",
+                "For anticoagulant/antiplatelet use except aspirin alone, NICE1.5.13 considers CT within eight hours, or one hour if presentation after eight. Canadian rule excludes anticoagulation. PECARN covers minor blunt pediatric head injury with separate under-two and older rules, not adults/severe trauma. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "polytrauma-mini": [
+      {
+        "id": "poly-bcd",
+        "title": [
+          "十分钟恶化：胸膜、止血与四联征",
+          "Ten-minute decline: pleura, hemorrhage and lethal diamond"
+        ],
+        "references": [
+          "cn-shock",
+          "eu-bleeding",
+          "cn-prehospital",
+          "wses-chest"
+        ],
+        "cards": [
+          {
+            "title": [
+              "15 L/min储氧下仍SpO₂87%",
+              "SpO₂87% despite15 L/min reservoir"
+            ],
+            "rows": [
+              [
+                "教学新增EFAST：左胸膜无滑动、右侧有滑动、无明显心包液；结合左呼吸音减低、BP78/48，立即由受训团队减压/胸引并复评，不等CT。以本院规范为准。",
+                "Synthetic EFAST addition: absent left pleural sliding, right sliding present, no clear pericardial fluid. With reduced left sounds and BP78/48, trained teams decompress/drain and reassess without CT delay. Follow institutional policy."
+              ],
+              [
+                "到院SI126/86≈1.47、ABC≥2：启动本院大量输血路径评估，血液与源控制同步。以本院规范为准。",
+                "Arrival SI126/86 about1.47, ABC at least2: activate assessment for the institutional massive-transfusion pathway while controlling the source. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "低温、酸中毒、凝血、低钙一起看",
+              "Temperature, acidosis, coagulation and calcium"
+            ],
+            "rows": [
+              [
+                "大出血Fib≤1.5 g/L考虑补充；iCa欧洲1.1–1.3 mmol/L、国内≥1.00；已给Fib1.7/iCa1.05是复查点，不应冒充已达补充阈值。以本院规范为准。",
+                "Major bleeding Fib at most1.5 g/L prompts replacement assessment; European iCa1.1–1.3 mmol/L, Chinese at least1.00. Given Fib1.7/iCa1.05 prompt review, not false claims that every replacement threshold is crossed. Follow institutional policy."
+              ],
+              [
+                "无TBI出血期SBP80–90；重型TBI MAP≥80 mmHg，不能套允许性低压。保温、气体/乳酸/VEM复查；PaCO₂35–40 mmHg需与脑/肺状态匹配。以本院规范为准。",
+                "Without TBI, bleeding-phase SBP80–90; severe TBI MAP at least80 mmHg excludes permissive hypotension. Warm and repeat gases/lactate/VEM; PaCO₂35–40 must fit brain/lung physiology. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "pelvic-trauma": [
+      {
+        "id": "pelvic-control",
+        "title": [
+          "不稳定骨盆：固定与确定性止血",
+          "Unstable pelvis: stabilization and definitive control"
+        ],
+        "references": [
+          "wses-pelvic",
+          "nice-fracture",
+          "eu-bleeding",
+          "cn-shock"
+        ],
+        "cards": [
+          {
+            "title": [
+              "不稳定定义",
+              "Instability definition"
+            ],
+            "rows": [
+              [
+                "WSES：SBP<90，或需持续补液/输血/升压药维持；BD>6 mmol/L、SI>1或24 h需4–6 U RBC也是风险依据，单位不可跨国直接折算。以本院规范为准。",
+                "WSES: SBP below90 or maintained by ongoing fluids/blood/vasopressors; BD over6, SI over1 or4–6 RBC units in24 hours also indicate risk. Do not directly convert national component units. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "大转子→分流止血",
+              "Greater trochanters→control pathway"
+            ],
+            "rows": [
+              [
+                "骨盆带中心位于大转子/耻骨联合水平；无相关肢体禁忌时双膝并拢、踝内旋，避免反复挤压分离试验。同步血液、保温、TXA及其他出血源检查。以本院规范为准。",
+                "Center the binder at greater trochanters/symphysis level; knees together and internal leg rotation when associated injuries allow. Avoid repeated springing. Coordinate blood, warming, TXA and other-source checks. Follow institutional policy."
+              ],
+              [
+                "骨盆带→动脉出血且不需开腹：血管造影栓塞；需开腹/快速控制：腹膜外填塞+外固定。REBOA Zone III仅受训团队为疑盆腔来源、极不稳定者的过渡，不是所有路径的必经最后一步。以本院规范为准。",
+                "Binder→arterial bleeding without laparotomy need: AE; laparotomy/rapid control need: preperitoneal packing plus external fixation. ZoneIII REBOA is a skilled-team bridge in extreme instability with suspected pelvic source, not a mandatory final step. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "去除也有计划",
+              "Removal needs a plan"
+            ],
+            "rows": [
+              [
+                "NICE1.2.17：全部骨盆带24 h内去除；不稳定骨折先与骨盆外科确定替代固定。国内旧共识≤36 h条目需作者核对原文，不用较长上限替代现有移除计划。以本院规范为准。",
+                "NICE1.2.17 removes all binders within24 hours, with an alternative stabilization plan for unstable fractures. The older Chinese at-most36-hour clause awaits author original-text verification; do not use it to extend current removal plans. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pelvic-local-evidence",
+        "title": [
+          "本地队列：让作者数据与病例各自清楚",
+          "Local cohort: distinguish author data and case evidence"
+        ],
+        "references": [
+          "pelvic-study"
+        ],
+        "cards": [
+          {
+            "title": [
+              "IJEM2025作者补充框",
+              "IJEM2025 author evidence slot"
+            ],
+            "rows": [
+              [
+                "论文DOI10.1186/s12245-025-00990-5。作者请填：研究期间、样本数、纳排标准、主要结局及调整结果；本例是否入组未确认，不作推断。以本院规范为准。",
+                "Paper DOI10.1186/s12245-025-00990-5. Author fields: study period, sample size, eligibility, outcomes and adjusted results. Whether this case entered the cohort is unconfirmed. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "abdominal-hemorrhagic-shock-case": [
+      {
+        "id": "abd-case-decision",
+        "title": [
+          "先识别失代偿，再安排止血去向",
+          "Recognize decompensation before choosing hemorrhage destination"
+        ],
+        "references": [
+          "nice",
+          "eu-bleeding",
+          "wses-pelvic"
+        ],
+        "cards": [
+          {
+            "title": [
+              "首次低压已经触发升级",
+              "Initial hypotension already demands escalation"
+            ],
+            "rows": [
+              [
+                "原记录SBP67伴低氧，不能等58 mmHg再启动。相对心动过缓应询问β阻滞剂/抗凝药，但不能据此否认休克。FAST原始结果、年龄、Hb、乳酸、BE、GCS分项均保留未知。以本院规范为准。",
+                "Original SBP67 with hypoxemia warrants escalation before58. Relative bradycardia prompts beta-blocker/anticoagulant history but does not negate shock. Original FAST, age, Hb, lactate, BE and GCS components remain unknown. Follow institutional policy."
+              ],
+              [
+                "条件练习：不稳定+FAST阳性且复苏无反应→直接损伤控制剖腹；疑盆腔来源同步骨盆带/填塞路径。血液优先、TXA时间核查；不得把条件设定写为原病历已完成。以本院规范为准。",
+                "Conditional exercise: unstable positive FAST with no response→damage-control laparotomy; suspected pelvis→binder/packing pathway. Prioritize blood and check TXA timing; do not describe proposed care as performed. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "cspine-hip-dislocation-case": [
+      {
+        "id": "spine-hip-priorities",
+        "title": [
+          "颈髓与髋关节：保护和复位一起设计",
+          "Cord and hip: plan protection and reduction together"
+        ],
+        "references": [
+          "nice-spine",
+          "nice-fracture",
+          "hip-timing",
+          "acep-sedation"
+        ],
+        "cards": [
+          {
+            "title": [
+              "中央脊髓风险",
+              "Central cord risk"
+            ],
+            "rows": [
+              [
+                "双上肢烧灼痛/运动异常而下肢相对保留：考虑中央脊髓综合征，补ASIA/ISNCSCI运动感觉及骶段检查，不凭症状确诊。弹射/感觉异常为高危：全程SMR、CT；有脊髓神经异常则CT后MRI。以本院规范为准。",
+                "Bilateral arm burning pain/weakness with relative leg sparing raises central-cord concern. Complete ASIA/ISNCSCI motor/sensory/sacral assessment, not symptom-only diagnosis. Ejection/paresthesia are high risk: SMR and CT, then MRI for cord abnormalities. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "髋脱位尽早复位",
+              "Reduce hip dislocation urgently"
+            ],
+            "rows": [
+              [
+                "尽早、常以伤后6 h内为研究比较目标，不能等待至6 h；复位前后记录坐骨神经及腓总支、血运，复位后CT查骨折/游离体/同心复位，随访股骨头坏死。以本院规范为准。",
+                "Reduce urgently; six hours is a research comparison reference, not permission to wait. Document sciatic/peroneal function and perfusion before/after; post-reduction CT assesses fracture/fragments/congruence, followed by AVN surveillance. Follow institutional policy."
+              ],
+              [
+                "镇静减轻痛苦但须独立监护、波形CO₂、复苏与气道救援准备，维持SMR并说明麻醉/骨科角色。ACEP2026强调容量不足者在可行时先纠正。以本院规范为准。",
+                "Sedation needs dedicated monitoring, waveform CO₂, resuscitation/airway rescue and maintained SMR with anesthesia/orthopedic roles. ACEP2026 recommends correcting volume depletion first where feasible. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "open-pelvic-injury-case": [
+      {
+        "id": "open-pelvis-path",
+        "title": [
+          "开放骨盆：止血、污染与器官损伤",
+          "Open pelvis: bleeding, contamination and organ injury"
+        ],
+        "references": [
+          "wses-pelvic",
+          "nice-fracture",
+          "cn-shock"
+        ],
+        "cards": [
+          {
+            "title": [
+              "尽早抗生素与会阴评估",
+              "Early antibiotics and perineal assessment"
+            ],
+            "rows": [
+              [
+                "早期静脉抗生素，NICE开放骨折尽量伤后1 h内；会阴伤口保护、污染记录，疑直肠伤由受训者直肠指检，阳性行直肠镜。以本院规范为准。",
+                "Early IV antibiotics; NICE open-fracture goal within one hour. Protect perineal wounds/document contamination; trained digital rectal assessment when rectal injury suspected, proctoscopy if positive. Follow institutional policy."
+              ],
+              [
+                "清创/填塞与血液复苏并行；直肠/泌尿伤评估后选择粪便转流或耻骨上膀胱造瘘，不是所有患者常规。以下是教学路径，未在原记录确认的措施不标作已实施。以本院规范为准。",
+                "Debridement/packing and blood resuscitation proceed together. Fecal diversion or suprapubic drainage depends on rectal/urinary injury, not routine for everyone. Proposed teaching pathways are not documented performed care. Follow institutional policy."
+              ],
+              [
+                "原始生命体征、Hb/乳酸/BE不足，不生成看似真实的轨迹。另作模拟时须明确合成并与真实病例分离。以本院规范为准。",
+                "Do not create a plausible real trajectory when original vitals/Hb/lactate/BE are missing. Any simulation must be distinctly synthetic. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "polytrauma-shock-reassessment-case": [
+      {
+        "id": "shock-mechanisms",
+        "title": [
+          "混合休克：提前检查心包与过敏",
+          "Mixed shock: assess pericardium and allergy early"
+        ],
+        "references": [
+          "cn-shock",
+          "eu-bleeding",
+          "rcuk-special"
+        ],
+        "cards": [
+          {
+            "title": [
+              "早期EFAST包含心包",
+              "Early EFAST includes pericardium"
+            ],
+            "rows": [
+              [
+                "原FAST只记录腹腔/胸膜阴性，不能视为心包阴性；剑突下心包窗、泵功能与右心负荷应在持续休克早期补查，不等第8轮。Hb数值及CT是否增强未在源资料确认，保留未知。以本院规范为准。",
+                "Original FAST records negative abdomen/pleura, not a negative pericardium. Add subxiphoid view, pump function and right-heart assessment early in persistent shock, not at round8. Hb and contrast-CT status are unconfirmed. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "救治建议与原记录分开",
+              "Separate proposed care from source records"
+            ],
+            "rows": [
+              [
+                "疑出血以血制品为主、限制晶体；无重型TBI未止血期SBP80–90 mmHg为参考。不是将原病历“加压补液”改写成已输血。以本院规范为准。",
+                "For suspected hemorrhage prioritize blood, limit crystalloid; SBP80–90 is a reference before control without severe TBI. Do not rewrite original pressurized fluid as confirmed transfusion. Follow institutional policy."
+              ],
+              [
+                "过敏性反应伴低压/呼吸受损：成人肾上腺素0.5 mg IM，必要时5 min重复，按本院过敏急救流程。AMPLE的A询问过敏；糖皮质激素后改善不能证明病因或替代一线肾上腺素。以本院规范为准。",
+                "Anaphylaxis with circulatory/respiratory compromise: adult adrenaline0.5 mg IM, repeat after five minutes if needed per local pathway. AMPLE A asks allergies; improvement after steroids neither proves causality nor substitutes first-line adrenaline. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "trauma-disaster-medicine": [
+      {
+        "id": "disaster-systems",
+        "title": [
+          "先选同一体系，再作分诊",
+          "Choose one system before triage"
+        ],
+        "references": [
+          "start",
+          "jumpstart",
+          "salt",
+          "cn-disaster-plan"
+        ],
+        "cards": [
+          {
+            "title": [
+              "成人START",
+              "Adult START"
+            ],
+            "rows": [
+              [
+                "行走先绿；开放气道仍无呼吸为黑；RR>30、无桡动脉/CRT>2 s、不能遵嘱任一为红；其余黄。初次标签仍需复评。以本院规范为准。",
+                "Walking initially green; apnea after airway opening black; RR over30, absent radial pulse/CRT over two seconds, or inability to obey commands red; otherwise yellow. Reassess initial tags. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "儿童JumpSTART",
+              "Pediatric JumpSTART"
+            ],
+            "rows": [
+              [
+                "呼吸15–45次/分，结合脉搏及AVPU反应；无呼吸先开放气道，无脉黑，有脉先5次人工呼吸：恢复呼吸红，仍无呼吸黑。不能与SALT儿童2次通气混用。以本院规范为准。",
+                "Respiratory range15–45/min plus pulse/AVPU. Apnea→open airway; absent pulse black, palpable pulse→five breaths: breathing returns red, persistent apnea black. Do not mix with SALT pediatric two breaths. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "SALT/MUCC",
+              "SALT/MUCC"
+            ],
+            "rows": [
+              [
+                "先不动/明显威胁→有目的动作→能走者；止大出血、开放气道（儿童2次通气）、受训胸减压/解毒后分个体风险。红立即、黄延迟、绿轻伤、灰期待、黑死亡；灰需姑息镇痛与资源变化复评。以本院规范为准。",
+                "Global order: still/obvious threat, purposeful movement, walking; control hemorrhage/open airway(two pediatric breaths)/trained decompression/antidote before individual assessment. Red immediate/yellow delayed/green minimal/gray expectant/black dead; gray needs palliation and resource reassessment. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "国内颜色与事件级别",
+              "Chinese colors and event levels"
+            ],
+            "rows": [
+              [
+                "2006预案轻/重/危重/死亡为蓝/黄/红/黑；其他体系绿色不可直接等同。团体标准绿色版本及2025规范现场流程图尚需指定原文核查，不拼接算法。以本院规范为准。",
+                "2006 plan minor/serious/critical/dead colors are blue/yellow/red/black; do not equate green from other systems. Specific association-green and2025 on-scene diagrams await original-text checking; no mixed algorithm. Follow institutional policy."
+              ],
+              [
+                "事件Ⅱ/Ⅲ/Ⅳ的数字是死亡和危重病例合计>5/>3/>1，还须伤亡规模/跨区或有关部门确定等完整条件；Ⅰ含国家支援请求/跨省严重事件，非只数死亡。以本院规范为准。",
+                "LevelII/III/IV uses deaths AND critical cases combined over5/3/1 with the full casualty-scale/cross-region/authority conditions. LevelI includes national support requests/cross-province severity, not death count alone. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "disaster-crush",
+        "title": [
+          "挤压综合征：解救前就准备高钾风险",
+          "Crush syndrome: prepare for hyperkalemia before release"
+        ],
+        "references": [
+          "erbp-crush",
+          "cn-shock"
+        ],
+        "cards": [
+          {
+            "title": [
+              "灾害挤压补液参考",
+              "Disaster-crush fluid reference"
+            ],
+            "rows": [
+              [
+                "ERBP2012：尽早解救前等渗盐水，成人1000 mL/h、儿童15–20 mL/kg/h；2 h后成人不超过500 mL/h、儿童约10 mL/kg/h或更低。禁机械套用大出血/TBI/心肾衰者。以本院规范为准。",
+                "ERBP2012: early pre-extrication saline, adult1000 mL/h/child15–20 mL/kg/h; after two hours adult at most500/child about10 mL/kg/h or lower. Do not mechanically apply to bleeding/TBI/cardiac-renal failure. Follow institutional policy."
+              ],
+              [
+                "此前未补液者首6 h可用3–6 L的历史参考，须按尿量/肺部/既往已输量调整；少尿无尿或肺水肿停止盲目追加，早期肾科/透析支持。不是每位伤员的固定目标。以本院规范为准。",
+                "Historical first-six-hour3–6 L reference for previously unresuscitated victims requires urine/lung/prior-volume titration. Oliguria/anuria/pulmonary edema stops blind loading and prompts renal/dialysis support; not a fixed target for every victim. Follow institutional policy."
+              ],
+              [
+                "该灾害规范避免含钾液如乳酸林格；连续心电/钾，准备钙剂、胰岛素葡萄糖、透析路径；具体治疗按本院高钾流程。以本院规范为准。",
+                "This disaster guideline avoids potassium-containing fluid such as lactated Ringer; monitor ECG/potassium and prepare calcium/insulin-glucose/dialysis pathways per local hyperkalemia protocol. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "disaster-blast",
+        "title": [
+          "P4能行走，也需要爆炸伤复评",
+          "Walking P4 still needs blast reassessment"
+        ],
+        "references": [
+          "cdc-blast"
+        ],
+        "cards": [
+          {
+            "title": [
+              "四种机制与迟发风险",
+              "Four mechanisms and delayed risk"
+            ],
+            "rows": [
+              [
+                "一级冲击波（肺/耳/空腔）；二级破片；三级抛掷撞击；四级烧伤/吸入/挤压等。爆震肺可迟至48 h出现表现；鼓膜破裂单独不能衡量重伤，也不能排除。以本院规范为准。",
+                "Primary pressure wave(lung/ear/hollow organs), secondary fragments, tertiary displacement, quaternary burns/inhalation/crush. Lung signs may appear up to48 hours; isolated eardrum rupture neither measures nor excludes serious injury. Follow institutional policy."
+              ],
+              [
+                "倒置分诊可能轻伤先到；CDC早期资料用首小时人数×2粗估首波，不能作固定资源启动阈值，持续核对实际到达与后续通知。以本院规范为准。",
+                "Inverted triage may bring minor injuries first. Older CDC material uses first-hour arrivals×2 as a rough first-wave estimate, not a fixed activation threshold; update actual arrivals/pre-alerts. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "disaster-cbrn",
+        "title": [
+          "CBRN：分区与去污保护患者和团队",
+          "CBRN: zones and decontamination protect patients and teams"
+        ],
+        "references": [
+          "hhs-decon"
+        ],
+        "cards": [
+          {
+            "title": [
+              "先离开污染，再按物质去污",
+              "Leave contamination, decontaminate by substance"
+            ],
+            "rows": [
+              [
+                "热区受控危险源、温区去污、冷区清洁救治；按危险评估PPE。脱衣去除大部分表面污染、妥善封袋，兼顾隐私与保温。以本院规范为准。",
+                "Controlled hot hazard zone, warm decontamination zone, cold clean-care zone; hazard-based PPE. Disrobe/remove much surface contamination and bag clothing while preserving privacy/warmth. Follow institutional policy."
+              ],
+              [
+                "通常先干式吸附/去污、必要时湿去污；遇水反应物质需专门流程，不能一律冲水。救命干预与防护去污协同，按本院预案衔接。以本院规范为准。",
+                "Usually dry absorption/decontamination then wet as indicated; water-reactive materials need a specific procedure, not universal washing. Coordinate lifesaving care, PPE and decontamination locally. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "orthopaedics": [
+      {
+        "id": "ortho-open",
+        "title": [
+          "开放骨折：抗生素、清创与覆盖",
+          "Open fracture: antibiotics, debridement and coverage"
+        ],
+        "references": [
+          "cn-open-fracture",
+          "boast-open",
+          "nice-fracture"
+        ],
+        "cards": [
+          {
+            "title": [
+              "抗生素依据并列",
+              "Antibiotic sources side by side"
+            ],
+            "rows": [
+              [
+                "尽早静脉抗生素，尽量伤后1 h内。国内2019 Gustilo I–II以一代头孢（原文头孢唑啉）为基础；III加氨基糖苷，粪便/厌氧污染加青霉素或甲硝唑；过敏/肾功能及本地耐药谱决定替代。以本院规范为准。",
+                "Early IV antibiotics, ideally within one hour. Chinese2019 GustiloI–II first-generation cephalosporin(cefazolin), III adds aminoglycoside, fecal/anaerobic contamination adds penicillin/metronidazole; allergy/renal function/local resistance guide alternatives. Follow institutional policy."
+              ],
+              [
+                "国内2019持续至闭合后48 h；不能当所有现代方案统一疗程，按本院抗菌管理选择。盐水湿敷+封闭层与授权照片；BOAST/NICE不做急诊小冲洗，国内旧文急诊清洗说法另需本院定标。以本院规范为准。",
+                "Chinese2019 continues until48 hours after closure, not a universal modern duration; use local stewardship. Saline-moist/occlusive dressing and authorized photo; BOAST/NICE no ED mini-washout differs from older Chinese cleaning text. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "清创与重建",
+              "Debridement and reconstruction"
+            ],
+            "rows": [
+              [
+                "重污染/血管受损立即；其他高能12 h内、低能24 h内清创；确定覆盖尽量72 h内，内固定需与覆盖配合。破伤风与多区域复评同步。以本院规范为准。",
+                "Immediate debridement for severe contamination/vascular compromise; other high-energy within12 hours/low-energy within24; definitive coverage ideally within72, coordinated with fixation. Include tetanus and whole-patient review. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ortho-compartment",
+        "title": [
+          "筋膜室：早诊与立即减压",
+          "Compartment syndrome: early diagnosis and immediate decompression"
+        ],
+        "references": [
+          "boast-acs",
+          "cn-open-fracture"
+        ],
+        "cards": [
+          {
+            "title": [
+              "有脉搏也可缺血",
+              "A pulse can coexist with ischemia"
+            ],
+            "rows": [
+              [
+                "高风险每小时查体，记录疼痛/被动牵拉痛及镇痛剂量；有症状松解环形层至皮肤，心脏水平，30 min内复评并即时骨科会诊。以本院规范为准。",
+                "High risk: hourly exam, pain/passive stretch/analgesic dose. Symptoms: release circumferential layers to skin, heart-level limb, reassess within30 minutes and consult orthopedics immediately. Follow institutional policy."
+              ],
+              [
+                "DBP−间室压<30 mmHg风险增加；绝对压>40 mmHg考虑紧急减压，不能脱离临床。确诊后立即切开；国内2019“6–8 h内”是旧表述，不能作为等待理由。以本院规范为准。",
+                "DBP minus compartment pressure below30 increases risk; absolute over40 prompts urgent decompression assessment in context. Once diagnosed, immediate fasciotomy; older Chinese2019 wording within6–8 hours is not permission to delay. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ortho-vascular",
+        "title": [
+          "肢体血管伤：没有安全等待时间",
+          "Limb vascular injury: no safe waiting time"
+        ],
+        "references": [
+          "boast-vascular",
+          "nice-fracture"
+        ],
+        "cards": [
+          {
+            "title": [
+              "硬征与紧急复流",
+              "Hard signs and urgent reperfusion"
+            ],
+            "rows": [
+              [
+                "无脉、持续出血、扩张性血肿为硬征；毛细血管再充盈或Doppler不能单独排除。立即骨科/血管/整形协同，必要时临时分流。以本院规范为准。",
+                "Absent pulse/ongoing bleeding/expanding hematoma are hard signs; CRT/Doppler alone cannot exclude injury. Immediate orthopedic/vascular/plastic coordination, temporary shunt when needed. Follow institutional policy."
+              ],
+              [
+                "BOAST2026：到院1 h内开始血运重建（commenced），不是承诺1 h内已恢复；不因复杂影像延误复流。以本院规范为准。",
+                "BOAST2026: commence revascularization within one hour of arrival, not a guarantee of completed flow restoration by then; complex imaging must not delay reperfusion. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "upper-limb": [
+      {
+        "id": "upper-open",
+        "title": [
+          "开放骨折：抗生素、清创与覆盖",
+          "Open fracture: antibiotics, debridement and coverage"
+        ],
+        "references": [
+          "cn-open-fracture",
+          "boast-open",
+          "nice-fracture"
+        ],
+        "cards": [
+          {
+            "title": [
+              "抗生素依据并列",
+              "Antibiotic sources side by side"
+            ],
+            "rows": [
+              [
+                "尽早静脉抗生素，尽量伤后1 h内。国内2019 Gustilo I–II以一代头孢（原文头孢唑啉）为基础；III加氨基糖苷，粪便/厌氧污染加青霉素或甲硝唑；过敏/肾功能及本地耐药谱决定替代。以本院规范为准。",
+                "Early IV antibiotics, ideally within one hour. Chinese2019 GustiloI–II first-generation cephalosporin(cefazolin), III adds aminoglycoside, fecal/anaerobic contamination adds penicillin/metronidazole; allergy/renal function/local resistance guide alternatives. Follow institutional policy."
+              ],
+              [
+                "国内2019持续至闭合后48 h；不能当所有现代方案统一疗程，按本院抗菌管理选择。盐水湿敷+封闭层与授权照片；BOAST/NICE不做急诊小冲洗，国内旧文急诊清洗说法另需本院定标。以本院规范为准。",
+                "Chinese2019 continues until48 hours after closure, not a universal modern duration; use local stewardship. Saline-moist/occlusive dressing and authorized photo; BOAST/NICE no ED mini-washout differs from older Chinese cleaning text. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "清创与重建",
+              "Debridement and reconstruction"
+            ],
+            "rows": [
+              [
+                "重污染/血管受损立即；其他高能12 h内、低能24 h内清创；确定覆盖尽量72 h内，内固定需与覆盖配合。破伤风与多区域复评同步。以本院规范为准。",
+                "Immediate debridement for severe contamination/vascular compromise; other high-energy within12 hours/low-energy within24; definitive coverage ideally within72, coordinated with fixation. Include tetanus and whole-patient review. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "upper-compartment",
+        "title": [
+          "筋膜室：早诊与立即减压",
+          "Compartment syndrome: early diagnosis and immediate decompression"
+        ],
+        "references": [
+          "boast-acs",
+          "cn-open-fracture"
+        ],
+        "cards": [
+          {
+            "title": [
+              "有脉搏也可缺血",
+              "A pulse can coexist with ischemia"
+            ],
+            "rows": [
+              [
+                "高风险每小时查体，记录疼痛/被动牵拉痛及镇痛剂量；有症状松解环形层至皮肤，心脏水平，30 min内复评并即时骨科会诊。以本院规范为准。",
+                "High risk: hourly exam, pain/passive stretch/analgesic dose. Symptoms: release circumferential layers to skin, heart-level limb, reassess within30 minutes and consult orthopedics immediately. Follow institutional policy."
+              ],
+              [
+                "DBP−间室压<30 mmHg风险增加；绝对压>40 mmHg考虑紧急减压，不能脱离临床。确诊后立即切开；国内2019“6–8 h内”是旧表述，不能作为等待理由。以本院规范为准。",
+                "DBP minus compartment pressure below30 increases risk; absolute over40 prompts urgent decompression assessment in context. Once diagnosed, immediate fasciotomy; older Chinese2019 wording within6–8 hours is not permission to delay. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "upper-vascular",
+        "title": [
+          "肢体血管伤：没有安全等待时间",
+          "Limb vascular injury: no safe waiting time"
+        ],
+        "references": [
+          "boast-vascular",
+          "nice-fracture"
+        ],
+        "cards": [
+          {
+            "title": [
+              "硬征与紧急复流",
+              "Hard signs and urgent reperfusion"
+            ],
+            "rows": [
+              [
+                "无脉、持续出血、扩张性血肿为硬征；毛细血管再充盈或Doppler不能单独排除。立即骨科/血管/整形协同，必要时临时分流。以本院规范为准。",
+                "Absent pulse/ongoing bleeding/expanding hematoma are hard signs; CRT/Doppler alone cannot exclude injury. Immediate orthopedic/vascular/plastic coordination, temporary shunt when needed. Follow institutional policy."
+              ],
+              [
+                "BOAST2026：到院1 h内开始血运重建（commenced），不是承诺1 h内已恢复；不因复杂影像延误复流。以本院规范为准。",
+                "BOAST2026: commence revascularization within one hour of arrival, not a guarantee of completed flow restoration by then; complex imaging must not delay reperfusion. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "lower-limb": [
+      {
+        "id": "lower-open",
+        "title": [
+          "开放骨折：抗生素、清创与覆盖",
+          "Open fracture: antibiotics, debridement and coverage"
+        ],
+        "references": [
+          "cn-open-fracture",
+          "boast-open",
+          "nice-fracture"
+        ],
+        "cards": [
+          {
+            "title": [
+              "抗生素依据并列",
+              "Antibiotic sources side by side"
+            ],
+            "rows": [
+              [
+                "尽早静脉抗生素，尽量伤后1 h内。国内2019 Gustilo I–II以一代头孢（原文头孢唑啉）为基础；III加氨基糖苷，粪便/厌氧污染加青霉素或甲硝唑；过敏/肾功能及本地耐药谱决定替代。以本院规范为准。",
+                "Early IV antibiotics, ideally within one hour. Chinese2019 GustiloI–II first-generation cephalosporin(cefazolin), III adds aminoglycoside, fecal/anaerobic contamination adds penicillin/metronidazole; allergy/renal function/local resistance guide alternatives. Follow institutional policy."
+              ],
+              [
+                "国内2019持续至闭合后48 h；不能当所有现代方案统一疗程，按本院抗菌管理选择。盐水湿敷+封闭层与授权照片；BOAST/NICE不做急诊小冲洗，国内旧文急诊清洗说法另需本院定标。以本院规范为准。",
+                "Chinese2019 continues until48 hours after closure, not a universal modern duration; use local stewardship. Saline-moist/occlusive dressing and authorized photo; BOAST/NICE no ED mini-washout differs from older Chinese cleaning text. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "清创与重建",
+              "Debridement and reconstruction"
+            ],
+            "rows": [
+              [
+                "重污染/血管受损立即；其他高能12 h内、低能24 h内清创；确定覆盖尽量72 h内，内固定需与覆盖配合。破伤风与多区域复评同步。以本院规范为准。",
+                "Immediate debridement for severe contamination/vascular compromise; other high-energy within12 hours/low-energy within24; definitive coverage ideally within72, coordinated with fixation. Include tetanus and whole-patient review. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lower-compartment",
+        "title": [
+          "筋膜室：早诊与立即减压",
+          "Compartment syndrome: early diagnosis and immediate decompression"
+        ],
+        "references": [
+          "boast-acs",
+          "cn-open-fracture"
+        ],
+        "cards": [
+          {
+            "title": [
+              "有脉搏也可缺血",
+              "A pulse can coexist with ischemia"
+            ],
+            "rows": [
+              [
+                "高风险每小时查体，记录疼痛/被动牵拉痛及镇痛剂量；有症状松解环形层至皮肤，心脏水平，30 min内复评并即时骨科会诊。以本院规范为准。",
+                "High risk: hourly exam, pain/passive stretch/analgesic dose. Symptoms: release circumferential layers to skin, heart-level limb, reassess within30 minutes and consult orthopedics immediately. Follow institutional policy."
+              ],
+              [
+                "DBP−间室压<30 mmHg风险增加；绝对压>40 mmHg考虑紧急减压，不能脱离临床。确诊后立即切开；国内2019“6–8 h内”是旧表述，不能作为等待理由。以本院规范为准。",
+                "DBP minus compartment pressure below30 increases risk; absolute over40 prompts urgent decompression assessment in context. Once diagnosed, immediate fasciotomy; older Chinese2019 wording within6–8 hours is not permission to delay. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lower-vascular",
+        "title": [
+          "肢体血管伤：没有安全等待时间",
+          "Limb vascular injury: no safe waiting time"
+        ],
+        "references": [
+          "boast-vascular",
+          "nice-fracture"
+        ],
+        "cards": [
+          {
+            "title": [
+              "硬征与紧急复流",
+              "Hard signs and urgent reperfusion"
+            ],
+            "rows": [
+              [
+                "无脉、持续出血、扩张性血肿为硬征；毛细血管再充盈或Doppler不能单独排除。立即骨科/血管/整形协同，必要时临时分流。以本院规范为准。",
+                "Absent pulse/ongoing bleeding/expanding hematoma are hard signs; CRT/Doppler alone cannot exclude injury. Immediate orthopedic/vascular/plastic coordination, temporary shunt when needed. Follow institutional policy."
+              ],
+              [
+                "BOAST2026：到院1 h内开始血运重建（commenced），不是承诺1 h内已恢复；不因复杂影像延误复流。以本院规范为准。",
+                "BOAST2026: commence revascularization within one hour of arrival, not a guarantee of completed flow restoration by then; complex imaging must not delay reperfusion. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lower-hip",
+        "title": [
+          "老年髋部：早镇痛、早MDT、限期手术",
+          "Geriatric hip: analgesia, MDT and timely surgery"
+        ],
+        "references": [
+          "cn-hip",
+          "cn-hip-implementation",
+          "nice-hip"
+        ],
+        "cards": [
+          {
+            "title": [
+              "时点与条件",
+              "Timing and conditions"
+            ],
+            "rows": [
+              [
+                "国内2022：完善术前准备后力争入院48 h内完成；NICE入院当天或次日。两者均需及时纠正可治疗合并症，不能以48 h为等待目标。以本院规范为准。",
+                "Chinese2022: aim to complete within48 hours after admission with preparation; NICE same/next day. Correct treatable comorbidity promptly;48 hours is not a target to wait for. Follow institutional policy."
+              ],
+              [
+                "神经阻滞可由受训者用于镇痛不足或限制阿片；髂筋膜阻滞“国内首选”尚未核对附件原句，暂不宣称；不能替代早手术。以本院规范为准。",
+                "Trained nerve block may supplement inadequate analgesia/limit opioids. The national first-choice fascia-iliaca wording is not confirmed from the attachment; no such claim is made. Blocks do not replace early surgery. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "spine": [
+      {
+        "id": "spine-sci",
+        "title": [
+          "急性脊髓伤：灌注、减压和证据强度",
+          "Acute SCI: perfusion, decompression and evidence strength"
+        ],
+        "references": [
+          "ao-sci24",
+          "ao-mpss17",
+          "nice-spine"
+        ],
+        "cards": [
+          {
+            "title": [
+              "AO/Praxis2024",
+              "AO/Praxis2024"
+            ],
+            "rows": [
+              [
+                "MAP主动增压下限75–80、上限90–95 mmHg，维持3–7天；弱推荐、极低质量证据。不是所有人的自然血压超过95都必须降压，区别重型TBI目标。以本院规范为准。",
+                "Active MAP augmentation lower limit75–80/upper90–95 mmHg for3–7 days, weak recommendation/very-low evidence. Do not lower every spontaneous pressure above95; distinguish severe-TBI targets. Follow institutional policy."
+              ],
+              [
+                "可行时伤后24 h内减压，神经体征与CT后MRI、完整ASIA/骶段检查同步。以本院规范为准。",
+                "When feasible decompress within24 hours; combine neurologic findings, CT-then-MRI, complete ASIA/sacral assessment. Follow institutional policy."
+              ]
+            ]
+          },
+          {
+            "title": [
+              "激素不作统一默认",
+              "Steroids are not a universal default"
+            ],
+            "rows": [
+              [
+                "AANS/CNS2013不推荐常规甲泼尼龙；AO2017仅弱建议成人伤后8 h内开始24 h输注作为选项，>8 h或48 h输注不建议。收益/感染等风险由专科与本院方案决定。以本院规范为准。",
+                "AANS/CNS2013 discourages routine MPSS; AO2017 weakly offers adult24-hour infusion starting within eight hours as an option, not after eight or48-hour infusion. Specialists/local policy weigh benefit/infection risk. Follow institutional policy."
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

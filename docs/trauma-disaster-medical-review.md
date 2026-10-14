@@ -29,10 +29,10 @@ The course may be used for education design review, classroom rehearsal, and sim
 
 ## Forbidden Content
 
-- Doses.
+- Source-qualified doses are permitted by learner tier; cite source/population and institutional policy.
 - Device sizes.
 - Oxygen or ventilator settings.
-- Numeric action triggers.
+- Source-qualified numerical triggers are permitted with population, context and institutional policy.
 - If-then treatment algorithms.
 - Local activation criteria presented as fact.
 - Real patient identifiers or rare real-case combinations.

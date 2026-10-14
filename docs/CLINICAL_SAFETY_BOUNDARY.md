@@ -29,3 +29,7 @@ The source hash and slide-topic mapping remain in a private review record outsid
 - Eleven legacy detector categories were present at commit fa50476b0fae533d6043a451d625a0baae9b9eeb. Exact occurrence contexts and counts are pinned in data/legacy-boundary-findings.json and reported as warnings requiring clinical review. Changed or new flagged contexts outside byte-identical, source-qualified generated sections still fail validation. The clinical ledger is checked separately; generated blocks are compared exactly to that ledger before the legacy detector runs. These engineering checks do not prove clinical validity.
 - No clinical approval is inferred from a successful build, browser check or publication.
 - Learner pages use one compact badge; detailed source/review information is in the quality-governance page.
+
+## Third-round scope extension
+
+Source-qualified doses, thresholds and key procedure steps are permitted for supervised resident/attending learning. Each identifies source, population, context and institutional-policy dependence. AI cannot sign a clinician review. Real-case facts cannot be invented; missing facts and separate synthetic exercises stay distinct.

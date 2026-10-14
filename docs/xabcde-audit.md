@@ -14,7 +14,7 @@ Reference: `https://2023anita.github.io/anesthesia-teaching-courseware/hfs-mvd-a
 - Visual assets: `assets/generated/overview/`, `assets/generated/nodes/`, `assets/generated/stages/`, `assets/generated/prompts/`.
 - Generation scripts: `scripts/create-generated-assets.mjs`, `scripts/create-xabcde-stage-assets.mjs`.
 - Validation: `scripts/validate.mjs`.
-- Obsidian input path: `/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库`.
+- Obsidian input path: `本地教学资料`.
 - Audit screenshots: `docs/screenshots/xabcde-audit/`.
 
 ## Current Strengths

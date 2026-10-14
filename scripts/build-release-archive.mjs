@@ -67,7 +67,7 @@ const manifest = {
   verification_required_before_external_release: [
     'npm run validate',
     'npm run build:evidence-pack',
-    'python3 /Users/dinghaixiang/.codex/skills/graph-engineering-architect/scripts/validate_graph.py .graph/trauma-education',
+    'python3 本地教学资料 .graph/trauma-education',
     'git diff --check'
   ],
   artifacts: auditFiles.map((file) => ({ path: relative(file), sha256: hash(file) }))

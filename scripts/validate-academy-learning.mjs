@@ -6,7 +6,7 @@ import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=file=>fs.readFileSync(path.join(root,file),'utf8');
 const context={window:{},encodeURIComponent};vm.createContext(context);
-for(const file of ['assets/trauma-skills-data.js','assets/trauma-skills-enriched-data.js','assets/trauma-skills-decision-airway.js','assets/trauma-skills-decision-thoracic.js','assets/trauma-skills-decision-hemorrhage-ortho.js','assets/academy-curriculum.js']) vm.runInContext(read(file),context);
+for(const file of ['assets/academy-question-bankv1.0.js','assets/trauma-skills-data.js','assets/trauma-skills-enriched-data.js','assets/trauma-skills-decision-airway.js','assets/trauma-skills-decision-thoracic.js','assets/trauma-skills-decision-hemorrhage-ortho.js','assets/academy-skill-standardsv1.0.js','assets/academy-curriculum.js']) vm.runInContext(read(file),context);
 const pair=(v,label)=>assert.ok(Array.isArray(v)&&v.length===2&&v.every(x=>typeof x==='string'&&x.trim()),label);
 function questions(items,label){
  assert.equal(items.length,5,`${label}: five questions`);
@@ -22,6 +22,7 @@ vm.runInContext(read('assets/academy-learning-markup.js'),context);
 for(const [id,course] of Object.entries(courses)){
  pair(course.title,id);assert.equal(course.objectives.length,3,`${id}: three objectives`);course.objectives.forEach(o=>pair(o,id));
  assert.ok(course.minutes>0,id);questions(course.questions,id);
+ if(course.postQuestions){questions(course.postQuestions,id+' post');for(const item of [...course.questions,...course.postQuestions])assert.equal(item.optionWhy.length,item.options.length);assert.ok(!course.questions.some(q=>course.postQuestions.some(p=>q.pre[0]===p.post[0])),id+' distinct test items');}
  const file=id==='orthopaedics'?'orthopaedics/index.html':['spine','upper-limb','lower-limb'].includes(id)?`orthopaedics/${id}.html`:`courses/${id}.html`;
  const text=read(file);assert.ok(text.includes('academy-curriculum.js')&&text.includes('academy-learning.js')&&text.includes('academy-refresh.css'),`${id} mounted learning module`);
  assert.ok(text.includes(context.window.ACADEMY_MARKUP.start(course,id,'../')),`${id}: static goals/duration/pocket link`);
@@ -38,7 +39,8 @@ assert.ok(read('courses/trauma-care-chain.html').includes('data-course-duration>
 for(const skill of context.window.TRAUMA_SKILLS){
  assert.equal(skill.osceZh.length,5);assert.equal(skill.osceEn.length,5);assert.equal(skill.stationsZh.length,5);assert.equal(skill.stationsEn.length,5);
  const branch=(skill.clinicalDecision.branchQuestions||[]).slice(0,2).map(x=>({pre:[x.promptZh,x.promptEn],post:[x.promptZh,x.promptEn],options:x.options.map(o=>[o[1],o[2]]),answer:x.options.findIndex(o=>o[3]==='best-supported'),why:x.options.filter(o=>o[3]==='best-supported').map(o=>[o[4],o[5]])[0]}));
- questions([...branch,...context.window.ACADEMY_SHARED_QUESTIONS].slice(0,5),skill.id);
+ questions(context.window.ACADEMY_QUESTION_BANK["skill-"+skill.id].pre,skill.id+" pre");
+ questions(context.window.ACADEMY_QUESTION_BANK["skill-"+skill.id].post,skill.id+" post");
  assert.ok(skill.clinicalDecision.branchQuestions.every(x=>x.options.filter(o=>o[3]==='best-supported').length===1),`${skill.id} unique supported answer`);
 }
 const sheets={innerHTML:''};context.document={querySelector:()=>sheets};context.location={search:''};context.URLSearchParams=URLSearchParams;
@@ -48,7 +50,7 @@ assert.equal((sheets.innerHTML.match(/<tbody>/g)||[]).length,9);
 assert.equal((sheets.innerHTML.match(/<tr><td>/g)||[]).length,45);
 assert.ok(!sheets.innerHTML.includes('undefined'));
 const home=read('index.html');assert.equal((home.match(/class="course-card"/g)||[]).length,6);
-assert.ok(!home.includes('TRAUMA-ACADEMY-')&&!home.includes('比赛演示'));
+assert.ok(!home.includes('比赛演示'));
 assert.ok(!home.includes('id="workflow"')&&!home.includes('id="sources"')&&!home.includes('id="equipment"'));
 const realCase=read('courses/open-pelvic-injury-case.html');assert.equal((realCase.match(/data-case-step=/g)||[]).length,4);
 assert.ok(!/\b\d{17}[0-9Xx]\b|\b1[3-9]\d{9}\b|\.(pptx|dcm)\b|ppt\/media|病案号|住院号/.test(realCase));

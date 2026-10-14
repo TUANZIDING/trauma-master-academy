@@ -8,9 +8,12 @@
     "build:release-archive": "node scripts/build-release-archive.mjs",
     "audit:student-status": "node scripts/audit-student-status.mjs",
     "generate:xabcde-stages": "node scripts/create-xabcde-stage-assets.mjs",
-    "validate": "node scripts/validate.mjs && node scripts/audit-student-status.mjs && node scripts/validate-trauma-skills-decisions.mjs && node scripts/validate-trauma-skills-visuals.mjs && node scripts/validate-academy-learning.mjs && node scripts/validate-clinical-pockets.mjs",
+    "validate": "node scripts/validate.mjs && node scripts/audit-student-status.mjs && node scripts/validate-trauma-skills-decisions.mjs && node scripts/validate-trauma-skills-visuals.mjs && node scripts/validate-academy-learning.mjs && node scripts/validate-clinical-pockets.mjs && node scripts/validate-third-roundv1.0.mjs && python3 scripts/verify-osce-pdfsv1.0.py",
     "serve": "python3 -m http.server 8088",
     "build:learning": "node scripts/build-academy-learning.mjs",
-    "build:pockets": "node scripts/build-clinical-pockets.mjs"
+    "build:pockets": "node scripts/build-clinical-pockets.mjs",
+    "build:pocket-pdfs": "python3 scripts/build-pocket-pdfs.py",
+    "build:all-pockets": "npm run build:pockets && npm run build:pocket-pdfs",
+    "build:skills": "node scripts/build-skill-standardsv1.0.mjs && python3 scripts/build-osce-pdfsv1.0.py"
   }
 }

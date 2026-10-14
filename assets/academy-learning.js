@@ -36,11 +36,13 @@
     if(skill){
       document.body.dataset.skillAxis=skill.id==='tourniquet'?'x':skill.id==='pelvic-binder'?'c':['efast','needle-decompression','tube-thoracostomy'].includes(skill.id)?'b':skill.id==='splinting'?'e':'a';
       id=`skill-${skill.id}`;
-      const branch=(skill.clinicalDecision?.branchQuestions||[]).slice(0,2).map(item=>({pre:[item.promptZh,item.promptEn],post:[`模拟复盘：${item.promptZh}`,`Simulation debrief: ${item.promptEn}`],options:item.options.map(o=>[o[1],o[2]]),answer:item.options.findIndex(o=>o[3]==='best-supported'),why:(()=>{const o=item.options.find(o=>o[3]==='best-supported');return o?[o[4],o[5]]:[skill.boundaryZh,skill.boundaryEn];})()}));
-      course={title:[skill.titleZh,skill.titleEn],minutes:25,objectives:[[skill.stationsZh[0],skill.stationsEn[0]],[skill.stationsZh[2],skill.stationsEn[2]],[skill.stationsZh[4],skill.stationsEn[4]]],questions:[...branch,...window.ACADEMY_SHARED_QUESTIONS].slice(0,5)};
+      course={title:[skill.titleZh,skill.titleEn],minutes:25,objectives:[[skill.stationsZh[0],skill.stationsEn[0]],[skill.stationsZh[2],skill.stationsEn[2]],[skill.stationsZh[4],skill.stationsEn[4]]],questions:[],postQuestions:[]};
+      const independent=window.ACADEMY_QUESTION_BANK?.[id];
+      if(independent){course.questions=independent.pre;course.postQuestions=independent.post;}
     }
   }
   if(course){
+    if(course.questions?.length!==5||course.postQuestions?.length!==5){console.error("Independent question bank unavailable; grading remains disabled.");return;}
     const main=document.querySelector('main') || document.querySelector('body>.wrap');
     const hero=document.querySelector('.reader-hero,.skill-detail-hero,.hero');
     let start=document.querySelector('#learning-start');
@@ -55,13 +57,20 @@
     function makeTest(kind){
       let section=document.querySelector(`#course-${kind}test`);
       if(!section){const block=document.createElement('div');block.innerHTML=window.ACADEMY_MARKUP.test(course,id,kind);section=block.firstElementChild;}
+      const items=kind==='post'?(course.postQuestions||course.questions):course.questions;
       const form=section.querySelector('form'),feedback=section.querySelector('.test-feedback');
+      // Shuffle displayed labels only; their stable answer values survive language switching.
+      for(const fieldset of form.querySelectorAll('fieldset')){
+        const labels=[...fieldset.querySelectorAll('label')];
+        for(let i=labels.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[labels[i],labels[j]]=[labels[j],labels[i]];}
+        labels.forEach(label=>fieldset.append(label));
+      }
       form.querySelector('[data-grade-submit]').disabled=false;
       form.addEventListener('submit',event=>{
-        event.preventDefault();const answers=course.questions.map((_,i)=>Number(new FormData(form).get(`${kind}-${id}-${i}`)));
-        const score=answers.filter((answer,i)=>answer===course.questions[i].answer).length;
+        event.preventDefault();if(!form.reportValidity())return;const answers=items.map((_,i)=>Number(new FormData(form).get(`${kind}-${id}-${i}`)));
+        const score=answers.filter((answer,i)=>answer===items[i].answer).length;
         const result=read(scoreKey)||{};result[kind]={score,at:new Date().toISOString()};write(scoreKey,result);
-        feedback.hidden=false;feedback.innerHTML=`<strong>${bi(['本次得分','Score'])}: ${score}/5</strong>${course.questions.map((item,i)=>`<p>${i+1}. ${bi(answers[i]===item.answer?['正确','Correct']:['需回看','Revisit'])} — ${bi(item.why)}</p>`).join('')}`;compare();
+        feedback.hidden=false;feedback.innerHTML=`<strong>${bi(['本次得分','Score'])}: ${score}/5</strong>${items.map((item,i)=>`<p>${i+1}. ${bi(answers[i]===item.answer?['正确','Correct']:['需回看','Revisit'])} — ${bi(item.optionWhy?.[answers[i]]||item.why)} ${(item.references||[]).map(id=>{const s=window.ACADEMY_SOURCE_INDEX?.[id];return s?`<a href="${escape(s.url)}" target="_blank" rel="noreferrer">${bi(s.shortTitle||s.title)}</a>`:'';}).join(' · ')}</p>`).join('')}`;compare();
       });form.addEventListener('reset',()=>{feedback.hidden=true;feedback.textContent='';});return section;
     }
     const pre=makeTest('pre');if(!pre.isConnected)start.after(pre);const post=makeTest('post');

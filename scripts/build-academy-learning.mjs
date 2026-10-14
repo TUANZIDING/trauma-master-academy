@@ -3,7 +3,9 @@ import path from 'node:path';
 import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const context={window:{},encodeURIComponent};vm.createContext(context);
+const bank=JSON.parse(fs.readFileSync(path.join(root,'data/academy-question-bankv1.0.json'),'utf8'));
+fs.writeFileSync(path.join(root,'assets/academy-question-bankv1.0.js'),'window.ACADEMY_QUESTION_BANK='+JSON.stringify(bank)+';window.ACADEMY_SOURCE_INDEX='+JSON.stringify(JSON.parse(fs.readFileSync(path.join(root,'data/clinical-pockets.json'),'utf8')).sources)+';\n');
+const context={window:{ACADEMY_QUESTION_BANK:bank},encodeURIComponent};vm.createContext(context);
 for(const file of ['assets/academy-curriculum.js','assets/academy-learning-markup.js'])vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),context);
 const {start,test}=context.window.ACADEMY_MARKUP;
 for(const [id,course] of Object.entries(context.window.ACADEMY_COURSES)){
@@ -19,7 +21,8 @@ for(const [id,course] of Object.entries(context.window.ACADEMY_COURSES)){
   html=html.slice(0,insertAt)+first+html.slice(insertAt);
   const post=`<!-- academy-post -->\n${noMain?'<div class="wrap">':''}${test(course,id,'post')}${noMain?'</div>':''}\n<!-- /academy-post -->\n`;
   html=noMain?html.replace('<footer',post+'<footer'):html.replace('</main>',post+'</main>');
-  if(!html.includes('academy-learning-markup.js'))html=html.replace(/<script src="([^\"]*)academy-learning\.js/,`<script src="../assets/academy-learning-markup.js?v=20261008"></script><script src="$1academy-learning.js`);
+  if(!html.includes('academy-learning-markup.js'))html=html.replace(/<script src="([^\"]*)academy-learning\.js/,`<script src="../assets/academy-learning-markup.js?v=20261014-r3"></script><script src="$1academy-learning.js`);
+  if(!html.includes('academy-question-bankv1.0.js'))html=html.replace('<script src="../assets/academy-curriculum.js', '<script src="../assets/academy-question-bankv1.0.js?v=20261014-r3"></script><script src="../assets/academy-curriculum.js');
   fs.writeFileSync(file,html);
 }
 console.log(`Built static objectives and tests for ${Object.keys(context.window.ACADEMY_COURSES).length} courses.`);

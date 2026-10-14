@@ -58,7 +58,7 @@
       "key_action": "Report observed facts to the team; senior clinicians and local policy determine treatment.",
       "common_mistake": "Treating x as a checkbox rather than an active first look and repeat look.",
       "visual_asset": "x-stage-core",
-      "source_note": "/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/03-急诊创伤总流程路径.md",
+      "source_note": "本地教学资料",
       "guideline_source": "ACS ATLS 11 public source index; NICE NG39 public page",
       "review_status": "source_required"
     },
@@ -71,7 +71,7 @@
       "key_action": "Report airway risk cues and confirm senior-team awareness; no independent airway instruction is provided.",
       "common_mistake": "Jumping to a device or procedure before reporting what is actually observed.",
       "visual_asset": "a-stage-core",
-      "source_note": "/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/03-急诊创伤总流程路径.md",
+      "source_note": "本地教学资料",
       "guideline_source": "ACS ATLS 11 public source index; local airway policy pending",
       "review_status": "source_required"
     }
@@ -87,7 +87,7 @@
     "ACS ATLS 11 public page",
     "NICE NG39 public page",
     "ACEP FAST Sonoguide public page",
-    "Local Obsidian trauma pathway notes as structure inputs only"
+    "Local 课程结构资料 trauma pathway notes as structure inputs only"
   ],
   "review_status": {
     "medical": "pending_clinician_review",

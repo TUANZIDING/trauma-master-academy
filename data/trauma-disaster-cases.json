@@ -9,7 +9,10 @@
       "duration_min": 45,
       "review_status": "pending_clinician_review",
       "source_type": "teaching_illustration",
-      "source_refs": ["lesson-1", "lesson-2"],
+      "source_refs": [
+        "lesson-1",
+        "lesson-2"
+      ],
       "deidentification_status": "synthetic_no_real_patient",
       "trigger_zh": "32岁男性，高速交通伤。院前报告提示烦躁、呼吸急促、右下肢活动性出血。预计2分钟后到达。",
       "trigger_en": "A 32-year-old man after high-speed traffic injury. Prehospital report notes agitation, rapid breathing, and active right lower-limb bleeding. Arrival is expected in 2 minutes.",
@@ -86,7 +89,10 @@
       "duration_min": 45,
       "review_status": "pending_clinician_review",
       "source_type": "teaching_illustration",
-      "source_refs": ["lesson-3", "lesson-4"],
+      "source_refs": [
+        "lesson-3",
+        "lesson-4"
+      ],
       "deidentification_status": "synthetic_no_real_patient",
       "system_state": {
         "casualties": "first wave 8; later number unknown",
@@ -161,5 +167,16 @@
       ],
       "boundary": "This scenario teaches system reasoning and resource discussion. It does not define a triage algorithm or hospital command policy."
     }
-  ]
+  ],
+  "triageSystems": {
+    "separateSystems": [
+      "START",
+      "JumpSTART",
+      "SALT",
+      "Chinese2006"
+    ],
+    "requireReassessment": true,
+    "p4Blast": "Walking does not exclude delayed blast lung/bowel injury",
+    "numericCases": "synthetic"
+  }
 }

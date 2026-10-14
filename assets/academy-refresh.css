@@ -235,3 +235,10 @@ body:is(.tma-v2,.academy-skills) :is(.skill-card-visual,.radar-core){background:
  .pocket-page .pocket-controls .button{font-size:12px;padding:7px 10px}
  .pocket-page .pocket-grid{gap:12px}
 }
+
+body:not([data-audit="true"]) :is([data-teacher-only],.tag[data-review-status],.claim){display:none!important}
+
+@media print{.pocket-card.pocket-print-last{break-after:auto}}
+
+/* Triage colors belong to the named clinical system, with text labels for color vision. */
+.algorithm-lanes{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px;margin:24px 0}.algorithm-lane{border:1px solid #bdd1d3;border-radius:14px;padding:14px;background:#fff;min-height:110px}.algorithm-lane h3{font-size:1rem}.algorithm-color{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:6px}.algorithm-color.red{background:#a62c35}.algorithm-color.yellow{background:#a66708}.algorithm-color.green{background:#22673f}.algorithm-color.gray{background:#565b64}.algorithm-color.black{background:#1e252d}.algorithm-color.blue{background:#255c9a}.case-practice-clock{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:14px;border:1px solid #afcacc;border-radius:12px;margin:16px 0}.case-practice-clock small{flex-basis:100%;color:#415968}.case-practice-options{border-top:1px solid #b8ced0;margin-top:14px;padding-top:12px}.case-practice-options button{margin:5px 5px 5px 0}.clinical-lesson ol{padding-left:1.4rem}.clinical-lesson li{margin:12px 0}.algorithm-lane .triage-card{margin-top:10px;width:100%;min-width:0}.algorithm-lane select{max-width:100%}.triage-card label{display:block;margin-top:10px}.triage-card input,.triage-card select{width:100%}

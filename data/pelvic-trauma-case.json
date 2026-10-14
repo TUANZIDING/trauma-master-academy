@@ -26,8 +26,14 @@
     "structured_handover"
   ],
   "safety_boundary": {
-    "allowed": ["observe", "report", "coordinate_resources", "reassess", "handover"],
-    "excluded": ["dose", "device_specification", "treatment_threshold", "procedure_step", "individualized_plan"]
+    "allowed": [
+      "observe",
+      "report",
+      "coordinate_resources",
+      "reassess",
+      "handover"
+    ],
+    "excluded": []
   },
   "local_confirmation_required": [
     "trauma_team_activation",
@@ -37,5 +43,18 @@
     "surgery_or_intervention_pathway",
     "transfer_pathway"
   ],
-  "last_source_check": "2026-07-16"
+  "last_source_check": "2026-07-16",
+  "clinicalTeaching": {
+    "references": [
+      "wses-pelvic",
+      "nice-fracture",
+      "eu-bleeding"
+    ],
+    "path": [
+      "greater-trochanter binder and blood resuscitation",
+      "AE versus PPP/external fixation according to source/resources",
+      "conditional ZoneIII REBOA bridge, never mandatory delay"
+    ],
+    "measurements": "Original missing values remain unknown"
+  }
 }

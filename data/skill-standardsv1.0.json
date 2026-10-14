@@ -1,0 +1,587 @@
+{
+  "tourniquet": {
+    "title": [
+      "止血带",
+      "Tourniquet"
+    ],
+    "axis": "x",
+    "timeLimitSeconds": 60,
+    "model": [
+      "出血肢体模型、两条商用止血带、脉搏模拟、计时笔",
+      "Bleeding-limb trainer, two commercial tourniquets, pulse simulation, time marker"
+    ],
+    "references": [
+      "tccc",
+      "cn-prehospital",
+      "cn-shock"
+    ],
+    "critical": [
+      "仍出血或仍有远端脉搏却宣布成功",
+      "Declare success despite bleeding or distal pulse"
+    ],
+    "steps": [
+      [
+        "喷射/持续大量出血、浸透、地面积血或截肢：立即商用止血带；一般可压迫伤先直接压迫。以本院规范为准。",
+        "Spurting/ongoing major bleeding, soaking/pooling or amputation: immediate commercial tourniquet; use direct pressure for other compressible wounds. Follow institutional policy."
+      ],
+      [
+        "已见伤口：TCCC近心端5–7 cm、非关节；国内共识≥10 cm按所选体系。不明部位高而紧；无效再紧固并加第二条并排/近端。以本院规范为准。",
+        "Visible wound: TCCC5–7 cm proximal, off a joint; Chinese reference at least10 cm per selected system. If unseen, high-and-tight; tighten/add a second alongside/proximal if ineffective. Follow institutional policy."
+      ],
+      [
+        "成功同时确认出血停止和远端脉搏消失（截肢不适用远端脉搏）；不能只看脉搏。以本院规范为准。",
+        "Confirm both bleeding cessation and absent distal pulse, with pulse not applicable to amputation; pulse alone is insufficient. Follow institutional policy."
+      ],
+      [
+        "外露、标记应用/再应用/转换时间；不间断松解。以本院规范为准。",
+        "Expose and mark application/reapplication/conversion time; no intermittent loosening. Follow institutional policy."
+      ],
+      [
+        "尽力2 h内转加压/止血敷料，须无休克、可严密观察、非截肢；>6 h缺监护/化验不松解。仅受训团队转换。以本院规范为准。",
+        "Aim for conversion within two hours only without shock, with close monitoring, and not amputation; after six hours do not remove without monitoring/labs. Trained team conversion only. Follow institutional policy."
+      ]
+    ],
+    "criteria": [
+      [
+        "指出喷射/持续出血并立即选择商用止血带。",
+        "Identify spurting/ongoing bleeding and promptly select a commercial tourniquet."
+      ],
+      [
+        "在皮肤上伤口近端非关节处放置并说明选用体系距离。",
+        "Place on skin proximal to wound, off a joint, and state selected-system distance."
+      ],
+      [
+        "收紧至出血停止且触查远端脉搏消失。",
+        "Tighten until bleeding stops and palpate absence of distal pulse."
+      ],
+      [
+        "第一条无效时加第二条并再次核查两个效果。",
+        "Add a second for failure and recheck both effects."
+      ],
+      [
+        "外露写明时间并交接转换三条件及禁忌。",
+        "Expose, mark time and hand over conversion conditions/contraindications."
+      ]
+    ]
+  },
+  "bvm": {
+    "title": [
+      "球囊面罩通气",
+      "Bag-mask ventilation"
+    ],
+    "axis": "a",
+    "timeLimitSeconds": 120,
+    "model": [
+      "气道模拟人、双人面罩、氧源、储氧袋、监护",
+      "Airway manikin, two-person mask, oxygen/reservoir, monitor"
+    ],
+    "references": [
+      "bts",
+      "rcuk-special",
+      "nice-spine",
+      "aha-bls25"
+    ],
+    "critical": [
+      "无胸廓起伏仍持续无效通气",
+      "Continue ineffective ventilation without chest rise"
+    ],
+    "steps": [
+      [
+        "严重创伤即高浓度氧，储氧面罩15 L/min，成人参考SpO₂94–98%；需辅助通气时接足氧源的BVM，不等鼻导管升级阶梯。以本院规范为准。",
+        "Critical trauma: high-concentration oxygen, reservoir mask15 L/min, adult SpO₂94–98% reference; if assisted ventilation needed use oxygen-connected BVM, not a nasal escalation ladder. Follow institutional policy."
+      ],
+      [
+        "评估呼吸/保护反射与SMR，吸引血液/分泌物；无禁忌选择口/鼻咽通气道。以本院规范为准。",
+        "Assess breathing/protection/SMR, suction blood/secretions, choose appropriate oral/nasal adjunct without contraindications. Follow institutional policy."
+      ],
+      [
+        "双人双手扣面罩并托下颌，助手挤球囊，以可见胸廓起伏和漏气核查。以本院规范为准。",
+        "Two-person two-hand seal/jaw support; assistant bags, checking chest rise and leak. Follow institutional policy."
+      ],
+      [
+        "成人有脉但呼吸不足参考约10次/分，每次约1 s至胸廓起伏，避免过量/过快；儿童另按儿科规范。以本院规范为准。",
+        "Adult inadequate breathing with pulse: reference about10/min, each breath about one second to chest rise, avoiding excess; use pediatric protocol for children. Follow institutional policy."
+      ],
+      [
+        "氧合/胸廓无改善查密闭、阻塞、体位及胸部原因；持续失败升级高级气道，记录SpO₂/EtCO₂及灌注。以本院规范为准。",
+        "If oxygen/chest rise fails check seal, obstruction, position and chest causes; persistent failure escalates airway with SpO₂/EtCO₂/perfusion review. Follow institutional policy."
+      ]
+    ],
+    "criteria": [
+      [
+        "连接氧源与储氧袋，核查气流和监护。",
+        "Connect oxygen/reservoir and check flow/monitoring."
+      ],
+      [
+        "在SMR条件下托下颌并清除可见分泌物。",
+        "Use jaw support with SMR and clear visible secretions."
+      ],
+      [
+        "与助手形成双手密闭，口头确认胸廓起伏。",
+        "Coordinate a two-hand seal and confirm chest rise aloud."
+      ],
+      [
+        "按成人约10次/分缓慢给气，不挤至过度胸廓膨胀。",
+        "Give slow adult breaths around10/min without excessive rise."
+      ],
+      [
+        "发现漏气/无胸廓起伏即调整并说明高级气道升级。",
+        "Correct leak/absent rise immediately and state airway escalation."
+      ]
+    ]
+  },
+  "intubation": {
+    "title": [
+      "创伤插管",
+      "Trauma intubation"
+    ],
+    "axis": "a",
+    "timeLimitSeconds": 240,
+    "model": [
+      "视频喉镜、气道模型、吸引、备用SGA、CO₂、复苏道具",
+      "Videolaryngoscope/manikin/suction/backup SGA/CO₂/resuscitation props"
+    ],
+    "references": [
+      "das25",
+      "jts-anesthesia",
+      "nice-spine"
+    ],
+    "critical": [
+      "未持续波形EtCO₂确认却宣布成功",
+      "Declare success without sustained waveform CO₂"
+    ],
+    "steps": [
+      [
+        "功能气道需求、GCS≤8/保护丧失评估；低压患者复苏与预氧合先启动，血液/升压救援就绪，不等待完全正常才救无法氧合的气道。以本院规范为准。",
+        "Assess functional need/GCS at most8/lost protection; start resuscitation/preoxygenation first in hypotension with blood/pressor rescue ready, without delaying a nonoxygenatable airway until normal. Follow institutional policy."
+      ],
+      [
+        "DAS成人视频喉镜首选；SMR/MILS按颈椎损伤场景，吸引、B/C/D失败计划和角色明确。以本院规范为准。",
+        "DAS adult video laryngoscopy first; use trauma-specific SMR/MILS, suction, B/C/D backup plans and assigned roles. Follow institutional policy."
+      ],
+      [
+        "JTS严重失血麻醉参考减量滴定：氯胺酮约1 mg/kg IV，丙泊酚0.5–1 mg/kg IV可降压；不是所有患者默认方案。按本院麻醉医师评估。以本院规范为准。",
+        "JTS severe-hemorrhage anesthesia references reduced/titrated ketamine about1 mg/kg IV, propofol0.5–1 mg/kg IV with hypotension risk, not default doses for everyone; local anesthesia assessment. Follow institutional policy."
+      ],
+      [
+        "最多3次尝试，额外第4次仅更资深者；每次改变策略。低氧即停止、恢复面罩/SGA氧合，不能追求用尽次数。以本院规范为准。",
+        "Up to three attempts plus a fourth only by a more experienced operator; modify strategy each time. Hypoxia stops attempts for mask/SGA oxygenation, not exhausting the attempt allowance. Follow institutional policy."
+      ],
+      [
+        "持续波形CO₂确认后固定，查深度、双肺、SpO₂、血压；移动后再确认，失败进入DAS救援。以本院规范为准。",
+        "Confirm with sustained waveform CO₂, secure and check depth/bilateral lungs/SpO₂/pressure; reconfirm after movement, enter DAS rescue on failure. Follow institutional policy."
+      ]
+    ],
+    "criteria": [
+      [
+        "点名气道/助手/监护，启动低压复苏和预氧合。",
+        "Assign airway/assistant/monitor and start hypotension resuscitation/preoxygenation."
+      ],
+      [
+        "试吸引、视频喉镜、球囊与备用SGA并说明失败计划。",
+        "Check suction/VL/bag/backup SGA and state rescue plan."
+      ],
+      [
+        "说明减量滴定与SMR，在模型记录一次尝试及改进。",
+        "State dose titration/SMR and document a trainer attempt/change."
+      ],
+      [
+        "低氧/失败时停止尝试恢复氧合，说明3+1上限。",
+        "Stop on hypoxia/failure, restore oxygen and state3+1 maximum."
+      ],
+      [
+        "观察持续CO₂波形、固定导管并复查血压和深度。",
+        "Observe sustained CO₂, secure tube and review pressure/depth."
+      ]
+    ]
+  },
+  "cricothyrotomy": {
+    "title": [
+      "紧急颈前气道",
+      "Emergency front-of-neck airway"
+    ],
+    "axis": "a",
+    "timeLimitSeconds": 180,
+    "model": [
+      "颈前气道训练器、#10刀、bougie、6.0套囊管、CO₂",
+      "FONA trainer,#10 scalpel,bougie,6.0 cuffed tube,CO₂"
+    ],
+    "references": [
+      "das25",
+      "nice-spine"
+    ],
+    "critical": [
+      "CICO后仍等待而未启动受训者救援，或未查波形",
+      "Wait instead of skilled CICO rescue, or omit waveform"
+    ],
+    "steps": [
+      [
+        "CICO：受训气道操作者宣告并即刻eFONA，同时求援、继续上气道100%氧；不等另一授权者到场。未受训实习生呼救/协助，不获自主切开授权。以本院规范为准。",
+        "CICO: trained airway operator declares and immediately performs eFONA while calling help/continuing upper-airway100% oxygen, not waiting for another operator. Untrained interns assist/call help, not independently incise. Follow institutional policy."
+      ],
+      [
+        "DAS成人#10刀片、bougie、6.0 mm套囊管，充分肌松、吸引；原指南最大伸颈为成人困难气道场景，创伤疑颈椎伤须权衡氧合救命与SMR，不能常规强行伸颈。以本院规范为准。",
+        "DAS adult #10 scalpel, bougie,6.0 mm cuffed tube, full paralysis/suction. Maximal extension belongs to its adult difficult-airway context; suspected trauma spine injury requires oxygen-rescue/SMR judgment, not routine forced extension. Follow institutional policy."
+      ],
+      [
+        "训练器步骤：中线纵切口自下而上、最长约8 cm，手指辨认环甲膜；横刺膜、保持刀垂直、转90°刃朝足侧。以本院规范为准。",
+        "Trainer: caudal-to-cephalad vertical midline incision up to about8 cm, finger identify membrane; transverse stab, scalpel perpendicular, rotate90 degrees edge caudal. Follow institutional policy."
+      ],
+      [
+        "bougie沿刀侧入气管，旋转对齐后轻进10–15 cm，再沿导引置入6.0套囊管。仅专用模型及受训授权临床人员。以本院规范为准。",
+        "Bougie alongside blade into trachea, align/gently advance10–15 cm, railroad6.0 cuffed tube. Dedicated trainers and trained authorized clinical operators only. Follow institutional policy."
+      ],
+      [
+        "充套囊、连接通气，持续波形CO₂确认；失败考虑小管、延长切口、改位置/操作者，随后固定与交接。以本院规范为准。",
+        "Inflate cuff/connect ventilation, sustained waveform CO₂; failure considers smaller tube/extended incision/position or operator change, then secure/handover. Follow institutional policy."
+      ]
+    ],
+    "criteria": [
+      [
+        "明确宣告CICO、呼救并持续给氧。",
+        "Declare CICO/call help/continue oxygen."
+      ],
+      [
+        "列出#10、bougie、6.0管并辨认训练器环甲膜。",
+        "List#10/bougie/6.0 tube and identify trainer membrane."
+      ],
+      [
+        "在模型完成纵切、辨膜、横刺及90°转刀。",
+        "Demonstrate vertical access/membrane identification/stab/90-degree rotation on trainer."
+      ],
+      [
+        "控制bougie进入深度并导引套囊管，避免暴力。",
+        "Control bougie depth and guide cuffed tube without force."
+      ],
+      [
+        "充囊、通气、持续波形CO₂确认并固定。",
+        "Inflate/ventilate/confirm sustained CO₂ and secure."
+      ]
+    ]
+  },
+  "needle-decompression": {
+    "title": [
+      "针刺胸部减压",
+      "Needle decompression"
+    ],
+    "axis": "b",
+    "timeLimitSeconds": 120,
+    "model": [
+      "胸壁模型、两部位标记、14G/10G长导管、监护",
+      "Chest-wall trainer,two site markers,long14G/10G catheter,monitor"
+    ],
+    "references": [
+      "tccc",
+      "cn-prehospital",
+      "nice",
+      "wses-chest"
+    ],
+    "critical": [
+      "减压侧别/部位错误或不稳定等待CT",
+      "Wrong side/site or waiting for CT in instability"
+    ],
+    "steps": [
+      [
+        "疑张力气胸伴呼吸/循环严重受损，立即受训者减压，不等待影像。以本院规范为准。",
+        "Suspected tension with severe respiratory/circulatory compromise needs immediate trained decompression, not imaging delay. Follow institutional policy."
+      ],
+      [
+        "成人第4/5肋间腋中线稍前；备选第2肋间锁骨中线，不在乳头线内侧；儿童第2肋间锁骨中线。以本院规范为准。",
+        "Adult fourth/fifth interspace just anterior to midaxillary; alternate second midclavicular, not medial to nipple; child second midclavicular. Follow institutional policy."
+      ],
+      [
+        "成人TCCC14G/10G、约8 cm（3.25英寸）导管参考；体型/器材按本院，沿下位肋骨上缘垂直进针，避免肋间血管神经。以本院规范为准。",
+        "Adult TCCC14G/10G, about8 cm(3.25 inches) catheter reference; local anatomy/device selection, perpendicular over superior border of the lower rib. Follow institutional policy."
+      ],
+      [
+        "查呼吸、SpO₂、灌注改善；无效检查侧别、堵塞/长度及其他病因，可换备选部位新导管。以本院规范为准。",
+        "Check breathing/SpO₂/perfusion response; failure checks side/blockage/length/other causes and may use new catheter at alternate site. Follow institutional policy."
+      ],
+      [
+        "仍无效或院内有熟练团队，转开放/手指胸廓造口并接胸管；TCCC院前第二次后路径与院内资源不同，不混称同一算法。以本院规范为准。",
+        "Persistent failure or skilled hospital setting: open/finger thoracostomy then drain; TCCC post-second-attempt field care differs from the hospital pathway. Follow institutional policy."
+      ]
+    ],
+    "criteria": [
+      [
+        "结合单侧呼吸音和休克宣告疑张力威胁。",
+        "Declare suspected tension from unilateral sounds/shock."
+      ],
+      [
+        "在模型标正确侧和第4/5肋间腋中线前位置。",
+        "Mark correct side/fourth-fifth interspace anterior to midaxillary."
+      ],
+      [
+        "选择长14G/10G导管，演示肋上缘方向。",
+        "Select long14G/10G catheter and demonstrate rib-superior approach."
+      ],
+      [
+        "减压后比较呼吸氧合灌注，不以嘶声单独结束。",
+        "Compare breathing/oxygen/perfusion, not stop at a hiss."
+      ],
+      [
+        "无效时说明新导管替代部位及手指/胸管救援。",
+        "Explain alternate-site new catheter and finger/drain rescue."
+      ]
+    ]
+  },
+  "tube-thoracostomy": {
+    "title": [
+      "胸腔引流",
+      "Tube thoracostomy"
+    ],
+    "axis": "b",
+    "timeLimitSeconds": 300,
+    "model": [
+      "胸壁训练器、大小胸管/猪尾、水封、固定物、输出量模拟",
+      "Chest trainer,large/small drains,pigtail,water seal,fixation/output props"
+    ],
+    "references": [
+      "wses-chest",
+      "east-htx",
+      "nice"
+    ],
+    "critical": [
+      "错误侧别/部位或不连接引流系统",
+      "Wrong side/site or no drainage-system connection"
+    ],
+    "steps": [
+      [
+        "明确气/血胸及稳定性、侧别、同意与镇痛、无菌、器材/助手；不稳定不因影像延误。以本院规范为准。",
+        "Identify pneumo/hemothorax, stability, side, consent/analgesia, sterility/device/assistant; instability avoids imaging delay. Follow institutional policy."
+      ],
+      [
+        "第4–6肋间腋前至腋中线安全三角，按患者影像/解剖确认；受训者钝性分离、手指确认胸膜入口，避免盲用套管针。以本院规范为准。",
+        "Fourth–sixth interspace anterior-to-midaxillary safe triangle, confirm patient anatomy/imaging; trained blunt dissection/finger confirmation, no blind trocar. Follow institutional policy."
+      ],
+      [
+        "气胸8.5–24 Fr；稳定血胸EAST条件支持14 Fr猪尾，较大/不稳定血胸WSES28–40 Fr（>32未见额外优势）。以本院规范为准。",
+        "Pneumothorax8.5–24 Fr; stable hemothorax EAST conditional14 Fr pigtail, larger/unstable WSES28–40 Fr(no added benefit above32). Follow institutional policy."
+      ],
+      [
+        "所有侧孔入胸腔、固定、接水封低于胸部，查呼吸和管路；记录初量/小时量，不常规夹闭活动漏气管。以本院规范为准。",
+        "All side holes inside, secure/water seal below chest, assess patient/circuit; record initial/hourly output, no routine clamp with active air leak. Follow institutional policy."
+      ],
+      [
+        "输出>1500 mL或>200 mL/h连续3 h、或持续不稳定，立即外科升级；生理可先于量触发，残留/堵塞复查。以本院规范为准。",
+        "Output over1500 or over200 mL/h for three hours, or ongoing instability prompts immediate surgical escalation; physiology may trigger before volume, review retained blood/blockage. Follow institutional policy."
+      ]
+    ],
+    "criteria": [
+      [
+        "口头核对正确侧、适应证及无菌/镇痛准备。",
+        "Verbally check side/indication/sterility/analgesia."
+      ],
+      [
+        "定位安全三角并在训练器钝性入胸膜。",
+        "Locate safe triangle and perform trainer blunt pleural access."
+      ],
+      [
+        "按稳定性选择管径并确保所有侧孔入腔。",
+        "Select size by stability and ensure all holes intrapleural."
+      ],
+      [
+        "连接水封、固定导管、记录初量与呼吸效果。",
+        "Connect water seal/secure/record initial output and breathing effect."
+      ],
+      [
+        "报告小时量和持续休克，说明外科升级条件。",
+        "Report hourly output/ongoing shock and surgical triggers."
+      ]
+    ]
+  },
+  "efast": {
+    "title": [
+      "EFAST",
+      "EFAST"
+    ],
+    "axis": "b",
+    "timeLimitSeconds": 240,
+    "model": [
+      "超声模拟器、腹/心包/双胸图像、标准窗清单",
+      "Ultrasound simulator,abdomen/pericardium/bilateral-pleura clips,view list"
+    ],
+    "references": [
+      "nice",
+      "rch",
+      "wses-pelvic"
+    ],
+    "critical": [
+      "以阴性FAST宣布排除所有出血",
+      "Declare all hemorrhage excluded by negative FAST"
+    ],
+    "steps": [
+      [
+        "三个腹部窗口：肝肾、脾肾、盆腔；另加剑突下心包窗，不称四个腹部窗。以本院规范为准。",
+        "Three abdominal views: hepatorenal, splenorenal, pelvis; add subxiphoid pericardial view, not four abdominal windows. Follow institutional policy."
+      ],
+      [
+        "双側胸膜查滑动/肺点及积液；阴性或无滑动各有鉴别，不能单图诊断。以本院规范为准。",
+        "Bilateral pleura: sliding/lung point/fluid; negative/absent sliding have alternatives, not a single-image diagnosis. Follow institutional policy."
+      ],
+      [
+        "报窗口、图像质量、看见什么、哪些未完成与检查时点。以本院规范为准。",
+        "Report windows/quality/findings/missing views/time. Follow institutional policy."
+      ],
+      [
+        "不稳定FAST阳性无反应转止血；阴性不能排腹膜后、早期腹腔、空腔损伤；儿童作用有限。以本院规范为准。",
+        "Unstable positive FAST nonresponder goes to control; negative does not exclude retroperitoneal/early abdominal/bowel injury, with limited pediatric role. Follow institutional policy."
+      ],
+      [
+        "重复观察与临床生理匹配；有反应稳定者增强CT，疑张力即减压不等超声完成。以本院规范为准。",
+        "Repeat matched to physiology; monitored stable responders get contrast CT, suspected tension is treated without completing ultrasound first. Follow institutional policy."
+      ]
+    ],
+    "criteria": [
+      [
+        "按左右上腹及盆腔三窗保存代表图像。",
+        "Save representative right/left upper-abdominal and pelvic views."
+      ],
+      [
+        "保存剑突下心包窗并描述是否受限。",
+        "Save subxiphoid pericardial view and report limitation."
+      ],
+      [
+        "比较双胸膜滑动与积液。",
+        "Compare bilateral pleural sliding/fluid."
+      ],
+      [
+        "报告阳性/阴性/受限窗口及时间而不越界推断。",
+        "Report positive/negative/limited views/time without overclaiming."
+      ],
+      [
+        "按不稳定性提出止血/重复/CT路径并说明阴性限制。",
+        "Choose control/repeat/CT by stability and explain negative limits."
+      ]
+    ]
+  },
+  "pelvic-binder": {
+    "title": [
+      "骨盆束带",
+      "Pelvic binder"
+    ],
+    "axis": "c",
+    "timeLimitSeconds": 90,
+    "model": [
+      "骨盆模型、束带、大转子标志、皮肤风险卡",
+      "Pelvis trainer,binder,trochanter markers,skin-risk card"
+    ],
+    "references": [
+      "wses-pelvic",
+      "nice-fracture",
+      "cn-shock"
+    ],
+    "critical": [
+      "束带位于髂嵴/腰部仍宣布正确",
+      "Accept iliac-crest/waist placement"
+    ],
+    "steps": [
+      [
+        "高能机制+疑骨盆伤/休克，早期机械稳定与血液同步，不因FAST阴性取消。以本院规范为准。",
+        "High-energy suspected pelvis/shock: early stabilization and blood together, not canceled by negative FAST. Follow institutional policy."
+      ],
+      [
+        "中心定位大转子和耻骨联合水平，不是髂嵴或腰；先核查衣物和皮肤。以本院规范为准。",
+        "Center at greater trochanters/symphysis, not iliac crest/waist; check clothing/skin. Follow institutional policy."
+      ],
+      [
+        "无伴随肢体禁忌时双膝并拢、踝内旋；只做温和观察，不反复弹性分离。以本院规范为准。",
+        "Knees together/internal rotation when associated injuries allow; gentle observation, no repeated springing. Follow institutional policy."
+      ],
+      [
+        "按装置张力固定并查位置、皮肤、循环/疼痛反应；部分改善不证明唯一来源。以本院规范为准。",
+        "Apply device tension and check position/skin/perfusion/pain; partial improvement does not prove a sole source. Follow institutional policy."
+      ],
+      [
+        "持续不稳定转AE/PPP及固定，建立移除替代方案，NICE24 h内去除且不稳定先与外科计划。以本院规范为准。",
+        "Persistent instability→AE/PPP/stabilization; plan removal/replacement, NICE within24 hours with surgical plan for instability. Follow institutional policy."
+      ]
+    ],
+    "criteria": [
+      [
+        "指出疑骨盆出血并避免重复挤压。",
+        "Identify suspected pelvic hemorrhage and avoid repeated springing."
+      ],
+      [
+        "双侧触认大转子并标中心线。",
+        "Identify both trochanters and mark centerline."
+      ],
+      [
+        "说明伴伤禁忌后适当并膝内旋。",
+        "Check associated-injury constraints before appropriate adduction/rotation."
+      ],
+      [
+        "将束带放至大转子水平并按装置收紧。",
+        "Place at trochanter level and tighten per device."
+      ],
+      [
+        "复查皮肤/灌注、记录时间并交接替代固定计划。",
+        "Review skin/perfusion, timestamp and hand over replacement stabilization."
+      ]
+    ]
+  },
+  "splinting": {
+    "title": [
+      "四肢临时固定",
+      "Extremity splinting"
+    ],
+    "axis": "e",
+    "timeLimitSeconds": 240,
+    "model": [
+      "肢体模型、夹板、盐水敷料、环形绷带、神经血管卡",
+      "Limb trainer,splint,saline dressing,circumferential bandage,neurovascular card"
+    ],
+    "references": [
+      "nice-fracture",
+      "nice-spine"
+    ],
+    "critical": [
+      "固定后不复查神经血管或明显恶化仍加紧",
+      "Omit post-splint neurovascular checks or tighten despite worsening"
+    ],
+    "steps": [
+      [
+        "xABCDE优先；记录固定前皮肤、感觉、运动、脉搏和血管硬征，给镇痛。以本院规范为准。",
+        "xABCDE first; pre-splint skin/sensation/motor/pulse/hard vascular signs, analgesia. Follow institutional policy."
+      ],
+      [
+        "开放骨折尽早1 h内静脉抗生素，盐水湿敷+封闭层，按授权拍照，急诊不冲洗、不探查；破伤风按本院。以本院规范为准。",
+        "Open fracture: early IV antibiotics within one hour, saline-moistened/occlusive dressing, authorized photo, no ED irrigation/probing; local tetanus policy. Follow institutional policy."
+      ],
+      [
+        "股骨干牵引夹板仅按装置与伤型；合并骨盆、同侧膝/小腿/踝损伤避免牵引，选普通固定。以本院规范为准。",
+        "Femoral-shaft traction depends on device/pattern; avoid with pelvis or ipsilateral knee/lower-leg/ankle injury, use other immobilization. Follow institutional policy."
+      ],
+      [
+        "支撑相邻关节、衬垫、固定后立即重查神经血管和疼痛。以本院规范为准。",
+        "Support adjacent joints, pad and immediately repeat neurovascular/pain checks. Follow institutional policy."
+      ],
+      [
+        "疑筋膜室：松解环形包扎/夹板至皮肤，肢体心脏水平、立即骨科评估，不能因有脉搏排除。以本院规范为准。",
+        "Suspected compartment syndrome: release circumferential dressings/splint to skin, limb at heart level, immediate orthopedics; a pulse does not exclude it. Follow institutional policy."
+      ]
+    ],
+    "criteria": [
+      [
+        "固定前逐项记录感觉运动及脉搏，标出开放创面。",
+        "Record pre-splint sensation/motor/pulse and open wound."
+      ],
+      [
+        "为开放伤覆盖湿敷加封闭层并说明抗生素时点。",
+        "Cover open wound with moist/occlusive dressing and state antibiotic timing."
+      ],
+      [
+        "选择装置时检查骨盆和同侧膝踝牵引禁忌。",
+        "Check pelvis/ipsilateral knee-ankle traction contraindications."
+      ],
+      [
+        "衬垫固定相邻关节后与基线比较神经血管。",
+        "Pad/stabilize adjacent joints then compare neurovascular baseline."
+      ],
+      [
+        "疼痛进行性增加即松解环形层、置心脏水平并升级。",
+        "For progressive pain release circumferential layers, heart-level limb and escalate."
+      ]
+    ]
+  }
+}

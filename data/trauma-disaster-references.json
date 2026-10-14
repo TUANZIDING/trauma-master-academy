@@ -47,8 +47,8 @@
     {
       "id": "OBSIDIAN-TRAUMA-PATHWAY",
       "name": "Local trauma pathway notes",
-      "organization": "Local Obsidian knowledge base",
-      "url": "/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库/急诊创伤流程路径/",
+      "organization": "Local 课程结构资料 knowledge base",
+      "url": "本地教学资料",
       "used_for": "Structure input only; does not approve public medical claims.",
       "review_status": "pending_clinician_review",
       "source_type": "obsidian_note",

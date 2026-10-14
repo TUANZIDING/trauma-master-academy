@@ -152,14 +152,18 @@
   function assessmentSection(skill) {
     return `
       <section class="skill-section formative-board" data-assessment>
-        <div class="section-heading"><div class="section-kicker">05 · ${bilingual("形成性反馈", "Formative feedback")}</div><h2>${bilingual("记录行为证据，不急着给一个总分", "Record behavioural evidence—not a premature total score")}</h2><p>${bilingual("本页在线行为观察不合并总分；前后测及纸质 OSCE 的分数只作本轮形成性反馈，无统一合格线或独立执业认证。导师记录行为依据和下一项改进。", "Online behavior ratings here are not combined into a total. Pre/posttest and paper OSCE scores are formative feedback only, without a universal pass mark or independent-practice certification. Record evidence and one next improvement.")}</p></div>
+        <div class="section-heading"><div class="section-kicker">05 · ${bilingual("形成性反馈", "Formative feedback")}</div><h2>${bilingual("记录行为证据，不急着给一个总分", "Record behavioural evidence—not a premature total score")}</h2><p>${bilingual("网页、PDF和口袋卡统一0未做/不安全、1提示后完成、2独立完成，满分10；关键失败使本站不通过。评分只作模拟形成性反馈，不替代真实操作授权。", "Web, PDF and pocket use0 omitted/unsafe,1 prompted,2 independent, total10; critical failure fails this station. Scores are formative simulation feedback, not real-procedure authorization.")}</p></div>
         <div class="assessment-grid">
           ${skill.assessment.domains.map((domain, index) => `<article class="assessment-domain"><span class="domain-number">0${index + 1}</span><h3>${bilingual(domain.titleZh, domain.titleEn)}</h3><ul>${domain.behavioursZh.map((item, i) => `<li>${bilingual(item, domain.behavioursEn[i])}</li>`).join("")}</ul><div class="rating-group" role="group" aria-label="${domain.titleZh}观察等级">${skill.assessment.levels.map((level) => `<button type="button" data-domain="${domain.id}" data-rating="${level.id}" aria-pressed="false">${bilingual(level.zh, level.en)}</button>`).join("")}</div></article>`).join("")}
         </div>
-        <div class="assessment-summary"><strong>${bilingual("导师总结", "Instructor summary")}</strong><div><span>${bilingual("本轮做得较好", "Strength this round")}</span><input type="text" aria-label="Strength this round" placeholder="${currentLang() === "en" ? "Observed behaviour" : "记录可观察行为"}" /></div><div><span>${bilingual("下一轮只改进一项", "One focus for the next round")}</span><input type="text" aria-label="One next improvement" placeholder="${currentLang() === "en" ? "One next behaviour" : "只写一个下一步行为"}" /></div><button type="button" class="button" data-reset-assessment>${bilingual("清空本轮记录", "Clear this record")}</button></div>
+        <p data-osce-total aria-live="polite">0 / 10</p><label><input type="checkbox" data-critical-observed> ${bilingual("观察到关键失败（本站不通过）","Critical failure observed (station fail)")}</label><div class="assessment-summary"><strong>${bilingual("导师总结", "Instructor summary")}</strong><div><span>${bilingual("本轮做得较好", "Strength this round")}</span><input type="text" aria-label="Strength this round" placeholder="${currentLang() === "en" ? "Observed behaviour" : "记录可观察行为"}" /></div><div><span>${bilingual("下一轮只改进一项", "One focus for the next round")}</span><input type="text" aria-label="One next improvement" placeholder="${currentLang() === "en" ? "One next behaviour" : "只写一个下一步行为"}" /></div><button type="button" class="button" data-reset-assessment>${bilingual("清空本轮记录", "Clear this record")}</button></div>
       </section>`;
   }
 
+  function standardSection(skill) {
+    const s=skill.standard;if(!s)return '';
+    return `<section class="section clinical-lesson" id="skill-standard" data-skill-practice data-practice-seconds="${s.timeLimitSeconds}"><h2>${bilingual('关键步骤与本站标准','Key steps and station standard')}</h2><p>${bilingual('实习识别与报告；规培在上级监督下操作；主治指挥。具体剂量和阈值以本院为准。','Interns recognize/report; residents perform under senior supervision; attendings lead. Doses and thresholds follow institutional policy.')}</p><ol>${s.steps.map(p=>`<li>${bilingual(...p)}</li>`).join('')}</ol><p>${bilingual('模拟限时','Simulation limit')} ${s.timeLimitSeconds} s · ${bilingual(...s.model)}</p><p class="critical-failure">${bilingual('关键失败：','Critical failure: ')}${bilingual(...s.critical)}</p><details><summary>${bilingual('核查原始来源','Check primary sources')}</summary>${s.references.map(id=>{const r=window.ACADEMY_SKILL_SOURCE_INDEX[id];return `<p><a href="${r.url}" target="_blank" rel="noreferrer">${bilingual(...r.title)}</a> · ${r.locator}</p>`;}).join('')}</details></section>`;
+  }
   function renderDetail() {
     const root = document.querySelector("[data-skill-detail]");
     if (!root || !selected) return;
@@ -174,6 +178,7 @@
       ${evidenceSection(selected)}
       ${visualSection(selected)}
       ${simulationSection(selected)}
+      ${standardSection(selected)}
       ${assessmentSection(selected)}
       <nav class="skill-next" aria-label="Skill navigation"><a class="button" href="trauma-skills-academy.html">${bilingual("返回 9 项技能地图", "Back to nine-skill map")}</a>${list.map((skill) => `<a class="tag ${skill.id === selected.id ? "approved" : ""}" ${skill.id === selected.id ? 'aria-current="page"' : ""} href="trauma-skill.html?id=${skill.id}">${skill.icon}</a>`).join("")}</nav>`;
     bindInteractions(selected);
@@ -294,10 +299,14 @@
     document.querySelectorAll("[data-rating]").forEach((button) => button.addEventListener("click", () => {
       const group = document.querySelectorAll(`[data-domain="${button.dataset.domain}"]`);
       group.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+      updateOSCE();
     }));
+    const updateOSCE=()=>{const total=[...document.querySelectorAll('[data-rating][aria-pressed="true"]')].reduce((n,b)=>n+Number(b.dataset.rating),0);const failed=document.querySelector('[data-critical-observed]').checked;document.querySelector('[data-osce-total]').innerHTML=total+' / 10'+(failed?' · '+bilingual('关键失败：本站不通过','Critical failure: station fail'):'');};
+    document.querySelector('[data-critical-observed]').addEventListener('change',updateOSCE);
     document.querySelector("[data-reset-assessment]").addEventListener("click", () => {
       document.querySelectorAll("[data-rating]").forEach((button) => button.setAttribute("aria-pressed", "false"));
       document.querySelectorAll(".assessment-summary input").forEach((input) => { input.value = ""; });
+      document.querySelector("[data-critical-observed]").checked=false;updateOSCE();
     });
   }
 

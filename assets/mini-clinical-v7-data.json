@@ -14,8 +14,8 @@
       "Brief loss of consciousness after head impact, with altered response and speech."
     ],
     "history": [
-      "电动车碰撞后头部着地；伤前神经状态、确切伤后时间、抗凝用药及过敏史待核实。",
-      "Head impact after an e-bike collision; baseline neurology, exact injury time, anticoagulants and allergies need confirmation."
+      "电动车碰撞后头部着地；伤前神经状态、确切伤后时间、抗凝用药及过敏史待核实。 教学设定年龄35岁，不是原记录补全。",
+      "Head impact after an e-bike collision; baseline neurology, exact injury time, anticoagulants and allergies need confirmation. Synthetic teaching age35, not recovered from records."
     ],
     "preh": [
       "颈椎保护、氧疗及用药情况原病例未详记；交接时逐项询问，不能假定已完成。",
@@ -95,10 +95,6 @@
       "35分钟",
       "+35 min"
     ],
-    "condition": [
-      "空气（氧疗条件补充）；体温为合成补充。",
-      "Room air (added context); temperature is a synthetic addition."
-    ],
     "labs": [
       [
         "床旁血糖",
@@ -117,8 +113,8 @@
       ]
     ],
     "labnote": [
-      "到院0分钟教学补充，非原始病历结果；这些正常示例不排除颅内进展。血气、凝血与用药背景仍需按临床获得。",
-      "Arrival teaching additions, not original records. Normal examples do not exclude intracranial progression; obtain gas, coagulation and drug context as indicated."
+      "以下补充是明确标记的合成教学数值；不回填真实患者记录。结合本页来源阈值复评，救命措施不等待化验。",
+      "Marked additions are synthetic teaching values, not reconstructed patient records. Compare source-qualified thresholds without delaying rescue care."
     ],
     "priorities": [
       [
@@ -178,6 +174,22 @@
       [
         "https://www.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf",
         "ACS 2024 · Initial management / ICP management"
+      ],
+      [
+        "https://castjournals.cast.org.cn/joweb/jfjyxzz/CN/1194617491579183281",
+        "国内成人颅脑共识2025"
+      ],
+      [
+        "https://braintrauma.org/coma/guidelines/severe-tbi",
+        "BTF重型颅脑第4版"
+      ],
+      [
+        "https://www.nice.org.uk/guidance/ng232/chapter/recommendations",
+        "NICE NG232"
+      ],
+      [
+        "https://www.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf",
+        "ACS颅脑2024"
       ]
     ],
     "releases": [
@@ -223,10 +235,10 @@
       ],
       [
         "6 · 瞳孔与局灶体征",
-        "右瞳孔 4 mm、左侧 3 mm，右上肢对刺激反应较前减弱。",
+        "教学修订：右瞳孔5 mm、对光迟钝，左侧肢体无力；典型侧别用于讲解钩回疝，非原记录。",
         "哪一条信息最改变你的升级优先级？",
         "6 · Pupils and focal signs",
-        "Right pupil 4 mm vs left 3 mm, with reduced right-arm response.",
+        "Synthetic revision: right pupil5 mm, sluggish, with left-sided weakness; typical laterality illustrates uncal herniation, not recovered records.",
         "Which finding most changes escalation priority?"
       ],
       [
@@ -277,6 +289,148 @@
       [
         "专科升级与交接",
         "Specialist escalation and handover"
+      ]
+    ],
+    "options": [
+      [
+        {
+          "label": [
+            "E/V/M、双瞳与氧合灌注并查",
+            "Check E/V/M, both pupils, oxygenation and perfusion"
+          ],
+          "correct": true,
+          "feedback": [
+            "同步保护气道、纠正低氧与循环问题；记录GCS分项、瞳孔和四肢运动。",
+            "Protect airway and correct oxygenation/circulation while recording GCS components, pupils and limb movement."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "监护下CT与神经复查",
+            "Monitored CT with neurologic review"
+          ],
+          "correct": true,
+          "feedback": [
+            "意识下降或新局灶变化：立即重新xABCDE并联系神经外科；不等所有代谢检查出齐。",
+            "Decline or a new focal change requires repeat xABCDE and neurosurgical review without waiting for every metabolic test."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "恶化时立即神外/气道评估",
+            "Immediate neurosurgical/airway assessment for decline"
+          ],
+          "correct": true,
+          "feedback": [
+            "血糖、药物、低氧、低灌注与惊厥后状态并行核对；瞳孔差与运动侧别不能单独定位。",
+            "Check glucose, drugs, oxygenation, perfusion and postictal state in parallel; pupil and motor sides alone do not localize a lesion."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "紧急复查并连接确定性治疗",
+            "Urgent reassessment and definitive treatment"
+          ],
+          "correct": true,
+          "feedback": [
+            "下一责任人同时复核神经分项与全身生理，记录干预和氧疗条件。",
+            "The next owner reassesses neurologic components and systemic physiology with intervention and oxygen context."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
       ]
     ]
   },
@@ -375,10 +529,6 @@
       "25分钟",
       "+25 min"
     ],
-    "condition": [
-      "空气（补充条件）；GCS分项与体温为合成教学补充。",
-      "Room air (added context); GCS components and temperature are synthetic additions."
-    ],
     "labs": [
       [
         "Hb",
@@ -397,8 +547,8 @@
       ]
     ],
     "labnote": [
-      "到院Hb与乳酸2.2为教学补充；25分钟乳酸4.6沿用原病例。急性失血早期Hb可仍正常，不能据此排除出血。",
-      "Arrival Hb and lactate 2.2 are teaching additions; +25 min lactate 4.6 is retained. An initially normal Hb does not exclude acute bleeding."
+      "以下补充是明确标记的合成教学数值；不回填真实患者记录。结合本页来源阈值复评，救命措施不等待化验。",
+      "Marked additions are synthetic teaching values, not reconstructed patient records. Compare source-qualified thresholds without delaying rescue care."
     ],
     "priorities": [
       [
@@ -466,6 +616,14 @@
       [
         "https://link.springer.com/article/10.1186/s13017-017-0151-4",
         "WSES Splenic Trauma 2017 — acute management"
+      ],
+      [
+        "https://link.springer.com/article/10.1186/s13017-020-00302-7",
+        "WSES肝损伤2020"
+      ],
+      [
+        "https://link.springer.com/article/10.1186/s13017-017-0151-4",
+        "WSES脾损伤2017"
       ]
     ],
     "releases": [
@@ -519,10 +677,10 @@
       ],
       [
         "7 · 解剖定位",
-        "当血流动力学允许时，增强 CT 帮助判断实质脏器、空腔脏器和腹膜后风险。",
+        "不稳定且对复苏无反应→直接手术/止血，不去CT；有反应并可安全监护者才增强CT。",
         "影像定位后，哪些床边趋势仍必须追踪？",
         "7 · Anatomic localization",
-        "When physiology permits, contrast CT evaluates solid organ, hollow viscus, and retroperitoneal risk.",
+        "Unstable nonresponders go directly to surgery/hemorrhage control, not CT; monitored responders may undergo contrast CT.",
         "Which bedside trends still require follow-up after imaging?"
       ],
       [
@@ -565,6 +723,148 @@
       [
         "定位、去向与复评",
         "Localisation, destination and reassessment"
+      ]
+    ],
+    "options": [
+      [
+        {
+          "label": [
+            "初评与连续腹部观察",
+            "Primary assessment and serial abdominal review"
+          ],
+          "correct": true,
+          "feedback": [
+            "持续全身xABCDE，比较血压、皮肤灌注与腹部体征；早期正常数值不是放行证。",
+            "Continue whole-body xABCDE; compare BP, perfusion and abdomen rather than clear risk from one snapshot."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "结合机制复评，阴性FAST不关闭风险",
+            "Reassess mechanism; negative FAST does not close risk"
+          ],
+          "correct": true,
+          "feedback": [
+            "FAST回答是否见游离液，不能排除实质、肠系膜或腹膜后损伤。",
+            "FAST assesses visible free fluid; it does not exclude solid-organ, mesenteric or retroperitoneal injury."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "不稳定FAST阳性：复苏与止血团队同步",
+            "Unstable positive FAST: resuscitation and hemorrhage-control team"
+          ],
+          "correct": true,
+          "feedback": [
+            "失稳时复苏、血液与止血资源同步启动；不为重复超声或CT延误源控制。",
+            "With instability, activate resuscitation, blood and haemostasis together; repeat ultrasound or CT must not delay source control."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "无反应直接止血，有反应才CT",
+            "Direct control for nonresponders; CT for responders"
+          ],
+          "correct": true,
+          "feedback": [
+            "稳定允许时用增强CT定位；非手术管理意味着连续观察及可立即升级的资源。",
+            "Use contrast CT when stability permits; nonoperative management requires monitoring and immediate escalation capability."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
       ]
     ]
   },
@@ -663,10 +963,6 @@
       "10分钟",
       "+10 min"
     ],
-    "condition": [
-      "储氧面罩15 L/min为合成观察条件；原GCS总分13保留，E3V4M6为本版教学设定。",
-      "Reservoir mask 15 L/min is synthetic observation context; original GCS total 13 retained, E3V4M6 is a teaching assignment."
-    ],
     "labs": [
       [
         "乳酸",
@@ -690,8 +986,8 @@
       ]
     ],
     "labnote": [
-      "到院采样的合成教学补充，非原记录、非治疗阈值。用于讨论灌注、凝血与输血监测；不能等结果才开始救命处置。",
-      "Synthetic arrival samples, not original records or treatment thresholds. Use to discuss perfusion, haemostasis and transfusion monitoring without delaying rescue care."
+      "以下补充是明确标记的合成教学数值；不回填真实患者记录。结合本页来源阈值复评，救命措施不等待化验。",
+      "Marked additions are synthetic teaching values, not reconstructed patient records. Compare source-qualified thresholds without delaying rescue care."
     ],
     "priorities": [
       [
@@ -756,6 +1052,14 @@
       [
         "https://www.nice.org.uk/guidance/NG39/chapter/recommendations",
         "NICE NG39 · Haemorrhage / Imaging"
+      ],
+      [
+        "https://doi.org/10.3760/cma.j.issn.1671-0282.2023.11.006",
+        "创伤失血性休克中国急诊专家共识（2023）"
+      ],
+      [
+        "https://link.springer.com/article/10.1186/s13017-025-00651-1",
+        "WSES-AAST胸部2025"
       ]
     ],
     "releases": [
@@ -809,10 +1113,10 @@
       ],
       [
         "7 · 十分钟趋势",
-        "BP 78/48，SpO₂ 87%，意识反应较前迟缓。 ※本版续设：氧合支持与血液复苏已启动，尚无持续改善；颈椎保护及疑出血性骨盆环损伤的骨盆带由团队核查。当前不转运CT，先升级救治与出血控制。",
+        "BP 78/48，SpO₂ 87%，意识反应较前迟缓。 ※本版续设：氧合支持与血液复苏已启动，尚无持续改善；颈椎保护及疑出血性骨盆环损伤的骨盆带由团队核查。当前不转运CT，先升级救治与出血控制。 教学新增EFAST：左胸膜无滑动、右侧有滑动、无明显心包液；结合休克与低氧立即减压/胸引评估。",
         "团队负责人用简短口头更新重新排序，救命任务继续并行，不停下正在进行的处理。",
         "7 · Ten-minute trend",
-        "BP 78/48, SpO₂ 87%, and slower responses. Added teaching context: oxygen support and blood resuscitation have begun without sustained improvement; the team checks spinal protection and the binder for suspected bleeding pelvic-ring injury. Do not transfer to CT at this point; escalate rescue and haemorrhage control.",
+        "BP 78/48, SpO₂ 87%, and slower responses. Added teaching context: oxygen support and blood resuscitation have begun without sustained improvement; the team checks spinal protection and the binder for suspected bleeding pelvic-ring injury. Do not transfer to CT at this point; escalate rescue and haemorrhage control. Synthetic EFAST: absent left sliding, right sliding present, no clear pericardial fluid; shock/hypoxemia prompts immediate decompression/drainage assessment.",
         "The leader briefly reprioritises aloud while life-saving tasks continue in parallel."
       ],
       [
@@ -855,6 +1159,148 @@
       [
         "十分钟恶化与重排序",
         "Ten-minute decline and reprioritisation"
+      ]
+    ],
+    "options": [
+      [
+        {
+          "label": [
+            "气道、止血、氧合、保温并行",
+            "Parallel airway, hemorrhage, oxygenation and warming"
+          ],
+          "correct": true,
+          "feedback": [
+            "领导者明确气道、呼吸与出血威胁，分派人员并行执行，而不是顺序排队。",
+            "The leader identifies airway, breathing and bleeding threats and assigns parallel tasks rather than a queue."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "B/C威胁同步处理",
+            "Treat B/C threats together"
+          ],
+          "correct": true,
+          "feedback": [
+            "复苏与解剖定位同步推进，血液、胸部、腹部、骨盆和长骨来源都保留。",
+            "Resuscitation and localisation proceed together; retain blood, chest, abdomen, pelvis and long-bone sources."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "血液、凝血和源控制同步",
+            "Blood, coagulation and source control together"
+          ],
+          "correct": true,
+          "feedback": [
+            "D/E先按到院记录复核，明确保护、保温与资源到位情况；10分钟恶化留到下一轮同步更新。",
+            "Review arrival D/E, protection, warming and resource readiness; the ten-minute decline updates together in the next round."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "胸膜评估减压与止血并行",
+            "Pleural assessment/decompression and bleeding control together"
+          ],
+          "correct": true,
+          "feedback": [
+            "移交前说清责任人、资源到位时间与失败替代路径；不把所有任务交给“团队”。",
+            "Handover names owners, resource arrival times and fallback paths rather than assigning everything to “the team”."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
       ]
     ]
   }

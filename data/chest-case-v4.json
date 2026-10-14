@@ -52,7 +52,42 @@
         "骨折数量不能替代呼吸评估。",
         "Fracture count cannot replace respiratory assessment."
       ],
-      "labs": []
+      "labs": [],
+      "options": [
+        {
+          "label": [
+            "共享胸部与全身初评",
+            "Share chest and whole-body primary survey"
+          ],
+          "correct": true,
+          "feedback": [
+            "先看当前生理，再将结构信息整合进去。",
+            "Assess current physiology, then integrate structural information."
+          ]
+        },
+        {
+          "label": [
+            "先完成CT再处理呼吸恶化",
+            "Complete CT before treating respiratory decline"
+          ],
+          "correct": false,
+          "feedback": [
+            "骨折数量不能替代呼吸评估。",
+            "Fracture count cannot replace respiratory assessment."
+          ]
+        },
+        {
+          "label": [
+            "仅观察一个监护值，不复查胸部",
+            "Observe one monitor value without chest reassessment"
+          ],
+          "correct": false,
+          "feedback": [
+            "骨折数量不能替代呼吸评估。",
+            "Fracture count cannot replace respiratory assessment."
+          ]
+        }
+      ]
     },
     {
       "title": [
@@ -60,7 +95,7 @@
         "02 Primary survey: chest wall, lung and whole-body risk"
       ],
       "info": [
-        "x：未见进行性外出血。A：可说完整句，无明显喉鸣，保持颈椎保护。B：右胸压痛、捏发感，吸气时右前胸局部内陷、咳嗽受疼痛限制。C：肢端尚暖，无新的外出血。D：GCS15、瞳孔反应存在。E：完成有序暴露与保暖；其他部位损伤仍需查找。",
+        "x：未见进行性外出血。A：可说完整句，无明显喉鸣，保持颈椎保护。B：右胸压痛、捻发感，吸气时右前胸局部内陷、咳嗽受疼痛限制。C：肢端尚暖，无新的外出血。D：GCS15、瞳孔反应存在。E：完成有序暴露与保暖；其他部位损伤仍需查找。",
         "x: no progressive external bleeding seen. A: full sentences, no obvious stridor, spinal precautions maintained. B: right tenderness and crepitus, local right-anterior inward movement during inspiration and pain-limited cough. C: extremities remain warm, no new external bleeding. D: GCS 15 and reactive pupils. E: organised exposure and warmth; continue searching for other injuries."
       ],
       "unknown": [
@@ -103,7 +138,42 @@
         "过早固定机制会漏掉并行问题。",
         "Early anchoring misses concurrent problems."
       ],
-      "labs": []
+      "labs": [],
+      "options": [
+        {
+          "label": [
+            "呼吸与出血风险并行处理",
+            "Treat respiratory/hemorrhage risk together"
+          ],
+          "correct": true,
+          "feedback": [
+            "不够；同时保留肺、胸膜腔和其他系统因素。",
+            "No; retain lung, pleural and other systemic contributors."
+          ]
+        },
+        {
+          "label": [
+            "先完成CT再处理呼吸恶化",
+            "Complete CT before treating respiratory decline"
+          ],
+          "correct": false,
+          "feedback": [
+            "过早固定机制会漏掉并行问题。",
+            "Early anchoring misses concurrent problems."
+          ]
+        },
+        {
+          "label": [
+            "仅观察一个监护值，不复查胸部",
+            "Observe one monitor value without chest reassessment"
+          ],
+          "correct": false,
+          "feedback": [
+            "过早固定机制会漏掉并行问题。",
+            "Early anchoring misses concurrent problems."
+          ]
+        }
+      ]
     },
     {
       "title": [
@@ -177,6 +247,41 @@
             "Taylor 2023 CT; not this case"
           ]
         }
+      ],
+      "options": [
+        {
+          "label": [
+            "依据生理决定影像与救治先后",
+            "Order imaging/care by physiology"
+          ],
+          "correct": true,
+          "feedback": [
+            "不是；它是独立外部读图练习。",
+            "No; it is a separate external image-reading exercise."
+          ]
+        },
+        {
+          "label": [
+            "先完成CT再处理呼吸恶化",
+            "Complete CT before treating respiratory decline"
+          ],
+          "correct": false,
+          "feedback": [
+            "将他人图冒充此病例会造成错误证据链。",
+            "Assigning another patient’s image to this case creates a false evidence chain."
+          ]
+        },
+        {
+          "label": [
+            "仅观察一个监护值，不复查胸部",
+            "Observe one monitor value without chest reassessment"
+          ],
+          "correct": false,
+          "feedback": [
+            "将他人图冒充此病例会造成错误证据链。",
+            "Assigning another patient’s image to this case creates a false evidence chain."
+          ]
+        }
       ]
     },
     {
@@ -233,6 +338,41 @@
           "30分钟动脉血气（鼻导管4 L/min）：pH7.32，PaCO₂50 mmHg，PaO₂58 mmHg，HCO₃⁻25 mmol/L。新增合成值；实际FiO₂未知，不计算精确P/F比。",
           "Arterial gas at +30 min on nasal oxygen 4 L/min: pH 7.32, PaCO₂ 50 mmHg, PaO₂ 58 mmHg, HCO₃⁻ 25 mmol/L. New synthetic values; actual FiO₂ unknown, so no precise P/F ratio is calculated."
         ]
+      ],
+      "options": [
+        {
+          "label": [
+            "恶化立即床旁复评及减压评估",
+            "Deterioration: immediate bedside/decompression assessment"
+          ],
+          "correct": true,
+          "feedback": [
+            "不是；同时比较氧需求、通气、呼吸功、咳嗽、意识和循环。",
+            "No; compare oxygen requirement, ventilation, effort, cough, consciousness and circulation."
+          ]
+        },
+        {
+          "label": [
+            "先完成CT再处理呼吸恶化",
+            "Complete CT before treating respiratory decline"
+          ],
+          "correct": false,
+          "feedback": [
+            "氧合不能代替通气或疲劳评估。",
+            "Oxygenation cannot replace ventilation or fatigue assessment."
+          ]
+        },
+        {
+          "label": [
+            "仅观察一个监护值，不复查胸部",
+            "Observe one monitor value without chest reassessment"
+          ],
+          "correct": false,
+          "feedback": [
+            "氧合不能代替通气或疲劳评估。",
+            "Oxygenation cannot replace ventilation or fatigue assessment."
+          ]
+        }
       ]
     }
   ]

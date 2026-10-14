@@ -10,7 +10,7 @@
 命令：
 
 ```bash
-python3 /Users/dinghaixiang/.codex/skills/graph-engineering-architect/scripts/validate_graph.py .graph/trauma-education
+python3 本地教学资料 .graph/trauma-education
 ```
 
 结果：`PASS: graph contract is structurally valid`

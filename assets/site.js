@@ -20,10 +20,10 @@
   setLanguage(stored === "en" ? "en" : "zh");
 
   const studentStatusCopy = {
-    source_required: ["来源与适用范围已登记", "Source and scope recorded"],
+    source_required: ["来源待补", "Source needed"],
     source_verified: ["专题来源已核对", "Topic source checked"],
-    source_index_pending_review: ["公开来源已登记", "Public source recorded"],
-    evidence_review_required: ["专题依据已定位", "Topic evidence mapped"],
+    source_index_pending_review: ["来源需复核", "Source review pending"],
+    evidence_review_required: ["待专家复核", "Expert review pending"],
     pending_clinician_review: ["教学内容待临床教师复核", "Clinical teacher review pending"],
     pending_specialty_review: ["专题内容待相关专科复核", "Specialty review pending"],
     pending_deidentification_review: ["教学情境不含可识别信息", "Teaching scenario without identifiers"],
@@ -33,7 +33,7 @@
     teaching_illustration: ["教学示意，非诊断图像", "Teaching visual, not diagnostic imaging"],
     instructor_authored: ["教师编写合成情境", "Instructor-authored synthetic scenario"],
     teaching_not_protocol: ["教学模拟，非操作规程", "Teaching simulation, not an operating protocol"],
-    GO_WITH_CLINICAL_REVIEW: ["教学发布 · 受限范围", "Teaching release · limited scope"]
+    GO_WITH_CLINICAL_REVIEW: ["教学试用版", "Teaching pilot"]
   };
 
   function statusMarkup(status) {

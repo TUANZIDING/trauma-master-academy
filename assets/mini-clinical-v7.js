@@ -15,8 +15,8 @@ const data = {
       "Brief loss of consciousness after head impact, with altered response and speech."
     ],
     "history": [
-      "电动车碰撞后头部着地；伤前神经状态、确切伤后时间、抗凝用药及过敏史待核实。",
-      "Head impact after an e-bike collision; baseline neurology, exact injury time, anticoagulants and allergies need confirmation."
+      "电动车碰撞后头部着地；伤前神经状态、确切伤后时间、抗凝用药及过敏史待核实。 教学设定年龄35岁，不是原记录补全。",
+      "Head impact after an e-bike collision; baseline neurology, exact injury time, anticoagulants and allergies need confirmation. Synthetic teaching age35, not recovered from records."
     ],
     "preh": [
       "颈椎保护、氧疗及用药情况原病例未详记；交接时逐项询问，不能假定已完成。",
@@ -96,10 +96,6 @@ const data = {
       "35分钟",
       "+35 min"
     ],
-    "condition": [
-      "空气（氧疗条件补充）；体温为合成补充。",
-      "Room air (added context); temperature is a synthetic addition."
-    ],
     "labs": [
       [
         "床旁血糖",
@@ -118,8 +114,8 @@ const data = {
       ]
     ],
     "labnote": [
-      "到院0分钟教学补充，非原始病历结果；这些正常示例不排除颅内进展。血气、凝血与用药背景仍需按临床获得。",
-      "Arrival teaching additions, not original records. Normal examples do not exclude intracranial progression; obtain gas, coagulation and drug context as indicated."
+      "以下补充是明确标记的合成教学数值；不回填真实患者记录。结合本页来源阈值复评，救命措施不等待化验。",
+      "Marked additions are synthetic teaching values, not reconstructed patient records. Compare source-qualified thresholds without delaying rescue care."
     ],
     "priorities": [
       [
@@ -179,6 +175,22 @@ const data = {
       [
         "https://www.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf",
         "ACS 2024 · Initial management / ICP management"
+      ],
+      [
+        "https://castjournals.cast.org.cn/joweb/jfjyxzz/CN/1194617491579183281",
+        "国内成人颅脑共识2025"
+      ],
+      [
+        "https://braintrauma.org/coma/guidelines/severe-tbi",
+        "BTF重型颅脑第4版"
+      ],
+      [
+        "https://www.nice.org.uk/guidance/ng232/chapter/recommendations",
+        "NICE NG232"
+      ],
+      [
+        "https://www.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf",
+        "ACS颅脑2024"
       ]
     ],
     "releases": [
@@ -224,10 +236,10 @@ const data = {
       ],
       [
         "6 · 瞳孔与局灶体征",
-        "右瞳孔 4 mm、左侧 3 mm，右上肢对刺激反应较前减弱。",
+        "教学修订：右瞳孔5 mm、对光迟钝，左侧肢体无力；典型侧别用于讲解钩回疝，非原记录。",
         "哪一条信息最改变你的升级优先级？",
         "6 · Pupils and focal signs",
-        "Right pupil 4 mm vs left 3 mm, with reduced right-arm response.",
+        "Synthetic revision: right pupil5 mm, sluggish, with left-sided weakness; typical laterality illustrates uncal herniation, not recovered records.",
         "Which finding most changes escalation priority?"
       ],
       [
@@ -278,6 +290,148 @@ const data = {
       [
         "专科升级与交接",
         "Specialist escalation and handover"
+      ]
+    ],
+    "options": [
+      [
+        {
+          "label": [
+            "E/V/M、双瞳与氧合灌注并查",
+            "Check E/V/M, both pupils, oxygenation and perfusion"
+          ],
+          "correct": true,
+          "feedback": [
+            "同步保护气道、纠正低氧与循环问题；记录GCS分项、瞳孔和四肢运动。",
+            "Protect airway and correct oxygenation/circulation while recording GCS components, pupils and limb movement."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "监护下CT与神经复查",
+            "Monitored CT with neurologic review"
+          ],
+          "correct": true,
+          "feedback": [
+            "意识下降或新局灶变化：立即重新xABCDE并联系神经外科；不等所有代谢检查出齐。",
+            "Decline or a new focal change requires repeat xABCDE and neurosurgical review without waiting for every metabolic test."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "恶化时立即神外/气道评估",
+            "Immediate neurosurgical/airway assessment for decline"
+          ],
+          "correct": true,
+          "feedback": [
+            "血糖、药物、低氧、低灌注与惊厥后状态并行核对；瞳孔差与运动侧别不能单独定位。",
+            "Check glucose, drugs, oxygenation, perfusion and postictal state in parallel; pupil and motor sides alone do not localize a lesion."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "紧急复查并连接确定性治疗",
+            "Urgent reassessment and definitive treatment"
+          ],
+          "correct": true,
+          "feedback": [
+            "下一责任人同时复核神经分项与全身生理，记录干预和氧疗条件。",
+            "The next owner reassesses neurologic components and systemic physiology with intervention and oxygen context."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
       ]
     ]
   },
@@ -376,10 +530,6 @@ const data = {
       "25分钟",
       "+25 min"
     ],
-    "condition": [
-      "空气（补充条件）；GCS分项与体温为合成教学补充。",
-      "Room air (added context); GCS components and temperature are synthetic additions."
-    ],
     "labs": [
       [
         "Hb",
@@ -398,8 +548,8 @@ const data = {
       ]
     ],
     "labnote": [
-      "到院Hb与乳酸2.2为教学补充；25分钟乳酸4.6沿用原病例。急性失血早期Hb可仍正常，不能据此排除出血。",
-      "Arrival Hb and lactate 2.2 are teaching additions; +25 min lactate 4.6 is retained. An initially normal Hb does not exclude acute bleeding."
+      "以下补充是明确标记的合成教学数值；不回填真实患者记录。结合本页来源阈值复评，救命措施不等待化验。",
+      "Marked additions are synthetic teaching values, not reconstructed patient records. Compare source-qualified thresholds without delaying rescue care."
     ],
     "priorities": [
       [
@@ -467,6 +617,14 @@ const data = {
       [
         "https://link.springer.com/article/10.1186/s13017-017-0151-4",
         "WSES Splenic Trauma 2017 — acute management"
+      ],
+      [
+        "https://link.springer.com/article/10.1186/s13017-020-00302-7",
+        "WSES肝损伤2020"
+      ],
+      [
+        "https://link.springer.com/article/10.1186/s13017-017-0151-4",
+        "WSES脾损伤2017"
       ]
     ],
     "releases": [
@@ -520,10 +678,10 @@ const data = {
       ],
       [
         "7 · 解剖定位",
-        "当血流动力学允许时，增强 CT 帮助判断实质脏器、空腔脏器和腹膜后风险。",
+        "不稳定且对复苏无反应→直接手术/止血，不去CT；有反应并可安全监护者才增强CT。",
         "影像定位后，哪些床边趋势仍必须追踪？",
         "7 · Anatomic localization",
-        "When physiology permits, contrast CT evaluates solid organ, hollow viscus, and retroperitoneal risk.",
+        "Unstable nonresponders go directly to surgery/hemorrhage control, not CT; monitored responders may undergo contrast CT.",
         "Which bedside trends still require follow-up after imaging?"
       ],
       [
@@ -566,6 +724,148 @@ const data = {
       [
         "定位、去向与复评",
         "Localisation, destination and reassessment"
+      ]
+    ],
+    "options": [
+      [
+        {
+          "label": [
+            "初评与连续腹部观察",
+            "Primary assessment and serial abdominal review"
+          ],
+          "correct": true,
+          "feedback": [
+            "持续全身xABCDE，比较血压、皮肤灌注与腹部体征；早期正常数值不是放行证。",
+            "Continue whole-body xABCDE; compare BP, perfusion and abdomen rather than clear risk from one snapshot."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "结合机制复评，阴性FAST不关闭风险",
+            "Reassess mechanism; negative FAST does not close risk"
+          ],
+          "correct": true,
+          "feedback": [
+            "FAST回答是否见游离液，不能排除实质、肠系膜或腹膜后损伤。",
+            "FAST assesses visible free fluid; it does not exclude solid-organ, mesenteric or retroperitoneal injury."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "不稳定FAST阳性：复苏与止血团队同步",
+            "Unstable positive FAST: resuscitation and hemorrhage-control team"
+          ],
+          "correct": true,
+          "feedback": [
+            "失稳时复苏、血液与止血资源同步启动；不为重复超声或CT延误源控制。",
+            "With instability, activate resuscitation, blood and haemostasis together; repeat ultrasound or CT must not delay source control."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "无反应直接止血，有反应才CT",
+            "Direct control for nonresponders; CT for responders"
+          ],
+          "correct": true,
+          "feedback": [
+            "稳定允许时用增强CT定位；非手术管理意味着连续观察及可立即升级的资源。",
+            "Use contrast CT when stability permits; nonoperative management requires monitoring and immediate escalation capability."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
       ]
     ]
   },
@@ -664,10 +964,6 @@ const data = {
       "10分钟",
       "+10 min"
     ],
-    "condition": [
-      "储氧面罩15 L/min为合成观察条件；原GCS总分13保留，E3V4M6为本版教学设定。",
-      "Reservoir mask 15 L/min is synthetic observation context; original GCS total 13 retained, E3V4M6 is a teaching assignment."
-    ],
     "labs": [
       [
         "乳酸",
@@ -691,8 +987,8 @@ const data = {
       ]
     ],
     "labnote": [
-      "到院采样的合成教学补充，非原记录、非治疗阈值。用于讨论灌注、凝血与输血监测；不能等结果才开始救命处置。",
-      "Synthetic arrival samples, not original records or treatment thresholds. Use to discuss perfusion, haemostasis and transfusion monitoring without delaying rescue care."
+      "以下补充是明确标记的合成教学数值；不回填真实患者记录。结合本页来源阈值复评，救命措施不等待化验。",
+      "Marked additions are synthetic teaching values, not reconstructed patient records. Compare source-qualified thresholds without delaying rescue care."
     ],
     "priorities": [
       [
@@ -757,6 +1053,14 @@ const data = {
       [
         "https://www.nice.org.uk/guidance/NG39/chapter/recommendations",
         "NICE NG39 · Haemorrhage / Imaging"
+      ],
+      [
+        "https://doi.org/10.3760/cma.j.issn.1671-0282.2023.11.006",
+        "创伤失血性休克中国急诊专家共识（2023）"
+      ],
+      [
+        "https://link.springer.com/article/10.1186/s13017-025-00651-1",
+        "WSES-AAST胸部2025"
       ]
     ],
     "releases": [
@@ -810,10 +1114,10 @@ const data = {
       ],
       [
         "7 · 十分钟趋势",
-        "BP 78/48，SpO₂ 87%，意识反应较前迟缓。 ※本版续设：氧合支持与血液复苏已启动，尚无持续改善；颈椎保护及疑出血性骨盆环损伤的骨盆带由团队核查。当前不转运CT，先升级救治与出血控制。",
+        "BP 78/48，SpO₂ 87%，意识反应较前迟缓。 ※本版续设：氧合支持与血液复苏已启动，尚无持续改善；颈椎保护及疑出血性骨盆环损伤的骨盆带由团队核查。当前不转运CT，先升级救治与出血控制。 教学新增EFAST：左胸膜无滑动、右侧有滑动、无明显心包液；结合休克与低氧立即减压/胸引评估。",
         "团队负责人用简短口头更新重新排序，救命任务继续并行，不停下正在进行的处理。",
         "7 · Ten-minute trend",
-        "BP 78/48, SpO₂ 87%, and slower responses. Added teaching context: oxygen support and blood resuscitation have begun without sustained improvement; the team checks spinal protection and the binder for suspected bleeding pelvic-ring injury. Do not transfer to CT at this point; escalate rescue and haemorrhage control.",
+        "BP 78/48, SpO₂ 87%, and slower responses. Added teaching context: oxygen support and blood resuscitation have begun without sustained improvement; the team checks spinal protection and the binder for suspected bleeding pelvic-ring injury. Do not transfer to CT at this point; escalate rescue and haemorrhage control. Synthetic EFAST: absent left sliding, right sliding present, no clear pericardial fluid; shock/hypoxemia prompts immediate decompression/drainage assessment.",
         "The leader briefly reprioritises aloud while life-saving tasks continue in parallel."
       ],
       [
@@ -857,33 +1161,174 @@ const data = {
         "十分钟恶化与重排序",
         "Ten-minute decline and reprioritisation"
       ]
+    ],
+    "options": [
+      [
+        {
+          "label": [
+            "气道、止血、氧合、保温并行",
+            "Parallel airway, hemorrhage, oxygenation and warming"
+          ],
+          "correct": true,
+          "feedback": [
+            "领导者明确气道、呼吸与出血威胁，分派人员并行执行，而不是顺序排队。",
+            "The leader identifies airway, breathing and bleeding threats and assigns parallel tasks rather than a queue."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "B/C威胁同步处理",
+            "Treat B/C threats together"
+          ],
+          "correct": true,
+          "feedback": [
+            "复苏与解剖定位同步推进，血液、胸部、腹部、骨盆和长骨来源都保留。",
+            "Resuscitation and localisation proceed together; retain blood, chest, abdomen, pelvis and long-bone sources."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "血液、凝血和源控制同步",
+            "Blood, coagulation and source control together"
+          ],
+          "correct": true,
+          "feedback": [
+            "D/E先按到院记录复核，明确保护、保温与资源到位情况；10分钟恶化留到下一轮同步更新。",
+            "Review arrival D/E, protection, warming and resource readiness; the ten-minute decline updates together in the next round."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ],
+      [
+        {
+          "label": [
+            "胸膜评估减压与止血并行",
+            "Pleural assessment/decompression and bleeding control together"
+          ],
+          "correct": true,
+          "feedback": [
+            "移交前说清责任人、资源到位时间与失败替代路径；不把所有任务交给“团队”。",
+            "Handover names owners, resource arrival times and fallback paths rather than assigning everything to “the team”."
+          ]
+        },
+        {
+          "label": [
+            "先到CT室完成解剖诊断再处理变化",
+            "Complete anatomic CT diagnosis before treating deterioration"
+          ],
+          "correct": false,
+          "feedback": [
+            "不稳定或新红旗先救生理；只有复苏有反应且可监护者才安全进入CT路径。",
+            "Treat instability/new red flags first; CT requires a monitored resuscitation responder."
+          ]
+        },
+        {
+          "label": [
+            "依据一次正常结果取消后续观察",
+            "Cancel surveillance on one normal result"
+          ],
+          "correct": false,
+          "feedback": [
+            "早期阴性/正常不能排除演变损伤，必须比较床旁趋势并明确复评责任。",
+            "Early negative/normal findings do not exclude evolving injury; compare bedside trends and name the reassessment owner."
+          ]
+        }
+      ]
     ]
   }
-}
-;
+};
 const key=document.body.dataset.miniCase,c=data[key];if(!c)return;
 const bi=(z,e)=>`<span class="zh">${z}</span><span class="en">${e}</span>`;
 const root=document.querySelector('#case-entry'),slot=root.querySelector('[data-mv-release]');let stage=0,answer=null,activeSnapshot=0;
 const values=v=>v.map(([k,n,u,added])=>`<div class="mv-metric"><small>${k}</small><strong>${n}${added?'<sup title="Synthetic teaching addition">※</sup>':''}</strong><span>${u}</span></div>`).join('');
 const panel=document.querySelector('#route-overview .monitor-panel');
 const sceneClass={tbi:'mv-scene-neuro',abdomen:'mv-scene-abdomen',polytrauma:'mv-scene-poly'}[key];
-const sceneLabel=bi('ChatGPT合成教学情景；图中人物、体征和屏幕不是本病例或诊断证据。','ChatGPT synthetic teaching scene; people, signs and screens are not this case or diagnostic evidence.');
+const sceneLabel=bi('教学情境；图中人物、体征和屏幕不是本病例或诊断证据。','ChatGPT synthetic teaching scene; people, signs and screens are not this case or diagnostic evidence.');
 const routeData={
-tbi:{title:['神经复评：全身生理与床边表现一起看','Neurologic reassessment: physiology and bedside findings together'],names:[['意识 · GCS','Consciousness · GCS'],['瞳孔 · 右/左','Pupils · right/left'],['语言 · V分项','Speech · V component'],['运动 · M分项','Motor · M component']],states:[['14','3 / 3 mm','V4','M6'],['12','4 / 3 mm','V4','M5']],notes:[['到院观察：双瞳等大灵敏；氧合与灌注同步核对。','Arrival: equal reactive pupils; check oxygenation and perfusion together.'],['GCS下降与新瞳孔/运动变化需立即升级；V4未变，不能把每个分项都画成下降。','GCS decline and new pupil/motor changes need urgent escalation; V4 is unchanged, not every component declines.']]},
+tbi:{title:['神经复评：全身生理与床边表现一起看','Neurologic reassessment: physiology and bedside findings together'],names:[['意识 · GCS','Consciousness · GCS'],['瞳孔 · 右/左','Pupils · right/left'],['语言 · V分项','Speech · V component'],['运动 · M分项','Motor · M component']],states:[['14','3 / 3 mm','V4','M6'],['12','5 / 3 mm','V4','M5']],notes:[['到院观察：双瞳等大灵敏；氧合与灌注同步核对。','Arrival: equal reactive pupils; check oxygenation and perfusion together.'],['GCS下降与新瞳孔/运动变化需立即升级；V4未变，不能把每个分项都画成下降。','GCS decline and new pupil/motor changes need urgent escalation; V4 is unchanged, not every component declines.']]},
 abdomen:{title:['独立趋势练习：灌注与氧合同时恶化','Separate trend exercise: perfusion and oxygenation worsen together'],names:[['心率 · HR','Heart rate · HR'],['血压 · BP','Blood pressure · BP'],['呼吸频率 · RR','Respiratory rate · RR'],['氧合 · SpO₂','Oxygenation · SpO₂']],states:[['86 /min','67/46 mmHg','26 /min','85%'],['105 /min','58/36 mmHg','33 /min','81%']],notes:[['独立教学示例，非上方96→118病例；氧疗条件未提供，不能量化治疗反应。','Separate example, not the 96→118 case above; oxygen context is unavailable, so treatment response cannot be quantified.'],['低血压伴严重低氧：并行复评气道、胸部、灌注和监测可靠性，不能只归因于腹部。','Hypotension plus severe hypoxaemia: reassess airway, chest, perfusion and measurement quality together, not abdomen alone.']]},
 polytrauma:{title:['多轴复评：每次变化都重排优先级','Multi-axis reassessment: every change revises priorities'],names:[['A/D · GCS','A/D · GCS'],['B · SpO₂','B · SpO₂'],['C · 血压','C · Blood pressure'],['E · 体温','E · Temperature']],states:[['13','90%','86/54 mmHg','35.4°C'],['12 ※','87%','78/48 mmHg','35.2°C ※']],notes:[['到院：气道、氧合、出血和保温分工并行；保护措施不替代生理复评。','Arrival: assign airway, oxygenation, bleeding and warming in parallel; protection does not replace reassessment.'],['10分钟：低氧、低灌注、意识和低温同步加重；源控制与呼吸处理不能等待CT或答题。','At +10 min: oxygenation, perfusion, consciousness and temperature worsen together; rescue care cannot wait for CT or a quiz.']]}}
 let routeState=0;
-function route(n){if(!panel)return;routeState=n;const r=routeData[key];panel.classList.add('mv-trend-panel');panel.innerHTML=`<header><span class="eyebrow">COMPARE → EXPLAIN → REASSESS</span><h3>${bi(...r.title)}</h3></header><div class="mv-trend-layout"><figure><p class="mv-scene-badge">${bi("AI合成观察图 · 非病例影像","AI observation illustration · not case imaging")}</p><div class="mv-scene ${sceneClass}" role="img" aria-label="Synthetic educational bedside observation scene"></div><figcaption>${sceneLabel}</figcaption></figure><div><div class="mv-trend-controls"><button class="button" data-mv-route="0" aria-pressed="${n===0}">${key==='abdomen'?bi('首轮示例','First example'):bi('到院0分钟','Arrival 0 min')}</button><button class="button" data-mv-route="1" aria-pressed="${n===1}">${key==='abdomen'?bi('后续示例','Later example'):bi(...c.time)}</button></div><div class="mv-trend-cards">${r.names.map((name,i)=>`<article><small>${bi(...name)}</small><strong>${r.states[n][i]}</strong><span>${r.states[0][i]} → ${r.states[1][i]}</span></article>`).join('')}</div><p class="mv-trend-insight" role="status">${bi(...r.notes[n])}</p></div></div><p class="mv-trend-foot">${bi('交互式教学快照，非连续监测或处置阈值；立即威胁需要并行处理。','Interactive teaching snapshots, not continuous monitoring or treatment thresholds; immediate threats require parallel care.')}</p>`;
+function route(n){if(!panel||key==='abdomen')return;routeState=n;const r=routeData[key];panel.classList.add('mv-trend-panel');panel.innerHTML=`<header><span class="eyebrow">COMPARE → EXPLAIN → REASSESS</span><h3>${bi(...r.title)}</h3></header><div class="mv-trend-layout"><figure><p class="mv-scene-badge">${bi("AI合成观察图 · 非病例影像","AI observation illustration · not case imaging")}</p><div class="mv-scene ${sceneClass}" role="img" aria-label="Synthetic educational bedside observation scene"></div><figcaption>${sceneLabel}</figcaption></figure><div><div class="mv-trend-controls"><button class="button" data-mv-route="0" aria-pressed="${n===0}">${key==='abdomen'?bi('首轮示例','First example'):bi('到院0分钟','Arrival 0 min')}</button><button class="button" data-mv-route="1" aria-pressed="${n===1}">${key==='abdomen'?bi('后续示例','Later example'):bi(...c.time)}</button></div><div class="mv-trend-cards">${r.names.map((name,i)=>`<article><small>${bi(...name)}</small><strong>${r.states[n][i]}</strong><span>${r.states[0][i]} → ${r.states[1][i]}</span></article>`).join('')}</div><p class="mv-trend-insight" role="status">${bi(...r.notes[n])}</p></div></div><p class="mv-trend-foot">${bi('交互式教学快照，非连续监测或处置阈值；立即威胁需要并行处理。','Interactive teaching snapshots, not continuous monitoring or treatment thresholds; immediate threats require parallel care.')}</p>`;
 panel.querySelectorAll('[data-mv-route]').forEach(b=>b.addEventListener('click',()=>{let n=+b.dataset.mvRoute;if(key==='abdomen')route(n);else snapshot(n);}));}
 function snapshot(n){activeSnapshot=n;root.querySelector('[data-mv-vitals]').innerHTML=values(c[n?'v1':'v0']);root.querySelectorAll('[data-mv-snapshot]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.mvSnapshot===n)));root.querySelector('.mv-monitor-head span').innerHTML=n?bi('病例监护 · '+c.time[0],'Case observations · '+c.time[1]):bi('病例监护 · 到院0分钟','Case observations · arrival 0 min');root.querySelector('.mv-condition').innerHTML=bi(...c.conditions[n]);if(key!=='abdomen')route(n);}
 root.querySelectorAll('[data-mv-snapshot]').forEach(b=>b.addEventListener('click',()=>snapshot(+b.dataset.mvSnapshot)));
 function render(){
 const releases=c.releases.slice(stage*2,stage*2+2);
-slot.innerHTML=`<div class="mv-release-head"><span>${bi('信息释放','Information release')} ${stage+1} / 4</span><span>${bi('判断与处理同步','Reason and act together')}</span></div><h3>${stage+1} · ${bi(...c.roundTitles[stage])}</h3><div class="mv-facts">${releases.map(r=>`<article><h4>${bi(r[0].replace(/^\d+\s*·\s*/,''),r[3].replace(/^\d+\s*·\s*/,''))}</h4><p>${bi(r[1],r[4])}</p><strong>${bi(r[2],r[5])}</strong></article>`).join('')}</div><details><summary>${bi('展开团队优先级与下一次复评','Team priorities and next reassessment')}</summary><p>${bi(...c.priorities[stage])}</p></details><div class="mv-decision"><p>${bi('你会如何处理这些信息？','How will you use this information?')}</p><button class="button" data-mv-answer="1" aria-pressed="${answer===1}">${bi('整合生理、检查与复评','Integrate physiology, findings and reassessment')}</button><button class="button" data-mv-answer="0" aria-pressed="${answer===0}">${bi('用一个正常结果结束判断','Close reasoning with one normal result')}</button><p class="mv-feedback" role="status">${answer===null?bi('先作判断，再核对反馈；不影响病例数据。','Reason first, then check feedback; case data are unchanged.'):answer===1?bi(...c.priorities[stage]):bi('单项检查不能关闭多机制风险。请比较当前趋势、未知项与立即威胁；必要处理不等待下一条信息。','One test cannot close multiple risks. Compare trends, unknowns and immediate threats; needed care does not wait for the next release.')}</p></div><div class="mv-controls"><button class="button" data-mv-action="back" ${stage===0?'disabled':''}>${bi('上一轮','Previous')}</button><button class="button primary" data-mv-action="next" ${stage===3?'disabled':''}>${bi('释放下一轮','Release next')}</button><button class="button" data-mv-action="reset">${bi('重新开始','Restart')}</button></div>`;
+slot.innerHTML=`<div class="mv-release-head"><span>${bi('信息释放','Information release')} ${stage+1} / 4</span><span>${bi('判断与处理同步','Reason and act together')}</span></div><h3>${stage+1} · ${bi(...c.roundTitles[stage])}</h3><div class="mv-facts">${releases.map(r=>`<article><h4>${bi(r[0].replace(/^\d+\s*·\s*/,''),r[3].replace(/^\d+\s*·\s*/,''))}</h4><p>${bi(r[1],r[4])}</p><strong>${bi(r[2],r[5])}</strong></article>`).join('')}</div><details><summary>${bi('展开团队优先级与下一次复评','Team priorities and next reassessment')}</summary><p>${bi(...c.priorities[stage])}</p></details><div class="mv-decision"><p>${bi('你会如何处理这些信息？','How will you use this information?')}</p>${c.options[stage].map((o,i)=>`<button class="button" data-mv-answer="${i}" aria-pressed="${answer===i}">${bi(...o.label)}</button>`).join('')}<p class="mv-feedback" role="status">${answer===null?bi('先作判断，再核对反馈；不影响病例数据。','Reason first, then check feedback; case data are unchanged.'):bi(...c.options[stage][answer].feedback)}</p></div><div class="mv-controls"><button class="button" data-mv-action="back" ${stage===0?'disabled':''}>${bi('上一轮','Previous')}</button><button class="button primary" data-mv-action="next" ${stage===3?'disabled':''}>${bi('释放下一轮','Release next')}</button><button class="button" data-mv-action="reset">${bi('重新开始','Restart')}</button></div>`;
 slot.querySelectorAll('[data-mv-answer]').forEach(b=>b.addEventListener('click',()=>{answer=+b.dataset.mvAnswer;render();}));
 slot.querySelectorAll('[data-mv-action]').forEach(b=>b.addEventListener('click',()=>{let a=b.dataset.mvAction;stage=a==='reset'?0:Math.max(0,Math.min(3,stage+(a==='next'?1:-1)));answer=null;snapshot(stage>=c.snapshotFromStage?1:0);render();}));
 }
-render();snapshot(0);if(key==='abdomen')route(0);
+render();snapshot(0);if(key==='abdomen'&&panel)panel.remove();
 const legacy=document.querySelector('.mini-case-expansion');if(legacy){const det=document.createElement('details');det.className='section mv-teacher';det.innerHTML=`<summary>${bi('教师延伸：原病例、完整交接与复盘','Teacher extension: original case, handover and debrief')}</summary><p>${bi('下方保留原版记录；本版补全的合成监护请以上方病例入口为准，勿拼接两版本时序。','Original version retained below; use the case entry above for the enriched synthetic observations, without joining different versions.')}</p>`;legacy.before(det);det.append(legacy);}
 document.querySelectorAll('.vl-process').forEach(el=>el.remove());
 })();

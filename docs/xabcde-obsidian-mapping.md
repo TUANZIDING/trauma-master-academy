@@ -2,7 +2,7 @@
 
 Knowledge base root:
 
-`/Users/dinghaixiang/Documents/obsdian_Vault/40-临床知识库`
+`本地教学资料`
 
 ## Notes Scanned
 
@@ -14,7 +14,7 @@ Knowledge base root:
 - `急诊创伤流程路径/08-TraumaMaster首批课程公开依据核验.md`
 - `急诊创伤流程路径/90-待补充资料清单.md`
 - `急诊创伤流程路径/cases/README.md`
-- `急诊创伤流程路径/cases/CASE-TRAUMA-001-严重多发伤合并创伤性膈疝.md`
+- 脱敏创伤病例教学资源
 - `急诊创伤流程路径/cases/CASE-TRAUMA-002-开放性骨盆骨折合并失血性休克.md`
 - `急诊创伤流程路径/cases/CASE-TRAUMA-003-高能量交通伤合并颈髓风险与髋关节脱位.md`
 
