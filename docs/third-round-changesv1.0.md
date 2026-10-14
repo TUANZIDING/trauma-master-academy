@@ -16,6 +16,7 @@ Baseline: 6bb07cb. Request batches: 0–6. Dates use the client date 2026-10-14.
 - Clinical proposals are checked against original sources. Conflicting tourniquet placement distances, base-excess signs, transfusion units and pregnancy-arrest time wording will be distinguished by source and setting.
 - Real-case missing measurements are not reconstructed. Added scenarios, if needed, are labelled as separate synthetic teaching exercises.
 - Existing source media not approved for this release remain excluded.
+- Removed the two unused legacy pelvic-binder illustrations whose placement could be misleading; corrected the review documents to match the source-qualified, tiered teaching scope.
 
 ## Sources checked
 

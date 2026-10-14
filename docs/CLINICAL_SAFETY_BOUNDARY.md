@@ -26,7 +26,7 @@ The source hash and slide-topic mapping remain in a private review record outsid
 
 - Link, bilingual, quiz, scoring, source-locator and privacy checks establish engineering properties only.
 - Source verification does not establish clinician or institutional signoff.
-- Eleven legacy detector categories were present at commit fa50476b0fae533d6043a451d625a0baae9b9eeb. Exact occurrence contexts and counts are pinned in data/legacy-boundary-findings.json and reported as warnings requiring clinical review. Changed or new flagged contexts outside byte-identical, source-qualified generated sections still fail validation. The clinical ledger is checked separately; generated blocks are compared exactly to that ledger before the legacy detector runs. These engineering checks do not prove clinical validity.
+- The eleven detector categories recorded at commit fa50476b0fae533d6043a451d625a0baae9b9eeb remain an archived baseline in data/legacy-boundary-findings.json. The third-round revision removes the global prohibition on numbers and conditional paths. Current checks validate source-qualified ledger entries, dates, references and reviewer fields, compare generated sections exactly with the ledger, and check learner-display and privacy rules. Historical detector findings are not current validation failures or a clinical signoff. These engineering checks do not prove clinical validity.
 - No clinical approval is inferred from a successful build, browser check or publication.
 - Learner pages use one compact badge; detailed source/review information is in the quality-governance page.
 
