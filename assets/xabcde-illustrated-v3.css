@@ -35,7 +35,7 @@
 .xabcde-illustrated-v3 #stages .stage-visual-list{gap:24px}
 .xabcde-illustrated-v3 .stage-visual-card{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:26px;padding:22px;align-items:start;border:1px solid #d9dfd5;border-radius:14px;box-shadow:0 8px 24px rgba(20,51,39,.035);background:#fffef9}
 .xv-stage-figure{margin:0;min-width:0}.xv-stage-figure figcaption{font-size:11px;color:#66756a;padding-top:9px;line-height:1.5}
-.xv-scene{width:100%;aspect-ratio:1;background-image:url('./generated/xabcde-v3/observation-scenes.png');background-size:300% 200%;background-repeat:no-repeat;border-radius:10px;background-color:#f2edde;overflow:hidden}
+.xv-scene{width:100%;aspect-ratio:1;background-image:url('generated/xabcde-v3/observation-scenes-800v1.0.webp');background-size:300% 200%;background-repeat:no-repeat;border-radius:10px;background-color:#f2edde;overflow:hidden}
 .xv-scene-0{background-position:0 0}.xv-scene-1{background-position:50% 0}.xv-scene-2{background-position:100% 0}.xv-scene-3{background-position:0 100%}.xv-scene-4{background-position:50% 100%}.xv-scene-5{background-position:100% 100%}
 .xabcde-illustrated-v3 .stage-visual-copy{align-content:start;gap:14px}
 .xabcde-illustrated-v3 .stage-visual-copy h3{font-size:23px;line-height:1.5;display:block;margin:0}

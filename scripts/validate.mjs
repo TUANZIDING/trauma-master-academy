@@ -22,7 +22,7 @@ const requiredFiles = [
   'courses/polytrauma-shock-reassessment-case.html',
   'assets/site.css',
   'assets/site.js',
-  'assets/xabcde-case-hub.png',
+  'assets/xabcde-case-hub-800v1.0.webp',
   'assets/cases/case-trauma-003/c3-sagittal-anonymized.jpg',
   'assets/cases/case-trauma-003/left-hip-axial-anonymized.jpg',
   'assets/cases/case-trauma-004/thoracolumbar-sagittal-teaching.png',
@@ -36,24 +36,24 @@ const requiredFiles = [
   'assets/generated/overview/chest-trauma-mini.svg',
   'assets/generated/overview/abdominal-injury-mini.svg',
   'assets/generated/overview/polytrauma-mini.svg',
-  'assets/images/xabcde/stages/x-hemorrhage.png',
+  'assets/images/xabcde/stages/x-hemorrhage-800v1.0.webp',
   'assets/generated/stages/xabcde-stage-a.svg',
   'assets/generated/stages/xabcde-stage-b.svg',
   'assets/generated/stages/xabcde-stage-c.svg',
   'assets/generated/stages/xabcde-stage-d.svg',
   'assets/generated/stages/xabcde-stage-e.svg',
-  'assets/images/xabcde/overview/xabcde-primary-survey-map.png',
-  'assets/images/xabcde/overview/xabcde-overview-full.png',
-  'assets/images/xabcde/overview/reasoning-loop.png',
-  'assets/images/xabcde/nodes/observe-cues.png',
-  'assets/images/xabcde/nodes/team-positioning.png',
-  'assets/images/xabcde/nodes/reassessment-questions.png',
-  'assets/images/xabcde/stages/x-hemorrhage.png',
-  'assets/images/xabcde/stages/a-airway-cspine.png',
-  'assets/images/xabcde/stages/b-breathing.png',
-  'assets/images/xabcde/stages/c-circulation.png',
-  'assets/images/xabcde/stages/d-disability.png',
-  'assets/images/xabcde/stages/e-exposure.png',
+  'assets/images/xabcde/overview/xabcde-primary-survey-map-800v1.0.webp',
+  'assets/images/xabcde/overview/xabcde-overview-full-800v1.0.webp',
+  'assets/images/xabcde/overview/reasoning-loop-800v1.0.webp',
+  'assets/images/xabcde/nodes/observe-cues-800v1.0.webp',
+  'assets/images/xabcde/nodes/team-positioning-800v1.0.webp',
+  'assets/images/xabcde/nodes/reassessment-questions-800v1.0.webp',
+  'assets/images/xabcde/stages/x-hemorrhage-800v1.0.webp',
+  'assets/images/xabcde/stages/a-airway-cspine-800v1.0.webp',
+  'assets/images/xabcde/stages/b-breathing-800v1.0.webp',
+  'assets/images/xabcde/stages/c-circulation-800v1.0.webp',
+  'assets/images/xabcde/stages/d-disability-800v1.0.webp',
+  'assets/images/xabcde/stages/e-exposure-800v1.0.webp',
   'assets/generated/nodes/disaster-resource-panel.svg',
   'assets/generated/nodes/mass-casualty-triage-board.svg',
   'assets/generated/nodes/demand-resource-imbalance.svg',
@@ -139,15 +139,15 @@ const requiredStrings = [
   'assets/cases/case-trauma-004/thoracolumbar-sagittal-teaching.png',
   'assets/cases/case-trauma-004/chest-axial-teaching.png',
   'assets/generated/overview/trauma-disaster-medicine.svg',
-  'assets/illustrations/node-reassessment-vivid.png',
-  'assets/illustrations/node-efast-vivid.png',
-  'assets/illustrations/node-resources-vivid.png',
+  'assets/illustrations/node-reassessment-vivid-800v1.0.webp',
+  'assets/illustrations/node-efast-vivid-800v1.0.webp',
+  'assets/illustrations/node-resources-vivid-800v1.0.webp',
   'assets/generated/nodes/disaster-resource-panel.svg',
   'assets/generated/nodes/mass-casualty-triage-board.svg',
-  'assets/images/xabcde/stages/x-hemorrhage.png',
-  'assets/images/xabcde/overview/xabcde-overview-full.png',
-  'assets/images/xabcde/nodes/observe-cues.png',
-  'assets/images/xabcde/stages/e-exposure.png',
+  'assets/images/xabcde/stages/x-hemorrhage-800v1.0.webp',
+  'assets/images/xabcde/overview/xabcde-overview-full-800v1.0.webp',
+  'assets/images/xabcde/nodes/observe-cues-800v1.0.webp',
+  'assets/images/xabcde/stages/e-exposure-800v1.0.webp',
   'data/xabcde-assets.json',
   'data/trauma-disaster-course.json',
   'data/trauma-disaster-cases.json',
@@ -338,7 +338,7 @@ const lesson4ModuleCount = (lesson4Html.match(/lesson4-module/g) || []).length;
 const lesson1ImageCount = (lesson1Html.match(/<img\b/g) || []).length;
 const lesson2ImageCount = (lesson2Html.match(/<img\b/g) || []).length;
 const lesson3ImageCount = (lesson3Html.match(/<img\b/g) || []).length + (lesson3Html.match(/class="dv9-scene dv9-system"[^>]*role="img"[^>]*aria-label=/g)||[]).length;
-if(!fs.existsSync(path.join(root,'assets/disaster-v9-system.png'))) traumaDisasterContentIssues.push('missing named lesson-3 image atlas');
+if(!fs.existsSync(path.join(root,'assets/disaster-v9-system-800v1.0.webp'))) traumaDisasterContentIssues.push('missing named lesson-3 image atlas');
 const lesson4ImageCount = (lesson4Html.match(/<img\b/g) || []).length;
 const lessonAnswerCount = ((lesson1Html + lesson2Html).match(/class="thinking-card answer-block"/g) || []).length;
 const lesson3QuizCount = (lesson3Html.match(/data-quiz-card/g) || []).length + (resourcesHtml.match(/data-quiz-card/g) || []).length;
@@ -439,7 +439,7 @@ for (const dir of generatedDirs) {
   }
 }
 
-const imagePath = path.join(root, 'assets', 'xabcde-case-hub.png');
+const imagePath = path.join(root, 'assets', 'xabcde-case-hub-800v1.0.webp');
 
 const result = {
   root,

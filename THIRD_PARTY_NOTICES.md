@@ -6,7 +6,7 @@ The repository-level MIT licence applies to original project code and documentat
 
 ## Authentic open medical image / 真实开放医学影像
 
-- `assets/trauma-skills/realism/efast-morison-free-fluid-authentic.jpg`
+- `assets/trauma-skills/realism/efast-morison-free-fluid-authentic-800v1.0.webp`
 - Work: `Morison003.jpg`
 - Creator: Drahreg01
 - Source: Wikimedia Commons

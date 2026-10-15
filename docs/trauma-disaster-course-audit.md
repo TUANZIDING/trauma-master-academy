@@ -24,17 +24,17 @@ Release state: `GO_WITH_CLINICAL_REVIEW`
 
 | Asset | Current file | Use in new course | Review state |
 |---|---|---|---|
-| xABCDE overview | `assets/images/xabcde/overview/xabcde-overview-full.png` | Lesson 1 overview | pending_clinician_review |
-| Observe Cues | `assets/images/xabcde/nodes/observe-cues.png` | Lesson 1 visual explanation | pending_clinician_review |
-| Reasoning Loop | `assets/images/xabcde/overview/reasoning-loop.png` | Lesson 1 guided reasoning | pending_clinician_review |
-| Trauma Team Positioning | `assets/images/xabcde/nodes/team-positioning.png` | Lesson 1 role assignment | pending_clinician_review |
-| Reassessment Questions | `assets/images/xabcde/nodes/reassessment-questions.png` | Lesson 1 reassessment | pending_clinician_review |
-| x stage | `assets/images/xabcde/stages/x-hemorrhage.png` | Lesson 2 stage card | pending_clinician_review |
-| A stage | `assets/images/xabcde/stages/a-airway-cspine.png` | Lesson 2 stage card | pending_clinician_review |
-| B stage | `assets/images/xabcde/stages/b-breathing.png` | Lesson 2 stage card | pending_clinician_review |
-| C stage | `assets/images/xabcde/stages/c-circulation.png` | Lesson 2 stage card | pending_clinician_review |
-| D stage | `assets/images/xabcde/stages/d-disability.png` | Lesson 2 stage card | pending_clinician_review |
-| E stage | `assets/images/xabcde/stages/e-exposure.png` | Lesson 2 stage card | pending_clinician_review |
+| xABCDE overview | `assets/images/xabcde/overview/xabcde-overview-full-800v1.0.webp` | Lesson 1 overview | pending_clinician_review |
+| Observe Cues | `assets/images/xabcde/nodes/observe-cues-800v1.0.webp` | Lesson 1 visual explanation | pending_clinician_review |
+| Reasoning Loop | `assets/images/xabcde/overview/reasoning-loop-800v1.0.webp` | Lesson 1 guided reasoning | pending_clinician_review |
+| Trauma Team Positioning | `assets/images/xabcde/nodes/team-positioning-800v1.0.webp` | Lesson 1 role assignment | pending_clinician_review |
+| Reassessment Questions | `assets/images/xabcde/nodes/reassessment-questions-800v1.0.webp` | Lesson 1 reassessment | pending_clinician_review |
+| x stage | `assets/images/xabcde/stages/x-hemorrhage-800v1.0.webp` | Lesson 2 stage card | pending_clinician_review |
+| A stage | `assets/images/xabcde/stages/a-airway-cspine-800v1.0.webp` | Lesson 2 stage card | pending_clinician_review |
+| B stage | `assets/images/xabcde/stages/b-breathing-800v1.0.webp` | Lesson 2 stage card | pending_clinician_review |
+| C stage | `assets/images/xabcde/stages/c-circulation-800v1.0.webp` | Lesson 2 stage card | pending_clinician_review |
+| D stage | `assets/images/xabcde/stages/d-disability-800v1.0.webp` | Lesson 2 stage card | pending_clinician_review |
+| E stage | `assets/images/xabcde/stages/e-exposure-800v1.0.webp` | Lesson 2 stage card | pending_clinician_review |
 
 ## Gaps
 

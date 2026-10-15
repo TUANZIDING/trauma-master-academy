@@ -61,6 +61,19 @@ Trauma Master Academy 面向医学生、实习医师、住培医师和青年临�
 - ATLS、ETM、WHO、NICE、WSES、AIUM、AO 等名称仅用于来源定位，不表示机构认证或背书。
 - 自动验证通过不等同于临床专家审批。
 
+### 本地环境准备
+
+需要 Node.js 20+、Python 3.10+ 与中文字体。首次安装：
+
+```bash
+npm ci
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Linux可安装Noto CJK；Mac使用系统Arial Unicode。PDF构建会检测依赖和字体。
+
 ### 本地运行
 
 ```bash
@@ -125,6 +138,19 @@ See the bilingual [project map](docs/PROJECT_MAP.md) for the complete structure.
 - ATLS, ETM, WHO, NICE, WSES, AIUM, and AO identify sources only; no endorsement or certification is implied.
 - Passing automated validation does not constitute clinical approval.
 
+### Prepare the local environment
+
+Use Node.js 20+, Python 3.10+ and a Chinese Unicode font:
+
+```bash
+npm ci
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Use Noto CJK on Linux or Arial Unicode on macOS. PDF builds check fonts and dependencies.
+
 ### Run locally
 
 ```bash
@@ -160,3 +186,38 @@ scripts/          Build and validation tools / 构建与验证脚本
 Original project code and documentation are released under the [MIT License](LICENSE). Third-party media and restricted case materials remain subject to [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 项目原创代码与文档按 [MIT License](LICENSE) 发布。第三方媒体和受限病例材料继续遵循 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 中的独立许可与使用边界。
+
+## 第四轮状态 / Round 4 status
+
+A–C已完成：孕妇抗D路径、50卡页脚、英文间距、上下肢卡片分工与DAS版本差异。D–E实测进展见[第四轮验收记录](docs/fourth-round-validationv1.0.md)。临床签署仍为空。
+
+A–C cover anti-D pathways, 50 card footers, English spacing, regional limb cards and DAS differences. See the [round-4 validation record](docs/fourth-round-validationv1.0.md) for D–E completion and measured results. Clinical signoff remains unsigned.
+
+### 构建与外链 / Builds and links
+
+```bash
+npm run build:all-pockets
+npm run build:learning
+npm run build:skills
+npm run validate
+npm run check:links
+```
+
+外链报告区分404/5xx、防爬和网络未确认；可访问不等于原文已审核。Link reports distinguish HTTP failures, access challenges and unconfirmed requests; reachability does not prove clinical review.
+
+### Mac真实浏览器检查 / Mac browser acceptance
+
+```bash
+npx playwright install chromium && node scripts/visual-regressionv1.0.mjs
+```
+
+自动启动8096端口本地服务，输出docs/screenshots/round4/截图和JSON，覆盖首页、22门课、口袋卡与OSCE的1440×900及390×844视口。检测横向溢出、文本容器裁切、控制台错误、404。首次没有历史像素基线，属于视觉验收；作者仍需人工看图。截图和报告默认由Git忽略。
+
+The script starts port8096 locally and writes screenshots/JSON to docs/screenshots/round4/ for home, 22 courses, pocket cards and OSCE at 1440×900 and 390×844. It checks overflow, clipped containers, console errors and404 resources. There is no historical pixel baseline on first run; inspect screenshots manually. Evidence is ignored by Git by default.
+
+### 作者待办 / Author actions
+
+- 临床审核人/角色/日期签署 / Genuine clinician name, role and dated signoff.
+- 原文核实：2015骨盆带36 h；国家2025现场分诊图；髂筋膜阻滞“首选”原句；中华急诊医学杂志2025颅脑共识全文。Original-source checks: China2015 binder36 h, national2025 field-triage figure, first-choice FICB wording and CEM2025 adult-TBI full text.
+- 本院核对：冷沉淀每U纤维蛋白原含量、抗D剂型/可及性、2006事件数字完整条件与本院预案。Local checks: fibrinogen per cryoprecipitate unit, anti-D formulations/availability and full2006 classification conditions.
+- 在作者Mac运行并人工查看真实浏览器结果 / Run and visually inspect browser evidence on the author's Mac.

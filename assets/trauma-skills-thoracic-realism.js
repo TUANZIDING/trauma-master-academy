@@ -15,7 +15,7 @@
         reassessZh: "连续比较呼吸功、左右胸廓、SpO₂、心率、血压、意识与其他休克来源。",
         reassessEn: "Serially compare work of breathing, chest symmetry, SpO₂, heart rate, blood pressure, consciousness, and competing causes of shock.",
         mediaKind: "local-image",
-        mediaUrl: "../assets/trauma-skills/realism/chest-assessment.png",
+        mediaUrl: "../assets/trauma-skills/realism/chest-assessment-800v1.0.webp",
         mediaTitleZh: "胸部查体与床旁超声的高仿真训练场景",
         mediaTitleEn: "High-fidelity chest examination and bedside-ultrasound training scene",
         mediaScopeZh: "站内原创高仿真教学视觉，用于训练查体、监护与床旁影像的同步整合；不是真实患者影像，不能用来证明张力性生理。",

@@ -84,7 +84,7 @@
         guardrailEn: "First decide whether the patient is hypoxaemic but still ventilating effectively, or is no longer ventilating effectively. Oxygen therapy supports the former, BVM bridges the latter, and an advanced airway is considered when airway protection, oxygenation, or ventilation cannot be sustained.",
         steps: [
           {
-            id: "oxygen", number: "01", image: "../assets/trauma-skills/realism/bvm-01-recognise-inadequate-ventilation.png",
+            id: "oxygen", number: "01", image: "../assets/trauma-skills/realism/bvm-01-recognise-inadequate-ventilation-800v1.0.webp",
             titleZh: "支持氧合：鼻导管 / 普通面罩 / 储氧面罩", titleEn: "Support oxygenation: cannula / simple mask / reservoir mask",
             enterZh: "患者仍能维持气道并有基本有效的自主呼吸与胸廓起伏，主要问题是氧合不足。", enterEn: "The patient maintains the airway with basically effective spontaneous breathing and chest movement; oxygenation is the main problem.",
             checkZh: "连续看意识、气道音、呼吸深度、双侧胸廓、呼吸功和 SpO₂ 趋势，而不是只看流量。", checkEn: "Continuously assess consciousness, airway sound, respiratory depth, bilateral chest movement, work of breathing, and SpO₂ trend—not flow alone.",
@@ -92,7 +92,7 @@
             sourceIds: ["S-BTS-OXYGEN-2017", "S-RCUK-FIRST-AID-2025"]
           },
           {
-            id: "bvm", number: "02", image: "../assets/trauma-skills/realism/bvm-team-ventilation.png",
+            id: "bvm", number: "02", image: "../assets/trauma-skills/realism/bvm-team-ventilation-800v1.0.webp",
             titleZh: "辅助通气：BVM 桥接", titleEn: "Assist ventilation: BVM bridge",
             enterZh: "呼吸暂停、濒死样呼吸、呼吸过浅/过慢、胸廓起伏不足，或氧疗后仍低氧并伴通气不足。", enterEn: "Apnoea, agonal breathing, breathing that is too shallow/slow, inadequate chest movement, or persistent hypoxaemia after oxygen therapy with inadequate ventilation.",
             checkZh: "先确认气道通畅与面罩密闭；每次辅助通气出现适度双侧胸廓起伏，并观察 SpO₂、心率及可用的连续呼气波形。", checkEn: "Confirm airway patency and mask seal; each assisted breath should produce appropriate bilateral chest rise, with SpO₂, heart rate, and any available continuous expiratory waveform observed.",
@@ -100,7 +100,7 @@
             sourceIds: ["S-WHO-BEC-2018", "S-RCUK-ALS-2025"]
           },
           {
-            id: "advanced-airway", number: "03", image: "../assets/trauma-skills/realism/bvm-05-reassess-escalate.png",
+            id: "advanced-airway", number: "03", image: "../assets/trauma-skills/realism/bvm-05-reassess-escalate-800v1.0.webp",
             titleZh: "高级气道：具备资质团队", titleEn: "Advanced airway: credentialed team",
             enterZh: "不能维持或保护气道、不能可靠维持氧合/通气、BVM 只能短暂桥接，或预计气道快速恶化。", enterEn: "The airway cannot be maintained or protected, oxygenation/ventilation cannot be sustained reliably, BVM offers only a brief bridge, or rapid airway deterioration is anticipated.",
             checkZh: "共享主计划和失败计划；准备吸引、颈椎保护、救援氧合和循环风险管理，并以持续波形等客观证据确认效果。", checkEn: "Share primary and failure plans; prepare suction, cervical protection, rescue oxygenation, and circulatory-risk management, and confirm effect with objective evidence such as a sustained waveform.",

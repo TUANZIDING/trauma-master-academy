@@ -36,7 +36,7 @@
     guardrailEn: "Emergency chest decompression treats tension physiology, not an image or one ultrasound sign. Integrate mechanism, unilateral chest findings, respiratory compromise, and circulatory trend; only suspected tension pneumothorax with haemodynamic instability or severe respiratory compromise enters an immediate credentialed decompression pathway.",
     steps: [
       {
-        id: "recognise", number: "01", image: "../assets/trauma-skills/realism/chest-assessment.png",
+        id: "recognise", number: "01", image: "../assets/trauma-skills/realism/chest-assessment-800v1.0.webp",
         titleZh: "识别胸膜腔威胁", titleEn: "Recognise a pleural-space threat",
         enterZh: "胸部撞击、穿透伤或正压通气背景下，出现进行性呼吸困难或单侧胸部异常。", enterEn: "After blunt/penetrating chest trauma or during positive-pressure ventilation, progressive breathing difficulty or unilateral chest abnormalities appear.",
         checkZh: "同时比较双侧胸廓、呼吸音、呼吸功、SpO₂信号质量、HR/BP/皮肤灌注和意识趋势，并保留血胸、肺挫伤、气道问题和失血性休克等替代解释。", checkEn: "Compare bilateral chest movement and breath sounds, work of breathing, SpO₂ signal quality, HR/BP, skin perfusion, and mental-status trends while retaining haemothorax, lung contusion, airway problems, and haemorrhagic shock as alternatives.",
@@ -44,7 +44,7 @@
         sourceIds: ["S-NICE-NG39", "S-WSES-AAST-THORACIC-2025"]
       },
       {
-        id: "tension-physiology", number: "02", image: "../assets/illustrations/chest-trauma-mini-vivid.png",
+        id: "tension-physiology", number: "02", image: "../assets/illustrations/chest-trauma-mini-vivid-800v1.0.webp",
         titleZh: "判断是否为紧急张力性生理", titleEn: "Decide whether tension physiology is an emergency",
         enterZh: "疑似张力性气胸，并有血流动力学不稳定或严重呼吸受损。", enterEn: "Tension pneumothorax is suspected with haemodynamic instability or severe respiratory compromise.",
         checkZh: "用床旁临床评估作决定；eFAST 可补充但不能独立确诊，阴性胸部 eFAST 也不能排除气胸。", checkEn: "Use bedside clinical assessment for the decision; eFAST may augment but cannot decide alone, and a negative chest eFAST does not exclude pneumothorax.",
@@ -52,7 +52,7 @@
         sourceIds: ["S-NICE-NG39"]
       },
       {
-        id: "urgent-imaging", number: "03", image: "../assets/trauma-skills/realism/efast.png",
+        id: "urgent-imaging", number: "03", image: "../assets/trauma-skills/realism/efast-800v1.0.webp",
         titleZh: "稳定或复苏有反应：紧急影像与连续观察", titleEn: "Stable or responding: urgent imaging and serial observation",
         enterZh: "没有严重呼吸受损或血流动力学不稳定，或患者对初始复苏有反应。", enterEn: "Severe respiratory compromise and haemodynamic instability are absent, or the patient responds to initial resuscitation.",
         checkZh: "紧急获取并即时解释胸片、eFAST 或 CT；选择由稳定性、机制和资源决定，而不是用一次肺滑动或一张胸片自动触发侵入操作。", checkEn: "Obtain and immediately interpret urgent chest radiography, eFAST, or CT; selection follows stability, mechanism, and resources rather than using one lung-sliding view or radiograph to trigger an invasive procedure automatically.",
@@ -60,7 +60,7 @@
         sourceIds: ["S-NICE-NG39", "S-AIUM-EFAST-2023"]
       },
       {
-        id: "response", number: "04", image: "../assets/illustrations/node-reassessment-vivid.png",
+        id: "response", number: "04", image: "../assets/illustrations/node-reassessment-vivid-800v1.0.webp",
         titleZh: "验证反应、识别复发并衔接确定性管理", titleEn: "Verify response, detect recurrence, and connect definitive care",
         enterZh: "完成授权减压后，或观察中的患者出现新的趋势变化。", enterEn: "After authorised decompression, or when a monitored patient develops a new trend.",
         checkZh: "重新检查呼吸功、双侧胸廓和呼吸音、SpO₂、HR/BP、意识及胸膜腔信息；改善必须可重复且持续。", checkEn: "Recheck work of breathing, bilateral chest movement and sounds, SpO₂, HR/BP, mental status, and pleural information; improvement must be repeatable and sustained.",
@@ -157,7 +157,7 @@
     guardrailEn: "Chest-drain decisions arise from the physiological effect of pleural air/blood, stability, planned positive-pressure ventilation, and serial imaging—not automatically from seeing pneumothorax or haemothorax. After placement, reassess both patient and system.",
     steps: [
       {
-        id: "define-problem", number: "01", image: "../assets/trauma-skills/realism/chest-assessment.png",
+        id: "define-problem", number: "01", image: "../assets/trauma-skills/realism/chest-assessment-800v1.0.webp",
         titleZh: "定义胸膜腔问题与生理影响", titleEn: "Define the pleural problem and physiological effect",
         enterZh: "机制、查体或影像提示气胸、血胸或血气胸。", enterEn: "Mechanism, examination, or imaging suggests pneumothorax, haemothorax, or haemopneumothorax.",
         checkZh: "整合呼吸功、双侧胸廓/呼吸音、SpO₂、HR/BP/灌注、影像范围和病情方向。", checkEn: "Integrate work of breathing, bilateral chest movement/sounds, SpO₂, HR/BP/perfusion, imaging extent, and trajectory.",
@@ -165,7 +165,7 @@
         sourceIds: ["S-NICE-NG39", "S-WSES-AAST-THORACIC-2025"]
       },
       {
-        id: "observe-or-drain", number: "02", image: "../assets/trauma-skills/realism/efast.png",
+        id: "observe-or-drain", number: "02", image: "../assets/trauma-skills/realism/efast-800v1.0.webp",
         titleZh: "观察还是引流：稳定性优先", titleEn: "Observe or drain: stability first",
         enterZh: "患者无立即张力性生理，可进行分层决策。", enterEn: "There is no immediate tension physiology and stratification is possible.",
         checkZh: "结合稳定性、呼吸/循环受损、正压通气需求、气胸大小或血胸估计量、症状和连续影像；数值只限定指南中的特定人群。", checkEn: "Combine stability, respiratory/circulatory impairment, need for positive-pressure ventilation, pneumothorax size or estimated haemothorax volume, symptoms, and serial imaging; numbers apply only to their stated guideline population.",
@@ -173,7 +173,7 @@
         sourceIds: ["S-WSES-AAST-THORACIC-2025", "S-NICE-NG39"]
       },
       {
-        id: "authorised-drain", number: "03", image: "../assets/trauma-skills/realism/tube-thoracostomy.png",
+        id: "authorised-drain", number: "03", image: "../assets/trauma-skills/realism/tube-thoracostomy-800v1.0.webp",
         titleZh: "授权技能站：准备、置管与连接", titleEn: "Authorised station: prepare, place, and connect",
         enterZh: "团队已确认适应场景、操作者资质、监护、镇痛/无菌和后续接收能力。", enterEn: "The team has confirmed the indication, operator credentialing, monitoring, analgesia/asepsis, and downstream capability.",
         checkZh: "使用本院清单核对患者、侧别、目标、器材、连接和影像/临床确认计划；公开页不提供可脱离监督复制的技术步骤。", checkEn: "Use the local checklist for patient, side, goal, equipment, connection, and clinical/imaging confirmation; the public page does not provide a reproducible unsupervised technique sequence.",
@@ -181,7 +181,7 @@
         sourceIds: ["S-NICE-NG39", "S-WSES-AAST-THORACIC-2025"]
       },
       {
-        id: "patient-system-check", number: "04", image: "../assets/illustrations/node-reassessment-vivid.png",
+        id: "patient-system-check", number: "04", image: "../assets/illustrations/node-reassessment-vivid-800v1.0.webp",
         titleZh: "置管后：先看患者，再看系统", titleEn: "After placement: patient first, then system",
         enterZh: "置管完成、患者短暂改善，或再次出现气促/低灌注。", enterEn: "Placement is complete, the patient briefly improves, or dyspnoea/hypoperfusion recurs.",
         checkZh: "重做 A/B/C，检查管路连接、折叠/阻塞、固定、漏气、引流趋势及可用床旁影像；外观波动或气泡不能脱离患者解释。", checkEn: "Repeat A/B/C; check connections, kinking/obstruction, fixation, air leak, output trend, and available bedside imaging; chamber movement or bubbling cannot be interpreted apart from the patient.",
@@ -189,7 +189,7 @@
         sourceIds: ["S-WSES-AAST-THORACIC-2025", "S-NICE-NG39"]
       },
       {
-        id: "ongoing-risk", number: "05", image: "../assets/illustrations/node-resources-vivid.png",
+        id: "ongoing-risk", number: "05", image: "../assets/illustrations/node-resources-vivid-800v1.0.webp",
         titleZh: "识别持续出血、漏气与残留问题", titleEn: "Recognise ongoing bleeding, air leak, and retained problems",
         enterZh: "引流量持续增加、持续漏气、肺未复张、残留血胸或循环不稳。", enterEn: "Output continues to rise, air leak persists, the lung does not re-expand, retained haemothorax remains, or circulation is unstable.",
         checkZh: "用累计量和单位时间趋势配合血流动力学、输血需求、影像和其他出血源；胸管输出量本身可能误导。", checkEn: "Combine cumulative and time-based output with haemodynamics, transfusion requirement, imaging, and other bleeding sources; chest-tube output alone can mislead.",
@@ -295,7 +295,7 @@
     guardrailEn: "EFAST is a focused bedside information node: define the clinical question, acquire interpretable images, and return positive, negative, or limited results to mechanism and physiological trend. It is neither ‘negative equals excluded’ nor ‘positive equals automatic procedure’.",
     steps: [
       {
-        id: "question", number: "01", image: "../assets/trauma-skills/realism/chest-assessment.png",
+        id: "question", number: "01", image: "../assets/trauma-skills/realism/chest-assessment-800v1.0.webp",
         titleZh: "先确定临床问题与稳定性", titleEn: "First define the clinical question and stability",
         enterZh: "创伤初评需要快速了解心包、胸膜腔或腹腔聚焦问题。", enterEn: "Trauma primary assessment needs rapid focused information about pericardial, pleural, or peritoneal spaces.",
         checkZh: "明确要回答‘是否有可见游离液体/心包液/气胸征象’，同时记录机制、查体、HR/BP/灌注、呼吸和对复苏反应。", checkEn: "State whether the question is visible free fluid, pericardial fluid, or pneumothorax signs, while recording mechanism, examination, HR/BP/perfusion, respiration, and response to resuscitation.",
@@ -303,7 +303,7 @@
         sourceIds: ["S-NICE-NG39", "S-AIUM-EFAST-2023"]
       },
       {
-        id: "acquire", number: "02", image: "../assets/trauma-skills/realism/efast.png",
+        id: "acquire", number: "02", image: "../assets/trauma-skills/realism/efast-800v1.0.webp",
         titleZh: "获取完整、可解释的标准窗口", titleEn: "Acquire complete, interpretable standard windows",
         enterZh: "设备、受训操作者和时间条件允许，且不会延误转运或即时处置。", enterEn: "Equipment, a trained operator, and time are available without delaying transfer or immediate care.",
         checkZh: "按 AIUM 参数记录检查窗口、图像质量、可见结构和技术局限；保存代表性图像/动态图像并标记侧别。", checkEn: "Following the AIUM parameter, document windows, image quality, structures seen, and technical limitations; retain representative still/cine images and label laterality.",
@@ -311,7 +311,7 @@
         sourceIds: ["S-AIUM-EFAST-2023"]
       },
       {
-        id: "classify", number: "03", image: "../assets/illustrations/node-efast-vivid.png",
+        id: "classify", number: "03", image: "../assets/illustrations/node-efast-vivid-800v1.0.webp",
         titleZh: "分类报告：阳性、阴性或受限", titleEn: "Classify the report: positive, negative, or limited",
         enterZh: "窗口已逐一查看并完成质量判断。", enterEn: "Each window has been reviewed and its quality judged.",
         checkZh: "只报告本次可见事实、位置、图像质量和局限；避免把液性暗区直接命名为出血，也避免把‘未见’写成排除损伤。", checkEn: "Report only visible facts, location, image quality, and limitations; do not label every anechoic area as bleeding or translate ‘not seen’ into injury excluded.",
@@ -319,7 +319,7 @@
         sourceIds: ["S-AIUM-EFAST-2023", "S-NICE-NG39"]
       },
       {
-        id: "pathway", number: "04", image: "../assets/illustrations/node-resources-vivid.png",
+        id: "pathway", number: "04", image: "../assets/illustrations/node-resources-vivid-800v1.0.webp",
         titleZh: "把结果放回复苏与完整影像路径", titleEn: "Return the result to resuscitation and complete imaging",
         enterZh: "已有 EFAST 结果，但诊断和处置仍需团队整合。", enterEn: "An EFAST result is available, but diagnosis and management still require team integration.",
         checkZh: "不稳定非响应者用最少影像指导即时路径；稳定或对复苏有反应者进入紧急 CT/完整影像；FAST 不作为是否做 CT 的单独筛查门。", checkEn: "Use minimum imaging to direct immediate care in an unstable non-responder; stable patients or responders proceed to urgent CT/complete imaging; FAST is not a stand-alone gate for CT.",
@@ -327,7 +327,7 @@
         sourceIds: ["S-NICE-NG39"]
       },
       {
-        id: "handoff", number: "05", image: "../assets/illustrations/node-reassessment-vivid.png",
+        id: "handoff", number: "05", image: "../assets/illustrations/node-reassessment-vivid-800v1.0.webp",
         titleZh: "动态复扫与结构化交接", titleEn: "Serial rescan and structured handoff",
         enterZh: "患者状态或临床问题发生变化，或需要转运/交接。", enterEn: "Patient state or the clinical question changes, or transfer/handoff is required.",
         checkZh: "报告时间、适应问题、已完成窗口、质量、阳性/阴性/受限发现、与前次变化及仍不能回答的问题。", checkEn: "Report time, indication/question, windows completed, quality, positive/negative/limited findings, change from prior examination, and unanswered questions.",

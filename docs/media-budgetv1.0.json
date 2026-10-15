@@ -1,0 +1,236 @@
+{
+  "method": "Unique rendered img resources, largest srcset candidate, plus all local stylesheet url resources conservatively; includes lazy, excludes image hyperlinks",
+  "results": [
+    {
+      "route": "index.html",
+      "images": 5,
+      "worstCandidateBytes": 726994,
+      "heroBytes": 84878,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/documentation-handover.html",
+      "images": 3,
+      "worstCandidateBytes": 401362,
+      "heroBytes": 173532,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-care-chain.html",
+      "images": 2,
+      "worstCandidateBytes": 370494,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/xabcde.html",
+      "images": 6,
+      "worstCandidateBytes": 703395,
+      "heroBytes": 118186,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-bay.html",
+      "images": 2,
+      "worstCandidateBytes": 236020,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/secondary-tertiary-survey.html",
+      "images": 2,
+      "worstCandidateBytes": 266782,
+      "heroBytes": 117566,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-skills-academy.html",
+      "images": 9,
+      "worstCandidateBytes": 758536,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/damage-control-resuscitation.html",
+      "images": 2,
+      "worstCandidateBytes": 240316,
+      "heroBytes": 122750,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/special-populations.html",
+      "images": 3,
+      "worstCandidateBytes": 350580,
+      "heroBytes": 110264,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/chest-trauma-mini.html",
+      "images": 8,
+      "worstCandidateBytes": 1002743,
+      "heroBytes": 110956,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/abdominal-injury-mini.html",
+      "images": 3,
+      "worstCandidateBytes": 733208,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/tbi-mini.html",
+      "images": 3,
+      "worstCandidateBytes": 238695,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/polytrauma-mini.html",
+      "images": 4,
+      "worstCandidateBytes": 331970,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/pelvic-trauma.html",
+      "images": 2,
+      "worstCandidateBytes": 196840,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/abdominal-hemorrhagic-shock-case.html",
+      "images": 1,
+      "worstCandidateBytes": 169152,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/cspine-hip-dislocation-case.html",
+      "images": 4,
+      "worstCandidateBytes": 266980,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/open-pelvic-injury-case.html",
+      "images": 2,
+      "worstCandidateBytes": 229514,
+      "heroBytes": 111948,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/polytrauma-shock-reassessment-case.html",
+      "images": 4,
+      "worstCandidateBytes": 679598,
+      "heroBytes": 94936,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-disaster-medicine.html",
+      "images": 9,
+      "worstCandidateBytes": 1218642,
+      "heroBytes": 173532,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "orthopaedics/index.html",
+      "images": 0,
+      "worstCandidateBytes": 0,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "orthopaedics/upper-limb.html",
+      "images": 7,
+      "worstCandidateBytes": 683699,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "orthopaedics/lower-limb.html",
+      "images": 14,
+      "worstCandidateBytes": 1171917,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "orthopaedics/spine.html",
+      "images": 6,
+      "worstCandidateBytes": 1006235,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/pocket-cards.html",
+      "images": 0,
+      "worstCandidateBytes": 0,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-skill.html?id=tourniquet",
+      "images": 3,
+      "worstCandidateBytes": 390432,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-skill.html?id=bvm",
+      "images": 3,
+      "worstCandidateBytes": 382600,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-skill.html?id=intubation",
+      "images": 3,
+      "worstCandidateBytes": 253666,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-skill.html?id=cricothyrotomy",
+      "images": 3,
+      "worstCandidateBytes": 282302,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-skill.html?id=needle-decompression",
+      "images": 3,
+      "worstCandidateBytes": 236206,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-skill.html?id=tube-thoracostomy",
+      "images": 3,
+      "worstCandidateBytes": 203654,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-skill.html?id=efast",
+      "images": 3,
+      "worstCandidateBytes": 203281,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-skill.html?id=pelvic-binder",
+      "images": 3,
+      "worstCandidateBytes": 230068,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    },
+    {
+      "route": "courses/trauma-skill.html?id=splinting",
+      "images": 3,
+      "worstCandidateBytes": 373403,
+      "heroBytes": 0,
+      "targetUnder3MB": true
+    }
+  ]
+}

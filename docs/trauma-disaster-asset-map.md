@@ -2,17 +2,17 @@
 
 ## Reused Assets
 
-- `assets/images/xabcde/overview/xabcde-overview-full.png`
-- `assets/images/xabcde/nodes/observe-cues.png`
-- `assets/images/xabcde/overview/reasoning-loop.png`
-- `assets/images/xabcde/nodes/team-positioning.png`
-- `assets/images/xabcde/nodes/reassessment-questions.png`
-- `assets/images/xabcde/stages/x-hemorrhage.png`
-- `assets/images/xabcde/stages/a-airway-cspine.png`
-- `assets/images/xabcde/stages/b-breathing.png`
-- `assets/images/xabcde/stages/c-circulation.png`
-- `assets/images/xabcde/stages/d-disability.png`
-- `assets/images/xabcde/stages/e-exposure.png`
+- `assets/images/xabcde/overview/xabcde-overview-full-800v1.0.webp`
+- `assets/images/xabcde/nodes/observe-cues-800v1.0.webp`
+- `assets/images/xabcde/overview/reasoning-loop-800v1.0.webp`
+- `assets/images/xabcde/nodes/team-positioning-800v1.0.webp`
+- `assets/images/xabcde/nodes/reassessment-questions-800v1.0.webp`
+- `assets/images/xabcde/stages/x-hemorrhage-800v1.0.webp`
+- `assets/images/xabcde/stages/a-airway-cspine-800v1.0.webp`
+- `assets/images/xabcde/stages/b-breathing-800v1.0.webp`
+- `assets/images/xabcde/stages/c-circulation-800v1.0.webp`
+- `assets/images/xabcde/stages/d-disability-800v1.0.webp`
+- `assets/images/xabcde/stages/e-exposure-800v1.0.webp`
 
 ## New Assets
 

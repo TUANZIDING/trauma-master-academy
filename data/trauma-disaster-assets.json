@@ -16,7 +16,7 @@
     {
       "id": "xabcde-overview-reused",
       "title": "xABCDE overview",
-      "file": "../assets/images/xabcde/overview/xabcde-overview-full.png",
+      "file": "../assets/images/xabcde/overview/xabcde-overview-full-800v1.0.webp",
       "mode": "learner",
       "duration_min": 45,
       "review_status": "pending_clinician_review",
@@ -27,7 +27,7 @@
     {
       "id": "observe-cues-reused",
       "title": "Observe Cues",
-      "file": "../assets/images/xabcde/nodes/observe-cues.png",
+      "file": "../assets/images/xabcde/nodes/observe-cues-800v1.0.webp",
       "mode": "learner",
       "duration_min": 45,
       "review_status": "pending_clinician_review",
@@ -38,7 +38,7 @@
     {
       "id": "reasoning-loop-reused",
       "title": "Reasoning Loop",
-      "file": "../assets/images/xabcde/overview/reasoning-loop.png",
+      "file": "../assets/images/xabcde/overview/reasoning-loop-800v1.0.webp",
       "mode": "learner",
       "duration_min": 45,
       "review_status": "pending_clinician_review",
@@ -49,7 +49,7 @@
     {
       "id": "team-positioning-reused",
       "title": "Trauma Team Positioning",
-      "file": "../assets/images/xabcde/nodes/team-positioning.png",
+      "file": "../assets/images/xabcde/nodes/team-positioning-800v1.0.webp",
       "mode": "instructor",
       "duration_min": 45,
       "review_status": "pending_clinician_review",
@@ -60,7 +60,7 @@
     {
       "id": "reassessment-questions-reused",
       "title": "Reassessment Questions",
-      "file": "../assets/images/xabcde/nodes/reassessment-questions.png",
+      "file": "../assets/images/xabcde/nodes/reassessment-questions-800v1.0.webp",
       "mode": "challenge",
       "duration_min": 45,
       "review_status": "pending_clinician_review",

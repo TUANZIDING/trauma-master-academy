@@ -1,7 +1,7 @@
 (function () {
   const list = window.TRAUMA_SKILLS || [];
   const teachingImages={bvm:'bvm-team-ventilation',intubation:'intubation',cricothyrotomy:'cricothyrotomy','needle-decompression':'chest-assessment','tube-thoracostomy':'tube-thoracostomy',efast:'efast',tourniquet:'tourniquet','pelvic-binder':'pelvic-risk',splinting:'splinting'};
-  const teachingImage=skill=>`../assets/trauma-skills/realism/${teachingImages[skill.id]}.png`;
+  const teachingImage=skill=>`../assets/trauma-skills/realism/${teachingImages[skill.id]}-800v1.0.webp`;
   const sourceCatalog = window.TRAUMA_SKILL_SOURCES || {};
   const params = new URLSearchParams(window.location.search);
   const selected = list.find((item) => item.id === params.get("id")) || list[0];

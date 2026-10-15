@@ -24,7 +24,7 @@ Scope: `courses/chest-trauma-mini.html#management` and a scoped stylesheet. Base
 
 ## Media and permission
 
-The existing authentic photo `assets/source-backed/skill-chesttube-02.jpg` is reused, without modification, proportional display only. Johntex, “chest drain - bedside with fluids”, CC BY 2.5. Original source and licence are beside the photograph. It is an external device example, not this synthetic patient and not proof of a correctly configured system. SHA256: 0d03c2e6dd2c6e2564669bc6324b1d03b290072b343a4d7a89aa6d3b9e45a5b9.
+The existing authentic photo `assets/source-backed/skill-chesttube-02-800v1.0.webp` is reused, without modification, proportional display only. Johntex, “chest drain - bedside with fluids”, CC BY 2.5. Original source and licence are beside the photograph. It is an external device example, not this synthetic patient and not proof of a correctly configured system. SHA256: 0d03c2e6dd2c6e2564669bc6324b1d03b290072b343a4d7a89aa6d3b9e45a5b9.
 
 - https://commons.wikimedia.org/wiki/File:Chest_drain_-_bedside_with_fluids.jpg
 - https://creativecommons.org/licenses/by/2.5/

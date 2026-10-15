@@ -24,7 +24,7 @@
       guardrailEn: "First establish that airway protection, oxygenation, or ventilation cannot be sustained, or that the trajectory predicts loss of control; one GCS value, SpO₂ value, or failed attempt cannot replace functional assessment.",
       steps: [
         {
-          id: "recognise-activate", number: "01", image: "../assets/trauma-skills/realism/intubation.png",
+          id: "recognise-activate", number: "01", image: "../assets/trauma-skills/realism/intubation-800v1.0.webp",
           titleZh: "识别确定性气道需求并启动团队", titleEn: "Recognise definitive-airway need and activate the team",
           enterZh: "气道保护、氧合或通气不能可靠维持，分泌物/面颈部损伤不断加重，或转运与后续治疗期间预计迅速失去气道控制。",
           enterEn: "Airway protection, oxygenation, or ventilation cannot be sustained reliably; secretions or face-neck injury are worsening; or airway control is expected to be lost during transfer or subsequent care.",
@@ -35,7 +35,7 @@
           sourceIds: ["S-NICE-NG39", "S-NICE-QS166-2018"]
         },
         {
-          id: "optimise-plan", number: "02", image: "../assets/trauma-skills/realism/intubation.png",
+          id: "optimise-plan", number: "02", image: "../assets/trauma-skills/realism/intubation-800v1.0.webp",
           titleZh: "优化患者并共享主计划与失败计划", titleEn: "Optimise the patient and share primary and failure plans",
           enterZh: "团队已决定进入高级气道路径，但氧合储备、吸引、颈椎风险、循环状态、监护或救援氧合尚需组织。",
           enterEn: "The team has entered the advanced-airway pathway, but oxygenation reserve, suction, cervical risk, circulation, monitoring, or rescue oxygenation still require organisation.",
@@ -46,7 +46,7 @@
           sourceIds: ["S-DAS-INTUBATION-2025", "S-DAS-CSPINE-2024", "S-DAS-EDUCATION-2025"]
         },
         {
-          id: "supervised-attempt", number: "03", image: "../assets/trauma-skills/realism/intubation.png",
+          id: "supervised-attempt", number: "03", image: "../assets/trauma-skills/realism/intubation-800v1.0.webp",
           titleZh: "受监督模拟：高质量尝试与及时转换", titleEn: "Supervised simulation: high-quality attempt and timely transition",
           enterZh: "具资质操作者、监护和救援资源已经到位，团队共享主计划与失败计划。",
           enterEn: "A credentialed operator, monitoring, and rescue resources are present, and the team shares primary and failure plans.",
@@ -57,7 +57,7 @@
           sourceIds: ["S-DAS-INTUBATION-2025", "S-NICE-NG39"]
         },
         {
-          id: "confirm-reassess", number: "04", image: "../assets/trauma-skills/realism/intubation.png",
+          id: "confirm-reassess", number: "04", image: "../assets/trauma-skills/realism/intubation-800v1.0.webp",
           titleZh: "客观确认并回到 xABCDE", titleEn: "Confirm objectively and return to xABCDE",
           enterZh: "模拟导管已经置入，但位置、通气效果和插管后循环状态尚未被证明。",
           enterEn: "The simulated tube has been placed, but position, ventilatory effect, and post-intubation circulation have not yet been proven.",
@@ -179,7 +179,7 @@
       guardrailEn: "The functional trigger for eFONA is a CICO crisis in which standard and rescue strategies cannot sustain oxygenation—not one failed intubation, one SpO₂ value, or a preset attempt count. The public course trains state recognition, team transition, supervised trainer practice, and effect confirmation only.",
       steps: [
         {
-          id: "threatened-plan", number: "01", image: "../assets/trauma-skills/realism/cricothyrotomy.png",
+          id: "threatened-plan", number: "01", image: "../assets/trauma-skills/realism/cricothyrotomy-800v1.0.webp",
           titleZh: "威胁气道：提前组织主计划与救援计划", titleEn: "Threatened airway: organise primary and rescue plans early",
           enterZh: "严重面颈部损伤、进行性肿胀、血液或分泌物增加，提示常规气道控制可能迅速变难。",
           enterEn: "Severe face-neck injury, progressive swelling, or increasing blood and secretions indicate that conventional airway control may rapidly become difficult.",
@@ -190,7 +190,7 @@
           sourceIds: ["S-NICE-NG39", "S-DAS-INTUBATION-2025", "S-DAS-CSPINE-2024"]
         },
         {
-          id: "failed-but-oxygenatable", number: "02", image: "../assets/trauma-skills/realism/cricothyrotomy.png",
+          id: "failed-but-oxygenatable", number: "02", image: "../assets/trauma-skills/realism/cricothyrotomy-800v1.0.webp",
           titleZh: "插管未成功但仍可氧合：回到救援氧合", titleEn: "Intubation unsuccessful but oxygenatable: return to rescue oxygenation",
           enterZh: "插管尚未建立，但面罩或声门上救援仍能产生有效胸廓起伏和可维持的氧合。",
           enterEn: "Intubation is not established, but mask or supraglottic rescue still produces effective chest movement and sustainable oxygenation.",
@@ -201,7 +201,7 @@
           sourceIds: ["S-NICE-NG39", "S-DAS-INTUBATION-2025"]
         },
         {
-          id: "cico-efona", number: "03", image: "../assets/trauma-skills/realism/cricothyrotomy.png",
+          id: "cico-efona", number: "03", image: "../assets/trauma-skills/realism/cricothyrotomy-800v1.0.webp",
           titleZh: "CICO 危机：宣布并启动本地授权 eFONA 路径", titleEn: "CICO crisis: declare and activate the authorised local eFONA pathway",
           enterZh: "插管未建立，面罩及声门上救援均不能产生有效通气或维持氧合，生理趋势持续恶化。",
           enterEn: "Intubation is not established, mask and supraglottic rescue cannot produce effective ventilation or sustain oxygenation, and physiology continues to deteriorate.",
@@ -212,7 +212,7 @@
           sourceIds: ["S-DAS-INTUBATION-2025", "S-DAS-EDUCATION-2025", "S-DAS-AIRCLIPS-2025"]
         },
         {
-          id: "confirm-aftercare", number: "04", image: "../assets/trauma-skills/realism/cricothyrotomy.png",
+          id: "confirm-aftercare", number: "04", image: "../assets/trauma-skills/realism/cricothyrotomy-800v1.0.webp",
           titleZh: "证明恢复通气并处理操作后风险", titleEn: "Prove restored ventilation and manage post-procedure risk",
           enterZh: "受监督模型救援已经完成，但通路效果、装置稳定和全身创伤状态仍需确认。",
           enterEn: "The supervised trainer rescue is complete, but pathway effect, device stability, and whole-patient trauma status still require confirmation.",

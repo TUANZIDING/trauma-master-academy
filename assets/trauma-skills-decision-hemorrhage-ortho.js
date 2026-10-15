@@ -32,7 +32,7 @@
       guardrailEn: "A tourniquet treats life-threatening external haemorrhage in an appropriate limb location; failure of direct pressure is the NICE entry condition. Torso, neck, or deep junctional bleeding cannot be treated with a limb tourniquet, and placing a device does not prove bleeding control.",
       steps: [
         {
-          id: "recognise-pressure", number: "01", image: "../assets/trauma-skills/realism/tourniquet.png",
+          id: "recognise-pressure", number: "01", image: "../assets/trauma-skills/realism/tourniquet-800v1.0.webp",
           titleZh: "识别致命性肢体出血并持续直接压迫", titleEn: "Recognise life-threatening limb bleeding and maintain direct pressure",
           enterZh: "出现持续大量活动性肢体外出血，并伴快速浸透、喷射/涌出或全身低灌注方向。", enterEn: "There is ongoing severe external limb bleeding with rapid soak-through, spurting/pooling, or a systemic hypoperfusion trajectory.",
           checkZh: "确认场景安全、出血确实来自可使用肢体止血带的部位，同时观察意识、皮肤、HR/BP 和直接压迫后的反应。", checkEn: "Confirm scene safety and that bleeding arises from a limb location suitable for a limb tourniquet, while observing consciousness, skin, HR/BP, and response to direct pressure.",
@@ -40,7 +40,7 @@
           sourceIds: ["S-NICE-NG39", "S-ACS-STOP-THE-BLEED"]
         },
         {
-          id: "bounded-choice", number: "02", image: "../assets/trauma-skills/realism/tourniquet.png",
+          id: "bounded-choice", number: "02", image: "../assets/trauma-skills/realism/tourniquet-800v1.0.webp",
           titleZh: "确认压迫失败和解剖适用范围", titleEn: "Confirm pressure failure and anatomical scope",
           enterZh: "重大肢体创伤的危及生命出血在持续有效直接压迫下仍不能控制。", enterEn: "Life-threatening haemorrhage from major limb trauma remains uncontrolled despite sustained effective direct pressure.",
           checkZh: "区分肢体、可填塞伤口和非肢体/交界区问题；公开页不把压迫、填塞和止血带包装成适用于所有伤口的固定顺序。", checkEn: "Differentiate limb bleeding, a packable wound, and non-limb/junctional problems; the public page does not present pressure, packing, and tourniquet use as one fixed sequence for every wound.",
@@ -48,7 +48,7 @@
           sourceIds: ["S-NICE-NG39", "S-ACS-STOP-THE-BLEED"]
         },
         {
-          id: "apply-verify", number: "03", image: "../assets/trauma-skills/realism/tourniquet.png",
+          id: "apply-verify", number: "03", image: "../assets/trauma-skills/realism/tourniquet-800v1.0.webp",
           titleZh: "受监督模型应用并证明出血已控制", titleEn: "Apply on a supervised trainer and prove bleeding control",
           enterZh: "适应场景、操作者训练、获批装置、监护与接收路径均已确认。", enterEn: "The scenario, operator training, approved device, monitoring, and receiving pathway have been confirmed.",
           checkZh: "按装置和本地认证课程完成模型操作；用活动性出血是否停止、装置是否稳定和循环趋势共同验证，而不是只看‘已经套上’。", checkEn: "Perform the trainer task according to the device and local credentialed course; verify by cessation of active bleeding, device stability, and circulatory trend rather than by placement alone.",
@@ -56,7 +56,7 @@
           sourceIds: ["S-ACS-STOP-THE-BLEED", "S-NICE-NG39"]
         },
         {
-          id: "time-whole-patient", number: "04", image: "../assets/illustrations/node-reassessment-vivid.png",
+          id: "time-whole-patient", number: "04", image: "../assets/illustrations/node-reassessment-vivid-800v1.0.webp",
           titleZh: "记录时间、持续监测并回到全身复评", titleEn: "Record time, monitor continuously, and return to whole-patient reassessment",
           enterZh: "肢体活动性出血当前已停止，但休克、其他损伤、装置状态和后续责任尚未解决。", enterEn: "Active limb bleeding is currently stopped, but shock, other injuries, device state, and downstream responsibility remain unresolved.",
           checkZh: "明确记录应用时间、装置位置与效果，持续观察再出血、循环、皮肤温度和其他 xABCDE 威胁，并在交接中复述。", checkEn: "Record application time, device location, and effect; continuously observe rebleeding, circulation, skin temperature, and other xABCDE threats, and read them back at handoff.",
@@ -160,7 +160,7 @@
       guardrailEn: "The entry condition is suspected active bleeding from a pelvic fracture after blunt high-energy trauma—not every pelvic pain or every low blood pressure. A negative FAST cannot exclude intraperitoneal or retroperitoneal haemorrhage; after binder application, continue source search, resuscitation, imaging, and definitive haemorrhage control.",
       steps: [
         {
-          id: "suspect", number: "01", image: "../assets/trauma-skills/realism/pelvic-risk.png",
+          id: "suspect", number: "01", image: "../assets/trauma-skills/realism/pelvic-risk-800v1.0.webp",
           titleZh: "整合机制、生理和骨盆线索", titleEn: "Integrate mechanism, physiology, and pelvic cues",
           enterZh: "高能钝性创伤伴持续低灌注方向，并有骨盆/会阴机制、疼痛或查体线索，怀疑活动性骨盆源性出血。", enterEn: "High-energy blunt trauma with persistent hypoperfusion plus pelvic/perineal mechanism, pain, or examination cues raises concern for active pelvic bleeding.",
           checkZh: "同时检查可见外出血、胸、腹、骨盆和长骨；结合意识、皮肤、HR/BP、复苏反应和已知抗凝情况，不用一次评分自动触发。", checkEn: "Assess visible external bleeding, chest, abdomen, pelvis, and long bones in parallel; integrate consciousness, skin, HR/BP, response to resuscitation, and known anticoagulation rather than using one score automatically.",
@@ -168,7 +168,7 @@
           sourceIds: ["S-NICE-NG39", "S-NICE-NG37"]
         },
         {
-          id: "bind", number: "02", image: "../assets/trauma-skills/realism/pelvic-risk.png",
+          id: "bind", number: "02", image: "../assets/trauma-skills/realism/pelvic-risk-800v1.0.webp",
           titleZh: "受监督应用：大转子水平而非腰部", titleEn: "Supervised application: greater-trochanter level, not the waist",
           enterZh: "团队确认疑似活动性骨盆出血、装置适用性、操作者训练、移动计划与后续接收能力。", enterEn: "The team confirms suspected active pelvic bleeding, device suitability, operator training, movement plan, and downstream capability.",
           checkZh: "在模型上按获批装置说明和本地清单完成，核查束带围绕大转子水平、位置稳定、皮肤和双下肢状态可复评。", checkEn: "Use the approved device instructions and local checklist on a trainer, confirming greater-trochanter level, stable position, and assessable skin and both lower limbs.",
@@ -176,7 +176,7 @@
           sourceIds: ["S-WSES-PELVIC-2017", "S-NICE-NG37"]
         },
         {
-          id: "verify-parallel", number: "03", image: "../assets/trauma-skills/realism/pelvic-risk.png",
+          id: "verify-parallel", number: "03", image: "../assets/trauma-skills/realism/pelvic-risk-800v1.0.webp",
           titleZh: "验证位置与反应，同时继续寻找出血源", titleEn: "Verify position and response while continuing source search",
           enterZh: "束带已应用，但其位置、皮肤/肢体影响、生理反应和其他出血源仍未解决。", enterEn: "The binder has been applied, but position, skin/limb effects, physiological response, and other bleeding sources remain unresolved.",
           checkZh: "重复记录 HR/BP/灌注、束带水平与完整性、皮肤、感觉/运动/灌注，并按稳定性选择紧急影像或损伤控制路径。", checkEn: "Repeat HR/BP/perfusion, binder level and integrity, skin, sensation/movement/perfusion, and select urgent imaging or damage-control pathways according to stability.",
@@ -184,7 +184,7 @@
           sourceIds: ["S-NICE-NG39", "S-WSES-PELVIC-2017"]
         },
         {
-          id: "definitive-plan", number: "04", image: "../assets/illustrations/node-reassessment-vivid.png",
+          id: "definitive-plan", number: "04", image: "../assets/illustrations/node-reassessment-vivid-800v1.0.webp",
           titleZh: "衔接确定性止血并建立移除/替代计划", titleEn: "Connect definitive haemorrhage control and a removal/replacement plan",
           enterZh: "患者已进入创伤中心路径；束带仍是临时辅助，确定性止血/固定、皮肤风险和下一责任人尚需明确。", enterEn: "The patient is in the trauma-centre pathway; the binder remains temporary, and definitive haemorrhage/fixation, skin risk, and next ownership need clarification.",
           checkZh: "记录放置时间、位置、皮肤和肢体状态、复苏/影像结果、未解决出血源以及由谁何时复核移除或替代。", checkEn: "Document application time, position, skin and limb status, resuscitation/imaging results, unresolved sources, and who will review removal or replacement and when.",
@@ -288,7 +288,7 @@
       guardrailEn: "Complete xABCDE before the limb; the injury pattern, soft tissue, and local authorisation determine the splint. Compare neurovascular status before and after. A palpable distal pulse excludes neither vascular injury nor compartment syndrome, and progressive pain, numbness, or swelling after splinting requires immediate escalation.",
       steps: [
         {
-          id: "whole-patient", number: "01", image: "../assets/trauma-skills/realism/splinting.png",
+          id: "whole-patient", number: "01", image: "../assets/trauma-skills/realism/splinting-800v1.0.webp",
           titleZh: "先完成全身优先级，再定义肢体问题", titleEn: "Complete whole-patient priorities before defining the limb problem",
           enterZh: "xABCDE 威胁已经识别并正在处理，团队可以在不延误复苏的前提下评估肢体。", enterEn: "xABCDE threats have been identified and are being managed, allowing limb assessment without delaying resuscitation.",
           checkZh: "描述机制、伤口/开放伤、畸形、软组织肿胀、疼痛和污染；明确局部处理是否必须让位于全身复苏。", checkEn: "Describe mechanism, wound/open injury, deformity, soft-tissue swelling, pain, and contamination; state whether local care must yield to whole-patient resuscitation.",
@@ -296,7 +296,7 @@
           sourceIds: ["S-NICE-NG39", "S-NICE-NG37", "S-AO-PATIENT-ASSESSMENT"]
         },
         {
-          id: "baseline", number: "02", image: "../assets/trauma-skills/realism/splinting.png",
+          id: "baseline", number: "02", image: "../assets/trauma-skills/realism/splinting-800v1.0.webp",
           titleZh: "固定前建立可比较的神经血管基线", titleEn: "Establish a comparable pre-splint neurovascular baseline",
           enterZh: "全身状态允许局部检查，尚未固定或复位。", enterEn: "Whole-patient status permits local examination before splinting or reduction.",
           checkZh: "记录伤口/皮肤、感觉、主动运动、可触及脉搏和其他灌注信息、持续出血/扩张血肿、疼痛及肿胀；意识受损时明确哪些项目不可可靠检查。", checkEn: "Document wound/skin, sensation, active movement, palpable pulse and other perfusion information, ongoing bleeding/expanding haematoma, pain, and swelling; state which items are unreliable when consciousness is impaired.",
@@ -304,7 +304,7 @@
           sourceIds: ["S-NICE-NG37", "S-AO-PATIENT-ASSESSMENT"]
         },
         {
-          id: "supervised-splint", number: "03", image: "../assets/trauma-skills/realism/splinting.png",
+          id: "supervised-splint", number: "03", image: "../assets/trauma-skills/realism/splinting-800v1.0.webp",
           titleZh: "按伤型受监督固定并保护软组织", titleEn: "Splint under supervision according to injury pattern and protect soft tissue",
           enterZh: "伤型、远近关节、软组织/开放伤、设备和操作者权限已经由教师或临床负责人确认。", enterEn: "The injury pattern, adjacent joints, soft tissue/open wound, equipment, and operator authority have been confirmed by the instructor or clinical lead.",
           checkZh: "在模型上使用本地批准的固定方式，保持充分衬垫、避免新的压力点并使损伤部位获得临时稳定；网页不规定特定复位角度、牵引量或材料层数。", checkEn: "Use a locally approved technique on a trainer with adequate padding, no new pressure points, and temporary stability; the webpage does not prescribe fracture-specific reduction angles, traction force, or material layers.",
@@ -312,7 +312,7 @@
           sourceIds: ["S-NICE-NG37", "S-AO-PATIENT-ASSESSMENT"]
         },
         {
-          id: "serial-recheck", number: "04", image: "../assets/illustrations/node-reassessment-vivid.png",
+          id: "serial-recheck", number: "04", image: "../assets/illustrations/node-reassessment-vivid-800v1.0.webp",
           titleZh: "固定后立即复查，并持续监测筋膜室/血管风险", titleEn: "Recheck immediately after splinting and monitor compartment/vascular risk",
           enterZh: "临时固定已完成，但装置压力、软组织肿胀、神经血管变化和病程方向仍可能改变。", enterEn: "Temporary splinting is complete, but device pressure, soft-tissue swelling, neurovascular findings, and trajectory may still change.",
           checkZh: "立即与固定前比较皮肤、感觉、运动、脉搏/灌注、疼痛和肿胀；转床、影像、转运和任何症状变化后重复并记录。", checkEn: "Immediately compare skin, sensation, movement, pulse/perfusion, pain, and swelling with baseline; repeat and document after transfers, imaging, transport, or symptom change.",

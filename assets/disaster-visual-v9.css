@@ -2,9 +2,9 @@
 [data-disaster-course] .teaching-module,[data-disaster-course] .stage-module{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:26px;padding:24px;align-items:start;margin:22px 0;background:#fffdf7;border:1px solid #d8e2dd;border-radius:20px;overflow:hidden}
 [data-disaster-course] .dv9-figure{margin:0;min-width:0}
 .dv9-scene{width:100%;aspect-ratio:1;background-repeat:no-repeat;background-position:var(--sx,0%) var(--sy,0%);border-radius:15px;background-color:#e9eee6}
-.dv9-mindset{background-image:url('disaster-v9-mindset.png');background-size:306% 210%}
-.dv9-stages{background-image:url('disaster-v9-stages.png');background-size:408% 206%}
-.dv9-system{background-image:url('disaster-v9-system.png');background-size:306% 210%}
+.dv9-mindset{background-image:url('disaster-v9-mindset-800v1.0.webp');background-size:306% 210%}
+.dv9-stages{background-image:url('disaster-v9-stages-800v1.0.webp');background-size:408% 206%}
+.dv9-system{background-image:url('disaster-v9-system-800v1.0.webp');background-size:306% 210%}
 [data-disaster-course] .dv9-figure figcaption{padding:13px 2px;color:#23594f;font-size:.92rem;line-height:1.55;font-weight:600}
 [data-disaster-course] figcaption small{display:block;color:#60716c;font-size:.74rem;font-weight:400;margin-top:9px}
 [data-disaster-course] .module-copy{min-width:0}

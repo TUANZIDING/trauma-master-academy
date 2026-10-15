@@ -85,7 +85,7 @@ section result: passed
 - **Fonts and typography:** Existing bilingual font stack and optical weights were retained. Chinese title remains a two-line display heading; paragraph line length stays readable; no truncation was observed.
 - **Spacing and layout rhythm:** The selected full-width hero is implemented as one 620-pixel desktop stage with a responsive stacked mobile state. Border radius, outer width, padding, and CTA gaps align with the existing design system.
 - **Colors and visual tokens:** Existing ivory, teal, ink, line, shadow, and button tokens remain in use. A controlled ivory readability fade reproduces the selected concept’s left-side negative space without recoloring the clinical scene.
-- **Image quality and asset fidelity:** The selected raster source is stored at `assets/generated/homepage/trauma-care-chain-cinematic-v2.png` (1672 x 820), displayed with `object-fit: cover`, and remains sharp at the tested desktop viewport.
+- **Image quality and asset fidelity:** The selected raster source is stored at `assets/generated/homepage/trauma-care-chain-cinematic-v2-800v1.0.webp` (1672 x 820), displayed with `object-fit: cover`, and remains sharp at the tested desktop viewport.
 - **Copy and content:** Existing Chinese/English course positioning and navigation are unchanged. The image’s short English flow labels are supplemented by bilingual HTML copy, alt text, and an accessible caption.
 
 ### Comparison history

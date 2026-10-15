@@ -1819,7 +1819,7 @@
     {
       "id": "CLAIM-ATOM-CASE-003-IMAGE",
       "module": "courses/cspine-hip-dislocation-case.html",
-      "asset_locator": "courses/cspine-hip-dislocation-case.html#case-route;assets/illustrations/cspine-hip-case-vivid.png",
+      "asset_locator": "courses/cspine-hip-dislocation-case.html#case-route;assets/illustrations/cspine-hip-case-vivid-800v1.0.webp",
       "record_layer": "image_description",
       "claim_type": "teaching_visual_boundary",
       "statement_zh": "该页插图为颈椎保护与髋部风险优先级的教学示意，不是原始影像、诊断图像或病例证据。",
@@ -2159,7 +2159,7 @@
     {
       "id": "CLAIM-ATOM-CASE-005-IMAGE",
       "module": "courses/abdominal-hemorrhagic-shock-case.html",
-      "asset_locator": "courses/abdominal-hemorrhagic-shock-case.html#case-lab;assets/illustrations/abdominal-shock-case-vivid.png",
+      "asset_locator": "courses/abdominal-hemorrhagic-shock-case.html#case-lab;assets/illustrations/abdominal-shock-case-vivid-800v1.0.webp",
       "record_layer": "image_description",
       "claim_type": "teaching_visual_boundary",
       "statement_zh": "页面腹部失血示意图为教学插图，用于强化隐匿来源与复评主题；不展示源文档影像，也不是诊断图像。",
