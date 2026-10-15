@@ -3701,8 +3701,8 @@
         ],
         "options": [
           [
-            "KB/FMH评估及抗D方案，确认本院可及性",
-            "KB/FMH and anti-D planning, confirming local availability"
+            "72 h内给抗D至少250 IU，不等检测；14周不常规做FMH检测（英国路径）",
+            "Give at least 250 IU anti-D within 72 h without waiting; no routine FMH test at 14 weeks (BCSH pathway)"
           ],
           [
             "以母亲血压正常取消产科评估",
@@ -3715,24 +3715,26 @@
         ],
         "answer": 0,
         "why": [
-          "母胎输血风险与母体当前体征不能混同。",
-          "Fetomaternal hemorrhage risk is not resolved by current maternal signs."
+          "腹部创伤是致敏事件；英国路径12⁺⁰–19⁺⁶周至少250 IU、无需FMH；≥20⁺⁰周至少500 IU并检测FMH决定追加，核对本院制剂。",
+          "Abdominal trauma is a sensitising event. BCSH uses at least 250 IU without FMH testing at 12+0–19+6 weeks; ≥20+0 weeks requires at least 500 IU plus FMH to guide extra doses; check local formulation."
         ],
         "optionWhy": [
           [
-            "母胎输血风险与母体当前体征不能混同。",
-            "Fetomaternal hemorrhage risk is not resolved by current maternal signs."
+            "腹部创伤是致敏事件；英国路径12⁺⁰–19⁺⁶周至少250 IU、无需FMH；≥20⁺⁰周至少500 IU并检测FMH决定追加，核对本院制剂。",
+            "Abdominal trauma is a sensitising event. BCSH uses at least 250 IU without FMH testing at 12+0–19+6 weeks; ≥20+0 weeks requires at least 500 IU plus FMH to guide extra doses; check local formulation."
           ],
           [
-            "此项遗漏关键条件：母胎输血风险与母体当前体征不能混同。",
-            "This misses a key condition: Fetomaternal hemorrhage risk is not resolved by current maternal signs."
+            "正常母体血压不能排除母胎输血或胎盘损伤，应并行产科评估。",
+            "Normal maternal BP does not exclude fetomaternal bleeding or placental injury; obstetric review remains necessary."
           ],
           [
-            "此项不适合当前情景：母胎输血风险与母体当前体征不能混同。",
-            "This does not fit the case: Fetomaternal hemorrhage risk is not resolved by current maternal signs."
+            "一次胎心检查不能替代抗D预防或后续监测。",
+            "One fetal-heart check does not replace anti-D prophylaxis or continuing monitoring."
           ]
         ],
         "references": [
+          "bsh-antid-2014",
+          "nhs-antid",
           "qld-pregnancy"
         ]
       }

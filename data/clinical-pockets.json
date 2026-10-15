@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-14",
+  "version": "2026-10-15",
   "sources": {
     "cn-shock": {
       "title": [
@@ -1008,6 +1008,37 @@
       "domestic": false,
       "coverage": "primary_full_text_checked",
       "checkedDate": "2026-10-14"
+    },
+    "bsh-antid-2014": {
+      "title": [
+        "BCSH/Qureshi 2014：抗D免疫球蛋白指南",
+        "BCSH/Qureshi 2014: anti-D immunoglobulin guideline"
+      ],
+      "shortTitle": [
+        "BCSH抗D 2014",
+        "BCSH anti-D 2014"
+      ],
+      "url": "https://b-s-h.org.uk/guidelines/guidelines/guideline-for-the-use-of-anti-d-immunoglobulin-for-the-prevention-of-haemolytic-disease-of-the-fetus-and-newborn",
+      "doi": "10.1111/tme.12091",
+      "locator": "BSH guideline page (reviewed 2023); publisher full text inaccessible; dosing cross-checked against NHS implementation",
+      "coverage": "guideline_page_and_nhs_implementation",
+      "domestic": false,
+      "checkedDate": "2026-10-15"
+    },
+    "nhs-antid": {
+      "title": [
+        "NHS Highland：妊娠与产后抗D预防路径",
+        "NHS Highland: anti-D prophylaxis during pregnancy and postnatally"
+      ],
+      "shortTitle": [
+        "NHS抗D路径",
+        "NHS anti-D pathway"
+      ],
+      "url": "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/adult-therapeutic-guidelines/transfusion/anti-d-prophylaxis-and-administration-during-pregnancy-and-postnatally-guidelines/",
+      "locator": "Potentially sensitising events:12 to20 weeks;20 weeks to term; no need to wait for Kleihauer result",
+      "coverage": "full_text_web",
+      "domestic": false,
+      "checkedDate": "2026-10-15"
     }
   },
   "claims": [
@@ -1451,8 +1482,8 @@
         "Uterus at/above umbilicus; unsensitized Rh-negative abdominal/major trauma."
       ],
       "decision": [
-        "≥20周手推子宫或左倾15–30°；未致敏RhD阴性≥13⁺⁰周用KB指导抗D剂量并核对可及性；育龄女性查HCG（国内R20）。以本院规范为准。",
-        "At least20 weeks: manual uterine displacement or left tilt15–30 degrees; unsensitized RhD-negative at least13+0 weeks: KB-guided anti-D assessment and availability check; test HCG when appropriate (Chinese R20). Follow institutional policy."
+        "未致敏RhD阴性孕妇腹部/重大创伤：72 h内给抗D，先给药不等检测结果。12⁺⁰–19⁺⁶周至少250 IU，无需FMH检测；≥20⁺⁰周至少500 IU，并做FMH（KB或流式）定量决定是否追加。核对本院抗D可及性与剂型。以本院规范为准。",
+        "Unsensitised RhD-negative woman with abdominal/major trauma: give anti-D within 72 h without waiting for test results. 12+0–19+6 weeks: at least 250 IU, no FMH test needed; ≥20+0 weeks: at least 500 IU plus FMH quantification (Kleihauer or flow cytometry) to decide additional doses. Check local anti-D availability and formulation. Follow institutional policy."
       ],
       "upgrade": [
         "母体不稳定、腹痛/流血或胎心担心：创伤—产科共同升级。",
@@ -1460,19 +1491,21 @@
       ],
       "references": [
         "qld-pregnancy",
-        "cn-shock"
+        "cn-shock",
+        "bsh-antid-2014",
+        "nhs-antid"
       ],
       "domesticReferences": [
         "cn-shock"
       ],
       "domesticAlignment": "domestic_labs_international_obstetric_details",
       "comparisonNote": [
-        "尚未核实覆盖这些具体条款的国内同等指南；保留国际参考标识，本院产科流程确认。",
-        "No equivalent Chinese guidance for these specific items was verified; international reference, local obstetric confirmation."
+        "英国BCSH路径：12⁺⁰–19⁺⁶周250 IU、≥20⁺⁰周500 IU并做FMH；Queensland创伤指南另建议RhD阴性≥13⁺⁰周做KB，不可混成同一规则。保留Queensland来源；本院产科/输血科选择一致路径。BCSH出版全文未直接读取，剂量由NHS公开实施路径核对；尚未核实国内等同条款。",
+        "BCSH pathway: 250 IU at 12+0–19+6 weeks; 500 IU plus FMH at ≥20+0 weeks. Queensland trauma guidance separately recommends KB from 13+0 weeks in RhD-negative women. Keep these pathways distinct and agree one local obstetric/transfusion protocol. BCSH publisher full text was inaccessible; doses were checked against public NHS implementation. No equivalent Chinese clauses were verified."
       ],
       "sourceCheck": {
         "by": "Codex-assisted source cross-check",
-        "date": "2026-10-14"
+        "date": "2026-10-15"
       },
       "clinicalReviewer": null,
       "clinicalReviewDate": null
@@ -2194,12 +2227,12 @@
           "Mother first; left uterine displacement; Rh D"
         ],
         [
-          "≥20周手推子宫或左倾15–30°；未致敏RhD阴性≥13⁺⁰周用KB指导抗D剂量并核对可及性；育龄女性查HCG（国内R20）。以本院规范为准。",
-          "At least20 weeks: manual uterine displacement or left tilt15–30 degrees; unsensitized RhD-negative at least13+0 weeks: KB-guided anti-D assessment and availability check; test HCG when appropriate (Chinese R20). Follow institutional policy."
+          "未致敏RhD阴性孕妇腹部/重大创伤：72 h内给抗D，先给药不等检测结果。12⁺⁰–19⁺⁶周至少250 IU，无需FMH检测；≥20⁺⁰周至少500 IU，并做FMH（KB或流式）定量决定是否追加。核对本院抗D可及性与剂型。以本院规范为准。",
+          "Unsensitised RhD-negative woman with abdominal/major trauma: give anti-D within 72 h without waiting for test results. 12+0–19+6 weeks: at least 250 IU, no FMH test needed; ≥20+0 weeks: at least 500 IU plus FMH quantification (Kleihauer or flow cytometry) to decide additional doses. Check local anti-D availability and formulation. Follow institutional policy."
         ],
         [
-          "母体不稳定、腹痛/流血或胎心担心：创伤—产科共同升级。",
-          "Instability, pain/bleeding or fetal concern: trauma/obstetric escalation."
+          "≥20周手推子宫或左倾15–30°；育龄女性查HCG（国内R20）；母体不稳定或胎心担心即创伤—产科升级。以本院规范为准。",
+          "At ≥20 weeks use manual uterine displacement or left tilt 15–30°; test HCG when appropriate (Chinese R20); escalate maternal instability or fetal concern jointly. Follow institutional policy."
         ]
       ],
       "scope": [
@@ -2208,7 +2241,9 @@
       ],
       "references": [
         "qld-pregnancy",
-        "cn-shock"
+        "cn-shock",
+        "bsh-antid-2014",
+        "nhs-antid"
       ],
       "claimIds": [
         "pregnancy"
