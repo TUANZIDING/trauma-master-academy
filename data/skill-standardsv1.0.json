@@ -207,6 +207,7 @@
       "FONA trainer,#10 scalpel,bougie,6.0 cuffed tube,CO₂"
     ],
     "references": [
+      "das15",
       "das25",
       "nice-spine"
     ],
@@ -224,8 +225,8 @@
         "DAS adult #10 scalpel, bougie,6.0 mm cuffed tube, full paralysis/suction. Maximal extension belongs to its adult difficult-airway context; suspected trauma spine injury requires oxygen-rescue/SMR judgment, not routine forced extension. Follow institutional policy."
       ],
       [
-        "训练器步骤：中线纵切口自下而上、最长约8 cm，手指辨认环甲膜；横刺膜、保持刀垂直、转90°刃朝足侧。以本院规范为准。",
-        "Trainer: caudal-to-cephalad vertical midline incision up to about 8 cm, finger identify membrane; transverse stab, scalpel perpendicular, rotate90 degrees edge caudal. Follow institutional policy."
+        "DAS 2015可触及：横向刺切皮肤和环甲膜，刀垂直转90°使刃朝足侧，bougie入气管，导引6.0 mm套囊管。 DAS 2015不可触及：中线自尾向头纵切8–10 cm，手指钝分辨认后同上。DAS 2025更新为统一纵切路径、最长8 cm；训练前选定版本，不混称。 以本院规范为准。",
+        "DAS 2015 palpable membrane: transverse stab through skin/membrane; turn the perpendicular blade 90° caudally, insert bougie and guide a 6.0 mm cuffed tube. DAS 2015 impalpable membrane: midline 8–10 cm caudal-to-cephalad incision, finger dissection/identification, then the same steps. DAS 2025 updates to a uniform vertical approach up to 8 cm; choose the training version explicitly. Follow institutional policy."
       ],
       [
         "bougie沿刀侧入气管，旋转对齐后轻进10–15 cm，再沿导引置入6.0套囊管。仅专用模型及受训授权临床人员。以本院规范为准。",
@@ -246,8 +247,8 @@
         "List#10/bougie/6.0 tube and identify trainer membrane."
       ],
       [
-        "在模型完成纵切、辨膜、横刺及90°转刀。",
-        "Demonstrate vertical access/membrane identification/stab/90-degree rotation on trainer."
+        "模型上按选定版本：2015可触及横刺、不可触及纵切8–10 cm；或2025纵切≤8 cm，再辨膜、横刺并转90°刃朝足侧。",
+        "On trainer, follow the declared version: 2015 palpable transverse/impalpable 8–10 cm vertical, or 2025 vertical ≤8 cm; identify membrane, stab and rotate 90° caudally."
       ],
       [
         "控制bougie进入深度并导引套囊管，避免暴力。",
@@ -339,7 +340,8 @@
     "references": [
       "wses-chest",
       "east-htx",
-      "nice"
+      "nice",
+      "east-hemothorax11"
     ],
     "critical": [
       "错误侧别/部位或不连接引流系统",
@@ -363,8 +365,8 @@
         "All side holes inside, secure/water seal below chest, assess patient/circuit; record initial/hourly output, no routine clamp with active air leak. Follow institutional policy."
       ],
       [
-        "输出>1500 mL或>200 mL/h连续3 h、或持续不稳定，立即外科升级；生理可先于量触发，残留/堵塞复查。以本院规范为准。",
-        "Output over 1500 or over 200 mL/h for three hours, or ongoing instability prompts immediate surgical escalation; physiology may trigger before volume, review retained blood/blockage. Follow institutional policy."
+        "置管即刻引流>1500 mL，或>200 mL/h持续2–4 h（本站以WSES连续3 h为教学参考），或持续血流动力学不稳定：立即胸外科评估/手术；不因等待时限延误。 以本院规范为准。",
+        "Immediate chest-tube output >1500 mL, >200 mL/h for 2–4 h (this site uses WSES 3 h for teaching), or persistent hemodynamic instability: immediate thoracic surgical evaluation/operation; do not delay for the time threshold. Follow institutional policy."
       ]
     ],
     "criteria": [

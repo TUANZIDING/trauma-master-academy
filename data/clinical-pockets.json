@@ -1039,6 +1039,96 @@
       "coverage": "full_text_web",
       "domestic": false,
       "checkedDate": "2026-10-15"
+    },
+    "das15": {
+      "title": [
+        "DAS 2015：可触及/不可触及环甲膜路径",
+        "DAS 2015: palpable/impalpable membrane pathways"
+      ],
+      "shortTitle": [
+        "DAS 2015：可触及/不可触及环甲膜路径",
+        "DAS 2015: palpable/impalpable membrane pathways"
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4650961/",
+      "locator": "Plan D: palpable transverse stab; impalpable 8–10 cm caudad-to-cephalad incision",
+      "coverage": "full_text_web_or_pdf",
+      "domestic": false,
+      "checkedDate": "2026-10-15"
+    },
+    "boast-supracondylar": {
+      "title": [
+        "BOAST：儿童肱骨髁上骨折",
+        "BOAST: pediatric supracondylar humerus"
+      ],
+      "shortTitle": [
+        "BOAST：儿童肱骨髁上骨折",
+        "BOAST: pediatric supracondylar humerus"
+      ],
+      "url": "https://www.boa.ac.uk/resource/boast-11-pdf.html",
+      "locator": "Standards1,3,8,9: pulse, median/AIN, radial and ulnar function, serial assessment",
+      "coverage": "full_text_web_or_pdf",
+      "domestic": false,
+      "checkedDate": "2026-10-15"
+    },
+    "wta-extremity": {
+      "title": [
+        "WTA：肢体血管伤API/BBI",
+        "WTA: extremity vascular API/BBI"
+      ],
+      "shortTitle": [
+        "WTA：肢体血管伤API/BBI",
+        "WTA: extremity vascular API/BBI"
+      ],
+      "url": "https://www.westerntrauma.org/western-trauma-association-algorithms/management-of-the-mangled-extremity/note-d/",
+      "locator": "Stable patients: API/BBI below 0.9 or abnormal pulses require imaging; confounders",
+      "coverage": "full_text_web_or_pdf",
+      "domestic": false,
+      "checkedDate": "2026-10-15"
+    },
+    "east-arterial12": {
+      "title": [
+        "EAST 2012：穿透性下肢动脉伤",
+        "EAST 2012: penetrating lower-limb arterial trauma"
+      ],
+      "shortTitle": [
+        "EAST 2012：穿透性下肢动脉伤",
+        "EAST 2012: penetrating lower-limb arterial trauma"
+      ],
+      "url": "https://www.east.org/mobile/practice-management-guideline/trauma/98",
+      "locator": "Level2: ABI below 0.9 or abnormal examination warrants evaluation; not a blunt-knee guideline",
+      "coverage": "full_text_web_or_pdf",
+      "domestic": false,
+      "checkedDate": "2026-10-15"
+    },
+    "bask-knee": {
+      "title": [
+        "BASK：膝多韧带损伤/脱位标准",
+        "BASK: multiligament knee injury/dislocation"
+      ],
+      "shortTitle": [
+        "BASK：膝多韧带损伤/脱位标准",
+        "BASK: multiligament knee injury/dislocation"
+      ],
+      "url": "https://www.boa.ac.uk/asset/88A4C3E3-DF3E-4E51-A92E7D2F86D7D82A/",
+      "locator": "5.3.5: ABPI below 0.9 or asymmetric pulses requires vascular imaging; serial exams even if above0.9",
+      "coverage": "full_text_web_or_pdf",
+      "domestic": false,
+      "checkedDate": "2026-10-15"
+    },
+    "east-hemothorax11": {
+      "title": [
+        "EAST 2011：血胸持续引流与生理",
+        "EAST 2011: hemothorax output and physiology"
+      ],
+      "shortTitle": [
+        "EAST 2011：血胸持续引流与生理",
+        "EAST 2011: hemothorax output and physiology"
+      ],
+      "url": "https://www.east.org/education-resources/practice-management-guidelines/details/hemothorax-and-occult-pneumothorax,-management-of",
+      "locator": "Scientific discussion: persistent150–200 mL/h for 2–4 h; physiology takes precedence; WSES 2025 uses3 h",
+      "coverage": "full_text_web_or_pdf",
+      "domestic": false,
+      "checkedDate": "2026-10-15"
     }
   },
   "claims": [
@@ -3043,8 +3133,8 @@
           "Adults: fourth/fifth interspace just anterior to midaxillary line; second interspace midclavicular alternative. Children: second midclavicular. At least 8 cm,14G/10G is an adult TCCC equipment reference; adjust to anatomy/device."
         ],
         [
-          "不稳定或胸内活动出血>1500 mL、或>200 mL/h连续3 h：立即胸外科评估。稳定≥500 mL引流，<300 mL可严密观察；300–499 mL结合生理和趋势判断。",
-          "Instability or active thoracic bleeding over 1500 mL or over 200 mL/h for three hours needs immediate surgical evaluation. Stable at least 500 mL: drain; below 300 mL: close observation;300–499 mL requires individualized assessment."
+          "置管即刻引流>1500 mL，或>200 mL/h持续2–4 h（本站以WSES连续3 h为教学参考），或持续血流动力学不稳定：立即胸外科评估/手术；不因等待时限延误。",
+          "Immediate chest-tube output >1500 mL, >200 mL/h for 2–4 h (this site uses WSES 3 h for teaching), or persistent hemodynamic instability: immediate thoracic surgical evaluation/operation; do not delay for the time threshold."
         ],
         [
           "气胸8.5–24 Fr；稳定血胸EAST条件推荐14 Fr或更小猪尾管，WSES-AAST较大血胸倾向28–40 Fr；不稳定用大口径。两者人群不同，不能互换。",
@@ -3058,7 +3148,8 @@
       "references": [
         "cn-prehospital",
         "wses-chest",
-        "east-htx"
+        "east-htx",
+        "east-hemothorax11"
       ],
       "claimIds": [],
       "axis": "team",
@@ -3350,16 +3441,20 @@
       ],
       "rows": [
         [
-          "尽早静脉抗生素，尽量伤后1 h内。国内2019 Gustilo I–II以一代头孢（原文头孢唑啉）为基础；III加氨基糖苷，粪便/厌氧污染加青霉素或甲硝唑；过敏/肾功能及本地耐药谱决定替代。",
-          "Early IV antibiotics, ideally within one hour. Chinese 2019 GustiloI–II first-generation cephalosporin(cefazolin), III adds aminoglycoside, fecal/anaerobic contamination adds penicillin/metronidazole; allergy/renal function/local resistance guide alternatives."
+          "肱骨髁上骨折/肘脱位：记录桡动脉、指端灌注及正中（含骨间前）、桡、尺神经运动与感觉；复位前后逐项对照（BOAST）。",
+          "Supracondylar fracture/elbow dislocation: document radial pulse, digital perfusion and median (including AIN), radial and ulnar motor/sensory findings before and after reduction (BOAST)."
         ],
         [
-          "高风险每小时查体，记录疼痛/被动牵拉痛及镇痛剂量；有症状松解环形层至皮肤，心脏水平，30 min内复评并即时骨科会诊。",
-          "High risk: hourly exam, pain/passive stretch/analgesic dose. Symptoms: release circumferential layers to skin, heart-level limb, reassess within 30 minutes and consult orthopedics immediately."
+          "肱骨干骨折：复位前后记录伸腕/伸指及虎口背侧感觉；新桡神经缺损立即升级，不能只凭复位片满意结束（BOAST神经血管原则）。",
+          "Humeral shaft fracture: record wrist/finger extension and dorsal first-web sensation before/after reduction. Escalate new radial deficits despite satisfactory alignment (BOAST neurovascular principles)."
         ],
         [
-          "无脉、持续出血、扩张性血肿为硬征；毛细血管再充盈或Doppler不能单独排除。立即骨科/血管/整形协同，必要时临时分流。",
-          "Absent pulse/ongoing bleeding/expanding hematoma are hard signs; CRT/Doppler alone cannot exclude injury. Immediate orthopedic/vascular/plastic coordination, temporary shunt when needed."
+          "前臂高风险：持续疼痛、被动牵拉痛或感觉变化即复评；松解环形束缚、肢体心脏水平，立即骨科评估（BOAST筋膜室）。",
+          "Forearm risk: worsening pain, passive-stretch pain or sensory change requires reassessment; release constriction, keep at heart level and obtain urgent orthopedic review (BOAST compartment guidance)."
+        ],
+        [
+          "上肢用BBI/API（不是踝指数）；<0.9或脉搏不对称，稳定者CTA/血管外科评估；硬征或缺血不等指数/CTA延误救治（WTA/BOAST）。",
+          "Use upper-limb BBI/API rather than an ankle index; below 0.9 or asymmetric pulses warrants CTA/vascular review if stable. Hard signs or ischemia require immediate care without waiting for indices/imaging (WTA/BOAST)."
         ]
       ],
       "scope": [
@@ -3367,11 +3462,10 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "cn-open-fracture",
-        "boast-open",
-        "nice-fracture",
+        "boast-supracondylar",
+        "boast-vascular",
         "boast-acs",
-        "boast-vascular"
+        "wta-extremity"
       ],
       "claimIds": [],
       "axis": "team",
@@ -3391,16 +3485,20 @@
       ],
       "rows": [
         [
-          "尽早静脉抗生素，尽量伤后1 h内。国内2019 Gustilo I–II以一代头孢（原文头孢唑啉）为基础；III加氨基糖苷，粪便/厌氧污染加青霉素或甲硝唑；过敏/肾功能及本地耐药谱决定替代。",
-          "Early IV antibiotics, ideally within one hour. Chinese 2019 GustiloI–II first-generation cephalosporin(cefazolin), III adds aminoglycoside, fecal/anaerobic contamination adds penicillin/metronidazole; allergy/renal function/local resistance guide alternatives."
+          "膝脱位（包括自行复位）：复位前后查血管与腓总神经，测ABI；<0.9或脉搏不对称行CTA/血管外科评估。≥0.9仍需序贯查体，不能只因有脉搏排除（BASK）。",
+          "Knee dislocation, including spontaneously reduced injury: assess vessels/peroneal nerve and ABI before/after reduction. Below 0.9 or asymmetric pulses requires CTA/vascular review. Serial examinations remain necessary at ≥0.9 (BASK)."
         ],
         [
-          "高风险每小时查体，记录疼痛/被动牵拉痛及镇痛剂量；有症状松解环形层至皮肤，心脏水平，30 min内复评并即时骨科会诊。",
-          "High risk: hourly exam, pain/passive stretch/analgesic dose. Symptoms: release circumferential layers to skin, heart-level limb, reassess within 30 minutes and consult orthopedics immediately."
+          "股骨干牵引夹板仅用于适合的孤立股骨干伤；合并骨盆、同侧膝/小腿/踝损伤避免牵引，先选其他固定并核对装置（院前共识/技能规范）。",
+          "Traction splints suit selected isolated femoral shaft injuries; avoid traction with pelvic or ipsilateral knee/lower-leg/ankle injury. Use alternative stabilization and verify device rules (prehospital guidance)."
         ],
         [
-          "无脉、持续出血、扩张性血肿为硬征；毛细血管再充盈或Doppler不能单独排除。立即骨科/血管/整形协同，必要时临时分流。",
-          "Absent pulse/ongoing bleeding/expanding hematoma are hard signs; CRT/Doppler alone cannot exclude injury. Immediate orthopedic/vascular/plastic coordination, temporary shunt when needed."
+          "胫骨骨折为筋膜室高风险：序贯疼痛、牵拉痛、感觉/运动及镇痛量；疑诊立即松解束缚与骨科评估，脉搏存在不排除（BOAST）。",
+          "Tibial fractures carry compartment risk: serial pain/stretch, sensory/motor and analgesic-dose assessment. Release constriction and obtain urgent orthopedic review when suspected; pulses do not exclude it (BOAST)."
+        ],
+        [
+          "老年髋部骨折走老年共管路径；NICE入院当天或次日手术，国内48 h目标需完成必要优化，神经阻滞不替代早期手术（NICE/国内实施依据）。",
+          "Older hip-fracture patients need a geriatric co-care pathway: NICE surgery on admission day/next day; the Chinese 48-hour goal requires necessary optimization. Nerve blocks do not replace early surgery (NICE/Chinese implementation evidence)."
         ]
       ],
       "scope": [
@@ -3408,11 +3506,13 @@
         "Tiered recall; resident key-step simulation requires supervision and local policy."
       ],
       "references": [
-        "cn-open-fracture",
-        "boast-open",
-        "nice-fracture",
+        "bask-knee",
+        "east-arterial12",
+        "boast-vascular",
+        "cn-prehospital",
         "boast-acs",
-        "boast-vascular"
+        "nice-hip",
+        "cn-hip-implementation"
       ],
       "claimIds": [],
       "axis": "team",
@@ -3523,16 +3623,16 @@
           "DAS adult #10 scalpel, bougie,6.0 mm cuffed tube, full paralysis/suction. Maximal extension belongs to its adult difficult-airway context; suspected trauma spine injury requires oxygen-rescue/SMR judgment, not routine forced extension."
         ],
         [
-          "训练器步骤：中线纵切口自下而上、最长约8 cm，手指辨认环甲膜；横刺膜、保持刀垂直、转90°刃朝足侧。",
-          "Trainer: caudal-to-cephalad vertical midline incision up to about 8 cm, finger identify membrane; transverse stab, scalpel perpendicular, rotate90 degrees edge caudal."
+          "DAS 2015可触及：横向刺切皮肤和环甲膜，刀垂直转90°使刃朝足侧，bougie入气管，导引6.0 mm套囊管。",
+          "DAS 2015 palpable membrane: transverse stab through skin/membrane; turn the perpendicular blade 90° caudally, insert bougie and guide a 6.0 mm cuffed tube."
         ],
         [
-          "充套囊、连接通气，持续波形CO₂确认；失败考虑小管、延长切口、改位置/操作者，随后固定与交接。",
-          "Inflate cuff/connect ventilation, sustained waveform CO₂; failure considers smaller tube/extended incision/position or operator change, then secure/handover."
+          "DAS 2015不可触及：中线自尾向头纵切8–10 cm，手指钝分辨认后同上。DAS 2025更新为统一纵切路径、最长8 cm；训练前选定版本，不混称。",
+          "DAS 2015 impalpable membrane: midline 8–10 cm caudal-to-cephalad incision, finger dissection/identification, then the same steps. DAS 2025 updates to a uniform vertical approach up to 8 cm; choose the training version explicitly."
         ],
         [
-          "OSCE 0未做/不安全、1提示后完成、2独立完成；满分10，关键失败否决。",
-          "OSCE 0 omitted/unsafe,1 prompted,2 independent; total 10, critical failure overrides."
+          "持续波形CO₂确认并固定；OSCE 0/1/2、满分10，关键失败否决。",
+          "Confirm sustained waveform CO₂ and secure; OSCE 0/1/2, total 10, critical failure overrides."
         ]
       ],
       "scope": [
@@ -3540,6 +3640,7 @@
         "Supervised trainer practice; real procedures follow authorization and skill sources."
       ],
       "references": [
+        "das15",
         "das25",
         "nice-spine"
       ],
@@ -3613,8 +3714,8 @@
           "Pneumothorax8.5–24 Fr; stable hemothorax EAST conditional14 Fr pigtail, larger/unstable WSES 28–40 Fr(no added benefit above32)."
         ],
         [
-          "输出>1500 mL或>200 mL/h连续3 h、或持续不稳定，立即外科升级；生理可先于量触发，残留/堵塞复查。",
-          "Output over 1500 or over 200 mL/h for three hours, or ongoing instability prompts immediate surgical escalation; physiology may trigger before volume, review retained blood/blockage."
+          "置管即刻引流>1500 mL，或>200 mL/h持续2–4 h（本站以WSES连续3 h为教学参考），或持续血流动力学不稳定：立即胸外科评估/手术；不因等待时限延误。",
+          "Immediate chest-tube output >1500 mL, >200 mL/h for 2–4 h (this site uses WSES 3 h for teaching), or persistent hemodynamic instability: immediate thoracic surgical evaluation/operation; do not delay for the time threshold."
         ],
         [
           "OSCE 0未做/不安全、1提示后完成、2独立完成；满分10，关键失败否决。",
@@ -3628,7 +3729,8 @@
       "references": [
         "wses-chest",
         "east-htx",
-        "nice"
+        "nice",
+        "east-hemothorax11"
       ],
       "claimIds": [],
       "axis": "b",
@@ -4201,7 +4303,8 @@
           "east-htx",
           "nice",
           "atls11",
-          "tccc"
+          "tccc",
+          "east-hemothorax11"
         ],
         "cards": [
           {
@@ -4227,8 +4330,8 @@
             ],
             "rows": [
               [
-                "不稳定或胸内活动出血>1500 mL、或>200 mL/h连续3 h：立即胸外科评估。稳定≥500 mL引流，<300 mL可严密观察；300–499 mL结合生理和趋势判断。以本院规范为准。",
-                "Instability or active thoracic bleeding over 1500 mL or over 200 mL/h for three hours needs immediate surgical evaluation. Stable at least 500 mL: drain; below 300 mL: close observation;300–499 mL requires individualized assessment. Follow institutional policy."
+                "置管即刻引流>1500 mL，或>200 mL/h持续2–4 h（本站以WSES连续3 h为教学参考），或持续血流动力学不稳定：立即胸外科评估/手术；不因等待时限延误。",
+                "Immediate chest-tube output >1500 mL, >200 mL/h for 2–4 h (this site uses WSES 3 h for teaching), or persistent hemodynamic instability: immediate thoracic surgical evaluation/operation; do not delay for the time threshold."
               ],
               [
                 "气胸8.5–24 Fr；稳定血胸EAST条件推荐14 Fr或更小猪尾管，WSES-AAST较大血胸倾向28–40 Fr；不稳定用大口径。两者人群不同，不能互换。以本院规范为准。",
@@ -4247,7 +4350,8 @@
         "references": [
           "east-edt",
           "wta-edt",
-          "rcuk-special"
+          "rcuk-special",
+          "east-hemothorax11"
         ],
         "cards": [
           {
@@ -4275,7 +4379,8 @@
           "BTAI: grade first, then plan TEVAR"
         ],
         "references": [
-          "svs-btai"
+          "svs-btai",
+          "east-hemothorax11"
         ],
         "cards": [
           {
@@ -5130,6 +5235,45 @@
             ]
           }
         ]
+      },
+      {
+        "id": "regional-pocket-decisions",
+        "title": [
+          "本区重点：查体、血供与升级",
+          "Regional focus: examination, perfusion and escalation"
+        ],
+        "cards": [
+          {
+            "title": [
+              "上肢：前后对照查体",
+              "Upper limb: pre/post comparison"
+            ],
+            "rows": [
+              [
+                "肱骨髁上骨折/肘脱位：记录桡动脉、指端灌注及正中（含骨间前）、桡、尺神经运动与感觉；复位前后逐项对照（BOAST）。",
+                "Supracondylar fracture/elbow dislocation: document radial pulse, digital perfusion and median (including AIN), radial and ulnar motor/sensory findings before and after reduction (BOAST)."
+              ],
+              [
+                "肱骨干骨折：复位前后记录伸腕/伸指及虎口背侧感觉；新桡神经缺损立即升级，不能只凭复位片满意结束（BOAST神经血管原则）。",
+                "Humeral shaft fracture: record wrist/finger extension and dorsal first-web sensation before/after reduction. Escalate new radial deficits despite satisfactory alignment (BOAST neurovascular principles)."
+              ],
+              [
+                "前臂高风险：持续疼痛、被动牵拉痛或感觉变化即复评；松解环形束缚、肢体心脏水平，立即骨科评估（BOAST筋膜室）。",
+                "Forearm risk: worsening pain, passive-stretch pain or sensory change requires reassessment; release constriction, keep at heart level and obtain urgent orthopedic review (BOAST compartment guidance)."
+              ],
+              [
+                "上肢用BBI/API（不是踝指数）；<0.9或脉搏不对称，稳定者CTA/血管外科评估；硬征或缺血不等指数/CTA延误救治（WTA/BOAST）。",
+                "Use upper-limb BBI/API rather than an ankle index; below 0.9 or asymmetric pulses warrants CTA/vascular review if stable. Hard signs or ischemia require immediate care without waiting for indices/imaging (WTA/BOAST)."
+              ]
+            ]
+          }
+        ],
+        "references": [
+          "boast-supracondylar",
+          "boast-vascular",
+          "boast-acs",
+          "wta-extremity"
+        ]
       }
     ],
     "lower-limb": [
@@ -5261,6 +5405,48 @@
               ]
             ]
           }
+        ]
+      },
+      {
+        "id": "regional-pocket-decisions",
+        "title": [
+          "本区重点：查体、血供与升级",
+          "Regional focus: examination, perfusion and escalation"
+        ],
+        "cards": [
+          {
+            "title": [
+              "下肢：局部与全身风险",
+              "Lower limb: local and systemic risk"
+            ],
+            "rows": [
+              [
+                "膝脱位（包括自行复位）：复位前后查血管与腓总神经，测ABI；<0.9或脉搏不对称行CTA/血管外科评估。≥0.9仍需序贯查体，不能只因有脉搏排除（BASK）。",
+                "Knee dislocation, including spontaneously reduced injury: assess vessels/peroneal nerve and ABI before/after reduction. Below 0.9 or asymmetric pulses requires CTA/vascular review. Serial examinations remain necessary at ≥0.9 (BASK)."
+              ],
+              [
+                "股骨干牵引夹板仅用于适合的孤立股骨干伤；合并骨盆、同侧膝/小腿/踝损伤避免牵引，先选其他固定并核对装置（院前共识/技能规范）。",
+                "Traction splints suit selected isolated femoral shaft injuries; avoid traction with pelvic or ipsilateral knee/lower-leg/ankle injury. Use alternative stabilization and verify device rules (prehospital guidance)."
+              ],
+              [
+                "胫骨骨折为筋膜室高风险：序贯疼痛、牵拉痛、感觉/运动及镇痛量；疑诊立即松解束缚与骨科评估，脉搏存在不排除（BOAST）。",
+                "Tibial fractures carry compartment risk: serial pain/stretch, sensory/motor and analgesic-dose assessment. Release constriction and obtain urgent orthopedic review when suspected; pulses do not exclude it (BOAST)."
+              ],
+              [
+                "老年髋部骨折走老年共管路径；NICE入院当天或次日手术，国内48 h目标需完成必要优化，神经阻滞不替代早期手术（NICE/国内实施依据）。",
+                "Older hip-fracture patients need a geriatric co-care pathway: NICE surgery on admission day/next day; the Chinese 48-hour goal requires necessary optimization. Nerve blocks do not replace early surgery (NICE/Chinese implementation evidence)."
+              ]
+            ]
+          }
+        ],
+        "references": [
+          "bask-knee",
+          "east-arterial12",
+          "boast-vascular",
+          "cn-prehospital",
+          "boast-acs",
+          "nice-hip",
+          "cn-hip-implementation"
         ]
       }
     ],

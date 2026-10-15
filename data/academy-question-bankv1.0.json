@@ -3865,28 +3865,29 @@
         ],
         "answer": 0,
         "why": [
-          "超过200 mL/h×3 h提示手术升级评估。",
-          "Over200 mL/h for three hours prompts operative assessment."
+          "置管即刻引流>1500 mL，或>200 mL/h持续2–4 h（本站以WSES连续3 h为教学参考），或持续血流动力学不稳定：立即胸外科评估/手术；不因等待时限延误。",
+          "Immediate chest-tube output >1500 mL, >200 mL/h for 2–4 h (this site uses WSES 3 h for teaching), or persistent hemodynamic instability: immediate thoracic surgical evaluation/operation; do not delay for the time threshold."
         ],
         "optionWhy": [
           [
-            "超过200 mL/h×3 h提示手术升级评估。",
-            "Over200 mL/h for three hours prompts operative assessment."
+            "置管即刻引流>1500 mL，或>200 mL/h持续2–4 h（本站以WSES连续3 h为教学参考），或持续血流动力学不稳定：立即胸外科评估/手术；不因等待时限延误。",
+            "Immediate chest-tube output >1500 mL, >200 mL/h for 2–4 h (this site uses WSES 3 h for teaching), or persistent hemodynamic instability: immediate thoracic surgical evaluation/operation; do not delay for the time threshold."
           ],
           [
-            "等待可延误止血。",
-            "Waiting may delay hemorrhage control."
+            "该方案推迟了对持续出血或生理不稳定的外科处置。",
+            "This delays surgical management of ongoing bleeding or instability."
           ],
           [
-            "夹管不能控制胸内出血且可误导监测。",
-            "Clamping does not control internal bleeding and may hide output."
+            "不能用一次静态引流量排除后续持续失血。",
+            "One static output cannot exclude continuing hemorrhage."
           ]
         ],
         "references": [
           "wses-chest",
           "east-htx",
           "svs-btai",
-          "cn-prehospital"
+          "cn-prehospital",
+          "east-hemothorax11"
         ]
       },
       {
@@ -9700,49 +9701,49 @@
       },
       {
         "pre": [
-          "纵切口方向？",
-          "Vertical incision direction?"
+          "采用DAS 2015、环甲膜不可触及，切口参考？",
+          "Using DAS 2015 with an impalpable membrane, what incision is described?"
         ],
         "post": [
-          "纵切口方向？",
-          "Vertical incision direction?"
+          "采用DAS 2015、环甲膜不可触及，切口参考？",
+          "Using DAS 2015 with an impalpable membrane, what incision is described?"
         ],
         "options": [
           [
-            "中线自下而上",
-            "Midline caudal-to-cephalad"
+            "自尾向头中线纵切8–10 cm后手指辨膜",
+            "Caudal-to-cephalad 8–10 cm midline incision then finger identification"
           ],
           [
-            "横跨颈部任意处",
-            "Across neck anywhere"
+            "不辨认结构直接横刺",
+            "Blind transverse stab without identification"
           ],
           [
-            "向深处盲刺",
-            "Blind deep stab"
+            "误称DAS 2025仍要求8–10 cm",
+            "Claim DAS 2025 still requires 8–10 cm"
           ]
         ],
         "answer": 0,
         "why": [
-          "辨认膜和中线解剖。",
-          "Identify membrane/midline anatomy."
+          "2015分可触及横刺与不可触及8–10 cm纵切，2025为统一纵切≤8 cm。",
+          "DAS 2015 separates palpable transverse from impalpable 8–10 cm vertical; 2025 uses a uniform vertical incision up to 8 cm."
         ],
         "optionWhy": [
           [
-            "辨认膜和中线解剖。",
-            "Identify membrane/midline anatomy."
+            "2015分可触及横刺与不可触及8–10 cm纵切，2025为统一纵切≤8 cm。",
+            "DAS 2015 separates palpable transverse from impalpable 8–10 cm vertical; 2025 uses a uniform vertical incision up to 8 cm."
           ],
           [
-            "此项不满足条件：辨认膜和中线解剖。",
-            "This fails the condition: Identify membrane/midline anatomy."
+            "盲目横刺可能偏离气道或损伤血管。",
+            "Blind transverse stabbing risks missing the airway or injuring vessels."
           ],
           [
-            "此项遗漏关键效果：辨认膜和中线解剖。",
-            "This misses the key effect: Identify membrane/midline anatomy."
+            "2025更新的切口长度与路径不同，不能混用版本。",
+            "The 2025 length/pathway differs and must not be conflated."
           ]
         ],
         "references": [
-          "das25",
-          "nice-spine"
+          "das15",
+          "das25"
         ]
       },
       {
@@ -13524,51 +13525,48 @@
     "pre": [
       {
         "pre": [
-          "上肢固定前检查？",
-          "Before upper-limb splint?"
+          "儿童髁上骨折，复位前后应完整记录什么？",
+          "What must be documented before/after reduction of a pediatric supracondylar fracture?"
         ],
         "post": [
-          "上肢固定前检查？",
-          "Before upper-limb splint?"
+          "儿童髁上骨折，复位前后应完整记录什么？",
+          "What must be documented before/after reduction of a pediatric supracondylar fracture?"
         ],
         "options": [
           [
-            "感觉运动及血运",
-            "Sensation/motor/perfusion"
+            "桡动脉、灌注与正中/AIN、桡、尺神经",
+            "Radial pulse/perfusion and median/AIN, radial and ulnar nerves"
           ],
           [
-            "只拍片",
-            "Film only"
+            "只记录手指颜色",
+            "Only digital color"
           ],
           [
-            "只摸皮肤温",
-            "Skin temperature only"
+            "只比较复位后的X线角度",
+            "Only post-reduction radiographic angle"
           ]
         ],
         "answer": 0,
         "why": [
-          "完整基线才可比较。",
-          "Full baseline supports comparison."
+          "分别记录运动/感觉与血供，避免复位前缺损与医源性变化混淆。",
+          "Document motor/sensory and perfusion findings to distinguish pre-existing from new deficits."
         ],
         "optionWhy": [
           [
-            "完整基线才可比较。",
-            "Full baseline supports comparison."
+            "分别记录运动/感觉与血供，避免复位前缺损与医源性变化混淆。",
+            "Document motor/sensory and perfusion findings to distinguish pre-existing from new deficits."
           ],
           [
-            "此项不符合条件：完整基线才可比较。",
-            "This misses the condition: Full baseline supports comparison."
+            "颜色不能替代神经运动感觉和脉搏检查。",
+            "Color cannot replace motor/sensory and pulse examination."
           ],
           [
-            "此项遗漏关键判断：完整基线才可比较。",
-            "This omits the key decision: Full baseline supports comparison."
+            "影像对位满意不能排除神经血管损伤。",
+            "Good radiographic alignment does not exclude neurovascular injury."
           ]
         ],
         "references": [
-          "cn-open-fracture",
-          "boast-acs",
-          "boast-vascular",
-          "nice-fracture"
+          "boast-supracondylar"
         ]
       },
       {
@@ -13771,51 +13769,49 @@
     "post": [
       {
         "pre": [
-          "环形层松解后复评参考？",
-          "Review after circumferential release?"
+          "肘伤已复位，BBI/API为0.74且血压稳定，下一步？",
+          "After elbow reduction, BBI/API is 0.74 with stable BP. What next?"
         ],
         "post": [
-          "环形层松解后复评参考？",
-          "Review after circumferential release?"
+          "肘伤已复位，BBI/API为0.74且血压稳定，下一步？",
+          "After elbow reduction, BBI/API is 0.74 with stable BP. What next?"
         ],
         "options": [
           [
-            "30 min内且立即会诊",
-            "Within30 min and immediate consultation"
+            "CTA与血管专科评估",
+            "CTA and vascular review"
           ],
           [
-            "次日",
-            "Next day"
+            "按踝指数正常而出院",
+            "Discharge on an assumed normal ankle index"
           ],
           [
-            "不再检查",
-            "No more examination"
+            "仅观察指端温度",
+            "Observe fingertip temperature alone"
           ]
         ],
         "answer": 0,
         "why": [
-          "移除外压后仍可能缺血。",
-          "Ischemia may remain after pressure release."
+          "上肢异常压力指数与脉搏差异提示血管伤，需要影像/专科评估。",
+          "An abnormal upper-limb pressure index or pulse asymmetry requires vascular imaging/review."
         ],
         "optionWhy": [
           [
-            "移除外压后仍可能缺血。",
-            "Ischemia may remain after pressure release."
+            "上肢异常压力指数与脉搏差异提示血管伤，需要影像/专科评估。",
+            "An abnormal upper-limb pressure index or pulse asymmetry requires vascular imaging/review."
           ],
           [
-            "此项不符合条件：移除外压后仍可能缺血。",
-            "This misses the condition: Ischemia may remain after pressure release."
+            "上肢应用BBI/API，未测定不能声称正常。",
+            "Use BBI/API in the upper limb; an unmeasured ankle index is not reassurance."
           ],
           [
-            "此项遗漏关键判断：移除外压后仍可能缺血。",
-            "This omits the key decision: Ischemia may remain after pressure release."
+            "温暖手指仍可能有部分损伤或侧支灌注。",
+            "Warm fingers may reflect collateral flow despite arterial injury."
           ]
         ],
         "references": [
-          "cn-open-fracture",
-          "boast-acs",
-          "boast-vascular",
-          "nice-fracture"
+          "wta-extremity",
+          "boast-vascular"
         ]
       },
       {
@@ -14020,53 +14016,48 @@
     "pre": [
       {
         "pre": [
-          "高能开放胫骨骨折清创参考？",
-          "High-energy open tibia debridement reference?"
+          "膝脱位自行复位、ABI 0.82，下一步？",
+          "Spontaneously reduced knee dislocation, ABI 0.82: what next?"
         ],
         "post": [
-          "高能开放胫骨骨折清创参考？",
-          "High-energy open tibia debridement reference?"
+          "膝脱位自行复位、ABI 0.82，下一步？",
+          "Spontaneously reduced knee dislocation, ABI 0.82: what next?"
         ],
         "options": [
           [
-            "12 h内无更急指征时",
-            "Within12 h unless more urgent"
+            "CTA与血管外科评估并持续复查",
+            "CTA/vascular review with serial examination"
           ],
           [
-            "所有人等24 h",
-            "All wait24"
+            "足背动脉可及即可结束检查",
+            "Stop assessment because dorsalis pedis is palpable"
           ],
           [
-            "等脓液",
-            "Wait pus"
+            "等MRI韧带报告再查血管",
+            "Wait for ligament MRI before vascular assessment"
           ]
         ],
         "answer": 0,
         "why": [
-          "重污染/血管伤需立即。",
-          "Severe contamination/vascular injury needs immediate care."
+          "ABI低于0.9需要血管检查，自动复位不排除腘动脉伤。",
+          "ABI below 0.9 requires vascular evaluation; spontaneous reduction does not exclude popliteal injury."
         ],
         "optionWhy": [
           [
-            "重污染/血管伤需立即。",
-            "Severe contamination/vascular injury needs immediate care."
+            "ABI低于0.9需要血管检查，自动复位不排除腘动脉伤。",
+            "ABI below 0.9 requires vascular evaluation; spontaneous reduction does not exclude popliteal injury."
           ],
           [
-            "此项不符合条件：重污染/血管伤需立即。",
-            "This misses the condition: Severe contamination/vascular injury needs immediate care."
+            "可触脉搏不能排除内膜损伤。",
+            "A palpable pulse does not exclude an intimal injury."
           ],
           [
-            "此项遗漏关键判断：重污染/血管伤需立即。",
-            "This omits the key decision: Severe contamination/vascular injury needs immediate care."
+            "血管评估优先于非紧急韧带成像。",
+            "Vascular assessment takes priority over nonurgent ligament imaging."
           ]
         ],
         "references": [
-          "boast-open",
-          "boast-acs",
-          "boast-vascular",
-          "cn-open-fracture",
-          "nice-hip",
-          "cn-hip-implementation"
+          "bask-knee"
         ]
       },
       {
