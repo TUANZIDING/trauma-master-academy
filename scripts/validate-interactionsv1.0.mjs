@@ -19,7 +19,7 @@ async function mount(file,query='',blocked=false){
   else if(el.textContent.trim())try{w.eval(el.textContent);}catch(e){errs.push(e.stack);}
  }
  await new Promise(r=>setTimeout(r,20));assert.deepEqual(errs,[],file+' runtime errors');
- if(!query.includes('teacher=1')){const walker=w.document.createTreeWalker(w.document.body,w.NodeFilter.SHOW_TEXT);let node;const bad=[];while((node=walker.nextNode())){if(node.parentElement.closest('script,style,[hidden],[data-teacher-only]'))continue;if(/TRAUMA-ACADEMY-|CASE-TRAUMA-|CLAIM-|teaching_not_protocol|source_required|teacher_preview_only|pending_local_confirmation|pending_clinician_review|visual_asset_pending_review|source_index_pending_review|evidence_review_required|RELEASE GATE|scoring unchanged|Obsidian|待核验|待确认|待审核|教师预览/.test(node.textContent))bad.push(node.textContent.slice(0,100));}assert.deepEqual(bad,[],file+' learner tokens');assertions++;}
+ if(!query.includes('teacher=1')){const walker=w.document.createTreeWalker(w.document.body,w.NodeFilter.SHOW_TEXT);let node;const bad=[];while((node=walker.nextNode())){if(node.parentElement.closest('script,style,[hidden],[data-teacher-only]'))continue;if(/TRAUMA-ACADEMY-|CASE-TRAUMA-|CLAIM-|teaching_not_protocol|source_required|teacher_preview_only|pending_local_confirmation|pending_clinician_review|visual_asset_pending_review|source_index_pending_review|evidence_review_required|RELEASE GATE|scoring unchanged|Obsidian|待核验|待确认|待审核|教师预览/.test(node.textContent)||/review pending|sign-off pending|待复核|未签署/i.test(node.textContent))bad.push(node.textContent.slice(0,100));}assert.deepEqual(bad,[],file+' learner tokens');assertions++;}
 
  return {w,dom,tick(ms){now+=ms;[...intervals.values()].forEach(fn=>fn());}};
 }

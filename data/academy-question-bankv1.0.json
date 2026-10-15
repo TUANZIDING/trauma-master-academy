@@ -2899,11 +2899,11 @@
       {
         "pre": [
           "HR126、SBP88的SI约多少？",
-          "What is SI for HR126/SBP88?"
+          "What is SI for HR 126/SBP 88?"
         ],
         "post": [
           "HR126、SBP88的SI约多少？",
-          "What is SI for HR126/SBP88?"
+          "What is SI for HR 126/SBP 88?"
         ],
         "options": [
           [
@@ -2945,11 +2945,11 @@
       {
         "pre": [
           "是否等24 h输够10 U（国内200 mL全血来源单位）才启动MTP？",
-          "Wait for24 hours and10 domestic200-mL-donation-derived units before MTP?"
+          "Wait for 24 hours and 10 domestic200-mL-donation-derived units before MTP?"
         ],
         "post": [
           "是否等24 h输够10 U（国内200 mL全血来源单位）才启动MTP？",
-          "Wait for24 hours and10 domestic200-mL-donation-derived units before MTP?"
+          "Wait for 24 hours and 10 domestic200-mL-donation-derived units before MTP?"
         ],
         "options": [
           [
@@ -3053,7 +3053,7 @@
           ],
           [
             "一律补至120 g/L",
-            "Always target120 g/L"
+            "Always target 120 g/L"
           ],
           [
             "首次Hb正常即排除出血",
@@ -3132,20 +3132,20 @@
       {
         "pre": [
           "合并重型TBI的出血患者，是否套用SBP80–90？",
-          "Does SBP80–90 apply unchanged with severe TBI?"
+          "Does SBP 80–90 apply unchanged with severe TBI?"
         ],
         "post": [
           "合并重型TBI的出血患者，是否套用SBP80–90？",
-          "Does SBP80–90 apply unchanged with severe TBI?"
+          "Does SBP 80–90 apply unchanged with severe TBI?"
         ],
         "options": [
           [
             "不套用；保障MAP≥80等脑灌注目标",
-            "No; preserve cerebral perfusion such as MAP at least80"
+            "No; preserve cerebral perfusion such as MAP at least 80"
           ],
           [
             "继续仅追求SBP80",
-            "Continue pursuing only SBP80"
+            "Continue pursuing only SBP 80"
           ],
           [
             "以暂时瞳孔正常取消例外",
@@ -3225,11 +3225,11 @@
       {
         "pre": [
           "限制复苏仍MAP45、危及生命，怎样讨论去甲肾上腺素？",
-          "MAP45 persists despite restricted resuscitation with life-threatening compromise. Norepinephrine?"
+          "MAP 45 persists despite restricted resuscitation with life-threatening compromise. Norepinephrine?"
         ],
         "post": [
           "限制复苏仍MAP45、危及生命，怎样讨论去甲肾上腺素？",
-          "MAP45 persists despite restricted resuscitation with life-threatening compromise. Norepinephrine?"
+          "MAP 45 persists despite restricted resuscitation with life-threatening compromise. Norepinephrine?"
         ],
         "options": [
           [
@@ -3276,11 +3276,11 @@
       {
         "pre": [
           "≥65岁伤员SBP108，怎样解释？",
-          "A patient aged at least65 has SBP108. Interpretation?"
+          "A patient aged at least 65 has SBP 108. Interpretation?"
         ],
         "post": [
           "≥65岁伤员SBP108，怎样解释？",
-          "A patient aged at least65 has SBP108. Interpretation?"
+          "A patient aged at least 65 has SBP 108. Interpretation?"
         ],
         "options": [
           [
@@ -3289,7 +3289,7 @@
           ],
           [
             "以成人SBP90标准视为无风险",
-            "Apply SBP90 alone and classify low risk"
+            "Apply SBP 90 alone and classify low risk"
           ],
           [
             "只看心率是否超过120",
@@ -3322,11 +3322,11 @@
       {
         "pre": [
           "24孕周创伤仰卧低血压，初步体位策略？",
-          "Trauma at24 weeks with hypotension supine: positioning?"
+          "Trauma at 24 weeks with hypotension supine: positioning?"
         ],
         "post": [
           "24孕周创伤仰卧低血压，初步体位策略？",
-          "Trauma at24 weeks with hypotension supine: positioning?"
+          "Trauma at 24 weeks with hypotension supine: positioning?"
         ],
         "options": [
           [
@@ -3381,7 +3381,7 @@
           ],
           [
             "照成人固定1 L快速输入",
-            "Give a fixed adult1-L volume"
+            "Give a fixed adult 1-L volume"
           ],
           [
             "反复晶体液直到全部指标正常",
@@ -3609,7 +3609,7 @@
         "options": [
           [
             "RBC20+FFP20 mL/kg按容量，化验后调整",
-            "RBC20 plus FFP20 mL/kg by volume, then adjust to labs"
+            "RBC 20 plus FFP20 mL/kg by volume, then adjust to labs"
           ],
           [
             "按两个成人单位不考虑体重",
@@ -3670,20 +3670,20 @@
         "answer": 0,
         "why": [
           "2×10×20=400，加儿童基础水分700–1000；不是个人处方。",
-          "2×10×20=400 plus pediatric maintenance700–1000; not an individual prescription."
+          "2×10×20=400 plus pediatric maintenance 700–1000; not an individual prescription."
         ],
         "optionWhy": [
           [
             "2×10×20=400，加儿童基础水分700–1000；不是个人处方。",
-            "2×10×20=400 plus pediatric maintenance700–1000; not an individual prescription."
+            "2×10×20=400 plus pediatric maintenance 700–1000; not an individual prescription."
           ],
           [
             "此项遗漏关键条件：2×10×20=400，加儿童基础水分700–1000；不是个人处方。",
-            "This misses a key condition: 2×10×20=400 plus pediatric maintenance700–1000; not an individual prescription."
+            "This misses a key condition: 2×10×20=400 plus pediatric maintenance 700–1000; not an individual prescription."
           ],
           [
             "此项不适合当前情景：2×10×20=400，加儿童基础水分700–1000；不是个人处方。",
-            "This does not fit the case: 2×10×20=400 plus pediatric maintenance700–1000; not an individual prescription."
+            "This does not fit the case: 2×10×20=400 plus pediatric maintenance 700–1000; not an individual prescription."
           ]
         ],
         "references": [
@@ -3794,11 +3794,11 @@
       {
         "pre": [
           "稳定创伤血胸约600 mL，WSES倾向？",
-          "Stable traumatic hemothorax around600 mL: WSES approach?"
+          "Stable traumatic hemothorax around 600 mL: WSES approach?"
         ],
         "post": [
           "稳定创伤血胸约600 mL，WSES倾向？",
-          "Stable traumatic hemothorax around600 mL: WSES approach?"
+          "Stable traumatic hemothorax around 600 mL: WSES approach?"
         ],
         "options": [
           [
@@ -3817,12 +3817,12 @@
         "answer": 0,
         "why": [
           "稳定≥500 mL通常应引流。",
-          "Stable at least500 mL generally needs drainage."
+          "Stable at least 500 mL generally needs drainage."
         ],
         "optionWhy": [
           [
             "稳定≥500 mL通常应引流。",
-            "Stable at least500 mL generally needs drainage."
+            "Stable at least 500 mL generally needs drainage."
           ],
           [
             "稳定不等于无引流指征。",
@@ -3941,16 +3941,16 @@
       {
         "pre": [
           "BTAI稳定3级的SVS2026建议？",
-          "SVS2026 approach to stable grade3 BTAI?"
+          "SVS2026 approach to stable grade 3 BTAI?"
         ],
         "post": [
           "BTAI稳定3级的SVS2026建议？",
-          "SVS2026 approach to stable grade3 BTAI?"
+          "SVS2026 approach to stable grade 3 BTAI?"
         ],
         "options": [
           [
             "可延迟TEVAR>24 h处理合并伤",
-            "May delay TEVAR beyond24 hours for associated injuries"
+            "May delay TEVAR beyond 24 hours for associated injuries"
           ],
           [
             "所有级别都立即TEVAR",
@@ -3958,18 +3958,18 @@
           ],
           [
             "按1级不再考虑干预",
-            "Treat as grade1 without intervention"
+            "Treat as grade 1 without intervention"
           ]
         ],
         "answer": 0,
         "why": [
           "稳定3级可延迟，但须专业监护。",
-          "Stable grade3 permits delayed treatment with specialist monitoring."
+          "Stable grade 3 permits delayed treatment with specialist monitoring."
         ],
         "optionWhy": [
           [
             "稳定3级可延迟，但须专业监护。",
-            "Stable grade3 permits delayed treatment with specialist monitoring."
+            "Stable grade 3 permits delayed treatment with specialist monitoring."
           ],
           [
             "1–2级通常非手术，不能一概干预。",
@@ -3977,7 +3977,7 @@
           ],
           [
             "3级与轻型损伤管理不同。",
-            "Grade3 differs from minimal injury."
+            "Grade 3 differs from minimal injury."
           ]
         ],
         "references": [
@@ -4041,11 +4041,11 @@
       {
         "pre": [
           "小于300 mL的稳定血胸观察前提？",
-          "Conditions for observing stable hemothorax below300 mL?"
+          "Conditions for observing stable hemothorax below 300 mL?"
         ],
         "post": [
           "小于300 mL的稳定血胸观察前提？",
-          "Conditions for observing stable hemothorax below300 mL?"
+          "Conditions for observing stable hemothorax below 300 mL?"
         ],
         "options": [
           [
@@ -4205,7 +4205,7 @@
           ],
           [
             "所有人固定SBP80",
-            "Fixed SBP80 for all"
+            "Fixed SBP 80 for all"
           ]
         ],
         "answer": 0,
@@ -4289,11 +4289,11 @@
       {
         "pre": [
           "SBP88且湿冷，重复FAST阳性、复苏无反应，应？",
-          "SBP88, clammy, positive repeat FAST and no response: next?"
+          "SBP 88, clammy, positive repeat FAST and no response: next?"
         ],
         "post": [
           "SBP88且湿冷，重复FAST阳性、复苏无反应，应？",
-          "SBP88, clammy, positive repeat FAST and no response: next?"
+          "SBP 88, clammy, positive repeat FAST and no response: next?"
         ],
         "options": [
           [
@@ -4727,16 +4727,16 @@
       {
         "pre": [
           "55岁重型TBI的BTF最低SBP参考？",
-          "BTF SBP reference for severe TBI at55 years?"
+          "BTF SBP reference for severe TBI at 55 years?"
         ],
         "post": [
           "55岁重型TBI的BTF最低SBP参考？",
-          "BTF SBP reference for severe TBI at55 years?"
+          "BTF SBP reference for severe TBI at 55 years?"
         ],
         "options": [
           [
             "≥100 mmHg",
-            "At least100 mmHg"
+            "At least 100 mmHg"
           ],
           [
             "80–90 mmHg",
@@ -4750,12 +4750,12 @@
         "answer": 0,
         "why": [
           "50–69岁参考≥100，仍个体化灌注。",
-          "At50–69, reference is at least100 with individualized perfusion."
+          "At50–69, reference is at least 100 with individualized perfusion."
         ],
         "optionWhy": [
           [
             "50–69岁参考≥100，仍个体化灌注。",
-            "At50–69, reference is at least100 with individualized perfusion."
+            "At50–69, reference is at least 100 with individualized perfusion."
           ],
           [
             "允许性低压不适用于重型TBI。",
@@ -4838,7 +4838,7 @@
           ],
           [
             "伤后24 h内均可",
-            "Any time within24 hours"
+            "Any time within 24 hours"
           ],
           [
             "与1+1 g方案叠加",
@@ -4848,12 +4848,12 @@
         "answer": 0,
         "why": [
           "需≥16岁、GCS≤12、无活动性颅外出血。",
-          "Requires age at least16, GCS at most12, no active extracranial bleeding."
+          "Requires age at least 16, GCS at most12, no active extracranial bleeding."
         ],
         "optionWhy": [
           [
             "需≥16岁、GCS≤12、无活动性颅外出血。",
-            "Requires age at least16, GCS at most12, no active extracranial bleeding."
+            "Requires age at least 16, GCS at most12, no active extracranial bleeding."
           ],
           [
             "时间窗并非24 h。",
@@ -4887,7 +4887,7 @@
           ],
           [
             "能，因为GCS15",
-            "Yes because GCS15"
+            "Yes because GCS 15"
           ],
           [
             "只需确认能走路",
@@ -4946,12 +4946,12 @@
         "answer": 0,
         "why": [
           "BTF处理阈值参考>22，需综合判断。",
-          "BTF treatment reference is over22, interpreted in context."
+          "BTF treatment reference is over 22, interpreted in context."
         ],
         "optionWhy": [
           [
             "BTF处理阈值参考>22，需综合判断。",
-            "BTF treatment reference is over22, interpreted in context."
+            "BTF treatment reference is over 22, interpreted in context."
           ],
           [
             "等待更高压力可能延误。",
@@ -4974,11 +4974,11 @@
       {
         "pre": [
           "35岁重型TBI SBP104，哪项正确？",
-          "Age35 severe TBI with SBP104: which is correct?"
+          "Age35 severe TBI with SBP 104: which is correct?"
         ],
         "post": [
           "35岁重型TBI SBP104，哪项正确？",
-          "Age35 severe TBI with SBP104: which is correct?"
+          "Age35 severe TBI with SBP 104: which is correct?"
         ],
         "options": [
           [
@@ -4997,12 +4997,12 @@
         "answer": 0,
         "why": [
           "15–49岁参考≥110。",
-          "At15–49 the reference is at least110."
+          "At15–49 the reference is at least 110."
         ],
         "optionWhy": [
           [
             "15–49岁参考≥110。",
-            "At15–49 the reference is at least110."
+            "At15–49 the reference is at least 110."
           ],
           [
             "脑伤不能沿用出血性允许低压。",
@@ -5072,16 +5072,16 @@
       {
         "pre": [
           "国内2025的3%盐水参考需同时监测？",
-          "What should accompany the Chinese2025 reference for3% saline?"
+          "What should accompany the Chinese 2025 reference for 3% saline?"
         ],
         "post": [
           "国内2025的3%盐水参考需同时监测？",
-          "What should accompany the Chinese2025 reference for3% saline?"
+          "What should accompany the Chinese 2025 reference for 3% saline?"
         ],
         "options": [
           [
             "钠氯/肾功能/容量，避免Na>155",
-            "Sodium/chloride/renal function/volume; avoid sodium over155"
+            "Sodium/chloride/renal function/volume; avoid sodium over 155"
           ],
           [
             "无需任何实验室复查",
@@ -5223,11 +5223,11 @@
       {
         "pre": [
           "HR126、SBP86，休克指数约为？",
-          "HR126 and SBP86: approximate shock index?"
+          "HR 126 and SBP 86: approximate shock index?"
         ],
         "post": [
           "HR126、SBP86，休克指数约为？",
-          "HR126 and SBP86: approximate shock index?"
+          "HR 126 and SBP 86: approximate shock index?"
         ],
         "options": [
           [
@@ -5272,11 +5272,11 @@
       {
         "pre": [
           "储氧15 L下87%、单侧呼吸音低、休克，应？",
-          "SpO₂87 on15 L, unilateral low sounds and shock: next?"
+          "SpO₂ 87 on15 L, unilateral low sounds and shock: next?"
         ],
         "post": [
           "储氧15 L下87%、单侧呼吸音低、休克，应？",
-          "SpO₂87 on15 L, unilateral low sounds and shock: next?"
+          "SpO₂ 87 on15 L, unilateral low sounds and shock: next?"
         ],
         "options": [
           [
@@ -5334,7 +5334,7 @@
           ],
           [
             "已必然低于1.5",
-            "Definitely below1.5"
+            "Definitely below 1.5"
           ],
           [
             "不用监测凝血",
@@ -5353,7 +5353,7 @@
           ],
           [
             "1.7大于1.5。",
-            "1.7 is greater than1.5."
+            "1.7 is greater than 1.5."
           ],
           [
             "持续消耗可快速改变。",
@@ -5436,7 +5436,7 @@
           ],
           [
             "无限晶体维持160",
-            "Unlimited crystalloid to160"
+            "Unlimited crystalloid to 160"
           ]
         ],
         "answer": 0,
@@ -5470,11 +5470,11 @@
       {
         "pre": [
           "ABC≥2伴持续休克应触发？",
-          "ABC at least2 with ongoing shock should prompt?"
+          "ABC at least 2 with ongoing shock should prompt?"
         ],
         "post": [
           "ABC≥2伴持续休克应触发？",
-          "ABC at least2 with ongoing shock should prompt?"
+          "ABC at least 2 with ongoing shock should prompt?"
         ],
         "options": [
           [
@@ -5528,7 +5528,7 @@
         "options": [
           [
             "≥80 mmHg",
-            "At least80 mmHg"
+            "At least 80 mmHg"
           ],
           [
             "50 mmHg即可",
@@ -5542,12 +5542,12 @@
         "answer": 0,
         "why": [
           "欧洲及国内重型TBI参考≥80。",
-          "European/Chinese severe-TBI reference is at least80."
+          "European/Chinese severe-TBI reference is at least 80."
         ],
         "optionWhy": [
           [
             "欧洲及国内重型TBI参考≥80。",
-            "European/Chinese severe-TBI reference is at least80."
+            "European/Chinese severe-TBI reference is at least 80."
           ],
           [
             "50存在灌注不足风险。",
@@ -5577,7 +5577,7 @@
         "options": [
           [
             "低于欧洲正常参考，结合国内≥1.00与趋势",
-            "Below European normal reference; compare Chinese at least1.00 and trend"
+            "Below European normal reference; compare Chinese at least 1.00 and trend"
           ],
           [
             "国内与欧洲目标完全相同",
@@ -6050,11 +6050,11 @@
       {
         "pre": [
           "持续升压药维持SBP95表示？",
-          "SBP95 maintained by vasopressors implies?"
+          "SBP 95 maintained by vasopressors implies?"
         ],
         "post": [
           "持续升压药维持SBP95表示？",
-          "SBP95 maintained by vasopressors implies?"
+          "SBP 95 maintained by vasopressors implies?"
         ],
         "options": [
           [
@@ -6195,11 +6195,11 @@
       {
         "pre": [
           "SBP67且HR86能排除休克？",
-          "SBP67 with HR86 excludes shock?"
+          "SBP 67 with HR 86 excludes shock?"
         ],
         "post": [
           "SBP67且HR86能排除休克？",
-          "SBP67 with HR86 excludes shock?"
+          "SBP 67 with HR 86 excludes shock?"
         ],
         "options": [
           [
@@ -6255,7 +6255,7 @@
           ],
           [
             "等SBP58",
-            "Wait for58"
+            "Wait until SBP 58 mmHg"
           ],
           [
             "等CT完成",
@@ -9019,11 +9019,11 @@
       {
         "pre": [
           "儿童按成人10次固定？",
-          "Use fixed adult10/min in children?"
+          "Use fixed adult 10/min in children?"
         ],
         "post": [
           "儿童按成人10次固定？",
-          "Use fixed adult10/min in children?"
+          "Use fixed adult 10/min in children?"
         ],
         "options": [
           [
@@ -10141,7 +10141,7 @@
         "options": [
           [
             "14G/10G约8 cm",
-            "14G/10G about8 cm"
+            "14G/10G about 8 cm"
           ],
           [
             "短胰岛素针",
@@ -10649,20 +10649,20 @@
         ],
         "answer": 0,
         "why": [
-          "快速排血与监測需适配。",
+          "快速排血与监测需适配。",
           "Match rapid drainage/monitoring needs."
         ],
         "optionWhy": [
           [
-            "快速排血与监測需适配。",
+            "快速排血与监测需适配。",
             "Match rapid drainage/monitoring needs."
           ],
           [
-            "此项不满足条件：快速排血与监測需适配。",
+            "此项不满足条件：快速排血与监测需适配。",
             "This fails the condition: Match rapid drainage/monitoring needs."
           ],
           [
-            "此项遗漏关键效果：快速排血与监測需适配。",
+            "此项遗漏关键效果：快速排血与监测需适配。",
             "This misses the key effect: Match rapid drainage/monitoring needs."
           ]
         ],
@@ -12666,11 +12666,11 @@
       {
         "pre": [
           "国内2006轻伤颜色？",
-          "Chinese2006 minor color?"
+          "Chinese 2006 minor color?"
         ],
         "post": [
           "国内2006轻伤颜色？",
-          "Chinese2006 minor color?"
+          "Chinese 2006 minor color?"
         ],
         "options": [
           [
@@ -13844,20 +13844,20 @@
         "answer": 0,
         "why": [
           "差值<30需专科判断。",
-          "Delta below30 needs specialist judgment."
+          "Delta below 30 needs specialist judgment."
         ],
         "optionWhy": [
           [
             "差值<30需专科判断。",
-            "Delta below30 needs specialist judgment."
+            "Delta below 30 needs specialist judgment."
           ],
           [
             "此项不符合条件：差值<30需专科判断。",
-            "This misses the condition: Delta below30 needs specialist judgment."
+            "This misses the condition: Delta below 30 needs specialist judgment."
           ],
           [
             "此项遗漏关键判断：差值<30需专科判断。",
-            "This omits the key decision: Delta below30 needs specialist judgment."
+            "This omits the key decision: Delta below 30 needs specialist judgment."
           ]
         ],
         "references": [
@@ -14123,11 +14123,11 @@
       {
         "pre": [
           "下肢绝对间室压>40？",
-          "Absolute limb compartment pressure over40?"
+          "Absolute limb compartment pressure over 40?"
         ],
         "post": [
           "下肢绝对间室压>40？",
-          "Absolute limb compartment pressure over40?"
+          "Absolute limb compartment pressure over 40?"
         ],
         "options": [
           [
@@ -14482,11 +14482,11 @@
       {
         "pre": [
           "国内2019抗生素疗程表述？",
-          "Chinese2019 duration wording?"
+          "Chinese 2019 duration wording?"
         ],
         "post": [
           "国内2019抗生素疗程表述？",
-          "Chinese2019 duration wording?"
+          "Chinese 2019 duration wording?"
         ],
         "options": [
           [
@@ -14788,11 +14788,11 @@
         "options": [
           [
             "成人≤8 h开始24 h输注",
-            "Adult start within8 h,24 h infusion"
+            "Adult start within 8 h,24 h infusion"
           ],
           [
             ">8 h均常规",
-            "Routine after8 h"
+            "Routine after 8 h"
           ],
           [
             "所有人48 h",

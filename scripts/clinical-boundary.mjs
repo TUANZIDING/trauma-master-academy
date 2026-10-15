@@ -29,7 +29,8 @@ export function validateClinicalData(data){
   assert.ok(sections.length,page);for(const section of sections){pair(section.title,page);refs(section.references,page);assert.ok(section.id&&section.cards.length,page);for(const card of section.cards){pair(card.title,page);card.rows.forEach(row=>pair(row,page));}}
  }
  for(const card of data.cards){
-  pair(card.title,card.id);pair(card.scope,card.id);refs(card.references,card.id);
+  pair(card.title,card.id);pair(card.scope,card.id);pair(card.footer,card.id);refs(card.references,card.id);
+  assert.ok(card.rows.every(row=>!/(?:以本院[^。；]*为准|Follow institutional[^.]*policy)/i.test(row.join(' '))),card.id+' policy belongs in footer');
   assert.ok(card.rows.length>=2&&card.rows.length<=4);card.rows.forEach(row=>pair(row,card.id));
   assert.ok(Array.isArray(card.courses)&&card.courses.length);assert.ok(Array.isArray(card.claimIds));
   card.claimIds.forEach(id=>assert.ok(data.claims.some(c=>c.id===id),card.id));

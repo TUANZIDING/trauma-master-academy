@@ -299,7 +299,7 @@
       ],
       evidence: [
         evidence("胸腔引流不是所有气胸的唯一答案", "A drain is not the only answer to every pneumothorax", "呼吸/循环受损和正压通气情境尤其需要团队评估；小而孤立者可能有其他路径。", "Respiratory/circulatory compromise and positive-pressure ventilation need particular team assessment; small isolated injuries may follow other paths.", "不能把一个诊断标签自动转换为同一装置。", "One diagnostic label cannot automatically map to one device.", ["S-WSES-AAST-THORACIC-2025"]),
-        evidence("危及生命时不等影像", "Life threat should not wait for imaging", "影像应紧急获取和即时解释，但不稳定生理优先。", "Imaging should be urgent and interpreted immediately, but unstable physiology comes first.", "公开页本页提供有来源的参考数字与关键步骤：实习识别与报告；规培在上级监督下执行；主治指挥与资源调度。剂量与阈值以本院规范为准。", "The public page gives no incision site, device specification, or insertion depth.", ["S-NICE-NG39"]),
+        evidence("危及生命时不等影像", "Life threat should not wait for imaging", "影像应紧急获取和即时解释，但不稳定生理优先。", "Imaging should be urgent and interpreted immediately, but unstable physiology comes first.", "公开页本页提供有来源的参考数字与关键步骤：实习识别与报告；规培在上级监督下执行；主治指挥与资源调度。剂量与阈值；以本院规范为准。", "The public page gives no incision site, device specification, or insertion depth.", ["S-NICE-NG39"]),
         evidence("置管后仍是动态任务", "Post-placement remains dynamic", "持续评价患者反应、漏气、引流、连接和并发症。", "Continue to evaluate response, air leak, output, connection, and complications.", "器材规格、系统和抗菌策略留给本院协议。", "Device specification, system, and antimicrobial strategy remain local protocol items.", ["S-WSES-AAST-THORACIC-2025"])
       ],
       storyboard: [

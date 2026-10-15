@@ -162,7 +162,7 @@
           "correct": true,
           "feedback": [
             "HR/SBP两项ABC已至少2，伤后25 min在TXA时间窗内。",
-            "Two ABC criteria are present; at25 minutes the TXA window is open."
+            "Two ABC criteria are present; at 25 minutes the TXA window is open."
           ]
         },
         {
@@ -173,7 +173,7 @@
           "correct": false,
           "feedback": [
             "该选择会遗漏当前风险：HR/SBP两项ABC已至少2，伤后25 min在TXA时间窗内。",
-            "This misses current risk: Two ABC criteria are present; at25 minutes the TXA window is open."
+            "This misses current risk: Two ABC criteria are present; at 25 minutes the TXA window is open."
           ]
         },
         {
@@ -184,7 +184,7 @@
           "correct": false,
           "feedback": [
             "该选择会遗漏当前风险：HR/SBP两项ABC已至少2，伤后25 min在TXA时间窗内。",
-            "This misses current risk: Two ABC criteria are present; at25 minutes the TXA window is open."
+            "This misses current risk: Two ABC criteria are present; at 25 minutes the TXA window is open."
           ]
         }
       ],
@@ -433,7 +433,7 @@
       },
       "question": [
         "FAST阴性但SBP88，怎样继续C？",
-        "FAST is negative but SBP88 persists. Circulation plan?"
+        "FAST is negative but SBP 88 persists. Circulation plan?"
       ],
       "good": [
         "不能，必须放回机制、体征和连续趋势。",
@@ -599,7 +599,7 @@
       ],
       "info": [
         "已升级储氧面罩并复核出血、气道、胸部；MTP评估及止血团队联络已启动。氧合改善但BP88/56、HR126、乳酸4.8仍提示灌注问题；复评不是结束。",
-        "Reservoir oxygen and bleeding/airway/chest reassessment are in place; MTP assessment and hemorrhage-control coordination have started. Better oxygenation does not resolve BP88/56, HR126 and lactate4.8 perfusion concern."
+        "Reservoir oxygen and bleeding/airway/chest reassessment are in place; MTP assessment and hemorrhage-control coordination have started. Better oxygenation does not resolve BP88/56, HR 126 and lactate 4.8 perfusion concern."
       ],
       "unknown": [
         "不能用SpO₂改善宣布稳定；出血源、胸部原因和乳酸趋势仍待明确。",

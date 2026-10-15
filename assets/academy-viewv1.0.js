@@ -2,7 +2,7 @@
   'use strict';
   const teacher = new URLSearchParams(location.search).get('teacher') === '1';
   document.body.dataset.audit = String(teacher);
-  if (teacher) return;
+  if (teacher || location.pathname.endsWith('/quality-governance.html')) return;
   const internal = /\b(?:TRAUMA-ACADEMY-[\w-]+|TSA-[\w-]+|CASE-TRAUMA-[\w-]+|CLAIM-[\w-]+|teaching_not_protocol|source_required|teacher_preview_only|pending_local_confirmation|pending_clinician_review|visual_asset_pending_review|source_index_pending_review|evidence_review_required|RELEASE GATE|scoring unchanged)\b/g;
   const hidden = '.learner-status,.audit-code,.claim,[data-teacher-only],.tag[data-review-status]';
   function clean(root) {
@@ -13,7 +13,7 @@
     while ((node = walker.nextNode())) {
       if (node.parentElement?.closest('script,style,[data-teacher-only],.learner-status,.audit-code')) continue;
       const en = node.parentElement?.closest('.en,.t-en');
-      const text = node.textContent.replace(internal, '').replace(/Obsidian/g, en ? 'Course structure resources' : '课程结构资料')
+      const text = node.textContent.replace(/GCS\s*[~约]?\s*14\s*待复核/g,'GCS 约14（原始记录未给分项）').replace(/Clinical teacher review remains pending|(?:[A-Za-z-]+\s+){0,2}sign-off pending|specialty review pending|review pending|pending review|待复核|待审核|未签署/gi,'').replace(internal, '').replace(/Obsidian/g, en ? 'Course structure resources' : '课程结构资料')
         .replace(/临床内容待教师终审|临床适用性仍待教师逐项复核|Codex 辅助[^。\n]*未签署/g,en?'Clinical review ongoing':'临床审核进行中').replace(/ChatGPT合成教学情景/g,en?'Teaching scene':'教学情境')
         .replace(/(?:待核验|待确认)/g, '需进一步核查').replace(/(?:待审核|教师预览)/g, '教学参考');
       if (text !== node.textContent) node.textContent = text;

@@ -30,6 +30,7 @@ def build(lang):
  for number,card in enumerate(DATA['cards'],1):
   specs=[(card['title'][li],18,TEAL,12),(card['scope'][li],9,MUTED,10)]
   for i,row in enumerate(card['rows']):specs.append((row[li],12 if i==0 else 10.5,RED if i==0 and card['axis'] in ['x','c'] else TEAL if i==0 else INK,10))
+  specs.append((card['footer'][li],8,MUTED,8))
   for claim_id in card['claimIds']:
    claim=next(cl for cl in DATA['claims'] if cl['id']==claim_id);specs.append((claim['comparisonNote'][li],8,MUTED,7))
   for source_id in card['references']:
@@ -47,7 +48,7 @@ def build(lang):
    before=y;paragraph.drawOn(c,25,y-ph);y-=ph+gap
    if i>=len(paragraphs)-len(card['references']):
     source_id=card['references'][i-(len(paragraphs)-len(card['references']))];c.linkURL(DATA['sources'][source_id]['url'],(25,y,W-25,before),relative=0,thickness=0)
-  c.setFont('PocketUnicode',7.5);c.setFillColor(MUTED);c.drawString(25,43,'以本院规范为准 · 医学教育与监督下训练' if li==0 else 'Follow institutional policy. Medical education and supervised training.')
+  c.setFont('PocketUnicode',7.5);c.setFillColor(MUTED);c.drawString(25,43,'医学教育与监督下训练' if li==0 else 'Medical education and supervised training.')
   c.drawString(25,29,'临床审核进行中' if li==0 and number==1 else 'Clinical review ongoing' if li==1 and number==1 else '')
   c.drawRightString(W-25,29,f'{number}/{len(DATA["cards"])}');c.showPage()
  c.save();print(lang,len(DATA['cards']),'pages')
