@@ -189,9 +189,9 @@ Original project code and documentation are released under the [MIT License](LIC
 
 ## 第四轮状态 / Round 4 status
 
-A–C已完成：孕妇抗D路径、50卡页脚、英文间距、上下肢卡片分工与DAS版本差异。D–E实测进展见[第四轮验收记录](docs/fourth-round-validationv1.0.md)。临床签署仍为空。
+A–E已完成：孕妇抗D路径、50卡页脚、英文间距、上下肢卡分工、DAS版本差异、WebP性能与310道独立题（126道情境题）。完整结果见[第四轮验收记录](docs/fourth-round-validationv1.0.md)。临床签署仍为空。
 
-A–C cover anti-D pathways, 50 card footers, English spacing, regional limb cards and DAS differences. See the [round-4 validation record](docs/fourth-round-validationv1.0.md) for D–E completion and measured results. Clinical signoff remains unsigned.
+A–E cover anti-D pathways, card footers, English spacing, regional limb cards, DAS differences, responsive WebP and 310 independent items including 126 vignettes. See the [round-4 validation record](docs/fourth-round-validationv1.0.md) for measured results. Clinical signoff remains unsigned.
 
 ### 构建与外链 / Builds and links
 
@@ -211,13 +211,13 @@ npm run check:links
 npx playwright install chromium && node scripts/visual-regressionv1.0.mjs
 ```
 
-自动启动8096端口本地服务，输出docs/screenshots/round4/截图和JSON，覆盖首页、22门课、口袋卡与OSCE的1440×900及390×844视口。检测横向溢出、文本容器裁切、控制台错误、404。首次没有历史像素基线，属于视觉验收；作者仍需人工看图。截图和报告默认由Git忽略。
+自动启动8096端口本地服务，输出docs/screenshots/round4/截图和JSON，覆盖首页、22门课、口袋卡与OSCE的1440×900及390×844视口。检测横向溢出、文本容器裁切、控制台错误、404。脚本展开前后测后截图。首次没有历史像素基线，属于视觉验收；作者仍需人工看图。截图和报告默认由Git忽略。
 
-The script starts port8096 locally and writes screenshots/JSON to docs/screenshots/round4/ for home, 22 courses, pocket cards and OSCE at 1440×900 and 390×844. It checks overflow, clipped containers, console errors and404 resources. There is no historical pixel baseline on first run; inspect screenshots manually. Evidence is ignored by Git by default.
+The script starts port 8096 locally and writes screenshots/JSON to docs/screenshots/round4/ for home, 22 courses, pocket cards and OSCE at 1440×900 and 390×844. It checks overflow, clipped containers, console errors and 404 resources. Tests are expanded before capture. There is no historical pixel baseline on first run; inspect screenshots manually. Evidence is ignored by Git by default.
 
 ### 作者待办 / Author actions
 
 - 临床审核人/角色/日期签署 / Genuine clinician name, role and dated signoff.
-- 原文核实：2015骨盆带36 h；国家2025现场分诊图；髂筋膜阻滞“首选”原句；中华急诊医学杂志2025颅脑共识全文。Original-source checks: China2015 binder36 h, national2025 field-triage figure, first-choice FICB wording and CEM2025 adult-TBI full text.
-- 本院核对：冷沉淀每U纤维蛋白原含量、抗D剂型/可及性、2006事件数字完整条件与本院预案。Local checks: fibrinogen per cryoprecipitate unit, anti-D formulations/availability and full2006 classification conditions.
-- 在作者Mac运行并人工查看真实浏览器结果 / Run and visually inspect browser evidence on the author's Mac.
+- 原文核实：2015骨盆带36 h；国家2025现场分诊图；髂筋膜阻滞“首选”原句；中华急诊医学杂志2025颅脑共识全文。Original-source checks: China 2015 binder 36 h, national 2025 field-triage figure, first-choice FICB wording and CEM 2025 adult-TBI full text.
+- 本院核对：冷沉淀每U纤维蛋白原含量、抗D剂型/可及性、2006事件数字完整条件与本院预案。Local checks: fibrinogen per cryoprecipitate unit, anti-D formulations/availability and full 2006 classification conditions.
+- 本机Chromium 151已完成25路由×2视口检查并人工抽查；作者可按命令复现及复核实际授课设备。 / Chromium 151 passed 25 routes at two viewports with sample visual inspection; reproduce and check the actual teaching devices.

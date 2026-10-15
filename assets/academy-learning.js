@@ -51,7 +51,7 @@
       if(hero)hero.after(start);else if(main)main.prepend(start);
     }
     start.querySelector('.learning-level').innerHTML=levelMarkup();
-    const scoreKey=`academy-practice-v1:${id}`;
+    const scoreKey=`academy-practice-round4-v1.0:${id}`;
     const comparison=document.createElement('p');comparison.className='learning-results';comparison.setAttribute('aria-live','polite');
     function compare(){const result=read(scoreKey)||{};comparison.innerHTML=bi(result.pre&&result.post?[`本地练习记录：前测 ${result.pre.score}/5 → 后测 ${result.post.score}/5。题目用于形成性反馈，未作测量学验证。`,`Local practice: pre ${result.pre.score}/5 → post ${result.post.score}/5. Formative items are not psychometrically validated.`]:['练习记录仅保存在本浏览器；不收集姓名，不上传成绩。','Practice records stay in this browser; no names or scores are submitted.']);}
     function makeTest(kind){

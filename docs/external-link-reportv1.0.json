@@ -1,0 +1,3397 @@
+{
+  "date": "2026-10-15",
+  "method": "curl HEAD then GET on ambiguous status; browser UA;15-second total budget per URL; TLS verified",
+  "total": 304,
+  "ok": 263,
+  "failed": [],
+  "manualConfirmation": [
+    {
+      "url": "http://www.w3.org/2000/svg",
+      "files": [
+        "assets/site.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://aci.health.nsw.gov.au/networks/respiratory/resources/pleural-drains-in-adults",
+      "files": [
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/American,_Ghanaian_medical_professionals_partner_to_treat_patients,_hone_skills_170216-A-IO170-012.jpg",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 429,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/MorisonNoText.png",
+      "files": [
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 429,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Splinting-an-arm.png",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 429,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tourniquet_Application_(6242743).jpg",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 429,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Unusual-new-signs-of-pneumothorax-at-lung-ultrasound-2036-7902-5-10-S3.ogv",
+      "files": [
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 429,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support",
+      "files": [
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://doi.org/10.1093/ndt/gfr720",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/trauma-disaster-medicine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://emergencymed.org.il/wp-content/uploads/2026/03/Difficult-Airway-Society-2025-guidelines-for-management-of.pdf",
+      "files": [
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://etmcourse.com/",
+      "files": [
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://etmcourse.com/course-description/",
+      "files": [
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://etmcourse.com/thoracotomy-critique/",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/chest-finger-thoracostomy-v6-review.md"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/21925682231189928",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/spine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/jum.16027",
+      "files": [
+        "courses/polytrauma-shock-reassessment-case.html"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://stacks.cdc.gov/view/cdc/28987/cdc_28987_DS1.pdf",
+      "files": [
+        "courses/trauma-disaster-medicine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://thorax.bmj.com/content/72/Suppl_1/ii1",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/xabcde.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.americanjournalofsurgery.com/article/S0002-9610%2822%2900247-1/abstract",
+      "files": [
+        "courses/secondary-tertiary-survey.html"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.cadrj.com/CN/abstract/abstract4178.shtml",
+      "files": [
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.east.org/education-resources/practice-management-guidelines",
+      "files": [
+        "courses/quality-governance.html",
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.east.org/education-resources/practice-management-guidelines/details/emergency-department-thoracotomy",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.east.org/education-resources/practice-management-guidelines/details/hemothorax-and-occult-pneumothorax,-management-of",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.east.org/mobile/practice-management-guideline/trauma/98",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/lower-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0013/140611/g-trauma.pdf",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)32233-0/fulltext",
+      "files": [
+        "courses/damage-control-resuscitation.html",
+        "courses/pocket-cards.html",
+        "courses/tbi-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.westerntrauma.org/western-trauma-association-algorithms/management-of-the-mangled-extremity/note-d/",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/upper-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.westerntrauma.org/western-trauma-association-algorithms/resuscitative-thoracotomy/note-b/",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    }
+  ],
+  "unconfirmed": [
+    {
+      "url": "https://wjw.beijing.gov.cn/xwzx_20031/jcdt/202604/t20260415_4583307.html",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/lower-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to wjw.beijing.gov.cn:443 \n"
+    },
+    {
+      "url": "https://ww2.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf",
+      "files": [
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (60) SSL: no alternative certificate subject name matches target host name 'ww2.facs.org'\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the leg"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/fzs/c100048/202202/fc6310d72212427c9f5ef2f7f0166aac/files/1733125181067_16379.pdf",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/fzs/c100048/202309/3c6a75b497774200b3c39aa1765806e2/files/1733125843463_67689.pdf",
+      "files": [
+        "courses/trauma-care-chain.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/wjw/gfxwj/201002/79d42b9c8b3f47ee91000d31de116784.shtml",
+      "files": [
+        "courses/documentation-handover.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/ylyjs/zcwj/202512/1f0e99982b49476b9b076ee10ef9ca75.shtml",
+      "files": [
+        "courses/damage-control-resuscitation.html",
+        "courses/documentation-handover.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/ylyjs/zcwj/202601/3c4f6b771aba4ce7bdb8112823f7825a.shtml",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/pelvic-trauma.html",
+        "courses/pocket-cards.html",
+        "courses/polytrauma-mini.html",
+        "courses/polytrauma-shock-reassessment-case.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/ylyjs/zcwj/202601/3c4f6b771aba4ce7bdb8112823f7825a/files/%E9%99%84%E4%BB%B62.%E7%AA%81%E5%8F%91%E4%BA%8B%E4%BB%B6%E7%83%A7%E4%BC%A4%E4%BC%A4%E5%91%98%E5%8C%BB%E7%96%97%E6%95%91%E6%B2%BB%E8%A7%84%E8%8C%83%EF%BC%882025%E5%B9%B4%E7%89%88%EF%BC%89.pdf",
+      "files": [
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/yzygj/c100068/201804/42ab2552298047679cd6ec733f233862.shtml",
+      "files": [
+        "courses/documentation-handover.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/yzygj/c100068/202212/07dc9155b03c41ce9482bea34e643a6d.shtml",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "orthopaedics/lower-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.orthoinfo.org/diseases--conditions/dislocated-shoulder/",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (28) Operation timed out after 15004 milliseconds with 0 bytes received\n"
+    },
+    {
+      "url": "https://www.orthoinfo.org/diseases--conditions/elbow-dislocation",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (28) Operation timed out after 15005 milliseconds with 0 bytes received\n"
+    },
+    {
+      "url": "https://www.zgddek.com/CN/article/downloadArticleFile.do?attachType=PDF&id=26144",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (52) Empty reply from server\n"
+    }
+  ],
+  "rows": [
+    {
+      "url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "files": [
+        "courses/trauma-disaster-medicine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "http://www.w3.org/2000/svg",
+      "files": [
+        "assets/site.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://2023anita.github.io/anesthesia-teaching-courseware/hfs-mvd-anesthesia-course/index-standalone.html",
+      "files": [
+        "docs/xabcde-audit.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://aci.health.nsw.gov.au/networks/respiratory/resources/pleural-drains-in-adults",
+      "files": [
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://b-s-h.org.uk/guidelines/guidelines/guideline-for-the-use-of-anti-d-immunoglobulin-for-the-prevention-of-haemolytic-disease-of-the-fetus-and-newborn",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://b-s-h.org.uk/guidelines/guidelines/use-of-andexanet-alfa-a-british-society-for-haematology-position-statement",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://braintrauma.org/coma/guidelines/severe-tbi",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/tbi-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://castjournals.cast.org.cn/joweb/jfjyxzz/CN/1194617491579183281",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/tbi-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/b68a/5102606/34bf2261b758/wjem-17-766-s002-pmcvs_normal.mp4",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://cgo.mod.uk/clinical-guidelines-for-operations/resuscitation-procedures/thoracostomy/",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/chest-finger-thoracostomy-v6-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://cmab.yiigle.com/uploads/guide_html/%E4%B8%AD%E5%9B%BD%E5%BC%80%E6%94%BE%E6%80%A7%E9%AA%A8%E6%8A%98%E8%AF%8A%E6%96%AD%E4%B8%8E%E6%B2%BB%E7%96%97%E6%8C%87%E5%8D%97(2019%E7%89%88).html",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/index.html",
+        "orthopaedics/lower-limb.html",
+        "orthopaedics/upper-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:A_mannequin_and_a_bag_valve_mask_are_used_to_train_U.S._Marines_in_cardiopulmonary_resuscitation_(CPR)_for_emergency_procedures_at_Marine_Corps_Air_Station_Beaufort,_S.C.,_Jan._28,_2010_100128-M-QS915-003.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Apical_pneumothorax_shown_on_CT_and_chest_X-ray_with_left_first_rib_fracture.png",
+      "files": [
+        "courses/polytrauma-shock-reassessment-case.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Bag_mask_ventilation_device.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Chest_drain_-_bedside_with_fluids.jpg",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "assets/trauma-skills-source-backed-data.js",
+        "docs/chest-management-v5-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:ChestTube.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:CHUM_Emergency_Level_Resuscitation.jpg",
+      "files": [
+        "courses/trauma-bay.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Collesfracture.jpg",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:CricGear.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:CT_Spleen_Rupture.jpg",
+      "files": [
+        "courses/abdominal-injury-mini.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Dislocated_hip_replacement.jpg",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:DRF_Eurocopter_EC135_Christoph_44_D-HDRK_G%C3%B6ttingen_2017_03.jpg",
+      "files": [
+        "courses/trauma-care-chain.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Emergency_medical_services_providers_triage_a_simulated_patient_in_a_105th_Airlift_Wing_hangar_during_the_National_Disaster_Medical_System_(NDMS)_exercise_Golden_Eagle_III_at_Stewart_Air_National_Guard_Base_130601-Z-GJ424-054.jpg",
+      "files": [
+        "courses/trauma-disaster-medicine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:FEMA_-_38280_-_Urban_Search_And_Rescue_Teams_Working_Together_In_Texas_After_Hurricane_Ike,_2008.jpg",
+      "files": [
+        "courses/trauma-disaster-medicine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Femurfraktur_unter_Bisphosphonattherapie_57W_-_CT_Topo_Volumen_Rendering_postoperatives_Roentgen_-_001.jpg",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Galeazzifraktur_1_THWZ.jpg",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Grade4LiverLac.png",
+      "files": [
+        "courses/abdominal-injury-mini.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Gray245.png",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Gray342.png",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Gray349.png",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Gray350.png",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Gray357.png",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:HipdisX.png",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:III_EOTG_-_MTB_Conducts_Prolonged_Casualty_Care_Course_(8948455).jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Intubation_endotracheal_tube_laryngoscope.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Lateral_Tibial_Plateau_fracture_XRay_with_Depression.jpg",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:MidShaftHumerousMark.png",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Morison003.jpg",
+      "files": [
+        "courses/abdominal-hemorrhagic-shock-case.html",
+        "courses/trauma-disaster-medicine.html",
+        "courses/xabcde.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Needle_Chest_Decompression_(7952541).jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:NeedleCryc1.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Operation_Georgian_Shield_2023_(7887112).jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Paramedics_in_an_ambulance.jpg",
+      "files": [
+        "courses/trauma-care-chain.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pneumothorax_CXR.jpg",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/xabcde.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Proxhumerousfrac.png",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Radiographie_d%E2%80%99une_luxation_post%C3%A9rieur_du_coude_gauche_sans_fracture.jpg",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:SamSplint-straight.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Shoulder_dislocation,_anteroposterior_before_reduction.jpg",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:SPMAGTF-CR-AF_medical_personnel_use_FRSS-STP_to_conduct_FAST_exams_160721-M-QM580-012.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Subduralandherniation.PNG",
+      "files": [
+        "courses/tbi-mini.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:T12compressionfrac.png",
+      "files": [
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Thoacic_Decompression_Needle_2.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Tourniquet_application.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Tourniquet_CAT_training.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Trauma_subdural_arrow.jpg",
+      "files": [
+        "courses/tbi-mini.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Triage_tag_(Tokyo_Fire_Department).jpg",
+      "files": [
+        "courses/trauma-disaster-medicine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:UOTW_67_-_Ultrasound_of_the_Week_3.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:US_Navy_080904-M-9389C-029_Hospital_Corpsman_3rd_Class_Edwin_L._Daniel_demonstrates_how_to_properly_place_a_SAM_splint_on_a_patient.jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:US,_Angola_conduct_trauma_activation_simulation_(9918722).jpg",
+      "files": [
+        "courses/trauma-bay.html",
+        "courses/trauma-disaster-medicine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:X-ray_of_bimalleolar_fracture.jpg",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:ZZS_MSK,_z%C3%A1chran%C3%A1%C5%99i,_kardiopulmon%C3%A1ln%C3%AD_resuscitace_a_endotrache%C3%A1ln%C3%AD_intubace_(03).jpg",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/American,_Ghanaian_medical_professionals_partner_to_treat_patients,_hone_skills_170216-A-IO170-012.jpg",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 429,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/ChesttubeforRtPneumo.png",
+      "files": [
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Clinician-performed-resuscitative-ultrasonography-for-the-initial-evaluation-and-resuscitation-of-1757-7241-17-34-S7.ogv",
+      "files": [
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hemothorax.jpg",
+      "files": [
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Morison003.jpg",
+      "files": [
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/MorisonNoText.png",
+      "files": [
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 429,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Splinting-an-arm.png",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 429,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tourniquet_Application_(6242743).jpg",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 429,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tourniquet_application.jpg",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Unusual-new-signs-of-pneumothorax-at-lung-ultrasound-2036-7902-5-10-S3.ogv",
+      "files": [
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 429,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Template:PD-self",
+      "files": [
+        "courses/trauma-disaster-medicine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-FEMA",
+      "files": [
+        "courses/trauma-disaster-medicine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military",
+      "files": [
+        "courses/trauma-disaster-medicine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Army",
+      "files": [
+        "courses/trauma-bay.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support",
+      "files": [
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/xabcde.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "files": [
+        "courses/tbi-mini.html",
+        "orthopaedics/lower-limb.html",
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "files": [
+        "courses/abdominal-hemorrhagic-shock-case.html",
+        "courses/xabcde.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "files": [
+        "courses/abdominal-injury-mini.html",
+        "orthopaedics/lower-limb.html",
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "files": [
+        "courses/polytrauma-shock-reassessment-case.html",
+        "courses/trauma-bay.html",
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/2.0",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/2.0/",
+      "files": [
+        "courses/trauma-care-chain.html",
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/2.5/",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/chest-management-v5-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/3.0/",
+      "files": [
+        "courses/cspine-hip-dislocation-case.html",
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/4.0",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/cspine-hip-dislocation-case.html",
+        "courses/pelvic-trauma.html",
+        "courses/polytrauma-mini.html",
+        "courses/trauma-care-chain.html",
+        "orthopaedics/spine.html",
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://das.uk.com/airclips/",
+      "files": [
+        "assets/trauma-skills-airway-realism.js",
+        "assets/trauma-skills-decision-airway.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://das.uk.com/algorithms/",
+      "files": [
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://das.uk.com/guidelines/cervical-spine-injury/",
+      "files": [
+        "assets/trauma-skills-airway-realism.js",
+        "assets/trauma-skills-enriched-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://das.uk.com/guidelines/das_intubation_guidelines/",
+      "files": [
+        "assets/trauma-skills-airway-realism.js",
+        "assets/trauma-skills-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://das.uk.com/new-das-2025-intubation-guidelines/",
+      "files": [
+        "assets/trauma-skills-airway-realism.js",
+        "assets/trauma-skills-enriched-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://das.uk.com/plan-a-videos/",
+      "files": [
+        "assets/trauma-skills-airway-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.bja.2025.10.006",
+      "files": [
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.cjtee.2026.01.002",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/damage-control-resuscitation.html",
+        "courses/pocket-cards.html",
+        "courses/polytrauma-mini.html",
+        "courses/special-populations.html",
+        "courses/tbi-mini.html",
+        "courses/trauma-care-chain.html",
+        "courses/xabcde.html",
+        "orthopaedics/lower-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1016/S0140-6736(09)61558-0",
+      "files": [
+        "courses/tbi-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1093/ndt/gfr720",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/trauma-disaster-medicine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://doi.org/10.1186/s12245-025-00990-5",
+      "files": [
+        "courses/open-pelvic-injury-case.html",
+        "courses/pelvic-trauma.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "docs/learning-refresh-20261007.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1186/s13017-017-0117-6",
+      "files": [
+        "courses/pelvic-trauma.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1186/s13017-020-00302-7",
+      "files": [
+        "courses/abdominal-injury-mini.html",
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1186/s13017-022-00418-y",
+      "files": [
+        "courses/abdominal-injury-mini.html",
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1186/s13017-022-00457-5",
+      "files": [
+        "courses/abdominal-injury-mini.html",
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1186/s13017-024-00559-2",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1186/s13017-025-00651-1",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/xabcde.html",
+        "assets/trauma-skills-data.js",
+        "docs/SOURCE_INDEX.md",
+        "docs/trauma-case-v4-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1186/s13054-023-04327-7",
+      "files": [
+        "courses/abdominal-injury-mini.html",
+        "courses/pelvic-trauma.html",
+        "courses/polytrauma-mini.html",
+        "courses/polytrauma-shock-reassessment-case.html",
+        "courses/tbi-mini.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.3760/cma.j.issn.1671-0282.2023.11.006",
+      "files": [
+        "courses/damage-control-resuscitation.html",
+        "courses/open-pelvic-injury-case.html",
+        "courses/pelvic-trauma.html",
+        "courses/pocket-cards.html",
+        "courses/polytrauma-mini.html",
+        "courses/polytrauma-shock-reassessment-case.html",
+        "courses/special-populations.html",
+        "courses/tbi-mini.html",
+        "courses/trauma-disaster-medicine.html",
+        "courses/xabcde.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://emergencymed.org.il/wp-content/uploads/2026/03/Difficult-Airway-Society-2025-guidelines-for-management-of.pdf",
+      "files": [
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://escholarship.org/uc/item/6dn0d36x",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/spine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 202,
+      "state": "ok"
+    },
+    {
+      "url": "https://etmcourse.com/",
+      "files": [
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://etmcourse.com/course-description/",
+      "files": [
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://etmcourse.com/thoracotomy-critique/",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/chest-finger-thoracostomy-v6-review.md"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://github.com/TUANZIDING/trauma-master-academy.git",
+      "files": [
+        "README.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://hospital.seu.edu.cn/2023/0304/c29923a435970/pagem.htm",
+      "files": [
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ics.ac.uk/static/60aaa368-3687-47f4-ad8f07fc239aed9d/The-Transfer-Of-The-Critically-Ill-Adultedition52026FINALs.pdf",
+      "files": [
+        "courses/trauma-care-chain.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/21925682231189928",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/spine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://jts.health.mil/assets/docs/cpgs/Airway_Management_in_Trauma_28_Jan_2026_ID39.pdf",
+      "files": [
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://jts.health.mil/assets/docs/cpgs/Anesthesia_for_Trauma_Patients_05_Apr_2021_ID40.pdf",
+      "files": [
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://jts.health.mil/assets/docs/cpgs/Pelvic_Fracture_Care_17_Feb_2026_ID34v1.1.pdf",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://learning-media.allogy.com/api/v1/pdf/42b34d77-09aa-4487-be41-4303823f3304/contents",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s12028-026-02601-4",
+      "files": [
+        "courses/damage-control-resuscitation.html",
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "courses/tbi-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13017-017-0117-6",
+      "files": [
+        "courses/abdominal-hemorrhagic-shock-case.html",
+        "courses/open-pelvic-injury-case.html",
+        "courses/pelvic-trauma.html",
+        "courses/pocket-cards.html",
+        "courses/polytrauma-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "docs/mini-modules-v8/README.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13017-017-0151-4",
+      "files": [
+        "courses/abdominal-injury-mini.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13017-020-00302-7",
+      "files": [
+        "courses/abdominal-injury-mini.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13017-022-00418-y",
+      "files": [
+        "courses/abdominal-injury-mini.html",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13017-022-00457-5",
+      "files": [
+        "courses/abdominal-injury-mini.html",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13017-024-00559-2",
+      "files": [
+        "docs/chest-management-v5-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13017-025-00651-1",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/pocket-cards.html",
+        "courses/polytrauma-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js",
+        "assets/trauma-skills-decision-thoracic.js",
+        "assets/trauma-skills-thoracic-realism.js",
+        "docs/chest-management-v5-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13049-021-00976-1",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/chest-finger-thoracostomy-v6-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13054-023-04327-7",
+      "files": [
+        "courses/abdominal-hemorrhagic-shock-case.html",
+        "courses/damage-control-resuscitation.html",
+        "courses/pelvic-trauma.html",
+        "courses/pocket-cards.html",
+        "courses/polytrauma-mini.html",
+        "courses/polytrauma-shock-reassessment-case.html",
+        "courses/special-populations.html",
+        "courses/tbi-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js",
+        "docs/learning-refresh-20261007.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13256-018-1808-7",
+      "files": [
+        "courses/pelvic-trauma.html",
+        "courses/polytrauma-mini.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://media.aofoundation.org/spine/-/media/project/aocd/aospine/documents/aos_injury_classification_pocket_card_uppercervical.pdf?rev=f05b21560d554f9181da6387e1e13e6e",
+      "files": [
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://media.aofoundation.org/spine/-/media/project/aocd/aospine/documents/aos_injury_classification_pocket_card-subaxial.pdf?hash=27BD3FB0336424325E59117698B5D842&rev=72e079564a384ea988156d58ee1336a4",
+      "files": [
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://media.aofoundation.org/trauma/-/media/project/aocd/aotrauma/documents/competency-based-education/11orphandoutenglishmalleolar-fractures.pdf?rev=ff75541e7d4546298f6161cc6007c043",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs13049-021-00976-1/MediaObjects/13049_2021_976_MOESM1_ESM.pptx",
+      "files": [
+        "courses/chest-trauma-mini.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://medu.pmph.com/readdetail/todetail.action?id=32523",
+      "files": [
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ncmhc.org.cn/channel/newsinfo/6203",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/trauma-disaster-medicine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/academy-triagev1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://nefro.cl/web/biblio/guias/26.pdf",
+      "files": [
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://oioi-academy.com/medical-learning/",
+      "files": [
+        "orthopaedics/REVIEW.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/jum.16027",
+      "files": [
+        "courses/polytrauma-shock-reassessment-case.html"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10228685/",
+      "files": [
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10440397/",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10808774/",
+      "files": [
+        "courses/chest-trauma-mini.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11781822/",
+      "files": [
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12879952/",
+      "files": [
+        "courses/cspine-hip-dislocation-case.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12999191/",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3004076/",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4202694/",
+      "files": [
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4650961/",
+      "files": [
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5241998/",
+      "files": [
+        "assets/trauma-skills-data.js",
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5265199/",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8328804/",
+      "files": [
+        "courses/cspine-hip-dislocation-case.html",
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8856586/",
+      "files": [
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8996305/",
+      "files": [
+        "courses/polytrauma-shock-reassessment-case.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9977110/",
+      "files": [
+        "courses/abdominal-hemorrhagic-shock-case.html",
+        "courses/cspine-hip-dislocation-case.html",
+        "courses/pelvic-trauma.html",
+        "courses/polytrauma-mini.html",
+        "courses/polytrauma-shock-reassessment-case.html",
+        "courses/tbi-mini.html",
+        "courses/xabcde.html",
+        "docs/SOURCE_INDEX.md",
+        "docs/trauma-case-v4-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20360519/",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 203,
+      "state": "ok"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24549776/",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 203,
+      "state": "ok"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28578459/",
+      "files": [
+        "courses/cspine-hip-dislocation-case.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 203,
+      "state": "ok"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+      "files": [
+        "courses/polytrauma-shock-reassessment-case.html"
+      ],
+      "status": 203,
+      "state": "ok"
+    },
+    {
+      "url": "https://qte.csds.qld.edu.au/resources/the-application-of-pelvic-binders/",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://qualityhealthservices.who.int/quality-toolkit/qt-catalog-item/who-trauma-care-checklist",
+      "files": [
+        "courses/trauma-care-chain.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://remm.hhs.gov/startalgotext.htm",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/trauma-disaster-medicine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/academy-triagev1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://remm.hhs.gov/startpediatric.htm",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/trauma-disaster-medicine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/academy-triagev1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://resources.wfsahq.org/wp-content/uploads/uia28-Management-of-major-trauma.pdf",
+      "files": [
+        "courses/secondary-tertiary-survey.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://seleguide.yiigle.com/uploads/guide_html/%E5%9B%B4%E6%9C%AF%E6%9C%9F%E5%87%BA%E5%87%9D%E8%A1%80%E7%AE%A1%E7%90%86%E9%BA%BB%E9%86%89%E4%B8%93%E5%AE%B6%E5%85%B1%E8%AF%86.html",
+      "files": [
+        "courses/damage-control-resuscitation.html",
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://stacks.cdc.gov/view/cdc/28987/cdc_28987_DS1.pdf",
+      "files": [
+        "courses/trauma-disaster-medicine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/cmf/reconstruction/further-reading/compartment-syndrome-in-the-leg",
+      "files": [
+        "assets/trauma-skills-decision-hemorrhage-ortho.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/further-reading/faq",
+      "files": [
+        "orthopaedics/REVIEW.md",
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/acetabulum/further-reading/characteristics-of-associated-fracture-types",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/carpal-bones/basic-technique/splinting",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-femur/complete-articular-fracture-simple-articular-simple-methaphyseal/definition",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-femur/further-reading/patient-examination",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-forearm/partial-articular-fracture-of-the-radius-involving-the-volar-rim/orif-palmar-plate",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-humerus/further-reading/anatomical-concepts",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-humerus/further-reading/patient-assessment",
+      "files": [
+        "assets/trauma-skills-decision-hemorrhage-ortho.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/femoral-shaft/approach/all-approaches",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/femoral-shaft/simple-transverse-middle-1-3-fractures/nonoperative-treatment-with-limited-resources",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/forearm-shaft/basic-technique/druj-stabilization-galeazzi-fracture-dislocation",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/forearm-shaft/simple-fracture-of-the-radius-with-dislocation-of-distal-radioulnar-joint-galeazzi",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/forearm-shaft/simple-fracture-of-the-ulna-with-dislocation-of-proximal-radioulnar-joint-monteggia",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/humeral-shaft/simple-fracture-spiral/definition",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/malleoli/basic-technique/malleoli-fracture-management-with-minimal-resources",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/malleoli/transsyndesmotic-lateral-isolated-simple-fracture/definition",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/malleoli/transsyndesmotic-posterior-lateral-simple-and-medial-fractures/orif",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/patella/complete-articular-frontal-coronal-simple-fracture-of-the-middle-and-proximal-third/definition",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/patella/further-reading/patient-examination",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/patella/partial-articular-medial-sagittal-simple-fracture/bracing",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-femur/femoral-head-fracture-split/definition",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-femur/femoral-neck-and-head-fracture-with-hip-dislocation/definition",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-femur/femoral-neck-and-head-fracture-with-hip-dislocation/total-hip-arthroplasty",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-femur/femoral-neck-fracture-basicervical/sliding-hip-screw-with-antirotation-screw",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-forearm/further-reading/assessment-of-elbow-stability",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-humerus/extraarticular-3-part-surgical-neck-and-tuberosity-dislocation/definition",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-tibia/complete-articular-fracture-with-fragmentary-lateral-plateau/bridging-external-fixation",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-tibia/complete-articular-fracture-with-fragmentary-lateral-plateau/orif-conventional-plating",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-tibia/complete-articular-fracture-with-fragmentary-lateral-plateau/ring-fixation",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-tibia/complete-simple-articular-fracture-with-simple-metaphyseal-components/orif-conventional-plating",
+      "files": [
+        "orthopaedics/lower-limb.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/orthopedic-trauma/further-reading/casting-of-upper-limb",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/spine/trauma/subaxial-cervical/a0/definition",
+      "files": [
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://surgeryreference.aofoundation.org/spine/trauma/thoracolumbar/further-reading/rationale-for-fracture-classification-a0-a1-a2-a3-a4-b1-b2-b3-c",
+      "files": [
+        "orthopaedics/spine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://thorax.bmj.com/content/72/Suppl_1/ii1",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/xabcde.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://tracheostomy.org.uk/e-learning-files/NTSP_01_004-Emergency_Front_of_Neck_Airway_lo_pack/d/ELFH_Session_4_11_0/746/tab_1125.html",
+      "files": [
+        "assets/trauma-skills-airway-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://tuanziding.github.io/trauma-master-academy/",
+      "files": [
+        "README.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://tuanziding.github.io/trauma-master-academy/orthopaedics/",
+      "files": [
+        "README.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://vascular.org/news-advocacy/articles-press-releases/society-vascular-surgery-releases-clinical-practice-guideline",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://wjw.beijing.gov.cn/xwzx_20031/jcdt/202604/t20260415_4583307.html",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/lower-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to wjw.beijing.gov.cn:443 \n"
+    },
+    {
+      "url": "https://ww2.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf",
+      "files": [
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (60) SSL: no alternative certificate subject name matches target host name 'ww2.facs.org'\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the leg"
+    },
+    {
+      "url": "https://www.aast.org/static/effa81ff-76ac-46dc-8ad6019e6dac3791/T6-PatelManagement-of-Hemothorax-PMGAJS-2021.pdf",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.acep.org/emultrasound/newsroom/jul2021/cases-that-count-serial-fast-examinations-in-a-patient-with-a-penetrating-stab-wound-to-the-buttock",
+      "files": [
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.acep.org/patient-care/clinical-policies/direct-oral-anticoagulants",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.acep.org/sonoguide/advanced/ems",
+      "files": [
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.acep.org/sonoguide/basic/fast",
+      "files": [
+        "courses/quality-governance.html",
+        "assets/trauma-skills-thoracic-realism.js",
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.acmt.net/wp-content/uploads/2026/08/Part-2-Unscheduled-Procedural-Sedation.pdf",
+      "files": [
+        "courses/cspine-hip-dislocation-case.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.acrrm.org.au/rsrc/documents/14wrhc/eSatchel/ETM%20brochure_2017.pdf",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/chest-finger-thoracostomy-v6-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/checkback.html",
+      "files": [
+        "courses/trauma-care-chain.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.aium.org/resources/practice-parameters/efast",
+      "files": [
+        "assets/trauma-skills-data.js",
+        "assets/trauma-skills-decision-thoracic.js",
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.ameriburn.org/burn-care-team/resources/guidelines-for-burn-patient-referral",
+      "files": [
+        "courses/special-populations.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.americanjournalofsurgery.com/article/S0002-9610%2822%2900247-1/abstract",
+      "files": [
+        "courses/secondary-tertiary-survey.html"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.aofoundation.org/our-services-and-resources/ao-surgery-reference",
+      "files": [
+        "assets/trauma-skills-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boa.ac.uk/asset/88A4C3E3-DF3E-4E51-A92E7D2F86D7D82A/",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/lower-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boa.ac.uk/resource/boast-10-pdf.html",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/index.html",
+        "orthopaedics/lower-limb.html",
+        "orthopaedics/upper-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boa.ac.uk/resource/boast-11-pdf.html",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/upper-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boa.ac.uk/resource/boast-4-pdf.html",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/index.html",
+        "orthopaedics/lower-limb.html",
+        "orthopaedics/upper-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boa.ac.uk/resource/diagnosis-and-management-of-arterial-injuries-associated-with-musculoskeletal-trauma.html",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/index.html",
+        "orthopaedics/lower-limb.html",
+        "orthopaedics/upper-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.brit-thoracic.org.uk/clinical-resources/guidelines/emergency-oxygen/",
+      "files": [
+        "assets/trauma-skills-enriched-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.brit-thoracic.org.uk/document-library/clinical-statements/pleural-procedures/online-appendix-4-pleural-procedures-intercostal-drain-insertion/",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/chest-management-v5-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.brit-thoracic.org.uk/document-library/clinical-statements/pleural-procedures/online-appendix-8-pleural-procedures-chest-drain-bottle/",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/chest-management-v5-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.cadrj.com/CN/abstract/abstract4178.shtml",
+      "files": [
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.chemm.hhs.gov/incident-primer/decontamination",
+      "files": [
+        "courses/trauma-disaster-medicine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.chemm.hhs.gov/incident-primer/triage/salt-triage",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/trauma-disaster-medicine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/academy-triagev1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.cureus.com/articles/503476-surgical-management-of-a-lateral-compression-lciii-pelvic-ring-fracture-with-type-i-crescent-fracture-dislocation-a-case-report.pdf",
+      "files": [
+        "courses/polytrauma-mini.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.east.org/education-resources/practice-management-guidelines",
+      "files": [
+        "courses/quality-governance.html",
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.east.org/education-resources/practice-management-guidelines/details/emergency-department-thoracotomy",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.east.org/education-resources/practice-management-guidelines/details/hemothorax-and-occult-pneumothorax,-management-of",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.east.org/mobile/practice-management-guideline/trauma/98",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/lower-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.facs.org/about-acs/statements/disaster-and-mass-casualty-management/",
+      "files": [
+        "data/trauma-disaster-references.json"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.facs.org/media-center/resources-for-journalists/stop-the-bleed-resources-for-journalists/",
+      "files": [
+        "assets/trauma-skills-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.facs.org/media/0svpk45s/hartford_consensus_compendium.pdf",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.facs.org/media/qdgliayt/2025_tr_bestpracticesguidelines_chest-wall.pdf",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/SOURCE_INDEX.md",
+        "docs/chest-management-v5-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.facs.org/media/ubyj2ubl/best-practices-guidelines-geriatric-trauma.pdf",
+      "files": [
+        "courses/special-populations.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf",
+      "files": [
+        "courses/polytrauma-mini.html",
+        "courses/quality-governance.html",
+        "courses/tbi-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.facs.org/media/zcjdtrd1/transfusion_guildelines.pdf",
+      "files": [
+        "courses/damage-control-resuscitation.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "docs/learning-refresh-20261007.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/",
+      "files": [
+        "data/trauma-disaster-references.json"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/about/",
+      "files": [
+        "courses/quality-governance.html",
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/polytrauma-mini.html",
+        "courses/polytrauma-shock-reassessment-case.html",
+        "courses/quality-governance.html",
+        "courses/tbi-mini.html",
+        "courses/xabcde.html",
+        "data/clinical-pockets.json",
+        "data/xabcde-references.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/trauma-skills-data.js",
+        "docs/SOURCE_INDEX.md",
+        "docs/trauma-case-v4-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0013/140611/g-trauma.pdf",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.icuguideline.com/wp-content/uploads/2023/11/%E5%88%9B%E4%BC%A4%E5%A4%B1%E8%A1%80%E6%80%A7%E4%BC%91%E5%85%8B%E4%B8%AD%E5%9B%BD%E6%80%A5%E8%AF%8A%E4%B8%93%E5%AE%B6%E5%85%B1%E8%AF%86%EF%BC%882023%EF%BC%89.pdf",
+      "files": [
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.merckmanuals.com/en-ca/professional/pulmonary-disorders/how-to-do-pulmonary-procedures/how-to-do-needle-thoracostomy",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/chest-management-v5-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.merckmanuals.com/professional/multimedia/video/how-to-do-bag-valve-mask-ventilation",
+      "files": [
+        "assets/trauma-skills-airway-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.merckmanuals.com/professional/multimedia/video/how-to-do-tube-thoracostomy",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/chest-management-v5-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.merckmanuals.com/professional/pulmonary-disorders/how-to-do-pulmonary-procedures/how-to-do-tube-and-catheter-thoracostomy",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "docs/chest-management-v5-review.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/multimedia/video/extended-focused-assessment-with-sonography-in-trauma-e-fast",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/multimedia/video/how-to-do-bag-valve-mask-ventilation?ruleredirectid=742",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/multimedia/video/how-to-do-needle-thoracostomy-second-intercostal-space-midclavicular-approach",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/multimedia/video/how-to-do-tube-thoracostomy?ruleredirectid=742",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/multimedia/video/orotracheal-intubation",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.neurocriticalcare.org/Portals/0/Docs/ENLS/ENLS_5_Protocol_Pharm.pdf",
+      "files": [
+        "courses/tbi-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/fzs/c100048/202202/fc6310d72212427c9f5ef2f7f0166aac/files/1733125181067_16379.pdf",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/fzs/c100048/202309/3c6a75b497774200b3c39aa1765806e2/files/1733125843463_67689.pdf",
+      "files": [
+        "courses/trauma-care-chain.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/wjw/gfxwj/201002/79d42b9c8b3f47ee91000d31de116784.shtml",
+      "files": [
+        "courses/documentation-handover.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/ylyjs/zcwj/202512/1f0e99982b49476b9b076ee10ef9ca75.shtml",
+      "files": [
+        "courses/damage-control-resuscitation.html",
+        "courses/documentation-handover.html",
+        "courses/pocket-cards.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/ylyjs/zcwj/202601/3c4f6b771aba4ce7bdb8112823f7825a.shtml",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/pelvic-trauma.html",
+        "courses/pocket-cards.html",
+        "courses/polytrauma-mini.html",
+        "courses/polytrauma-shock-reassessment-case.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/ylyjs/zcwj/202601/3c4f6b771aba4ce7bdb8112823f7825a/files/%E9%99%84%E4%BB%B62.%E7%AA%81%E5%8F%91%E4%BA%8B%E4%BB%B6%E7%83%A7%E4%BC%A4%E4%BC%A4%E5%91%98%E5%8C%BB%E7%96%97%E6%95%91%E6%B2%BB%E8%A7%84%E8%8C%83%EF%BC%882025%E5%B9%B4%E7%89%88%EF%BC%89.pdf",
+      "files": [
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/yzygj/c100068/201804/42ab2552298047679cd6ec733f233862.shtml",
+      "files": [
+        "courses/documentation-handover.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nhc.gov.cn/yzygj/c100068/202212/07dc9155b03c41ce9482bea34e643a6d.shtml",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "orthopaedics/lower-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.nhc.gov.cn:443 \n"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/cg124/chapter/recommendations",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/lower-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng197/chapter/recommendations",
+      "files": [
+        "courses/documentation-handover.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng232/chapter/recommendations",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/tbi-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/NG232/chapter/recommendations",
+      "files": [
+        "courses/tbi-mini.html",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng37/chapter/recommendations",
+      "files": [
+        "courses/cspine-hip-dislocation-case.html",
+        "courses/open-pelvic-injury-case.html",
+        "courses/pelvic-trauma.html",
+        "courses/pocket-cards.html",
+        "courses/polytrauma-mini.html",
+        "orthopaedics/index.html",
+        "orthopaedics/lower-limb.html",
+        "orthopaedics/upper-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "assets/trauma-skills-decision-hemorrhage-ortho.js",
+        "assets/trauma-skills-enriched-data.js",
+        "assets/trauma-skills-hemorrhage-ortho-realism.js",
+        "docs/mini-modules-v8/README.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng39",
+      "files": [
+        "courses/pelvic-trauma.html",
+        "data/trauma-disaster-references.json"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/NG39",
+      "files": [
+        "courses/quality-governance.html",
+        "data/xabcde-references.json",
+        "docs/SOURCE_INDEX.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng39/chapter/recommendations",
+      "files": [
+        "courses/abdominal-hemorrhagic-shock-case.html",
+        "courses/abdominal-injury-mini.html",
+        "courses/chest-trauma-mini.html",
+        "courses/damage-control-resuscitation.html",
+        "courses/documentation-handover.html",
+        "courses/pocket-cards.html",
+        "courses/polytrauma-mini.html",
+        "courses/trauma-care-chain.html",
+        "courses/xabcde.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js",
+        "docs/SOURCE_INDEX.md",
+        "docs/learning-refresh-20261007.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng39/chapter/Recommendations",
+      "files": [
+        "courses/abdominal-hemorrhagic-shock-case.html",
+        "courses/abdominal-injury-mini.html",
+        "courses/chest-trauma-mini.html",
+        "courses/cspine-hip-dislocation-case.html",
+        "courses/pelvic-trauma.html",
+        "courses/polytrauma-mini.html",
+        "courses/polytrauma-shock-reassessment-case.html",
+        "courses/trauma-care-chain.html",
+        "courses/xabcde.html",
+        "assets/trauma-skills-airway-realism.js",
+        "assets/trauma-skills-data.js",
+        "assets/trauma-skills-decision-thoracic.js",
+        "assets/trauma-skills-thoracic-realism.js",
+        "docs/chest-finger-thoracostomy-v6-review.md",
+        "docs/mini-modules-v8/README.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/NG39/chapter/recommendations",
+      "files": [
+        "courses/polytrauma-mini.html",
+        "assets/mini-clinical-v7-data.json",
+        "assets/mini-clinical-v7.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng41/chapter/recommendations",
+      "files": [
+        "courses/polytrauma-mini.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng41/chapter/Recommendations",
+      "files": [
+        "courses/cspine-hip-dislocation-case.html",
+        "courses/pocket-cards.html",
+        "orthopaedics/spine.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/NG41/chapter/recommendations",
+      "files": [
+        "docs/mini-modules-v8/README.md"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/qs166/chapter/Quality-statement-1-Airway-management",
+      "files": [
+        "assets/trauma-skills-decision-airway.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.orthoinfo.org/diseases--conditions/dislocated-shoulder/",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (28) Operation timed out after 15004 milliseconds with 0 bytes received\n"
+    },
+    {
+      "url": "https://www.orthoinfo.org/diseases--conditions/elbow-dislocation",
+      "files": [
+        "orthopaedics/upper-limb.html"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (28) Operation timed out after 15005 milliseconds with 0 bytes received\n"
+    },
+    {
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Major_paediatric_trauma_The_primary_survey/",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.rch.org.au/trauma-service/manual/primary-and-secondary-survey/",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/secondary-tertiary-survey.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.redcross.org/take-a-class/resources/articles/how-to-apply-a-tourniquet",
+      "files": [
+        "assets/trauma-skills-source-backed-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines",
+      "files": [
+        "assets/trauma-skills-airway-realism.js",
+        "assets/trauma-skills-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+      "files": [
+        "assets/trauma-skills-enriched-data.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/special-circumstances-guidelines",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "courses/pocket-cards.html",
+        "courses/polytrauma-shock-reassessment-case.html",
+        "courses/xabcde.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/adult-therapeutic-guidelines/transfusion/anti-d-prophylaxis-and-administration-during-pregnancy-and-postnatally-guidelines/",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.starship.org.nz/guidelines/trauma-secondary-survey/",
+      "files": [
+        "courses/secondary-tertiary-survey.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.stopthebleed.org/get-trained/",
+      "files": [
+        "assets/trauma-skills-decision-hemorrhage-ortho.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.stopthebleed.org/get-trained/online-course/",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)32233-0/fulltext",
+      "files": [
+        "courses/damage-control-resuscitation.html",
+        "courses/pocket-cards.html",
+        "courses/tbi-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.westerntrauma.org/western-trauma-association-algorithms/management-of-the-mangled-extremity/note-d/",
+      "files": [
+        "courses/pocket-cards.html",
+        "orthopaedics/upper-limb.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.westerntrauma.org/western-trauma-association-algorithms/resuscitative-thoracotomy/note-b/",
+      "files": [
+        "courses/chest-trauma-mini.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 403,
+      "state": "manual_confirmation"
+    },
+    {
+      "url": "https://www.who.int/multi-media/details/who-trauma-care-checklist",
+      "files": [
+        "courses/trauma-care-chain.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.who.int/multi-media/details/who-trauma-care-checklist---simulation",
+      "files": [
+        "courses/trauma-bay.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.who.int/publications/i/item/9789241513081",
+      "files": [
+        "courses/trauma-bay.html",
+        "courses/trauma-care-chain.html",
+        "courses/trauma-disaster-medicine.html",
+        "assets/trauma-skills-airway-realism.js",
+        "assets/trauma-skills-data.js",
+        "assets/trauma-skills-hemorrhage-ortho-realism.js",
+        "assets/trauma-skills-thoracic-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/trauma-bay.html",
+        "courses/trauma-care-chain.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/mass-casualty-management",
+      "files": [
+        "data/trauma-disaster-references.json"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.who.int/tools/triage",
+      "files": [
+        "courses/trauma-disaster-medicine.html"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.youtube.com/embed/7LEqWoK_aS0",
+      "files": [
+        "assets/trauma-skills-hemorrhage-ortho-realism.js"
+      ],
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.zgddek.com/CN/article/downloadArticleFile.do?attachType=PDF&id=26144",
+      "files": [
+        "courses/pocket-cards.html",
+        "courses/special-populations.html",
+        "data/clinical-pockets.json",
+        "assets/academy-question-bankv1.0.js",
+        "assets/academy-skill-standardsv1.0.js"
+      ],
+      "status": 0,
+      "state": "unconfirmed",
+      "error": "curl: (52) Empty reply from server\n"
+    }
+  ]
+}

@@ -27,5 +27,5 @@ assert.ok(read('courses/abdominal-hemorrhagic-shock-case.html').includes('id="br
 const disaster=read('courses/trauma-disaster-medicine.html');assert.equal((disaster.match(/id="resources"/g)||[]).length,1);assert.equal((disaster.match(/data-resource-event=/g)||[]).length,6);assert.ok(!disaster.includes('data-triage-lane="info"'));
 assert.ok(['START','JumpSTART','SALT','国内2006'].every(s=>read('assets/academy-triagev1.0.js').includes(s)));
 const htmlFiles=[...fs.readdirSync('courses').filter(f=>f.endsWith('.html')).map(f=>'courses/'+f),...fs.readdirSync('orthopaedics').filter(f=>f.endsWith('.html')).map(f=>'orthopaedics/'+f),'index.html'];
-for(const file of htmlFiles){const html=read(file);const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length,file+' duplicate id');assert.ok(html.includes('academy-viewv1.0.js'),file+' learner policy');}
+for(const file of htmlFiles){const html=read(file);const ids=[...html.matchAll(/(?<![\w-])id="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length,file+' duplicate id');assert.ok(html.includes('academy-viewv1.0.js'),file+' learner policy');}
 console.log(JSON.stringify({pass:true,banks:31,independentItems:310,distinctOSCECriteria:45,miniDataParity:true,caseOptions:true,clinicalSignoff:'not_implied'}));

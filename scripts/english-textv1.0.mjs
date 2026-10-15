@@ -15,6 +15,7 @@ export function textParts(source,extension){const out=[];
  function js(text,offset=0,json=false){let ast;try{ast=parseJS(json?'('+text+')':text,{ecmaVersion:'latest',sourceType:'module'});}catch(e){throw Error('Cannot parse display source: '+e.message);}const delta=offset-(json?1:0);
  function walk(n,parent,key){if(!n||typeof n!=='object')return;
  if(n.type==='Literal'&&typeof n.value==='string'&&!(parent?.type==='Property'&&key==='key'&&!parent.computed)){
+  if(parent?.type==='Property'&&key==='value'&&['id','class','className','url','href','src','filename','file','path'].includes(parent.key?.name||parent.key?.value))return;
   if(english(n.value))out.push({start:delta+n.start,end:delta+n.end,value:n.value,kind:'literal'});
   else if(/<[a-z][^>]*>/i.test(n.value)){const parts=[];const prev=out.length;html(n.value,0,true);const nested=out.splice(prev);if(nested.length)out.push({start:delta+n.start,end:delta+n.end,value:n.value,kind:'htmlLiteral',nested});}return;}
  if(n.type==='TemplateElement'){const raw=text.slice(n.start-(json?1:0),n.end-(json?1:0));if(/<[a-z][^>]*>/i.test(raw)){html(raw,delta+n.start,true);}else if(english(raw))out.push({start:delta+n.start,end:delta+n.end,value:raw,kind:'template'});return;}

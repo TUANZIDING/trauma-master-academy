@@ -1,0 +1,1616 @@
+{
+  "version": "2026-10-15",
+  "objectives": {
+    "documentation-handover-objective-1": {
+      "title": [
+        "抢救记录补记时限",
+        "Rescue-record supplementation"
+      ],
+      "references": [
+        "cn-records"
+      ]
+    },
+    "documentation-handover-objective-2": {
+      "title": [
+        "口头医嘱即刻补记",
+        "Immediate verbal-order documentation"
+      ],
+      "references": [
+        "cn-records"
+      ]
+    },
+    "trauma-care-chain-objective-1": {
+      "title": [
+        "预警资料完整性",
+        "Complete pre-alert information"
+      ],
+      "references": [
+        "nice",
+        "cn-transfer"
+      ]
+    },
+    "trauma-care-chain-objective-2": {
+      "title": [
+        "ATMIST结构化交接",
+        "Structured ATMIST handover"
+      ],
+      "references": [
+        "cn-prehospital",
+        "cn-transfer"
+      ]
+    },
+    "xabcde-objective-1": {
+      "title": [
+        "循环危险识别与MTP评估",
+        "Recognize shock and assess MTP"
+      ],
+      "references": [
+        "acs-mtp",
+        "cn-shock"
+      ]
+    },
+    "xabcde-objective-2": {
+      "title": [
+        "重伤低氧起始氧疗",
+        "Initial oxygen escalation"
+      ],
+      "references": [
+        "bts"
+      ]
+    },
+    "trauma-bay-objective-1": {
+      "title": [
+        "院前休克准备",
+        "Prepare for prehospital shock"
+      ],
+      "references": [
+        "nice",
+        "acs-mtp"
+      ]
+    },
+    "trauma-bay-objective-2": {
+      "title": [
+        "床头拥挤与闭环角色",
+        "Clear roles and closed-loop communication"
+      ],
+      "references": [
+        "nice"
+      ]
+    },
+    "secondary-tertiary-survey-objective-1": {
+      "title": [
+        "AMPLE过敏史",
+        "AMPLE allergy history"
+      ],
+      "references": [
+        "rcs-survey"
+      ]
+    },
+    "secondary-tertiary-survey-objective-2": {
+      "title": [
+        "不稳定时回到初评",
+        "Return to primary survey during instability"
+      ],
+      "references": [
+        "nice",
+        "rcs-survey"
+      ]
+    },
+    "trauma-skills-academy-objective-1": {
+      "title": [
+        "OSCE不安全行为评分",
+        "OSCE unsafe behavior scoring"
+      ],
+      "references": [
+        "cn-prehospital"
+      ]
+    },
+    "trauma-skills-academy-objective-2": {
+      "title": [
+        "提示后完成与关键失败区分",
+        "Prompted completion versus critical failure"
+      ],
+      "references": [
+        "nice-fracture"
+      ]
+    },
+    "damage-control-resuscitation-objective-1": {
+      "title": [
+        "早期出血TXA时间窗",
+        "Early hemorrhage TXA window"
+      ],
+      "references": [
+        "eu-bleeding",
+        "cn-shock"
+      ]
+    },
+    "damage-control-resuscitation-objective-2": {
+      "title": [
+        "低纤维蛋白原纠正",
+        "Correct low fibrinogen in bleeding"
+      ],
+      "references": [
+        "eu-bleeding",
+        "cn-shock"
+      ]
+    },
+    "special-populations-objective-1": {
+      "title": [
+        "老年重伤低压识别",
+        "Older-patient shock recognition"
+      ],
+      "references": [
+        "cn-prehospital"
+      ]
+    },
+    "special-populations-objective-2": {
+      "title": [
+        "孕妇子宫压迫体位处理",
+        "Maternal positioning after mid-pregnancy"
+      ],
+      "references": [
+        "qld-pregnancy"
+      ]
+    },
+    "chest-trauma-mini-objective-1": {
+      "title": [
+        "不稳定张力气胸立即处理",
+        "Treat unstable tension pneumothorax"
+      ],
+      "references": [
+        "nice",
+        "cn-prehospital"
+      ]
+    },
+    "chest-trauma-mini-objective-2": {
+      "title": [
+        "稳定血胸引流评估",
+        "Drainage assessment for stable hemothorax"
+      ],
+      "references": [
+        "wses-chest",
+        "east-htx"
+      ]
+    },
+    "abdominal-injury-mini-objective-1": {
+      "title": [
+        "阴性FAST的局限",
+        "Limits of a negative FAST"
+      ],
+      "references": [
+        "nice",
+        "wses-liver"
+      ]
+    },
+    "abdominal-injury-mini-objective-2": {
+      "title": [
+        "FAST阳性无反应直接止血",
+        "Control bleeding in a nonresponder with positive FAST"
+      ],
+      "references": [
+        "nice",
+        "wses-liver"
+      ]
+    },
+    "tbi-mini-objective-1": {
+      "title": [
+        "年龄对应TBI血压目标",
+        "Age-specific TBI blood-pressure target"
+      ],
+      "references": [
+        "btf",
+        "cn-tbi"
+      ]
+    },
+    "tbi-mini-objective-2": {
+      "title": [
+        "避免预防性过度通气",
+        "Avoid prophylactic hyperventilation"
+      ],
+      "references": [
+        "acs-tbi",
+        "btf"
+      ]
+    },
+    "polytrauma-mini-objective-1": {
+      "title": [
+        "休克指数结合生理",
+        "Interpret shock index with physiology"
+      ],
+      "references": [
+        "cn-shock"
+      ]
+    },
+    "polytrauma-mini-objective-2": {
+      "title": [
+        "多发伤胸部可逆威胁并行",
+        "Parallel chest rescue in polytrauma"
+      ],
+      "references": [
+        "nice",
+        "wses-chest"
+      ]
+    },
+    "pelvic-trauma-objective-1": {
+      "title": [
+        "大转子水平骨盆固定",
+        "Trochanter-level pelvic stabilization"
+      ],
+      "references": [
+        "nice-fracture",
+        "wses-pelvic"
+      ]
+    },
+    "pelvic-trauma-objective-2": {
+      "title": [
+        "FAST阴性不排除骨盆失血",
+        "Negative FAST does not exclude pelvic loss"
+      ],
+      "references": [
+        "wses-pelvic",
+        "nice-fracture"
+      ]
+    },
+    "abdominal-hemorrhagic-shock-case-objective-1": {
+      "title": [
+        "相对慢心率与失血风险",
+        "Relative bradycardia does not exclude shock"
+      ],
+      "references": [
+        "cn-shock"
+      ]
+    },
+    "abdominal-hemorrhagic-shock-case-objective-2": {
+      "title": [
+        "初次低压即升级",
+        "Escalate at initial hypotension"
+      ],
+      "references": [
+        "nice",
+        "cn-shock"
+      ]
+    },
+    "cspine-hip-dislocation-case-objective-1": {
+      "title": [
+        "当前GCS与源缺项分开",
+        "Separate current GCS from missing source components"
+      ],
+      "references": [
+        "cn-records",
+        "nice-spine"
+      ]
+    },
+    "cspine-hip-dislocation-case-objective-2": {
+      "title": [
+        "高危颈椎伤与SMR",
+        "High-risk cervical injury and SMR"
+      ],
+      "references": [
+        "nice-spine",
+        "cn-prehospital"
+      ]
+    },
+    "open-pelvic-injury-case-objective-1": {
+      "title": [
+        "开放骨盆并行止血",
+        "Parallel control in open pelvic injury"
+      ],
+      "references": [
+        "wses-pelvic",
+        "cn-shock"
+      ]
+    },
+    "open-pelvic-injury-case-objective-2": {
+      "title": [
+        "开放骨折抗生素时机",
+        "Timing of antibiotics for open fracture"
+      ],
+      "references": [
+        "boast-open",
+        "nice-fracture"
+      ]
+    },
+    "polytrauma-shock-reassessment-case-objective-1": {
+      "title": [
+        "腹部FAST不排除心包病因",
+        "Abdominal FAST does not exclude pericardial causes"
+      ],
+      "references": [
+        "nice",
+        "wses-chest"
+      ]
+    },
+    "polytrauma-shock-reassessment-case-objective-2": {
+      "title": [
+        "持续休克并行心超",
+        "Early echo during persistent shock"
+      ],
+      "references": [
+        "nice",
+        "wses-chest"
+      ]
+    },
+    "trauma-disaster-medicine-objective-1": {
+      "title": [
+        "START呼吸分诊",
+        "START respiratory triage"
+      ],
+      "references": [
+        "start"
+      ]
+    },
+    "trauma-disaster-medicine-objective-2": {
+      "title": [
+        "JumpSTART无呼吸有脉五次通气",
+        "JumpSTART apneic child with pulse"
+      ],
+      "references": [
+        "jumpstart"
+      ]
+    },
+    "orthopaedics-objective-1": {
+      "title": [
+        "骨科创伤先整体初评",
+        "Whole-patient assessment before local orthopedics"
+      ],
+      "references": [
+        "nice",
+        "boast-open"
+      ]
+    },
+    "orthopaedics-objective-2": {
+      "title": [
+        "骨科开放伤早期抗生素",
+        "Early antibiotics in open orthopedic trauma"
+      ],
+      "references": [
+        "boast-open",
+        "nice-fracture"
+      ]
+    },
+    "upper-limb-objective-1": {
+      "title": [
+        "髁上骨折神经血管基线",
+        "Supracondylar neurovascular baseline"
+      ],
+      "references": [
+        "boast-supracondylar"
+      ]
+    },
+    "upper-limb-objective-2": {
+      "title": [
+        "上肢API异常的血管评估",
+        "Vascular assessment for abnormal upper-limb API"
+      ],
+      "references": [
+        "wta-extremity",
+        "boast-vascular"
+      ]
+    },
+    "lower-limb-objective-1": {
+      "title": [
+        "膝脱位ABI筛查",
+        "ABI screening after knee dislocation"
+      ],
+      "references": [
+        "bask-knee",
+        "boast-vascular"
+      ]
+    },
+    "lower-limb-objective-2": {
+      "title": [
+        "牵引夹板伴随伤禁忌",
+        "Associated-injury contraindications to traction"
+      ],
+      "references": [
+        "cn-prehospital",
+        "nice-fracture"
+      ]
+    },
+    "spine-objective-1": {
+      "title": [
+        "急性SCI主动增压范围",
+        "Acute SCI augmentation range"
+      ],
+      "references": [
+        "ao-sci24"
+      ]
+    },
+    "spine-objective-2": {
+      "title": [
+        "主动增压避免过高",
+        "Avoid excessive active augmentation"
+      ],
+      "references": [
+        "ao-sci24"
+      ]
+    },
+    "skill-tourniquet-objective-1": {
+      "title": [
+        "致命肢体出血首要措施",
+        "First response to lethal limb hemorrhage"
+      ],
+      "references": [
+        "cn-prehospital",
+        "tccc"
+      ]
+    },
+    "skill-tourniquet-objective-2": {
+      "title": [
+        "TCCC已见伤口定位",
+        "TCCC visible-wound placement"
+      ],
+      "references": [
+        "tccc",
+        "cn-prehospital"
+      ]
+    },
+    "skill-bvm-objective-1": {
+      "title": [
+        "重伤起始高浓度氧疗",
+        "High-concentration initial trauma oxygen"
+      ],
+      "references": [
+        "bts"
+      ]
+    },
+    "skill-bvm-objective-2": {
+      "title": [
+        "双人面罩密闭与气道开放",
+        "Two-person mask seal and airway opening"
+      ],
+      "references": [
+        "jts-airway26",
+        "aha-bls25"
+      ]
+    },
+    "skill-intubation-objective-1": {
+      "title": [
+        "低压RSI的并行复苏",
+        "Parallel resuscitation before/during hypotensive RSI"
+      ],
+      "references": [
+        "jts-anesthesia",
+        "das25"
+      ]
+    },
+    "skill-intubation-objective-2": {
+      "title": [
+        "首次成功策略与视频喉镜",
+        "First-attempt strategy and videolaryngoscopy"
+      ],
+      "references": [
+        "das25",
+        "nice-spine"
+      ]
+    },
+    "skill-cricothyrotomy-objective-1": {
+      "title": [
+        "CICO即时eFONA救援",
+        "Immediate eFONA in CICO"
+      ],
+      "references": [
+        "das25"
+      ]
+    },
+    "skill-cricothyrotomy-objective-2": {
+      "title": [
+        "eFONA器材与版本确认",
+        "eFONA equipment and declared version"
+      ],
+      "references": [
+        "das15",
+        "das25"
+      ]
+    },
+    "skill-needle-decompression-objective-1": {
+      "title": [
+        "成人针刺减压定位",
+        "Adult needle-decompression landmark"
+      ],
+      "references": [
+        "tccc",
+        "nice"
+      ]
+    },
+    "skill-needle-decompression-objective-2": {
+      "title": [
+        "成人针刺器材规格",
+        "Adult needle equipment selection"
+      ],
+      "references": [
+        "tccc"
+      ]
+    },
+    "skill-tube-thoracostomy-objective-1": {
+      "title": [
+        "稳定血胸小管路径",
+        "Small-catheter pathway for stable hemothorax"
+      ],
+      "references": [
+        "east-htx",
+        "wses-chest"
+      ]
+    },
+    "skill-tube-thoracostomy-objective-2": {
+      "title": [
+        "大量血胸与外科升级",
+        "Massive hemothorax and surgical escalation"
+      ],
+      "references": [
+        "wses-chest",
+        "east-hemothorax11"
+      ]
+    },
+    "skill-efast-objective-1": {
+      "title": [
+        "FAST腹部窗口覆盖",
+        "Abdominal FAST window coverage"
+      ],
+      "references": [
+        "nice",
+        "rch"
+      ]
+    },
+    "skill-efast-objective-2": {
+      "title": [
+        "心包窗与持续休克",
+        "Pericardial view during persistent shock"
+      ],
+      "references": [
+        "nice",
+        "wses-chest"
+      ]
+    },
+    "skill-pelvic-binder-objective-1": {
+      "title": [
+        "骨盆带正确定位",
+        "Correct pelvic-binder positioning"
+      ],
+      "references": [
+        "nice-fracture",
+        "wses-pelvic"
+      ]
+    },
+    "skill-pelvic-binder-objective-2": {
+      "title": [
+        "FAST阴性不取消固定",
+        "Do not cancel stabilization on negative FAST"
+      ],
+      "references": [
+        "nice-fracture",
+        "wses-pelvic"
+      ]
+    },
+    "skill-splinting-objective-1": {
+      "title": [
+        "固定前神经血管基线",
+        "Neurovascular baseline before splinting"
+      ],
+      "references": [
+        "nice-fracture",
+        "boast-vascular"
+      ]
+    },
+    "skill-splinting-objective-2": {
+      "title": [
+        "开放骨折临时覆盖",
+        "Temporary open-fracture wound coverage"
+      ],
+      "references": [
+        "nice-fracture",
+        "boast-open"
+      ]
+    },
+    "special-populations-objective-5": {
+      "title": [
+        "未致敏RhD阴性腹伤抗D",
+        "Anti-D after unsensitised RhD-negative trauma"
+      ],
+      "references": [
+        "bsh-antid-2014",
+        "nhs-antid",
+        "qld-pregnancy"
+      ]
+    },
+    "documentation-handover-objective-3": {
+      "title": [
+        "急会诊已发出，国内规范的到场要求？",
+        "What arrival deadline applies to an urgent consultation?"
+      ],
+      "references": [
+        "cn-records"
+      ]
+    },
+    "documentation-handover-objective-4": {
+      "title": [
+        "参加抢救人员栏还应记录什么？",
+        "What belongs beside rescue participant names?"
+      ],
+      "references": [
+        "cn-records"
+      ]
+    },
+    "documentation-handover-objective-5": {
+      "title": [
+        "抢救时患方无法及时签署，谁处理紧急签署？",
+        "Who addresses emergency signing when the lawful decision maker cannot sign promptly?"
+      ],
+      "references": [
+        "cn-records"
+      ]
+    },
+    "trauma-care-chain-objective-3": {
+      "title": [
+        "MTP启动后哪个过程时间最值得持续记录？",
+        "Which MTP process times should be tracked?"
+      ],
+      "references": [
+        "acs-mtp"
+      ]
+    },
+    "trauma-care-chain-objective-4": {
+      "title": [
+        "危重成人转运，出发前应先核查哪组设备？",
+        "Which equipment set is checked before critical adult transfer?"
+      ],
+      "references": [
+        "ics-transfer"
+      ]
+    },
+    "trauma-care-chain-objective-5": {
+      "title": [
+        "交接有未回报增强CT结果，谁负责跟踪？",
+        "Contrast CT has no final report at handover. Who follows it?"
+      ],
+      "references": [
+        "nice"
+      ]
+    },
+    "xabcde-objective-3": {
+      "title": [
+        "GCS≤8伴污染气道，应该怎样组织A？",
+        "How is A organized with GCS at or below eight and airway contamination?"
+      ],
+      "references": [
+        "nice",
+        "cn-prehospital"
+      ]
+    },
+    "xabcde-objective-4": {
+      "title": [
+        "低血压患者FAST阴性，哪项仍需保留？",
+        "What remains relevant after negative FAST in hypotension?"
+      ],
+      "references": [
+        "nice"
+      ]
+    },
+    "xabcde-objective-5": {
+      "title": [
+        "安全带征伴低血压，应并行警惕什么？",
+        "What accompanies concern over a seatbelt mark with hypotension?"
+      ],
+      "references": [
+        "nice"
+      ]
+    },
+    "trauma-bay-objective-3": {
+      "title": [
+        "危重创伤首次氧疗，哪个准备符合BTS E2？",
+        "Which initial oxygen preparation fits BTS E2 in critical trauma?"
+      ],
+      "references": [
+        "bts"
+      ]
+    },
+    "trauma-bay-objective-4": {
+      "title": [
+        "护士接到抢救口头医嘱，怎样闭环？",
+        "How does the nurse close the loop on a verbal rescue order?"
+      ],
+      "references": [
+        "cn-records"
+      ]
+    },
+    "trauma-bay-objective-5": {
+      "title": [
+        "患者湿冷到院，E环节如何配合复苏？",
+        "A wet, cold patient arrives. How does E support resuscitation?"
+      ],
+      "references": [
+        "cn-shock"
+      ]
+    },
+    "secondary-tertiary-survey-objective-3": {
+      "title": [
+        "镇静后背部与神经查体不可靠，记录怎样写？",
+        "Back/neurological assessment is unreliable after sedation. Record?"
+      ],
+      "references": [
+        "rcs-survey"
+      ]
+    },
+    "secondary-tertiary-survey-objective-4": {
+      "title": [
+        "三次评估主要解决什么？",
+        "What is the principal purpose of tertiary survey?"
+      ],
+      "references": [
+        "rcs-survey"
+      ]
+    },
+    "secondary-tertiary-survey-objective-5": {
+      "title": [
+        "肢体固定前后，怎样保留可比较的基线？",
+        "What comparison is preserved around limb immobilization?"
+      ],
+      "references": [
+        "rcs-survey"
+      ]
+    },
+    "trauma-skills-academy-objective-3": {
+      "title": [
+        "5域均2分，技能总分？",
+        "Five domains receive two points each. Total?"
+      ],
+      "references": [
+        "who"
+      ]
+    },
+    "trauma-skills-academy-objective-4": {
+      "title": [
+        "插管后只有听诊，未用波形EtCO₂，如何判断？",
+        "Intubation is checked only by auscultation without waveform EtCO2. Rating?"
+      ],
+      "references": [
+        "nice"
+      ]
+    },
+    "trauma-skills-academy-objective-5": {
+      "title": [
+        "BVM与胸腔减压对应哪两个轴？",
+        "Which axes correspond to BVM and chest decompression?"
+      ],
+      "references": [
+        "cn-prehospital"
+      ]
+    },
+    "damage-control-resuscitation-objective-3": {
+      "title": [
+        "HR126、SBP88的SI约多少？",
+        "What is SI for HR 126/SBP 88?"
+      ],
+      "references": [
+        "cn-shock"
+      ]
+    },
+    "damage-control-resuscitation-objective-4": {
+      "title": [
+        "是否等24 h输够10 U（国内200 mL全血来源单位）才启动MTP？",
+        "Wait for 24 hours and 10 domestic200-mL-donation-derived units before MTP?"
+      ],
+      "references": [
+        "cn-shock",
+        "nice"
+      ]
+    },
+    "damage-control-resuscitation-objective-5": {
+      "title": [
+        "核心温度34.8 ℃伴出血，复苏还需什么？",
+        "Core34.8 C with bleeding: what else does resuscitation need?"
+      ],
+      "references": [
+        "cn-shock"
+      ]
+    },
+    "special-populations-objective-3": {
+      "title": [
+        "儿童疑出血循环受损，RCH初始液体索引？",
+        "RCH initial fluid index for a child with suspected bleeding/compromise?"
+      ],
+      "references": [
+        "rch"
+      ]
+    },
+    "special-populations-objective-4": {
+      "title": [
+        "成人中国新九分法双上肢面积是多少？",
+        "Adult Chinese rule-of-nines area of both upper limbs?"
+      ],
+      "references": [
+        "cn-burn"
+      ]
+    },
+    "chest-trauma-mini-objective-3": {
+      "title": [
+        "胸管持续230 mL/h达3 h，下一步？",
+        "Drain output230 mL/h for three hours: next?"
+      ],
+      "references": [
+        "wses-chest",
+        "east-htx",
+        "svs-btai",
+        "cn-prehospital",
+        "east-hemothorax11"
+      ]
+    },
+    "chest-trauma-mini-objective-4": {
+      "title": [
+        "稳定血胸的小口径方案依据？",
+        "Evidence for a small-bore option in stable hemothorax?"
+      ],
+      "references": [
+        "wses-chest",
+        "east-htx",
+        "svs-btai",
+        "cn-prehospital"
+      ]
+    },
+    "chest-trauma-mini-objective-5": {
+      "title": [
+        "BTAI稳定3级的SVS2026建议？",
+        "SVS2026 approach to stable grade 3 BTAI?"
+      ],
+      "references": [
+        "wses-chest",
+        "east-htx",
+        "svs-btai",
+        "cn-prehospital"
+      ]
+    },
+    "abdominal-injury-mini-objective-3": {
+      "title": [
+        "稳定AAST III肝伤属WSES哪级？",
+        "Stable AAST III liver injury corresponds to which WSES grade?"
+      ],
+      "references": [
+        "nice",
+        "wses-liver",
+        "wses-spleen"
+      ]
+    },
+    "abdominal-injury-mini-objective-4": {
+      "title": [
+        "实质脏器NOM需要哪些条件？",
+        "What is needed for solid-organ NOM?"
+      ],
+      "references": [
+        "nice",
+        "wses-liver",
+        "wses-spleen"
+      ]
+    },
+    "abdominal-injury-mini-objective-5": {
+      "title": [
+        "BE和BD的记录原则？",
+        "How should BE and BD be recorded?"
+      ],
+      "references": [
+        "nice",
+        "wses-liver",
+        "wses-spleen"
+      ]
+    },
+    "tbi-mini-objective-3": {
+      "title": [
+        "NICE孤立头伤TXA2 g方案的时间窗？",
+        "NICE time window for the isolated-head-injury2 g TXA regimen?"
+      ],
+      "references": [
+        "cn-tbi",
+        "btf",
+        "nice-head",
+        "acs-tbi"
+      ]
+    },
+    "tbi-mini-objective-4": {
+      "title": [
+        "抗凝患者轻头伤，能否直接套加拿大CT规则？",
+        "Can Canadian CT rule be directly used in anticoagulated minor head injury?"
+      ],
+      "references": [
+        "cn-tbi",
+        "btf",
+        "nice-head",
+        "acs-tbi"
+      ]
+    },
+    "tbi-mini-objective-5": {
+      "title": [
+        "重型TBI ICP22以上，应怎样理解？",
+        "How should ICP above22 be interpreted in severe TBI?"
+      ],
+      "references": [
+        "cn-tbi",
+        "btf",
+        "nice-head",
+        "acs-tbi"
+      ]
+    },
+    "polytrauma-mini-objective-3": {
+      "title": [
+        "出血期Fib1.7 g/L说明？",
+        "What does Fib1.7 g/L indicate during bleeding?"
+      ],
+      "references": [
+        "cn-shock",
+        "eu-bleeding",
+        "cn-prehospital",
+        "wses-chest"
+      ]
+    },
+    "polytrauma-mini-objective-4": {
+      "title": [
+        "致死四联征在三联征基础上加什么？",
+        "What is added to the lethal triad for the diamond?"
+      ],
+      "references": [
+        "cn-shock",
+        "eu-bleeding",
+        "cn-prehospital",
+        "wses-chest"
+      ]
+    },
+    "polytrauma-mini-objective-5": {
+      "title": [
+        "无重型TBI的活动性出血早期SBP参考？",
+        "Early SBP reference in bleeding without severe TBI?"
+      ],
+      "references": [
+        "cn-shock",
+        "eu-bleeding",
+        "cn-prehospital",
+        "wses-chest"
+      ]
+    },
+    "pelvic-trauma-objective-3": {
+      "title": [
+        "WSES BD风险参考？",
+        "WSES BD reference?"
+      ],
+      "references": [
+        "wses-pelvic",
+        "nice-fracture"
+      ]
+    },
+    "pelvic-trauma-objective-4": {
+      "title": [
+        "REBOA Zone III的角色？",
+        "Role of ZoneIII REBOA?"
+      ],
+      "references": [
+        "wses-pelvic",
+        "nice-fracture"
+      ]
+    },
+    "pelvic-trauma-objective-5": {
+      "title": [
+        "NICE骨盆带移除上限？",
+        "NICE binder-removal limit?"
+      ],
+      "references": [
+        "wses-pelvic",
+        "nice-fracture"
+      ]
+    },
+    "abdominal-hemorrhagic-shock-case-objective-3": {
+      "title": [
+        "条件设定FAST阳性且无反应，去向？",
+        "Conditional positive FAST with no response: destination?"
+      ],
+      "references": [
+        "nice",
+        "eu-bleeding"
+      ]
+    },
+    "abdominal-hemorrhagic-shock-case-objective-4": {
+      "title": [
+        "相对慢心率应追问？",
+        "History with relative bradycardia?"
+      ],
+      "references": [
+        "nice",
+        "eu-bleeding"
+      ]
+    },
+    "abdominal-hemorrhagic-shock-case-objective-5": {
+      "title": [
+        "缺Hb/BE怎样处理？",
+        "How to handle missing Hb/BE?"
+      ],
+      "references": [
+        "nice",
+        "eu-bleeding"
+      ]
+    },
+    "cspine-hip-dislocation-case-objective-3": {
+      "title": [
+        "CT无明显脊髓征象但神经异常？",
+        "CT without cord findings but neurologic abnormality?"
+      ],
+      "references": [
+        "nice-spine",
+        "nice-fracture",
+        "hip-timing",
+        "acep-sedation"
+      ]
+    },
+    "cspine-hip-dislocation-case-objective-4": {
+      "title": [
+        "上肢较下肢重的异常提示？",
+        "Arms more affected than legs suggests?"
+      ],
+      "references": [
+        "nice-spine",
+        "nice-fracture",
+        "hip-timing",
+        "acep-sedation"
+      ]
+    },
+    "cspine-hip-dislocation-case-objective-5": {
+      "title": [
+        "髋脱位时点？",
+        "Hip dislocation timing?"
+      ],
+      "references": [
+        "nice-spine",
+        "nice-fracture",
+        "hip-timing",
+        "acep-sedation"
+      ]
+    },
+    "open-pelvic-injury-case-objective-3": {
+      "title": [
+        "疑直肠伤评估？",
+        "Assessment for suspected rectal injury?"
+      ],
+      "references": [
+        "wses-pelvic",
+        "nice-fracture",
+        "cn-shock"
+      ]
+    },
+    "open-pelvic-injury-case-objective-4": {
+      "title": [
+        "粪便转流适用于？",
+        "When is fecal diversion used?"
+      ],
+      "references": [
+        "wses-pelvic",
+        "nice-fracture",
+        "cn-shock"
+      ]
+    },
+    "open-pelvic-injury-case-objective-5": {
+      "title": [
+        "未确认执行的治疗记录怎样写？",
+        "How to write unconfirmed performed treatments?"
+      ],
+      "references": [
+        "wses-pelvic",
+        "nice-fracture",
+        "cn-shock"
+      ]
+    },
+    "polytrauma-shock-reassessment-case-objective-3": {
+      "title": [
+        "成人严重过敏反应一线肾上腺素？",
+        "First-line adrenaline in adult anaphylaxis?"
+      ],
+      "references": [
+        "rcuk-special",
+        "eu-bleeding",
+        "cn-shock"
+      ]
+    },
+    "polytrauma-shock-reassessment-case-objective-4": {
+      "title": [
+        "AMPLE中A代表？",
+        "A in AMPLE?"
+      ],
+      "references": [
+        "rcuk-special",
+        "eu-bleeding",
+        "cn-shock"
+      ]
+    },
+    "polytrauma-shock-reassessment-case-objective-5": {
+      "title": [
+        "肌钙蛋白升高意味着？",
+        "Raised troponin means?"
+      ],
+      "references": [
+        "rcuk-special",
+        "eu-bleeding",
+        "cn-shock"
+      ]
+    },
+    "skill-tourniquet-objective-3": {
+      "title": [
+        "止血带成功判定？",
+        "Tourniquet success?"
+      ],
+      "references": [
+        "tccc",
+        "cn-prehospital",
+        "cn-shock"
+      ]
+    },
+    "skill-tourniquet-objective-4": {
+      "title": [
+        "首条无效下一步？",
+        "First device fails: next?"
+      ],
+      "references": [
+        "tccc",
+        "cn-prehospital",
+        "cn-shock"
+      ]
+    },
+    "skill-tourniquet-objective-5": {
+      "title": [
+        "位置不明且致命出血？",
+        "Unclear location with life-threatening bleeding?"
+      ],
+      "references": [
+        "tccc",
+        "cn-prehospital",
+        "cn-shock"
+      ]
+    },
+    "skill-bvm-objective-3": {
+      "title": [
+        "成人有脉辅助通气频率参考？",
+        "Adult pulse-present assisted ventilation reference?"
+      ],
+      "references": [
+        "bts",
+        "rcuk-special",
+        "nice-spine",
+        "aha-bls25"
+      ]
+    },
+    "skill-bvm-objective-4": {
+      "title": [
+        "有效给气观察？",
+        "Effective breath observation?"
+      ],
+      "references": [
+        "bts",
+        "rcuk-special",
+        "nice-spine",
+        "aha-bls25"
+      ]
+    },
+    "skill-bvm-objective-5": {
+      "title": [
+        "BVM无效首先核查？",
+        "First checks for failed BVM?"
+      ],
+      "references": [
+        "bts",
+        "rcuk-special",
+        "nice-spine",
+        "aha-bls25"
+      ]
+    },
+    "skill-intubation-objective-3": {
+      "title": [
+        "3+1含义？",
+        "Meaning of3+1?"
+      ],
+      "references": [
+        "das25",
+        "jts-anesthesia",
+        "nice-spine"
+      ]
+    },
+    "skill-intubation-objective-4": {
+      "title": [
+        "插管确认金标准参考？",
+        "Key tube confirmation?"
+      ],
+      "references": [
+        "das25",
+        "jts-anesthesia",
+        "nice-spine"
+      ]
+    },
+    "skill-intubation-objective-5": {
+      "title": [
+        "JTS丙泊酚减量参考人群？",
+        "Scope of reduced JTS propofol reference?"
+      ],
+      "references": [
+        "das25",
+        "jts-anesthesia",
+        "nice-spine"
+      ]
+    },
+    "skill-cricothyrotomy-objective-3": {
+      "title": [
+        "采用DAS 2015、环甲膜不可触及，切口参考？",
+        "Using DAS 2015 with an impalpable membrane, what incision is described?"
+      ],
+      "references": [
+        "das15",
+        "das25"
+      ]
+    },
+    "skill-cricothyrotomy-objective-4": {
+      "title": [
+        "bougie深度参考？",
+        "Bougie depth reference?"
+      ],
+      "references": [
+        "das25",
+        "nice-spine"
+      ]
+    },
+    "skill-cricothyrotomy-objective-5": {
+      "title": [
+        "通气确认？",
+        "Ventilation confirmation?"
+      ],
+      "references": [
+        "das25",
+        "nice-spine"
+      ]
+    },
+    "skill-needle-decompression-objective-3": {
+      "title": [
+        "进针肋缘？",
+        "Rib border?"
+      ],
+      "references": [
+        "tccc",
+        "cn-prehospital",
+        "nice",
+        "wses-chest"
+      ]
+    },
+    "skill-needle-decompression-objective-4": {
+      "title": [
+        "不稳定疑张力等CT？",
+        "Wait for CT in unstable suspected tension?"
+      ],
+      "references": [
+        "tccc",
+        "cn-prehospital",
+        "nice",
+        "wses-chest"
+      ]
+    },
+    "skill-needle-decompression-objective-5": {
+      "title": [
+        "效果核查？",
+        "Response check?"
+      ],
+      "references": [
+        "tccc",
+        "cn-prehospital",
+        "nice",
+        "wses-chest"
+      ]
+    },
+    "skill-tube-thoracostomy-objective-3": {
+      "title": [
+        "引流定位区？",
+        "Drain access region?"
+      ],
+      "references": [
+        "wses-chest",
+        "east-htx",
+        "nice"
+      ]
+    },
+    "skill-tube-thoracostomy-objective-4": {
+      "title": [
+        "持续漏气管常规夹闭？",
+        "Routinely clamp active air leak?"
+      ],
+      "references": [
+        "wses-chest",
+        "east-htx",
+        "nice"
+      ]
+    },
+    "skill-tube-thoracostomy-objective-5": {
+      "title": [
+        "230 mL/h持续3 h？",
+        "230 mL/h for three hours?"
+      ],
+      "references": [
+        "wses-chest",
+        "east-htx",
+        "nice"
+      ]
+    },
+    "skill-efast-objective-3": {
+      "title": [
+        "胸膜EFAST要？",
+        "Pleural EFAST needs?"
+      ],
+      "references": [
+        "nice",
+        "rch",
+        "wses-pelvic"
+      ]
+    },
+    "skill-efast-objective-4": {
+      "title": [
+        "窗口受限怎样报？",
+        "How to report limited view?"
+      ],
+      "references": [
+        "nice",
+        "rch",
+        "wses-pelvic"
+      ]
+    },
+    "skill-efast-objective-5": {
+      "title": [
+        "阴性FAST排除什么？",
+        "What does negative FAST exclude?"
+      ],
+      "references": [
+        "nice",
+        "rch",
+        "wses-pelvic"
+      ]
+    },
+    "skill-pelvic-binder-objective-3": {
+      "title": [
+        "下肢体位需先核查？",
+        "Before leg positioning check?"
+      ],
+      "references": [
+        "wses-pelvic",
+        "nice-fracture",
+        "cn-shock"
+      ]
+    },
+    "skill-pelvic-binder-objective-4": {
+      "title": [
+        "反复骨盆分离测试？",
+        "Repeated pelvic springing?"
+      ],
+      "references": [
+        "wses-pelvic",
+        "nice-fracture",
+        "cn-shock"
+      ]
+    },
+    "skill-pelvic-binder-objective-5": {
+      "title": [
+        "束带后BP改善证明？",
+        "Pressure improves after binder: proves?"
+      ],
+      "references": [
+        "wses-pelvic",
+        "nice-fracture",
+        "cn-shock"
+      ]
+    },
+    "skill-splinting-objective-3": {
+      "title": [
+        "抗生素时点参考？",
+        "Antibiotic timing reference?"
+      ],
+      "references": [
+        "nice-fracture",
+        "nice-spine"
+      ]
+    },
+    "skill-splinting-objective-4": {
+      "title": [
+        "股骨干牵引伴骨盆伤？",
+        "Femoral traction with pelvic injury?"
+      ],
+      "references": [
+        "nice-fracture",
+        "nice-spine"
+      ]
+    },
+    "skill-splinting-objective-5": {
+      "title": [
+        "固定后必须？",
+        "After splinting must?"
+      ],
+      "references": [
+        "nice-fracture",
+        "nice-spine"
+      ]
+    },
+    "trauma-disaster-medicine-objective-3": {
+      "title": [
+        "SALT期待类别颜色？",
+        "SALT expectant color?"
+      ],
+      "references": [
+        "start",
+        "jumpstart",
+        "salt",
+        "erbp-crush",
+        "cn-disaster-plan",
+        "cdc-blast"
+      ]
+    },
+    "trauma-disaster-medicine-objective-4": {
+      "title": [
+        "国内2006轻伤颜色？",
+        "Chinese 2006 minor color?"
+      ],
+      "references": [
+        "start",
+        "jumpstart",
+        "salt",
+        "erbp-crush",
+        "cn-disaster-plan",
+        "cdc-blast"
+      ]
+    },
+    "trauma-disaster-medicine-objective-5": {
+      "title": [
+        "挤压成人解救前ERBP参考？",
+        "ERBP adult pre-extrication reference?"
+      ],
+      "references": [
+        "start",
+        "jumpstart",
+        "salt",
+        "erbp-crush",
+        "cn-disaster-plan",
+        "cdc-blast"
+      ]
+    },
+    "orthopaedics-objective-3": {
+      "title": [
+        "严重污染清创时点？",
+        "Severe-contamination debridement timing?"
+      ],
+      "references": [
+        "boast-open",
+        "boast-acs",
+        "boast-vascular",
+        "cn-open-fracture"
+      ]
+    },
+    "orthopaedics-objective-4": {
+      "title": [
+        "筋膜室存在脉搏可以？",
+        "Pulse present in compartment syndrome?"
+      ],
+      "references": [
+        "boast-open",
+        "boast-acs",
+        "boast-vascular",
+        "cn-open-fracture"
+      ]
+    },
+    "orthopaedics-objective-5": {
+      "title": [
+        "缺血肢体血管路径？",
+        "Ischemic limb vascular pathway?"
+      ],
+      "references": [
+        "boast-open",
+        "boast-acs",
+        "boast-vascular",
+        "cn-open-fracture"
+      ]
+    },
+    "upper-limb-objective-3": {
+      "title": [
+        "开放前臂骨折早期创面？",
+        "Early open-forearm wound care?"
+      ],
+      "references": [
+        "cn-open-fracture",
+        "boast-acs",
+        "boast-vascular",
+        "nice-fracture"
+      ]
+    },
+    "upper-limb-objective-4": {
+      "title": [
+        "不相称疼痛与被动牵拉痛？",
+        "Disproportionate/passive-stretch pain?"
+      ],
+      "references": [
+        "cn-open-fracture",
+        "boast-acs",
+        "boast-vascular",
+        "nice-fracture"
+      ]
+    },
+    "upper-limb-objective-5": {
+      "title": [
+        "无脉扩张血肿优先？",
+        "Absent pulse/expanding hematoma priority?"
+      ],
+      "references": [
+        "cn-open-fracture",
+        "boast-acs",
+        "boast-vascular",
+        "nice-fracture"
+      ]
+    },
+    "lower-limb-objective-3": {
+      "title": [
+        "下肢绝对间室压>40？",
+        "Absolute limb compartment pressure over 40?"
+      ],
+      "references": [
+        "boast-open",
+        "boast-acs",
+        "boast-vascular",
+        "cn-open-fracture",
+        "nice-hip",
+        "cn-hip-implementation"
+      ]
+    },
+    "lower-limb-objective-4": {
+      "title": [
+        "NICE髋部手术时点？",
+        "NICE hip surgery timing?"
+      ],
+      "references": [
+        "boast-open",
+        "boast-acs",
+        "boast-vascular",
+        "cn-open-fracture",
+        "nice-hip",
+        "cn-hip-implementation"
+      ]
+    },
+    "lower-limb-objective-5": {
+      "title": [
+        "国内髋部48 h前提？",
+        "Chinese hip48-hour conditions?"
+      ],
+      "references": [
+        "boast-open",
+        "boast-acs",
+        "boast-vascular",
+        "cn-open-fracture",
+        "nice-hip",
+        "cn-hip-implementation"
+      ]
+    },
+    "spine-objective-3": {
+      "title": [
+        "建议增压持续？",
+        "Suggested augmentation duration?"
+      ],
+      "references": [
+        "ao-sci24",
+        "ao-mpss17",
+        "nice-spine"
+      ]
+    },
+    "spine-objective-4": {
+      "title": [
+        "可行SCI减压时点？",
+        "SCI decompression timing when feasible?"
+      ],
+      "references": [
+        "ao-sci24",
+        "ao-mpss17",
+        "nice-spine"
+      ]
+    },
+    "spine-objective-5": {
+      "title": [
+        "CT后神经异常影像？",
+        "Imaging after CT with neuro findings?"
+      ],
+      "references": [
+        "ao-sci24",
+        "ao-mpss17",
+        "nice-spine"
+      ]
+    }
+  }
+}
