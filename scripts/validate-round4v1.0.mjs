@@ -6,6 +6,8 @@ for(const file of targets){if(!['.html','.js','.json'].includes(path.extname(fil
  for(const part of textParts(source,path.extname(file)))for(const value of displayed(part)){texts++;glue.lastIndex=0;if(glue.test(value))errors.push(file+': '+value.slice(0,220));}
  if(/[\u3400-\u9fff]以本院/.test(source))errors.push(file+': punctuation missing before institutional policy');
  if(source.includes('双側'))errors.push(file+': traditional 側');
+ if(file.endsWith('.html')){for(const match of source.matchAll(/(?:src|href)="((?:\.\.\/)?assets\/[^"]+\.(?:js|css)(?:\?[^"]*)?)"/g))if(!match[1].includes('?v=20261015-r4'))errors.push(file+': stale asset cache key '+match[1]);}
+
  if(file.endsWith('.html')&&!file.endsWith('quality-governance.html')){const dom=new JSDOM(source,{url:'https://qa.example/'+file,runScripts:'outside-only'});const w=dom.window;w.eval(fs.readFileSync('assets/academy-viewv1.0.js','utf8'));const walker=w.document.createTreeWalker(w.document.body,w.NodeFilter.SHOW_TEXT);let n;
  while((n=walker.nextNode())){if(n.parentElement.closest('script,style,[hidden],[data-teacher-only]'))continue;if(/review pending|sign-off pending|待复核|待审核|未签署/i.test(n.textContent))errors.push(file+': visible review state '+n.textContent.slice(0,100));}w.close();}
 }

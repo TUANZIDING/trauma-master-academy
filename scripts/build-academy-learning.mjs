@@ -21,8 +21,8 @@ for(const [id,course] of Object.entries(context.window.ACADEMY_COURSES)){
   html=html.slice(0,insertAt)+first+html.slice(insertAt);
   const post=`<!-- academy-post -->\n${noMain?'<div class="wrap">':''}${test(course,id,'post')}${noMain?'</div>':''}\n<!-- /academy-post -->\n`;
   html=noMain?html.replace('<footer',post+'<footer'):html.replace('</main>',post+'</main>');
-  if(!html.includes('academy-learning-markup.js'))html=html.replace(/<script src="([^\"]*)academy-learning\.js/,`<script src="../assets/academy-learning-markup.js?v=20261014-r3"></script><script src="$1academy-learning.js`);
-  if(!html.includes('academy-question-bankv1.0.js'))html=html.replace('<script src="../assets/academy-curriculum.js', '<script src="../assets/academy-question-bankv1.0.js?v=20261014-r3"></script><script src="../assets/academy-curriculum.js');
+  if(!html.includes('academy-learning-markup.js'))html=html.replace(/<script src="([^\"]*)academy-learning\.js/,`<script src="../assets/academy-learning-markup.js?v=20261015-r4"></script><script src="$1academy-learning.js`);
+  if(!html.includes('academy-question-bankv1.0.js'))html=html.replace('<script src="../assets/academy-curriculum.js', '<script src="../assets/academy-question-bankv1.0.js?v=20261015-r4"></script><script src="../assets/academy-curriculum.js');
   fs.writeFileSync(file,html);
 }
 console.log(`Built static objectives and tests for ${Object.keys(context.window.ACADEMY_COURSES).length} courses.`);
