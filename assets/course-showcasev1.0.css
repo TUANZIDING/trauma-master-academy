@@ -24,7 +24,7 @@
 .tma-course[data-stage=system] .tma-course-chips>span:first-child{background:var(--alert)}
 .academy-page .tma-course .course-card-body{padding:20px 22px 22px;gap:0}
 .academy-page .tma-course h3{margin:0 0 6px;font-size:20px;line-height:1.3}
-.academy-page .tma-course .tma-course-hook{font-size:15px;color:var(--muted);margin:0 0 14px}
+.academy-page .tma-course .tma-course-hook{font-size:15px;color:var(--muted);margin:0 0 14px;min-height:3.1em}
 .academy-page .tma-course .tma-course-label{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--teal);margin:0 0 6px;text-transform:uppercase}
 .tma-course-goals{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:7px}
 .tma-course-goals li{position:relative;padding-left:24px;font-size:14.5px;line-height:1.5;color:var(--ink)}
@@ -39,3 +39,7 @@
 @media (max-width:650px){.academy-page .tma-course-grid{grid-template-columns:1fr}.tma-course-route{grid-template-columns:repeat(2,1fr)}.tma-course-no{font-size:44px}}
 @media (prefers-reduced-motion:reduce){.academy-page .tma-course,.academy-page .tma-course .tma-course-media img{transition:none}}
 @media print{.tma-course-route,.tma-course-media::after{display:none}}
+
+.tma-course h3,.tma-course-hook,.tma-course-goals li,.tma-course-anchor p,.tma-course-route a{text-wrap:pretty}
+.tma-course-goals{min-height:9.6em}
+@media (max-width:650px){.academy-page .tma-course .tma-course-hook,.tma-course-goals{min-height:0}}
